@@ -1,0 +1,57 @@
+//Main Pokdex CSS
+.container {
+   margin-bottom: 100px;
+}
+form.searchForm,
+#catch-counter {
+    display: flex;
+    flex: 1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+
+.searchInput {
+    height: 20px;   
+    align-self: center;
+    width: 80%;    
+}
+
+.pdxHeader {
+    margin: 6px auto 5px;
+}
+
+#pokedex {
+    display: flex;
+    flex-wrap: wrap;     
+}
+
+#pokedex,
+#catch-counter {
+    color: #000;
+}
+
+.dex {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    
+    > div {
+        display: flex;
+        flex: 1;
+        flex-basis: 30%;
+    }
+
+    .pkmn-card {
+        justify-content: space-between;
+        
+        .pkmn-card-info {
+            justify-content: flex-start;
+            
+            .pkmn-data {
+                display: flex;
+            }
+        }
+    }
+
+}

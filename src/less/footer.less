@@ -1,0 +1,96 @@
+//Global footer styles
+
+.bottom-nav {
+    display: flex;
+    width: 100%;
+    height: 75px;    
+    background-color: @red;
+    box-shadow: inset 0 0px 16px -2px;
+    justify-content: space-around;
+    position:  fixed;
+    bottom: 0;
+
+    .btm-panel {
+        align-self: center;
+        height: 60px;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        border-radius: 37px;
+        align-items: center;
+        flex-direction: column;   
+        
+        &:nth-child(-n+2){            
+            -moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
+            -webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
+            box-shadow:inset 0px 1px 0px 0px #cf866c;
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e6000f), color-stop(1, #b3000c));
+            background:-moz-linear-gradient(top, #e6000f 5%, #b3000c 100%);
+            background:-webkit-linear-gradient(top, #e6000f 5%, #b3000c 100%);
+            background:-o-linear-gradient(top, #e6000f 5%, #b3000c 100%);
+            background:-ms-linear-gradient(top, #e6000f 5%, #b3000c 100%);
+            background:linear-gradient(to bottom, #e6000f 5%, #b3000c 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6000f', endColorstr='#b3000c',GradientType=0);
+            background-color:#e6000f;
+            border: 1px solid #000;
+            cursor: pointer;
+        
+            &:hover {
+                background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b3000c), color-stop(1, #e6000f));
+                background:-moz-linear-gradient(top, #b3000c 5%, #e6000f 100%);
+                background:-webkit-linear-gradient(top, #b3000c 5%, #e6000f 100%);
+                background:-o-linear-gradient(top, #b3000c 5%, #e6000f 100%);
+                background:-ms-linear-gradient(top, #b3000c 5%, #e6000f 100%);
+                background:linear-gradient(to bottom, #b3000c 5%, #e6000f 100%);
+                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3000c', endColorstr='#e6000f',GradientType=0);
+                background-color:#b3000c;
+            }
+
+            &:active {
+                position:relative;
+                top:1px;
+            }
+        }
+    }
+    img {
+        width: 50px;
+        cursor: pointer;                        
+    }
+}
+.btm-select {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.btm-panel-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.poketrackerIcon {
+    height: 40px;
+    width: 39px;
+    background: url(../images/poketracker-map.png) no-repeat;
+}
+.backToTopIcon {
+    height: 50px;
+    width: 50px;
+    background: url(../images/arrow.png) no-repeat;
+}
+
+.magnifyingGlassIcon {
+    height: 28px;
+    width: 28px;
+    background: url(../images/magnifying-glass.png) no-repeat;
+    cursor: pointer;
+    background-size: contain;
+    margin-left: 5px;
+}
+.pokedexIcon{
+    height: 50px;
+    width: 50px;
+    background: url(../images/pokedex.png) no-repeat;
+}
+

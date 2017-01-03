@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>    
+        <title>PokeTracker - Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="description" content="Use Nuztracker to keep track of all of your Pokemon!" />
+        <meta name="author" content="Trevor Covington" />
+        <meta name="author" content="tcovington189@gmail.com" />
+        <meta name="application-name" content="PokeTracker" />
+        
+        <!-- favicon info -->
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="images/favicons/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="images/favicons/favicon-128.png" sizes="128x128" />
+        <meta name="application-name" content="PokeTracker"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="images/favicons/mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="images/favicons/mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="images/favicons/mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="images/favicons/mstile-310x310.png" />
+
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/poketracker.min.css" type="text/css">
+            
+       <style>           
+           .container {
+                   min-height: calc(100vh - 75px);
+           }
+       </style>
+                
+    </head>
+<body>
+
+<div class="header">
+    <div class="poketrackerTitle">
+        <img src="images/poketracker-title.png" alt="PokeTracker">
+    </div>
+    <div class="versionLogo">
+        
+    </div>
+    <div class="changeGameBtn">
+        <button type="button" onclick="gameChange();">Change Game</button>
+    </div>
+</div><!-- end .header-->
+
+<div class="container">   
+    
+    <div class="locContainer" id="loc_container">
+       <div class="locTitle" id="loc_title">                      
+            <div class="locLabel" id="loc_label">
+                <div class="locTitleCon">
+                    <i class="locSign" id="loc_sign"></i>
+                    <h3 class="locTitleText" id="loc_title_text"></h4>
+                </div>
+                <div class="locDestination">
+                    <div class="locPrevious" id="loc_previous"><span><i class="previousArrow"></i>Previous</span></div>        
+                    <div class="locNext" id="loc_next"><span>Next<i class="nextArrow"></i></span></div>
+                </div>
+            </div>
+            <div class="mapTab">
+               <div class="zoom">
+                   <span>Full map</span>
+                   <button type="button" class="zoomBtn"></button>
+               </div>                
+                <div class="locImg" id="loc_img"><div class="locationMarkerSm"></div></div>
+            </div>
+        </div>                    
+
+        <div class="locHeader" id="loc_header"> 
+           <div class="locEnc">
+               <h4>Encounters</h4>
+               <div class="locEncDropdown" id="loc_enc_dropdown"></div>
+           </div>
+                        
+        </div>
+        
+        <!-- end locHeader-->
+        <div class="locBody" id="loc_body">
+           <div class="locInfoTop" id="loc_info_top">            
+            </div>
+            <!-- end locInfoTop -->
+            <div id="pokemon_route_info"></div>
+        </div>
+        <!-- end locBody-->
+        <div id="map_overlay"><div class="locImg" id="loc_img_lw"><div class="locationMarker"></div></div><p></p></div>
+    </div>
+    <!--end locContainer-->
+</div>
+<footer class="bottom-nav">
+    <div class="btm-panel" id="pt_panel" onclick="window.location.href='pokedex.html'">
+        <div class="btm-panel-button">
+            <i class="pokedexIcon"></i>
+        </div>
+    </div>
+    <div class="btm-select">
+        <select name="locations" id='loc_selector' onchange="selectChangeRoute()">
+            <option value="start" selected>Select a route/location</option>
+            <optgroup label="Routes">
+                <option value="Route_1">Route 1</option>
+                <option value="Route_2">Route 2</option>
+                <option value="Route_3">Route 3</option>           
+                <option value="Route_4">Route 4</option>
+                <option value="Route_5">Route 5</option>
+                <option value="Route_6">Route 6</option>
+                <option value="Route_7">Route 7</option>
+                <option value="Route_8">Route 8</option>
+                <option value="Route_9">Route 9</option>
+                <option value="Route_10">Route 10</option>
+                <option value="Route_11">Route 11</option>
+                <option value="Route_12">Route 12</option>  
+                <option value="Route_13">Route 13</option>
+                <option value="Route_14">Route 14</option>
+                <option value="Route_15">Route 15</option>
+                <option value="Route_16">Route 16</option>            
+                <option value="Route_17">Route 17</option>
+                <option value="Route_18">Route 18</option> 
+                <option value="Route_19">Route 19</option>   
+                <option value="Route_20">Route 20</option>
+                <option value="Route_21">Route 21</option>
+                <option value="Route_22">Route 22</option>            
+            </optgroup>
+            <optgroup label="Cities/Towns">
+                <option value="Vaniville_Town">Vaniville Town</option>       
+                <option value="Aquacorde_Town">Aquacorde Town</option>       
+                <option value="Santalune_City">Santalune City</option>
+                <option value="Luminose_City">Luminose City</option>
+                <option value="Camphrier_Town">Camphrier Town</option>
+                <option value="Ambrette_Town">Ambrette Town</option>
+                <option value="Cyllage_City">Cyllage City</option>
+                <option value="Geosenge_Town">Geosenge Town</option>          
+                <option value="Shalour_City">Shalour City</option>
+                <option value="Coumarine_City">Coumarine City</option>
+                <option value="Laverre_City">Laverre City</option>       
+                <option value="Anistar_City">Anistar City</option>
+                <option value="Dendemille_Town">Dendemille Town</option>
+                <option value="Couriway_Town">Couriway Town</option>
+                <option value="Snowbelle_City">Snowbelle City</option>
+                <option value="Kiloude_City">Kiloude City</option>
+            </optgroup>
+            <optgroup label="Locations">
+                <option value="Santalune_Forest">Santalune Forest</option>
+                <option value="Battle_Chateau">Battle Chateau</option>
+                <option value="Battle_Maison">Battle Maison</option>
+                <option value="Parfum_Palace">Parfum Palace</option>        
+                <option value="Connecting_Cave">Connecting Cave</option>
+                <option value="Glittering_Cave">Glittering Cave</option>     
+                <option value="Reflection_Cave">Reflection Cave</option>
+                <option value="Tower_of_Mastery">Tower of Mastery</option>
+                <option value="Pokeball_Factory">Pokeball Factory</option>  
+                <option value="Kalos_Power_Plant">Kalos Power Plant</option>
+                <option value="Flare_Cafe">Flare Cafe</option>
+                <option value="Lysandre_Labs">Lysandre Labs</option>
+                <option value="Team_Flare_HQ">Team Flare HQ</option>
+                <option value="Azure_Bay">Azure Bay</option>
+                <option value="Lost_Hotel">Lost Hotel</option>
+                <option value="Frost_Cavern">Frost Cavern</option>
+                <option value="Pokemon_League">Pokemon League</option>    
+                <option value="Chamber_of_Emptiness">Chamber of Emptiness</option>
+                <option value="Sea_Spirits_Den">Sea Spirit's Den</option>
+                <option value="Pokemon_Village">Pokemon Village</option>
+                <option value="Terminus_Cave">Terminus Cave</option>
+                <option value="Victory_Road">Victory Road</option>
+            </optgroup>
+        </select>
+    </div>    
+</footer><!-- end footer-->
+
+<script src="js/poketracker.js"></script>   
+<script>
+    var version = localStorage.getItem('version');
+    
+    if (version == '' || version == null || version == 'gameChange') {
+    }else{
+        generateHTML();
+    }
+</script>
+<!--
+    <script>                
+        //See how much room is in localStorage
+        var total = 0;
+        for(var x in localStorage) {
+          var amount = (localStorage[x].length * 2) / 1024 / 1024;
+          total += amount;
+          console.log( x + " = " + amount.toFixed(6) + " MB");
+        }
+        
+        console.log( "Total: " + total.toFixed(2) + " MB");
+    </script>
+-->
+</body>
+</html>
