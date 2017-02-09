@@ -1,160 +1,240 @@
 module.exports = function(grunt) {
+    
+    //Load all packages/tasks
+    require('load-grunt-tasks')(grunt);     
+    
+    //=== Configure task here ===//
+    grunt.initConfig({
+        
+        //== Variables
+        distPath        : 'src/dist/',
+        
+        lessPath        : 'src/less/', 
+        distCssPath     : '<%= distPath %>css/',
+        lessConfigsPath : '<%= lessPath %>configs/',
+        
+        jsPath          : 'src/js/',
+        distScriptsPath : '<%= distPath %>scripts/',
+        
+        projName          : 'Poke Tracker',        
+        
+        //== Get package info
+        pkg: grunt.file.readJSON('package.json'),        
+        
+        
+        //== Css Tasks ==//
+        
+        //= Less Lint - Check for LESS mistakes | less_review
+        lesshint: {
+            options: {
+                lesshintrc      : '<%= lessConfigsPath %><%= pkg.name %>.lesshintrc.json', 
+                allowWarnings   : false 
+            },
+            source: {
+                src: ['<%= lessPath %>*.less'] 
+            },
+        },   
+        
+        //= Less - Compile LESS files into CSS | less_compile
+        less:{
+            
+            //Global less options
+            options: {  
+                banner              : '/* <%= projName %> v<%= pkg.version %> CSS ',  //Banner 
+                ieCompat            : false,    //If true ensure support of ie8
+                strictMath          : true,     //Math must be done in parens
+                strictUnits         : true,     //Math must be done with like units (px => px)
+                plugins             : [
+                    new (require('less-plugin-autoprefix'))({browsers: ['last 4 versions']})
+                ]
+            },                       
+            
+            //Compile Dev task
+            source: {
+                options: {  
+                    banner              : "<%= less.options.banner %> Dev */\n",  //Banner                     
+                    sourceMap           : true,     //Enable source map
+                    outputSourceFiles   : true      //Puts less files into map instead of only referencing them
+                },      
+                
+                //Files
+                files: {
+                    '<%= distCssPath %><%= pkg.name %>.css' : '<%= lessPath %><%= pkg.name %>.less'
+                },
+            }
+        },       
 
-  grunt.initConfig({
-    less: {        
-        poketracker: {
-            banner: 'PokeTracker CSS',
-            src: 'src/less/poketracker/poketracker.less',
-            dest: 'css/poketracker.css'
+        //= Css Comb - Rearrange props | css_reorg
+        csscomb: {            
+            options: {
+                config: '<%= lessConfigsPath %><%= pkg.name %>.csscomb.json'
+            },
+            
+            source: {
+                files: {
+                    '<%= distCssPath %><%= pkg.name %>.css' : ['<%= distCssPath %><%= pkg.name %>.css'],
+                }
+            }           
+        },               
+                
+        
+        //= Css min - Minify css | css_min
+        cssmin: {
+            source: {                
+                src     : '<%= distCssPath %><%= pkg.name %>.css',
+                dest    : '<%= distCssPath %><%= pkg.name %>.min.css'
+            }
         },
-        pokedex: {
-            banner: 'Pokedex CSS',
-            src: 'src/less/pokedex/pokedex.less',
-            dest: 'css/pokedex.css'
+        
+        //== JS Tasks
+        
+        //= JSHint - Validate JavaScript | js_review
+        jshint: {
+            options: {                
+                'curly': true,
+                'eqeqeq': true
+            },
+            files: {
+              src: ['<%= jsPath %>*.js']
+            }   
         },
-        pokeinfo: {
-            banner: 'Pokeinfo CSS',
-            src: 'src/less/pokeinfo/pokeinfo.less',
-            dest: 'css/pokeinfo.css'
+        
+        //= Concat - Concatenate JS files | js_concat
+        concat: {            
+            source: {
+                src     : ['src/js/pkmn_evs.js', 'src/js/ev_calculation.js', 'src/js/action.js', '!<%= jsPath %><%= pkg.name %>.js'],
+                dest    : '<%= distScriptsPath %><%= pkg.name %>.js'
+                
+            }
+        },
+        
+        //= Uglify - Minify js | js_uglify
+        uglify: {            
+            options: {
+                banner              : '//<%= projName %> v<%= pkg.version %>\n',
+                compress            : true,
+                preserveComments    : false,
+            }, 
+            source: {
+                files: {
+                    '<%= distScriptsPath %><%= pkg.name %>.min.js' : '<%= distScriptsPath %><%= pkg.name %>.js'
+                }
+            }
+        },    
+        
+        //== Utility Tasks
+        
+        //= Clean - delete files from directories
+        clean: {
+            css_dir             : ['css/*'],
+            dist_css_dir        : ['src/dist/css/*'],
+            
+            scripts_dir         : ['scripts/*'],
+            dist_scripts_dir    : ['src/dist/scripts/*']
+        },        
+        
+        //= Copy - copy files to another location
+        copy: {
+            css_prod: {
+                expand  : true,
+                flatten : true,
+                filter  : 'isFile',
+                src     : '<%= distCssPath %><%= pkg.name %>.min.css',
+                dest    : 'css',
+                nonull  : true
+            },
+            css_dev: {
+                expand  : true,
+                flatten : true,
+                filter  : 'isFile',
+                src     : ['<%= distCssPath %><%= pkg.name %>.css', '<%= distCssPath %><%= pkg.name %>.css.map'],
+                dest    : "css",
+                nonull  : true
+            },
+            scripts_prod: {
+                expand  : true,
+                flatten : true,
+                filter  : 'isFile',
+                src     : '<%= distScriptsPath %><%= pkg.name %>.min.js',
+                dest    : 'scripts',
+                nonull  : true
+            },
+            scripts_dev: {
+                expand  : true,
+                flatten : true,
+                filter  : 'isFile',
+                src     : '<%= distScriptsPath %><%= pkg.name %>.js',
+                dest    : 'scripts',
+                nonull  : true
+            }
+        },
+        
+        //= Watch - run tasks when certain files have been changed
+        watch: {
+            css_dev: {
+                files   : ['src/less/**/*'],
+                tasks   : ['css_build_dev']                
+            },
+            js_dev: {
+                files   : ['src/js/*js'],
+                tasks   : ['js_build_dev']
+            },
+            die: {
+                options : { spawn: false },
+                files   : ['tmp/*'],
+                tasks   : ['kill'],
+            }
         }
-    },
-    autoprefixer: {
-        options: {
-          // Task-specific options go here.
-        },
-        files: {
-          src: 'css/*.css'
-        },
-      },
-    cssmin: {
-      poketracker: {
-        files: [{
-          expand: true,
-          cwd: 'css',
-          src: ['poketracker.css', '!poketracker.min.css'],
-          dest: 'css',
-          ext: '.min.css'
-        }]
-      },
-      pokedex: {
-        files: [{
-          expand: true,
-          cwd: 'css',
-          src: ['pokedex.css', '!pokedex.min.css'],
-          dest: 'css',
-          ext: '.min.css'
-        }]
-      },
-     pokeinfo: {
-        files: [{
-          expand: true,
-          cwd: 'css',
-          src: ['pokeinfo.css', '!pokeinfo.min.css'],
-          dest: 'css',
-          ext: '.min.css'
-        }]
-      }
-    },
-      
-    uglify: {
-        options: {
-          mangle: false,
-          quoteStyle: 1
-        },
-        my_target: {
-          expand: true,
-          cwd: 'src/js',
-          src: '**/*.js',
-          dest: 'src/js_min'
-        }
-    },
+    });                         
     
-    concat: {                
-        dist_poketracker: {
-          src: [
-              'src/js_min/third_party/jquery-2.2.4.min.js', 'src/js_min/getVersion.js', 'src/js_min/pkmn/pkmn.js', 'src/js_min/pkmn/regions/*.js' , 'src/js_min/locations/location_construc.js', 'src/js_min/locations/xy/*.js', 'src/js_min/display_info.js'
-          ],
-          dest: 'js/poketracker.min.js',
-        },
-        dev_poketracker: {
-         src: [
-             'src/js/third_party/jquery-2.2.4.min.js', 'src/js/getVersion.js', 'src/js/pkmn/pkmn.js', 'src/js/pkmn/regions/*.js' , 'src/js/locations/location_construc.js', 'src/js/locations/xy/*.js', 'src/js/display_info.js' ],
-          dest: 'js/poketracker.js', 
-        },
-        dist_pokedex: {
-            src: [
-                'src/js_min/third_party/jquery-2.2.4.min.js', 'src/js_min/pkmn/pkmn.js', 'src/js_min/pkmn/regions/*.js','src/js_min/pokedex.js', 'src/js_min/filter.js'
-            ],
-            dest: 'js/pokedex.min.js'            
-        },
-        dev_pokedex: {
-            src: ['src/js/third_party/jquery-2.2.4.min.js', 'src/js/pkmn/pkmn.js', 'src/js/pkmn/regions/*.js','src/js/pokedex.js', 'src/js/filter.js'],
-            dest: 'js/pokedex.js'
-        },
-        dist_pokeinfo: {
-          src: [
-              'src/js_min/third_party/jquery-2.2.4.min.js', 'src/js_min/pkmn/pkmn.js', 'src/js_min/pkmn/regions/*.js'
-          ],
-          dest: 'js/pokeinfo.min.js',
-        },
-        dev_pokeinfo: {
-         src: [
-             'src/js/third_party/jquery-2.2.4.min.js', 'src/js/pkmn/pkmn.js', 'src/js/pkmn/regions/*.js' 
-         ],
-          dest: 'js/pokeinfo.js', 
-        },
-        dev_home: {
-            src: ['src/js_min/third_party/jquery-2.2.4.min.js', 'src/js_min/getVersion.js', 'src/js_min/homeFunctions.js'],
-            dest: 'js/home.js'
-        }
-    },
-      
-    imagemin: {
-      dynamic: {                         
-          files: [{
-            expand: true,                  
-            cwd: 'images',                 
-            src: ['**/*.{png,jpg,gif}'],   
-            dest: 'images'
-          }]
-        }
-    },
-    clean: {
-      js_min: ["src/js_min"]      
-    }
-  });
+    //=== Register Tasks here ===//
+    
+    //CSS Tasks
+    grunt.registerTask('less_review', ['lesshint']);
+    
+    grunt.registerTask('less_compile', ['less:source']);
 
-  grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-autoprefixer');
-
-  grunt.registerTask('default', ['less', 'autoprefixer', 'cssmin', 'uglify', 'concat', 'clean']);  
-  grunt.registerTask('mincss', ['less', 'autoprefixer', 'cssmin']);
-  grunt.registerTask('minjs', ['uglify','concat']);
-  
-  //Poketracker
-  grunt.registerTask('poketracker-lessDev', ['less:poketracker','autoprefixer',]);
-  grunt.registerTask('poketracker-lessDist', ['poketracker-lessDev', 'autoprefixer', 'cssmin:poketracker'])
-  grunt.registerTask('poketracker-jsDev', ['concat:dev_poketracker']);
-  grunt.registerTask('poketracker-jsDist', ['uglify','concat:dist_poketracker'])
+    grunt.registerTask('css_reorg', ['csscomb:source']);
+        
+    grunt.registerTask('css_min', ['cssmin']);
+            
     
-  //Pokedex
-  grunt.registerTask('pdx-lessDev', ['less:pokedex', 'autoprefixer',]);
-  grunt.registerTask('pdx-lessDist', ['pdx-lessDev','autoprefixer', 'cssmin:pokedex']);
-  grunt.registerTask('pdx-jsDev', ['concat:dev_pokedex']);
-  grunt.registerTask('pdx-jsDist', ['uglify','concat:dist_pokedex']);
+    //JS Tasks
+    grunt.registerTask('js_uglify', ['uglify']);
     
-  //Pokeinfo
-  grunt.registerTask('pinfo-lessDev', ['less:pokeinfo', 'autoprefixer',]);
-  grunt.registerTask('pinfo-lessDist', ['pinfo-lessDev','autoprefixer', 'cssmin:pokeinfo']);
-  grunt.registerTask('pinfo-jsDev', ['concat:dev_pokeinfo']);
-  grunt.registerTask('pinfo-jsDist', ['uglify','concat:dist_pokeinfo']);
+    grunt.registerTask('js_review', ['jshint']);
     
-  //Home
-  grunt.registerTask('home-jsDev', ['concat:dev_home']);
-  grunt.registerTask('home-jsDist', ['uglify','concat:dist_home']);
+    grunt.registerTask('js_concat', ['concat']);
+    
+    //Utility Tasks
+    grunt.registerTask('css_copy_prod', ['copy:css_prod']);
+    grunt.registerTask('css_copy_dev', ['copy:css_dev']);
+    
+    grunt.registerTask('scripts_copy_prod', ['copy:scripts_prod']);
+    grunt.registerTask('scripts_copy_dev', ['copy:scripts_dev']);
+    
+    grunt.registerTask('css_clean_dir', ['clean:css_dir']);
+    grunt.registerTask('dist_css_clean_dir', ['clean:dist_css_dir']);
+    
+    grunt.registerTask('scripts_clean_dir', ['clean:scripts_dir']);
+    grunt.registerTask('dist_scripts_clean_dir', ['clean:dist_scripts_dir']);
+    
+    
+    grunt.registerTask('css_watch', ['watch:css_dev']);
+    grunt.registerTask('js_watch', ['watch:js_dev']);    
+    
+    grunt.registerTask('kill', function() {
+        process.exit(1);
+    });
+            
+    //Build Tasks
+    grunt.registerTask('css_build_prod', ['css_clean_dir', 'less_review', 'less_compile', 'css_reorg', 'css_min', 'css_copy_prod']);    
+    grunt.registerTask('css_build_dev', ['dist_css_clean_dir', 'css_clean_dir','less_review', 'less_compile', 'css_reorg', 'css_min', 'css_copy_dev']);
+    
+    grunt.registerTask('js_build_prod', ['dist_scripts_clean_dir', 'scripts_clean_dir', 'js_review', 'js_concat', 'js_uglify', 'scripts_copy_prod']);
+    grunt.registerTask('js_build_dev', ['dist_scripts_clean_dir', 'scripts_clean_dir', 'js_review', 'js_concat', 'scripts_copy_dev']);
+    
+    grunt.registerTask('build_prod', ['css_build_prod', 'js_build_prod'])
+    grunt.registerTask('build_dev', ['css_build_dev', 'js_build_dev']);
+    
 };
