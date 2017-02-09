@@ -1,6 +1,7 @@
+/* Poke Tracker v0.5.0 CSS  Dev */
 html {
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
 }
 article,
 aside,
@@ -22,10 +23,12 @@ canvas,
 progress,
 video {
   display: inline-block;
+
   vertical-align: baseline;
 }
 audio:not([controls]) {
   display: none;
+
   height: 0;
 }
 [hidden],
@@ -50,7 +53,8 @@ dfn {
   font-style: italic;
 }
 h1 {
-  margin: .67em 0;
+  margin: 0.67em 0;
+
   font-size: 2em;
 }
 mark {
@@ -63,9 +67,11 @@ small {
 sub,
 sup {
   position: relative;
+
+  vertical-align: baseline;
+
   font-size: 75%;
   line-height: 0;
-  vertical-align: baseline;
 }
 sup {
   top: -0.5em;
@@ -83,8 +89,8 @@ figure {
   margin: 1em 40px;
 }
 hr {
-  height: 0;
   box-sizing: content-box;
+  height: 0;
 }
 pre {
   overflow: auto;
@@ -102,8 +108,10 @@ optgroup,
 select,
 textarea {
   margin: 0;
-  font: inherit;
+
   color: inherit;
+
+  font: inherit;
 }
 button {
   overflow: visible;
@@ -116,8 +124,9 @@ button,
 html input[type=button],
 input[type=reset],
 input[type=submit] {
-  -webkit-appearance: button;
   cursor: pointer;
+
+  -webkit-appearance: button;
 }
 button[disabled],
 html input[disabled] {
@@ -126,6 +135,7 @@ html input[disabled] {
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   padding: 0;
+
   border: 0;
 }
 input {
@@ -142,6 +152,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 input[type=search] {
   box-sizing: content-box;
+
   -webkit-appearance: textfield;
 }
 input[type=search]::-webkit-search-cancel-button,
@@ -149,12 +160,14 @@ input[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 fieldset {
-  padding: .35em .625em .75em;
   margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+
   border: 1px solid silver;
 }
 legend {
   padding: 0;
+
   border: 0;
 }
 textarea {
@@ -165,6 +178,7 @@ optgroup {
 }
 table {
   border-spacing: 0;
+
   border-collapse: collapse;
 }
 td,
@@ -172,31 +186,35 @@ th {
   padding: 0;
 }
 @font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
+  font-family: "Source Sans Pro";
   font-weight: 400;
-  src: local('Source Sans Pro'), local('fonts/SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff) format('woff');
-}
-@font-face {
-  font-family: 'Source Sans Pro';
   font-style: normal;
-  font-weight: 700;
-  src: local('Source Sans Pro Bold'), local('fonts/SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGIqjGYJUyOXcBwUQbRaNH6c.woff) format('woff');
+
+  src: local("Source Sans Pro"), local("fonts/SourceSansPro-Regular"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff) format("woff");
 }
 @font-face {
-  font-family: 'Source Sans Pro';
-  font-style: italic;
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-style: normal;
+
+  src: local("Source Sans Pro Bold"), local("fonts/SourceSansPro-Bold"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGIqjGYJUyOXcBwUQbRaNH6c.woff) format("woff");
+}
+@font-face {
+  font-family: "Source Sans Pro";
   font-weight: 400;
-  src: local('Source Sans Pro Italic'), local('fonts/SourceSansPro-It'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoM_bce-VcyLJMRR1FC9qWbU8.woff) format('woff');
+  font-style: italic;
+
+  src: local("Source Sans Pro Italic"), local("fonts/SourceSansPro-It"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoM_bce-VcyLJMRR1FC9qWbU8.woff) format("woff");
 }
 @font-face {
-  font-family: 'Source Sans Pro';
-  font-style: italic;
+  font-family: "Source Sans Pro";
   font-weight: 700;
-  src: local('Source Sans Pro Bold Italic'), local('fonts/SourceSansPro-BoldIt'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6PgYMAt3u4NmhhzLLLPJ5qH3rGVtsTkPsbDajuO5ueQw.woff) format('woff');
+  font-style: italic;
+
+  src: local("Source Sans Pro Bold Italic"), local("fonts/SourceSansPro-BoldIt"), url(https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6PgYMAt3u4NmhhzLLLPJ5qH3rGVtsTkPsbDajuO5ueQw.woff) format("woff");
 }
 html {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 html {
   box-sizing: border-box;
@@ -209,76 +227,87 @@ html {
 body {
   margin: 0 auto;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50,bce0ee+100;Blue+Pipe */
+
   background: #b3dced;
   /* Old browsers */
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=0);
   /* IE6-9 */
 }
 .header {
-  display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
+  display:         flex;
+
   padding: 8px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+
   background-color: #cc000e;
-  box-shadow: inset 0 0px 16px -2px;
+  box-shadow: inset 0 0 16px -2px;
+
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
 }
 .bottom-nav {
-  display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 75px;
-  background-color: #cc000e;
-  box-shadow: inset 0 0px 16px -2px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display:         flex;
   position: fixed;
   bottom: 0;
+
+  width: 100%;
+  height: 75px;
+
+  background-color: #cc000e;
+  box-shadow: inset 0 0 16px -2px;
+
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+          justify-content: space-around;
 }
 .bottom-nav .btm-panel {
-  -ms-flex-item-align: center;
-      align-self: center;
-  height: 60px;
-  width: 20%;
-  display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 37px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
+  display:         flex;
+
           flex-direction: column;
+
+  width: 20%;
+  height: 60px;
+
+  border-radius: 37px;
+
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+          align-self: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
 }
 .bottom-nav .btm-panel:nth-child(-n+2) {
-  box-shadow: inset 0px 1px 0px 0px #cf866c;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e6000f), color-stop(1, #b3000c));
-  background: -webkit-linear-gradient(top, #e6000f 5%, #b3000c 100%);
-  background: linear-gradient(to bottom, #e6000f 5%, #b3000c 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6000f', endColorstr='#b3000c', GradientType=0);
-  background-color: #e6000f;
-  border: 1px solid #000;
   cursor: pointer;
+
+  border: 1px solid #000;
+  background: linear-gradient(to bottom, #e6000f 5%, #b3000c 100%);
+  background-color: #e6000f;
+  box-shadow: inset 0 1px 0 0 #cf866c;
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6000f', endColorstr='#b3000c', GradientType=0);
 }
 .bottom-nav .btm-panel:nth-child(-n+2):hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b3000c), color-stop(1, #e6000f));
-  background: -webkit-linear-gradient(top, #b3000c 5%, #e6000f 100%);
   background: linear-gradient(to bottom, #b3000c 5%, #e6000f 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3000c', endColorstr='#e6000f', GradientType=0);
   background-color: #b3000c;
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3000c', endColorstr='#e6000f', GradientType=0);
 }
 .bottom-nav .btm-panel:nth-child(-n+2):active {
   position: relative;
@@ -286,200 +315,228 @@ body {
 }
 .bottom-nav img {
   width: 50px;
+
   cursor: pointer;
 }
 .btm-select {
-  display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display:         flex;
+
   color: #000;
+
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
 }
 .btm-panel-button {
-  display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
+  display:         flex;
+
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
+
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
           align-items: center;
 }
 .poketrackerIcon {
-  height: 40px;
   width: 39px;
-  background: url(../images/poketracker-map.png) no-repeat;
+  height: 40px;
+
+  background: url("../images/poketracker-map.png") no-repeat;
 }
 .backToTopIcon {
-  height: 50px;
   width: 50px;
-  background: url(../images/arrow.png) no-repeat;
+  height: 50px;
+
+  background: url("../images/arrow.png") no-repeat;
 }
 .magnifyingGlassIcon {
-  height: 28px;
   width: 28px;
-  background: url(../images/magnifying-glass.png) no-repeat;
-  cursor: pointer;
-  background-size: contain;
+  height: 28px;
   margin-left: 5px;
+
+  cursor: pointer;
+
+  background: url("../images/magnifying-glass.png") no-repeat;
+  background-size: contain;
 }
 .pokedexIcon {
-  height: 50px;
   width: 50px;
-  background: url(../images/pokedex.png) no-repeat;
+  height: 50px;
+
+  background: url("../images/pokedex.png") no-repeat;
 }
 .container {
-  display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 auto;
+  display:         flex;
+
   overflow: auto;
+          flex-direction: column;
+
+  margin: 0 auto;
   padding: 5px;
+
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
 }
 .container.XVersion {
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #035c9c 0%, #035c94 49%, #041c3c 100%);
-  /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #035c9c 0%, #035c94 49%, #041c3c 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#035c9c', endColorstr='#041c3c', GradientType=0);
   /* IE6-9 */
 }
 .container.YVersion {
-  background: #8b273b;
-  /* Old browsers */
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #8b273b 9%, #ab1f43 50%, #ab1f43 51%, #431b1c 96%);
-  /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #8b273b 9%, #ab1f43 50%, #ab1f43 51%, #431b1c 96%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8b273b', endColorstr='#431b1c', GradientType=0);
   /* IE6-9 */
 }
-#pokemon_route_info {
-  -ms-flex-item-align: center;
-      align-self: center;
-  margin-bottom: 12px;
-  margin: 5px 5px 15px;
+.pokemon_route_info {
   max-width: 480px;
+  margin: 5px 5px 15px;
+  margin-bottom: 12px;
+
   color: #000;
+
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+          align-self: center;
 }
-#pokemon_route_info:nth-child(1) {
+.pokemon_route_info:nth-child(1) {
   padding: 5px 5px 5px 10px;
 }
-#pokemon_route_info img {
+.pokemon_route_info img {
   display: inline-block;
 }
-#pokemon_route_info > div {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
+.pokemon_route_info > div {
           flex-direction: column;
+
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
 }
 .pkmn-card {
-  display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
+  display:         flex;
+
           flex-direction: column;
-  padding: 5px 8px;
+
   margin: 5px 10px;
-  border: 1px solid #cccccc;
-  background: #e6e6e6;
+  padding: 5px 8px;
+
+  border: 1px solid #ccc;
   border-radius: 12px;
+  background: #e6e6e6;
+
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
 }
 .pkmn-card .pkmn-card-info,
 .pkmn-card .catch-info {
-  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
+  display:         inline-flex;
+
           flex: 1;
+
+  -webkit-flex: 1;
+      -ms-flex: 1;
+  -webkit-flex-basis: 28px;
   -ms-flex-preferred-size: 28px;
-      flex-basis: 28px;
+          flex-basis: 28px;
 }
 .pkmn-card .pkmn-card-info {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
           justify-content: space-between;
 }
 .pkmn-card .pkmn-card-info p,
 .pkmn-card .pkmn-card-info a {
-  padding-right: 5px;
-  font-weight: 700;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
           flex: 2;
+
+  padding-right: 5px;
+
+  font-weight: 700;
+
+  -webkit-flex: 2;
+      -ms-flex: 2;
 }
 .pkmn-card .pkmn-card-info a {
-  color: #000;
   text-decoration: none;
+
+  color: #000;
 }
 .pkmn-card .pkmn-card-info a:hover {
   text-decoration: underline;
 }
 .pkmn-card .catch-info {
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
           align-items: baseline;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
           justify-content: space-between;
 }
 .pkmn-card .catch-info span {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
           flex: 1;
-  font-size: .8em;
+
   margin-right: 5px;
+
+  font-size: 0.8em;
+
+  -webkit-flex: 1;
+      -ms-flex: 1;
 }
 .pkmn-card .catch-info button {
   margin-right: 5px;
 }
-#pokemon_route_info h2 {
+.pokemon_route_info h2 {
   margin: 0 5px;
   padding-top: 7px;
+
   text-align: center;
 }
 /* UTILITY */
 .error {
-  font-weight: 700;
-  text-align: center;
   margin: 0;
+
+  text-align: center;
+
+  font-weight: 700;
 }
 .type-icon {
   width: 65px;
 }
 .weak {
-  background-color: #ff4d4d;
   color: #fff;
+  background-color: #ff4d4d;
 }
 .super-effective {
-  background-color: #00b33c;
   color: #fff;
+  background-color: #00b33c;
 }
 /*========== Sprites ===========*/
 /*Base*/
 .sprites {
-  width: 32px;
-  height: 32px;
-  max-width: none;
-  vertical-align: middle;
   display: inline-block;
+
+  width: 32px;
+  max-width: none;
+  height: 32px;
+
+  vertical-align: middle;
+
   background: transparent none no-repeat 32px 32px;
   background-image: url("../images/sprites.png");
 }
@@ -533,7 +590,7 @@ body {
   background-position: -480px -5px;
 }
 .sprites.Pidgeotto {
-  background-position: 0px -36px;
+  background-position: 0 -36px;
 }
 .sprites.Pidgeot {
   background-position: -32px -36px;
@@ -629,7 +686,7 @@ body {
   background-position: -480px -68px;
 }
 .sprites.Venomoth {
-  background-position: 0px -101px;
+  background-position: 0 -101px;
 }
 .sprites.Diglett {
   background-position: -32px -100px;
@@ -677,7 +734,7 @@ body {
   background-position: -478px -100px;
 }
 .sprites.Alakazam {
-  background-position: 0px -133px;
+  background-position: 0 -133px;
 }
 .sprites.Machop {
   background-position: -32px -133px;
@@ -773,7 +830,7 @@ body {
   background-position: -480px -165px;
 }
 .sprites.Hypno {
-  background-position: 0px -196px;
+  background-position: 0 -196px;
 }
 .sprites.Krabby {
   background-position: -32px -197px;
@@ -821,7 +878,7 @@ body {
   background-position: -478px -197px;
 }
 .sprites.Chansey {
-  background-position: 0px -228px;
+  background-position: 0 -228px;
 }
 .sprites.Tangela {
   background-position: -32px -228px;
@@ -966,7 +1023,7 @@ body {
   background-position: -480px -292px;
 }
 .sprites.Sentret {
-  background-position: 0px -324px;
+  background-position: 0 -324px;
 }
 .sprites.Furret {
   background-position: -32px -324px;
@@ -1014,7 +1071,7 @@ body {
   background-position: -480px -324px;
 }
 .sprites.Natu {
-  background-position: 0px -356px;
+  background-position: 0 -356px;
 }
 .sprites.Xatu {
   background-position: -32px -356px;
@@ -1062,7 +1119,7 @@ body {
   background-position: -480px -356px;
 }
 .sprites.Yanma {
-  background-position: 0px -388px;
+  background-position: 0 -388px;
 }
 .sprites.Wooper {
   background-position: -32px -388px;
@@ -1110,7 +1167,7 @@ body {
   background-position: -480px -388px;
 }
 .sprites.Snubbull {
-  background-position: 0px -422px;
+  background-position: 0 -422px;
 }
 .sprites.Granbull {
   background-position: -33px -421px;
@@ -1158,7 +1215,7 @@ body {
   background-position: -480px -420px;
 }
 .sprites.Delibird {
-  background-position: 0px -452px;
+  background-position: 0 -452px;
 }
 .sprites.Mantine {
   background-position: -32px -452px;
@@ -1206,7 +1263,7 @@ body {
   background-position: -479px -452px;
 }
 .sprites.Miltank {
-  background-position: 0px -484px;
+  background-position: 0 -484px;
 }
 .sprites.Blissey {
   background-position: -34px -483px;
@@ -1255,7 +1312,7 @@ body {
   background-position: -479px -484px;
 }
 .sprites.Blaziken {
-  background-position: 0px -517px;
+  background-position: 0 -517px;
 }
 .sprites.Mudkip {
   background-position: -32px -517px;
@@ -1303,7 +1360,7 @@ body {
   background-position: -480px -517px;
 }
 .sprites.Seedot {
-  background-position: 0px -548px;
+  background-position: 0 -548px;
 }
 .sprites.Nuzleaf {
   background-position: -32px -548px;
@@ -1351,7 +1408,7 @@ body {
   background-position: -480px -549px;
 }
 .sprites.Slaking {
-  background-position: 0px -581px;
+  background-position: 0 -581px;
 }
 .sprites.Nincada {
   background-position: -32px -580px;
@@ -1399,7 +1456,7 @@ body {
   background-position: -480px -579px;
 }
 .sprites.Lairon {
-  background-position: 0px -614px;
+  background-position: 0 -614px;
 }
 .sprites.Aggron {
   background-position: -34px -613px;
@@ -1435,7 +1492,7 @@ body {
   background-position: -479px -614px;
 }
 .sprites.Wailord {
-  background-position: 0px -645px;
+  background-position: 0 -645px;
 }
 .sprites.Numel {
   background-position: -32px -645px;
@@ -1483,7 +1540,7 @@ body {
   background-position: -478px -645px;
 }
 .sprites.Lunatone {
-  background-position: 0px -677px;
+  background-position: 0 -677px;
 }
 .sprites.Solrock {
   background-position: -33px -677px;
@@ -1552,7 +1609,7 @@ body {
   background-position: -447px -674px;
 }
 .sprites.Shuppet {
-  background-position: 0px -708px;
+  background-position: 0 -708px;
 }
 .sprites.Banette {
   background-position: -31px -707px;
@@ -1594,7 +1651,7 @@ body {
   background-position: -478px -707px;
 }
 .sprites.Relicanth {
-  background-position: 0px -741px;
+  background-position: 0 -741px;
 }
 .sprites.Bagon {
   background-position: -66px -740px;
@@ -1639,7 +1696,7 @@ body {
   background-position: -480px -740px;
 }
 .sprites.Jirachi {
-  background-position: 0px -773px;
+  background-position: 0 -773px;
 }
 .sprites.Deoxys {
   background-position: -32px -772px;
@@ -1679,7 +1736,7 @@ body {
   background-position: -480px -772px;
 }
 .sprites.Staraptor {
-  background-position: 0px -805px;
+  background-position: 0 -805px;
 }
 .sprites.Bidoof {
   background-position: -32px -805px;
@@ -1769,7 +1826,7 @@ body {
   background-position: -478px -836px;
 }
 .sprites.Lopunny {
-  background-position: 0px -869px;
+  background-position: 0 -869px;
 }
 .sprites.Mismagius {
   background-position: -32px -868px;
@@ -1817,7 +1874,7 @@ body {
   background-position: -480px -867px;
 }
 .sprites.Gabite {
-  background-position: 0px -903px;
+  background-position: 0 -903px;
 }
 .sprites.Garchomp {
   background-position: -30px -901px;
@@ -1865,7 +1922,7 @@ body {
   background-position: -480px -900px;
 }
 .sprites.Abomasnow {
-  background-position: 0px -933px;
+  background-position: 0 -933px;
 }
 .sprites.Weavile {
   background-position: -34px -933px;
@@ -1913,7 +1970,7 @@ body {
   background-position: -480px -931px;
 }
 .sprites.Probopass {
-  background-position: 0px -965px;
+  background-position: 0 -965px;
 }
 .sprites.Dusknoir {
   background-position: -34px -963px;
@@ -1946,7 +2003,7 @@ body {
   background-position: -480px -964px;
 }
 .sprites.Giratina {
-  background-position: 0px -995px;
+  background-position: 0 -995px;
 }
 .sprites.Cresselia {
   background-position: -63px -997px;
@@ -1989,7 +2046,7 @@ body {
   background-position: -480px -996px;
 }
 .sprites.Oshawott {
-  background-position: 0px -1028px;
+  background-position: 0 -1028px;
 }
 .sprites.Dewott {
   background-position: -31px -1029px;
@@ -2037,7 +2094,7 @@ body {
   background-position: -480px -1029px;
 }
 .sprites.Munna {
-  background-position: 0px -1060px;
+  background-position: 0 -1060px;
 }
 .sprites.Musharna {
   background-position: -33px -1058px;
@@ -2085,7 +2142,7 @@ body {
   background-position: -480px -1062px;
 }
 .sprites.Gurdurr {
-  background-position: 0px -1091px;
+  background-position: 0 -1091px;
 }
 .sprites.Conkeldurr {
   background-position: -32px -1092px;
@@ -2133,7 +2190,7 @@ body {
   background-position: -480px -1092px;
 }
 .sprites.Lilligant {
-  background-position: 0px -1124px;
+  background-position: 0 -1124px;
 }
 .sprites.Basculin {
   background-position: -32px -1124px;
@@ -2178,7 +2235,7 @@ body {
   background-position: -479px -1124px;
 }
 .sprites.Tirtouga {
-  background-position: 0px -1158px;
+  background-position: 0 -1158px;
 }
 .sprites.Carracosta {
   background-position: -32px -1156px;
@@ -2226,7 +2283,7 @@ body {
   background-position: -479px -1155px;
 }
 .sprites.Ducklett {
-  background-position: 0px -1188px;
+  background-position: 0 -1188px;
 }
 .sprites.Swanna {
   background-position: -34px -1189px;
@@ -2274,7 +2331,7 @@ body {
   background-position: -480px -1188px;
 }
 .sprites.Galvantula {
-  background-position: 0px -1222px;
+  background-position: 0 -1222px;
 }
 .sprites.Ferroseed {
   background-position: -32px -1220px;
@@ -2322,7 +2379,7 @@ body {
   background-position: -480px -1221px;
 }
 .sprites.Haxorus {
-  background-position: 0px -1251px;
+  background-position: 0 -1251px;
 }
 .sprites.Cubchoo {
   background-position: -32px -1251px;
@@ -2370,7 +2427,7 @@ body {
   background-position: -480px -1252px;
 }
 .sprites.Braviary {
-  background-position: 0px -1285px;
+  background-position: 0 -1285px;
 }
 .sprites.Vullaby {
   background-position: -33px -1283px;
@@ -2446,7 +2503,7 @@ body {
   background-position: -480px -1311px;
 }
 .sprites.Fennekin {
-  background-position: 0px -1346px;
+  background-position: 0 -1346px;
 }
 .sprites.Braixen {
   background-position: -32px -1344px;
@@ -2494,7 +2551,7 @@ body {
   background-position: -480px -1341px;
 }
 .sprites.Flabebe {
-  background-position: 0px -1376px;
+  background-position: 0 -1376px;
 }
 .sprites.Floette {
   background-position: -32px -1376px;
@@ -2542,7 +2599,7 @@ body {
   background-position: -480px -1376px;
 }
 .sprites.Slurpuff {
-  background-position: 0px -1407px;
+  background-position: 0 -1407px;
 }
 .sprites.Inkay {
   background-position: -33px -1408px;
@@ -2590,7 +2647,7 @@ body {
   background-position: -478px -1407px;
 }
 .sprites.Hawlucha {
-  background-position: 0px -1442px;
+  background-position: 0 -1442px;
 }
 .sprites.Dedenne {
   background-position: -32px -1440px;
@@ -2638,7 +2695,7 @@ body {
   background-position: -480px -1439px;
 }
 .sprites.Yveltal {
-  background-position: 0px -1472px;
+  background-position: 0 -1472px;
 }
 .sprites.Zygarde {
   background-position: -31px -1472px;
@@ -2653,11 +2710,14 @@ body {
   background-position: -196px -1470px;
 }
 .type-icon {
-  width: 53px;
-  height: 20px;
-  max-width: none;
-  vertical-align: middle;
   display: inline-block;
+
+  width: 53px;
+  max-width: none;
+  height: 20px;
+
+  vertical-align: middle;
+
   background: transparent none no-repeat 53px 19px;
   background-image: url("../images/move_icons.png");
 }
@@ -2715,928 +2775,4 @@ body {
 .type-icon.Water {
   background-position: -138px -173px;
 }
-.container.XVersion {
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #035c9c 0%, #035c94 49%, #041c3c 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #035c9c 0%, #035c94 49%, #041c3c 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#035c9c', endColorstr='#041c3c', GradientType=0);
-  /* IE6-9 */
-}
-.container.YVersion {
-  background: #8b273b;
-  /* Old browsers */
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #8b273b 9%, #ab1f43 50%, #ab1f43 51%, #431b1c 96%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #8b273b 9%, #ab1f43 50%, #ab1f43 51%, #431b1c 96%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8b273b', endColorstr='#431b1c', GradientType=0);
-  /* IE6-9 */
-}
-.container.XVersion,
-.container.YVersion {
-  color: #e6e6e6;
-}
-.version {
-  -ms-flex-item-align: center;
-      align-self: center;
-  padding: 0px 10px 10px;
-  font-size: .9em;
-}
-.version h1,
-.version h2 {
-  text-align: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.version img {
-  width: 45%;
-}
-.version .kalos,
-.version .hoenn {
-  text-align: center;
-  margin-bottom: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.version .kalos strong,
-.version .hoenn strong {
-  font-size: 1.5em;
-  margin: 5px;
-}
-.version .kalos button,
-.version .hoenn button {
-  box-shadow: inset 0px 1px 0px 0px #cf866c;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e6000f), color-stop(1, #b3000c));
-  background: -webkit-linear-gradient(top, #e6000f 5%, #b3000c 100%);
-  background: linear-gradient(to bottom, #e6000f 5%, #b3000c 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6000f', endColorstr='#b3000c', GradientType=0);
-  background-color: #e6000f;
-  border: 1px solid #000;
-  cursor: pointer;
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 4px;
-}
-.version .kalos button#version_X,
-.version .hoenn button#version_X {
-  background-image: url(../images/pokemon-x-title-sm.png);
-  width: 45px;
-  height: 45px;
-}
-.version .kalos button#version_Y,
-.version .hoenn button#version_Y {
-  background-image: url(../images/pokemon-y-title-sm.png);
-  width: 45px;
-  height: 45px;
-}
-.version .kalos button:hover,
-.version .hoenn button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b3000c), color-stop(1, #e6000f));
-  background: -webkit-linear-gradient(top, #b3000c 5%, #e6000f 100%);
-  background: linear-gradient(to bottom, #b3000c 5%, #e6000f 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3000c', endColorstr='#e6000f', GradientType=0);
-  background-color: #b3000c;
-}
-.version .kalos button:active,
-.version .hoenn button:active {
-  position: relative;
-  top: 1px;
-}
-.version .pokedexIcon {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 18px;
-  width: 18px;
-  background: url(../images/pokedex.png) no-repeat;
-  background-size: cover;
-}
-.version #tech_header {
-  width: 36%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.version span {
-  margin-bottom: 15px;
-}
-.version .arrowIcon {
-  height: 18px;
-  width: 18px;
-  background: url(../images/arrow.png);
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  background-size: cover;
-  vertical-align: middle;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  margin-left: 3px;
-  vertical-align: bottom;
-}
-.locContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 5px;
-}
-.locContainer div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-.locTitle {
-  padding-left: 5px;
-}
-.locTitle .locLabel {
-  margin-left: 5px;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.locTitle .locLabel .locTitleCon {
-  -webkit-box-flex: initial;
-      -ms-flex: initial;
-          flex: initial;
-}
-.locTitle .locSign {
-  background: url(../images/route_sign.png) no-repeat;
-  height: 19px;
-  width: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-right: 5px;
-}
-.locTitle .locTitleText {
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-.locDestination {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-preferred-size: 95px;
-      flex-basis: 95px;
-  margin-right: 5px;
-}
-.locDestination span {
-  margin: 0 0 5px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.locDestination span .previousArrow,
-.locDestination span .nextArrow {
-  background: url(../images/arrow.png);
-  height: 15px;
-  width: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-size: cover;
-}
-.locDestination span .previousArrow {
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-}
-.locDestination span .nextArrow {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-.locDestination .locPrevious,
-.locDestination .locNext {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.locDestination .locPrevious button,
-.locDestination .locNext button {
-  margin-bottom: 8px;
-  border-radius: 8px;
-  font-size: .9em;
-  padding: 5px;
-  box-shadow: inset 0px 1px 0px 0px #cf866c;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e6000f), color-stop(1, #b3000c));
-  background: -webkit-linear-gradient(top, #e6000f 5%, #b3000c 100%);
-  background: linear-gradient(to bottom, #e6000f 5%, #b3000c 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6000f', endColorstr='#b3000c', GradientType=0);
-  background-color: #e6000f;
-  border: 1px solid #000;
-  cursor: pointer;
-}
-.locDestination .locPrevious button:hover,
-.locDestination .locNext button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b3000c), color-stop(1, #e6000f));
-  background: -webkit-linear-gradient(top, #b3000c 5%, #e6000f 100%);
-  background: linear-gradient(to bottom, #b3000c 5%, #e6000f 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3000c', endColorstr='#e6000f', GradientType=0);
-  background-color: #b3000c;
-}
-.locDestination .locPrevious button:active,
-.locDestination .locNext button:active {
-  position: relative;
-  top: 1px;
-}
-.locDestination .locPrevious {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-.locDestination .locNext {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.locHeader {
-  border: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 12px;
-  min-height: 109px;
-}
-.locHeader .locEnc {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 5px;
-  margin-left: 5px;
-}
-.locHeader .locEnc h4 {
-  margin-top: 0;
-  -ms-flex-item-align: center;
-      align-self: center;
-  margin-bottom: 10px;
-  text-decoration: underline;
-}
-.locEncDropdown {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font-size: .9em;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.locEncDropdown button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  border-radius: 4px;
-  padding: 5px;
-  margin-bottom: 5px;
-  box-shadow: inset 0px 1px 0px 0px #cf866c;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e6000f), color-stop(1, #b3000c));
-  background: -webkit-linear-gradient(top, #e6000f 5%, #b3000c 100%);
-  background: linear-gradient(to bottom, #e6000f 5%, #b3000c 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6000f', endColorstr='#b3000c', GradientType=0);
-  background-color: #e6000f;
-  border: 1px solid #000;
-  cursor: pointer;
-}
-.locEncDropdown button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b3000c), color-stop(1, #e6000f));
-  background: -webkit-linear-gradient(top, #b3000c 5%, #e6000f 100%);
-  background: linear-gradient(to bottom, #b3000c 5%, #e6000f 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3000c', endColorstr='#e6000f', GradientType=0);
-  background-color: #b3000c;
-}
-.locEncDropdown button:active {
-  position: relative;
-  top: 1px;
-}
-.locEncDropdown .encIcon {
-  max-width: none;
-  display: inline-block;
-  background-repeat: no-repeat;
-  height: 20px;
-  width: 25px;
-  margin-right: 5px;
-}
-.locEncDropdown .encIcon.walkIcon {
-  background-image: url(../images/icons/walking.png);
-}
-.locEncDropdown .encIcon.flowerIcon {
-  background-image: url(../images/icons/flowers.png);
-}
-.locEncDropdown .encIcon.rodIcon {
-  background-image: url(../images/icons/fishing.png);
-}
-.locEncDropdown .encIcon.surfIcon {
-  background-image: url(../images/icons/surfing.png);
-}
-.locEncDropdown .encIcon.giftIcon {
-  background-image: url(../images/icons/gift.png);
-}
-.locEncDropdown .encIcon.staticIcon {
-  background-image: url(../images/icons/static.png);
-}
-.locEncDropdown span {
-  display: inline;
-  text-decoration: none;
-}
-.locBody {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.locBody .locInfoTop {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  font-size: 0.8em;
-}
-.locBody .locInfoTop div div {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #000;
-  border-radius: 7px;
-  border: 1px solid #fff;
-  padding: 5px;
-  margin-right: 2px;
-  max-width: 66px;
-}
-.locBody .locInfoTop div div:active {
-  background: white;
-  color: black;
-}
-.poketrackerTitle {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-.poketrackerTitle img {
-  height: 30px;
-}
-.versionLogo {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-.versionLogo .logo {
-  height: 30px;
-  display: block;
-}
-@media (max-width: 560px) {
-  .versionLogo .logo {
-    height: 50px;
-  }
-}
-.versionLogo .logo.y-logo {
-  background-image: url(/images/pokemon-y-title-sm.png);
-}
-.versionLogo .logo.x-logo {
-  background-image: url(/images/pokemon-x-title-sm.png);
-}
-.changeGameBtn button {
-  box-shadow: inset 0px 1px 0px 0px #cf866c;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e6000f), color-stop(1, #b3000c));
-  background: -webkit-linear-gradient(top, #e6000f 5%, #b3000c 100%);
-  background: linear-gradient(to bottom, #e6000f 5%, #b3000c 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6000f', endColorstr='#b3000c', GradientType=0);
-  background-color: #e6000f;
-  border: 1px solid #000;
-  cursor: pointer;
-  padding: 5px;
-}
-.mapTab {
-  margin-right: 5px;
-  position: relative;
-  max-width: 102px;
-  height: 170px;
-}
-.zoom {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  z-index: 100;
-  bottom: 2px;
-  right: 2px;
-}
-.zoom span {
-  padding-right: 5px;
-}
-button.zoomBtn {
-  display: block;
-  height: 30px;
-  width: 30px;
-  border-radius: 4px;
-  box-shadow: inset 0px 1px 0px 0px #cf866c;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e6000f), color-stop(1, #b3000c));
-  background: -webkit-linear-gradient(top, #e6000f 5%, #b3000c 100%);
-  background: linear-gradient(to bottom, #e6000f 5%, #b3000c 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6000f', endColorstr='#b3000c', GradientType=0);
-  background-color: #e6000f;
-  border: 1px solid #000;
-  cursor: pointer;
-  background-image: url(../images/zoom.png);
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.75;
-}
-button.zoomBtn:active {
-  bottom: 3px;
-}
-#map_overlay {
-  display: none;
-  z-index: 1000;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  text-align: center;
-  background-color: rgba(64, 64, 64, 0.9);
-}
-#loc_img_lw {
-  margin: 25px auto 5px;
-  width: 280px;
-  height: 184px;
-  background-image: url(../images/kalos.png);
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  border: 1px solid white;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-#loc_img_lw .locationMarker {
-  background-image: url(../images/marker.png);
-  background-repeat: no-repeat;
-  background-position: 130px 80px;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-#loc_img_lw .locationMarker#Vaniville_Town {
-  background-position: 166px 134px;
-}
-#loc_img_lw .locationMarker#Route_1 {
-  background-position: 134px 139px;
-  -webkit-transform: rotate(-28deg);
-          transform: rotate(-28deg);
-}
-#loc_img_lw .locationMarker#Aquacorde_Town {
-  background-position: 166px 113px;
-}
-#loc_img_lw .locationMarker#Route_2 {
-  background-position: 141px 122px;
-  -webkit-transform: rotate(-31deg);
-          transform: rotate(-31deg);
-}
-#loc_img_lw .locationMarker#Santalune_Forest {
-  background-position: 79px 34px;
-  -webkit-transform: rotate(170deg);
-          transform: rotate(170deg);
-}
-#loc_img_lw .locationMarker#Route_3 {
-  background-position: 101px 108px;
-  -webkit-transform: rotate(271deg);
-          transform: rotate(271deg);
-}
-#loc_img_lw .locationMarker#Santalune_City {
-  background-position: 143px 41px;
-  -webkit-transform: rotate(82deg);
-          transform: rotate(82deg);
-}
-#loc_img_lw .locationMarker#Route_22 {
-  background-position: 170px 78px;
-}
-#loc_img_lw .locationMarker#Route_4 {
-  background-position: 122px 47px;
-  -webkit-transform: rotate(82deg);
-          transform: rotate(82deg);
-}
-#loc_img_lw .locationMarker#Luminose_City {
-  background-position: 126px 45px;
-}
-#loc_img_lw .locationMarker#Route_5 {
-  background-position: 108px 67px;
-}
-#loc_img_lw .locationMarker#Camphrier_Town {
-  background-position: 110px 95px;
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
-}
-#loc_img_lw .locationMarker#Route_6 {
-  background-position: 113px 110px;
-  -webkit-transform: rotate(78deg);
-          transform: rotate(78deg);
-}
-#loc_img_lw .locationMarker#Parfum_Palace {
-  background-position: 62px 65px;
-  -webkit-transform: rotate(6deg);
-          transform: rotate(6deg);
-}
-#loc_img_lw .locationMarker#Route_7 {
-  background-position: 66px 81px;
-}
-#loc_img_lw .locationMarker#Connecting_Cave {
-  background-position: 61px 119px;
-  -webkit-transform: rotate(32deg);
-          transform: rotate(32deg);
-}
-#loc_img_lw .locationMarker#Route_8 {
-  background-position: 62px 0px;
-  -webkit-transform: rotate(292deg);
-          transform: rotate(292deg);
-}
-#loc_img_lw .locationMarker#Ambrette_Town {
-  background-position: 126px 158px;
-  -webkit-transform: rotate(62deg);
-          transform: rotate(62deg);
-}
-#loc_img_lw .locationMarker#Route_9 {
-  background-position: 136px 141px;
-  -webkit-transform: rotate(62deg);
-          transform: rotate(62deg);
-}
-#loc_img_lw .locationMarker#Glittering_Cave {
-  background-position: 144px 124px;
-  -webkit-transform: rotate(62deg);
-          transform: rotate(62deg);
-}
-#loc_img_lw .locationMarker#Cyllage_City {
-  background-position: 85px 152px;
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
-}
-#loc_img_lw .locationMarker#Route_10 {
-  background-position: 74px 158px;
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
-}
-#loc_img_lw .locationMarker#Geosenge_Town,
-#loc_img_lw .locationMarker#Team_Flare_HQ {
-  background-position: 5px 63px;
-}
-#loc_img_lw .locationMarker#Route_11 {
-  background-position: 29px 7px;
-  -webkit-transform: rotate(-27deg);
-          transform: rotate(-27deg);
-}
-#loc_img_lw .locationMarker#Reflection_Cave {
-  background-position: 36px 3px;
-  -webkit-transform: rotate(-27deg);
-          transform: rotate(-27deg);
-}
-#loc_img_lw .locationMarker#Shalour_City {
-  background-position: 20px 65px;
-  -webkit-transform: rotate(13deg);
-          transform: rotate(13deg);
-}
-#loc_img_lw .locationMarker#Route_12 {
-  background-position: 38px 56px;
-  -webkit-transform: rotate(13deg);
-          transform: rotate(13deg);
-}
-#loc_img_lw .locationMarker#Coumarine_City {
-  background-position: 70px 96px;
-  -webkit-transform: rotate(70deg);
-          transform: rotate(70deg);
-}
-#loc_img_lw .locationMarker#Azure_Bay {
-  background-position: 56px 103px;
-  -webkit-transform: rotate(70deg);
-          transform: rotate(70deg);
-}
-#loc_img_lw .locationMarker#Sea_Spirits_Den {
-  background-position: 52px 10px;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-#loc_img_lw .locationMarker#Route_13 {
-  background-position: 82px 72px;
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
-}
-#loc_img_lw .locationMarker#Route_14 {
-  background-position: 143px 22px;
-  -webkit-transform: rotate(-25deg);
-          transform: rotate(-25deg);
-}
-#loc_img_lw .locationMarker#Laverre_City {
-  background-position: 153px 5px;
-  -webkit-transform: rotate(-25deg);
-          transform: rotate(-25deg);
-}
-#loc_img_lw .locationMarker#Route_15 {
-  background-position: 83px 19px;
-  -webkit-transform: rotate(65deg);
-          transform: rotate(65deg);
-}
-#loc_img_lw .locationMarker#Lost_Hotel {
-  background-position: 91px 26px;
-  -webkit-transform: rotate(65deg);
-          transform: rotate(65deg);
-}
-#loc_img_lw .locationMarker#Route_16 {
-  background-position: 153px 38px;
-}
-#loc_img_lw .locationMarker#Dendemille_Town {
-  background-position: 143px 128px;
-  -webkit-transform: rotate(255deg);
-          transform: rotate(255deg);
-}
-#loc_img_lw .locationMarker#Frost_Cavern {
-  background-position: 183px 18px;
-}
-#loc_img_lw .locationMarker#Route_17 {
-  background-position: 179px 2px;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
-}
-#loc_img_lw .locationMarker#Anistar_City {
-  background-position: 222px 29px;
-  -webkit-transform: rotate(370deg);
-          transform: rotate(370deg);
-}
-#loc_img_lw .locationMarker#Route_18 {
-  background-position: 211px 0px;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
-}
-#loc_img_lw .locationMarker#Terminus_Cave {
-  background-position: 245px 24px;
-  -webkit-transform: rotate(10deg);
-          transform: rotate(10deg);
-}
-#loc_img_lw .locationMarker#Couriway_Town {
-  background-position: 19px 136px;
-  -webkit-transform: rotate(-150deg);
-          transform: rotate(-150deg);
-}
-#loc_img_lw .locationMarker#Route_19 {
-  background-position: 230px 70px;
-}
-#loc_img_lw .locationMarker#Snowbelle_City {
-  background-position: 218px 78px;
-}
-#loc_img_lw .locationMarker#Route_20 {
-  background-position: 213px 100px;
-}
-#loc_img_lw .locationMarker#Pokemon_Village {
-  background-position: 207px 115px;
-}
-#loc_img_lw .locationMarker#Route_21 {
-  background-position: 204px 78px;
-}
-#loc_img_lw .locationMarker#Victory_Road {
-  background-position: 183px 92px;
-  -webkit-transform: rotate(-20deg);
-          transform: rotate(-20deg);
-}
-#loc_img_lw .locationMarker#Pokemon_League {
-  background-position: 187px 57px;
-}
-#loc_img {
-  background-size: 1000%;
-  background-position: -360px -270px;
-  background-image: url(../images/kalos.png);
-  border: 1px solid #fff;
-  height: 133px;
-  overflow: hidden;
-}
-#loc_img.Vaniville_Town,
-#loc_img.Route_1 {
-  background-position: -610px -470px;
-}
-#loc_img.Aquacorde_Town {
-  background-position: -607px -430px;
-}
-#loc_img.Route_2 {
-  background-position: -587px -350px;
-}
-#loc_img.Santalune_Forest {
-  background-position: -617px -360px;
-}
-#loc_img.Route_3 {
-  background-position: -587px -330px;
-}
-#loc_img.Santalune_City {
-  background-position: -557px -310px;
-}
-#loc_img.Route_4 {
-  background-position: -537px -240px;
-}
-#loc_img.Luminose_City {
-  background-position: -466px -173px;
-}
-#loc_img.Route_5 {
-  background-position: -396px -253px;
-}
-#loc_img.Camphrier_Town {
-  background-position: -352px -302px;
-}
-#loc_img.Route_6 {
-  background-position: -300px -260px;
-}
-#loc_img.Parfum_Palace {
-  background-position: -245px -220px;
-}
-#loc_img.Route_7 {
-  background-position: -260px -300px;
-}
-#loc_img.Connecting_Cave {
-  background-position: -165px -300px;
-}
-#loc_img.Route_8 {
-  background-position: -141px -370px;
-}
-#loc_img.Ambrette_Town {
-  background-position: -182px -417px;
-}
-#loc_img.Route_9 {
-  background-position: -242px -421px;
-}
-#loc_img.Glittering_Cave {
-  background-position: -314px -421px;
-}
-#loc_img.Cyllage_City {
-  background-position: -118px -298px;
-}
-#loc_img.Route_10 {
-  background-position: -78px -258px;
-}
-#loc_img.Geosenge_Town {
-  background-position: -35px -238px;
-}
-#loc_img.Route_11 {
-  background-position: -52px -212px;
-}
-#loc_img.Reflection_Cave {
-  background-position: -68px -186px;
-}
-#loc_img.Shalour_City {
-  background-position: -97px -163px;
-}
-#loc_img.Route_12 {
-  background-position: -207px -134px;
-}
-#loc_img.Coumarine_City {
-  background-position: -298px -121px;
-}
-#loc_img.Azure_Bay {
-  background-position: -250px -80px;
-}
-#loc_img.Sea_Spirits_Den {
-  background-position: -194px -46px;
-}
-#loc_img.Route_13 {
-  background-position: -372px -140px;
-}
-#loc_img.Route_14 {
-  background-position: -455px -80px;
-}
-.locationMarkerSm {
-  background-image: url(../images/marker-sm.png);
-  background-repeat: no-repeat;
-  background-position: 20px 30px;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-.locationMarkerSm.Vaniville_Town {
-  background-position: 12px 46px;
-}
-.locationMarkerSm.Route_1 {
-  background-position: 17px 14px;
-  -webkit-transform: rotate(-20deg);
-          transform: rotate(-20deg);
-}
-.locationMarkerSm.Aquacorde_Town {
-  background-position: 18px 14px;
-}
-.locationMarkerSm.Route_2 {
-  background-position: 21px 64px;
-  -webkit-transform: rotate(-20deg);
-          transform: rotate(-20deg);
-}
-.locationMarkerSm.Santalune_Forest {
-  background-position: 19px 28px;
-  -webkit-transform: rotate(170deg);
-          transform: rotate(170deg);
-}
-.locationMarkerSm.Route_3 {
-  background-position: 14px 23px;
-  -webkit-transform: rotate(271deg);
-          transform: rotate(271deg);
-}
-.locationMarkerSm.Santalune_City {
-  background-position: 6px 13px;
-  -webkit-transform: rotate(82deg);
-          transform: rotate(82deg);
-}
-.locationMarkerSm.Route_4 {
-  background-position: 26px 37px;
-  -webkit-transform: rotate(80deg);
-          transform: rotate(80deg);
-}
-.locationMarkerSm.Luminose_City {
-  background-position: 16px 27px;
-}
-.locationMarkerSm.Route_5 {
-  background-position: 24px 24px;
-}
-.locationMarkerSm.Camphrier_Town {
-  background-position: 21px 23px;
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
-}
-.locationMarkerSm.Route_6 {
-  background-position: 20px 26px;
-  -webkit-transform: rotate(70deg);
-          transform: rotate(70deg);
-}
-.locationMarkerSm.Parfum_Palace {
-  background-position: 10px 26px;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-.locationMarkerSm.Connecting_Cave {
-  background-position: 23px 27px;
-  -webkit-transform: rotate(32deg);
-          transform: rotate(32deg);
-}
-.locationMarkerSm.Route_8 {
-  background-position: 20px 28px;
-  -webkit-transform: rotate(292deg);
-          transform: rotate(292deg);
-}
-.locationMarkerSm.Ambrette_Town,
-.locationMarkerSm.Route_9,
-.locationMarkerSm.Glittering_Cave {
-  -webkit-transform: rotate(70deg);
-          transform: rotate(70deg);
-}
-.locationMarkerSm.Route_10 {
-  background-position: 29px 34px;
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
-}
-.locationMarkerSm.Shalour_City {
-  -webkit-transform: rotate(13deg);
-          transform: rotate(13deg);
-}
-.locationMarkerSm.Coumarine_City,
-.locationMarkerSm.Azure_Bay {
-  -webkit-transform: rotate(70deg);
-          transform: rotate(70deg);
-}
-.locationMarkerSm.Route_13 {
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
-}
-.locationMarkerSm.Route_14 {
-  -webkit-transform: rotate(335deg);
-          transform: rotate(335deg);
-}
+/*# sourceMappingURL=poke_tracker.css.map */

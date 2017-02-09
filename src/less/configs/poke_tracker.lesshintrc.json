@@ -1,0 +1,10 @@
+{
+    "borderZero" : "zero",
+    "finalNewline" : "valid",
+    "hexLength" : "short",
+    "maxCharPerLine" : "150",
+    "propertyOrdering" : false,
+    "spaceBeforeBrace" : "one_space",
+    "trailingWhitespace" : true,
+    "zeroUnit" : "no_unit"
+}

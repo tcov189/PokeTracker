@@ -175,8 +175,8 @@ function generateHTML (){
     }
     
     //Checks to see if there is anything in the div, and if so deletes it
-    if ($("#pokemon_route_info").html().length > 0){
-        $("#pokemon_route_info").empty();
+    if ($(".pokemon_route_info").html().length > 0){
+        $(".pokemon_route_info").empty();
     }
     if($('#loc_info_top').html().length > 0){
         $('#loc_info_top').empty();
@@ -234,8 +234,8 @@ function selectChangeRoute (){
 //Display Route/Pokemon info
 function displayPokemonCards(enctype){
     //Checks to see if there is anything in the div, and if so deletes it
-    if ($("#pokemon_route_info").html().length > 0){
-        $("#pokemon_route_info").empty();
+    if ($(".pokemon_route_info").html().length > 0){
+        $(".pokemon_route_info").empty();
     }    
     
     //Remove other encType selections
@@ -295,7 +295,7 @@ function displayPokemonCards(enctype){
         }              
     
         if (locEncType == 'None'){                 
-            $('#pokemon_route_info').append('<p class="error">There are no encounters of this type.');
+            $('.pokemon_route_info').append('<p class="error">There are no encounters of this type.');
         } else {
 
 
@@ -303,7 +303,7 @@ function displayPokemonCards(enctype){
         var counter = 0;
 
         //Start walking div
-        $('#pokemon_route_info').append('<div id="' +enctype+ '"><h2>' + encTypeHeader +'</h2></div>');     
+        $('.pokemon_route_info').append('<div id="' +enctype+ '"><h2>' + encTypeHeader +'</h2></div>');     
 
 
         //Loop through each available Pokemon with walk method

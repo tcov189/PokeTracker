@@ -102,7 +102,7 @@ module.exports = function(grunt) {
         //= Concat - Concatenate JS files | js_concat
         concat: {            
             source: {
-                src     : ['src/js/pkmn_evs.js', 'src/js/ev_calculation.js', 'src/js/action.js', '!<%= jsPath %><%= pkg.name %>.js'],
+                src     : ['<%= jsPath %><%= pkg.name %>.js', '!<%= jsPath %><%= pkg.name %>.js'],
                 dest    : '<%= distScriptsPath %><%= pkg.name %>.js'
                 
             }
