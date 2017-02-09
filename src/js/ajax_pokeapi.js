@@ -16,8 +16,9 @@ function arrayUnique(array) {
     var a = array.concat();
     for(var i=0; i<a.length; ++i) {
         for(var j=i+1; j<a.length; ++j) {
-            if(a[i] === a[j])
+            if(a[i] === a[j]) {
                 a.splice(j--, 1);
+            }
         }
     }
 
@@ -36,12 +37,12 @@ function sortByKey(array, key) {
 Array.prototype.getUnique = function(){
     var uniques = [];
     for(var i = 0, l = this.length; i < l; ++i){
-        if(this.lastIndexOf(this[i]) == this.indexOf(this[i])) {
+        if(this.lastIndexOf(this[i]) === this.indexOf(this[i])) {
             uniques.push(this[i]);
         }
     }
     return uniques;
-}
+};
 
 function getData(){    
     
@@ -54,7 +55,7 @@ function getData(){
     
     
     var pkmnData            = JSON.parse(localStorage.getItem('pkmnData-'+ pokemonID));
-    var pkmnDataSpecies     = JSON.parse(localStorage.getItem('pkmnData-'+ pokemonID + '-species'))
+    var pkmnDataSpecies     = JSON.parse(localStorage.getItem('pkmnData-'+ pokemonID + '-species'));
     var pkmnDataEvos        = JSON.parse(localStorage.getItem('pkmnData-'+ pokemonID + '-evos'));
     
     if (!pkmnData){ 
@@ -77,7 +78,7 @@ function getData(){
                 localStorage.setItem('pkmnData-'+ pokemonID + '-species', JSON.stringify(data));
                 pkmnDataSpecies = JSON.parse(localStorage.getItem('pkmnData-'+ pokemonID + '-species'));
             }
-        })
+        });
     }    
     
     if (!pkmnDataEvos) {
@@ -88,7 +89,7 @@ function getData(){
                 localStorage.setItem('pkmnData-'+ pokemonID + '-evos', JSON.stringify(data));
                 pkmnDataEvos = JSON.parse(localStorage.getItem('pkmnData-'+ pokemonID + '-evos'));
             }
-        })
+        });
     }
        
 //Gather and display info            
@@ -104,10 +105,10 @@ function getData(){
 
             //Function to add zeros for mons 001-099
             if (dexnum <= 99){                    
-                function pad (str, max) {
+                var pad = function(str, max) {
                   str = str.toString();
                   return str.length < max ? pad("0" + str, max) : str;
-                }        
+                };   
                 dexnum = pad(dexnum, 3);        
             }
         
@@ -119,8 +120,8 @@ function getData(){
                 //Loop through the types 
                 $.each(types, function(i, val){               
                     typeObj = {};
-                    typeObj["type"] = capitalizeFirstLetter(types[i].type.name);
-                    typeObj["slot"] = types[i].slot;
+                    typeObj.type = capitalizeFirstLetter(types[i].type.name);
+                    typeObj.slot = types[i].slot;
                     typeArr.push(typeObj);                    
                 });            
                     
@@ -150,7 +151,7 @@ function getData(){
                 var nearExact = pK/4.5359237;
                 var lbs = Math.floor(nearExact);
                 var oz = Math.round((nearExact - lbs) * 16);
-                return lbs + "." + oz + " lbs"
+                return lbs + "." + oz + " lbs";
             }            
             
             weight = gToLbs(weight);
@@ -162,9 +163,9 @@ function getData(){
     
             $.each(stats, function(i, val){
                 statsObj = {};
-                statsObj["name"]    = stats[i].stat.name.split('-').join(' ');
-                statsObj["stat"]    = stats[i].base_stat;   
-                statsObj["effort"]  = stats[i].effort;
+                statsObj.name    = stats[i].stat.name.split('-').join(' ');
+                statsObj.stat    = stats[i].base_stat;   
+                statsObj.effort  = stats[i].effort;
                 statsArr.unshift(statsObj);
             });                
         
@@ -187,15 +188,15 @@ function getData(){
 
                         }
                     });
-                };
+                }
                 
                 abilitiesObj            = {};
-                abilitiesObj['name']    = abilities[i].ability.name;
-                abilitiesObj['slot']    = abilities[i].slot;
-                abilitiesObj['isHidden']= abilities[i].is_hidden;
-                abilitiesObj['desc']    = abilityDatai.effect_entries[0].short_effect;                
+                abilitiesObj.name    = abilities[i].ability.name;
+                abilitiesObj.slot    = abilities[i].slot;
+                abilitiesObj.isHidden= abilities[i].is_hidden;
+                abilitiesObj.desc    = abilityDatai.effect_entries[0].short_effect;                
                 abilitiesArr.push(abilitiesObj);                
-            })
+            });
                         
             abilitiesArr = sortByKey(abilitiesArr, 'slot');
     
@@ -204,10 +205,7 @@ function getData(){
     
         //Base Pokemon Chain
         baseEvoChain            =   pkmnDataEvos.chain;
-            baseName            =   capitalizeFirstLetter(baseEvoChain.species.name);            
-            isBaseBaby          =   baseEvoChain.is_baby;            
-    
-            isBaseBaby ? basicOrBaby = 'Baby' : basicOrBaby = 'Basic'
+            baseName            =   capitalizeFirstLetter(baseEvoChain.species.name);
             secondStageEvoChain     =   baseEvoChain.evolves_to;
             hasSecondStage      =   false;
             hasThirdStage       =   false;
@@ -220,14 +218,11 @@ function getData(){
                     case 'level-up':
                         trigger = 'Level ';
                         return trigger;
-                        break;
                     case 'use-item':
                         trigger = '';
                         return trigger;
-                        break;
                     default:
                         return trigger;
-                        break;
                 }                                                
             }
             
@@ -242,10 +237,10 @@ function getData(){
                 
     
             $.each(secondStageEvoChain[0].evolution_details[0], function(i,val){
-                if (i == 'trigger' && val.name == 'trade') {
+                if (i === 'trigger' && val.name === 'trade') {
                     secondStageMethod = 'trade';
                     secondStageCondition = '';
-                } else if (val != null && val != false && i != 'trigger'){                                           
+                } else if (val !== null && val !== false && i !== 'trigger'){                                           
                     secondStageMethod = i;
                     secondStageCondition = val;
                     switch(i) {
@@ -260,10 +255,10 @@ function getData(){
                             break;
                      }
                 }             
-            })                         
-        }            
+            });                         
+        } 
     
-        if (baseEvoChain.evolves_to.length == 2){
+        if (baseEvoChain.evolves_to.length === 2){
                 hasSecondSplitStage = true; 
                 //Second Stage Pokemon Chain
                 secondSplitStageEvoChain     =   baseEvoChain.evolves_to;
@@ -274,10 +269,10 @@ function getData(){
 
 
                 $.each(secondSplitStageEvoChain[1].evolution_details[0], function(i,val){
-                    if (i == 'trigger' && val.name == 'trade') {
+                    if (i === 'trigger' && val.name === 'trade') {
                         secondSplitStageMethod = 'trade';
                         secondSplitStageCondition = '';
-                    } else if (val != null && val != false && i != 'trigger'){                                           
+                    } else if (val !== null && val !== false && i !== 'trigger'){                                           
                         secondSplitStageMethod = i;
                         secondSplitStageCondition = val;
                         switch(i) {
@@ -292,7 +287,7 @@ function getData(){
                                 break;
                          }
                     }             
-                })                         
+                });         
             }            
                     
         if (secondStageEvoChain[0].evolves_to.length >= 1){
@@ -305,10 +300,10 @@ function getData(){
             thirdStageTriggerName   =   formatTriggerName(thirdStageTriggerName);
             
             $.each(thirdStageEvoChain[0].evolution_details[0], function(i,val){
-                if (i == 'trigger' && val.name == 'trade') {
+                if (i === 'trigger' && val.name === 'trade') {
                     thirdStageMethod = 'trade';
                     thirdStageCondition = '';
-                } else if (val != null && val != false && i != 'trigger'){                    
+                } else if (val !== null && val !== false && i !== 'trigger'){                    
                     thirdStageMethod = i;
                     thirdStageCondition = val;
                     switch(i) {
@@ -323,7 +318,7 @@ function getData(){
                             break;
                      }
                 }  
-            })                                                      
+            });
             
         }
     
@@ -337,10 +332,10 @@ function getData(){
             splitStageTriggerName   =   formatTriggerName(splitStageTriggerName);
             
             $.each(splitStageEvoChain[1].evolution_details[0], function(i,val){               
-                if (i == 'trigger' && val.name == 'trade') {
+                if (i === 'trigger' && val.name === 'trade') {
                     splitStageMethod = 'trade';
                     splitStageCondition = '';                    
-               } else if (val != null && val != false && i != 'trigger'){                    
+               } else if (val !== null && val !== false && i !== 'trigger'){                    
                     splitStageMethod = i;
                     splitStageCondition = val;
                     switch(i) {
@@ -355,7 +350,7 @@ function getData(){
                             break;
                     }
                 } 
-            })        
+            });       
         }
         
         
@@ -374,19 +369,19 @@ function getData(){
                         localStorage.setItem('pkmnData-move' + val.move.name, JSON.stringify(data));
                         moveData = JSON.parse(localStorage.getItem('pkmnData-move' + val.move.name));
                     }
-                })
+                });
             }
-            console.log(moveData)
+            console.log(moveData);
             movesObj            = {};            
             for (var c = 0; c < moves[i].version_group_details.length; c++) {
                 movesObj['game-' + c]   =   {};                
-                movesObj['game-' + c].game_name                  = moves[i].version_group_details[c].version_group.name                 
+                movesObj['game-' + c].game_name                  = moves[i].version_group_details[c].version_group.name;                 
                 movesObj['game-' + c].move_name    = moves[i].move.name;
                 movesObj['game-' + c].method        = moves[i].version_group_details[c].move_learn_method.name;
-                if (movesObj['game-' + c].method == 'level-up' && moves[i].version_group_details[c].level_learned_at > 0) {
-                    movesObj['game-' + c].level_learned = moves[i].version_group_details[c].level_learned_at
+                if (movesObj['game-' + c].method === 'level-up' && moves[i].version_group_details[c].level_learned_at > 0) {
+                    movesObj['game-' + c].level_learned = moves[i].version_group_details[c].level_learned_at;
                 }
             }
-            movesArr.push(movesObj)
-        });   
-};
+            movesArr.push(movesObj);
+        });  
+}

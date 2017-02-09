@@ -2,10 +2,12 @@
 
 //Compare function used to sort the pokedexArr by dex number
 function compare(a,b) {
-  if (Number(a.dexNum) < Number(b.dexNum))
+  if (Number(a.dexNum) < Number(b.dexNum)) {
     return -1;
-  if (Number(a.dexNum) > Number(b.dexNum))
+  }
+  if (Number(a.dexNum) > Number(b.dexNum)){
     return 1;
+  }
   return 0;
 }
 
@@ -27,7 +29,7 @@ $("document").ready(function(){
             //Get catch status of current Pokemon
             var catchStatus = localStorage.getItem(pokemon.name);
 
-            if (catchStatus == "Caught"){
+            if (catchStatus === "Caught"){
                 //If catchStatus is already set to catch, reverse it
                 $(this).attr("src","images/pokeball-no-catch.png");       
                 localStorage.setItem(pokemon.name,"Not Caught");
@@ -53,10 +55,10 @@ $("document").ready(function(){
             
             theHTML += '<div class="pkmn-catch-icon">';
             //Determine if Pokemon has already been caught and set pokeball icon accordingly
-            if (wasPokemonCaught == 'Caught' || pokedexArr[i].caught == 'Yes'){
-              theHTML += '<img class="'+ pokedexArr[i].dexNum +' catch" src="images/pokeball-catch.png">'
+            if (wasPokemonCaught === 'Caught' || pokedexArr[i].caught === 'Yes'){
+              theHTML += '<img class="'+ pokedexArr[i].dexNum +' catch" src="images/pokeball-catch.png">';
             } else {
-              theHTML += '<img class="'+ pokedexArr[i].dexNum +' no-catch" src="images/pokeball-no-catch.png">'
+              theHTML += '<img class="'+ pokedexArr[i].dexNum +' no-catch" src="images/pokeball-no-catch.png">';
             }
         
             theHTML += '</div>';
@@ -71,7 +73,7 @@ $("document").ready(function(){
             theHTML += '<div class="types"><i class="type-icon '+ pokedexArr[i].type[0] +'"></i>';
         
             //If Pokemon obj has more than one type, display the second type
-            if (pokedexArr[i].type[1] != null){
+            if (pokedexArr[i].type[1] !== null){
                 theHTML += '&nbsp;|&nbsp;<i class="type-icon '+ pokedexArr[i].type[1] +'"></i>';
             }                                                                       
 

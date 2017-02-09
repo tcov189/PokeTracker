@@ -8,7 +8,7 @@ $('#tech_header').click(function(){
         $('#tech_header .arrowIcon').css('transform','rotate(0deg)');
     } else {
         $('#tech_info').slideUp();
-        $('#tech_header .arrowIcon').css('transform','rotate(180deg)')
+        $('#tech_header .arrowIcon').css('transform','rotate(180deg)');
     }        
 });
 
@@ -18,7 +18,7 @@ $('#app_info_header').click(function(){
         $('#app_info_header .arrowIcon').css('transform','rotate(0deg)');
     } else {
         $('#app_info').slideUp();
-        $('#app_info_header .arrowIcon').css('transform','rotate(180deg)')
+        $('#app_info_header .arrowIcon').css('transform','rotate(180deg)');
     }   
 });
 

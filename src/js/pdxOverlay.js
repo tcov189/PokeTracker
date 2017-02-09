@@ -28,7 +28,7 @@ function pdxOverlay (){
                     $pokedexInfo.append($speciesName, $height, $weight);
     
             //Append elements to pokemonInfoTitle
-            $pokemonInfoTitle.append($current, $pokedexInfo)
+            $pokemonInfoTitle.append($current, $pokedexInfo);
     
         //==Create pokemonInfoNav
         var $pokemonInfoNav   = $('<div class="pokemon-info-nav"></div>');
@@ -71,12 +71,12 @@ function pdxOverlay (){
             $.each(abilitiesArr, function(i,val){                
                 
                 $pokemonAbilitiesDiv.append('<a href="#" id="'+ val.name +'"  onClick="showAbilityDesc(\''+ val.name +'\');">'+ val.name.split('-').join(' ') +'</a>&nbsp;');                
-                if (val.isHidden == true) {
+                if (val.isHidden === true) {
                     $pokemonAbilitiesDiv.append('<span>(Hidden)</span>');
                 }                                
                 
                 $pokemonAbilitiesDesc.append('<div id="'+ val.name +'-desc" style="display: none;">'+ val.desc +'</div>');                
-            })
+            });
         
         $pokemonInfoAbilities.append($pokemonAbilitiesH1, $pokemonAbilitiesDiv, $pokemonAbilitiesDesc);
             
@@ -110,7 +110,7 @@ function pdxOverlay (){
             var $evoStagesDiv       = $('<div class="evo-stages"></div>');
     
                 //Append elements to evoStagesDiv
-                var $firstStage     = $('<div class="first-stage">' +
+                $firstStage     = $('<div class="first-stage">' +
                                             '<div class="evo-box">' + '<div class="sprite-bg"><i class="sprites ' + baseName + '"></i></div>' +
                                                 '<div class="evo-info">' +
                                                     '<div class="name">' + baseName +'</div>' +
@@ -122,7 +122,7 @@ function pdxOverlay (){
                 $evoStagesDiv.append($firstStage);   
     
                 if (hasSecondStage) {
-                    var $secondStage    =   $('<div class="second-stage">' +
+                    $secondStage    =   $('<div class="second-stage">' +
                                             '<div class="evo-box">' + '<div class="sprite-bg"><i class="sprites ' + secondStageName + '"></i></div>' +
                                                 '<div class="evo-info">' +
                                                     '<div class="name">' + secondStageName +'</div>' +
@@ -144,12 +144,12 @@ function pdxOverlay (){
                                             '</div>'+
                                         '</div>');               
     
-                    $secondStage.css({'float':'left', 'width':'48%'})
+                    $secondStage.css({'float':'left', 'width':'48%'});
                     $evoStagesDiv.append($secondSplitStage);   
                 }   
     
                 if (hasThirdStage) {
-                     var $thirdStage     = $('<div class="third-stage">' +
+                     $thirdStage     = $('<div class="third-stage">' +
                                             '<div class="evo-box">' + '<div class="sprite-bg"><i class="sprites ' + thirdStageName + '"></i></div>' +
                                                 '<div class="evo-info">' +
                                                     '<div class="name">' + thirdStageName +'</div>' +
@@ -237,11 +237,11 @@ function pdxOverlay (){
     //Get relevant data for moves
         $('.games.nav-tabs li a').on('click', function(i,val){
             gameSelection = $(this).attr('id');            
-        })
+        });
          $('.method.nav-tabs li a').on('click', function(i,val){
             methodSelection = $(this).attr('id');            
             generateMoveTable(gameSelection, methodSelection);
-        })
+        });
     
         //Generate the table html for the move table
             function generateMoveTable(game, method){                
@@ -249,8 +249,8 @@ function pdxOverlay (){
                 levelUpObj = {};
                 $.each(movesArr, function(i,val){                    
                     $.each(val, function(i,val){
-                        if(val.game_name == game && val.method == method){
-                            if (method == 'level-up') {
+                        if(val.game_name === game && val.method === method){
+                            if (method === 'level-up') {
                                 levelUpObj[val.level_learned]  =   val.move_name;                               
                             } 
                             /*$moveTable.append('<div class="row">' +
@@ -258,8 +258,8 @@ function pdxOverlay (){
                                                 '<div class="move-name">' + val.move_name + '</div>' +
                                               '</div>')*/
                         }
-                    })
-                })
+                    });
+                });
                 Object.keys(levelUpObj).sort();                
                 levelUpArr.push(levelUpObj);
                 
@@ -286,5 +286,5 @@ function pdxOverlay (){
     //Remove overlay when close is clicked    
     $overlayClose.click(function(){		
 		$overlay.remove();
-    })
-};
+    });
+}
