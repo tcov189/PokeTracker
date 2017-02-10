@@ -1,10 +1,27 @@
 {
+    "attributeQuotes": {
+        "enabled" : false
+    },
     "borderZero" : "zero",
+    "decimalZero" : {
+        "enabled" : false
+    },
     "finalNewline" : "valid",
     "hexLength" : "short",
     "maxCharPerLine" : "150",
+    "newlineAfterBlock" : {
+        "enabled" : false
+    },
     "propertyOrdering" : false,
+    "qualifyingElement": {
+      "enabled" : false  
+    },
     "spaceBeforeBrace" : "one_space",
-    "trailingWhitespace" : true,
+    "trailingWhitespace" : {
+        "enabled" : false
+    },
+    "urlFormat": {
+        "enabled" : false
+    },
     "zeroUnit" : "no_unit"
 }

@@ -31,7 +31,7 @@ module.exports = function(grunt) {
                 allowWarnings   : false 
             },
             source: {
-                src: ['<%= lessPath %>*.less'] 
+                src: ['<%= lessPath %>**/*.less'] 
             },
         },   
         
