@@ -166,6 +166,14 @@ module.exports = function(grunt) {
                 src     : '<%= distScriptsPath %><%= pkg.name %>.js',
                 dest    : 'scripts',
                 nonull  : true
+            },
+            jquery: {
+                expand  : true,
+                flatten : true,
+                filter  : 'isFile',
+                src     : 'node_modules/jquery/dist/*.min.js',
+                dest    : 'scripts',
+                nonull  : true
             }
         },
         
@@ -212,6 +220,7 @@ module.exports = function(grunt) {
     
     grunt.registerTask('scripts_copy_prod', ['copy:scripts_prod']);
     grunt.registerTask('scripts_copy_dev', ['copy:scripts_dev']);
+    grunt.registerTask('jquery_copy', ['copy:jquery']);
     
     grunt.registerTask('css_clean_dir', ['clean:css_dir']);
     grunt.registerTask('dist_css_clean_dir', ['clean:dist_css_dir']);
@@ -231,8 +240,8 @@ module.exports = function(grunt) {
     grunt.registerTask('css_build_prod', ['css_clean_dir', 'less_review', 'less_compile', 'css_reorg', 'css_min', 'css_copy_prod']);    
     grunt.registerTask('css_build_dev', ['dist_css_clean_dir', 'css_clean_dir','less_review', 'less_compile', 'css_reorg', 'css_min', 'css_copy_dev']);
     
-    grunt.registerTask('js_build_prod', ['dist_scripts_clean_dir', 'scripts_clean_dir', 'js_review', 'js_concat', 'js_uglify', 'scripts_copy_prod']);
-    grunt.registerTask('js_build_dev', ['dist_scripts_clean_dir', 'scripts_clean_dir', 'js_review', 'js_concat', 'scripts_copy_dev']);
+    grunt.registerTask('js_build_prod', ['dist_scripts_clean_dir', 'scripts_clean_dir', 'js_review', 'js_concat', 'js_uglify', 'scripts_copy_prod', 'jquery_copy']);
+    grunt.registerTask('js_build_dev', ['dist_scripts_clean_dir', 'scripts_clean_dir', 'js_review', 'js_concat', 'scripts_copy_dev', 'jquery_copy']);
     
     grunt.registerTask('build_prod', ['css_build_prod', 'js_build_prod'])
     grunt.registerTask('build_dev', ['css_build_dev', 'js_build_dev']);
