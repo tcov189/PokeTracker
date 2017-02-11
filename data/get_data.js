@@ -2,6 +2,7 @@ var Pokedex = require('pokedex-promise-v2');
 var prompt = require('prompt');
 var fs = require("fs");
 var colors = require("colors/safe");
+var http = require("http");
 
 var P = new Pokedex();
 
@@ -57,16 +58,38 @@ prompt.get(schema, function(err, result){
         .catch(function(error) {
             writeErr(error);
         });
-    } else if(result.resource == 'orasdex') {
-        P.getORASdex()
-        .then(function(response) {
-            response = JSON.stringify(response);
-            console.log("Got response, writing file...");
-            write(result, response);
-        })
-        .catch(function(error) {
-            writeErr(error);
-        });
+    } else if(result.resource == 'region') {
+        if (result.name == 'johto') {
+            P.getRegionByName(result.name)
+            .then(function(response){
+                /*response = JSON.stringify(response);*/
+                console.log("Got response, writing file...");
+                
+                for (var i = 0; i < response.locations.length; i++){
+                    var url = response.locations[i].url;
+                    
+                    http.get(url, function(res){
+                        var body = '';
+
+                        res.on('data', function(chunk){
+                            body += chunk;
+                        });
+
+                        res.on('end', function(){
+                            var response = JSON.parse(body);
+                            console.log("Got a response: ", response.areas);
+                        });
+                        
+                    }).on('error', function(e){
+                          console.log("Got an error: ", e);
+                    });
+                }
+                /*write(result, response);*/
+            })
+            .catch(function(error) {
+                writeErr(error);
+            });
+        } 
     } else {
         console.log(colors.red('Resource function not found!'));
     }
