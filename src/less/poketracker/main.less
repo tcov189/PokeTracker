@@ -49,8 +49,8 @@
             -webkit-box-shadow: inset 0px 1px 0px 0px #cf866c;
             box-shadow: inset 0px 1px 0px 0px #cf866c;
             background: linear-gradient(to bottom, #e6000f 5%, #b3000c 100%);
-            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6000f', endColorstr='#b3000c',GradientType=0);
-            background-color:#e6000f;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6000f', endColorstr='#b3000c', GradientType=0);
+            background-color: #e6000f;
             border: 1px solid #000;
             cursor: pointer;            
             background-size: 80%;
@@ -58,33 +58,27 @@
             background-position: center;
             border-radius: 4px;
             
-            &#version_X{
-                background-image: url(../images/pokemon-x-title-sm.png);
+            &.version_X{
+                background-image: url('../images/pokemon-x-title-sm.png');
                 width: 45px;
                 height: 45px;
             
             }
-            &#version_Y{
-                background-image: url(../images/pokemon-y-title-sm.png);
+            &.version_Y{
+                background-image: url('../images/pokemon-y-title-sm.png');
                 width: 45px;
                 height: 45px;
             }
-    
 
-            &:hover {
-                background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b3000c), color-stop(1, #e6000f));
-                background:-moz-linear-gradient(top, #b3000c 5%, #e6000f 100%);
-                background:-webkit-linear-gradient(top, #b3000c 5%, #e6000f 100%);
-                background:-o-linear-gradient(top, #b3000c 5%, #e6000f 100%);
-                background:-ms-linear-gradient(top, #b3000c 5%, #e6000f 100%);
-                background:linear-gradient(to bottom, #b3000c 5%, #e6000f 100%);
-                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3000c', endColorstr='#e6000f',GradientType=0);
-                background-color:#b3000c;
+            &:hover {                
+                background: linear-gradient(to bottom, #b3000c 5%, #e6000f 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3000c', endColorstr='#e6000f', GradientType=0);
+                background-color: #b3000c;
             }
 
             &:active {
-                position:relative;
-                top:1px;
+                position: relative;
+                top: 1px;
             }
         }
     }
@@ -93,27 +87,29 @@
         display: inline-flex;
         height: 18px;
         width: 18px;
-        background: url(../images/pokedex.png) no-repeat;
+        background: url('../images/pokedex.png') no-repeat;
         background-size: cover;
         
     }
-    #tech_header {
+    
+    .tech_header {
         width: 36%;
         display: flex;        
     }
+    
     span {
         margin-bottom: 15px;
     }
+    
     .arrowIcon {
         height: 18px;
         width: 18px;
-        background: url(../images/arrow.png);
+        background: url('../images/arrow.png');
         display: inline-flex;
         background-size: cover;
         vertical-align: middle;
         transform: rotate(180deg);
         margin-left: 3px;
-        vertical-align: bottom;
     }
     
 }
@@ -145,7 +141,7 @@
     }
 
     .locSign {
-        background: url(../images/route_sign.png) no-repeat;
+        background: url('../images/route_sign.png') no-repeat;
         height: 19px;
         width: 20px;
         display: flex;
@@ -169,19 +165,23 @@
         display: flex;
         align-items: center;
 
-        .previousArrow,.nextArrow {
-            background: url(../images/arrow.png);
+        .previousArrow,
+        .nextArrow {
+            background: url('../images/arrow.png');
             height: 15px;
             width: 15px;
             display: flex;
             background-size: cover;                
         }
+        
         .previousArrow {
             transform: rotate(270deg);
         }
+        
         .nextArrow {
             transform: rotate(90deg);
         }
+        
     }
     .locPrevious,
     .locNext {
@@ -191,35 +191,23 @@
             margin-bottom: 8px;
             border-radius: 8px;
             font-size: .9em;
-            padding: 5px;
-            -moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
-            -webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
-            box-shadow:inset 0px 1px 0px 0px #cf866c;
-            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e6000f), color-stop(1, #b3000c));
-            background:-moz-linear-gradient(top, #e6000f 5%, #b3000c 100%);
-            background:-webkit-linear-gradient(top, #e6000f 5%, #b3000c 100%);
-            background:-o-linear-gradient(top, #e6000f 5%, #b3000c 100%);
-            background:-ms-linear-gradient(top, #e6000f 5%, #b3000c 100%);
-            background:linear-gradient(to bottom, #e6000f 5%, #b3000c 100%);
-            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6000f', endColorstr='#b3000c',GradientType=0);
-            background-color:#e6000f;
+            padding: 5px;            
+            box-shadow: inset 0px 1px 0px 0px #cf866c;
+            background: linear-gradient(to bottom, #e6000f 5%, #b3000c 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6000f', endColorstr='#b3000c', GradientType=0);
+            background-color: #e6000f;
             border: 1px solid #000;
             cursor: pointer;
 
             &:hover {
-                background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b3000c), color-stop(1, #e6000f));
-                background:-moz-linear-gradient(top, #b3000c 5%, #e6000f 100%);
-                background:-webkit-linear-gradient(top, #b3000c 5%, #e6000f 100%);
-                background:-o-linear-gradient(top, #b3000c 5%, #e6000f 100%);
-                background:-ms-linear-gradient(top, #b3000c 5%, #e6000f 100%);
-                background:linear-gradient(to bottom, #b3000c 5%, #e6000f 100%);
-                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3000c', endColorstr='#e6000f',GradientType=0);
-                background-color:#b3000c;
+                background: linear-gradient(to bottom, #b3000c 5%, #e6000f 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3000c', endColorstr='#e6000f', GradientType=0);
+                background-color: #b3000c;
             }
 
             &:active {
-                position:relative;
-                top:1px;
+                position: relative;
+                top: 1px;
             }
 
         }
@@ -265,35 +253,23 @@
             align-items: flex-end;
             border-radius: 4px;
             padding: 5px;            
-            margin-bottom: 5px;
-            -moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
-            -webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
-            box-shadow:inset 0px 1px 0px 0px #cf866c;
-            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e6000f), color-stop(1, #b3000c));
-            background:-moz-linear-gradient(top, #e6000f 5%, #b3000c 100%);
-            background:-webkit-linear-gradient(top, #e6000f 5%, #b3000c 100%);
-            background:-o-linear-gradient(top, #e6000f 5%, #b3000c 100%);
-            background:-ms-linear-gradient(top, #e6000f 5%, #b3000c 100%);
-            background:linear-gradient(to bottom, #e6000f 5%, #b3000c 100%);
-            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6000f', endColorstr='#b3000c',GradientType=0);
-            background-color:#e6000f;
+            margin-bottom: 5px;            
+            box-shadow: inset 0px 1px 0px 0px #cf866c;
+            background: linear-gradient(to bottom, #e6000f 5%, #b3000c 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6000f', endColorstr='#b3000c', GradientType=0);
+            background-color: #e6000f;
             border: 1px solid #000;
             cursor: pointer;
         
-            &:hover {
-                background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b3000c), color-stop(1, #e6000f));
-                background:-moz-linear-gradient(top, #b3000c 5%, #e6000f 100%);
-                background:-webkit-linear-gradient(top, #b3000c 5%, #e6000f 100%);
-                background:-o-linear-gradient(top, #b3000c 5%, #e6000f 100%);
-                background:-ms-linear-gradient(top, #b3000c 5%, #e6000f 100%);
-                background:linear-gradient(to bottom, #b3000c 5%, #e6000f 100%);
-                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3000c', endColorstr='#e6000f',GradientType=0);
-                background-color:#b3000c;
+            &:hover {                
+                background: linear-gradient(to bottom, #b3000c 5%, #e6000f 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3000c', endColorstr='#e6000f', GradientType=0);
+                background-color: #b3000c;
             }
 
             &:active {
-                position:relative;
-                top:1px;
+                position: relative;
+                top: 1px;
             }
         }
         
@@ -306,34 +282,35 @@
             margin-right: 5px;
             
             &.walkIcon {
-                background-image: url(../images/icons/walking.png);            
+                background-image: url('../images/icons/walking.png');            
             }
             
             &.flowerIcon {
-                background-image: url(../images/icons/flowers.png);
+                background-image: url('../images/icons/flowers.png');
                 
             }
             
             &.rodIcon {
-                background-image: url(../images/icons/fishing.png);
+                background-image: url('../images/icons/fishing.png');
             }
             
             &.surfIcon {
-                background-image: url(../images/icons/surfing.png);
+                background-image: url('../images/icons/surfing.png');
             }
             
             &.giftIcon {
-                background-image: url(../images/icons/gift.png);
+                background-image: url('../images/icons/gift.png');
             }
             
             &.staticIcon {
-                background-image: url(../images/icons/static.png)
+                background-image: url('../images/icons/static.png');
             }        
         }
+    
         span {
-                display: inline;
+            display: inline;
             text-decoration: none;
-            }
+        }
 }
 
 .locBody {

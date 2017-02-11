@@ -20,37 +20,31 @@
 }
 
 button {
+    
     &.zoomBtn {
         display: block;
         height: 30px;
         width: 30px;
         border-radius: 4px;        
-        -moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
-        -webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
-        box-shadow:inset 0px 1px 0px 0px #cf866c;
-        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e6000f), color-stop(1, #b3000c));
-        background:-moz-linear-gradient(top, #e6000f 5%, #b3000c 100%);
-        background:-webkit-linear-gradient(top, #e6000f 5%, #b3000c 100%);
-        background:-o-linear-gradient(top, #e6000f 5%, #b3000c 100%);
-        background:-ms-linear-gradient(top, #e6000f 5%, #b3000c 100%);
-        background:linear-gradient(to bottom, #e6000f 5%, #b3000c 100%);
-        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6000f', endColorstr='#b3000c',GradientType=0);
-        background-color:#e6000f;
+        box-shadow: inset 0px 1px 0px 0px #cf866c;
+        background: linear-gradient(to bottom, #e6000f 5%, #b3000c 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6000f', endColorstr='#b3000c', GradientType=0);
+        background-color: #e6000f;
         border: 1px solid #000;
         cursor: pointer;       
-        background-image: url(../images/zoom.png);
+        background-image: url('../images/zoom.png');
         background-size: 80%;
         background-repeat: no-repeat;
         background-position: center;
         opacity: 0.75;
         
             &:active {                
-                bottom:3px;
+                bottom: 3px;
             }
     }
 }
 
-#map_overlay {
+.map_overlay {
     display: none;
     z-index: 1000;
     width: 100%;
@@ -58,219 +52,219 @@ button {
     position: absolute;
     top: 0;
     text-align: center;
-    background-color: rgba(64, 64, 64,0.9);
+    background-color: rgba(64, 64, 64, 0.9);
 }
 
-#loc_img_lw {      
+.loc_img_lw {      
     margin: 25px auto 5px;
     width: 280px;
     height: 184px;    
-    background-image: url(../images/kalos.png);
-    background-repeat:  no-repeat;  
+    background-image: url('../images/kalos.png');
+    background-repeat: no-repeat;  
     border-radius: 10px;
     border: 1px solid white;
     align-self: center;    
     
     .locationMarker {
-         background-image: url(../images/marker.png);
+         background-image: url('../images/marker.png');
          background-repeat: no-repeat;
          background-position: 130px 80px;
          transform: rotate(0deg);
         
-        &#Vaniville_Town {
+        &.Vaniville_Town {
             background-position: 166px 134px;
         }
         
-        &#Route_1 {
+        &.Route_1 {
             background-position: 134px 139px;
             transform: rotate(-28deg);
         }
-        &#Aquacorde_Town {
+        &.Aquacorde_Town {
             background-position: 166px 113px;
         }
-        &#Route_2 {
+        &.Route_2 {
             background-position: 141px 122px;
             transform: rotate(-31deg);
         }
-        &#Santalune_Forest {
+        &.Santalune_Forest {
             background-position: 79px 34px;
             transform: rotate(170deg);
         }
-        &#Route_3 {
+        &.Route_3 {
             background-position: 101px 108px;
             transform: rotate(271deg);
         }
-        &#Santalune_City {
+        &.Santalune_City {
             background-position: 143px 41px;
             transform: rotate(82deg);
         }
-        &#Route_22 {
+        &.Route_22 {
             background-position: 170px 78px;
         }
-        &#Route_4 {
+        &.Route_4 {
             background-position: 122px 47px;
             transform: rotate(82deg);
         }
-        &#Luminose_City {
+        &.Luminose_City {
             background-position: 126px 45px;
         }
-        &#Route_5 {
-            background-position: 108px 67px
+        &.Route_5 {
+            background-position: 108px 67px;
         }
-        &#Camphrier_Town {
+        &.Camphrier_Town {
             background-position: 110px 95px;
             transform: rotate(40deg);
         }
-        &#Route_6 {
+        &.Route_6 {
             background-position: 113px 110px;
-            transform: rotate(78deg)
+            transform: rotate(78deg);
         }
-        &#Parfum_Palace {
+        &.Parfum_Palace {
             background-position: 62px 65px;
             transform: rotate(6deg);
         }
-        &#Route_7{
+        &.Route_7{
             background-position: 66px 81px;
         }
-        &#Connecting_Cave {
+        &.Connecting_Cave {
             background-position: 61px 119px;
             transform: rotate(32deg);
         }
-        &#Route_8 {
+        &.Route_8 {
             background-position: 62px 0px;
             transform: rotate(292deg);
         }
-        &#Ambrette_Town {
+        &.Ambrette_Town {
             background-position: 126px 158px;
             transform: rotate(62deg);
         }
-        &#Route_9 {
+        &.Route_9 {
             background-position: 136px 141px;
             transform: rotate(62deg);
         }
-        &#Glittering_Cave {
+        &.Glittering_Cave {
             background-position: 144px 124px;
             transform: rotate(62deg);
         }
-        &#Cyllage_City {
+        &.Cyllage_City {
             background-position: 85px 152px;
             transform: rotate(60deg);
         }
-        &#Route_10 {
+        &.Route_10 {
             background-position: 74px 158px;
             transform: rotate(60deg);
         }
-        &#Geosenge_Town,
-        &#Team_Flare_HQ{
+        &.Geosenge_Town,
+        &.Team_Flare_HQ{
             background-position: 5px 63px;
         }
-        &#Route_11 {
+        &.Route_11 {
             background-position: 29px 7px;
             transform: rotate(-27deg);
         }
-        &#Reflection_Cave {
+        &.Reflection_Cave {
             background-position: 36px 3px;
             transform: rotate(-27deg);
         }
-        &#Shalour_City {
+        &.Shalour_City {
             background-position: 20px 65px;
             transform: rotate(13deg);
         }
-        &#Route_12 {
+        &.Route_12 {
             background-position: 38px 56px;
             transform: rotate(13deg);
         }
-        &#Coumarine_City {
+        &.Coumarine_City {
             background-position: 70px 96px;
             transform: rotate(70deg);
         }
-        &#Azure_Bay {
+        &.Azure_Bay {
             background-position: 56px 103px;
             transform: rotate(70deg);
         }
-        &#Sea_Spirits_Den {
+        &.Sea_Spirits_Den {
             background-position: 52px 10px;
             transform: rotate(0deg);
         }
-        &#Route_13 {
+        &.Route_13 {
             background-position: 82px 72px;
             transform: rotate(60deg);
         }
-        &#Route_14 {
+        &.Route_14 {
             background-position: 143px 22px;
             transform: rotate(-25deg);
         }
-        &#Laverre_City {
+        &.Laverre_City {
             background-position: 153px 5px;
             transform: rotate(-25deg);
         }
-        &#Route_15 {
+        &.Route_15 {
             background-position: 83px 19px;
             transform: rotate(65deg);
         }
-        &#Lost_Hotel {
+        &.Lost_Hotel {
             background-position: 91px 26px;
             transform: rotate(65deg);
         }
-        &#Route_16 {
+        &.Route_16 {
             background-position: 153px 38px;
         }
-        &#Dendemille_Town {
+        &.Dendemille_Town {
             background-position: 143px 128px;
             transform: rotate(255deg);
         }
-        &#Frost_Cavern {
+        &.Frost_Cavern {
             background-position: 183px 18px;
         }
-        &#Route_17 {
+        &.Route_17 {
             background-position: 179px 2px;
             transform: rotate(30deg);
         }
-        &#Anistar_City {
+        &.Anistar_City {
             background-position: 222px 29px;
             transform: rotate(370deg);
         }
-        &#Route_18 {
+        &.Route_18 {
             background-position: 211px 0px;
             transform: rotate(30deg);
         }
-        &#Terminus_Cave {
+        &.Terminus_Cave {
             background-position: 245px 24px;
             transform: rotate(10deg);
         }
-        &#Couriway_Town {
+        &.Couriway_Town {
             background-position: 19px 136px;
             transform: rotate(-150deg);
         }
-        &#Route_19{
+        &.Route_19{
             background-position: 230px 70px;
         }
-        &#Snowbelle_City {
+        &.Snowbelle_City {
             background-position: 218px 78px;
         }
-        &#Route_20 {
+        &.Route_20 {
             background-position: 213px 100px;
         }
-        &#Pokemon_Village {
+        &.Pokemon_Village {
             background-position: 207px 115px;
         }
-        &#Route_21 {
+        &.Route_21 {
             background-position: 204px 78px;
         }
-        &#Victory_Road {
+        &.Victory_Road {
             background-position: 183px 92px;
             transform: rotate(-20deg);
         }
-        &#Pokemon_League {
+        &.Pokemon_League {
             background-position: 187px 57px;
         }
     }
 }
 
-#loc_img {
+.loc_img {
     background-size: 1000%;
     background-position: -360px -270px;
-    background-image: url(../images/kalos.png);
+    background-image: url('../images/kalos.png');
     border: 1px solid #fff;    
     height: 133px;   
     overflow: hidden;
@@ -349,7 +343,7 @@ button {
         background-position: -97px -163px;
     }
     &.Route_12 {
-        background-position: -207px -134px
+        background-position: -207px -134px;
     }
     &.Coumarine_City {
         background-position: -298px -121px;
@@ -369,7 +363,7 @@ button {
 }
 
 .locationMarkerSm {
-     background-image: url(../images/marker-sm.png);
+     background-image: url('../images/marker-sm.png');
      background-repeat: no-repeat;
      background-position: 20px 30px;
      transform: rotate(0deg);
@@ -428,7 +422,7 @@ button {
     }
     &.Route_8 {
         background-position: 20px 28px;
-        transform: rotate(292deg)
+        transform: rotate(292deg);
     }
     &.Ambrette_Town, 
     &.Route_9,

@@ -43,9 +43,9 @@ function generateHTML (){
     locName = generatingClass(locationInfo.name);
     
     //Generating locImg and overlay
-    $('#loc_img_lw .locationMarker').attr('id', locName);
-    $('#loc_img').attr('class', 'locImg ' + locName);
-    $('#loc_img .locationMarkerSm').attr('class', 'locationMarkerSm '+ locName);
+    $('.loc_img_lw .locationMarker').addClass(locName);
+    $('.loc_img').attr('class', 'locImg ' + locName);
+    $('.loc_img .locationMarkerSm').attr('class', 'locationMarkerSm '+ locName);
     
     $mapOverlay = $('#map_overlay');
     
