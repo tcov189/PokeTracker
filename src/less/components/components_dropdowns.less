@@ -1,0 +1,41 @@
+//==== Dropdowns ====//
+
+.dropdown {
+    margin-top: .5rem;
+    margin-bottom: .2rem;
+    
+    flex: 0 1 auto;
+    
+    .dropdown-heading {
+        display: flex;
+        cursor: pointer;
+        
+        &.open {
+            
+            &:before {
+                transform: rotate(0);
+            }
+        }
+        
+        &:before {
+            content: '';
+            display: inline-block;
+            margin-right: .25rem;
+            width: 1.2rem;
+            height: 1.2rem;
+            background: url('/images/arrow-up.png') no-repeat;
+            background-size: contain;
+            transform: rotate(180deg);
+            transition: all .1s linear;
+        }
+    }
+    
+    .dropdown-content {
+        display: none;
+        margin-left: 1rem;
+        
+        p {
+            font-size: .9rem;
+        }
+    }
+}

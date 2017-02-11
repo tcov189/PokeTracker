@@ -1,4 +1,36 @@
 /* Poke Tracker v0.5.0 CSS  Dev */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-style: normal;
+
+  src: local("Source Sans Pro"), local("fonts/SourceSansPro-Regular"), url("https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff") format("woff");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-style: normal;
+
+  src: local("Source Sans Pro Bold"), local("fonts/SourceSansPro-Bold"), url("https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGIqjGYJUyOXcBwUQbRaNH6c.woff") format("woff");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-style: italic;
+
+  src: local("Source Sans Pro Italic"), local("fonts/SourceSansPro-It"), url("https://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoM_bce-VcyLJMRR1FC9qWbU8.woff") format("woff");
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-style: italic;
+
+  src: local("Source Sans Pro Bold Italic"), local("fonts/SourceSansPro-BoldIt"), url("https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6PgYMAt3u4NmhhzLLLPJ5qH3rGVtsTkPsbDajuO5ueQw.woff") format("woff");
+}
+html {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+}
 html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -182,37 +214,6 @@ td,
 th {
   padding: 0;
 }
-@font-face {
-  font-family: "Source Sans Pro";
-  font-weight: 400;
-  font-style: normal;
-
-  src: local("Source Sans Pro"), local("fonts/SourceSansPro-Regular"), url("https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff") format("woff");
-}
-@font-face {
-  font-family: "Source Sans Pro";
-  font-weight: 700;
-  font-style: normal;
-
-  src: local("Source Sans Pro Bold"), local("fonts/SourceSansPro-Bold"), url("https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGIqjGYJUyOXcBwUQbRaNH6c.woff") format("woff");
-}
-@font-face {
-  font-family: "Source Sans Pro";
-  font-weight: 400;
-  font-style: italic;
-
-  src: local("Source Sans Pro Italic"), local("fonts/SourceSansPro-It"), url("https://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoM_bce-VcyLJMRR1FC9qWbU8.woff") format("woff");
-}
-@font-face {
-  font-family: "Source Sans Pro";
-  font-weight: 700;
-  font-style: italic;
-
-  src: local("Source Sans Pro Bold Italic"), local("fonts/SourceSansPro-BoldIt"), url("https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6PgYMAt3u4NmhhzLLLPJ5qH3rGVtsTkPsbDajuO5ueQw.woff") format("woff");
-}
-html {
-  font-family: "Source Sans Pro", sans-serif;
-}
 html {
   box-sizing: border-box;
 }
@@ -230,6 +231,154 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=0);
   /* IE6-9 */
 }
+h1,
+h2 {
+  margin: 0 0 0.6rem 0;
+}
+p {
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+
+  line-height: 1.5;
+}
+.container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+
+          flex-direction: column;
+
+  min-height: calc(100vh - 135px);
+  margin: 0 0.5rem;
+
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+}
+.container .block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+
+          flex-direction: column;
+          flex: 0 1 auto;
+
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+}
+.button-group {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.button-group .button-group-heading {
+  font-weight: 700;
+}
+.button {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+
+  cursor: pointer;
+
+  border: 1px solid #000;
+  border-radius: 4px;
+  background: #e6000f;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+.button.button_x {
+  width: 45px;
+  height: 45px;
+
+  background-image: url("../images/pokemon-x-title-sm.png");
+}
+.button.button_y {
+  width: 45px;
+  height: 45px;
+
+  background-image: url("../images/pokemon-y-title-sm.png");
+}
+.button.button_omegaRuby {
+  width: 45px;
+  height: 45px;
+
+  background-image: url("/images/pokemon-or-logo.png");
+}
+.button.button_alphaSapphire {
+  width: 45px;
+  height: 45px;
+
+  background-image: url("/images/pokemon-as-logo.png");
+}
+.button:hover {
+  background-color: linear-gradient(to bottom, #b3000c 5%, #e6000f 100%);
+}
+.button:active {
+  position: relative;
+  top: 1px;
+}
+.dropdown {
+          flex: 0 1 auto;
+
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+}
+.dropdown .dropdown-heading {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+
+  cursor: pointer;
+}
+.dropdown .dropdown-heading.open:before {
+  -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+          transform: rotate(0);
+}
+.dropdown .dropdown-heading:before {
+  display: inline-block;
+
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.25rem;
+
+  content: "";
+  transition: all 0.1s linear;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+
+  background: url("/images/arrow-up.png") no-repeat;
+  background-size: contain;
+}
+.dropdown .dropdown-content {
+  display: none;
+
+  margin-left: 1rem;
+}
+.dropdown .dropdown-content p {
+  font-size: 0.9rem;
+}
+.text-center {
+  text-align: center;
+}
 .header {
   padding: 8px;
 
@@ -241,7 +390,6 @@ body {
   display: -ms-flexbox;
   display:         flex;
 
-  width: 100%;
   height: 75px;
 
   background-color: #cc000e;
@@ -352,27 +500,14 @@ body {
 
   background: url("../images/pokedex.png") no-repeat;
 }
-.container {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-
-          flex-direction: column;
-
-  min-height: calc(100vh - 135px);
-  padding: 5px;
-
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-}
-.container.XVersion {
+.XVersion {
   background: linear-gradient(to bottom, #035c9c 0%, #035c94 49%, #041c3c 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#035c9c', endColorstr='#041c3c', GradientType=0);
   /* IE6-9 */
 }
-.container.YVersion {
+.YVersion {
   background: linear-gradient(to bottom, #8b273b 9%, #ab1f43 50%, #ab1f43 51%, #431b1c 96%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 

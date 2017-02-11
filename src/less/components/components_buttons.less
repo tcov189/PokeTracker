@@ -1,0 +1,61 @@
+//==== Buttons ====//
+
+//Button Group
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: .75rem;
+    margin-bottom: .5rem;
+    
+    .button-group-heading {
+        font-weight: 700;
+    }
+    
+}
+
+//Buttons
+.button {
+    background: #e6000f;
+    border: 1px solid #000;
+    cursor: pointer;            
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;    
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+
+    &.button_x {
+        background-image: url('../images/pokemon-x-title-sm.png');
+        width: 45px;
+        height: 45px;
+    }
+    
+    &.button_y {
+        background-image: url('../images/pokemon-y-title-sm.png');
+        width: 45px;
+        height: 45px;
+    }
+    
+    &.button_omegaRuby {
+        background-image: url('/images/pokemon-or-logo.png');
+        width: 45px;
+        height: 45px;
+    }
+    
+    &.button_alphaSapphire {
+        background-image: url('/images/pokemon-as-logo.png');
+        width: 45px;
+        height: 45px;
+    }
+
+    &:hover {                
+        background-color: linear-gradient(to bottom, #b3000c 5%, #e6000f 100%);
+    }
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+}

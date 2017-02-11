@@ -33,13 +33,8 @@
 
         
         <!-- Stylesheets -->
-        <link rel="stylesheet" href="css/poketracker.min.css" type="text/css">
-            
-       <style>           
-           .container {
-                   min-height: calc(100vh - 75px);
-           }
-       </style>
+        <link rel="stylesheet" href="css/poke_tracker.min.css" type="text/css">
+        <link rel="stylesheet" href="css/poke_tracker.css" type="text/css">
                 
     </head>
 <body>
@@ -178,14 +173,9 @@
     </div>    
 </footer><!-- end footer-->
 
-<script src="js/poketracker.js"></script>   
 <script>
     var version = localStorage.getItem('version');
-    
-    if (version == '' || version == null || version == 'gameChange') {
-    }else{
-        generateHTML();
-    }
+     console.log(version);
 </script>
 <!--
     <script>                
