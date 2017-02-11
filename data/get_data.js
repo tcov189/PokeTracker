@@ -16,27 +16,59 @@ var schema = {
     }
 }
 
+var write = function (result, response){
+    fs.writeFile(result.name +'.json', response,  function(err) {
+       if (err) {
+          return console.error(err);
+       }
+
+       console.log("Data written successfully!");           
+    });
+}
+
+var writeErr = function (error) {
+    if (error.statusCode == 404) {
+        console.log('404: ' + error.options.url + ' was not found.');
+    } else {
+        console.log('There was an error: ' + error);
+    }
+}
 prompt.start();
 
 prompt.get(schema, function(err, result){
-
-P.getPokemonByName(result.name) // with Promise
-    .then(function(response) {
-        response = JSON.stringify(response);
-        console.log("Got response, writing file...");
-        fs.writeFile(result.name +'.json', response,  function(err) {
-           if (err) {
-              return console.error(err);
-           }
-
-           console.log("Data written successfully!");           
+    
+    if (result.resource == 'name'){
+        P.getPokemonByName(result.name) // with Promise
+        .then(function(response) {
+            response = JSON.stringify(response);
+            console.log("Got response, writing file...");
+            write(result, response);
+        })
+        .catch(function(error) {
+           writeErr(error);
         });
-    })
-    .catch(function(error) {
-        if (error.statusCode == 404) {
-            console.log('404: ' + error.options.url + ' was not found.');
-        } else {
-            console.log('There was an error: ' + error);
-        }
-    });
+    } else if(result.resource == 'games') {
+        P.getVersionGroupByName(result.name)
+        .then(function(response) {
+            response = JSON.stringify(response);
+            console.log("Got response, writing file...");
+            write(result, response);
+        })
+        .catch(function(error) {
+            writeErr(error);
+        });
+    } else if(result.resource == 'orasdex') {
+        P.getORASdex()
+        .then(function(response) {
+            response = JSON.stringify(response);
+            console.log("Got response, writing file...");
+            write(result, response);
+        })
+        .catch(function(error) {
+            writeErr(error);
+        });
+    } else {
+        console.log(colors.red('Resource function not found!'));
+    }
+    
 });
