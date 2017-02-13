@@ -17,13 +17,19 @@ var schema = {
     }
 }
 
-var write = function (result, response){
-    fs.writeFile(result.name +'.json', response,  function(err) {
+var write = function (result, response, dir){
+    var filePath = result.name +'.json';
+    if (dir != ''){
+        filePath = dir + '/' + result.name + '.json';
+    }
+    
+    fs.writeFile(filePath, response,  function(err) {
        if (err) {
           return console.error(err);
        }
 
-       console.log("Data written successfully!");           
+       console.log(colors.green("Data written successfully!"));
+       process.exit();
     });
 }
 
@@ -58,36 +64,14 @@ prompt.get(schema, function(err, result){
         .catch(function(error) {
             writeErr(error);
         });
-    } else if(result.resource == 'region') {
-        if (result.name == 'johto') {
-            P.getRegionByName(result.name)
+    } else if(result.resource == 'gameDex') {
+        if (result.name == 'sshg') {
+            P.getPokedexByName('7')
             .then(function(response){
-                /*response = JSON.stringify(response);*/
-                console.log("Got response, writing file...");
-                
-                for (var i = 0; i < response.locations.length; i++){
-                    var url = response.locations[i].url;
-                    
-                    http.get(url, function(res){
-                        var body = '';
-
-                        res.on('data', function(chunk){
-                            body += chunk;
-                        });
-
-                        res.on('end', function(){
-                            var response = JSON.parse(body);
-                            console.log("Got a response: ", response.areas);
-                        });
-                    }).on('error', function(e){
-                          console.log("Got an error: ", e);
-                    });
-                }
-                /*write(result, response);*/
+                response = JSON.stringify(response);
+                console.log('Got response, writing file..');
+                write(result, response, 'pokedexes');
             })
-            .catch(function(error) {
-                writeErr(error);
-            });
         } 
     } else {
         console.log(colors.red('Resource function not found!'));

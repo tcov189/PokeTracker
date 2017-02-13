@@ -105,6 +105,10 @@ module.exports = function(grunt) {
                 src     : ['<%= jsPath %><%= pkg.name %>.js', '!<%= jsPath %><%= pkg.name %>.js'],
                 dest    : '<%= distScriptsPath %><%= pkg.name %>.js'
                 
+            },
+            pkmn: {
+                src     : ['<%= jsPath %>/pkmn/regions/*.js'],
+                dest    : '<%= distScriptsPath %>pokemon.js'
             }
         },
         

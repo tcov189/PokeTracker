@@ -172,10 +172,32 @@
         </select>
     </div>    
 </footer><!-- end footer-->
-
+<script src="scripts/jquery.min.js"></script>
 <script>
-    var version = localStorage.getItem('version');
-     console.log(version);
+    $.ajax({
+        url: 'data/pokemon.json',
+        async: false,
+        success: function(data){
+            nationalPkmnData = [];
+            $.each(data, function(i, val){
+                nationalPkmnData.push(i);
+            })
+        }
+    });
+    
+    $.ajax({
+        url: 'data/pokedexes/sshg.json',
+        async: false,
+        success: function(data){
+            sshgRegionalDex = [];
+            $.each(data.pokemon_entries, function(i, val){
+                sshgRegionalDex.push(val.pokemon_species.name);
+            })
+        }
+    });    
+    
+    console.log(nationalPkmnData);
+    console.log(sshgRegionalDex);
 </script>
 <!--
     <script>                
