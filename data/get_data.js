@@ -79,7 +79,6 @@ prompt.get(schema, function(err, result){
                             var response = JSON.parse(body);
                             console.log("Got a response: ", response.areas);
                         });
-                        
                     }).on('error', function(e){
                           console.log("Got an error: ", e);
                     });
