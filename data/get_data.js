@@ -64,15 +64,13 @@ prompt.get(schema, function(err, result){
         .catch(function(error) {
             writeErr(error);
         });
-    } else if(result.resource == 'gameDex') {
-        if (result.name == 'sshg') {
-            P.getPokedexByName('7')
-            .then(function(response){
-                response = JSON.stringify(response);
-                console.log('Got response, writing file..');
-                write(result, response, 'pokedexes');
-            })
-        } 
+    } else if(result.resource == 'gameDex') {        
+        P.getPokedexByName(result.name)
+        .then(function(response){
+            response = JSON.stringify(response);
+            console.log('Got response, writing file..');
+            write(result, response, 'pokedexes');
+        })        
     } else {
         console.log(colors.red('Resource function not found!'));
     }
