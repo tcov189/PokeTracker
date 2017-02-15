@@ -16,23 +16,23 @@ $.ajax({
     });
     
     $.ajax({
-        url: 'data/pokedexes/sshg.json',
+        url: 'data/pokedexes/red-blue.json',
         async: false,
         success: function(data){
-            nationalDex = [];
+            red-blueDex = [];
             $.each(data.pokemon_entries, function(i, val){
                 regionalDexObj = {
                     'name' : val.pokemon_species.name,
                     'r_dex_num' : val.entry_number
                 }
-                nationalDex.push(regionalDexObj);
+                red-blueDex.push(regionalDexObj);
             })
         }
     });    
 
-    var mergedArr = $.merge(nationalPkmnData, nationalDex);
+    var mergedArr = $.merge(nationalPkmnData, red-blueDex);
     
-    var allOnly = [];
+    var redBlueOnly = [];
     var dupes = [];
     
     mergedArr.forEach(function(value) {
@@ -42,7 +42,7 @@ $.ajax({
       if (existing.length) {
         var existingIndex = dupes.indexOf(existing[0]);        
         dupes[existingIndex].r_dex_num = dupes[existingIndex].r_dex_num.concat(value.r_dex_num);
-        allOnly.push(dupes[existingIndex])  
+        redBlueOnly.push(dupes[existingIndex])  
       } else {
         if (typeof value.name == 'string')
           value.name = value.name;
@@ -50,4 +50,4 @@ $.ajax({
       }
     });
     
-    console.log(JSON.stringify(allOnly))
+    console.log(JSON.stringify(redBlueOnly))
