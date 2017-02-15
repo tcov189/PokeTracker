@@ -1,4 +1,8 @@
 /* Poke Tracker v0.5.0 CSS  Dev */
+.red-bg {
+  background-color: #cc000e;
+  box-shadow: inset 0 0 16px -2px;
+}
 @font-face {
   font-family: "Source Sans Pro";
   font-weight: 400;
@@ -248,7 +252,7 @@ p {
 
           flex-direction: column;
 
-  min-height: calc(100vh - 135px);
+  min-height: calc(100vh - 105px);
   margin: 0 0.5rem;
 
   -webkit-flex-direction: column;
@@ -272,134 +276,24 @@ p {
   -webkit-flex: 0 1 auto;
       -ms-flex: 0 1 auto;
 }
-.button-group {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-
-  margin-top: 0.75rem;
-  margin-bottom: 0.5rem;
-
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.button-group .button-group-heading {
-  font-weight: 700;
-}
-.button {
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-
-  cursor: pointer;
-
-  border: 1px solid #000;
-  border-radius: 4px;
-  background: #e6000f;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80%;
-}
-.button.button_x {
-  width: 45px;
-  height: 45px;
-
-  background-image: url("../images/pokemon-x-title-sm.png");
-}
-.button.button_y {
-  width: 45px;
-  height: 45px;
-
-  background-image: url("../images/pokemon-y-title-sm.png");
-}
-.button.button_omegaRuby {
-  width: 45px;
-  height: 45px;
-
-  background-image: url("/images/pokemon-or-logo.png");
-}
-.button.button_alphaSapphire {
-  width: 45px;
-  height: 45px;
-
-  background-image: url("/images/pokemon-as-logo.png");
-}
-.button:hover {
-  background-color: linear-gradient(to bottom, #b3000c 5%, #e6000f 100%);
-}
-.button:active {
-  position: relative;
-  top: 1px;
-}
-.dropdown {
-          flex: 0 1 auto;
-
-  margin-top: 0.5rem;
-  margin-bottom: 0.2rem;
-
-  -webkit-flex: 0 1 auto;
-      -ms-flex: 0 1 auto;
-}
-.dropdown .dropdown-heading {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-
-  cursor: pointer;
-}
-.dropdown .dropdown-heading.open:before {
-  -webkit-transform: rotate(0);
-      -ms-transform: rotate(0);
-          transform: rotate(0);
-}
-.dropdown .dropdown-heading:before {
-  display: inline-block;
-
-  width: 1.2rem;
-  height: 1.2rem;
-  margin-right: 0.25rem;
-
-  content: "";
-  transition: all 0.1s linear;
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
-
-  background: url("/images/arrow-up.png") no-repeat;
-  background-size: contain;
-}
-.dropdown .dropdown-content {
-  display: none;
-
-  margin-left: 1rem;
-}
-.dropdown .dropdown-content p {
-  font-size: 0.9rem;
-}
-.text-center {
-  text-align: center;
-}
 .header {
+  min-height: 30px;
   padding: 8px;
 
   background-color: #cc000e;
   box-shadow: inset 0 0 16px -2px;
 }
-.bottom-nav {
+.footer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
 
-  height: 75px;
+  min-height: 75px;
 
   background-color: #cc000e;
   box-shadow: inset 0 0 16px -2px;
-
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-          justify-content: space-around;
 }
-.bottom-nav .btm-panel {
+.footer .btm-panel {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
@@ -423,7 +317,7 @@ p {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
 }
-.bottom-nav .btm-panel:nth-child(-n+2) {
+.footer .btm-panel:nth-child(-n+2) {
   cursor: pointer;
 
   border: 1px solid #000;
@@ -433,17 +327,17 @@ p {
 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6000f', endColorstr='#b3000c', GradientType=0);
 }
-.bottom-nav .btm-panel:nth-child(-n+2):hover {
+.footer .btm-panel:nth-child(-n+2):hover {
   background: linear-gradient(to bottom, #b3000c 5%, #e6000f 100%);
   background-color: #b3000c;
 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3000c', endColorstr='#e6000f', GradientType=0);
 }
-.bottom-nav .btm-panel:nth-child(-n+2):active {
+.footer .btm-panel:nth-child(-n+2):active {
   position: relative;
   top: 1px;
 }
-.bottom-nav img {
+.footer img {
   width: 50px;
 
   cursor: pointer;
@@ -499,6 +393,117 @@ p {
   height: 50px;
 
   background: url("../images/pokedex.png") no-repeat;
+}
+.game-dimensions {
+  width: 45px;
+  height: 45px;
+}
+.button-group {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.button-group .button-group-heading {
+  font-weight: 700;
+}
+.button {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+
+  cursor: pointer;
+
+  border: 1px solid #000;
+  border-radius: 4px;
+  background: #e6000f;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+.button.button_x {
+  width: 45px;
+  height: 45px;
+
+  background-image: url("../images/pokemon-x-title-sm.png");
+}
+.button.button_y {
+  width: 45px;
+  height: 45px;
+
+  background-image: url("../images/pokemon-y-title-sm.png");
+}
+.button.button_omegaRuby {
+  width: 45px;
+  height: 45px;
+
+  background-image: url("../images/pokemon-or-logo.png");
+}
+.button.button_alphaSapphire {
+  width: 45px;
+  height: 45px;
+
+  background-image: url("../images/pokemon-as-logo.png");
+}
+.button:hover {
+  background-color: linear-gradient(to bottom, #b3000c 5%, #e6000f 100%);
+}
+.button:active {
+  position: relative;
+  top: 1px;
+}
+.dropdown {
+          flex: 0 1 auto;
+
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+}
+.dropdown .dropdown-heading {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+
+  cursor: pointer;
+}
+.dropdown .dropdown-heading.open:before {
+  -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+          transform: rotate(0);
+}
+.dropdown .dropdown-heading:before {
+  display: inline-block;
+
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.25rem;
+
+  content: "";
+  transition: all 0.1s linear;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+
+  background: url("../images/arrow-up.png") no-repeat;
+  background-size: contain;
+}
+.dropdown .dropdown-content {
+  display: none;
+
+  margin-left: 1rem;
+}
+.dropdown .dropdown-content p {
+  font-size: 0.9rem;
+}
+.text-center {
+  text-align: center;
 }
 .XVersion {
   background: linear-gradient(to bottom, #035c9c 0%, #035c94 49%, #041c3c 100%);
@@ -741,7 +746,7 @@ p {
 .sprites.Sandslash {
   background-position: -352px -37px;
 }
-.sprites.NidoranF {
+.sprites.Nidoran-f {
   background-position: -385px -37px;
 }
 .sprites.Nidorina {
@@ -750,7 +755,7 @@ p {
 .sprites.Nidoqueen {
   background-position: -447px -38px;
 }
-.sprites.NidoranM {
+.sprites.Nidoran-m {
   background-position: -480px -36px;
 }
 .sprites.Nidorino {
@@ -1020,7 +1025,7 @@ p {
 .sprites.Starmie {
   background-position: -255px -229px;
 }
-.sprites.Mime {
+.sprites.Mr-Mime {
   background-position: -288px -228px;
 }
 .sprites.Scyther {
@@ -1484,7 +1489,7 @@ p {
 .sprites.Shiftry {
   background-position: -64px -547px;
 }
-.sprites.Tailow {
+.sprites.Taillow {
   background-position: -97px -548px;
 }
 .sprites.Swellow {
@@ -1532,7 +1537,7 @@ p {
 .sprites.Ninjask {
   background-position: -62px -582px;
 }
-.sprites.Sheninja {
+.sprites.Shedinja {
   background-position: -96px -581px;
 }
 .sprites.Whismur {
@@ -2248,7 +2253,7 @@ p {
 .sprites.Drilbur {
   background-position: -383px -1061px;
 }
-.sprites.Exadrill {
+.sprites.Excadrill {
   background-position: -415px -1061px;
 }
 .sprites.Audino {
@@ -2320,10 +2325,10 @@ p {
 .sprites.Krookodile {
   background-position: -130px -1122px;
 }
-.sprites.Darimaka {
+.sprites.Darumaka {
   background-position: -162px -1124px;
 }
-.sprites.Darmantan {
+.sprites.Darmanitan {
   background-position: -191px -1123px;
 }
 .sprites.Maractus {
@@ -2410,7 +2415,7 @@ p {
 .sprites.Vanillish {
   background-position: -95px -1188px;
 }
-.sprites.Vaniluxe {
+.sprites.Vanilluxe {
   background-position: -129px -1187px;
 }
 .sprites.Deerling {
@@ -2467,10 +2472,10 @@ p {
 .sprites.Tynamo {
   background-position: -193px -1219px;
 }
-.sprites.Elektrik {
+.sprites.Eelektrik {
   background-position: -225px -1220px;
 }
-.sprites.Electross {
+.sprites.Eelektross {
   background-position: -257px -1220px;
 }
 .sprites.Elgyem {
@@ -2485,7 +2490,7 @@ p {
 .sprites.Lampent {
   background-position: -383px -1219px;
 }
-.sprites.Candelure {
+.sprites.Chandelure {
   background-position: -415px -1220px;
 }
 .sprites.Axew {
@@ -2584,7 +2589,7 @@ p {
 .sprites.Tornadus {
   background-position: -414px -1284px;
 }
-.sprites.Thudurus {
+.sprites.Thundurus {
   background-position: -480px -1283px;
 }
 .sprites.Reshiram {
@@ -2615,7 +2620,7 @@ p {
 .sprites.Quilladin {
   background-position: -447px -1312px;
 }
-.sprites.Chestnaught {
+.sprites.Chesnaught {
   background-position: -480px -1311px;
 }
 .sprites.Fennekin {
@@ -2711,7 +2716,7 @@ p {
 .sprites.Aromatisse {
   background-position: -447px -1377px;
 }
-.sprites.Swirlx {
+.sprites.Swirlix {
   background-position: -480px -1376px;
 }
 .sprites.Slurpuff {

@@ -1,9 +1,15 @@
 //==== Buttons ====//
 
+//Blocks
+.game-dimensions {
+    width: 45px;
+    height: 45px;
+}
+
 //Button Group
 .button-group {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
     margin-top: .75rem;
     margin-bottom: .5rem;
@@ -28,26 +34,22 @@
 
     &.button_x {
         background-image: url('../images/pokemon-x-title-sm.png');
-        width: 45px;
-        height: 45px;
+        .game-dimensions;
     }
     
     &.button_y {
         background-image: url('../images/pokemon-y-title-sm.png');
-        width: 45px;
-        height: 45px;
+       .game-dimensions;
     }
     
     &.button_omegaRuby {
-        background-image: url('/images/pokemon-or-logo.png');
-        width: 45px;
-        height: 45px;
+        background-image: url('../images/pokemon-or-logo.png');
+        .game-dimensions;
     }
     
     &.button_alphaSapphire {
-        background-image: url('/images/pokemon-as-logo.png');
-        width: 45px;
-        height: 45px;
+        background-image: url('../images/pokemon-as-logo.png');
+        .game-dimensions;
     }
 
     &:hover {                
