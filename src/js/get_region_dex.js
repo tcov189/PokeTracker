@@ -1,13 +1,13 @@
 $.ajax({
-        url: 'data/pokemon.json',
+        url: 'data/pokedexes/national-dex.json',
         async: false,
         success: function(data){
             nationalPkmnData = [];
             $.each(data, function(i, val){
                 nationalDexObj = {
-                    'name' : i.toLowerCase(),
+                    'name' : val.name,
                     'type' : val.type,
-                    'n_dex_num' : val.dex_num,
+                    'n_dex_num' : val.n_dex_num,
                     'r_dex_num' : ''
                 };                
                 nationalPkmnData.push(nationalDexObj);
@@ -19,20 +19,20 @@ $.ajax({
         url: 'data/pokedexes/sshg.json',
         async: false,
         success: function(data){
-            sshgRegionalDex = [];
+            nationalDex = [];
             $.each(data.pokemon_entries, function(i, val){
                 regionalDexObj = {
                     'name' : val.pokemon_species.name,
-                    'r_dex_num' : val.entry_number                
+                    'r_dex_num' : val.entry_number
                 }
-                sshgRegionalDex.push(regionalDexObj);
+                nationalDex.push(regionalDexObj);
             })
         }
     });    
 
-    var mergedArr = $.merge(nationalPkmnData, sshgRegionalDex);
+    var mergedArr = $.merge(nationalPkmnData, nationalDex);
     
-    var johtoOnly = [];
+    var allOnly = [];
     var dupes = [];
     
     mergedArr.forEach(function(value) {
@@ -42,7 +42,7 @@ $.ajax({
       if (existing.length) {
         var existingIndex = dupes.indexOf(existing[0]);        
         dupes[existingIndex].r_dex_num = dupes[existingIndex].r_dex_num.concat(value.r_dex_num);
-        johtoOnly.push(dupes[existingIndex])  
+        allOnly.push(dupes[existingIndex])  
       } else {
         if (typeof value.name == 'string')
           value.name = value.name;
@@ -50,4 +50,4 @@ $.ajax({
       }
     });
     
-    console.log(JSON.stringify(johtoOnly));
+    console.log(JSON.stringify(allOnly))
