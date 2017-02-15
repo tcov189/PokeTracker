@@ -39,64 +39,17 @@
     </head>
 <body>
 
-<div class="header">
-    <div class="poketrackerTitle">
-        <img src="images/poketracker-title.png" alt="PokeTracker">
-    </div>
-    <div class="versionLogo">
-        
-    </div>
-    <div class="changeGameBtn">
-        <button type="button" onclick="gameChange();">Change Game</button>
-    </div>
+<div class="header">        
 </div><!-- end .header-->
 
-<div class="container">   
-    
-    <div class="locContainer" id="loc_container">
-       <div class="locTitle" id="loc_title">                      
-            <div class="locLabel" id="loc_label">
-                <div class="locTitleCon">
-                    <i class="locSign" id="loc_sign"></i>
-                    <h3 class="locTitleText" id="loc_title_text"></h4>
-                </div>
-                <div class="locDestination">
-                    <div class="locPrevious" id="loc_previous"><span><i class="previousArrow"></i>Previous</span></div>        
-                    <div class="locNext" id="loc_next"><span>Next<i class="nextArrow"></i></span></div>
-                </div>
-            </div>
-            <div class="mapTab">
-               <div class="zoom">
-                   <span>Full map</span>
-                   <button type="button" class="zoomBtn"></button>
-               </div>                
-                <div class="locImg" id="loc_img"><div class="locationMarkerSm"></div></div>
-            </div>
-        </div>                    
-
-        <div class="locHeader" id="loc_header"> 
-           <div class="locEnc">
-               <h4>Encounters</h4>
-               <div class="locEncDropdown" id="loc_enc_dropdown"></div>
-           </div>
-                        
-        </div>
-        
-        <!-- end locHeader-->
-        <div class="locBody" id="loc_body">
-           <div class="locInfoTop" id="loc_info_top">            
-            </div>
-            <!-- end locInfoTop -->
-            <div class="pokemon_route_info"></div>
-        </div>
-        <!-- end locBody-->
-        <div class="map_overlay"><div class="locImg loc_img_lw"><div class="locationMarker"></div></div><p></p></div>
+<div class="container">
+    <div class="map">
+       <div class="map-img">
+           <img src="images/maps/oras-map.png" alt="Region Map">
+       </div>        
     </div>
-    <!--end locContainer-->
 </div>
-<footer class="bottom-nav">
-        
-</footer><!-- end footer-->
+<footer class="footer"></footer><!-- end footer-->
 <script src="scripts/jquery.min.js"></script>
 <!--
     <script>                

@@ -245,6 +245,19 @@ p {
 
   line-height: 1.5;
 }
+.map {
+  overflow: hidden;
+          flex: 0 1 auto;
+
+  max-width: 330px;
+  height: 220px;
+
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+}
+.map .map-img img {
+  width: 300px;
+}
 .container {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -253,7 +266,6 @@ p {
           flex-direction: column;
 
   min-height: calc(100vh - 105px);
-  margin: 0 0.5rem;
 
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
@@ -266,8 +278,7 @@ p {
           flex-direction: column;
           flex: 0 1 auto;
 
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem;
   padding-right: 0.25rem;
   padding-left: 0.25rem;
 
