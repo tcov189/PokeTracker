@@ -249,6 +249,10 @@ p {
   overflow: hidden;
           flex: 0 1 auto;
 
+  border: 1px solid #5b5b5b;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+
   -webkit-flex: 0 1 auto;
       -ms-flex: 0 1 auto;
 }
@@ -256,6 +260,7 @@ p {
   overflow: scroll;
 
   max-height: 200px;
+  margin-bottom: -4px;
 }
 .map .map-img img {
   min-width: 100%;
