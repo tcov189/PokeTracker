@@ -249,14 +249,16 @@ p {
   overflow: hidden;
           flex: 0 1 auto;
 
-  max-width: 330px;
-  height: 220px;
-
   -webkit-flex: 0 1 auto;
       -ms-flex: 0 1 auto;
 }
+.map .map-img {
+  overflow: scroll;
+
+  max-height: 200px;
+}
 .map .map-img img {
-  width: 300px;
+  min-width: 100%;
 }
 .container {
   display: -webkit-flex;
