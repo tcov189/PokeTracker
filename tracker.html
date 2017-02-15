@@ -98,7 +98,8 @@
         
 </footer><!-- end footer-->
 <script src="scripts/jquery.min.js"></script>
-<script>$.ajax({
+<script>
+$.ajax({
         url: 'data/pokedexes/national-dex.json',
         async: false,
         success: function(data){
@@ -116,23 +117,23 @@
     });
     
     $.ajax({
-        url: 'data/pokedexes/red-blue.json',
+        url: 'data/pokeapi_data/xy-coastal.json',
         async: false,
         success: function(data){
-            redBlueDex = [];
+            regionalDexData = [];
             $.each(data.pokemon_entries, function(i, val){
                 regionalDexObj = {
                     'name' : val.pokemon_species.name,
                     'r_dex_num' : val.entry_number
                 }
-                redBlueDex.push(regionalDexObj);
+                regionalDexData.push(regionalDexObj);
             })
         }
     });    
 
-    var mergedArr = $.merge(nationalPkmnData, redBlueDex);
+    var mergedArr = $.merge(nationalPkmnData, regionalDexData);
     
-    var redBlueOnly = [];
+    var regionOnly = [];
     var dupes = [];
     
     mergedArr.forEach(function(value) {
@@ -142,7 +143,7 @@
       if (existing.length) {
         var existingIndex = dupes.indexOf(existing[0]);        
         dupes[existingIndex].r_dex_num = dupes[existingIndex].r_dex_num.concat(value.r_dex_num);
-        redBlueOnly.push(dupes[existingIndex])  
+        regionOnly.push(dupes[existingIndex])  
       } else {
         if (typeof value.name == 'string')
           value.name = value.name;
@@ -150,7 +151,8 @@
       }
     });
     
-    console.log(JSON.stringify(redBlueOnly))</script>
+    console.log(JSON.stringify(regionOnly))    
+</script>
 <!--
     <script>                
         //See how much room is in localStorage

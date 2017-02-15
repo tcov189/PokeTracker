@@ -69,7 +69,7 @@ prompt.get(schema, function(err, result){
         .then(function(response){
             response = JSON.stringify(response);
             console.log('Got response, writing file..');
-            write(result, response, 'pokedexes');
+            write(result, response, 'pokeapi_data');
         })        
     } else {
         console.log(colors.red('Resource function not found!'));
