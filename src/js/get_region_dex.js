@@ -11,7 +11,7 @@ $.ajax({
                     'r_dex_num' : ''
                 };                
                 nationalPkmnData.push(nationalDexObj);
-            })
+            });
         }
     });
     
@@ -24,9 +24,9 @@ $.ajax({
                 regionalDexObj = {
                     'name' : val.pokemon_species.name,
                     'r_dex_num' : val.entry_number
-                }
+                };
                 regionalDexData.push(regionalDexObj);
-            })
+            });
         }
     });    
 
@@ -37,17 +37,18 @@ $.ajax({
     
     mergedArr.forEach(function(value) {
       var existing = dupes.filter(function(v, i) {
-        return v.name == value.name;
+        return v.name === value.name;
       });
       if (existing.length) {
         var existingIndex = dupes.indexOf(existing[0]);        
         dupes[existingIndex].r_dex_num = dupes[existingIndex].r_dex_num.concat(value.r_dex_num);
-        regionOnly.push(dupes[existingIndex])  
+        regionOnly.push(dupes[existingIndex]);
       } else {
-        if (typeof value.name == 'string')
+        if (typeof value.name === 'string'){
           value.name = value.name;
         dupes.push(value);
+        }
       }
     });
     
-    console.log(JSON.stringify(regionOnly))
+    console.log(JSON.stringify(regionOnly));
