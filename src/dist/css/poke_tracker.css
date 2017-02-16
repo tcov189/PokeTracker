@@ -335,12 +335,12 @@ p {
   display: -ms-flexbox;
   display:         flex;
           flex: 2 0 auto;
-  -webkit-align-items: center;
-          align-items: center;
+  -webkit-align-items: baseline;
+          align-items: baseline;
 
   -webkit-flex: 2 0 auto;
       -ms-flex: 2 0 auto;
-  -ms-flex-align: center;
+  -ms-flex-align: baseline;
 }
 .header-map-info:before {
   width: 1rem;
@@ -542,11 +542,14 @@ p {
   background-image: url("../images/cog.png");
 }
 .button:hover {
-  background-color: linear-gradient(to bottom, #b3000c 5%, #e6000f 100%);
+  background-color: linear-gradient(to bottom, #e6000f 5%, #b3000c 100%);
 }
 .button:active {
   position: relative;
   top: 1px;
+}
+.button:focus {
+  outline: 0;
 }
 .dropdown {
           flex: 0 1 auto;
