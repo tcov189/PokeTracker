@@ -317,14 +317,14 @@ p {
   display: -ms-flexbox;
   display:         flex;
           flex: 1 0 auto;
-  -webkit-align-items: center;
-          align-items: center;
+  -webkit-align-items: baseline;
+          align-items: baseline;
 
   padding-left: 0.25rem;
 
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
-  -ms-flex-align: center;
+  -ms-flex-align: baseline;
 }
 .header-game-block .header-game-icon__oras {
   width: 1.7rem;
