@@ -338,6 +338,8 @@ p {
   -webkit-align-items: baseline;
           align-items: baseline;
 
+  font-weight: 700;
+
   -webkit-flex: 2 0 auto;
       -ms-flex: 2 0 auto;
   -ms-flex-align: baseline;
@@ -596,6 +598,18 @@ p {
 .dropdown .dropdown-content p {
   font-size: 0.9rem;
 }
+.block-route .route-info-header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  -ms-flex-pack: center;
+}
 .block-route .route-info-block {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -605,14 +619,14 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-          flex: 0 0 43%;
+          flex: 0 0 40%;
   -webkit-justify-content: space-between;
           justify-content: space-between;
   -webkit-align-items: center;
           align-items: center;
 
-  -webkit-flex: 0 0 43%;
-      -ms-flex: 0 0 43%;
+  -webkit-flex: 0 0 40%;
+      -ms-flex: 0 0 40%;
   -ms-flex-align: center;
   -ms-flex-pack: justify;
 }
@@ -624,9 +638,6 @@ p {
 
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-}
-.block-route .route-info-block .route-pokemon-name {
-  font-weight: 700;
 }
 /*========== Sprites ===========*/
 /*Base*/
