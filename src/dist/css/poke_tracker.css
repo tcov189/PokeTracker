@@ -246,8 +246,9 @@ p {
   line-height: 1.5;
 }
 .map {
-  overflow: hidden;
           flex: 0 1 auto;
+
+  overflow: hidden;
 
   border: 1px solid #5b5b5b;
   border-bottom-right-radius: 2px;
@@ -269,7 +270,6 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-
           flex-direction: column;
 
   min-height: calc(100vh - 105px);
@@ -281,9 +281,8 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-
-          flex-direction: column;
           flex: 0 1 auto;
+          flex-direction: column;
 
   margin: 0.5rem;
   padding-right: 0.25rem;
@@ -295,26 +294,55 @@ p {
       -ms-flex: 0 1 auto;
 }
 .header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  -webkit-align-items: center;
+          align-items: center;
+
   min-height: 30px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 
   background-color: #cc000e;
   box-shadow: inset 0 0 16px -2px;
+
+  -ms-flex-align: center;
+  -ms-flex-pack: distribute;
 }
-.map-header {
+.header-game-block {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-
+          flex: 1 0 auto;
   -webkit-align-items: center;
-  -ms-flex-align: center;
           align-items: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-          justify-content: center;
+
+  padding-left: 0.25rem;
+
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+  -ms-flex-align: center;
 }
-.map-header:before {
+.header-game-block .header-game-icon__oras {
+  width: 1.7rem;
+  height: 1.5rem;
+}
+.header-map-info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+          flex: 2 0 auto;
+  -webkit-align-items: center;
+          align-items: center;
+
+  -webkit-flex: 2 0 auto;
+      -ms-flex: 2 0 auto;
+  -ms-flex-align: center;
+}
+.header-map-info:before {
   width: 1rem;
   height: 1rem;
   margin-right: 0.2rem;
@@ -323,6 +351,16 @@ p {
 
   background: url("../images/route-sign.png") no-repeat;
   background-size: contain;
+}
+.header-settings {
+          flex: 1 0 auto;
+
+  padding-right: 0.25rem;
+
+  text-align: right;
+
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
 }
 .footer {
   display: -webkit-flex;
@@ -338,23 +376,22 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-
           flex-direction: column;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-align-self: center;
+          align-self: center;
 
   width: 20%;
   height: 60px;
 
   border-radius: 37px;
 
-  -webkit-align-self: center;
   -ms-flex-item-align: center;
-          align-self: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
-          align-items: center;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
 }
@@ -387,25 +424,24 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
 
   color: #000;
 
-  -webkit-align-items: center;
   -ms-flex-align: center;
-          align-items: center;
 }
 .btm-panel-button {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-
           flex-direction: column;
+  -webkit-align-items: center;
+          align-items: center;
 
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-  -webkit-align-items: center;
   -ms-flex-align: center;
-          align-items: center;
 }
 .poketrackerIcon {
   width: 39px;
@@ -435,7 +471,7 @@ p {
 
   background: url("../images/pokedex.png") no-repeat;
 }
-.game-dimensions {
+.game-button-dimensions {
   width: 45px;
   height: 45px;
 }
@@ -443,13 +479,13 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
 
   margin-top: 0.75rem;
   margin-bottom: 0.5rem;
 
-  -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
-          justify-content: space-around;
 }
 .button-group .button-group-heading {
   font-weight: 700;
@@ -497,6 +533,13 @@ p {
 }
 .button.button_pokemon:hover {
   background-color: linear-gradient(to bottom, #ccc 5%, #e6e6e6 100%);
+}
+.button.button_settings {
+  width: 2rem;
+  height: 2rem;
+
+  background-color: transparent;
+  background-image: url("../images/cog.png");
 }
 .button:hover {
   background-color: linear-gradient(to bottom, #b3000c 5%, #e6000f 100%);
@@ -559,23 +602,21 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-
           flex: 0 0 43%;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-align-items: center;
+          align-items: center;
 
   -webkit-flex: 0 0 43%;
       -ms-flex: 0 0 43%;
-  -webkit-align-items: center;
   -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .block-route .route-info-block .route-pokemon-info {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-
           flex-direction: column;
 
   -webkit-flex-direction: column;
@@ -2837,7 +2878,10 @@ p {
   text-align: center;
 }
 .font-size-large {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+}
+.font-size-small {
+  font-size: 0.75rem;
 }
 .XVersion {
   background: linear-gradient(to bottom, #035c9c 0%, #035c94 49%, #041c3c 100%);
@@ -2854,16 +2898,17 @@ p {
   /* IE6-9 */
 }
 .pokemon_route_info {
+  -webkit-align-self: center;
+          align-self: center;
+
   max-width: 480px;
   margin: 5px 5px 15px;
   margin-bottom: 12px;
 
   color: #000;
 
-  -webkit-align-self: center;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
-          align-self: center;
 }
 .pokemon_route_info:nth-child(1) {
   padding: 5px 5px 5px 10px;
@@ -2881,7 +2926,6 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-
           flex-direction: column;
 
   margin: 5px 10px;
@@ -2899,7 +2943,6 @@ p {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display:         inline-flex;
-
           flex: 1;
 
   -webkit-flex: 1;
@@ -2909,12 +2952,13 @@ p {
           flex-basis: 28px;
 }
 .pkmn-card .pkmn-card-info {
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-          align-items: center;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-align-items: center;
+          align-items: center;
+
+  -ms-flex-align: center;
+  -ms-flex-pack: justify;
 }
 .pkmn-card .pkmn-card-info p,
 .pkmn-card .pkmn-card-info a {
@@ -2936,12 +2980,13 @@ p {
   text-decoration: underline;
 }
 .pkmn-card .catch-info {
-  -webkit-align-items: baseline;
-  -ms-flex-align: baseline;
-          align-items: baseline;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-align-items: baseline;
+          align-items: baseline;
+
+  -ms-flex-align: baseline;
+  -ms-flex-pack: justify;
 }
 .pkmn-card .catch-info span {
           flex: 1;

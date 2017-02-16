@@ -1,15 +1,34 @@
 //Header CSS
 .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
     padding-top: .5rem;
     padding-bottom: .5rem;
     .red-bg;
     min-height: 30px;
 }
 
-.map-header {
+.header-game-block {
+    flex: 1 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;          
+    padding-left: .25rem;
+    
+    .header-game-icon {        
+
+        &__oras {
+            height: 1.5rem;
+            width: 1.7rem;
+        }
+    }
+}
+
+.header-map-info {
+    display: flex;
+    flex: 2 0 auto;
+    align-items: center;          
 
      &:before {
         content: '';                
@@ -19,4 +38,10 @@
         background: url('../images/route-sign.png') no-repeat;
         background-size: contain;
     }
+}
+
+.header-settings {
+    flex: 1 0 auto;
+    padding-right: .25rem;
+    text-align: right;
 }

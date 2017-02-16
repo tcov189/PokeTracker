@@ -25,6 +25,19 @@
     "sort-order": [
         [
             "display",
+            "flex",
+            "flex-direction",
+            "flex-order",
+            "flex-pack",
+            "flex-align",
+            "-webkit-justify-content",
+            "justify-content",
+            "-webkit-align-content",
+            "align-content",
+            "-webkit-align-items",
+            "align-items",        
+            "-webkit-align-self",
+            "align-self",
             "position",
             "z-index",
             "top",
@@ -43,12 +56,7 @@
             "-ms-overflow-y",
             "-webkit-overflow-scrolling",
             "clip",
-            "zoom",
-            "flex-direction",
-            "flex-order",
-            "flex-pack",
-            "flex-align",
-            "flex"
+            "zoom"
         ],
         [
             "-webkit-box-sizing",
