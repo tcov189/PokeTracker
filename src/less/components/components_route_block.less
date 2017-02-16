@@ -1,0 +1,46 @@
+//Route block css
+
+.block-route {
+    
+    .route-header {
+        align-items: center;
+        align-self: center;
+        font-weight: 700;
+        display: flex;
+             
+        
+         &:before {
+            content: '';                
+            margin-right: .25rem;
+            width: 1.4rem;
+            height: 1.4rem;
+            background: url('../images/route-sign.png') no-repeat;
+            background-size: contain;
+        }
+    }
+    
+    .route-info-block {
+        display: flex;
+        
+        .route-pokemon-block {
+            display: flex;
+            flex: 0 0 43%;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .route-pokemon-info {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .route-pokemon-name {
+            font-weight: 700;
+        }        
+        
+        .route-pokemon-type {
+            display: flex;
+        }
+    }
+
+}
