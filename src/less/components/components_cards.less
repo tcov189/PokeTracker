@@ -1,0 +1,27 @@
+//==== Card css ====//
+
+.card {
+    display: flex;
+    flex-direction: row;
+    padding: .25rem;    
+    
+    &.card-default {
+        border: 1px solid @gray;
+        border-radius: .5rem;
+    }
+    
+    &.card_gray {
+        background: @light-gray;
+    }
+    
+    &.card_pokemon {
+        background: @light-gray;
+        flex: 0 0 90%;
+        
+        .card_pokemon-pokeball {
+            border-right: 1px solid @black;
+            padding-right: .25rem;
+            display: flex;
+        }
+    }
+}

@@ -32,6 +32,8 @@
   src: local("Source Sans Pro Bold Italic"), local("fonts/SourceSansPro-BoldIt"), url("https://fonts.gstatic.com/s/sourcesanspro/v9/fpTVHK8qsXbIeTHTrnQH6PgYMAt3u4NmhhzLLLPJ5qH3rGVtsTkPsbDajuO5ueQw.woff") format("woff");
 }
 html {
+  color: #1e1e1e;
+
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
 }
@@ -239,6 +241,10 @@ h1,
 h2 {
   margin: 0 0 0.6rem 0;
 }
+h3 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
 p {
   margin-top: 0.4rem;
   margin-bottom: 0;
@@ -246,25 +252,17 @@ p {
   line-height: 1.5;
 }
 .map {
-          flex: 0 1 auto;
-
   overflow: hidden;
+
+  max-width: 7rem;
+  height: 9rem;
 
   border: 1px solid #5b5b5b;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
-
-  -webkit-flex: 0 1 auto;
-      -ms-flex: 0 1 auto;
 }
 .map .map-img {
   overflow: scroll;
-
-  max-height: 150px;
-  margin-bottom: -4px;
-}
-.map .map-img img {
-  min-width: 100%;
 }
 .container {
   display: -webkit-flex;
@@ -293,13 +291,23 @@ p {
   -webkit-flex: 0 1 auto;
       -ms-flex: 0 1 auto;
 }
+.container .block.block-route {
+          flex-direction: row;
+
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+}
+.container .block.block-encounters {
+          flex-direction: column;
+
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+}
 .header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-  -webkit-justify-content: space-around;
           justify-content: space-around;
-  -webkit-align-items: center;
           align-items: center;
 
   min-height: 30px;
@@ -309,7 +317,9 @@ p {
   background-color: #cc000e;
   box-shadow: inset 0 0 16px -2px;
 
+  -webkit-align-items: center;
   -ms-flex-align: center;
+  -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
 }
 .header-game-block {
@@ -317,42 +327,32 @@ p {
   display: -ms-flexbox;
   display:         flex;
           flex: 1 0 auto;
-  -webkit-align-items: center;
           align-items: center;
-
-  padding-left: 0.25rem;
 
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
+  -webkit-align-items: center;
   -ms-flex-align: center;
 }
 .header-game-block .header-game-icon__oras {
   width: 1.7rem;
   height: 1.5rem;
 }
-.header-map-info {
+.header-brand {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-          flex: 2 0 auto;
-  -webkit-align-items: baseline;
+          flex: 1 0 auto;
           align-items: baseline;
 
-  font-weight: 700;
-
-  -webkit-flex: 2 0 auto;
-      -ms-flex: 2 0 auto;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+  -webkit-align-items: baseline;
   -ms-flex-align: baseline;
 }
-.header-map-info:before {
-  width: 1rem;
-  height: 1rem;
-  margin-right: 0.2rem;
-
-  content: "";
-
-  background: url("../images/route-sign.png") no-repeat;
-  background-size: contain;
+.header-brand .header-brand-logo {
+  width: 7.5rem;
+  padding-left: 0.25rem;
 }
 .header-settings {
           flex: 1 0 auto;
@@ -379,11 +379,8 @@ p {
   display: -ms-flexbox;
   display:         flex;
           flex-direction: column;
-  -webkit-justify-content: center;
           justify-content: center;
-  -webkit-align-items: center;
           align-items: center;
-  -webkit-align-self: center;
           align-self: center;
 
   width: 20%;
@@ -391,8 +388,11 @@ p {
 
   border-radius: 37px;
 
+  -webkit-align-self: center;
   -ms-flex-item-align: center;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-align-items: center;
   -ms-flex-align: center;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
@@ -426,11 +426,11 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-  -webkit-align-items: center;
           align-items: center;
 
   color: #000;
 
+  -webkit-align-items: center;
   -ms-flex-align: center;
 }
 .btm-panel-button {
@@ -438,11 +438,11 @@ p {
   display: -ms-flexbox;
   display:         flex;
           flex-direction: column;
-  -webkit-align-items: center;
           align-items: center;
 
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
+  -webkit-align-items: center;
   -ms-flex-align: center;
 }
 .poketrackerIcon {
@@ -481,12 +481,12 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-  -webkit-justify-content: space-around;
           justify-content: space-around;
 
   margin-top: 0.75rem;
   margin-bottom: 0.5rem;
 
+  -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
 }
 .button-group .button-group-heading {
@@ -528,13 +528,6 @@ p {
   height: 45px;
 
   background-image: url("../images/pokemon-as-logo.png");
-}
-.button.button_pokemon {
-  border: 1px solid #ccc;
-  background: #e6e6e6;
-}
-.button.button_pokemon:hover {
-  background-color: linear-gradient(to bottom, #ccc 5%, #e6e6e6 100%);
 }
 .button.button_settings {
   width: 2rem;
@@ -598,22 +591,130 @@ p {
 .dropdown .dropdown-content p {
   font-size: 0.9rem;
 }
-.block-route .block-route-header {
+.block-route-info {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-  -webkit-justify-content: center;
+          flex: 2;
+          flex-direction: column;
+
+  -webkit-flex: 2;
+      -ms-flex: 2;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+}
+.block-route-info .block-route-header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+.block-route-info .block-route-header:before {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.2rem;
+
+  content: "";
+
+  background: url("../images/route-sign.png") no-repeat;
+  background-size: contain;
+}
+.block-route-info .block-route-paths {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.block-route-info .block-route-paths .block-path-group {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+          flex: 1 1 auto;
+          flex-direction: column;
+          align-items: flex-start;
+
+  padding-bottom: 0.75rem;
+
+  font-size: 0.8rem;
+
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+}
+.block-route-info .block-route-paths .block-path-group:nth-child(2n) {
+          align-items: flex-end;
+
+  padding-right: 0.2rem;
+
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+}
+.block-route-map {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+          flex: 1;
+
+  -webkit-flex: 1;
+      -ms-flex: 1;
+}
+.block-encounters-pokemon {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+          flex-direction: row;
           justify-content: center;
 
-  font-size: 1.25rem;
-  font-weight: 700;
-
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+  -webkit-justify-content: center;
   -ms-flex-pack: center;
 }
-.block-route .block-route-info {
+.card {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+          flex-direction: row;
+
+  padding: 0.25rem;
+
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+}
+.card.card-default {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+.card.card_gray {
+  background: #e6e6e6;
+}
+.card.card_pokemon {
+          flex: 0 0 90%;
+
+  background: #e6e6e6;
+
+  -webkit-flex: 0 0 90%;
+      -ms-flex: 0 0 90%;
+}
+.card.card_pokemon .card_pokemon-pokeball {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+
+  padding-right: 0.25rem;
+
+  border-right: 1px solid #1e1e1e;
 }
 /*========== Sprites ===========*/
 /*Base*/
@@ -2872,145 +2973,5 @@ p {
 }
 .font-size-small {
   font-size: 0.75rem;
-}
-.XVersion {
-  background: linear-gradient(to bottom, #035c9c 0%, #035c94 49%, #041c3c 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#035c9c', endColorstr='#041c3c', GradientType=0);
-  /* IE6-9 */
-}
-.YVersion {
-  background: linear-gradient(to bottom, #8b273b 9%, #ab1f43 50%, #ab1f43 51%, #431b1c 96%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8b273b', endColorstr='#431b1c', GradientType=0);
-  /* IE6-9 */
-}
-.pokemon_route_info {
-  -webkit-align-self: center;
-          align-self: center;
-
-  max-width: 480px;
-  margin: 5px 5px 15px;
-  margin-bottom: 12px;
-
-  color: #000;
-
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-}
-.pokemon_route_info:nth-child(1) {
-  padding: 5px 5px 5px 10px;
-}
-.pokemon_route_info img {
-  display: inline-block;
-}
-.pokemon_route_info > div {
-          flex-direction: column;
-
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-}
-.pkmn-card {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-          flex-direction: column;
-
-  margin: 5px 10px;
-  padding: 5px 8px;
-
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  background: #e6e6e6;
-
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-}
-.pkmn-card .pkmn-card-info,
-.pkmn-card .catch-info {
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display:         inline-flex;
-          flex: 1;
-
-  -webkit-flex: 1;
-      -ms-flex: 1;
-  -webkit-flex-basis: 28px;
-  -ms-flex-preferred-size: 28px;
-          flex-basis: 28px;
-}
-.pkmn-card .pkmn-card-info {
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
-  -webkit-align-items: center;
-          align-items: center;
-
-  -ms-flex-align: center;
-  -ms-flex-pack: justify;
-}
-.pkmn-card .pkmn-card-info p,
-.pkmn-card .pkmn-card-info a {
-          flex: 2;
-
-  padding-right: 5px;
-
-  font-weight: 700;
-
-  -webkit-flex: 2;
-      -ms-flex: 2;
-}
-.pkmn-card .pkmn-card-info a {
-  text-decoration: none;
-
-  color: #000;
-}
-.pkmn-card .pkmn-card-info a:hover {
-  text-decoration: underline;
-}
-.pkmn-card .catch-info {
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
-  -webkit-align-items: baseline;
-          align-items: baseline;
-
-  -ms-flex-align: baseline;
-  -ms-flex-pack: justify;
-}
-.pkmn-card .catch-info span {
-          flex: 1;
-
-  margin-right: 5px;
-
-  font-size: 0.8em;
-
-  -webkit-flex: 1;
-      -ms-flex: 1;
-}
-.pkmn-card .catch-info button {
-  margin-right: 5px;
-}
-.pokemon_route_info h2 {
-  margin: 0 5px;
-  padding-top: 7px;
-
-  text-align: center;
-}
-/* UTILITY */
-.error {
-  margin: 0;
-
-  text-align: center;
-
-  font-weight: 700;
-}
-.weak {
-  color: #fff;
-  background-color: #ff4d4d;
-}
-.super-effective {
-  color: #fff;
-  background-color: #00b33c;
 }
 /*# sourceMappingURL=poke_tracker.css.map */

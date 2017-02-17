@@ -40,33 +40,67 @@
 <body>
 
 <div class="header">
+  <div class="header-brand">
+        <a href="/">
+            <img class="header-brand-logo" src="images/poketracker-title.png" alt="">
+        </a>
+    </div>
    <div class="header-game-block">
        <img class="header-game-icon__oras" src="images/pokemon-or-logo.png" alt="">&nbsp;<span class="font-size-small">Omega Ruby</span>
-   </div>
-    <div class="header-map-info">Route 102</div>
+   </div>    
     <div class="header-settings">
         <button class="button button_settings"></button>
     </div>
 </div><!-- end .header-->
 
-<div class="container">
+<div class="container">        
     
-    <div class="map">      
-       <div class="map-img">
-           <img src="images/maps/oras-map.png" alt="Region Map">
-       </div>        
+    <div class="block block-route">                    
+       <div class="block-route-info">
+           <div class="block-route-header">
+               <h3>Route 102</h3>
+           </div>
+           <div class="block-route-paths">
+               <div class="block-path-group">
+                  <span class="block-path-group_direction">North</span>
+                   <a class="block-route-path-link" href="">Oldale Town</a>
+               </div>                          
+               <div class="block-path-group">
+                  <span class="block-path-group_direction">South</span>
+                   <a class="block-route-path-link" href="">New Bark Town</a>
+               </div>       
+               <div class="block-path-group">
+                  <span class="block-path-group_direction">North</span>
+                   <a class="block-route-path-link" href="">Oldale Town</a>
+               </div>
+               <div class="block-path-group">
+                  <span class="block-path-group_direction">North</span>
+                   <a class="block-route-path-link" href="">Oldale Town</a>
+               </div>   
+           </div>
+       </div>
+       <div class="block-route-map">
+           <div class="map">      
+               <div class="map-img">
+                   <img src="images/maps/oras-map.png" alt="Region Map">
+               </div>        
+            </div>              
+       </div>             
     </div>
     
-    <div class="block block-route">   
-       <div class="block-route-header">Encounters</div>             
-        <div class="block-route-info">           
-            <div class="button-group button-group-route-pokemon">   
-               <button class="button button_pokemon">
-                    <i class="sprites Bulbasaur"></i>
-                </button>                             
-            </div>            
-        </div>
-        <div class="block-route-info"></div>
+    <div class="block block-encounters">
+       
+       <h3 class="text-center">Encounters</h3>
+       <div class="block-encounters-pokemon">
+           <div class="card card-default card_pokemon">
+               <div class="card_pokemon-pokeball">
+                   <img class="card_pokemon-pokeball-icon" src="images/pokeball-no-catch.png" alt="" >
+               </div>
+               <div class="card_pokemon-info">
+                   
+               </div>
+           </div>              
+       </div>       
     </div>
     
 </div>
