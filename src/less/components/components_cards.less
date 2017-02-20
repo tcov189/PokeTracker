@@ -16,12 +16,23 @@
     
     &.card_pokemon {
         background: @light-gray;
-        flex: 0 0 90%;
+        flex: 0 0 98%;
         
         .card_pokemon-pokeball {
             border-right: 1px solid @black;
-            padding-right: .25rem;
+            padding-right: .25rem;            
+        }
+        
+        .card_pokemon-info {
             display: flex;
+            flex: 1;
+            
+            .pokemon-info-bio {
+                display: flex;
+                flex: 1;
+                align-items: center;
+                justify-content: space-between;
+            }
         }
     }
 }
