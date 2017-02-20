@@ -637,7 +637,7 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-          flex: 1 1 auto;
+          flex: 1 1 50%;
           flex-direction: column;
           align-items: flex-start;
 
@@ -645,8 +645,8 @@ p {
 
   font-size: 0.8rem;
 
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
   -webkit-align-items: flex-start;
