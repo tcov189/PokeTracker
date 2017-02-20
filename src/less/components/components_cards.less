@@ -18,20 +18,28 @@
         background: @light-gray;
         flex: 0 0 98%;
         
-        .card_pokemon-pokeball {
-            border-right: 1px solid @black;
-            padding-right: .25rem;            
+        .card_pokemon-pokeball {            
+            padding-right: .25rem;    
+            align-self: center;
         }
         
         .card_pokemon-info {
             display: flex;
             flex: 1;
+            flex-direction: column;
+            border-left: 1px solid @black;
             
             .pokemon-info-bio {
                 display: flex;
                 flex: 1;
                 align-items: center;
                 justify-content: space-between;                
+            }
+            
+            .pokemon-info-rates {
+                display: flex;
+                justify-content: space-between;
+                padding-left: .4rem;
             }
         }
     }
