@@ -58,25 +58,9 @@
     <div class="block block-route">                    
        <div class="block-route-info">
            <div class="block-route-header">
-               <h3>Route 102</h3>
+               <h3></h3>
            </div>
-           <div class="card block-route-paths">
-               <div class="block-path-group">
-                  <span class="block-path-group_direction">North</span>
-                   <button class="button button_route" type="button">Oldale Town</button>
-               </div>                          
-               <div class="block-path-group">
-                  <span class="block-path-group_direction">South</span>
-                   <button class="button button_route" type="button">New Bark Town</button>
-               </div>       
-               <div class="block-path-group">
-                  <span class="block-path-group_direction">North</span>
-                   <button class="button button_route" type="button">Oldale Town</button>
-               </div>
-               <div class="block-path-group">
-                  <span class="block-path-group_direction">North</span>
-                   <button class="button button_route" type="button">Oldale Town</button>
-               </div>   
+           <div class="card block-route-paths">               
            </div>
        </div>                   
     </div>
@@ -113,6 +97,74 @@
 </div>
 <footer class="footer"></footer><!-- end footer-->
 <script src="scripts/jquery.min.js"></script>
+<script>    
+    $.ajax({
+        url: 'data/locations/oras/route-101.json',
+        async: false,
+        success: function(data){
+            route_info = data;
+        }
+    });
+    
+    $(document).ready(function(){
+        //Populate the HTML
+        
+        //Route header
+        $('.block-route-header h3').text(route_info.name);
+        
+        //Exits
+        exitInfo = [];
+        $.each(route_info.exits, function (i, val) {
+            var theHtml = '<div class="block-path-group">' +
+                          '<span class="block-path-group_direction">'+ i +'</span>' +
+                          '<button class="button button_route" type="button">'+ val +'</button>' +
+                          '</div>';
+            exitInfo.push(theHtml);
+        });
+        $.each(exitInfo, function(i, val){
+            $('.block-route-paths').append(val);
+        });
+        
+        //Encounters
+        encountersInfo = [];
+        $.each(route_info.encounters, function (i, val){
+            $.each(val.pokemon, function(i, pokemon){
+                if (val.post_elite_four != 'yes') {
+                  var theHtml = '<div class="block-encounters-pokemon">' +
+                                  '<div class="card card-default card_pokemon">' +
+                                    '<div class="card_pokemon-pokeball">' +
+                                        '<img class="card_pokemon-pokeball-icon" src="images/pokeball-no-catch.png" alt="">' +
+                                    '</div>' +
+                                    '<div class="card_pokemon-info">' +
+                                        '<div class="pokemon-info-bio">' +
+                                            '<div class="pokemon-info-bio-name-sprite">' +
+                                                '<i class="sprites '+ pokemon.name +'"></i>' +
+                                                '<span class="pokemon-bio-name">'+ pokemon.name +'</span>' +
+                                            '</div>'+
+                                            '<div class="pokemon-bio-types">' +
+                                              '<i class="type-icon Grass"></i>&nbsp;<i class="type-icon Poison"></i>' +
+                                            '</div>' +
+                                        '</div>' +
+                                        '<hr>' +
+                                        '<div class="pokemon-info-rates">' +
+                                            '<div class="pokemon-rate-block">' +
+                                                '<span class="type">'+ val.type +'&nbsp;</span><span class="rate">'+ pokemon.rate +'</span>' +
+                                            '</div>'+
+                                        '</div>' +
+                                    '</div>' +
+                                  '</div>' +
+                                '</div>';
+
+                    encountersInfo.push(theHtml);
+                }
+            })            
+        })
+        $.each(encountersInfo, function (i, val) {
+            $('.block-encounters').append(val);
+        })
+    })
+    console.log(route_info);
+</script>
 <!--
     <script>                
         //See how much room is in localStorage

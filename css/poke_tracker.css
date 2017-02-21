@@ -542,6 +542,8 @@ hr {
   background-image: url("../images/cog.png");
 }
 .button.button_route {
+  text-transform: capitalize;
+
   color: #f2f2f2;
 }
 .button:hover {
@@ -617,6 +619,8 @@ hr {
   display:         flex;
           justify-content: center;
 
+  text-transform: capitalize;
+
   -webkit-justify-content: center;
   -ms-flex-pack: center;
 }
@@ -655,6 +659,8 @@ hr {
 
   padding-bottom: 0.75rem;
 
+  text-transform: capitalize;
+
   font-size: 0.9rem;
 
   -webkit-flex: 1 1 50%;
@@ -690,6 +696,8 @@ hr {
   display:         flex;
           flex-direction: row;
           justify-content: center;
+
+  margin-bottom: 0.5rem;
 
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
