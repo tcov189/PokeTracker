@@ -2981,58 +2981,58 @@ hr {
   background: transparent none no-repeat 53px 19px;
   background-image: url("../images/move_icons.png");
 }
-.type-icon.Bug {
+.type-icon.bug {
   background-position: -9px -7px;
 }
-.type-icon.Electric {
+.type-icon.electric {
   background-position: -9px -39px;
 }
-.type-icon.Fire {
+.type-icon.fire {
   background-position: -9px -72px;
 }
-.type-icon.Grass {
+.type-icon.grass {
   background-position: -9px -106px;
 }
-.type-icon.Normal {
+.type-icon.normal {
   background-position: -9px -139px;
 }
-.type-icon.Rock {
+.type-icon.rock {
   background-position: -9px -173px;
 }
-.type-icon.Dark {
+.type-icon.dark {
   background-position: -73px -7px;
 }
-.type-icon.Fairy {
+.type-icon.fairy {
   background-position: -73px -39px;
 }
-.type-icon.Flying {
+.type-icon.flying {
   background-position: -73px -72px;
 }
-.type-icon.Ground {
+.type-icon.ground {
   background-position: -73px -106px;
 }
-.type-icon.Poison {
+.type-icon.poison {
   background-position: -73px -139px;
 }
-.type-icon.Steel {
+.type-icon.steel {
   background-position: -73px -173px;
 }
-.type-icon.Dragon {
+.type-icon.dragon {
   background-position: -137px -7px;
 }
-.type-icon.Fighting {
+.type-icon.fighting {
   background-position: -138px -39px;
 }
-.type-icon.Ghost {
+.type-icon.ghost {
   background-position: -138px -73px;
 }
-.type-icon.Ice {
+.type-icon.ice {
   background-position: -138px -106px;
 }
-.type-icon.Psychic {
+.type-icon.psychic {
   background-position: -138px -139px;
 }
-.type-icon.Water {
+.type-icon.water {
   background-position: -138px -173px;
 }
 .text-center {

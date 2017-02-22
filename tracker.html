@@ -156,9 +156,11 @@
                                                     '<i class="sprites '+ pokemon.name +'"></i>' +
                                                     '<span class="pokemon-bio-name">'+ pokemon.name +'</span>' +
                                                 '</div>'+
-                                                '<div class="pokemon-bio-types">' +
-                                                  '<i class="type-icon Grass"></i>&nbsp;<i class="type-icon Poison"></i>' +
-                                                '</div>' +
+                                                '<div class="pokemon-bio-types">';
+                                                   $.each(val.pokemon[i].type, function (i, type){
+                                                       theHtml += '<i class="type-icon '+ type +' "></i>'; 
+                                                   })
+                                                theHtml += '</div>' +
                                             '</div>' +
                                             '<hr>' +
                                             '<div class="pokemon-info-rates">' +

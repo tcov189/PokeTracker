@@ -1,5 +1,5 @@
 {
-   "name": "hoenn",
+   "name":"hoenn",
    "locations":[
       {
          "name":"route 101",
@@ -9,24 +9,33 @@
          },
          "encounters":[
             {
-               "type":"Walking",
+               "type":"walking",
                "pokemon":[
                   {
-                     "name":"Zigzagoon",
+                     "name":"zigzagoon",
+                     "type":[
+                        "normal"
+                     ],
                      "rate":"40%",
                      "version":"both",
                      "min_level":"2",
                      "max_level":"2"
                   },
                   {
-                     "name":"Wurmple",
+                     "name":"wurmple",
+                     "type":[
+                        "bug"
+                     ],
                      "rate":"40%",
                      "version":"both",
                      "min_level":"2",
                      "max_level":"2"
                   },
                   {
-                     "name":"Poochyena",
+                     "name":"poochyena",
+                     "type":[
+                        "dark"
+                     ],
                      "rate":"20%",
                      "version":"both",
                      "min_level":"2",
@@ -36,24 +45,34 @@
                "post_elite_four":""
             },
             {
-               "type":"Dex Nav",
+               "type":"dex nav",
                "pokemon":[
                   {
-                     "name":"Lillipup",
+                     "name":"lillipup",
+                     "type":[
+                        "normal"
+                     ],
                      "rate":"",
                      "version":"both",
                      "min_level":"2",
                      "max_level":"2"
                   },
                   {
-                     "name":"Sewaddle",
+                     "name":"sewaddle",
+                     "type":[
+                        "bug",
+                        "grass"
+                     ],
                      "rate":"",
                      "version":"both",
                      "min_level":"2",
                      "max_level":"2"
                   },
                   {
-                     "name":"Zorua",
+                     "name":"zorua",
+                     "type":[
+                        "dark"
+                     ],
                      "rate":"",
                      "version":"both",
                      "min_level":"2",
@@ -63,17 +82,23 @@
                "post_elite_four":"yes"
             },
             {
-               "type":"Horde",
+               "type":"horde",
                "pokemon":[
                   {
-                     "name":"Zigzagoon",
+                     "name":"zigzagoon",
+                     "type":[
+                        "normal"
+                     ],
                      "rate":"",
                      "version":"both",
                      "min_level":"2",
                      "max_level":"2"
                   },
                   {
-                     "name":"Poochyena",
+                     "name":"poochyena",
+                     "type":[
+                        "dark"
+                     ],
                      "rate":"",
                      "version":"both",
                      "min_level":"2",
@@ -82,66 +107,102 @@
                ]
             },
             {
-               "type":"Gift",
+               "type":"gift",
                "pokemon":[
                   {
-                     "name":"Treecko",
-                     "from":"Professor Birch",
+                     "name":"treecko",
+                     "type":[
+                        "grass"
+                     ],
+                     "from":"professor birch",
                      "level":"5"
                   },
                   {
-                     "name":"Torchic",
-                     "from":"Professor Birch",
+                     "name":"torchic",
+                     "type":[
+                        "fire"
+                     ],
+                     "from":"professor birch",
                      "level":"5"
                   },
                   {
-                     "name":"Mudkip",
-                     "from":"Professor Birch",
+                     "name":"mudkip",
+                     "type":[
+                        "water"
+                     ],
+                     "from":"professor birch",
                      "level":"5"
                   },
                   {
-                     "name":"Chikorita",
-                     "from":"Professor Birch - Beat Elite Four",
+                     "name":"chikorita",
+                     "type":[
+                        "grass"
+                     ],
+                     "from":"professor birch - beat elite four",
                      "level":"5"
                   },
                   {
-                     "name":"Cyndaquil",
-                     "from":"Professor Birch - Beat Elite Four",
+                     "name":"cyndaquil",
+                     "type":[
+                        "fire"
+                     ],
+                     "from":"professor birch - beat elite four",
                      "level":"5"
                   },
                   {
-                     "name":"Totodile",
-                     "from":"Professor Birch - Beat Elite Four",
+                     "name":"totodile",
+                     "type":[
+                        "water"
+                     ],
+                     "from":"professor birch - beat elite four",
                      "level":"5"
                   },
                   {
-                     "name":"Turtwig",
-                     "from":"Professor Birch - Beat Elite Four",
+                     "name":"turtwig",
+                     "type":[
+                        "grass"
+                     ],
+                     "from":"professor birch - beat elite four",
                      "level":"5"
                   },
                   {
-                     "name":"Chimchar",
-                     "from":"Professor Birch - Beat Elite Four",
+                     "name":"chimchar",
+                     "type":[
+                        "fire"
+                     ],
+                     "from":"professor birch - beat elite four",
                      "level":"5"
                   },
                   {
-                     "name":"Piplup",
-                     "from":"Professor Birch - Beat Elite Four",
+                     "name":"piplup",
+                     "type":[
+                        "water"
+                     ],
+                     "from":"professor birch - beat elite four",
                      "level":"5"
                   },
                   {
-                     "name":"Snivy",
-                     "from":"Professor Birch - Beat Elite Four",
+                     "name":"snivy",
+                     "type":[
+                        "grass"
+                     ],
+                     "from":"professor birch - beat elite four",
                      "level":"5"
                   },
                   {
-                     "name":"Tepig",
-                     "from":"Professor Birch - Beat Elite Four",
+                     "name":"tepig",
+                     "type":[
+                        "fire"
+                     ],
+                     "from":"professor birch - beat elite four",
                      "level":"5"
                   },
                   {
-                     "name":"Oshawott",
-                     "from":"Professor Birch - Beat Elite Four",
+                     "name":"oshawott",
+                     "type":[
+                        "water"
+                     ],
+                     "from":"professor birch - beat elite four",
                      "level":"5"
                   }
                ],
