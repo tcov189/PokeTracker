@@ -1,0 +1,153 @@
+{
+   "name": "hoenn",
+   "locations":[
+      {
+         "name":"route 101",
+         "exits":{
+            "north":"oldale town",
+            "south":"littleroot town"
+         },
+         "encounters":[
+            {
+               "type":"Walking",
+               "pokemon":[
+                  {
+                     "name":"Zigzagoon",
+                     "rate":"40%",
+                     "version":"both",
+                     "min_level":"2",
+                     "max_level":"2"
+                  },
+                  {
+                     "name":"Wurmple",
+                     "rate":"40%",
+                     "version":"both",
+                     "min_level":"2",
+                     "max_level":"2"
+                  },
+                  {
+                     "name":"Poochyena",
+                     "rate":"20%",
+                     "version":"both",
+                     "min_level":"2",
+                     "max_level":"2"
+                  }
+               ],
+               "post_elite_four":""
+            },
+            {
+               "type":"Dex Nav",
+               "pokemon":[
+                  {
+                     "name":"Lillipup",
+                     "rate":"",
+                     "version":"both",
+                     "min_level":"2",
+                     "max_level":"2"
+                  },
+                  {
+                     "name":"Sewaddle",
+                     "rate":"",
+                     "version":"both",
+                     "min_level":"2",
+                     "max_level":"2"
+                  },
+                  {
+                     "name":"Zorua",
+                     "rate":"",
+                     "version":"both",
+                     "min_level":"2",
+                     "max_level":"2"
+                  }
+               ],
+               "post_elite_four":"yes"
+            },
+            {
+               "type":"Horde",
+               "pokemon":[
+                  {
+                     "name":"Zigzagoon",
+                     "rate":"",
+                     "version":"both",
+                     "min_level":"2",
+                     "max_level":"2"
+                  },
+                  {
+                     "name":"Poochyena",
+                     "rate":"",
+                     "version":"both",
+                     "min_level":"2",
+                     "max_level":"2"
+                  }
+               ]
+            },
+            {
+               "type":"Gift",
+               "pokemon":[
+                  {
+                     "name":"Treecko",
+                     "from":"Professor Birch",
+                     "level":"5"
+                  },
+                  {
+                     "name":"Torchic",
+                     "from":"Professor Birch",
+                     "level":"5"
+                  },
+                  {
+                     "name":"Mudkip",
+                     "from":"Professor Birch",
+                     "level":"5"
+                  },
+                  {
+                     "name":"Chikorita",
+                     "from":"Professor Birch - Beat Elite Four",
+                     "level":"5"
+                  },
+                  {
+                     "name":"Cyndaquil",
+                     "from":"Professor Birch - Beat Elite Four",
+                     "level":"5"
+                  },
+                  {
+                     "name":"Totodile",
+                     "from":"Professor Birch - Beat Elite Four",
+                     "level":"5"
+                  },
+                  {
+                     "name":"Turtwig",
+                     "from":"Professor Birch - Beat Elite Four",
+                     "level":"5"
+                  },
+                  {
+                     "name":"Chimchar",
+                     "from":"Professor Birch - Beat Elite Four",
+                     "level":"5"
+                  },
+                  {
+                     "name":"Piplup",
+                     "from":"Professor Birch - Beat Elite Four",
+                     "level":"5"
+                  },
+                  {
+                     "name":"Snivy",
+                     "from":"Professor Birch - Beat Elite Four",
+                     "level":"5"
+                  },
+                  {
+                     "name":"Tepig",
+                     "from":"Professor Birch - Beat Elite Four",
+                     "level":"5"
+                  },
+                  {
+                     "name":"Oshawott",
+                     "from":"Professor Birch - Beat Elite Four",
+                     "level":"5"
+                  }
+               ],
+               "post_elite_four":"yes"
+            }
+         ]
+      }
+   ]
+}

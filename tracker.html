@@ -97,24 +97,37 @@
 </div>
 <footer class="footer"></footer><!-- end footer-->
 <script src="scripts/jquery.min.js"></script>
-<script>    
-    $.ajax({
-        url: 'data/locations/oras/route-101.json',
-        async: false,
-        success: function(data){
-            route_info = data;
+<script src="src/js/load_data.js"></script>
+<script>
+    //Test
+    localStorage.setItem('current_location', 'route 101');
+    var lastLocation = localStorage.getItem('current_location');
+    
+    //Get data from localStorage
+    regionalDexData     = JSON.parse(localStorage.getItem('regional_dex'));
+    nationalDexData     = JSON.parse(localStorage.getItem('national_dex'));
+    locationData        = JSON.parse(localStorage.getItem('locations'));       
+    
+    $.each(locationData.locations, function (i, val){
+        if (val.name = lastLocation) {            
+            localStorage.setItem('current_location', JSON.stringify(val));
+            currentLocationData = JSON.parse(localStorage.getItem('current_location'));
         }
-    });
+    })
+    
+    
     
     $(document).ready(function(){
-        //Populate the HTML
+        //Populate the HTML                
+                
+        
         
         //Route header
-        $('.block-route-header h3').text(route_info.name);
+        $('.block-route-header h3').text(currentLocationData.name);
         
         //Exits
         exitInfo = [];
-        $.each(route_info.exits, function (i, val) {
+        $.each(currentLocationData.exits, function (i, val) {
             var theHtml = '<div class="block-path-group">' +
                           '<span class="block-path-group_direction">'+ i +'</span>' +
                           '<button class="button button_route" type="button">'+ val +'</button>' +
@@ -127,7 +140,7 @@
         
         //Encounters
         encountersInfo = [];
-        $.each(route_info.encounters, function (i, val){
+        $.each(currentLocationData.encounters, function (i, val){
             $.each(val.pokemon, function(i, pokemon){
                 if (val.post_elite_four != 'yes') {
                   var theHtml = '<div class="block-encounters-pokemon">' +
@@ -163,7 +176,7 @@
             $('.block-encounters').append(val);
         })
     })
-    console.log(route_info);
+    console.log(currentLocationData);
 </script>
 <!--
     <script>                
