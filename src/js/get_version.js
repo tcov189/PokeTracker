@@ -4,7 +4,7 @@
 
 $('#version_button_group .button').on('click', function(){
     var version = $(this).attr('id');
-    localStorage.setItem("version", version.toUpperCase());
+    localStorage.setItem("version", version.);
     
     window.location.href = 'tracker.html';
 });
