@@ -118,9 +118,7 @@
     
     
     $(document).ready(function(){
-        //Populate the HTML                
-                
-        
+        //Populate the HTML                                        
         
         //Route header
         $('.block-route-header h3').text(currentLocationData.name);
@@ -141,39 +139,48 @@
         //Encounters
         encountersInfo = [];
         $.each(currentLocationData.encounters, function (i, val){
-            $.each(val.pokemon, function(i, pokemon){
-                if (val.post_elite_four != 'yes') {
-                  var theHtml = '<div class="block-encounters-pokemon">' +
-                                  '<div class="card card-default card_pokemon">' +
-                                    '<div class="card_pokemon-pokeball">' +
-                                        '<img class="card_pokemon-pokeball-icon" src="images/pokeball-no-catch.png" alt="">' +
-                                    '</div>' +
-                                    '<div class="card_pokemon-info">' +
-                                        '<div class="pokemon-info-bio">' +
-                                            '<div class="pokemon-info-bio-name-sprite">' +
-                                                '<i class="sprites '+ pokemon.name +'"></i>' +
-                                                '<span class="pokemon-bio-name">'+ pokemon.name +'</span>' +
-                                            '</div>'+
-                                            '<div class="pokemon-bio-types">' +
-                                              '<i class="type-icon Grass"></i>&nbsp;<i class="type-icon Poison"></i>' +
+            if (val.post_elite_four != 'yes') {
+                var encounterObject = {
+                    'type' : val.type,
+                    'encounters' : encounterArr = []
+                };            
+                $.each(val.pokemon, function(i, pokemon){                
+                      var theHtml = '<div class="block-encounters-pokemon">' +
+                                      '<div class="card card-default card_pokemon">' +
+                                        '<div class="card_pokemon-pokeball">' +
+                                            '<img class="card_pokemon-pokeball-icon" src="images/pokeball-no-catch.png" alt="">' +
+                                        '</div>' +
+                                        '<div class="card_pokemon-info">' +
+                                            '<div class="pokemon-info-bio">' +
+                                                '<div class="pokemon-info-bio-name-sprite">' +
+                                                    '<i class="sprites '+ pokemon.name +'"></i>' +
+                                                    '<span class="pokemon-bio-name">'+ pokemon.name +'</span>' +
+                                                '</div>'+
+                                                '<div class="pokemon-bio-types">' +
+                                                  '<i class="type-icon Grass"></i>&nbsp;<i class="type-icon Poison"></i>' +
+                                                '</div>' +
+                                            '</div>' +
+                                            '<hr>' +
+                                            '<div class="pokemon-info-rates">' +
+                                                '<div class="pokemon-rate-block">' +
+                                                    '<span class="type">'+ val.type +'&nbsp;</span><span class="rate">'+ pokemon.rate +'</span>' +
+                                                '</div>'+
                                             '</div>' +
                                         '</div>' +
-                                        '<hr>' +
-                                        '<div class="pokemon-info-rates">' +
-                                            '<div class="pokemon-rate-block">' +
-                                                '<span class="type">'+ val.type +'&nbsp;</span><span class="rate">'+ pokemon.rate +'</span>' +
-                                            '</div>'+
-                                        '</div>' +
-                                    '</div>' +
-                                  '</div>' +
-                                '</div>';
+                                      '</div>' +
+                                    '</div>';
 
-                    encountersInfo.push(theHtml);
-                }
-            })            
-        })
+                        encounterArr.push(theHtml)                
+                })            
+            encountersInfo.push(encounterObject)
+            }
+        });
         $.each(encountersInfo, function (i, val) {
-            $('.block-encounters').append(val);
+            $('.block-encounters').append('<h4>'+ val.type + '</h4>');
+            
+            $.each(val.encounters, function (i,val){
+                $('.block-encounters').append(val);  
+            })            
         })
     })
     console.log(currentLocationData);
