@@ -756,7 +756,15 @@ hr {
   width: 1.65rem;
   height: 1.65rem;
 
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
   background: url("../images/pokeball-no-catch.png") no-repeat;
+
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: none;
 }
 .card.card_pokemon .card_pokemon-pokeball-icon.caught {
   background: url("../images/pokeball-catch.png") no-repeat;
@@ -3068,5 +3076,14 @@ hr {
 }
 .font-size-small {
   font-size: 0.75rem;
+}
+.remove-user-select {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: none;
 }
 /*# sourceMappingURL=poke_tracker.css.map */
