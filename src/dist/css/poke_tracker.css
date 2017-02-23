@@ -801,2173 +801,2173 @@ hr {
   background: transparent none no-repeat 32px 32px;
   background-image: url("../images/sprites.png");
 }
-/* Kanto Sprites 001 - 151 */
-.sprites.Bulbasaur {
+/* kanto sprites 001 - 151 */
+.sprites.bulbasaur {
   background-position: 0 -5px;
 }
-.sprites.Ivysaur {
+.sprites.ivysaur {
   background-position: -32px -5px;
 }
-.sprites.Venusaur {
+.sprites.venusaur {
   background-position: -64px -5px;
 }
-.sprites.Charmander {
+.sprites.charmander {
   background-position: -96px -4px;
 }
-.sprites.Charmeleon {
+.sprites.charmeleon {
   background-position: -128px -4px;
 }
-.sprites.Charizard {
+.sprites.charizard {
   background-position: -160px -4px;
 }
-.sprites.Squirtle {
+.sprites.squirtle {
   background-position: -192px -4px;
 }
-.sprites.Wartortle {
+.sprites.wartortle {
   background-position: -224px -4px;
 }
-.sprites.Blastoise {
+.sprites.blastoise {
   background-position: -255px -4px;
 }
-.sprites.Caterpie {
+.sprites.caterpie {
   background-position: -288px -5px;
 }
-.sprites.Metapod {
+.sprites.metapod {
   background-position: -320px -4px;
 }
-.sprites.Butterfree {
+.sprites.butterfree {
   background-position: -353px -4px;
 }
-.sprites.Weedle {
+.sprites.weedle {
   background-position: -384px -5px;
 }
-.sprites.Kakuna {
+.sprites.kakuna {
   background-position: -417px -4px;
 }
-.sprites.Beedrill {
+.sprites.beedrill {
   background-position: -447px -4px;
 }
-.sprites.Pidgey {
+.sprites.pidgey {
   background-position: -480px -5px;
 }
-.sprites.Pidgeotto {
+.sprites.pidgeotto {
   background-position: 0 -36px;
 }
-.sprites.Pidgeot {
+.sprites.pidgeot {
   background-position: -32px -36px;
 }
-.sprites.Rattata {
+.sprites.rattata {
   background-position: -64px -37px;
 }
-.sprites.Raticate {
+.sprites.raticate {
   background-position: -97px -37px;
 }
-.sprites.Spearow {
+.sprites.spearow {
   background-position: -126px -37px;
 }
-.sprites.Fearow {
+.sprites.fearow {
   background-position: -161px -37px;
 }
-.sprites.Ekans {
+.sprites.ekans {
   background-position: -192px -37px;
 }
-.sprites.Arbok {
+.sprites.arbok {
   background-position: -224px -37px;
 }
-.sprites.Pikachu {
+.sprites.pikachu {
   background-position: -255px -37px;
 }
-.sprites.Raichu {
+.sprites.raichu {
   background-position: -288px -37px;
 }
-.sprites.Sandshrew {
+.sprites.sandshrew {
   background-position: -320px -37px;
 }
-.sprites.Sandslash {
+.sprites.sandslash {
   background-position: -352px -37px;
 }
-.sprites.Nidoran-f {
+.sprites.nidoran-f {
   background-position: -385px -37px;
 }
-.sprites.Nidorina {
+.sprites.nidorina {
   background-position: -416px -38px;
 }
-.sprites.Nidoqueen {
+.sprites.nidoqueen {
   background-position: -447px -38px;
 }
-.sprites.Nidoran-m {
+.sprites.nidoran-m {
   background-position: -480px -36px;
 }
-.sprites.Nidorino {
+.sprites.nidorino {
   background-position: -480px -38px;
 }
-.sprites.Nidoking {
+.sprites.nidoking {
   background-position: -32px -69px;
 }
-.sprites.Clefairy {
+.sprites.clefairy {
   background-position: -64px -69px;
 }
-.sprites.Clefable {
+.sprites.clefable {
   background-position: -95px -69px;
 }
-.sprites.Vulpix {
+.sprites.vulpix {
   background-position: -128px -69px;
 }
-.sprites.Ninetales {
+.sprites.ninetales {
   background-position: -159px -69px;
 }
-.sprites.Jigglypuff {
+.sprites.jigglypuff {
   background-position: -193px -69px;
 }
-.sprites.Wigglytuff {
+.sprites.wigglytuff {
   background-position: -224px -69px;
 }
-.sprites.Zubat {
+.sprites.zubat {
   background-position: -255px -68px;
 }
-.sprites.Golbat {
+.sprites.golbat {
   background-position: -287px -68px;
 }
-.sprites.Oddish {
+.sprites.oddish {
   background-position: -319px -68px;
 }
-.sprites.Gloom {
+.sprites.gloom {
   background-position: -352px -68px;
 }
-.sprites.Vileplume {
+.sprites.vileplume {
   background-position: -383px -68px;
 }
-.sprites.Paras {
+.sprites.paras {
   background-position: -416px -68px;
 }
-.sprites.Parasect {
+.sprites.parasect {
   background-position: -448px -68px;
 }
-.sprites.Venonat {
+.sprites.venonat {
   background-position: -480px -68px;
 }
-.sprites.Venomoth {
+.sprites.venomoth {
   background-position: 0 -101px;
 }
-.sprites.Diglett {
+.sprites.diglett {
   background-position: -32px -100px;
 }
-.sprites.Dugtrio {
+.sprites.dugtrio {
   background-position: -64px -100px;
 }
-.sprites.Meowth {
+.sprites.meowth {
   background-position: -94px -100px;
 }
-.sprites.Persian {
+.sprites.persian {
   background-position: -127px -100px;
 }
-.sprites.Psyduck {
+.sprites.psyduck {
   background-position: -159px -101px;
 }
-.sprites.Golduck {
+.sprites.golduck {
   background-position: -191px -100px;
 }
-.sprites.Mankey {
+.sprites.mankey {
   background-position: -225px -100px;
 }
-.sprites.Primeape {
+.sprites.primeape {
   background-position: -256px -100px;
 }
-.sprites.Growlithe {
+.sprites.growlithe {
   background-position: -287px -100px;
 }
-.sprites.Arcanine {
+.sprites.arcanine {
   background-position: -319px -100px;
 }
-.sprites.Poliwag {
+.sprites.poliwag {
   background-position: -351px -100px;
 }
-.sprites.Poliwhirl {
+.sprites.poliwhirl {
   background-position: -383px -100px;
 }
-.sprites.Poliwrath {
+.sprites.poliwrath {
   background-position: -414px -100px;
 }
-.sprites.Abra {
+.sprites.abra {
   background-position: -448px -100px;
 }
-.sprites.Kadabra {
+.sprites.kadabra {
   background-position: -478px -100px;
 }
-.sprites.Alakazam {
+.sprites.alakazam {
   background-position: 0 -133px;
 }
-.sprites.Machop {
+.sprites.machop {
   background-position: -32px -133px;
 }
-.sprites.Machoke {
+.sprites.machoke {
   background-position: -64px -133px;
 }
-.sprites.Machamp {
+.sprites.machamp {
   background-position: -95px -132px;
 }
-.sprites.Bellsprout {
+.sprites.bellsprout {
   background-position: -129px -133px;
 }
-.sprites.Weepinbell {
+.sprites.weepinbell {
   background-position: -160px -133px;
 }
-.sprites.Victreebel {
+.sprites.victreebel {
   background-position: -191px -133px;
 }
-.sprites.Tentacool {
+.sprites.tentacool {
   background-position: -224px -132px;
 }
-.sprites.Tentacruel {
+.sprites.tentacruel {
   background-position: -257px -133px;
 }
-.sprites.Geodude {
+.sprites.geodude {
   background-position: -288px -133px;
 }
-.sprites.Graveler {
+.sprites.graveler {
   background-position: -320px -132px;
 }
-.sprites.Golem {
+.sprites.golem {
   background-position: -352px -133px;
 }
-.sprites.Ponyta {
+.sprites.ponyta {
   background-position: -384px -132px;
 }
-.sprites.Rapidash {
+.sprites.rapidash {
   background-position: -416px -132px;
 }
-.sprites.Slowpoke {
+.sprites.slowpoke {
   background-position: -448px -134px;
 }
-.sprites.Slowbro {
+.sprites.slowbro {
   background-position: -479px -133px;
 }
-.sprites.Magnemite {
+.sprites.magnemite {
   background-position: -1px -165px;
 }
-.sprites.Magneton {
+.sprites.magneton {
   background-position: -31px -165px;
 }
-.sprites.Farfetchd {
+.sprites.farfetchd {
   background-position: -64px -164px;
 }
-.sprites.Doduo {
+.sprites.doduo {
   background-position: -95px -165px;
 }
-.sprites.Dodrio {
+.sprites.dodrio {
   background-position: -128px -165px;
 }
-.sprites.Seel {
+.sprites.seel {
   background-position: -160px -165px;
 }
-.sprites.Dewgong {
+.sprites.dewgong {
   background-position: -192px -165px;
 }
-.sprites.Grimer {
+.sprites.grimer {
   background-position: -224px -165px;
 }
-.sprites.Muk {
+.sprites.muk {
   background-position: -255px -165px;
 }
-.sprites.Shellder {
+.sprites.shellder {
   background-position: -287px -165px;
 }
-.sprites.Cloyster {
+.sprites.cloyster {
   background-position: -320px -165px;
 }
-.sprites.Gastly {
+.sprites.gastly {
   background-position: -352px -165px;
 }
-.sprites.Haunter {
+.sprites.haunter {
   background-position: -383px -165px;
 }
-.sprites.Gengar {
+.sprites.gengar {
   background-position: -415px -165px;
 }
-.sprites.Onyx {
+.sprites.onyx {
   background-position: -448px -165px;
 }
-.sprites.Drowzee {
+.sprites.drowzee {
   background-position: -480px -165px;
 }
-.sprites.Hypno {
+.sprites.hypno {
   background-position: 0 -196px;
 }
-.sprites.Krabby {
+.sprites.krabby {
   background-position: -32px -197px;
 }
-.sprites.Kingler {
+.sprites.kingler {
   background-position: -65px -196px;
 }
-.sprites.Voltorb {
+.sprites.voltorb {
   background-position: -95px -196px;
 }
-.sprites.Electrode {
+.sprites.electrode {
   background-position: -128px -196px;
 }
-.sprites.Exeggcute {
+.sprites.exeggcute {
   background-position: -160px -196px;
 }
-.sprites.Exeggutor {
+.sprites.exeggutor {
   background-position: -192px -196px;
 }
-.sprites.Cubone {
+.sprites.cubone {
   background-position: -224px -196px;
 }
-.sprites.Marowak {
+.sprites.marowak {
   background-position: -256px -196px;
 }
-.sprites.Hitmonlee {
+.sprites.hitmonlee {
   background-position: -289px -196px;
 }
-.sprites.Hitmonchan {
+.sprites.hitmonchan {
   background-position: -318px -196px;
 }
-.sprites.Lickitung {
+.sprites.lickitung {
   background-position: -350px -196px;
 }
-.sprites.Koffing {
+.sprites.koffing {
   background-position: -384px -196px;
 }
-.sprites.Weezing {
+.sprites.weezing {
   background-position: -415px -196px;
 }
-.sprites.Rhyhorn {
+.sprites.rhyhorn {
   background-position: -446px -197px;
 }
-.sprites.Rhydon {
+.sprites.rhydon {
   background-position: -478px -197px;
 }
-.sprites.Chansey {
+.sprites.chansey {
   background-position: 0 -228px;
 }
-.sprites.Tangela {
+.sprites.tangela {
   background-position: -32px -228px;
 }
-.sprites.Kangaskhan {
+.sprites.kangaskhan {
   background-position: -64px -228px;
 }
-.sprites.Horsea {
+.sprites.horsea {
   background-position: -96px -228px;
 }
-.sprites.Seadra {
+.sprites.seadra {
   background-position: -127px -228px;
 }
-.sprites.Goldeen {
+.sprites.goldeen {
   background-position: -161px -230px;
 }
-.sprites.Seaking {
+.sprites.seaking {
   background-position: -192px -228px;
 }
-.sprites.Staryu {
+.sprites.staryu {
   background-position: -223px -229px;
 }
-.sprites.Starmie {
+.sprites.starmie {
   background-position: -255px -229px;
 }
-.sprites.Mr-Mime {
+.sprites.mr-mime {
   background-position: -288px -228px;
 }
-.sprites.Scyther {
+.sprites.scyther {
   background-position: -320px -229px;
 }
-.sprites.Jynx {
+.sprites.jynx {
   background-position: -351px -229px;
 }
-.sprites.Electabuzz {
+.sprites.electabuzz {
   background-position: -383px -229px;
 }
-.sprites.Magmar {
+.sprites.magmar {
   background-position: -416px -229px;
 }
-.sprites.Pinsir {
+.sprites.pinsir {
   background-position: -448px -228px;
 }
-.sprites.Tauros {
+.sprites.tauros {
   background-position: -479px -228px;
 }
-.sprites.Magikarp {
+.sprites.magikarp {
   background-position: 1px -260px;
 }
-.sprites.Gyarados {
+.sprites.gyarados {
   background-position: -32px -260px;
 }
-.sprites.Lapras {
+.sprites.lapras {
   background-position: -63px -261px;
 }
-.sprites.Ditto {
+.sprites.ditto {
   background-position: -96px -260px;
 }
-.sprites.Eevee {
+.sprites.eevee {
   background-position: -127px -262px;
 }
-.sprites.Vaporeon {
+.sprites.vaporeon {
   background-position: -157px -260px;
 }
-.sprites.Jolteon {
+.sprites.jolteon {
   background-position: -191px -260px;
 }
-.sprites.Flareon {
+.sprites.flareon {
   background-position: -223px -260px;
 }
-.sprites.Porygon {
+.sprites.porygon {
   background-position: -256px -260px;
 }
-.sprites.Omanyte {
+.sprites.omanyte {
   background-position: -288px -260px;
 }
-.sprites.Omastar {
+.sprites.omastar {
   background-position: -321px -260px;
 }
-.sprites.Kabuto {
+.sprites.kabuto {
   background-position: -352px -260px;
 }
-.sprites.Kabutops {
+.sprites.kabutops {
   background-position: -383px -260px;
 }
-.sprites.Aerodactyl {
+.sprites.aerodactyl {
   background-position: -416px -261px;
 }
-.sprites.Snorlax {
+.sprites.snorlax {
   background-position: -449px -260px;
 }
-.sprites.Articuno {
+.sprites.articuno {
   background-position: -479px -260px;
 }
-.sprites.Zapdos {
+.sprites.zapdos {
   background-position: 1px -291px;
 }
-.sprites.Moltres {
+.sprites.moltres {
   background-position: -32px -292px;
 }
-.sprites.Dratini {
+.sprites.dratini {
   background-position: -64px -292px;
 }
-.sprites.Dragonair {
+.sprites.dragonair {
   background-position: -96px -292px;
 }
-.sprites.Dragonite {
+.sprites.dragonite {
   background-position: -128px -292px;
 }
-.sprites.Mewtwo {
+.sprites.mewtwo {
   background-position: -159px -292px;
 }
-.sprites.Mew {
+.sprites.mew {
   background-position: -191px -293px;
 }
-/* Johto Sprites 152- 251*/
-.sprites.Chikorita {
+/* johto sprites 152- 251*/
+.sprites.chikorita {
   background-position: -222px -293px;
 }
-.sprites.Bayleef {
+.sprites.bayleef {
   background-position: -255px -293px;
 }
-.sprites.Meganium {
+.sprites.meganium {
   background-position: -288px -292px;
 }
-.sprites.Cyndaquil {
+.sprites.cyndaquil {
   background-position: -319px -292px;
 }
-.sprites.Quilava {
+.sprites.quilava {
   background-position: -350px -292px;
 }
-.sprites.Typhlosion {
+.sprites.typhlosion {
   background-position: -383px -292px;
 }
-.sprites.Totodile {
+.sprites.totodile {
   background-position: -416px -292px;
 }
-.sprites.Croconaw {
+.sprites.croconaw {
   background-position: -447px -292px;
 }
-.sprites.Feraligatr {
+.sprites.feraligatr {
   background-position: -480px -292px;
 }
-.sprites.Sentret {
+.sprites.sentret {
   background-position: 0 -324px;
 }
-.sprites.Furret {
+.sprites.furret {
   background-position: -32px -324px;
 }
-.sprites.Hoothoot {
+.sprites.hoothoot {
   background-position: -64px -324px;
 }
-.sprites.Noctowl {
+.sprites.noctowl {
   background-position: -95px -324px;
 }
-.sprites.Ledyba {
+.sprites.ledyba {
   background-position: -128px -326px;
 }
-.sprites.Ledian {
+.sprites.ledian {
   background-position: -159px -324px;
 }
-.sprites.Spinarak {
+.sprites.spinarak {
   background-position: -191px -324px;
 }
-.sprites.Ariados {
+.sprites.ariados {
   background-position: -224px -324px;
 }
-.sprites.Crobat {
+.sprites.crobat {
   background-position: -255px -324px;
 }
-.sprites.Chinchou {
+.sprites.chinchou {
   background-position: -288px -324px;
 }
-.sprites.Lanturn {
+.sprites.lanturn {
   background-position: -320px -323px;
 }
-.sprites.Pichu {
+.sprites.pichu {
   background-position: -350px -324px;
 }
-.sprites.Cleffa {
+.sprites.cleffa {
   background-position: -383px -324px;
 }
-.sprites.Igglybuff {
+.sprites.igglybuff {
   background-position: -416px -324px;
 }
-.sprites.Togepi {
+.sprites.togepi {
   background-position: -448px -324px;
 }
-.sprites.Togetic {
+.sprites.togetic {
   background-position: -480px -324px;
 }
-.sprites.Natu {
+.sprites.natu {
   background-position: 0 -356px;
 }
-.sprites.Xatu {
+.sprites.xatu {
   background-position: -32px -356px;
 }
-.sprites.Mareep {
+.sprites.mareep {
   background-position: -65px -357px;
 }
-.sprites.Flaffy {
+.sprites.flaffy {
   background-position: -97px -357px;
 }
-.sprites.Ampharos {
+.sprites.ampharos {
   background-position: -128px -357px;
 }
-.sprites.Bellossom {
+.sprites.bellossom {
   background-position: -192px -357px;
 }
-.sprites.Marill {
+.sprites.marill {
   background-position: -193px -356px;
 }
-.sprites.Azumarill {
+.sprites.azumarill {
   background-position: -224px -356px;
 }
-.sprites.Sudowoodo {
+.sprites.sudowoodo {
   background-position: -256px -357px;
 }
-.sprites.Politoed {
+.sprites.politoed {
   background-position: -288px -357px;
 }
-.sprites.Hoppip {
+.sprites.hoppip {
   background-position: -320px -357px;
 }
-.sprites.Skiploom {
+.sprites.skiploom {
   background-position: -352px -357px;
 }
-.sprites.Jumpluff {
+.sprites.jumpluff {
   background-position: -385px -357px;
 }
-.sprites.Aipom {
+.sprites.aipom {
   background-position: -414px -357px;
 }
-.sprites.Sunkern {
+.sprites.sunkern {
   background-position: -447px -357px;
 }
-.sprites.Sunflora {
+.sprites.sunflora {
   background-position: -480px -356px;
 }
-.sprites.Yanma {
+.sprites.yanma {
   background-position: 0 -388px;
 }
-.sprites.Wooper {
+.sprites.wooper {
   background-position: -32px -388px;
 }
-.sprites.Quagsire {
+.sprites.quagsire {
   background-position: -63px -388px;
 }
-.sprites.Espeon {
+.sprites.espeon {
   background-position: -96px -388px;
 }
-.sprites.Umbreon {
+.sprites.umbreon {
   background-position: -128px -388px;
 }
-.sprites.Murkrow {
+.sprites.murkrow {
   background-position: -160px -388px;
 }
-.sprites.Slowking {
+.sprites.slowking {
   background-position: -160px -388px;
 }
-.sprites.Misdreavus {
+.sprites.misdreavus {
   background-position: -223px -388px;
 }
-.sprites.Unown {
+.sprites.unown {
   background-position: -255px -388px;
 }
-.sprites.Wobbuffet {
+.sprites.wobbuffet {
   background-position: -288px -388px;
 }
-.sprites.Giragarig {
+.sprites.giragarig {
   background-position: -320px -387px;
 }
-.sprites.Pineco {
+.sprites.pineco {
   background-position: -352px -387px;
 }
-.sprites.Forretress {
+.sprites.forretress {
   background-position: -383px -388px;
 }
-.sprites.Dunsparce {
+.sprites.dunsparce {
   background-position: -414px -390px;
 }
-.sprites.Gligar {
+.sprites.gligar {
   background-position: -447px -388px;
 }
-.sprites.Steelix {
+.sprites.steelix {
   background-position: -480px -388px;
 }
-.sprites.Snubbull {
+.sprites.snubbull {
   background-position: 0 -422px;
 }
-.sprites.Granbull {
+.sprites.granbull {
   background-position: -33px -421px;
 }
-.sprites.Qwilfish {
+.sprites.qwilfish {
   background-position: -63px -421px;
 }
-.sprites.Scizor {
+.sprites.scizor {
   background-position: -97px -420px;
 }
-.sprites.Shuckle {
+.sprites.shuckle {
   background-position: -127px -420px;
 }
-.sprites.Heracross {
+.sprites.heracross {
   background-position: -160px -420px;
 }
-.sprites.Sneasel {
+.sprites.sneasel {
   background-position: -192px -421px;
 }
-.sprites.Teddiurse {
+.sprites.teddiurse {
   background-position: -223px -421px;
 }
-.sprites.Ursaring {
+.sprites.ursaring {
   background-position: -254px -420px;
 }
-.sprites.Slugma {
+.sprites.slugma {
   background-position: -289px -420px;
 }
-.sprites.Magcargo {
+.sprites.magcargo {
   background-position: -319px -420px;
 }
-.sprites.Swinub {
+.sprites.swinub {
   background-position: -351px -420px;
 }
-.sprites.Piloswine {
+.sprites.piloswine {
   background-position: -383px -421px;
 }
-.sprites.Corsola {
+.sprites.corsola {
   background-position: -416px -421px;
 }
-.sprites.Remoraid {
+.sprites.remoraid {
   background-position: -448px -421px;
 }
-.sprites.Octillery {
+.sprites.octillery {
   background-position: -480px -420px;
 }
-.sprites.Delibird {
+.sprites.delibird {
   background-position: 0 -452px;
 }
-.sprites.Mantine {
+.sprites.mantine {
   background-position: -32px -452px;
 }
-.sprites.Skarmory {
+.sprites.skarmory {
   background-position: -64px -452px;
 }
-.sprites.Houndour {
+.sprites.houndour {
   background-position: -97px -452px;
 }
-.sprites.Houndoom {
+.sprites.houndoom {
   background-position: -129px -452px;
 }
-.sprites.Kingdra {
+.sprites.kingdra {
   background-position: -161px -452px;
 }
-.sprites.Phanpy {
+.sprites.phanpy {
   background-position: -191px -453px;
 }
-.sprites.Donphan {
+.sprites.donphan {
   background-position: -224px -451px;
 }
-.sprites.Porygon2 {
+.sprites.porygon2 {
   background-position: -256px -451px;
 }
-.sprites.Stantler {
+.sprites.stantler {
   background-position: -286px -452px;
 }
-.sprites.Smeargle {
+.sprites.smeargle {
   background-position: -319px -454px;
 }
-.sprites.Tyrogue {
+.sprites.tyrogue {
   background-position: -351px -452px;
 }
-.sprites.Hitmontop {
+.sprites.hitmontop {
   background-position: -386px -452px;
 }
-.sprites.Smoochum {
+.sprites.smoochum {
   background-position: -416px -453px;
 }
-.sprites.Elekid {
+.sprites.elekid {
   background-position: -447px -452px;
 }
-.sprites.Magby {
+.sprites.magby {
   background-position: -479px -452px;
 }
-.sprites.Miltank {
+.sprites.miltank {
   background-position: 0 -484px;
 }
-.sprites.Blissey {
+.sprites.blissey {
   background-position: -34px -483px;
 }
-.sprites.Raikou {
+.sprites.raikou {
   background-position: -66px -484px;
 }
-.sprites.Entei {
+.sprites.entei {
   background-position: -96px -484px;
 }
-.sprites.Suicune {
+.sprites.suicune {
   background-position: -129px -484px;
 }
-.sprites.Larvitar {
+.sprites.larvitar {
   background-position: -159px -485px;
 }
-.sprites.Pupitar {
+.sprites.pupitar {
   background-position: -193px -485px;
 }
-.sprites.Tyranitar {
+.sprites.tyranitar {
   background-position: -224px -484px;
 }
-.sprites.Lugia {
+.sprites.lugia {
   background-position: -256px -483px;
 }
-.sprites.Ho-oh {
+.sprites.ho-oh {
   background-position: -288px -483px;
 }
-.sprites.Celebi {
+.sprites.celebi {
   background-position: -320px -483px;
 }
-/* Hoenn Sprites 252 - 386 */
-.sprites.Treecko {
+/* hoenn sprites 252 - 386 */
+.sprites.treecko {
   background-position: -352px -483px;
 }
-.sprites.Grovyle {
+.sprites.grovyle {
   background-position: -382px -483px;
 }
-.sprites.Sceptile {
+.sprites.sceptile {
   background-position: -414px -483px;
 }
-.sprites.Torchic {
+.sprites.torchic {
   background-position: -448px -484px;
 }
-.sprites.Combusken {
+.sprites.combusken {
   background-position: -479px -484px;
 }
-.sprites.Blaziken {
+.sprites.blaziken {
   background-position: 0 -517px;
 }
-.sprites.Mudkip {
+.sprites.mudkip {
   background-position: -32px -517px;
 }
-.sprites.Marshtomp {
+.sprites.marshtomp {
   background-position: -62px -517px;
 }
-.sprites.Swampert {
+.sprites.swampert {
   background-position: -96px -516px;
 }
-.sprites.Poochyena {
+.sprites.poochyena {
   background-position: -128px -516px;
 }
-.sprites.Mightyena {
+.sprites.mightyena {
   background-position: -160px -516px;
 }
-.sprites.Zigzagoon {
+.sprites.zigzagoon {
   background-position: -192px -518px;
 }
-.sprites.Linoone {
+.sprites.linoone {
   background-position: -225px -517px;
 }
-.sprites.Wurmple {
+.sprites.wurmple {
   background-position: -257px -514px;
 }
-.sprites.Silcoon {
+.sprites.silcoon {
   background-position: -287px -518px;
 }
-.sprites.Beautifly {
+.sprites.beautifly {
   background-position: -320px -518px;
 }
-.sprites.Cascoon {
+.sprites.cascoon {
   background-position: -352px -518px;
 }
-.sprites.Dustox {
+.sprites.dustox {
   background-position: -383px -517px;
 }
-.sprites.Lotad {
+.sprites.lotad {
   background-position: -416px -517px;
 }
-.sprites.Lombre {
+.sprites.lombre {
   background-position: -447px -517px;
 }
-.sprites.Ludicolo {
+.sprites.ludicolo {
   background-position: -480px -517px;
 }
-.sprites.Seedot {
+.sprites.seedot {
   background-position: 0 -548px;
 }
-.sprites.Nuzleaf {
+.sprites.nuzleaf {
   background-position: -32px -548px;
 }
-.sprites.Shiftry {
+.sprites.shiftry {
   background-position: -64px -547px;
 }
-.sprites.Taillow {
+.sprites.taillow {
   background-position: -97px -548px;
 }
-.sprites.Swellow {
+.sprites.swellow {
   background-position: -128px -548px;
 }
-.sprites.Wingull {
+.sprites.wingull {
   background-position: -160px -548px;
 }
-.sprites.Pelipper {
+.sprites.pelipper {
   background-position: -190px -548px;
 }
-.sprites.Ralts {
+.sprites.ralts {
   background-position: -222px -549px;
 }
-.sprites.Kirlia {
+.sprites.kirlia {
   background-position: -255px -547px;
 }
-.sprites.Gardevoir {
+.sprites.gardevoir {
   background-position: -288px -548px;
 }
-.sprites.Surskit {
+.sprites.surskit {
   background-position: -319px -548px;
 }
-.sprites.Masquerain {
+.sprites.masquerain {
   background-position: -351px -549px;
 }
-.sprites.Shroomish {
+.sprites.shroomish {
   background-position: -384px -549px;
 }
-.sprites.Breloom {
+.sprites.breloom {
   background-position: -415px -549px;
 }
-.sprites.Slakoth {
+.sprites.slakoth {
   background-position: -448px -548px;
 }
-.sprites.Vigoroth {
+.sprites.vigoroth {
   background-position: -480px -549px;
 }
-.sprites.Slaking {
+.sprites.slaking {
   background-position: 0 -581px;
 }
-.sprites.Nincada {
+.sprites.nincada {
   background-position: -32px -580px;
 }
-.sprites.Ninjask {
+.sprites.ninjask {
   background-position: -62px -582px;
 }
-.sprites.Shedinja {
+.sprites.shedinja {
   background-position: -96px -581px;
 }
-.sprites.Whismur {
+.sprites.whismur {
   background-position: -128px -580px;
 }
-.sprites.Loudred {
+.sprites.loudred {
   background-position: -160px -579px;
 }
-.sprites.Exploud {
+.sprites.exploud {
   background-position: -192px -579px;
 }
-.sprites.Makuhita {
+.sprites.makuhita {
   background-position: -222px -580px;
 }
-.sprites.Hariyama {
+.sprites.hariyama {
   background-position: -256px -580px;
 }
-.sprites.Azurill {
+.sprites.azurill {
   background-position: -288px -581px;
 }
-.sprites.Nosepass {
+.sprites.nosepass {
   background-position: -320px -581px;
 }
-.sprites.Skitty {
+.sprites.skitty {
   background-position: -352px -580px;
 }
-.sprites.Delcatty {
+.sprites.delcatty {
   background-position: -382px -582px;
 }
-.sprites.Sableye {
+.sprites.sableye {
   background-position: -416px -580px;
 }
-.sprites.Mawile {
+.sprites.mawile {
   background-position: -449px -582px;
 }
-.sprites.Aron {
+.sprites.aron {
   background-position: -480px -579px;
 }
-.sprites.Lairon {
+.sprites.lairon {
   background-position: 0 -614px;
 }
-.sprites.Aggron {
+.sprites.aggron {
   background-position: -34px -613px;
 }
-.sprites.Meditite {
+.sprites.meditite {
   background-position: -63px -611px;
 }
-.sprites.Medicham {
+.sprites.medicham {
   background-position: -95px -612px;
 }
-.sprites.Electrike {
+.sprites.electrike {
   background-position: -128px -612px;
 }
-.sprites.Manectric {
+.sprites.manectric {
   background-position: -161px -612px;
 }
-.sprites.Kecleon {
+.sprites.kecleon {
   background-position: -480px -677px;
 }
-.sprites.Carvanha {
+.sprites.carvanha {
   background-position: -417px -611px;
 }
-.sprites.Sharpedo {
+.sprites.sharpedo {
   background-position: -448px -612px;
 }
-.sprites.Corphish {
+.sprites.corphish {
   background-position: -127px -678px;
 }
-.sprites.Crawdaunt {
+.sprites.crawdaunt {
   background-position: -160px -676px;
 }
-.sprites.Wailmer {
+.sprites.wailmer {
   background-position: -479px -614px;
 }
-.sprites.Wailord {
+.sprites.wailord {
   background-position: 0 -645px;
 }
-.sprites.Numel {
+.sprites.numel {
   background-position: -32px -645px;
 }
-.sprites.Camerupt {
+.sprites.camerupt {
   background-position: -64px -644px;
 }
-.sprites.Torkoal {
+.sprites.torkoal {
   background-position: -97px -645px;
 }
-.sprites.Spoink {
+.sprites.spoink {
   background-position: -128px -644px;
 }
-.sprites.Grumpig {
+.sprites.grumpig {
   background-position: -160px -645px;
 }
-.sprites.Spinda {
+.sprites.spinda {
   background-position: -192px -645px;
 }
-.sprites.Trapinch {
+.sprites.trapinch {
   background-position: -223px -646px;
 }
-.sprites.Vibrava {
+.sprites.vibrava {
   background-position: -256px -644px;
 }
-.sprites.Flygon {
+.sprites.flygon {
   background-position: -286px -642px;
 }
-.sprites.Cacnea {
+.sprites.cacnea {
   background-position: -320px -643px;
 }
-.sprites.Cacturne {
+.sprites.cacturne {
   background-position: -352px -644px;
 }
-.sprites.Swablu {
+.sprites.swablu {
   background-position: -384px -642px;
 }
-.sprites.Altaria {
+.sprites.altaria {
   background-position: -416px -643px;
 }
-.sprites.Zangoose {
+.sprites.zangoose {
   background-position: -447px -645px;
 }
-.sprites.Seviper {
+.sprites.seviper {
   background-position: -478px -645px;
 }
-.sprites.Lunatone {
+.sprites.lunatone {
   background-position: 0 -677px;
 }
-.sprites.Solrock {
+.sprites.solrock {
   background-position: -33px -677px;
 }
-.sprites.Barboach {
+.sprites.barboach {
   background-position: -65px -676px;
 }
-.sprites.Whiscash {
+.sprites.whiscash {
   background-position: -97px -677px;
 }
-.sprites.Minun {
+.sprites.minun {
   background-position: -224px -611px;
 }
-.sprites.Plusle {
+.sprites.plusle {
   background-position: -192px -611px;
 }
-.sprites.Volbeat {
+.sprites.volbeat {
   background-position: -256px -612px;
 }
-.sprites.Illumise {
+.sprites.illumise {
   background-position: -288px -612px;
 }
-.sprites.Roselia {
+.sprites.roselia {
   background-position: -319px -613px;
 }
-.sprites.Gulpin {
+.sprites.gulpin {
   background-position: -351px -613px;
 }
-.sprites.Swalot {
+.sprites.swalot {
   background-position: -384px -613px;
 }
-.sprites.Clamperl {
+.sprites.clamperl {
   background-position: -416px -707px;
 }
-.sprites.Huntail {
+.sprites.huntail {
   background-position: -447px -709px;
 }
-.sprites.Luvdisc {
+.sprites.luvdisc {
   background-position: -34px -740px;
 }
-.sprites.Baltoy {
+.sprites.baltoy {
   background-position: -193px -677px;
 }
-.sprites.Claydol {
+.sprites.claydol {
   background-position: -224px -677px;
 }
-.sprites.Lileep {
+.sprites.lileep {
   background-position: -256px -676px;
 }
-.sprites.Cradily {
+.sprites.cradily {
   background-position: -289px -677px;
 }
-.sprites.Anorith {
+.sprites.anorith {
   background-position: -320px -675px;
 }
-.sprites.Armaldo {
+.sprites.armaldo {
   background-position: -351px -675px;
 }
-.sprites.Feebas {
+.sprites.feebas {
   background-position: -385px -676px;
 }
-.sprites.Milotic {
+.sprites.milotic {
   background-position: -416px -676px;
 }
-.sprites.Castform {
+.sprites.castform {
   background-position: -447px -674px;
 }
-.sprites.Shuppet {
+.sprites.shuppet {
   background-position: 0 -708px;
 }
-.sprites.Banette {
+.sprites.banette {
   background-position: -31px -707px;
 }
-.sprites.Duskull {
+.sprites.duskull {
   background-position: -63px -708px;
 }
-.sprites.Dusclops {
+.sprites.dusclops {
   background-position: -94px -708px;
 }
-.sprites.Tropius {
+.sprites.tropius {
   background-position: -127px -706px;
 }
-.sprites.Chimecho {
+.sprites.chimecho {
   background-position: -161px -707px;
 }
-.sprites.Absol {
+.sprites.absol {
   background-position: -191px -707px;
 }
-.sprites.Wynaut {
+.sprites.wynaut {
   background-position: -222px -707px;
 }
-.sprites.Snorunt {
+.sprites.snorunt {
   background-position: -255px -708px;
 }
-.sprites.Glalie {
+.sprites.glalie {
   background-position: -288px -709px;
 }
-.sprites.Spheal {
+.sprites.spheal {
   background-position: -319px -708px;
 }
-.sprites.Sealeo {
+.sprites.sealeo {
   background-position: -352px -709px;
 }
-.sprites.Walrein {
+.sprites.walrein {
   background-position: -384px -707px;
 }
-.sprites.Gorebyss {
+.sprites.gorebyss {
   background-position: -478px -707px;
 }
-.sprites.Relicanth {
+.sprites.relicanth {
   background-position: 0 -741px;
 }
-.sprites.Bagon {
+.sprites.bagon {
   background-position: -66px -740px;
 }
-.sprites.Shelgon {
+.sprites.shelgon {
   background-position: -97px -740px;
 }
-.sprites.Salamence {
+.sprites.salamence {
   background-position: -129px -739px;
 }
-.sprites.Beldum {
+.sprites.beldum {
   background-position: -161px -739px;
 }
-.sprites.Metang {
+.sprites.metang {
   background-position: -193px -739px;
 }
-.sprites.Metagross {
+.sprites.metagross {
   background-position: -224px -739px;
 }
-.sprites.Regirock {
+.sprites.regirock {
   background-position: -255px -740px;
 }
-.sprites.Regice {
+.sprites.regice {
   background-position: -288px -739px;
 }
-.sprites.Registeel {
+.sprites.registeel {
   background-position: -317px -739px;
 }
-.sprites.Latias {
+.sprites.latias {
   background-position: -348px -741px;
 }
-.sprites.Latios {
+.sprites.latios {
   background-position: -384px -740px;
 }
-.sprites.Kyogre {
+.sprites.kyogre {
   background-position: -415px -739px;
 }
-.sprites.Groudon {
+.sprites.groudon {
   background-position: -447px -739px;
 }
-.sprites.Rayquaza {
+.sprites.rayquaza {
   background-position: -480px -740px;
 }
-.sprites.Jirachi {
+.sprites.jirachi {
   background-position: 0 -773px;
 }
-.sprites.Deoxys {
+.sprites.deoxys {
   background-position: -32px -772px;
 }
-/* Sinnoh Sprites 387 - 493 */
-.sprites.Turtwig {
+/* sinnoh sprites 387 - 493 */
+.sprites.turtwig {
   background-position: -161px -772px;
 }
-.sprites.Grotle {
+.sprites.grotle {
   background-position: -191px -773px;
 }
-.sprites.Torterra {
+.sprites.torterra {
   background-position: -225px -773px;
 }
-.sprites.Chimchar {
+.sprites.chimchar {
   background-position: -256px -772px;
 }
-.sprites.Monferno {
+.sprites.monferno {
   background-position: -290px -772px;
 }
-.sprites.Infernape {
+.sprites.infernape {
   background-position: -320px -772px;
 }
-.sprites.Piplup {
+.sprites.piplup {
   background-position: -353px -772px;
 }
-.sprites.Prinplup {
+.sprites.prinplup {
   background-position: -385px -772px;
 }
-.sprites.Empoleon {
+.sprites.empoleon {
   background-position: -416px -772px;
 }
-.sprites.Starly {
+.sprites.starly {
   background-position: -448px -773px;
 }
-.sprites.Staravia {
+.sprites.staravia {
   background-position: -480px -772px;
 }
-.sprites.Staraptor {
+.sprites.staraptor {
   background-position: 0 -805px;
 }
-.sprites.Bidoof {
+.sprites.bidoof {
   background-position: -32px -805px;
 }
-.sprites.Bibarel {
+.sprites.bibarel {
   background-position: -63px -804px;
 }
-.sprites.Kricketot {
+.sprites.kricketot {
   background-position: -96px -805px;
 }
-.sprites.Kricketune {
+.sprites.kricketune {
   background-position: -128px -805px;
 }
-.sprites.Shinx {
+.sprites.shinx {
   background-position: -158px -805px;
 }
-.sprites.Luxio {
+.sprites.luxio {
   background-position: -191px -805px;
 }
-.sprites.Luxray {
+.sprites.luxray {
   background-position: -224px -803px;
 }
-.sprites.Budew {
+.sprites.budew {
   background-position: -256px -805px;
 }
-.sprites.Roserade {
+.sprites.roserade {
   background-position: -287px -803px;
 }
-.sprites.Cranidos {
+.sprites.cranidos {
   background-position: -287px -803px;
 }
-.sprites.Rampardos {
+.sprites.rampardos {
   background-position: -352px -805px;
 }
-.sprites.Shieldon {
+.sprites.shieldon {
   background-position: -384px -805px;
 }
-.sprites.Bastiodon {
+.sprites.bastiodon {
   background-position: -413px -805px;
 }
-.sprites.Burmy {
+.sprites.burmy {
   background-position: -448px -804px;
 }
-.sprites.Wormadam {
+.sprites.wormadam {
   background-position: -479px -805px;
 }
-.sprites.Mothim {
+.sprites.mothim {
   background-position: -63px -835px;
 }
-.sprites.Combee {
+.sprites.combee {
   background-position: -96px -836px;
 }
-.sprites.Vespiquen {
+.sprites.vespiquen {
   background-position: -128px -835px;
 }
-.sprites.Pachirisu {
+.sprites.pachirisu {
   background-position: -160px -838px;
 }
-.sprites.Buizel {
+.sprites.buizel {
   background-position: -192px -837px;
 }
-.sprites.Floatzel {
+.sprites.floatzel {
   background-position: -221px -837px;
 }
-.sprites.Cherubi {
+.sprites.cherubi {
   background-position: -256px -836px;
 }
-.sprites.Cherrim {
+.sprites.cherrim {
   background-position: -288px -836px;
 }
-.sprites.Shellos {
+.sprites.shellos {
   background-position: -320px -835px;
 }
-.sprites.Gastrodon {
+.sprites.gastrodon {
   background-position: -352px -837px;
 }
-.sprites.Ambipom {
+.sprites.ambipom {
   background-position: -383px -835px;
 }
-.sprites.Drifloon {
+.sprites.drifloon {
   background-position: -416px -836px;
 }
-.sprites.Drifblim {
+.sprites.drifblim {
   background-position: -448px -837px;
 }
-.sprites.Buneary {
+.sprites.buneary {
   background-position: -478px -836px;
 }
-.sprites.Lopunny {
+.sprites.lopunny {
   background-position: 0 -869px;
 }
-.sprites.Mismagius {
+.sprites.mismagius {
   background-position: -32px -868px;
 }
-.sprites.Honchkrow {
+.sprites.honchkrow {
   background-position: -64px -868px;
 }
-.sprites.Glameow {
+.sprites.glameow {
   background-position: -92px -868px;
 }
-.sprites.Purugly {
+.sprites.purugly {
   background-position: -127px -871px;
 }
-.sprites.Chingling {
+.sprites.chingling {
   background-position: -159px -869px;
 }
-.sprites.Mime.Jr {
+.sprites.mime.jr {
   background-position: -352px -869px;
 }
-.sprites.Stunky {
+.sprites.stunky {
   background-position: -192px -869px;
 }
-.sprites.Skuntank {
+.sprites.skuntank {
   background-position: -225px -870px;
 }
-.sprites.Bronzor {
+.sprites.bronzor {
   background-position: -257px -868px;
 }
-.sprites.Bronzong {
+.sprites.bronzong {
   background-position: -289px -868px;
 }
-.sprites.Bonsly {
+.sprites.bonsly {
   background-position: -320px -868px;
 }
-.sprites.Happiny {
+.sprites.happiny {
   background-position: -385px -867px;
 }
-.sprites.Chatot {
+.sprites.chatot {
   background-position: -416px -868px;
 }
-.sprites.Spiritomb {
+.sprites.spiritomb {
   background-position: -447px -867px;
 }
-.sprites.Gible {
+.sprites.gible {
   background-position: -480px -867px;
 }
-.sprites.Gabite {
+.sprites.gabite {
   background-position: 0 -903px;
 }
-.sprites.Garchomp {
+.sprites.garchomp {
   background-position: -30px -901px;
 }
-.sprites.Munchlax {
+.sprites.munchlax {
   background-position: -64px -899px;
 }
-.sprites.Riolu {
+.sprites.riolu {
   background-position: -96px -901px;
 }
-.sprites.Lucario {
+.sprites.lucario {
   background-position: -128px -900px;
 }
-.sprites.Hippopotas {
+.sprites.hippopotas {
   background-position: -159px -903px;
 }
-.sprites.Hippowdon {
+.sprites.hippowdon {
   background-position: -191px -903px;
 }
-.sprites.Skorupi {
+.sprites.skorupi {
   background-position: -226px -903px;
 }
-.sprites.Drapion {
+.sprites.drapion {
   background-position: -255px -899px;
 }
-.sprites.Croagunk {
+.sprites.croagunk {
   background-position: -289px -901px;
 }
-.sprites.Toxicroak {
+.sprites.toxicroak {
   background-position: -318px -900px;
 }
-.sprites.Carnivine {
+.sprites.carnivine {
   background-position: -351px -900px;
 }
-.sprites.Finneon {
+.sprites.finneon {
   background-position: -384px -899px;
 }
-.sprites.Lumineon {
+.sprites.lumineon {
   background-position: -415px -899px;
 }
-.sprites.Mantyke {
+.sprites.mantyke {
   background-position: -448px -901px;
 }
-.sprites.Snover {
+.sprites.snover {
   background-position: -480px -900px;
 }
-.sprites.Abomasnow {
+.sprites.abomasnow {
   background-position: 0 -933px;
 }
-.sprites.Weavile {
+.sprites.weavile {
   background-position: -34px -933px;
 }
-.sprites.Magnezone {
+.sprites.magnezone {
   background-position: -64px -932px;
 }
-.sprites.Lickilicky {
+.sprites.lickilicky {
   background-position: -98px -932px;
 }
-.sprites.Rhyperior {
+.sprites.rhyperior {
   background-position: -128px -931px;
 }
-.sprites.Tangrowth {
+.sprites.tangrowth {
   background-position: -160px -930px;
 }
-.sprites.Electivire {
+.sprites.electivire {
   background-position: -191px -932px;
 }
-.sprites.Magmortar {
+.sprites.magmortar {
   background-position: -223px -932px;
 }
-.sprites.Togekiss {
+.sprites.togekiss {
   background-position: -253px -932px;
 }
-.sprites.Yanmega {
+.sprites.yanmega {
   background-position: -288px -931px;
 }
-.sprites.Leafeon {
+.sprites.leafeon {
   background-position: -319px -929px;
 }
-.sprites.Glaceon {
+.sprites.glaceon {
   background-position: -349px -932px;
 }
-.sprites.Gliscor {
+.sprites.gliscor {
   background-position: -382px -931px;
 }
-.sprites.Mamoswine {
+.sprites.mamoswine {
   background-position: -416px -930px;
 }
-.sprites.Porygon-Z {
+.sprites.porygon-z {
   background-position: -448px -928px;
 }
-.sprites.Gallade {
+.sprites.gallade {
   background-position: -480px -931px;
 }
-.sprites.Probopass {
+.sprites.probopass {
   background-position: 0 -965px;
 }
-.sprites.Dusknoir {
+.sprites.dusknoir {
   background-position: -34px -963px;
 }
-.sprites.Froslass {
+.sprites.froslass {
   background-position: -62px -965px;
 }
-.sprites.Rotom {
+.sprites.rotom {
   background-position: -95px -963px;
 }
-.sprites.Uxie {
+.sprites.uxie {
   background-position: -287px -964px;
 }
-.sprites.Mesprit {
+.sprites.mesprit {
   background-position: -322px -964px;
 }
-.sprites.Azelf {
+.sprites.azelf {
   background-position: -350px -965px;
 }
-.sprites.Dialga {
+.sprites.dialga {
   background-position: -384px -964px;
 }
-.sprites.Palkia {
+.sprites.palkia {
   background-position: -416px -964px;
 }
-.sprites.Heatran {
+.sprites.heatran {
   background-position: -449px -965px;
 }
-.sprites.Regigigas {
+.sprites.regigigas {
   background-position: -480px -964px;
 }
-.sprites.Giratina {
+.sprites.giratina {
   background-position: 0 -995px;
 }
-.sprites.Cresselia {
+.sprites.cresselia {
   background-position: -63px -997px;
 }
-.sprites.Phione {
+.sprites.phione {
   background-position: -95px -997px;
 }
-.sprites.Manaphy {
+.sprites.manaphy {
   background-position: -127px -996px;
 }
-.sprites.Darkrai {
+.sprites.darkrai {
   background-position: -159px -996px;
 }
-.sprites.Shaymin {
+.sprites.shaymin {
   background-position: -191px -996px;
 }
-.sprites.Arceus {
+.sprites.arceus {
   background-position: -253px -995px;
 }
-/* Unova Sprites 494 - 649 */
-.sprites.Victini {
+/* unova sprites 494 - 649 */
+.sprites.victini {
   background-position: -288px -996px;
 }
-.sprites.Snivy {
+.sprites.snivy {
   background-position: -320px -996px;
 }
-.sprites.Servine {
+.sprites.servine {
   background-position: -351px -996px;
 }
-.sprites.Serperior {
+.sprites.serperior {
   background-position: -385px -996px;
 }
-.sprites.Tepig {
+.sprites.tepig {
   background-position: -416px -996px;
 }
-.sprites.Pignite {
+.sprites.pignite {
   background-position: -449px -996px;
 }
-.sprites.Emboar {
+.sprites.emboar {
   background-position: -480px -996px;
 }
-.sprites.Oshawott {
+.sprites.oshawott {
   background-position: 0 -1028px;
 }
-.sprites.Dewott {
+.sprites.dewott {
   background-position: -31px -1029px;
 }
-.sprites.Samurott {
+.sprites.samurott {
   background-position: -65px -1029px;
 }
-.sprites.Patrat {
+.sprites.patrat {
   background-position: -95px -1029px;
 }
-.sprites.Watchog {
+.sprites.watchog {
   background-position: -127px -1029px;
 }
-.sprites.Lillipup {
+.sprites.lillipup {
   background-position: -160px -1029px;
 }
-.sprites.Herdier {
+.sprites.herdier {
   background-position: -191px -1028px;
 }
-.sprites.Stoutland {
+.sprites.stoutland {
   background-position: -224px -1028px;
 }
-.sprites.Purrloin {
+.sprites.purrloin {
   background-position: -255px -1028px;
 }
-.sprites.Liepard {
+.sprites.liepard {
   background-position: -287px -1028px;
 }
-.sprites.Pansage {
+.sprites.pansage {
   background-position: -321px -1029px;
 }
-.sprites.Simisage {
+.sprites.simisage {
   background-position: -350px -1029px;
 }
-.sprites.Pansear {
+.sprites.pansear {
   background-position: -384px -1029px;
 }
-.sprites.Simisear {
+.sprites.simisear {
   background-position: -413px -1028px;
 }
-.sprites.Panpour {
+.sprites.panpour {
   background-position: -448px -1029px;
 }
-.sprites.Simipour {
+.sprites.simipour {
   background-position: -480px -1029px;
 }
-.sprites.Munna {
+.sprites.munna {
   background-position: 0 -1060px;
 }
-.sprites.Musharna {
+.sprites.musharna {
   background-position: -33px -1058px;
 }
-.sprites.Pidove {
+.sprites.pidove {
   background-position: -64px -1060px;
 }
-.sprites.Tranquill {
+.sprites.tranquill {
   background-position: -96px -1062px;
 }
-.sprites.Unfezant {
+.sprites.unfezant {
   background-position: -128px -1060px;
 }
-.sprites.Blitzle {
+.sprites.blitzle {
   background-position: -161px -1060px;
 }
-.sprites.Zebstrika {
+.sprites.zebstrika {
   background-position: -192px -1060px;
 }
-.sprites.Roggenrola {
+.sprites.roggenrola {
   background-position: -225px -1060px;
 }
-.sprites.Boldore {
+.sprites.boldore {
   background-position: -255px -1060px;
 }
-.sprites.Gigalith {
+.sprites.gigalith {
   background-position: -289px -1061px;
 }
-.sprites.Woobat {
+.sprites.woobat {
   background-position: -320px -1060px;
 }
-.sprites.Swoobat {
+.sprites.swoobat {
   background-position: -352px -1061px;
 }
-.sprites.Drilbur {
+.sprites.drilbur {
   background-position: -383px -1061px;
 }
-.sprites.Excadrill {
+.sprites.excadrill {
   background-position: -415px -1061px;
 }
-.sprites.Audino {
+.sprites.audino {
   background-position: -448px -1060px;
 }
-.sprites.Timburr {
+.sprites.timburr {
   background-position: -480px -1062px;
 }
-.sprites.Gurdurr {
+.sprites.gurdurr {
   background-position: 0 -1091px;
 }
-.sprites.Conkeldurr {
+.sprites.conkeldurr {
   background-position: -32px -1092px;
 }
-.sprites.Tympole {
+.sprites.tympole {
   background-position: -64px -1092px;
 }
-.sprites.Palpitoad {
+.sprites.palpitoad {
   background-position: -96px -1091px;
 }
-.sprites.Seismitoad {
+.sprites.seismitoad {
   background-position: -130px -1091px;
 }
-.sprites.Throh {
+.sprites.throh {
   background-position: -160px -1092px;
 }
-.sprites.Sawk {
+.sprites.sawk {
   background-position: -191px -1092px;
 }
-.sprites.Sewaddle {
+.sprites.sewaddle {
   background-position: -225px -1093px;
 }
-.sprites.Swadloon {
+.sprites.swadloon {
   background-position: -257px -1092px;
 }
-.sprites.Leavanny {
+.sprites.leavanny {
   background-position: -288px -1092px;
 }
-.sprites.Venipede {
+.sprites.venipede {
   background-position: -320px -1092px;
 }
-.sprites.Whirlipede {
+.sprites.whirlipede {
   background-position: -352px -1092px;
 }
-.sprites.Scolipede {
+.sprites.scolipede {
   background-position: -383px -1092px;
 }
-.sprites.Cottonee {
+.sprites.cottonee {
   background-position: -417px -1093px;
 }
-.sprites.Whimsicott {
+.sprites.whimsicott {
   background-position: -447px -1091px;
 }
-.sprites.Petilil {
+.sprites.petilil {
   background-position: -480px -1092px;
 }
-.sprites.Lilligant {
+.sprites.lilligant {
   background-position: 0 -1124px;
 }
-.sprites.Basculin {
+.sprites.basculin {
   background-position: -32px -1124px;
 }
-.sprites.Sandile {
+.sprites.sandile {
   background-position: -64px -1124px;
 }
-.sprites.Krokorok {
+.sprites.krokorok {
   background-position: -96px -1123px;
 }
-.sprites.Krookodile {
+.sprites.krookodile {
   background-position: -130px -1122px;
 }
-.sprites.Darumaka {
+.sprites.darumaka {
   background-position: -162px -1124px;
 }
-.sprites.Darmanitan {
+.sprites.darmanitan {
   background-position: -191px -1123px;
 }
-.sprites.Maractus {
+.sprites.maractus {
   background-position: -258px -1124px;
 }
-.sprites.Dwebble {
+.sprites.dwebble {
   background-position: -288px -1125px;
 }
-.sprites.Crustle {
+.sprites.crustle {
   background-position: -321px -1124px;
 }
-.sprites.Scraggy {
+.sprites.scraggy {
   background-position: -352px -1125px;
 }
-.sprites.Scrafty {
+.sprites.scrafty {
   background-position: -383px -1125px;
 }
-.sprites.Sigilyph {
+.sprites.sigilyph {
   background-position: -415px -1124px;
 }
-.sprites.Yamask {
+.sprites.yamask {
   background-position: -447px -1124px;
 }
-.sprites.Cofagrigus {
+.sprites.cofagrigus {
   background-position: -479px -1124px;
 }
-.sprites.Tirtouga {
+.sprites.tirtouga {
   background-position: 0 -1158px;
 }
-.sprites.Carracosta {
+.sprites.carracosta {
   background-position: -32px -1156px;
 }
-.sprites.Archen {
+.sprites.archen {
   background-position: -65px -1156px;
 }
-.sprites.Archeops {
+.sprites.archeops {
   background-position: -98px -1156px;
 }
-.sprites.Trubbish {
+.sprites.trubbish {
   background-position: -128px -1157px;
 }
-.sprites.Garbodor {
+.sprites.garbodor {
   background-position: -160px -1156px;
 }
-.sprites.Zorua {
+.sprites.zorua {
   background-position: -192px -1155px;
 }
-.sprites.Zoroark {
+.sprites.zoroark {
   background-position: -223px -1155px;
 }
-.sprites.Minccino {
+.sprites.minccino {
   background-position: -257px -1155px;
 }
-.sprites.Cinccino {
+.sprites.cinccino {
   background-position: -288px -1156px;
 }
-.sprites.Gothita {
+.sprites.gothita {
   background-position: -320px -1155px;
 }
-.sprites.Gothorita {
+.sprites.gothorita {
   background-position: -352px -1155px;
 }
-.sprites.Gothitelle {
+.sprites.gothitelle {
   background-position: -383px -1155px;
 }
-.sprites.Solosis {
+.sprites.solosis {
   background-position: -416px -1156px;
 }
-.sprites.Duosion {
+.sprites.duosion {
   background-position: -448px -1155px;
 }
-.sprites.Reuniclus {
+.sprites.reuniclus {
   background-position: -479px -1155px;
 }
-.sprites.Ducklett {
+.sprites.ducklett {
   background-position: 0 -1188px;
 }
-.sprites.Swanna {
+.sprites.swanna {
   background-position: -34px -1189px;
 }
-.sprites.Vanillite {
+.sprites.vanillite {
   background-position: -64px -1187px;
 }
-.sprites.Vanillish {
+.sprites.vanillish {
   background-position: -95px -1188px;
 }
-.sprites.Vanilluxe {
+.sprites.vanilluxe {
   background-position: -129px -1187px;
 }
-.sprites.Deerling {
+.sprites.deerling {
   background-position: -159px -1188px;
 }
-.sprites.Sawsbuck {
+.sprites.sawsbuck {
   background-position: -191px -1188px;
 }
-.sprites.Emolga {
+.sprites.emolga {
   background-position: -224px -1188px;
 }
-.sprites.Karrablast {
+.sprites.karrablast {
   background-position: -257px -1188px;
 }
-.sprites.Escavalier {
+.sprites.escavalier {
   background-position: -288px -1187px;
 }
-.sprites.Foongus {
+.sprites.foongus {
   background-position: -322px -1188px;
 }
-.sprites.Amoonguss {
+.sprites.amoonguss {
   background-position: -351px -1189px;
 }
-.sprites.Frillish {
+.sprites.frillish {
   background-position: -383px -1188px;
 }
-.sprites.Jellicent {
+.sprites.jellicent {
   background-position: -417px -1189px;
 }
-.sprites.Alomomola {
+.sprites.alomomola {
   background-position: -448px -1189px;
 }
-.sprites.Joltik {
+.sprites.joltik {
   background-position: -480px -1188px;
 }
-.sprites.Galvantula {
+.sprites.galvantula {
   background-position: 0 -1222px;
 }
-.sprites.Ferroseed {
+.sprites.ferroseed {
   background-position: -32px -1220px;
 }
-.sprites.Ferrothorn {
+.sprites.ferrothorn {
   background-position: -66px -1218px;
 }
-.sprites.Klink {
+.sprites.klink {
   background-position: -96px -1220px;
 }
-.sprites.Klang {
+.sprites.klang {
   background-position: -129px -1220px;
 }
-.sprites.Klinklang {
+.sprites.klinklang {
   background-position: -159px -1220px;
 }
-.sprites.Tynamo {
+.sprites.tynamo {
   background-position: -193px -1219px;
 }
-.sprites.Eelektrik {
+.sprites.eelektrik {
   background-position: -225px -1220px;
 }
-.sprites.Eelektross {
+.sprites.eelektross {
   background-position: -257px -1220px;
 }
-.sprites.Elgyem {
+.sprites.elgyem {
   background-position: -287px -1220px;
 }
-.sprites.Beheeyem {
+.sprites.beheeyem {
   background-position: -318px -1219px;
 }
-.sprites.Litwick {
+.sprites.litwick {
   background-position: -352px -1219px;
 }
-.sprites.Lampent {
+.sprites.lampent {
   background-position: -383px -1219px;
 }
-.sprites.Chandelure {
+.sprites.chandelure {
   background-position: -415px -1220px;
 }
-.sprites.Axew {
+.sprites.axew {
   background-position: -448px -1221px;
 }
-.sprites.Fraxure {
+.sprites.fraxure {
   background-position: -480px -1221px;
 }
-.sprites.Haxorus {
+.sprites.haxorus {
   background-position: 0 -1251px;
 }
-.sprites.Cubchoo {
+.sprites.cubchoo {
   background-position: -32px -1251px;
 }
-.sprites.Beartic {
+.sprites.beartic {
   background-position: -66px -1252px;
 }
-.sprites.Cryogonal {
+.sprites.cryogonal {
   background-position: -96px -1252px;
 }
-.sprites.Shelmet {
+.sprites.shelmet {
   background-position: -128px -1251px;
 }
-.sprites.Accelgor {
+.sprites.accelgor {
   background-position: -158px -1253px;
 }
-.sprites.Stunfisk {
+.sprites.stunfisk {
   background-position: -192px -1253px;
 }
-.sprites.Mienfoo {
+.sprites.mienfoo {
   background-position: -225px -1251px;
 }
-.sprites.Mienshao {
+.sprites.mienshao {
   background-position: -253px -1250px;
 }
-.sprites.Druddigon {
+.sprites.druddigon {
   background-position: -288px -1251px;
 }
-.sprites.Golett {
+.sprites.golett {
   background-position: -320px -1252px;
 }
-.sprites.Golurk {
+.sprites.golurk {
   background-position: -352px -1250px;
 }
-.sprites.Pawniard {
+.sprites.pawniard {
   background-position: -386px -1251px;
 }
-.sprites.Bisharp {
+.sprites.bisharp {
   background-position: -414px -1251px;
 }
-.sprites.Bouffalant {
+.sprites.bouffalant {
   background-position: -449px -1250px;
 }
-.sprites.Rufflet {
+.sprites.rufflet {
   background-position: -480px -1252px;
 }
-.sprites.Braviary {
+.sprites.braviary {
   background-position: 0 -1285px;
 }
-.sprites.Vullaby {
+.sprites.vullaby {
   background-position: -33px -1283px;
 }
-.sprites.Mandibuzz {
+.sprites.mandibuzz {
   background-position: -64px -1283px;
 }
-.sprites.Heatmor {
+.sprites.heatmor {
   background-position: -96px -1283px;
 }
-.sprites.Durant {
+.sprites.durant {
   background-position: -129px -1284px;
 }
-.sprites.Deino {
+.sprites.deino {
   background-position: -159px -1284px;
 }
-.sprites.Zweilous {
+.sprites.zweilous {
   background-position: -191px -1282px;
 }
-.sprites.Hydreigon {
+.sprites.hydreigon {
   background-position: -225px -1284px;
 }
-.sprites.Larvesta {
+.sprites.larvesta {
   background-position: -256px -1284px;
 }
-.sprites.Volcarona {
+.sprites.volcarona {
   background-position: -288px -1285px;
 }
-.sprites.Cobalion {
+.sprites.cobalion {
   background-position: -322px -1283px;
 }
-.sprites.Terrakion {
+.sprites.terrakion {
   background-position: -354px -1282px;
 }
-.sprites.Virizion {
+.sprites.virizion {
   background-position: -382px -1286px;
 }
-.sprites.Tornadus {
+.sprites.tornadus {
   background-position: -414px -1284px;
 }
-.sprites.Thundurus {
+.sprites.thundurus {
   background-position: -480px -1283px;
 }
-.sprites.Reshiram {
+.sprites.reshiram {
   background-position: -31px -1317px;
 }
-.sprites.Zekrom {
+.sprites.zekrom {
   background-position: -63px -1314px;
 }
-.sprites.Landorus {
+.sprites.landorus {
   background-position: -96px -1314px;
 }
-.sprites.Kyurem {
+.sprites.kyurem {
   background-position: -160px -1315px;
 }
-.sprites.Keldeo {
+.sprites.keldeo {
   background-position: -254px -1315px;
 }
-.sprites.Meloetta {
+.sprites.meloetta {
   background-position: -320px -1315px;
 }
-.sprites.Genesect {
+.sprites.genesect {
   background-position: -384px -1314px;
 }
-/* Kalos Sprites 650 - 721 */
-.sprites.Chespin {
+/* kalos sprites 650 - 721 */
+.sprites.chespin {
   background-position: -415px -1313px;
 }
-.sprites.Quilladin {
+.sprites.quilladin {
   background-position: -447px -1312px;
 }
-.sprites.Chesnaught {
+.sprites.chesnaught {
   background-position: -480px -1311px;
 }
-.sprites.Fennekin {
+.sprites.fennekin {
   background-position: 0 -1346px;
 }
-.sprites.Braixen {
+.sprites.braixen {
   background-position: -32px -1344px;
 }
-.sprites.Delphox {
+.sprites.delphox {
   background-position: -62px -1343px;
 }
-.sprites.Froakie {
+.sprites.froakie {
   background-position: -96px -1344px;
 }
-.sprites.Frogadier {
+.sprites.frogadier {
   background-position: -128px -1344px;
 }
-.sprites.Greninja {
+.sprites.greninja {
   background-position: -157px -1344px;
 }
-.sprites.Bunnelby {
+.sprites.bunnelby {
   background-position: -192px -1344px;
 }
-.sprites.Diggersby {
+.sprites.diggersby {
   background-position: -224px -1343px;
 }
-.sprites.Fletchling {
+.sprites.fletchling {
   background-position: -256px -1344px;
 }
-.sprites.Flechinder {
+.sprites.flechinder {
   background-position: -288px -1343px;
 }
-.sprites.Talonflame {
+.sprites.talonflame {
   background-position: -318px -1342px;
 }
-.sprites.Scatterbug {
+.sprites.scatterbug {
   background-position: -352px -1344px;
 }
-.sprites.Spewpa {
+.sprites.spewpa {
   background-position: -384px -1343px;
 }
-.sprites.Vivillon {
+.sprites.vivillon {
   background-position: -414px -1343px;
 }
-.sprites.Litleo {
+.sprites.litleo {
   background-position: -445px -1344px;
 }
-.sprites.Pyroar {
+.sprites.pyroar {
   background-position: -480px -1341px;
 }
-.sprites.Flabebe {
+.sprites.flabebe {
   background-position: 0 -1376px;
 }
-.sprites.Floette {
+.sprites.floette {
   background-position: -32px -1376px;
 }
-.sprites.Florges {
+.sprites.florges {
   background-position: -62px -1377px;
 }
-.sprites.Skiddo {
+.sprites.skiddo {
   background-position: -95px -1376px;
 }
-.sprites.Gogoat {
+.sprites.gogoat {
   background-position: -128px -1375px;
 }
-.sprites.Pancham {
+.sprites.pancham {
   background-position: -161px -1377px;
 }
-.sprites.Pangoro {
+.sprites.pangoro {
   background-position: -190px -1376px;
 }
-.sprites.Furfrou {
+.sprites.furfrou {
   background-position: -226px -1375px;
 }
-.sprites.Espurr {
+.sprites.espurr {
   background-position: -255px -1375px;
 }
-.sprites.Meowstic {
+.sprites.meowstic {
   background-position: -286px -1378px;
 }
-.sprites.Honedge {
+.sprites.honedge {
   background-position: -318px -1376px;
 }
-.sprites.Doublade {
+.sprites.doublade {
   background-position: -351px -1375px;
 }
-.sprites.Aegislash {
+.sprites.aegislash {
   background-position: -383px -1375px;
 }
-.sprites.Spritzee {
+.sprites.spritzee {
   background-position: -416px -1376px;
 }
-.sprites.Aromatisse {
+.sprites.aromatisse {
   background-position: -447px -1377px;
 }
-.sprites.Swirlix {
+.sprites.swirlix {
   background-position: -480px -1376px;
 }
-.sprites.Slurpuff {
+.sprites.slurpuff {
   background-position: 0 -1407px;
 }
-.sprites.Inkay {
+.sprites.inkay {
   background-position: -33px -1408px;
 }
-.sprites.Malamar {
+.sprites.malamar {
   background-position: -65px -1407px;
 }
-.sprites.Binacle {
+.sprites.binacle {
   background-position: -96px -1409px;
 }
-.sprites.Barbaracle {
+.sprites.barbaracle {
   background-position: -128px -1406px;
 }
-.sprites.Skrelp {
+.sprites.skrelp {
   background-position: -160px -1407px;
 }
-.sprites.Dragalge {
+.sprites.dragalge {
   background-position: -190px -1406px;
 }
-.sprites.Clauncher {
+.sprites.clauncher {
   background-position: -224px -1407px;
 }
-.sprites.Clawitzer {
+.sprites.clawitzer {
   background-position: -255px -1407px;
 }
-.sprites.Helioptile {
+.sprites.helioptile {
   background-position: -290px -1406px;
 }
-.sprites.Heliolisk {
+.sprites.heliolisk {
   background-position: -318px -1406px;
 }
-.sprites.Tyrunt {
+.sprites.tyrunt {
   background-position: -352px -1407px;
 }
-.sprites.Tyrantrum {
+.sprites.tyrantrum {
   background-position: -382px -1407px;
 }
-.sprites.Amaura {
+.sprites.amaura {
   background-position: -414px -1407px;
 }
-.sprites.Aurorus {
+.sprites.aurorus {
   background-position: -447px -1407px;
 }
-.sprites.Sylveon {
+.sprites.sylveon {
   background-position: -478px -1407px;
 }
-.sprites.Hawlucha {
+.sprites.hawlucha {
   background-position: 0 -1442px;
 }
-.sprites.Dedenne {
+.sprites.dedenne {
   background-position: -32px -1440px;
 }
-.sprites.Carbink {
+.sprites.carbink {
   background-position: -64px -1445px;
 }
-.sprites.Goomy {
+.sprites.goomy {
   background-position: -96px -1443px;
 }
-.sprites.Sliggoo {
+.sprites.sliggoo {
   background-position: -126px -1440px;
 }
-.sprites.Goodra {
+.sprites.goodra {
   background-position: -157px -1439px;
 }
-.sprites.Klefki {
+.sprites.klefki {
   background-position: -191px -1440px;
 }
-.sprites.Phantump {
+.sprites.phantump {
   background-position: -223px -1439px;
 }
-.sprites.Trevenant {
+.sprites.trevenant {
   background-position: -255px -1438px;
 }
-.sprites.Pumpkaboo {
+.sprites.pumpkaboo {
   background-position: -287px -1442px;
 }
-.sprites.Gourgeist {
+.sprites.gourgeist {
   background-position: -320px -1442px;
 }
-.sprites.Bergmite {
+.sprites.bergmite {
   background-position: -351px -1443px;
 }
-.sprites.Avalugg {
+.sprites.avalugg {
   background-position: -384px -1438px;
 }
-.sprites.Noibat {
+.sprites.noibat {
   background-position: -416px -1439px;
 }
-.sprites.Noivern {
+.sprites.noivern {
   background-position: -448px -1439px;
 }
-.sprites.Xerneas {
+.sprites.xerneas {
   background-position: -480px -1439px;
 }
-.sprites.Yveltal {
+.sprites.yveltal {
   background-position: 0 -1472px;
 }
-.sprites.Zygarde {
+.sprites.zygarde {
   background-position: -31px -1472px;
 }
-.sprites.Diancie {
+.sprites.diancie {
   background-position: -130px -1471px;
 }
-.sprites.Hoopa {
+.sprites.hoopa {
   background-position: -162px -1472px;
 }
-.sprites.Volcanion {
+.sprites.volcanion {
   background-position: -196px -1470px;
 }
 .type-icon {
