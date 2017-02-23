@@ -16,7 +16,7 @@
                      "type":[
                         "normal"
                      ],
-                     "rate":"40%",
+                     "rate":"40",
                      "version":"both",
                      "min_level":"2",
                      "max_level":"2"
@@ -26,7 +26,7 @@
                      "type":[
                         "bug"
                      ],
-                     "rate":"40%",
+                     "rate":"40",
                      "version":"both",
                      "min_level":"2",
                      "max_level":"2"
@@ -36,13 +36,13 @@
                      "type":[
                         "dark"
                      ],
-                     "rate":"20%",
+                     "rate":"20",
                      "version":"both",
                      "min_level":"2",
                      "max_level":"2"
                   }
                ],
-               "post_elite_four":""
+               "post_elite_four":false
             },
             {
                "type":"dex nav",
@@ -52,7 +52,7 @@
                      "type":[
                         "normal"
                      ],
-                     "rate":"",
+                     "rate":"--",
                      "version":"both",
                      "min_level":"2",
                      "max_level":"2"
@@ -63,7 +63,7 @@
                         "bug",
                         "grass"
                      ],
-                     "rate":"",
+                     "rate":"--",
                      "version":"both",
                      "min_level":"2",
                      "max_level":"2"
@@ -73,13 +73,13 @@
                      "type":[
                         "dark"
                      ],
-                     "rate":"",
+                     "rate":"--",
                      "version":"both",
                      "min_level":"2",
                      "max_level":"2"
                   }
                ],
-               "post_elite_four":"yes"
+               "post_elite_four":true
             },
             {
                "type":"horde",
@@ -89,7 +89,7 @@
                      "type":[
                         "normal"
                      ],
-                     "rate":"",
+                     "rate":"--",
                      "version":"both",
                      "min_level":"2",
                      "max_level":"2"
@@ -99,7 +99,7 @@
                      "type":[
                         "dark"
                      ],
-                     "rate":"",
+                     "rate":"--",
                      "version":"both",
                      "min_level":"2",
                      "max_level":"2"
@@ -115,7 +115,8 @@
                         "grass"
                      ],
                      "from":"professor birch",
-                     "level":"5"
+                     "min_level":"5",
+                      "max_level":"5"
                   },
                   {
                      "name":"torchic",
@@ -123,7 +124,8 @@
                         "fire"
                      ],
                      "from":"professor birch",
-                     "level":"5"
+                     "min_level":"5",
+                      "max_level":"5"
                   },
                   {
                      "name":"mudkip",
@@ -131,82 +133,92 @@
                         "water"
                      ],
                      "from":"professor birch",
-                     "level":"5"
+                     "min_level":"5",
+                      "max_level":"5"
                   },
                   {
                      "name":"chikorita",
                      "type":[
                         "grass"
                      ],
-                     "from":"professor birch - beat elite four",
-                     "level":"5"
+                     "from":"professor birch",
+                     "min_level":"5",
+                      "max_level":"5"
                   },
                   {
                      "name":"cyndaquil",
                      "type":[
                         "fire"
                      ],
-                     "from":"professor birch - beat elite four",
-                     "level":"5"
+                     "from":"professor birch",
+                     "min_level":"5",
+                      "max_level":"5"
                   },
                   {
                      "name":"totodile",
                      "type":[
                         "water"
                      ],
-                     "from":"professor birch - beat elite four",
-                     "level":"5"
+                     "from":"professor birch",
+                     "min_level":"5",
+                      "max_level":"5"
                   },
                   {
                      "name":"turtwig",
                      "type":[
                         "grass"
                      ],
-                     "from":"professor birch - beat elite four",
-                     "level":"5"
+                     "from":"professor birch",
+                     "min_level":"5",
+                      "max_level":"5"
                   },
                   {
                      "name":"chimchar",
                      "type":[
                         "fire"
                      ],
-                     "from":"professor birch - beat elite four",
-                     "level":"5"
+                     "from":"professor birch",
+                     "min_level":"5",
+                      "max_level":"5"
                   },
                   {
                      "name":"piplup",
                      "type":[
                         "water"
                      ],
-                     "from":"professor birch - beat elite four",
-                     "level":"5"
+                     "from":"professor birch",
+                     "min_level":"5",
+                      "max_level":"5"
                   },
                   {
                      "name":"snivy",
                      "type":[
                         "grass"
                      ],
-                     "from":"professor birch - beat elite four",
-                     "level":"5"
+                     "from":"professor birch",
+                     "min_level":"5",
+                      "max_level":"5"
                   },
                   {
                      "name":"tepig",
                      "type":[
                         "fire"
                      ],
-                     "from":"professor birch - beat elite four",
-                     "level":"5"
+                     "from":"professor birch",
+                     "min_level":"5",
+                      "max_level":"5"
                   },
                   {
                      "name":"oshawott",
                      "type":[
                         "water"
                      ],
-                     "from":"professor birch - beat elite four",
-                     "level":"5"
+                     "from":"professor birch",
+                     "min_level":"5",
+                      "max_level":"5"
                   }
                ],
-               "post_elite_four":"yes"
+               "post_elite_four":true
             }
          ]
       }

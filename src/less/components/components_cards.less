@@ -21,6 +21,18 @@
         .card_pokemon-pokeball {            
             padding-right: .25rem;    
             align-self: center;
+            cursor: pointer;
+            
+            &-icon {
+                background: url('../images/pokeball-no-catch.png') no-repeat;
+                display: flex;
+                width: 1.65rem;
+                height: 1.65rem;
+                
+                &.caught {
+                    background: url('../images/pokeball-catch.png') no-repeat;
+                }
+            }
         }
         
         .card_pokemon-info {
@@ -35,12 +47,24 @@
                 align-items: center;
                 justify-content: space-between;
                 font-weight: 700;
+                
+                .pokemon-info-bio-name-sprite {
+                    span {
+                        text-transform: capitalize;
+                    }
+                }
             }
             
             .pokemon-info-rates {
                 display: flex;
                 justify-content: space-between;
                 padding-left: .4rem;
+                
+                .pokemon-rate-block,
+                .pokemon-levels-block {
+                    text-transform: capitalize;
+                    font-size: .9rem;
+                }
             }
         }
     }

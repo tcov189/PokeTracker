@@ -695,6 +695,7 @@ hr {
   margin-top: 0.25rem;
 
   text-align: center;
+  text-transform: capitalize;
 }
 .block-encounters-pokemon {
   display: -webkit-flex;
@@ -741,9 +742,24 @@ hr {
 
   padding-right: 0.25rem;
 
+  cursor: pointer;
+
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
+}
+.card.card_pokemon .card_pokemon-pokeball-icon {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+
+  width: 1.65rem;
+  height: 1.65rem;
+
+  background: url("../images/pokeball-no-catch.png") no-repeat;
+}
+.card.card_pokemon .card_pokemon-pokeball-icon.caught {
+  background: url("../images/pokeball-catch.png") no-repeat;
 }
 .card.card_pokemon .card_pokemon-info {
   display: -webkit-flex;
@@ -776,6 +792,9 @@ hr {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
 }
+.card.card_pokemon .card_pokemon-info .pokemon-info-bio .pokemon-info-bio-name-sprite span {
+  text-transform: capitalize;
+}
 .card.card_pokemon .card_pokemon-info .pokemon-info-rates {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -786,6 +805,12 @@ hr {
 
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
+}
+.card.card_pokemon .card_pokemon-info .pokemon-info-rates .pokemon-rate-block,
+.card.card_pokemon .card_pokemon-info .pokemon-info-rates .pokemon-levels-block {
+  text-transform: capitalize;
+
+  font-size: 0.9rem;
 }
 /*========== Sprites ===========*/
 /*Base*/

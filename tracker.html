@@ -77,6 +77,24 @@
 <script src="scripts/jquery.min.js"></script>
 <script src="src/js/load_data.js"></script>
 <script src="src/js/generate_html.js"></script>
+<script>
+    //Pokeball click functionality
+    
+    $('.block-encounters-pokemon').on('click', 'i.card_pokemon-pokeball-icon', function(){
+        $(this).toggleClass('caught');
+        var pokemonCaught = $(this).attr('id');
+        pkmnCaughtData = JSON.parse(localStorage.getItem('pokemon_caught'));
+        
+        if ($.inArray(pokemonCaught, pkmnCaughtData) === -1) {
+            pkmnCaughtData.push(pokemonCaught);   
+        } else {
+            pkmnCaughtData.splice( $.inArray(pokemonCaught, pkmnCaughtData), 1);
+        }        
+        
+        localStorage.setItem('pokemon_caught', JSON.stringify(pkmnCaughtData));
+    })
+    
+</script>
 <!--
     <script>                
         //See how much room is in localStorage
