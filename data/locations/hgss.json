@@ -1,0 +1,101 @@
+{
+  "name": "johto",
+  "games": "hgss",
+  "locations": [
+    {
+      "name": "overworld",
+      "exits": {},
+      "encounters": [
+        {
+          "type": "roaming",
+          "pokemon": {
+            "name": "raikou",
+            "type": [
+              "electric"
+            ],
+            "rate": "--",
+            "version": "both",
+            "min_level": "40",
+            "max_level": "40",
+            "time": "any"
+          },
+          "post_elite_four": false
+        },
+        {
+          "type": "roaming",
+          "pokemon": {
+            "name": "entei",
+            "type": [
+              "fire"
+            ],
+            "rate": "--",
+            "version": "both",
+            "min_level": "40",
+            "max_level": "40",
+            "time": "any"
+          },
+          "post_elite_four": false
+        }
+      ]
+    },
+    {
+      "name": "route 29",
+      "exits": {
+        "north": "route 46",
+        "east": "new bark town",
+        "west": "cherrygrove city"
+      },
+      "encounters": [
+        {
+          "pokemon": {
+            "name": "pidgey",
+            "type": [
+              "normal",
+              "flying"
+            ],
+            "rate": 55,
+            "version": "both",
+            "min_level": "2",
+            "max_level": "4",
+            "time": "morning"
+          },
+          "type": "walking",
+          "method": "grass",
+          "post_elite_four": false
+        },
+        {
+          "pokemon": {
+            "name": "sentret",
+            "type": [
+              "normal"
+            ],
+            "rate": 40,
+            "version": "both",
+            "min_level": "2",
+            "max_level": "3",
+            "time": "morning"
+          },
+          "type": "walking",
+          "method": "grass",
+          "post_elite_four": false
+        },
+        {
+          "pokemon": {
+            "name": "rattata",
+            "type": [
+              "normal"
+            ],
+            "rate": 5,
+            "version": "both",
+            "min_level": "4",
+            "max_level": "4",
+            "time": "morning"
+          },
+          "method": "grass",
+          "type": "walking",
+          "post_elite_four": false
+        }
+      ]
+    }
+  ]
+}
