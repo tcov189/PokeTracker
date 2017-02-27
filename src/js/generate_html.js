@@ -1,5 +1,11 @@
 //==== Purpose: Create and display HTML elements ====//
 
+//Header display elements
+$('.header-game-block img').addClass('.header-game-icon__'+ gameVersionGroup).attr('src','mages/pokemon-'+ version +'-logo.png');
+
+$('.header-game-block span').text(gameVersion)
+
+
 //Get last visited location
 var lastLocation = localStorage.getItem('current_location');
 

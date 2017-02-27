@@ -9,11 +9,13 @@ switch (version) {
         var regionalDex = 'oras-pokedex.json';
         var nationalDex = 'national-dex-post-5.json';
         var gameVersionGroup = 'oras';
+        var gameVersion = version = 'or' ? 'Omega Ruby' : 'Alpha Sapphire';            
         break;
     case 'hg' || 'ss' :
         var regionalDex = 'hgss-pokedex.json';
         var nationalDex = 'national-dex.json';
         var gameVersionGroup = 'hgss';
+        var gameVersion = version = 'hg' ? 'Heart Gold' : 'Soul Silver';      
     default :
         var nationalDex = 'national-dex-post-5.json';
 }
