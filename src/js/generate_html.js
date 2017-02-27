@@ -50,6 +50,7 @@ $.each(currentLocationData.encounters, function (i, val){
     if (!val.post_elite_four) {
         var encounterObject = {
             'type' : val.type,
+            'method': val.method,
             'encounters' : encounterArr = []
         };            
                 
@@ -100,7 +101,7 @@ $.each(currentLocationData.encounters, function (i, val){
     }
 });
 $.each(encountersInfo, function (i, val) {
-    $('.block-encounters').append('<h4>'+ val.type + '</h4>');
+    $('.block-encounters').append('<h3>'+ val.type + '</h3><h4>'+ val.method +'</h4>');
 
     $.each(val.encounters, function (i,val){
         $('.block-encounters').append(val);  

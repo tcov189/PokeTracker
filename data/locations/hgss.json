@@ -8,6 +8,7 @@
 			"encounters": [
 				{
 					"type": "roaming",
+                    "method": "method",
 					"post_elite_four": false,
 					"pokemon": [
 						{
@@ -47,6 +48,7 @@
 			},
 			"encounters": [
 				{
+					"method": "grass",
 					"type": "walking",
 					"post_elite_four": false,
 					"pokemon": [

@@ -691,6 +691,7 @@ hr {
   -webkit-flex: 1;
       -ms-flex: 1;
 }
+.block-encounters h3,
 .block-encounters h4 {
   margin-top: 0.25rem;
 
