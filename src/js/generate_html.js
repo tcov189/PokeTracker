@@ -1,7 +1,6 @@
 //==== Purpose: Create and display HTML elements ====//
 
-//Test
-localStorage.setItem('current_location', 'route 101');
+//Get last visited location
 var lastLocation = localStorage.getItem('current_location');
 
 //Get data from localStorage
@@ -14,13 +13,13 @@ if (localStorage.getItem('pokemon_caught') == null){
     var pkmnCaughtArr = [];
     localStorage.setItem('pokemon_caught', JSON.stringify(pkmnCaughtArr));
 } else {
-    pokemonCaughtArray  = JSON.parse(localStorage.getItem('pokemon_caught'));
+    pkmnCaughtArr  = JSON.parse(localStorage.getItem('pokemon_caught'));
 }
 
 
 //Getting the last location the player visited so that when they come back it will be the first screen they see
 $.each(locationData.locations, function (i, val){
-    if (val.name = lastLocation) {            
+    if (val.name == lastLocation) {            
         localStorage.setItem('current_location', JSON.stringify(val));
         currentLocationData = JSON.parse(localStorage.getItem('current_location'));
     }
@@ -53,12 +52,18 @@ $.each(currentLocationData.encounters, function (i, val){
             'type' : val.type,
             'encounters' : encounterArr = []
         };            
+                
         $.each(val.pokemon, function(i, pokemon){ 
-            var rate = val.type != 'gift' ? '' : 'from: '; 
-            var from = val.type != 'gift' ? pokemon.rate+'%' : pokemon.from;
+            theRateHtml = '';
+            $.each(pokemon.rate, function(time, rate) {
+                if (rate != null) {                                    
+                    theRateHtml+= '<span>'+ time +': '+ rate +'%</span>'                    
+                }
+            })            
+            
             var levelRange = pokemon.min_level != pokemon.max_level ? pokemon.min_level + '&ndash;'+ pokemon.max_level : pokemon.min_level;
             
-            var isCaught = $.inArray(pokemon.name, pokemonCaughtArray) !== -1 ? ' caught' : '';                            
+            var isCaught = $.inArray(pokemon.name, pkmnCaughtArr) !== -1 ? ' caught' : '';                            
               var theHtml = '<div class="block-encounters-pokemon">' +
                               '<div class="card card-default card_pokemon">' +
                                 '<div class="card_pokemon-pokeball">' +
@@ -79,7 +84,7 @@ $.each(currentLocationData.encounters, function (i, val){
                                     '<hr>' +
                                     '<div class="pokemon-info-rates">' +
                                         '<div class="pokemon-rate-block">' +
-                                            '<span class="type">'+ rate +'&nbsp;</span><span class="rate">'+ from +'</span>' +
+                                            theRateHtml +
                                         '</div>'+
                                         '<div class="pokemon-levels-block">' +
                                             '<span class="level-range">Lvl: '+ levelRange +'</span>' +

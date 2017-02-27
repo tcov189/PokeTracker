@@ -10,6 +10,10 @@ switch (version) {
         var nationalDex = 'national-dex-post-5.json';
         var gameVersionGroup = 'oras';
         break;
+    case 'hg' || 'ss' :
+        var regionalDex = 'hgss-pokedex.json';
+        var nationalDex = 'national-dex.json';
+        var gameVersionGroup = 'hgss';
     default :
         var nationalDex = 'national-dex-post-5.json';
 }
@@ -38,7 +42,7 @@ function loadDataIntoLocalStorage (r_dex, n_dex, gameVersion) {
     
     //Get National Dex
     $.ajax({
-        url: 'data/locations/' + gameVersion +'/locations.json',
+        url: 'data/locations/' + gameVersion +'.json',
         async: false,
         success: function(data){
             localStorage.setItem('region', data.name);

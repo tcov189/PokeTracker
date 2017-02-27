@@ -1,101 +1,101 @@
 {
-  "name": "johto",
-  "games": "hgss",
-  "locations": [
-    {
-      "name": "overworld",
-      "exits": {},
-      "encounters": [
-        {
-          "type": "roaming",
-          "pokemon": {
-            "name": "raikou",
-            "type": [
-              "electric"
-            ],
-            "rate": "--",
-            "version": "both",
-            "min_level": "40",
-            "max_level": "40",
-            "time": "any"
-          },
-          "post_elite_four": false
-        },
-        {
-          "type": "roaming",
-          "pokemon": {
-            "name": "entei",
-            "type": [
-              "fire"
-            ],
-            "rate": "--",
-            "version": "both",
-            "min_level": "40",
-            "max_level": "40",
-            "time": "any"
-          },
-          "post_elite_four": false
-        }
-      ]
-    },
-    {
-      "name": "route 29",
-      "exits": {
-        "north": "route 46",
-        "east": "new bark town",
-        "west": "cherrygrove city"
-      },
-      "encounters": [
-        {
-          "pokemon": {
-            "name": "pidgey",
-            "type": [
-              "normal",
-              "flying"
-            ],
-            "rate": 55,
-            "version": "both",
-            "min_level": "2",
-            "max_level": "4",
-            "time": "morning"
-          },
-          "type": "walking",
-          "method": "grass",
-          "post_elite_four": false
-        },
-        {
-          "pokemon": {
-            "name": "sentret",
-            "type": [
-              "normal"
-            ],
-            "rate": 40,
-            "version": "both",
-            "min_level": "2",
-            "max_level": "3",
-            "time": "morning"
-          },
-          "type": "walking",
-          "method": "grass",
-          "post_elite_four": false
-        },
-        {
-          "pokemon": {
-            "name": "rattata",
-            "type": [
-              "normal"
-            ],
-            "rate": 5,
-            "version": "both",
-            "min_level": "4",
-            "max_level": "4",
-            "time": "morning"
-          },
-          "method": "grass",
-          "type": "walking",
-          "post_elite_four": false
-        }
-      ]
-    }
-  ]
+	"name": "johto",
+	"games": "hgss",
+	"locations": [
+		{
+			"name": "overworld",
+			"exits": {},
+			"encounters": [
+				{
+					"type": "roaming",
+					"post_elite_four": false,
+					"pokemon": [
+						{
+							"name": "raikou",
+							"type": [
+								"electric"
+							],
+							"min_level": "40",
+							"max_level": "40",
+							"version": "both",
+							"rate": {
+								"all": "--"
+							}
+						},
+						{
+							"name": "entei",
+							"min_level": "40",
+							"rate": {
+								"all": "--"
+							},
+							"version": "both",
+							"max_level": "40",
+							"type": [
+								"fire"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "route 29",
+			"exits": {
+				"north": "route 46",
+				"east": "new bark town",
+				"west": "cherrygrove town"
+			},
+			"encounters": [
+				{
+					"type": "walking",
+					"post_elite_four": false,
+					"pokemon": [
+						{
+							"name": "pidgey",
+							"type": [
+								"normal",
+								"flying"
+							],
+							"min_level": "2",
+							"max_level": "4",
+							"version": "both",
+							"rate": {
+								"morning": 55,
+								"day": 55,
+								"night": null
+							}
+						},
+						{
+							"name": "sentret",
+							"type": [
+								"normal"
+							],
+							"min_level": "2",
+							"max_level": "3",
+							"version": "both",
+							"rate": {
+								"morning": 40,
+								"day": 40,
+								"night": null
+							}
+						},
+						{
+							"name": "rattata",
+							"type": [
+								"normal"
+							],
+							"min_level": "2",
+							"max_level": "4",
+							"version": "both",
+							"rate": {
+								"morning": 5,
+								"day": 5,
+								"night": 15
+							}
+						}
+					]
+				}
+			]
+		}
+	]
 }
