@@ -14,6 +14,7 @@ regionalDexData     = JSON.parse(localStorage.getItem('regional_dex'));
 nationalDexData     = JSON.parse(localStorage.getItem('national_dex'));
 locationData        = JSON.parse(localStorage.getItem('locations'));
 
+
 //Create empty array to store caught Pokemon
 if (localStorage.getItem('pokemon_caught') == null){
     var pkmnCaughtArr = [];
@@ -30,7 +31,15 @@ $.each(locationData.locations, function (direction, loc_name){
     }
 })
     
-        
+//Merging Data
+var encounterArray = [];
+
+$.each(currentLocationData.encounters, function (i, encounters){
+    encounterArray.push(encounters.available_pokemon);
+})
+
+
+
 //Populate the HTML                                        
 
 //Route header
@@ -51,16 +60,13 @@ $.each(exitInfo, function(i, html){
 
 //Encounters
 encountersInfo = [];
-$.each(currentLocationData.encounters, function (i, encounter){
-    $.each(regionalDexData, function(i, r_dex_info){
-        
-    })
+$.each(currentLocationData.encounters, function (i, encounter){   
     var encounterObject = {
         'type' : encounter.type,        
         'encounters' : encounterArr = []
-    };            
-
-    $.each(encounter.available_pokemon, function(i, pokemon){ 
+    };                
+    
+    $.each(encounter.available_pokemon, function(i, pokemon){        
         theRateHtml = '';
         function needPercentSymbol(x) {
             if (typeof x == 'number') {
