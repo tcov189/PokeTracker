@@ -24,9 +24,9 @@ if (localStorage.getItem('pokemon_caught') == null){
 
 
 //Getting the last location the player visited so that when they come back it will be the first screen they see
-$.each(locationData.locations, function (i, val){
-    if (val.name == lastLocation) {                
-        currentLocationData = val;
+$.each(locationData.locations, function (direction, loc_name){
+    if (loc_name.name == lastLocation) {                
+        currentLocationData = loc_name;
     }
 })
     
@@ -38,26 +38,29 @@ $('.block-route-header h3').text(currentLocationData.name);
 
 //Exits
 exitInfo = [];
-$.each(currentLocationData.exits, function (i, val) {
+$.each(currentLocationData.exits, function (direction, loc_name) {
     var theHtml = '<div class="block-path-group">' +
-                  '<span class="block-path-group_direction">'+ i +'</span>' +
-                  '<button class="button button_route" type="button">'+ val +'</button>' +
+                  '<span class="block-path-group_direction">'+ direction +'</span>' +
+                  '<button class="button button_route" type="button">'+ loc_name +'</button>' +
                   '</div>';
     exitInfo.push(theHtml);
 });
-$.each(exitInfo, function(i, val){
-    $('.block-route-paths').append(val);
+$.each(exitInfo, function(i, html){
+    $('.block-route-paths').append(html);
 });
 
 //Encounters
 encountersInfo = [];
-$.each(currentLocationData.encounters, function (i, val){
+$.each(currentLocationData.encounters, function (i, encounter){
+    $.each(regionalDexData, function(i, r_dex_info){
+        
+    })
     var encounterObject = {
-        'type' : val.type,        
+        'type' : encounter.type,        
         'encounters' : encounterArr = []
     };            
 
-    $.each(val.pokemon, function(i, pokemon){ 
+    $.each(encounter.available_pokemon, function(i, pokemon){ 
         theRateHtml = '';
         function needPercentSymbol(x) {
             if (typeof x == 'number') {
@@ -91,7 +94,7 @@ $.each(currentLocationData.encounters, function (i, val){
                                         '<span class="pokemon-bio-name">'+ pokemon.name +'</span>' +
                                     '</div>'+
                                     '<div class="pokemon-bio-types">';
-                                       $.each(val.pokemon[i].type, function (i, type){
+                                       $.each(pokemon.type, function (i, type){
                                            theHtml += '<i class="type-icon '+ type +' "></i>'; 
                                        })
                                     theHtml += '</div>' +
@@ -120,11 +123,11 @@ $.each(currentLocationData.encounters, function (i, val){
     
     encountersInfo.push(encounterObject)    
 });
-$.each(encountersInfo, function (i, val) {
-    $('.block-encounters').append('<h3>'+ val.type + '</h3>');
+$.each(encountersInfo, function (i, encounter_info) {
+    $('.block-encounters').append('<h3>'+ encounter_info.type + '</h3>');
 
-    $.each(val.encounters, function (i,val){
-        $('.block-encounters').append(val.html);  
+    $.each(encounter_info.encounters, function (i, info){
+        $('.block-encounters').append(info.html);  
     })            
 })
 

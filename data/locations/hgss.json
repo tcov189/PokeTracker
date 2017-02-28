@@ -10,7 +10,7 @@
 					"type": "roaming",
                     "method": "method",
 					"post_elite_four": false,
-					"pokemon": [
+					"available_pokemon": [
 						{
 							"name": "raikou",
 							"type": [
@@ -51,7 +51,7 @@
 					"method": "grass",
 					"type": "walking",
 					"post_elite_four": false,
-					"pokemon": [
+					"available_pokemon": [
 						{
 							"name": "pidgey",
 							"type": [

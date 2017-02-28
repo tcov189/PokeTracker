@@ -10,7 +10,7 @@
 			"encounters": [
 				{
 					"type": "walking",
-					"pokemon": [
+					"available_pokemon": [
 						{
 							"name": "zigzagoon",
 							"type": [
@@ -104,7 +104,7 @@
 				},
 				{
 					"type": "gift",
-					"pokemon": [
+					"available_pokemon": [
 						{
 							"name": "treecko",
 							"type": [
