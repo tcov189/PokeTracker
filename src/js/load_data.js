@@ -4,18 +4,25 @@
 var version = localStorage.getItem("version");
 
 //Get Pokedex
-switch (version) {
-    case 'or' || 'as' :
+switch (true) {
+    case version == 'or' || version == 'as' :
         var regionalDex = 'oras-pokedex.json';
         var nationalDex = 'national-dex-post-5.json';
         var gameVersionGroup = 'oras';
-        var gameVersion = version = 'or' ? 'Omega Ruby' : 'Alpha Sapphire';            
+        var gameVersion = version == 'or' ? 'Omega Ruby' : 'Alpha Sapphire';   
+        if (!localStorage.getItem('current_location')) {
+            localStorage.setItem('current_location', 'route 101');   
+        }        
         break;
-    case 'hg' || 'ss' :
+    case version == 'hg' || version == 'ss' :
         var regionalDex = 'hgss-pokedex.json';
         var nationalDex = 'national-dex.json';
         var gameVersionGroup = 'hgss';
-        var gameVersion = version = 'hg' ? 'Heart Gold' : 'Soul Silver';      
+        var gameVersion = version == 'hg' ? 'Heart Gold' : 'Soul Silver';      
+        if (!localStorage.getItem('current_location')) {
+            localStorage.setItem('current_location', 'route 29');   
+        }    
+        break;
     default :
         var nationalDex = 'national-dex-post-5.json';
 }

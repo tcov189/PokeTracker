@@ -1,226 +1,233 @@
 {
-   "name":"hoenn",
-   "locations":[
-      {
-         "name":"route 101",
-         "exits":{
-            "north":"oldale town",
-            "south":"littleroot town"
-         },
-         "encounters":[
-            {
-               "type":"walking",
-               "pokemon":[
-                  {
-                     "name":"zigzagoon",
-                     "type":[
-                        "normal"
-                     ],
-                     "rate":"40",
-                     "version":"both",
-                     "min_level":"2",
-                     "max_level":"2"
-                  },
-                  {
-                     "name":"wurmple",
-                     "type":[
-                        "bug"
-                     ],
-                     "rate":"40",
-                     "version":"both",
-                     "min_level":"2",
-                     "max_level":"2"
-                  },
-                  {
-                     "name":"poochyena",
-                     "type":[
-                        "dark"
-                     ],
-                     "rate":"20",
-                     "version":"both",
-                     "min_level":"2",
-                     "max_level":"2"
-                  }
-               ],
-               "post_elite_four":false
-            },
-            {
-               "type":"dex nav",
-               "pokemon":[
-                  {
-                     "name":"lillipup",
-                     "type":[
-                        "normal"
-                     ],
-                     "rate":"--",
-                     "version":"both",
-                     "min_level":"2",
-                     "max_level":"2"
-                  },
-                  {
-                     "name":"sewaddle",
-                     "type":[
-                        "bug",
-                        "grass"
-                     ],
-                     "rate":"--",
-                     "version":"both",
-                     "min_level":"2",
-                     "max_level":"2"
-                  },
-                  {
-                     "name":"zorua",
-                     "type":[
-                        "dark"
-                     ],
-                     "rate":"--",
-                     "version":"both",
-                     "min_level":"2",
-                     "max_level":"2"
-                  }
-               ],
-               "post_elite_four":true
-            },
-            {
-               "type":"horde",
-               "pokemon":[
-                  {
-                     "name":"zigzagoon",
-                     "type":[
-                        "normal"
-                     ],
-                     "rate":"--",
-                     "version":"both",
-                     "min_level":"2",
-                     "max_level":"2"
-                  },
-                  {
-                     "name":"poochyena",
-                     "type":[
-                        "dark"
-                     ],
-                     "rate":"--",
-                     "version":"both",
-                     "min_level":"2",
-                     "max_level":"2"
-                  }
-               ]
-            },
-            {
-               "type":"gift",
-               "pokemon":[
-                  {
-                     "name":"treecko",
-                     "type":[
-                        "grass"
-                     ],
-                     "from":"professor birch",
-                     "min_level":"5",
-                      "max_level":"5"
-                  },
-                  {
-                     "name":"torchic",
-                     "type":[
-                        "fire"
-                     ],
-                     "from":"professor birch",
-                     "min_level":"5",
-                      "max_level":"5"
-                  },
-                  {
-                     "name":"mudkip",
-                     "type":[
-                        "water"
-                     ],
-                     "from":"professor birch",
-                     "min_level":"5",
-                      "max_level":"5"
-                  },
-                  {
-                     "name":"chikorita",
-                     "type":[
-                        "grass"
-                     ],
-                     "from":"professor birch",
-                     "min_level":"5",
-                      "max_level":"5"
-                  },
-                  {
-                     "name":"cyndaquil",
-                     "type":[
-                        "fire"
-                     ],
-                     "from":"professor birch",
-                     "min_level":"5",
-                      "max_level":"5"
-                  },
-                  {
-                     "name":"totodile",
-                     "type":[
-                        "water"
-                     ],
-                     "from":"professor birch",
-                     "min_level":"5",
-                      "max_level":"5"
-                  },
-                  {
-                     "name":"turtwig",
-                     "type":[
-                        "grass"
-                     ],
-                     "from":"professor birch",
-                     "min_level":"5",
-                      "max_level":"5"
-                  },
-                  {
-                     "name":"chimchar",
-                     "type":[
-                        "fire"
-                     ],
-                     "from":"professor birch",
-                     "min_level":"5",
-                      "max_level":"5"
-                  },
-                  {
-                     "name":"piplup",
-                     "type":[
-                        "water"
-                     ],
-                     "from":"professor birch",
-                     "min_level":"5",
-                      "max_level":"5"
-                  },
-                  {
-                     "name":"snivy",
-                     "type":[
-                        "grass"
-                     ],
-                     "from":"professor birch",
-                     "min_level":"5",
-                      "max_level":"5"
-                  },
-                  {
-                     "name":"tepig",
-                     "type":[
-                        "fire"
-                     ],
-                     "from":"professor birch",
-                     "min_level":"5",
-                      "max_level":"5"
-                  },
-                  {
-                     "name":"oshawott",
-                     "type":[
-                        "water"
-                     ],
-                     "from":"professor birch",
-                     "min_level":"5",
-                      "max_level":"5"
-                  }
-               ],
-               "post_elite_four":true
-            }
-         ]
-      }
-   ]
+	"name": "hoenn",
+	"locations": [
+		{
+			"name": "route 101",
+			"exits": {
+				"north": "oldale town",
+				"south": "littleroot town"
+			},
+			"encounters": [
+				{
+					"type": "walking",
+					"pokemon": [
+						{
+							"name": "zigzagoon",
+							"type": [
+								"normal"
+							],
+							"rate": 40,
+							"version": "both",
+							"min_level": 2,
+							"max_level": 2,
+							"method": "grass"
+						},
+						{
+							"name": "wurmple",
+							"type": [
+								"bug"
+							],
+							"rate": 40,
+							"version": "both",
+							"min_level": 2,
+							"max_level": 2,
+							"method": "grass"
+						},
+						{
+							"name": "poochyena",
+							"type": [
+								"dark"
+							],
+							"rate": 20,
+							"version": "both",
+							"min_level": 2,
+							"max_level": 2,
+							"method": "grass"
+						},
+						{
+							"name": "sewaddle",
+							"type": [
+								"bug",
+								"grass"
+							],
+							"rate": "--",
+							"version": "both",
+							"min_level": 2,
+							"max_level": 2,
+							"method": "dex nav"
+						},
+						{
+							"name": "zorua",
+							"type": [
+								"dark"
+							],
+							"rate": "--",
+							"version": "both",
+							"min_level": 2,
+							"max_level": 2,
+							"method": "dex nav"
+						},
+						{
+							"name": "zigzagoon",
+							"type": [
+								"normal"
+							],
+							"rate": "--",
+							"version": "both",
+							"min_level": 2,
+							"max_level": 2,
+							"method": "horde"
+						},
+						{
+							"name": "poochyena",
+							"type": [
+								"dark"
+							],
+							"rate": "--",
+							"version": "both",
+							"min_level": 2,
+							"max_level": 2,
+							"method": "horde"
+						},
+						{
+							"name": "lillipup",
+							"type": [
+								"normal"
+							],
+							"rate": "--",
+							"version": "both",
+							"min_level": 2,
+							"max_level": 2,
+							"method": "dex nav"
+						}
+					]
+				},
+				{
+					"type": "gift",
+					"pokemon": [
+						{
+							"name": "treecko",
+							"type": [
+								"grass"
+							],
+							"rate": "professor birch",
+							"min_level": 5,
+							"max_level": 5,
+							"method": "beat e4"
+						},
+						{
+							"name": "torchic",
+							"type": [
+								"fire"
+							],
+							"rate": "professor birch",
+							"min_level": 5,
+							"max_level": 5,
+							"method": "beat e4"
+						},
+						{
+							"name": "mudkip",
+							"type": [
+								"water"
+							],
+							"rate": "professor birch",
+							"min_level": 5,
+							"max_level": 5,
+							"method": "beat e4"
+						},
+						{
+							"name": "chikorita",
+							"type": [
+								"grass"
+							],
+							"rate": "professor birch",
+							"min_level": 5,
+							"max_level": 5,
+							"method": "beat e4"
+						},
+						{
+							"name": "cyndaquil",
+							"type": [
+								"fire"
+							],
+							"rate": "professor birch",
+							"min_level": 5,
+							"max_level": 5,
+							"method": "beat e4"
+						},
+						{
+							"name": "totodile",
+							"type": [
+								"water"
+							],
+							"rate": "professor birch",
+							"min_level": 5,
+							"max_level": 5,
+							"method": "beat e4"
+						},
+						{
+							"name": "turtwig",
+							"type": [
+								"grass"
+							],
+							"rate": "professor birch",
+							"min_level": 5,
+							"max_level": 5,
+							"method": "beat e4"
+						},
+						{
+							"name": "chimchar",
+							"type": [
+								"fire"
+							],
+							"rate": "professor birch",
+							"min_level": 5,
+							"max_level": 5,
+							"method": "beat e4"
+						},
+						{
+							"name": "piplup",
+							"type": [
+								"water"
+							],
+							"rate": "professor birch",
+							"min_level": 5,
+							"max_level": 5,
+							"method": "beat e4"
+						},
+						{
+							"name": "snivy",
+							"type": [
+								"grass"
+							],
+							"rate": "professor birch",
+							"min_level": 5,
+							"max_level": 5,
+							"method": "beat e4"
+						},
+						{
+							"name": "tepig",
+							"type": [
+								"fire"
+							],
+							"rate": "professor birch",
+							"min_level": 5,
+							"max_level": 5,
+							"method": "beat e4"
+						},
+						{
+							"name": "oshawott",
+							"type": [
+								"water"
+							],
+							"rate": "professor birch",
+							"min_level": 5,
+							"max_level": 5,
+							"method": "beat e4"
+						}
+					]
+				}
+			]
+		}
+	]
 }

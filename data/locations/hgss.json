@@ -16,8 +16,8 @@
 							"type": [
 								"electric"
 							],
-							"min_level": "40",
-							"max_level": "40",
+							"min_level": 40,
+							"max_level": 40,
 							"version": "both",
 							"rate": {
 								"all": "--"
@@ -25,12 +25,12 @@
 						},
 						{
 							"name": "entei",
-							"min_level": "40",
+							"min_level": 40,
 							"rate": {
 								"all": "--"
 							},
 							"version": "both",
-							"max_level": "40",
+							"max_level": 40,
 							"type": [
 								"fire"
 							]
@@ -58,8 +58,8 @@
 								"normal",
 								"flying"
 							],
-							"min_level": "2",
-							"max_level": "4",
+							"min_level": 2,
+							"max_level": 4,
 							"version": "both",
 							"rate": {
 								"morning": 55,
@@ -72,8 +72,8 @@
 							"type": [
 								"normal"
 							],
-							"min_level": "2",
-							"max_level": "3",
+							"min_level": 2,
+							"max_level": 3,
 							"version": "both",
 							"rate": {
 								"morning": 40,
@@ -86,8 +86,8 @@
 							"type": [
 								"normal"
 							],
-							"min_level": "2",
-							"max_level": "4",
+							"min_level": 2,
+							"max_level": 4,
 							"version": "both",
 							"rate": {
 								"morning": 5,
