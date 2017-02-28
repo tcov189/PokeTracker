@@ -35,7 +35,9 @@ $.each(locationData.locations, function (direction, loc_name){
 var encounterArray = [];
 
 $.each(currentLocationData.encounters, function (i, encounters){
-    encounterArray.push(encounters.available_pokemon);
+    $.each(encounters.available_pokemon, function (i,val){
+      encounterArray.push(val);  
+    })    
 })
 
 
