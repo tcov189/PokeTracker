@@ -829,6 +829,12 @@ hr {
 
   font-size: 0.9rem;
 }
+.card.card_pokemon .card_pokemon-info .pokemon-info-rates .pokemon-rate-block span,
+.card.card_pokemon .card_pokemon-info .pokemon-info-rates .pokemon-levels-block span {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
 /*========== Sprites ===========*/
 /*Base*/
 .sprites {
