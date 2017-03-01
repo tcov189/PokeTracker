@@ -41,6 +41,36 @@ $.each(currentLocationData.encounters, function (i, encounters){
 })
 
 
+var mergedArr = $.merge(encounterArray, nationalDexData);
+
+var dupes = [];
+var locationOnly = [];
+
+mergedArr.forEach(function(value) {
+  var existing = dupes.filter(function(v, i) {
+    return v.name === value.name;
+  });
+  if (existing.length) {
+    var existingIndex = dupes.indexOf(existing[0]);        
+    dupes[existingIndex]['type'] = value.type;
+    dupes[existingIndex]['n_dex_num'] = value.n_dex_num;
+    locationOnly.push(dupes[existingIndex]);
+  } else {
+    if (typeof value.name === 'string'){        
+      value.type = value.type;       
+    dupes.push(value);
+    }
+  }
+});
+
+
+function sortByKey(array, key) {
+    return array.sort(function(a, b) {
+        var x = a[key]; var y = b[key];
+        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+    });
+}
+
 
 //Populate the HTML                                        
 
@@ -62,6 +92,12 @@ $.each(exitInfo, function(i, html){
 
 //Encounters
 encountersInfo = [];
+
+//Sorting array by national dex number 
+for (var i = 0; i < currentLocationData.encounters.length; i++) {
+    currentLocationData.encounters[i].available_pokemon = sortByKey(currentLocationData.encounters[i].available_pokemon, 'n_dex_num');
+}
+
 $.each(currentLocationData.encounters, function (i, encounter){   
     var encounterObject = {
         'type' : encounter.type,        
@@ -103,7 +139,7 @@ $.each(currentLocationData.encounters, function (i, encounter){
                                     '</div>'+
                                     '<div class="pokemon-bio-types">';
                                        $.each(pokemon.type, function (i, type){
-                                           theHtml += '<i class="type-icon '+ type +' "></i>'; 
+                                           theHtml += '<i class="type-icon '+ type.toLowerCase() +' "></i>'; 
                                        })
                                     theHtml += '</div>' +
                                 '</div>' +
