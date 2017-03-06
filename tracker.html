@@ -77,6 +77,14 @@
 <script>
     //Pokeball click functionality
     
+    //Set new current location to button click
+    $('.button_route').on('click', function(){
+        newLocation = $(this).text();
+        localStorage.setItem('current_location', newLocation);
+        window.location.reload();
+    })
+
+    
     $('.block-encounters-pokemon').on('click', 'i.card_pokemon-pokeball-icon', function(){        
         var pokemonCaught = $(this).attr('id');
         $('i.card_pokemon-pokeball-icon#'+ pokemonCaught).toggleClass('caught');

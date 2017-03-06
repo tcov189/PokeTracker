@@ -738,6 +738,12 @@ hr {
   -webkit-flex: 0 0 98%;
       -ms-flex: 0 0 98%;
 }
+.card.card_pokemon.unavailable {
+  opacity: 0.8;
+  background-color: #ccc;
+
+  filter: alpha(opacity=80);
+}
 .card.card_pokemon .card_pokemon-pokeball {
           align-self: center;
 

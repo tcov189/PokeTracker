@@ -1,103 +1,172 @@
 {
-	"name": "johto",
-	"games": "hgss",
-	"locations": [
-		{
-			"name": "overworld",
-			"exits": {},
-			"encounters": [
-				{
-					"type": "roaming",
-                    "method": "method",
-					"post_elite_four": false,
-					"available_pokemon": [
-						{
-							"name": "raikou",
-							"type": [
-								"electric"
-							],
-							"min_level": 40,
-							"max_level": 40,
-							"version": "both",
-							"rate": {
-								"all": "--"
-							}
-						},
-						{
-							"name": "entei",
-							"min_level": 40,
-							"rate": {
-								"all": "--"
-							},
-							"version": "both",
-							"max_level": 40,
-							"type": [
-								"fire"
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "route 29",
-			"exits": {
-				"north": "route 46",
-				"east": "new bark town",
-				"west": "cherrygrove town"
-			},
-			"encounters": [
-				{
-					"method": "grass",
-					"type": "walking",
-					"post_elite_four": false,
-					"available_pokemon": [
-						{
-							"name": "pidgey",
-							"type": [
-								"normal",
-								"flying"
-							],
-							"min_level": 2,
-							"max_level": 4,
-							"version": "both",
-							"rate": {
-								"morning": 55,
-								"day": 55,
-								"night": null
-							}
-						},
-						{
-							"name": "sentret",
-							"type": [
-								"normal"
-							],
-							"min_level": 2,
-							"max_level": 3,
-							"version": "both",
-							"rate": {
-								"morning": 40,
-								"day": 40,
-								"night": null
-							}
-						},
-						{
-							"name": "rattata",
-							"type": [
-								"normal"
-							],
-							"min_level": 2,
-							"max_level": 4,
-							"version": "both",
-							"rate": {
-								"morning": 5,
-								"day": 5,
-								"night": 15
-							}
-						}
-					]
-				}
-			]
-		}
-	]
+  "name": "johto",
+  "games": "hgss",
+  "locations": [
+    {
+      "name": "overworld",
+      "exits": {
+        "": "route 29"
+      },
+      "encounters": [
+        {
+          "type": "roaming",
+          "available_pokemon": [
+            {
+              "name": "raikou",
+              "min_level": 40,
+              "max_level": 40,
+              "version": "both",
+              "rate": null,
+              "method": "roaming"
+            },
+            {
+              "name": "entei",
+              "min_level": 40,
+              "rate": null,
+              "version": "both",
+              "max_level": 40,
+              "method": "roaming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "route 29",
+      "exits": {
+        "north": "route 46",
+        "east": "new bark town",
+        "west": "cherrygrove town"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "pidgey",
+              "method": "grass",
+              "min_level": 2,
+              "max_level": 4,
+              "version": "both",
+              "rate": {
+                "morning": 55,
+                "day": 55,
+                "night": null
+              }
+            },
+            {
+              "name": "sentret",
+              "method": "grass",
+              "min_level": 2,
+              "max_level": 3,
+              "version": "both",
+              "rate": {
+                "morning": 40,
+                "day": 40,
+                "night": null
+              }
+            },
+            {
+              "name": "rattata",
+              "method": "grass",
+              "min_level": 2,
+              "max_level": 4,
+              "version": "both",
+              "rate": {
+                "morning": 5,
+                "day": 5,
+                "night": 15
+              }
+            },
+            {
+              "name": "hoothoot",
+              "method": "grass",
+              "min_level": 2,
+              "max_level": 4,
+              "version": "both",
+              "rate": {
+                "morning": null,
+                "day": null,
+                "night": 85
+              }
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "available_pokemon": [
+            {
+              "name": "plusle",
+              "method": "hoenn sound",
+              "min_level": 2,
+              "max_level": 3,
+              "version": "both",
+              "rate": "20%"
+            },
+            {
+              "name": "minun",
+              "method": "hoenn sound",
+              "min_level": 2,
+              "max_level": 3,
+              "version": "both",
+              "rate": "20%"
+            },
+            {
+              "name": "shinx",
+              "method": "sinnoh sound",
+              "min_level": 2,
+              "max_level": 3,
+              "version": "both",
+              "rate": "40%"
+            }
+          ]
+        },
+        {
+          "type": "action",
+          "available_pokemon": [
+            {
+              "name": "exeggcute",
+              "method": "headbutt",
+              "min_level": 2,
+              "max_level": 5,
+              "version": "both",
+              "rate": "20%"
+            },
+            {
+              "name": "hoothoot",
+              "method": "headbutt",
+              "min_level": 2,
+              "max_level": 5,
+              "version": "both",
+              "rate": "50%"
+            },
+            {
+              "name": "ledyba",
+              "method": "headbutt",
+              "min_level": 4,
+              "max_level": 5,
+              "version": "ss",
+              "rate": "20%"
+            },
+            {
+              "name": "spinarak",
+              "method": "headbutt",
+              "min_level": 4,
+              "max_level": 5,
+              "version": "hg",
+              "rate": "20%"
+            },
+            {
+              "name": "pineco",
+              "method": "headbutt",
+              "min_level": 2,
+              "max_level": 3,
+              "version": "both",
+              "rate": "10%"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

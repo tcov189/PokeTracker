@@ -18,6 +18,12 @@
         background: @light-gray;
         flex: 0 0 98%;
         
+        &.unavailable {
+                opacity: 0.8;
+                filter: alpha(opacity=80);
+                background-color: #ccc;
+        }
+        
         .card_pokemon-pokeball {            
             padding-right: .25rem;    
             align-self: center;
