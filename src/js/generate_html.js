@@ -169,7 +169,7 @@ $.each(currentLocationData.encounters, function (i, encounter){
             encounterArr.push({'html' : theHtml, 'method' : pokemon.method, 'name' : pokemon.name, 'regional_dex' : pokemon.n_dex_num })                
     })
     
-    var methodOrder = ["grass", "dex nav", "fishing", "horde"];
+    var methodOrder = ["gift", "grass", "interaction", "horde", "fishing", "surfing", "dex nav"];
         
     encounterArr.sort(function(a,b){
         if (a.method != b.method) {                    
