@@ -73,69 +73,7 @@
 <footer class="footer">   
     <select class="route-select">       
        <option selected>Jump to location...</option>
-        <option value="overworld">Overworld</option>
-        <option value="route 29">Route 29</option>
-        <option value="route 30">Route 30</option>
-        <option value="route 31">Route 31</option>
-        <option value="route 32">Route 32</option>
-        <option value="route 33">Route 33</option>
-        <option value="route 34">Route 34</option>
-        <option value="route 35">Route 35</option>
-        <option value="route 36">Route 36</option>
-        <option value="route 37">Route 37</option>
-        <option value="route 38">Route 38</option>
-        <option value="route 39">Route 39</option>
-        <option value="route 40">Route 40</option>
-        <option value="route 41">Route 41</option>
-        <option value="route 42">Route 42</option>
-        <option value="route 43">Route 43</option>
-        <option value="route 44">Route 44</option>
-        <option value="route 45">Route 45</option>
-        <option value="route 46">Route 46</option>
-        <option value="route 47">Route 47</option>
-        <option value="route 48">Route 48</option>
-        <option value="azalea town">Azalea Town</option>
-        <option value="battle frontier">Battle Frontier</option>
-        <option value="battle tower">Battle Tower</option>
-        <option value="bellchime trail">Bellchime Trail</option>
-        <option value="bell tower">Bell Tower</option>
-        <option value="blackthorn city">Blackthorn City</option>
-        <option value="burned tower">Burned Tower</option>
-        <option value="cherrygrove city">Cherrygrove City</option>
-        <option value="cianwood city">Cianwood City</option>
-        <option value="cliff cave">Cliff Cave</option>
-        <option value="cliff edge gate">Cliff Edge Gate</option>
-        <option value="dark cave">Dark Cave</option>
-        <option value="dragon's den">Dragon's Den</option>
-        <option value="ecruteak city">Ecruteak City</option>
-        <option value="embedded tower">Embedded Tower</option>
-        <option value="frontier access">Frontier Access</option>
-        <option value="goldenrod city">Goldenrod City</option>
-        <option value="goldenrod underground">Goldenrod Underground</option>
-        <option value="ice path">Ice Path</option>
-        <option value="ilex forest">Ilex Forest</option>
-        <option value="lake of rage">Lake of Rage</option>
-        <option value="mahogany town">Mahogany Town</option>
-        <option value="mt. mortar">Mt. Mortar</option>
-        <option value="mt. silver">Mt. Silver</option>
-        <option value="national park">National Park</option>
-        <option value="new bark town">New Bark Town</option>
-        <option value="olivine city">Olivine City</option>
-        <option value="pokéathlon dome">Pokéathlon Dome</option>
-        <option value="radio tower">Radio Tower</option>
-        <option value="rocket hideout">Rocket Hideout</option>
-        <option value="ruins of alph">Ruins of Alph</option>
-        <option value="safari zone">Safari Zone</option>
-        <option value="safari zone gate">Safari Zone Gate</option>
-        <option value="shining lighthouse">Shining Lighthouse</option>
-        <option value="sinjoh ruins">Sinjoh Ruins</option>
-        <option value="slowpoke well">Slowpoke Well</option>
-        <option value="sprout tower">Sprout Tower</option>
-        <option value="ss aqua">SS Aqua</option>
-        <option value="tin tower">Tin Tower</option>
-        <option value="union cave">Union Cave</option>
-        <option value="violet city">Violet City</option>
-        <option value="whirl islands">Whirl Islands</option>
+        
     </select>
     
 </footer><!-- end footer-->
@@ -167,6 +105,17 @@
         localStorage.setItem('pokemon_caught', JSON.stringify(pkmnCaughtData));
     });
     
+    //Generating routes
+    var select = $('footer select');
+    
+    $.each(locationData.locations, function (index, location){
+        $(select).append($('<option>', { 
+            value: location.name,
+            text : location.name 
+        }));
+    })
+    
+    //Route selector
     function selectChangeRoute (){
         var locationInfo = $('select').val();
         localStorage.setItem("current_location", locationInfo);

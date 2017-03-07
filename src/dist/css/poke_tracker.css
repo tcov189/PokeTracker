@@ -387,6 +387,9 @@ hr {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
 }
+.footer select {
+  text-transform: capitalize;
+}
 .footer .btm-panel {
   display: -webkit-flex;
   display: -ms-flexbox;
