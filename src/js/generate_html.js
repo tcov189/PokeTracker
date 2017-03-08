@@ -112,7 +112,15 @@ $.each(currentLocationData.encounters, function (i, encounter){
                         if (typeof rate != 'object') {
                          theRateHtml+= '<span>'+ time +': '+ needPercentSymbol(rate) +'</span>'     
                         }  else {
-                            $.each(rate, function (game, rate){
+                            if (pokemon.method == 'rod') {
+                                theRateHtml += '<span><u>'+ time + '</u></span>';
+                                $.each(rate, function (game, rate){
+                                    if (pokemon.method == 'rod') {
+                                        theRateHtml += '<span>'+ game +': '+ needPercentSymbol(rate) +'</span>';
+                                    }
+                                })
+                            }
+                            $.each(rate, function (game, rate){                                
                                 if (game == version) {
                                     theRateHtml+= '<span>'+ time +': '+ needPercentSymbol(rate) +'</span>'     
                                 }
