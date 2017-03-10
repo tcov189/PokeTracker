@@ -69,9 +69,15 @@ $('.block-route-header h3').text(currentLocationData.name);
 exitInfo = [];
 $.each(currentLocationData.exits, function (direction, loc_name) {
     var theHtml = '<div class="block-path-group">' +
-                  '<span class="block-path-group_direction">'+ direction +'</span>' +
-                  '<button class="button button_route" type="button">'+ loc_name +'</button>' +
-                  '</div>';
+                  '<span class="block-path-group_direction">'+ direction +'</span>';
+        if (typeof loc_name == 'object') {
+            for (var i = 0; i < loc_name.length; i++) {
+                theHtml += '<button class="button button_route" type="button">'+ loc_name[i] +'</button>';
+            }
+        } else {
+            theHtml += '<button class="button button_route" type="button">'+ loc_name +'</button>' +
+                  '</div>';   
+        }      
     exitInfo.push(theHtml);
 });
 $.each(exitInfo, function(i, html){
