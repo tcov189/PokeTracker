@@ -91,9 +91,9 @@ $.each(currentLocationData.encounters, function (i, encounter){
     var encounterObject = {
         'type' : encounter.type,        
         'encounters' : encounterArr = []
-    };                
+    };                        
     
-    $.each(encounter.available_pokemon, function(i, pokemon){        
+    $.each(encounter.available_pokemon, function(i, pokemon){   
         theRateHtml = '';
         function needPercentSymbol(x) {
             if (typeof x == 'number') {
@@ -102,35 +102,41 @@ $.each(currentLocationData.encounters, function (i, encounter){
                 return x;
             }
         }
-        if (typeof pokemon.rate == 'object'){
-            if (this.rate == null){
-               theRateHtml+= '<span>&ndash;&ndash;%</span>';
-            } else {     
-                theRateHtml+= '<strong>'+ pokemon.method +'</strong>';
-                $.each(this.rate, function(time, rate) {
-                    if (rate != null) {
-                        if (typeof rate != 'object') {
-                         theRateHtml+= '<span>'+ time +': '+ needPercentSymbol(rate) +'</span>'     
-                        }  else {
-                            if (pokemon.method == 'rod') {
-                                theRateHtml += '<span><u>'+ time + '</u></span>';
-                                $.each(rate, function (game, rate){
-                                    if (pokemon.method == 'rod') {
-                                        theRateHtml += '<span>'+ game +': '+ needPercentSymbol(rate) +'</span>';
+        
+        if (encounter.type != 'gift' && encounter.type != 'starter') {
+                            
+            if (typeof pokemon.rate == 'object'){
+                if (this.rate == null){
+                   theRateHtml+= '<span>&ndash;&ndash;%</span>';
+                } else {     
+                    theRateHtml+= '<strong>'+ pokemon.method +'</strong>';
+                    $.each(this.rate, function(time, rate) {
+                        if (rate != null) {
+                            if (typeof rate != 'object') {
+                             theRateHtml+= '<span>'+ time +': '+ needPercentSymbol(rate) +'</span>'     
+                            }  else {
+                                if (pokemon.method == 'rod') {
+                                    theRateHtml += '<span><u>'+ time + '</u></span>';
+                                    $.each(rate, function (game, rate){
+                                        if (pokemon.method == 'rod') {
+                                            theRateHtml += '<span>'+ game +': '+ needPercentSymbol(rate) +'</span>';
+                                        }
+                                    })
+                                }
+                                $.each(rate, function (game, rate){                                
+                                    if (game == version) {
+                                        theRateHtml+= '<span>'+ time +': '+ needPercentSymbol(rate) +'</span>'     
                                     }
                                 })
-                            }
-                            $.each(rate, function (game, rate){                                
-                                if (game == version) {
-                                    theRateHtml+= '<span>'+ time +': '+ needPercentSymbol(rate) +'</span>'     
-                                }
-                            })
-                        }                      
-                    }
-                })                        
+                            }                      
+                        }
+                    })                        
+                }
+            } else  {
+                theRateHtml+= '<span><strong>'+ pokemon.method +'</strong>: '+ needPercentSymbol(pokemon.rate) +'</span>';
             }
-        } else  {
-            theRateHtml+= '<span><strong>'+ pokemon.method +'</strong>: '+ needPercentSymbol(pokemon.rate) +'</span>';
+        } else {
+            theRateHtml+= '<span><strong>From:</strong>&nbsp;' + pokemon.method + '</span>';
         }
         
         //Get version exclusive info
@@ -177,7 +183,7 @@ $.each(currentLocationData.encounters, function (i, encounter){
             encounterArr.push({'html' : theHtml, 'method' : pokemon.method, 'name' : pokemon.name, 'regional_dex' : pokemon.n_dex_num })                
     })
     
-    var methodOrder = ["gift", "grass", "interaction", "horde", "fishing", "surfing", "dex nav"];
+    var methodOrder = ["gift", "grass", "swarm", "interaction", "horde", "fishing", "surfing", "dex nav"];
         
     encounterArr.sort(function(a,b){
         if (a.method != b.method) {                    
