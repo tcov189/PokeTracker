@@ -2909,15 +2909,12 @@
               "version": "both",
               "rate": {
                 "day": {
-                  "hg": 10,
-                  "ss": 0
+                  "hg": 10
                 },
                 "morning": {
-                  "hg": 10,
-                  "ss": 0
+                  "hg": 10
                 },
                 "night": {
-                  "hg": null,
                   "ss": 5
                 }
               }
@@ -2930,16 +2927,13 @@
               "version": "both",
               "rate": {
                 "morning": {
-                  "hg": 30,
-                  "ss": null
+                  "hg": 30
                 },
                 "day": {
-                  "hg": null,
                   "ss": 40
                 },
                 "night": {
-                  "hg": 30,
-                  "ss": null
+                  "hg": 30
                 }
               }
             },
@@ -3064,6 +3058,362 @@
               "method": "sinnoh sound",
               "min_level": 15,
               "max_level": 15,
+              "version": "both",
+              "rate": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "route 44",
+      "exits": {
+        "east": "ice path",
+        "west": "mahogany town"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "bellsprout",
+              "method": "grass",
+              "min_level": 20,
+              "max_level": 20,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "weepinbell",
+              "method": "grass",
+              "min_level": 22,
+              "max_level": 24,
+              "version": "both",
+              "rate": 35
+            },
+            {
+              "name": "lickitung",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 26,
+              "version": "both",
+              "rate": 15
+            },
+            {
+              "name": "tangela",
+              "method": "grass",
+              "min_level": 23,
+              "max_level": 23,
+              "version": "both",
+              "rate": 30
+            }
+          ]
+        },
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "poliwag",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 30,
+              "version": "both",
+              "rate": 90
+            },
+            {
+              "name": "poliwhirl",
+              "method": "water",
+              "min_level": 15,
+              "max_level": 32,
+              "version": "both",
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "poliwag",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 5,
+                "good rod": 40,
+                "super rod": 90
+              }
+            },
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 95,
+                "good rod": 60,
+                "super rod": 7
+              }
+            },
+            {
+              "name": "remoraid",
+              "method": "rod",
+              "min_level": 20,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "good rod": 2,
+                "super rod": 3,
+                "swarm": 90
+              }
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "spearow",
+              "method": "headbutt",
+              "min_level": 21,
+              "max_level": 24,
+              "version": "both",
+              "rate": 50
+            },
+            {
+              "name": "aipom",
+              "method": "headbutt",
+              "min_level": 21,
+              "max_level": 24,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "heracross",
+              "method": "headbutt",
+              "min_level": 21,
+              "max_level": 24,
+              "version": "both",
+              "rate": 30
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "available_pokemon": [
+            {
+              "name": "linoone",
+              "method": "hoenn sound",
+              "min_level": 22,
+              "max_level": 22,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "whismur",
+              "method": "hoenn sound",
+              "min_level": 22,
+              "max_level": 23,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "bidoof",
+              "method": "sinnoh sound",
+              "min_level": 22,
+              "max_level": 22,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "buizel",
+              "method": "sinnoh sound",
+              "min_level": 22,
+              "max_level": 22,
+              "version": "both",
+              "rate": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "route 45",
+      "exits": {
+        "north": "blackthorn city ",
+        "south": "route 46",
+        "access to": "dark cave"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "geodude",
+              "method": "grass",
+              "min_level": 23,
+              "max_level": 23,
+              "version": "both",
+              "rate": 30
+            },
+            {
+              "name": "graveler",
+              "method": "grass",
+              "min_level": 23,
+              "max_level": 27,
+              "version": "both",
+              "rate": {
+                "hg": 40,
+                "ss": 55
+              }
+            },
+            {
+              "name": "gligar",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 24,
+              "version": "hg",
+              "rate": 20
+            },
+            {
+              "name": "teddiursa",
+              "method": "grass",
+              "min_level": 20,
+              "max_level": 20,
+              "version": "ss",
+              "rate": 10
+            },
+            {
+              "name": "skarmory",
+              "method": "grass",
+              "min_level": 27,
+              "max_level": 27,
+              "version": "ss",
+              "rate": 5
+            },
+            {
+              "name": "phanpy",
+              "method": "grass",
+              "min_level": 20,
+              "max_level": 20,
+              "version": "hg",
+              "rate": 10
+            },
+            {
+              "name": "swablu",
+              "method": "swarm",
+              "min_level": 23,
+              "max_level": 23,
+              "version": "both",
+              "rate": 40
+            }
+          ]
+        },
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "method": "water",
+              "min_level": 2,
+              "max_level": 25,
+              "version": "both",
+              "rate": 100
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "poliwag",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 5,
+                "good rod": 40,
+                "super rod": 93
+              }
+            },
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 95,
+                "good rod": 60,
+                "super rod": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "spearow",
+              "method": "headbutt",
+              "min_level": 23,
+              "max_level": 27,
+              "version": "both",
+              "rate": 50
+            },
+            {
+              "name": "aipom",
+              "method": "headbutt",
+              "min_level": 23,
+              "max_level": 27,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "heracross",
+              "method": "headbutt",
+              "min_level": 23,
+              "max_level": 25,
+              "version": "both",
+              "rate": 30
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "available_pokemon": [
+            {
+              "name": "linoone",
+              "method": "hoenn sound",
+              "min_level": 24,
+              "max_level": 24,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "whismur",
+              "method": "hoenn sound",
+              "min_level": 23,
+              "max_level": 23,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "bidoof",
+              "method": "sinnoh sound",
+              "min_level": 24,
+              "max_level": 24,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "buizel",
+              "method": "sinnoh sound",
+              "min_level": 23,
+              "max_level": 23,
               "version": "both",
               "rate": 20
             }
