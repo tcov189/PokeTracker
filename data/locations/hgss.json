@@ -4038,6 +4038,217 @@
           ]
         }
       ]
+    },
+    {
+      "name": "azalea town",
+      "exits": {
+        "east": "route 33",
+        "west": "ilex forest",
+        "access to": "slowpoke well"
+      },
+      "encounters": [
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "spearow",
+              "method": "headbutt",
+              "min_level": 3,
+              "max_level": 8,
+              "version": "both",
+              "rate": 50
+            },
+            {
+              "name": "aipom",
+              "method": "headbutt",
+              "min_level": 3,
+              "max_level": 8,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "heracross",
+              "method": "headbutt",
+              "min_level": 2,
+              "max_level": 5,
+              "version": "both",
+              "rate": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "battle frontier",
+      "exits": {
+        "south": "frontier access"
+      },
+      "encounters": null
+    },
+    {
+      "name": "battle tower",
+      "exits": {
+        "south": "route 40"
+      },
+      "encounters": null
+    },
+    {
+      "name": "bellchime trail",
+      "exits": {
+        "west": "ecruteak city",
+        "access to": "bell tower"
+      },
+      "encounters": null
+    },
+    {
+      "name": "bell tower",
+      "exits": {
+        "south": "bellchime trail"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "rattata",
+              "method": "tower",
+              "min_level": 20,
+              "max_level": 24,
+              "version": "both",
+              "rate": {
+                "morning": 100,
+                "day": 100,
+                "night": 20
+              }
+            },
+            {
+              "name": "gastly",
+              "method": "tower",
+              "min_level": 20,
+              "max_level": 22,
+              "version": "both",
+              "rate": {
+                "night": 80
+              }
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "ho-oh",
+              "method": "static",
+              "min_level": 45,
+              "max_level": "70(ss)",
+              "version": "both",
+              "rate": null
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "available_pokemon": [
+            {
+              "name": "zigzagoon",
+              "method": "hoenn sound",
+              "min_level": 20,
+              "max_level": 21,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "meditite",
+              "method": "hoenn sound",
+              "min_level": 22,
+              "max_level": 22,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "spinda",
+              "method": "hoenn sound",
+              "min_level": 22,
+              "max_level": 22,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "chatot",
+              "method": "sinnoh sound",
+              "min_level": 22,
+              "max_level": 22,
+              "version": "both",
+              "rate": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "blackthorn city",
+      "exits": {
+        "north": "ice path",
+        "south": "route 45",
+        "access to ": "dragon's den"
+      },
+      "encounters": [
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "method": "water",
+              "min_level": 2,
+              "max_level": 20,
+              "version": "both",
+              "rate": 100
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 95,
+                "good rod": 60,
+                "super rod": 7
+              }
+            },
+            {
+              "name": "poliwag",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 5,
+                "good rod": 40,
+                "super rod": 93
+              }
+            }
+          ]
+        },
+        {
+          "type": "trade",
+          "available_pokemon": [
+            {
+              "name": "dodrio",
+              "method": "dragonair",
+              "min_level": "same as traded",
+              "max_level": "same as traded",
+              "version": "both",
+              "rate": null
+            }
+          ]
+        }
+      ]
     }
   ]
 }

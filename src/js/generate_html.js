@@ -89,11 +89,13 @@ $.each(exitInfo, function(i, html){
 encountersInfo = [];
 
 //Sorting array by national dex number 
-for (var counter = 0; counter < currentLocationData.encounters.length; counter++) {
-    currentLocationData.encounters[counter].available_pokemon = sortByKey(currentLocationData.encounters[counter].available_pokemon, 'n_dex_num');
+if (currentLocationData.encounters != null){
+    for (var counter = 0; counter < currentLocationData.encounters.length; counter++) {
+        currentLocationData.encounters[counter].available_pokemon = sortByKey(currentLocationData.encounters[counter].available_pokemon, 'n_dex_num');
+    }
 }
 
-$.each(currentLocationData.encounters, function (i, encounter){   
+$.each(currentLocationData.encounters, function (i, encounter){      
     var encounterObject = {
         'type' : encounter.type,        
         'encounters' : encounterArr = []
@@ -113,7 +115,12 @@ $.each(currentLocationData.encounters, function (i, encounter){
                             
             if (typeof pokemon.rate == 'object'){
                 if (this.rate == null){
-                   theRateHtml+= '<span>&ndash;&ndash;%</span>';
+                    if (encounter.type == 'trade') {
+                        theRateHtml+= '<strong>'+ encounter.type +'</strong>';
+                        theRateHtml += '<span>'+ this.method +'<i class="sprites '+ this.method +'"></i></span>';
+                    } else {
+                        theRateHtml+= '<span>&ndash;&ndash;%</span>';   
+                    }                   
                 } else {     
                     theRateHtml+= '<strong>'+ pokemon.method +'</strong>';
                     $.each(this.rate, function(time, rate) {
@@ -199,13 +206,18 @@ $.each(currentLocationData.encounters, function (i, encounter){
         
     encountersInfo.push(encounterObject)    
 });
+
 $.each(encountersInfo, function (i, encounter_info) {
     $('.block-encounters').append('<h3>'+ encounter_info.type + '</h3>');
 
     $.each(encounter_info.encounters, function (i, info){
         $('.block-encounters').append(info.html);  
     })            
-})
+});
+
+if (currentLocationData.encounters == null) {
+    $('.block-encounters').append('<p class="text-center">No encounters in this area<p>');
+}
 
 //Revert current_location to originial value so that it can be read again if refreshed
 localStorage.setItem('current_location', currentLocationData.name);
