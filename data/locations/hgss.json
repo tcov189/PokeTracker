@@ -2243,6 +2243,64 @@
           ]
         },
         {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "exeggcute",
+              "method": "headbutt",
+              "min_level": 13,
+              "max_level": 25,
+              "version": "both",
+              "rate": {
+                "tree": 20,
+                "special tree": 65
+              }
+            },
+            {
+              "name": "hoothoot",
+              "method": "headbutt",
+              "min_level": 13,
+              "max_level": 16,
+              "version": "both",
+              "rate": 50
+            },
+            {
+              "name": "ledyba",
+              "method": "headbutt",
+              "min_level": 15,
+              "max_level": 16,
+              "version": "ss",
+              "rate": 30
+            },
+            {
+              "name": "spinarak",
+              "method": "headbutt",
+              "min_level": 15,
+              "max_level": 16,
+              "version": "hg",
+              "rate": 30
+            },
+            {
+              "name": "pineco",
+              "method": "headbutt",
+              "min_level": 13,
+              "max_level": 14,
+              "version": "both",
+              "rate": 10
+            },
+            {
+              "name": "burmy",
+              "method": "headbutt",
+              "min_level": 18,
+              "max_level": 25,
+              "version": "both",
+              "rate": {
+                "special tree": 35
+              }
+            }
+          ]
+        },
+        {
           "type": "radio",
           "available_pokemon": [
             {
@@ -4142,7 +4200,7 @@
               "min_level": 45,
               "max_level": "70(ss)",
               "version": "both",
-              "rate": null
+              "rate": "one"
             }
           ]
         },
@@ -4245,6 +4303,951 @@
               "max_level": "same as traded",
               "version": "both",
               "rate": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "burned tower",
+      "exits": {
+        "south": "ecruteak city"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "rattata",
+              "method": "tower",
+              "min_level": 13,
+              "max_level": 16,
+              "version": "both",
+              "rate": {
+                "1L": 50,
+                "B1F": {
+                  "morning": 40,
+                  "day": 35,
+                  "night": 40
+                }
+              }
+            },
+            {
+              "name": "raticate",
+              "method": "tower",
+              "min_level": 15,
+              "max_level": 15,
+              "version": "both",
+              "rate": {
+                "1L": 5
+              }
+            },
+            {
+              "name": "zubat",
+              "method": "tower",
+              "min_level": 14,
+              "max_level": 15,
+              "version": "both",
+              "rate": {
+                "1L": 10,
+                "B1F": 5
+              }
+            },
+            {
+              "name": "koffing",
+              "method": "tower",
+              "min_level": 14,
+              "max_level": 16,
+              "version": "both",
+              "rate": {
+                "1L": 35,
+                "B1F": 50
+              }
+            },
+            {
+              "name": "magmar",
+              "method": "tower",
+              "min_level": 14,
+              "max_level": 16,
+              "version": "both",
+              "rate": {
+                "B1F": {
+                  "morning": 5,
+                  "day": 10,
+                  "night": 5
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "suicune",
+              "method": "static",
+              "min_level": 40,
+              "max_level": 40,
+              "version": "both",
+              "rate": "one"
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "available_pokemon": [
+            {
+              "name": "zigzagoon",
+              "method": "hoenn sound",
+              "min_level": 13,
+              "max_level": 14,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "spinda",
+              "method": "hoenn sound",
+              "min_level": 15,
+              "max_level": 16,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "meditite",
+              "method": "hoenn sound",
+              "min_level": 15,
+              "max_level": 16,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "chatot",
+              "method": "hoenn sound",
+              "min_level": 15,
+              "max_level": 16,
+              "version": "both",
+              "rate": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cherrygrove city",
+      "exits": {
+        "north": "route 30",
+        "south": "route 29"
+      },
+      "encounters": [
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "tentacool",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 25,
+              "version": "both",
+              "rate": 90
+            },
+            {
+              "name": "tentacruel",
+              "method": "water",
+              "min_level": 15,
+              "max_level": 25,
+              "version": "both",
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "krabby",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 5,
+                "good rod": 37,
+                "super rod": 67
+              }
+            },
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 20,
+              "version": "both",
+              "rate": {
+                "old rod": 95,
+                "good rod": 60,
+                "super rod": null
+              }
+            },
+            {
+              "name": "kingler",
+              "method": "rod",
+              "min_level": 40,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": null,
+                "good rod": null,
+                "super rod": 3
+              }
+            },
+            {
+              "name": "staryu",
+              "method": "rod",
+              "min_level": 20,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": null,
+                "good rod": {
+                  "night": 3
+                },
+                "super rod": {
+                  "night": 30
+                }
+              }
+            },
+            {
+              "name": "corsola",
+              "method": "rod",
+              "min_level": 20,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": null,
+                "good rod": {
+                  "morning": 3,
+                  "day": 3
+                },
+                "super rod": {
+                  "morning": 30,
+                  "day": 30
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "exeggcute",
+              "method": "headbutt",
+              "min_level": 2,
+              "max_level": 20,
+              "version": "both",
+              "rate": {
+                "tree": 20,
+                "special tree": 65
+              }
+            },
+            {
+              "name": "hoothoot",
+              "method": "headbutt",
+              "min_level": 2,
+              "max_level": 5,
+              "version": "both",
+              "rate": 50
+            },
+            {
+              "name": "ledyba",
+              "method": "headbutt",
+              "min_level": 4,
+              "max_level": 5,
+              "version": "ss",
+              "rate": 30
+            },
+            {
+              "name": "spinarak",
+              "method": "headbutt",
+              "min_level": 4,
+              "max_level": 5,
+              "version": "hg",
+              "rate": 30
+            },
+            {
+              "name": "pineco",
+              "method": "headbutt",
+              "min_level": 2,
+              "max_level": 4,
+              "version": "both",
+              "rate": 10
+            },
+            {
+              "name": "taillow",
+              "method": "headbutt",
+              "min_level": 18,
+              "max_level": 25,
+              "version": "both",
+              "rate": {
+                "special tree": 35
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cianwood city",
+      "exits": {
+        "east": "route 41",
+        "west": "cliff edge gate"
+      },
+      "encounters": [
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "tentacool",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 25,
+              "version": "both",
+              "rate": 90
+            },
+            {
+              "name": "tentacruel",
+              "method": "water",
+              "min_level": 15,
+              "max_level": 25,
+              "version": "both",
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "krabby",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 5,
+                "good rod": 37,
+                "super rod": 67
+              }
+            },
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 20,
+              "version": "both",
+              "rate": {
+                "old rod": 95,
+                "good rod": 60,
+                "super rod": null
+              }
+            },
+            {
+              "name": "kingler",
+              "method": "rod",
+              "min_level": 40,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": null,
+                "good rod": null,
+                "super rod": 3
+              }
+            },
+            {
+              "name": "staryu",
+              "method": "rod",
+              "min_level": 20,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": null,
+                "good rod": {
+                  "night": 3
+                },
+                "super rod": {
+                  "night": 30
+                }
+              }
+            },
+            {
+              "name": "corsola",
+              "method": "rod",
+              "min_level": 20,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": null,
+                "good rod": {
+                  "morning": 3,
+                  "day": 3
+                },
+                "super rod": {
+                  "morning": 30,
+                  "day": 30
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "krabby",
+              "method": "rock smash",
+              "min_level": 15,
+              "max_level": 24,
+              "version": "both",
+              "rate": 90
+            },
+            {
+              "name": "shuckle",
+              "method": "rock smash",
+              "min_level": 23,
+              "max_level": 29,
+              "version": "both",
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "gift",
+          "available_pokemon": [
+            {
+              "name": "shuckle",
+              "method": "kirk",
+              "min_level": 20,
+              "max_level": 20,
+              "version": "both",
+              "rate": "one"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cliff cave",
+      "exits": {
+        "west": "route 47"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "zubat",
+              "method": "cave",
+              "min_level": 18,
+              "max_level": 18,
+              "version": "both",
+              "rate": {
+                "night": 5
+              }
+            },
+            {
+              "name": "golbat",
+              "method": "cave",
+              "min_level": 22,
+              "max_level": 22,
+              "version": "both",
+              "rate": {
+                "morning": 20,
+                "day": 20,
+                "night": 24
+              }
+            },
+            {
+              "name": "machop",
+              "method": "cave",
+              "min_level": 19,
+              "max_level": 19,
+              "version": "both",
+              "rate": 10
+            },
+            {
+              "name": "machoke",
+              "method": "cave",
+              "min_level": 22,
+              "max_level": 22,
+              "version": "both",
+              "rate": 4
+            },
+            {
+              "name": "geodude",
+              "method": "cave",
+              "min_level": 19,
+              "max_level": 19,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "graveler",
+              "method": "cave",
+              "min_level": 20,
+              "max_level": 20,
+              "version": "both",
+              "rate": {
+                "morning": 4,
+                "day": 4
+              }
+            },
+            {
+              "name": "onix",
+              "method": "cave",
+              "min_level": 20,
+              "max_level": 20,
+              "version": "both",
+              "rate": 10
+            },
+            {
+              "name": "krabby",
+              "method": "cave",
+              "min_level": 20,
+              "max_level": 20,
+              "version": "both",
+              "rate": 10
+            },
+            {
+              "name": "kingler",
+              "method": "cave",
+              "min_level": 22,
+              "max_level": 22,
+              "version": "both",
+              "rate": 10
+            },
+            {
+              "name": "wooper",
+              "method": "cave",
+              "min_level": 18,
+              "max_level": 18,
+              "version": "both",
+              "rate": {
+                "morning": 5,
+                "day": 5
+              }
+            },
+            {
+              "name": "quagsire",
+              "method": "cave",
+              "min_level": 20,
+              "max_level": 20,
+              "version": "both",
+              "rate": {
+                "morning": 5,
+                "day": 5
+              }
+            },
+            {
+              "name": "misdreavus",
+              "method": "cave",
+              "min_level": 20,
+              "max_level": 20,
+              "version": "both",
+              "rate": {
+                "night": 5
+              }
+            },
+            {
+              "name": "steelix",
+              "method": "cave",
+              "min_level": 23,
+              "max_level": 23,
+              "version": "both",
+              "rate": 2
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "krabby",
+              "method": "rock smash",
+              "min_level": 20,
+              "max_level": 26,
+              "version": "both",
+              "rate": 90
+            },
+            {
+              "name": "kingler",
+              "method": "rock smash",
+              "min_level": 28,
+              "max_level": 31,
+              "version": "both",
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "available_pokemon": [
+            {
+              "name": "makuhita",
+              "method": "hoenn sound",
+              "min_level": 19,
+              "max_level": 20,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "absol",
+              "method": "hoenn sound",
+              "min_level": 20,
+              "max_level": 22,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "chingling",
+              "method": "sinnoh sound",
+              "min_level": 19,
+              "max_level": 20,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "bronzor",
+              "method": "sinnoh sound",
+              "min_level": 20,
+              "max_level": 22,
+              "version": "both",
+              "rate": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cliff edge gate",
+      "exits": {
+        "west": "route 47",
+        "east": "cianwood city"
+      },
+      "encounters": [
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "wooper",
+              "method": "water",
+              "min_level": 20,
+              "max_level": 30,
+              "version": "both",
+              "rate": 90
+            },
+            {
+              "name": "quagsire",
+              "method": "water",
+              "min_level": 30,
+              "max_level": 40,
+              "version": "both",
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "poliwag",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 5,
+                "good rod": 40,
+                "super rod": 90
+              }
+            },
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 95,
+                "good rod": 60,
+                "super rod": 10
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dark cave",
+      "exits": {
+        "north": "route 46",
+        "east": "route 45",
+        "west": "route 31"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "zubat",
+              "method": "cave",
+              "min_level": 2,
+              "max_level": 23,
+              "version": "both",
+              "rate": {
+                "violet city side": 39,
+                "blackthorn ciry side": 30
+              }
+            },
+            {
+              "name": "geodude",
+              "method": "cave",
+              "min_level": 2,
+              "max_level": 23,
+              "version": "both",
+              "rate": {
+                "violet city side": 60,
+                "blackthorn ciry side": 30
+              }
+            },
+            {
+              "name": "dunsparce",
+              "method": "cave",
+              "min_level": 4,
+              "max_level": 4,
+              "version": "both",
+              "rate": {
+                "violet city side": 1,
+                "swarm": 40
+              }
+            },
+            {
+              "name": "golbat",
+              "method": "cave",
+              "min_level": 23,
+              "max_level": 23,
+              "version": "both",
+              "rate": {
+                "blackthorn city side": 5
+              }
+            },
+            {
+              "name": "graveler",
+              "method": "cave",
+              "min_level": 25,
+              "max_level": 25,
+              "version": "both",
+              "rate": {
+                "blackthorn city side": 20
+              }
+            },
+            {
+              "name": "wobbuffet",
+              "method": "cave",
+              "min_level": 20,
+              "max_level": 25,
+              "version": "both",
+              "rate": {
+                "blackthorn city side": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "geodude",
+              "method": "rock smash",
+              "min_level": 8,
+              "max_level": 14,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "dunsparce",
+              "method": "rock smash",
+              "min_level": 4,
+              "max_level": 8,
+              "version": "both",
+              "rate": 80
+            }
+          ]
+        },
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "method": "water",
+              "min_level": 2,
+              "max_level": 20,
+              "version": "both",
+              "rate": 100
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "goldeen",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 5,
+                "good rod": 40,
+                "super rod": 90
+              }
+            },
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 95,
+                "good rod": 60,
+                "super rod": 7
+              }
+            },
+            {
+              "name": "seaking",
+              "method": "rod",
+              "min_level": 40,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "super rod": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "available_pokemon": [
+            {
+              "name": "makuhita",
+              "method": "hoenn sound",
+              "min_level": 2,
+              "max_level": 25,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "absol",
+              "method": "hoenn sound",
+              "min_level": 2,
+              "max_level": 23,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "chingling",
+              "method": "sinnoh sound",
+              "min_level": 2,
+              "max_level": 25,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "bronzor",
+              "method": "sinnoh sound",
+              "min_level": 2,
+              "max_level": 23,
+              "version": "both",
+              "rate": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dragon's den",
+      "exits": {
+        "south": "blackthorn city"
+      },
+      "encounters": [
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "method": "water",
+              "min_level": 6,
+              "max_level": 20,
+              "version": "both",
+              "rate": 90
+            },
+            {
+              "name": "dratini",
+              "method": "water",
+              "min_level": 5,
+              "max_level": 15,
+              "version": "both",
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 100,
+                "good rod": 90,
+                "super rod": 60
+              }
+            },
+            {
+              "name": "dratini",
+              "method": "rod",
+              "min_level": 20,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "good rod": 10,
+                "super rod": 30
+              }
+            },
+            {
+              "name": "dragonair",
+              "method": "rod",
+              "min_level": 40,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "super rod": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "gift",
+          "available_pokemon": [
+            {
+              "name": "dratini",
+              "method": "master",
+              "min_level": 15,
+              "max_level": 15,
+              "version": "both",
+              "rate": "one"
             }
           ]
         }
