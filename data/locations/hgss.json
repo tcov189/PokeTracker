@@ -5362,6 +5362,43 @@
           ]
         }
       ]
+    },
+    {
+      "name": "embedded tower",
+      "exits": {
+        "west": "route 47"
+      },
+      "encounters": [
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "groudon",
+              "method": "static",
+              "min_level": 50,
+              "max_level": 50,
+              "version": "ss",
+              "rate": "one"
+            },
+            {
+              "name": "kyogre",
+              "method": "static",
+              "min_level": 50,
+              "max_level": 50,
+              "version": "hg",
+              "rate": "one"
+            },
+            {
+              "name": "rayquaza",
+              "method": "static",
+              "min_level": 50,
+              "max_level": 50,
+              "version": "both",
+              "rate": "one"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
