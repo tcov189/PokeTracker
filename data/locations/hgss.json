@@ -5252,6 +5252,116 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ecruteak city",
+      "exits": {
+        "north": "bellchime tower",
+        "south": "route 37",
+        "east": "route 42",
+        "west": "route 38",
+        "access to": [
+          "bell tower",
+          "burned tower"
+        ]
+      },
+      "encounters": [
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "poliwag",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 25,
+              "version": "both",
+              "rate": 90
+            },
+            {
+              "name": "poliwhirl",
+              "method": "water",
+              "min_level": 15,
+              "max_level": 25,
+              "version": "both",
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 95,
+                "good rod": 40,
+                "super rod": 7
+              }
+            },
+            {
+              "name": "poliwag",
+              "method": "rod",
+              "min_level": 20,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 5,
+                "good rod": 40,
+                "super rod": 93
+              }
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "exeggcute",
+              "method": "headbutt",
+              "min_level": 12,
+              "max_level": 17,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "hoothoot",
+              "method": "headbutt",
+              "min_level": 12,
+              "max_level": 17,
+              "version": "both",
+              "rate": 50
+            },
+            {
+              "name": "ledyba",
+              "method": "headbutt",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "ss",
+              "rate": 30
+            },
+            {
+              "name": "spinarak",
+              "method": "headbutt",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "hg",
+              "rate": 30
+            },
+            {
+              "name": "pineco",
+              "method": "headbutt",
+              "min_level": 12,
+              "max_level": 14,
+              "version": "both",
+              "rate": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
