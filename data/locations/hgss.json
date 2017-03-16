@@ -5399,6 +5399,54 @@
           ]
         }
       ]
+    },
+    {
+      "name": "frontier access",
+      "exits": {
+        "north": "battle frontier",
+        "south": "route 40"
+      },
+      "encounters": null
+    },
+    {
+      "name": "goldenrod city",
+      "exits": {
+        "north": "route 35",
+        "south": "route 34",
+        "access to": [
+          "radio tower",
+          "goldenrod underground",
+          "saffron city"
+        ]
+      },
+      "encounters": [
+        {
+          "type": "trade",
+          "available_pokemon": [
+            {
+              "name": "machop",
+              "method": "drowzee",
+              "min_level": "same as traded",
+              "max_level": "same as traded",
+              "version": "both",
+              "rate": null
+            }
+          ]
+        },
+        {
+          "type": "gift",
+          "available_pokemon": [
+            {
+              "name": "eevee",
+              "method": "bill",
+              "min_level": 5,
+              "max_level": 5,
+              "version": "both",
+              "rate": "one"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
