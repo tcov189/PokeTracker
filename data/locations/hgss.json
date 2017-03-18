@@ -5447,6 +5447,122 @@
           ]
         }
       ]
+    },
+    {
+      "name": "goldenrod underground",
+      "exits": {
+        "north": "goldenrod city",
+        "south": "goldenrod city"
+      },
+      "encounters": null
+    },
+    {
+      "name": "ice path",
+      "exits": {
+        "east": "blackthorn city",
+        "west": "route 44"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "zubat",
+              "method": "cave",
+              "min_level": 22,
+              "max_level": 22,
+              "version": "both",
+              "rate": {
+                "morning": {
+                  "hg": 25,
+                  "ss": 5
+                },
+                "day": {
+                  "hg": 20,
+                  "ss": null
+                },
+                "night": {
+                  "hg": 25,
+                  "ss": 5
+                }
+              }
+            },
+            {
+              "name": "golbat",
+              "method": "cave",
+              "min_level": 22,
+              "max_level": 22,
+              "version": "both",
+              "rate": 30
+            },
+            {
+              "name": "jynx",
+              "method": "cave",
+              "min_level": 22,
+              "max_level": 22,
+              "version": "both",
+              "rate": {
+                "morning": 5,
+                "day": 10,
+                "night": 5
+              }
+            },
+            {
+              "name": "swinub",
+              "method": "cave",
+              "min_level": 21,
+              "max_level": 24,
+              "version": "both",
+              "rate": 40
+            },
+            {
+              "name": "delibird",
+              "method": "cave",
+              "min_level": 22,
+              "max_level": 23,
+              "version": "ss",
+              "rate": 20
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "available_pokemon": [
+            {
+              "name": "makuhita",
+              "method": "hoenn sound",
+              "min_level": 22,
+              "max_level": 22,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "absol",
+              "method": "hoenn sound",
+              "min_level": 21,
+              "max_level": 22,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "chingling",
+              "method": "sinnoh sound",
+              "min_level": 22,
+              "max_level": 22,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "bronzor",
+              "method": "sinnoh sound",
+              "min_level": 21,
+              "max_level": 22,
+              "version": "both",
+              "rate": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
