@@ -5563,6 +5563,325 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ilex forest",
+      "exits": {
+        "north": "route 34",
+        "south": "azalea town"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "caterpie",
+              "method": "grass",
+              "min_level": 5,
+              "max_level": 6,
+              "version": "hg",
+              "rate": {
+                "morning": 50,
+                "day": 60
+              }
+            },
+            {
+              "name": "metapod",
+              "method": "grass",
+              "min_level": 5,
+              "max_level": 6,
+              "version": "hg",
+              "rate": {
+                "morning": 30,
+                "day": 30
+              }
+            },
+            {
+              "name": "weedle",
+              "method": "grass",
+              "min_level": 5,
+              "max_level": 6,
+              "version": "ss",
+              "rate": {
+                "morning": 50,
+                "day": 60
+              }
+            },
+            {
+              "name": "kakuna",
+              "method": "grass",
+              "min_level": 5,
+              "max_level": 6,
+              "version": "ss",
+              "rate": {
+                "morning": 30,
+                "day": 30
+              }
+            },
+            {
+              "name": "zubat",
+              "method": "grass",
+              "min_level": 5,
+              "max_level": 6,
+              "version": "both",
+              "rate": {
+                "morning": 5,
+                "day": 5,
+                "night": 25
+              }
+            },
+            {
+              "name": "oddish",
+              "method": "grass",
+              "min_level": 5,
+              "max_level": 6,
+              "version": "both",
+              "rate": {
+                "morning": 0,
+                "day": 0,
+                "night": 60
+              }
+            },
+            {
+              "name": "paras",
+              "method": "grass",
+              "min_level": 5,
+              "max_level": 6,
+              "version": "both",
+              "rate": {
+                "morning": 15,
+                "day": 5,
+                "night": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "caterpie",
+              "method": "headbutt",
+              "min_level": 3,
+              "max_level": 5,
+              "version": "hg",
+              "rate": 30
+            },
+            {
+              "name": "metapod",
+              "method": "headbutt",
+              "min_level": 3,
+              "max_level": 5,
+              "version": "hg",
+              "rate": 10
+            },
+            {
+              "name": "weedle",
+              "method": "headbutt",
+              "min_level": 3,
+              "max_level": 5,
+              "version": "ss",
+              "rate": 30
+            },
+            {
+              "name": "kakuna",
+              "method": "headbutt",
+              "min_level": 3,
+              "max_level": 5,
+              "version": "ss",
+              "rate": 10
+            },
+            {
+              "name": "hoothoot",
+              "method": "headbutt",
+              "min_level": 3,
+              "max_level": 8,
+              "version": "both",
+              "rate": {
+                "standard tree": 60,
+                "special tree": 50
+              }
+            },
+            {
+              "name": "butterfree",
+              "method": "headbutt",
+              "min_level": 6,
+              "max_level": 8,
+              "version": "hg",
+              "rate": {
+                "special tree": 10
+              }
+            },
+            {
+              "name": "beedrill",
+              "method": "headbutt",
+              "min_level": 6,
+              "max_level": 8,
+              "version": "ss",
+              "rate": {
+                "special tree": 10
+              }
+            },
+            {
+              "name": "noctowl",
+              "method": "headbutt",
+              "min_level": 6,
+              "max_level": 8,
+              "version": "both",
+              "rate": {
+                "special tree": 10
+              }
+            },
+            {
+              "name": "pineco",
+              "method": "headbutt",
+              "min_level": 6,
+              "max_level": 8,
+              "version": "both",
+              "rate": {
+                "special tree": 30
+              }
+            }
+          ]
+        },
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "psyduck",
+              "method": "water",
+              "min_level": 5,
+              "max_level": 20,
+              "version": "both",
+              "rate": 90
+            },
+            {
+              "name": "golduck",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 20,
+              "version": "both",
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "poliwag",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 5,
+                "good rod": 40,
+                "super rod": 93
+              }
+            },
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 95,
+                "good rod": 60,
+                "super rod": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "available_pokemon": [
+            {
+              "name": "numel",
+              "method": "hoenn sound",
+              "min_level": 6,
+              "max_level": 6,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "spoink",
+              "method": "hoenn sound",
+              "min_level": 5,
+              "max_level": 6,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "budew",
+              "method": "sinnoh sound",
+              "min_level": 5,
+              "max_level": 6,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "carnivine",
+              "method": "sinnoh sound",
+              "min_level": 6,
+              "max_level": 6,
+              "version": "both",
+              "rate": 20
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "available_pokemon": [
+            {
+              "name": "numel",
+              "method": "hoenn sound",
+              "min_level": 6,
+              "max_level": 6,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "spoink",
+              "method": "hoenn sound",
+              "min_level": 5,
+              "max_level": 6,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "budew",
+              "method": "sinnoh sound",
+              "min_level": 5,
+              "max_level": 6,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "carnivine",
+              "method": "sinnoh sound",
+              "min_level": 6,
+              "max_level": 6,
+              "version": "both",
+              "rate": 20
+            }
+          ]
+        },
+        {
+          "type": "event",
+          "available_pokemon": [
+            {
+              "name": "pichu",
+              "method": "http://www.serebii.net/heartgoldsoulsilver/pichu.shtml",
+              "min_level": 30,
+              "max_level": 30,
+              "version": "both",
+              "rate": "one"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
