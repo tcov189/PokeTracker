@@ -5882,6 +5882,108 @@
           ]
         }
       ]
+    },
+    {
+      "name": "lake of rage",
+      "exits": {
+        "south": "route 43"
+      },
+      "encounters": [
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "method": "water",
+              "min_level": 5,
+              "max_level": 20,
+              "version": "both",
+              "rate": 90
+            },
+            {
+              "name": "gyarados",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 20,
+              "version": "both",
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 100,
+                "good rod": 97,
+                "super rod": 90
+              }
+            },
+            {
+              "name": "gyarados",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "good rod": 3,
+                "super rod": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "venonat",
+              "method": "headbutt",
+              "min_level": 17,
+              "max_level": 19,
+              "version": "both",
+              "rate": 15
+            },
+            {
+              "name": "exeggcute",
+              "method": "headbutt",
+              "min_level": 14,
+              "max_level": 19,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "hoothoot",
+              "method": "headbutt",
+              "min_level": 14,
+              "max_level": 19,
+              "version": "both",
+              "rate": 65
+            },
+            {
+              "name": "pineco",
+              "method": "headbutt",
+              "min_level": 14,
+              "max_level": 16,
+              "version": "both",
+              "rate": 10
+            },
+            {
+              "name": "gyarados",
+              "method": "static",
+              "min_level": 30,
+              "max_level": 30,
+              "version": "both",
+              "rate": "one"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
