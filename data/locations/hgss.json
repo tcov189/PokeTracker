@@ -5994,6 +5994,240 @@
         "access to": "rocket hideout"
       },
       "encounters": null
+    },
+    {
+      "name": "mt. mortar",
+      "exits": {
+        "south": "route 42"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "rattata",
+              "method": "cave",
+              "min_level": 14,
+              "max_level": 16,
+              "version": "both",
+              "rate": {
+                "entrance": 19,
+                "lower cave": 10,
+                "basement": 20
+              }
+            },
+            {
+              "name": "zubat",
+              "method": "cave",
+              "min_level": 13,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "entrance": 60,
+                "lower cave": 5,
+                "basement": 60
+              }
+            },
+            {
+              "name": "machop",
+              "method": "cave",
+              "min_level": 14,
+              "max_level": 28,
+              "version": "both",
+              "rate": {
+                "entrance": 20,
+                "lower cave": 35,
+                "upper cave": 5,
+                "basement": 10
+              }
+            },
+            {
+              "name": "geodude",
+              "method": "cave",
+              "min_level": 13,
+              "max_level": 31,
+              "version": "both",
+              "rate": {
+                "entrance": 5,
+                "lower cave": 50,
+                "upper cave": 20,
+                "basement": 5
+              }
+            },
+            {
+              "name": "marill",
+              "method": "cave",
+              "min_level": 13,
+              "max_level": 15,
+              "version": "both",
+              "rate": {
+                "entrance": 1,
+                "entrance(swarm)": 40
+              }
+            },
+            {
+              "name": "raticate",
+              "method": "cave",
+              "min_level": 30,
+              "max_level": 30,
+              "version": "both",
+              "rate": {
+                "upper cave": 10
+              }
+            },
+            {
+              "name": "golbat",
+              "method": "cave",
+              "min_level": 30,
+              "max_level": 30,
+              "version": "both",
+              "rate": {
+                "upper cave": 5
+              }
+            },
+            {
+              "name": "golbat",
+              "method": "cave",
+              "min_level": 30,
+              "max_level": 30,
+              "version": "both",
+              "rate": {
+                "upper cave": 5
+              }
+            },
+            {
+              "name": "machoke",
+              "method": "cave",
+              "min_level": 32,
+              "max_level": 32,
+              "version": "both",
+              "rate": {
+                "upper cave": 30
+              }
+            },
+            {
+              "name": "graveler",
+              "method": "cave",
+              "min_level": 31,
+              "max_level": 31,
+              "version": "both",
+              "rate": {
+                "upper cave": 30
+              }
+            }
+          ]
+        },
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "goldeen",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 25,
+              "version": "both",
+              "rate": 90
+            },
+            {
+              "name": "seaking",
+              "method": "water",
+              "min_level": 12,
+              "max_level": 25,
+              "version": "both",
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 95,
+                "good rod": 60,
+                "super rod": 6
+              }
+            },
+            {
+              "name": "goldeen",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 10,
+                "good rod": 40,
+                "super rod": 90
+              }
+            },
+            {
+              "name": "seaking",
+              "method": "rod",
+              "min_level": 40,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "super rod": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "available_pokemon": [
+            {
+              "name": "makuhita",
+              "method": "hoenn sound",
+              "min_level": 14,
+              "max_level": 31,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "absol",
+              "method": "hoenn sound",
+              "min_level": 13,
+              "max_level": 32,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "chingling",
+              "method": "sinnoh sound",
+              "min_level": 13,
+              "max_level": 31,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "bronzor",
+              "method": "sinnoh sound",
+              "min_level": 13,
+              "max_level": 32,
+              "version": "both",
+              "rate": 20
+            }
+          ]
+        },
+        {
+          "type": "gift",
+          "available_pokemon": [
+            {
+              "name": "tyrogue",
+              "method": "kiyo",
+              "min_level": 10,
+              "max_level": 10,
+              "version": "both",
+              "rate": null
+            }
+          ]
+        }
+      ]
     }
   ]
 }
