@@ -5984,6 +5984,16 @@
           ]
         }
       ]
+    },
+    {
+      "name": "mahogany town",
+      "exits": {
+        "north": "route 43",
+        "east": "route 44",
+        "west": "route 42",
+        "access to": "rocket hideout"
+      },
+      "encounters": null
     }
   ]
 }
