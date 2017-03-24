@@ -7354,7 +7354,7 @@
           "type": "trade",
           "available_pokemon": [
             {
-              "name": "voltrob",
+              "name": "voltorb",
               "method": "krabby",
               "min_level": "same as traded",
               "max_level": "same as traded",
