@@ -311,7 +311,7 @@
               "min_level": 2,
               "max_level": 5,
               "version": "both",
-              "rate": "20%"
+              "rate": 20
             },
             {
               "name": "hoothoot",
@@ -6808,6 +6808,435 @@
                 "2f": 20,
                 "upper mountainside": 20,
                 "3f": 20
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "national park",
+      "exits": {
+        "south": "route 35",
+        "east": "route 36",
+        "west": "pokeathlon dome"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "caterpie",
+              "method": "grass",
+              "min_level": 10,
+              "max_level": 12,
+              "version": "hg",
+              "rate": {
+                "morning": 50,
+                "day": 30
+              }
+            },
+            {
+              "name": "metapod",
+              "method": "grass",
+              "min_level": 10,
+              "max_level": 10,
+              "version": "hg",
+              "rate": {
+                "morning": 30,
+                "day": 30
+              }
+            },
+            {
+              "name": "weedle",
+              "method": "grass",
+              "min_level": 10,
+              "max_level": 12,
+              "version": "ss",
+              "rate": {
+                "morning": 50,
+                "day": 30
+              }
+            },
+            {
+              "name": "kakuna",
+              "method": "grass",
+              "min_level": 10,
+              "max_level": 10,
+              "version": "ss",
+              "rate": {
+                "morning": 30,
+                "day": 30
+              }
+            },
+            {
+              "name": "pidgey",
+              "method": "grass",
+              "min_level": 10,
+              "max_level": 14,
+              "version": "both",
+              "rate": {
+                "morning": 20,
+                "day": 15
+              }
+            },
+            {
+              "name": "hoothoot",
+              "method": "grass",
+              "min_level": 10,
+              "max_level": 14,
+              "version": "both",
+              "rate": {
+                "night": 100
+              }
+            },
+            {
+              "name": "sunkern",
+              "method": "grass",
+              "min_level": 12,
+              "max_level": 12,
+              "version": "both",
+              "rate": {
+                "day": 25
+              }
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "exeggcute",
+              "method": "headbutt",
+              "min_level": 10,
+              "max_level": 20,
+              "version": "both",
+              "rate": {
+                "standard tree": 20,
+                "special tree": 65
+              }
+            },
+            {
+              "name": "hoothoot",
+              "method": "headbutt",
+              "min_level": 10,
+              "max_level": 15,
+              "version": "both",
+              "rate": 50
+            },
+            {
+              "name": "ledyba",
+              "method": "headbutt",
+              "min_level": 13,
+              "max_level": 15,
+              "version": "ss",
+              "rate": 20
+            },
+            {
+              "name": "spinarak",
+              "method": "headbutt",
+              "min_level": 13,
+              "max_level": 15,
+              "version": "hg",
+              "rate": 20
+            },
+            {
+              "name": "pineco",
+              "method": "headbutt",
+              "min_level": 10,
+              "max_level": 12,
+              "version": "both",
+              "rate": 10
+            },
+            {
+              "name": "cherubi",
+              "method": "headbutt",
+              "min_level": 18,
+              "max_level": 25,
+              "version": "both",
+              "rate": {
+                "special tree": 35
+              }
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "available_pokemon": [
+            {
+              "name": "plusle",
+              "method": "hoenn sound",
+              "min_level": 10,
+              "max_level": 10,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "minun",
+              "method": "hoenn sound",
+              "min_level": 12,
+              "max_level": 12,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "shinx",
+              "method": "sinnoh sound",
+              "min_level": 10,
+              "max_level": 12,
+              "version": "both",
+              "rate": 40
+            }
+          ]
+        },
+        {
+          "type": "bug-catching contest",
+          "available_pokemon": [
+            {
+              "name": "caterpie",
+              "method": "grass",
+              "min_level": 7,
+              "max_level": "36(post national dex)",
+              "version": "both",
+              "rate": {
+                "pre-national dex": 20,
+                "post-national dex": {
+                  "tuesday": 20
+                }
+              }
+            },
+            {
+              "name": "metapod",
+              "method": "grass",
+              "min_level": 9,
+              "max_level": "36(post national dex)",
+              "version": "both",
+              "rate": {
+                "pre-national dex": 10,
+                "post-national dex": {
+                  "tuesday": 10
+                }
+              }
+            },
+            {
+              "name": "butterfree",
+              "method": "grass",
+              "min_level": 12,
+              "max_level": "30(post national dex)",
+              "version": "both",
+              "rate": {
+                "pre-national dex": 5,
+                "post-national dex": {
+                  "tuesday": 5
+                }
+              }
+            },
+            {
+              "name": "weedle",
+              "method": "grass",
+              "min_level": 7,
+              "max_level": "36(post national dex)",
+              "version": "both",
+              "rate": {
+                "pre-national dex": 20,
+                "post-national dex": {
+                  "tuesday": 20
+                }
+              }
+            },
+            {
+              "name": "kakuna",
+              "method": "grass",
+              "min_level": 9,
+              "max_level": "36(post national dex)",
+              "version": "both",
+              "rate": {
+                "pre-national dex": 10,
+                "post-national dex": {
+                  "tuesday": 10
+                }
+              }
+            },
+            {
+              "name": "beedrill",
+              "method": "grass",
+              "min_level": 12,
+              "max_level": "30(post national dex)",
+              "version": "both",
+              "rate": {
+                "pre-national dex": 5,
+                "post-national dex": {
+                  "tuesday": 5
+                }
+              }
+            },
+            {
+              "name": "paras",
+              "method": "grass",
+              "min_level": 10,
+              "max_level": "34(post national dex)",
+              "version": "both",
+              "rate": {
+                "pre-national dex": 10,
+                "post-national dex": {
+                  "tuesday": 10
+                }
+              }
+            },
+            {
+              "name": "venonat",
+              "method": "grass",
+              "min_level": 10,
+              "max_level": "32(post national dex)",
+              "version": "both",
+              "rate": {
+                "pre-national dex": 10,
+                "post-national dex": {
+                  "tuesday": 10
+                }
+              }
+            },
+            {
+              "name": "scyther",
+              "method": "grass",
+              "min_level": 13,
+              "max_level": "28(post national dex)",
+              "version": "both",
+              "rate": {
+                "pre-national dex": 5,
+                "post-national dex": {
+                  "tuesday": 5,
+                  "thursday": 5,
+                  "saturday": 5
+                }
+              }
+            },
+            {
+              "name": "pinsir",
+              "method": "grass",
+              "min_level": 13,
+              "max_level": "28(post national dex)",
+              "version": "both",
+              "rate": {
+                "pre-national dex": 5,
+                "post-national dex": {
+                  "tuesday": 5,
+                  "thursday": 5,
+                  "saturday": 5
+                }
+              }
+            },
+            {
+              "name": "wurmple",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 36,
+              "version": "both",
+              "rate": {
+                "post-national dex": {
+                  "thursday": 20,
+                  "saturday": 20
+                }
+              }
+            },
+            {
+              "name": "silcoon",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 32,
+              "version": "both",
+              "rate": {
+                "post-national dex": {
+                  "thursday": 10
+                }
+              }
+            },
+            {
+              "name": "cascoon",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 35,
+              "version": "both",
+              "rate": {
+                "post-national dex": {
+                  "thursday": 10
+                }
+              }
+            },
+            {
+              "name": "dustox",
+              "method": "grass",
+              "min_level": 25,
+              "max_level": 32,
+              "version": "both",
+              "rate": {
+                "post-national dex": {
+                  "thursday": 5
+                }
+              }
+            },
+            {
+              "name": "nincada",
+              "method": "grass",
+              "min_level": 26,
+              "max_level": 36,
+              "version": "both",
+              "rate": {
+                "post-national dex": {
+                  "thursday": 20,
+                  "saturday": 20
+                }
+              }
+            },
+            {
+              "name": "volbeat",
+              "method": "grass",
+              "min_level": 26,
+              "max_level": 36,
+              "version": "both",
+              "rate": {
+                "post-national dex": {
+                  "thursday": 10
+                }
+              }
+            },
+            {
+              "name": "kricketot",
+              "method": "grass",
+              "min_level": 27,
+              "max_level": 30,
+              "version": "both",
+              "rate": {
+                "post-national dex": {
+                  "thursday": 10,
+                  "saturday": 10
+                }
+              }
+            },
+            {
+              "name": "kricketune",
+              "method": "grass",
+              "min_level": 27,
+              "max_level": 30,
+              "version": "both",
+              "rate": {
+                "post-national dex": {
+                  "thursday": 10,
+                  "saturday": 10
+                }
+              }
+            },
+            {
+              "name": "combee",
+              "method": "grass",
+              "min_level": 27,
+              "max_level": 34,
+              "version": "both",
+              "rate": {
+                "post-national dex": {
+                  "thursday": 5,
+                  "saturday": 5
+                }
               }
             }
           ]
