@@ -7242,6 +7242,136 @@
           ]
         }
       ]
+    },
+    {
+      "name": "olivine city",
+      "exits": {
+        "north": "route 39",
+        "west": "route 40",
+        "access to": [
+          "shining lighthouse",
+          "ss aqua"
+        ]
+      },
+      "encounters": [
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "tentacool",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 25,
+              "version": "both",
+              "rate": 90
+            },
+            {
+              "name": "tentacruel",
+              "method": "water",
+              "min_level": 15,
+              "max_level": 25,
+              "version": "both",
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "krabby",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 5,
+                "good rod": 37,
+                "super rod": 67
+              }
+            },
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 20,
+              "version": "both",
+              "rate": {
+                "old rod": 95,
+                "good rod": 60,
+                "super rod": null
+              }
+            },
+            {
+              "name": "kingler",
+              "method": "rod",
+              "min_level": 40,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": null,
+                "good rod": null,
+                "super rod": 3
+              }
+            },
+            {
+              "name": "staryu",
+              "method": "rod",
+              "min_level": 20,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": null,
+                "good rod": {
+                  "night": 3
+                },
+                "super rod": {
+                  "night": 30
+                }
+              }
+            },
+            {
+              "name": "corsola",
+              "method": "rod",
+              "min_level": 20,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": null,
+                "good rod": {
+                  "morning": 3,
+                  "day": 3
+                },
+                "super rod": {
+                  "morning": 30,
+                  "day": 30
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "trade",
+          "available_pokemon": [
+            {
+              "name": "voltrob",
+              "method": "krabby",
+              "min_level": "same as traded",
+              "max_level": "same as traded",
+              "version": "both",
+              "rate": null
+            },
+            {
+              "name": "steelix",
+              "method": "any",
+              "min_level": "same as traded",
+              "max_level": "same as traded",
+              "version": "both",
+              "rate": null
+            }
+          ]
+        }
+      ]
     }
   ]
 }
