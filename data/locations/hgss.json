@@ -6228,6 +6228,591 @@
           ]
         }
       ]
+    },
+    {
+      "name": "mt. silver",
+      "exits": {
+        "south": "route 28"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "ponyta",
+              "method": "grass",
+              "min_level": 42,
+              "max_level": 42,
+              "version": "both",
+              "rate": {
+                "exterior": 30
+              }
+            },
+            {
+              "name": "rapidash",
+              "method": "grass",
+              "min_level": 44,
+              "max_level": 44,
+              "version": "both",
+              "rate": {
+                "exterior": 10
+              }
+            },
+            {
+              "name": "doduo",
+              "method": "grass",
+              "min_level": 41,
+              "max_level": 41,
+              "version": "both",
+              "rate": {
+                "exterior": {
+                  "morning": 5,
+                  "day": 5
+                }
+              }
+            },
+            {
+              "name": "dodrio",
+              "method": "grass",
+              "min_level": 43,
+              "max_level": 43,
+              "version": "both",
+              "rate": {
+                "exterior": {
+                  "morning": 5,
+                  "day": 5
+                }
+              }
+            },
+            {
+              "name": "tangela",
+              "method": "grass",
+              "min_level": 41,
+              "max_level": 41,
+              "version": "both",
+              "rate": {
+                "exerior": 30
+              }
+            },
+            {
+              "name": "sneasel",
+              "method": "multiple",
+              "min_level": 41,
+              "max_level": 50,
+              "version": "both",
+              "rate": {
+                "exterior": {
+                  "night": 10
+                },
+                "2F": 20,
+                "upper mountainside": 20,
+                "3F": 20
+              }
+            },
+            {
+              "name": "ursaring",
+              "method": "multiple",
+              "min_level": 42,
+              "max_level": 50,
+              "version": "ss",
+              "rate": {
+                "exterior": 20,
+                "1F": 30,
+                "expert belt chamber": 20,
+                "moltres's chamber": 20,
+                "lower mountainside": 10,
+                "2F": 20,
+                "upper mountainside": 20,
+                "3F": 20
+              }
+            },
+            {
+              "name": "donphan",
+              "method": "multiple",
+              "min_level": 42,
+              "max_level": 50,
+              "version": "hg",
+              "rate": {
+                "exterior": 20,
+                "1F": 30,
+                "expert belt chamber": 20,
+                "moltres's chamber": 20,
+                "lower mountainside": 10,
+                "2F": 20,
+                "upper mountainside": 20,
+                "3F": 20
+              }
+            },
+            {
+              "name": "golbat",
+              "method": "multiple",
+              "min_level": 45,
+              "max_level": 51,
+              "version": "both",
+              "rate": {
+                "1F": 5,
+                "expert belt chamber": 5,
+                "moltres's chamber": 5,
+                "lower mountainside": 40,
+                "2F": 5,
+                "upper mountainside": 5,
+                "3F": 5
+              }
+            },
+            {
+              "name": "graveler",
+              "method": "cave",
+              "min_level": 41,
+              "max_level": 43,
+              "version": "both",
+              "rate": {
+                "1F": 30
+              }
+            },
+            {
+              "name": "onix",
+              "method": "multiple",
+              "min_level": 42,
+              "max_level": 48,
+              "version": "both",
+              "rate": {
+                "1f": 30,
+                "lower mountainside": 30
+              }
+            },
+            {
+              "name": "teddiursa",
+              "method": "multiple",
+              "min_level": 43,
+              "max_level": 48,
+              "version": "ss",
+              "rate": {
+                "1f": 10,
+                "expert belt chamber": 10,
+                "lower mountainside": 10,
+                "2f": 10
+              }
+            },
+            {
+              "name": "phanpy",
+              "method": "multiple",
+              "min_level": 43,
+              "max_level": 48,
+              "version": "hg",
+              "rate": {
+                "1f": 10,
+                "expert belt chamber": 10,
+                "lower mountainside": 10,
+                "2f": 10
+              }
+            },
+            {
+              "name": "larvitar",
+              "method": "multiple",
+              "min_level": 15,
+              "max_level": 30,
+              "version": "both",
+              "rate": {
+                "1f": 5,
+                "expert belt chamber": 5,
+                "moltres's chamber": 5,
+                "lower mountainside": 5,
+                "2f": 5,
+                "upper mountainside": 10,
+                "3f": 5
+              }
+            },
+            {
+              "name": "golduck",
+              "method": "multiple",
+              "min_level": 48,
+              "max_level": 51,
+              "version": "both",
+              "rate": {
+                "expert belt chamber": 20,
+                "moltres's chamber": 10,
+                "lower mountainside": 5,
+                "2f": 10,
+                "upper mountainside": {
+                  "morning": 30,
+                  "day": 30,
+                  "night": 20
+                },
+                "3f": 30
+              }
+            },
+            {
+              "name": "quagsire",
+              "method": "multiple",
+              "min_level": 45,
+              "max_level": 45,
+              "version": "both",
+              "rate": {
+                "expert belt chamber": {
+                  "morning": 35,
+                  "day": 35,
+                  "night": 5
+                },
+                "moltres's chamber": {
+                  "morning": 40,
+                  "day": 40,
+                  "night": 30
+                },
+                "2f": {
+                  "morning": 30,
+                  "day": 30,
+                  "night": 20
+                },
+                "upper mountainside": {
+                  "morning": 15,
+                  "day": 15,
+                  "night": 10
+                },
+                "3f": {
+                  "morning": 20,
+                  "day": 20,
+                  "night": 10
+                }
+              }
+            },
+            {
+              "name": "misdreavus",
+              "method": "multiple",
+              "min_level": 45,
+              "max_level": 48,
+              "version": "both",
+              "rate": {
+                "expert belt chamber": {
+                  "night": 30
+                },
+                "moltres's chamber": {
+                  "night": 10
+                },
+                "2f": {
+                  "night": 10
+                },
+                "upper mountainside": {
+                  "night": 15
+                },
+                "3f": {
+                  "night": 10
+                }
+              }
+            },
+            {
+              "name": "pupitar",
+              "method": "cave",
+              "min_level": "30(ss)",
+              "max_level": "45(hg",
+              "version": "both",
+              "rate": {
+                "expert belt chamber": 5
+              }
+            },
+            {
+              "name": "steelix",
+              "method": "cave",
+              "min_level": 48,
+              "max_level": 48,
+              "version": "both",
+              "rate": {
+                "moltres's chamber": 20
+              }
+            }
+          ]
+        },
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "poliwag",
+              "method": "water",
+              "min_level": 30,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "exterior": 9
+              }
+            },
+            {
+              "name": "poliwhirl",
+              "method": "water",
+              "min_level": 30,
+              "max_level": 48,
+              "version": "both",
+              "rate": {
+                "exterior": 91
+              }
+            },
+            {
+              "name": "goldeen",
+              "method": "water",
+              "min_level": 30,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "1f": 9
+              }
+            },
+            {
+              "name": "seaking",
+              "method": "water",
+              "min_level": 30,
+              "max_level": 50,
+              "version": "both",
+              "rate": {
+                "1f": 91
+              }
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "exterior": {
+                  "old rod": 85,
+                  "good rod": 40,
+                  "super rod": 20
+                },
+                "1f": {
+                  "old rod": 85,
+                  "good rod": {
+                    "morning": 50,
+                    "day": 50,
+                    "night": 40
+                  }
+                }
+              }
+            },
+            {
+              "name": "poliwag",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "exterior": {
+                  "old rod": 15,
+                  "good rod": 60,
+                  "super rod": 80
+                }
+              }
+            },
+            {
+              "name": "goldeen",
+              "method": "rod",
+              "min_level": 40,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "1f": {
+                  "old rod": 15,
+                  "good rod": 30
+                }
+              }
+            },
+            {
+              "name": "seaking",
+              "method": "rod",
+              "min_level": 40,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "1f": {
+                  "super rod": {
+                    "morning": 50,
+                    "day": 50,
+                    "night": 20
+                  }
+                }
+              }
+            },
+            {
+              "name": "gyarados",
+              "method": "rod",
+              "min_level": 20,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "1f": {
+                  "good rod": {
+                    "night": 10
+                  },
+                  "super rod": {
+                    "morning": 50,
+                    "day": 50,
+                    "night": 80
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "moltres",
+              "method": "static",
+              "min_level": 50,
+              "max_level": 50,
+              "version": "both",
+              "rate": {
+                "moltres's chamber": "one"
+              }
+            },
+            {
+              "name": "natu",
+              "method": "headbutt",
+              "min_level": 39,
+              "max_level": 44,
+              "version": "both",
+              "rate": {
+                "exterior": 10,
+                "lower mountainside": 10
+              }
+            },
+            {
+              "name": "aipom",
+              "method": "headbutt",
+              "min_level": 39,
+              "max_level": 44,
+              "version": "both",
+              "rate": {
+                "exterior": 30,
+                "lower mountainside": 30
+              }
+            },
+            {
+              "name": "heracross",
+              "method": "headbutt",
+              "min_level": 39,
+              "max_level": 44,
+              "version": "both",
+              "rate": {
+                "exterior": 60,
+                "lower mountainside": 60
+              }
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "available_pokemon": [
+            {
+              "name": "linoone",
+              "method": "hoenn sound",
+              "min_level": 42,
+              "max_level": 42,
+              "version": "both",
+              "rate": {
+                "exterior": 20
+              }
+            },
+            {
+              "name": "whismur",
+              "method": "hoenn sound",
+              "min_level": 41,
+              "max_level": 42,
+              "version": "both",
+              "rate": {
+                "exterior": 20
+              }
+            },
+            {
+              "name": "bidoof",
+              "method": "sinnoh sound",
+              "min_level": 42,
+              "max_level": 42,
+              "version": "both",
+              "rate": {
+                "exterior": 20
+              }
+            },
+            {
+              "name": "buizel",
+              "method": "sinnoh sound",
+              "min_level": 41,
+              "max_level": 42,
+              "version": "both",
+              "rate": {
+                "exterior": 20
+              }
+            },
+            {
+              "name": "makuhita",
+              "method": "hoenn sound",
+              "min_level": 43,
+              "max_level": 50,
+              "version": "both",
+              "rate": {
+                "1f": 20,
+                "expert belt chamber": 20,
+                "moltres's chamber": 20,
+                "lower mountainside": 20,
+                "2f": 20,
+                "upper mountainside": 20,
+                "3f": 20
+              }
+            },
+            {
+              "name": "absol",
+              "method": "hoenn sound",
+              "min_level": 42,
+              "max_level": 51,
+              "version": "both",
+              "rate": {
+                "1f": 20,
+                "expert belt chamber": 20,
+                "moltres's chamber": 20,
+                "lower mountainside": 20,
+                "2f": 20,
+                "upper mountainside": 20,
+                "3f": 20
+              }
+            },
+            {
+              "name": "chingling",
+              "method": "sinnoh sound",
+              "min_level": 43,
+              "max_level": 50,
+              "version": "both",
+              "rate": {
+                "1f": 20,
+                "expert belt chamber": 20,
+                "moltres's chamber": 20,
+                "lower mountainside": 20,
+                "2f": 20,
+                "upper mountainside": 20,
+                "3f": 20
+              }
+            },
+            {
+              "name": "bronzor",
+              "method": "sinnoh sound",
+              "min_level": 42,
+              "max_level": 51,
+              "version": "both",
+              "rate": {
+                "1f": 20,
+                "expert belt chamber": 20,
+                "moltres's chamber": 20,
+                "lower mountainside": 20,
+                "2f": 20,
+                "upper mountainside": 20,
+                "3f": 20
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
