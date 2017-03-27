@@ -7372,6 +7372,27 @@
           ]
         }
       ]
+    },
+    {
+      "name": "pokeathlon dome",
+      "exits": {
+        "east": "national park"
+      },
+      "encounters": null
+    },
+    {
+      "name": "radio tower",
+      "exits": {
+        "south": "goldenrod city"
+      },
+      "encounters": null
+    },
+    {
+      "name": "rocket hideout",
+      "exits": {
+        "south": "mahgonay town"
+      },
+      "encounters": null
     }
   ]
 }
