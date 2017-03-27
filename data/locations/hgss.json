@@ -7393,6 +7393,156 @@
         "south": "mahgonay town"
       },
       "encounters": null
+    },
+    {
+      "name": "ruins of alph",
+      "exits": {
+        "north": "route 36",
+        "south": "union cave",
+        "east": "route 32",
+        "access to": "sinjoh ruins"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "unown",
+              "method": "cave",
+              "min_level": 5,
+              "max_level": 5,
+              "version": "both",
+              "rate": {
+                "interior": 100
+              }
+            },
+            {
+              "name": "natu",
+              "method": "grass",
+              "min_level": 18,
+              "max_level": 24,
+              "version": "both",
+              "rate": {
+                "outside": 90
+              }
+            },
+            {
+              "name": "smeargle",
+              "method": "grass",
+              "min_level": 20,
+              "max_level": 22,
+              "version": "both",
+              "rate": {
+                "outside": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "wooper",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 20,
+              "version": "both",
+              "rate": {
+                "outside": 60
+              }
+            },
+            {
+              "name": "quagsire",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 25,
+              "version": "both",
+              "rate": {
+                "outside": 40
+              }
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 95,
+                "good rod": 60,
+                "super rod": 3
+              }
+            },
+            {
+              "name": "poliwag",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 5,
+                "good rod": 40,
+                "super rod": 93
+              }
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "geodude",
+              "method": "rock smash",
+              "min_level": 3,
+              "max_level": 14,
+              "version": "both",
+              "rate": 100
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "available_pokemon": [
+            {
+              "name": "linoone",
+              "method": "hoenn sound",
+              "min_level": 18,
+              "max_level": 18,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "whismur",
+              "method": "hoenn sound",
+              "min_level": 20,
+              "max_level": 22,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "bidoof",
+              "method": "sinnoh sound",
+              "min_level": 18,
+              "max_level": 18,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "buziel",
+              "method": "sinnoh sound",
+              "min_level": 20,
+              "max_level": 22,
+              "version": "both",
+              "rate": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
