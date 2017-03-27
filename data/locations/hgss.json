@@ -7543,6 +7543,176 @@
           ]
         }
       ]
+    },
+    {
+      "name": "safari zone (johto)",
+      "exits": {
+        "south": "safari zone gate"
+      },
+      "encounters": [
+        {
+          "type": "peak",
+          "available_pokemon": [
+            {
+              "name": "fearow",
+              "method": "walking",
+              "min_level": 44,
+              "max_level": 44,
+              "version": "both",
+              "rate": {
+                "5 forest blocks": 10
+              }
+            },
+            {
+              "name": "paras",
+              "method": "walking",
+              "min_level": 42,
+              "max_level": 42,
+              "version": "both",
+              "rate": {
+                "3 forest blocks": 10
+              }
+            },
+            {
+              "name": "geodude",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": 40
+            },
+            {
+              "name": "graveler",
+              "method": "walking",
+              "min_level": 16,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "morning": 20,
+                "day": 20
+              }
+            },
+            {
+              "name": "slowbro",
+              "method": "walking",
+              "min_level": 45,
+              "max_level": 45,
+              "version": "both",
+              "rate": {
+                "5 waterside blocks": 10
+              }
+            },
+            {
+              "name": "magnemite",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 16,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "magneton",
+              "method": "walking",
+              "min_level": 17,
+              "max_level": 17,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "magmar",
+              "method": "walking",
+              "min_level": 17,
+              "max_level": 41,
+              "version": "both",
+              "rate": {
+                "10 peak blocks": {
+                  "morning": 10,
+                  "day": 10
+                },
+                "<10 peak blocks": {
+                  "morning": 10,
+                  "day": 10
+                }
+              }
+            },
+            {
+              "name": "wobbuffet",
+              "method": "walking",
+              "min_level": 16,
+              "max_level": 41,
+              "version": "both",
+              "rate": {
+                "10 peak blocks": {
+                  "night": 10
+                },
+                "<10 peak blocks": {
+                  "night": 10
+                }
+              }
+            },
+            {
+              "name": "linoone",
+              "method": "walking",
+              "min_level": 46,
+              "max_level": 46,
+              "version": "both",
+              "rate": {
+                "5 plains blocks": 10
+              }
+            },
+            {
+              "name": "vigoroth",
+              "method": "walking",
+              "min_level": 47,
+              "max_level": 47,
+              "version": "both",
+              "rate": {
+                "56 forest + 28 plains blocks": 10
+              }
+            },
+            {
+              "name": "lairon",
+              "method": "walking",
+              "min_level": 45,
+              "max_level": 45,
+              "version": "both",
+              "rate": {
+                "24 peak blocks": 10
+              }
+            },
+            {
+              "name": "zangoose",
+              "method": "walking",
+              "min_level": 43,
+              "max_level": 45,
+              "version": "both",
+              "rate": {
+                "12 plains blocks": 10
+              }
+            },
+            {
+              "name": "spheal",
+              "method": "walking",
+              "min_level": 44,
+              "max_level": 45,
+              "version": "both",
+              "rate": {
+                "35 waterside blocks": 10
+              }
+            },
+            {
+              "name": "bronzor",
+              "method": "walking",
+              "min_level": 44,
+              "max_level": 45,
+              "version": "both",
+              "rate": {
+                "35 peak + 14 forest blocks": 10
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
