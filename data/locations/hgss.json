@@ -8000,6 +8000,257 @@
               }
             }
           ]
+        },
+        {
+          "type": "meadow",
+          "available_pokemon": [
+            {
+              "name": "raticate",
+              "method": "walking",
+              "min_level": 40,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "5 plains blocks": "--"
+              }
+            },
+            {
+              "name": "clefairy",
+              "method": "walking",
+              "min_level": 17,
+              "max_level": 42,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "night": 10
+                },
+                "3 peak blocks": {
+                  "night": "--"
+                }
+              }
+            },
+            {
+              "name": "jigglypuff",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": 40
+              }
+            },
+            {
+              "name": "poliwag",
+              "method": "rod",
+              "min_level": 12,
+              "max_level": 36,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "any rod": "--"
+                }
+              }
+            },
+            {
+              "name": "poliwhirl",
+              "method": "rod",
+              "min_level": 15,
+              "max_level": 37,
+              "version": "both",
+              "rate": {
+                "no blocks": "--",
+                "2-5 waterside blocks": "--"
+              }
+            },
+            {
+              "name": "geodude",
+              "method": "walking",
+              "min_level": 45,
+              "max_level": 45,
+              "version": "both",
+              "rate": {
+                "3 peak blocks": {
+                  "morning": "--",
+                  "day": "--"
+                }
+              }
+            },
+            {
+              "name": "chansey",
+              "method": "walking",
+              "min_level": 42,
+              "max_level": 42,
+              "version": "both",
+              "rate": {
+                "12 plains blocks": "--"
+              }
+            },
+            {
+              "name": "smeargle",
+              "method": "walking",
+              "min_level": 17,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "morning": 10,
+                  "day": 10
+                },
+                "3 forest blocks": {
+                  "morning": 10,
+                  "day": 10
+                }
+              }
+            },
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 15,
+              "max_level": 24,
+              "version": "both",
+              "rate": {
+                "any rod": "--"
+              }
+            },
+            {
+              "name": "gyarados",
+              "method": "walking",
+              "min_level": 28,
+              "max_level": 45,
+              "version": "both",
+              "rate": {
+                "7-14 waterside blocks": {
+                  "good rod": "--",
+                  "super rod": "--"
+                }
+              }
+            },
+            {
+              "name": "marill",
+              "method": "multiple",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "walking": {
+                    "night": 20
+                  },
+                  "surfing": "--"
+                }
+              }
+            },
+            {
+              "name": "hoppip",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "morning": 30,
+                  "day": 30
+                }
+              }
+            },
+            {
+              "name": "skiploom",
+              "method": "multiple",
+              "min_level": 17,
+              "max_level": 47,
+              "version": "both",
+              "rate": {
+                "walking": {
+                  "no blocks": {
+                    "morning": 10,
+                    "day": 10
+                  },
+                  "8 forest blocks": "--"
+                },
+                "surfing": {
+                  "3 waterside blocks": "--"
+                }
+              }
+            },
+            {
+              "name": "sunkern",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "day": 20
+                }
+              }
+            },
+            {
+              "name": "wooper",
+              "method": "multiple",
+              "min_level": 17,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "walking": {
+                  "no blocks": {
+                    "night": 30
+                  },
+                  "3 waterside blocks": "--"
+                },
+                "surfing": "--"
+              }
+            },
+            {
+              "name": "seedot",
+              "method": "walking",
+              "min_level": 45,
+              "max_level": 45,
+              "version": "both",
+              "rate": {
+                "35 plains blocks": "--"
+              }
+            },
+            {
+              "name": "nuzleaf",
+              "method": "walking",
+              "min_level": 38,
+              "max_level": 47,
+              "version": "both",
+              "rate": {
+                "28 forest blocks": "--"
+              }
+            },
+            {
+              "name": "masquerain",
+              "method": "surfing",
+              "min_level": 42,
+              "max_level": 46,
+              "version": "both",
+              "rate": {
+                "10 waterside blocks": "--"
+              }
+            },
+            {
+              "name": "nosepass",
+              "method": "walking",
+              "min_level": 45,
+              "max_level": 45,
+              "version": "both",
+              "rate": {
+                "35 peak blocks": "--"
+              }
+            },
+            {
+              "name": "riolu",
+              "method": "walking",
+              "min_level": 45,
+              "max_level": 46,
+              "version": "both",
+              "rate": {
+                "42 peak blocks + 28 forest": "--"
+              }
+            }
+          ]
         }
       ]
     }
