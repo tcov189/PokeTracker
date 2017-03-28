@@ -7711,6 +7711,133 @@
               }
             }
           ]
+        },
+        {
+          "type": "desert",
+          "available_pokemon": [
+            {
+              "name": "fearow",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 44,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "night": 30
+                },
+                "3 plains blocks": 10,
+                "6 peak blocks": 10
+              }
+            },
+            {
+              "name": "sandshrew",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": 40
+              }
+            },
+            {
+              "name": "sandslash",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": 30
+            },
+            {
+              "name": "cubone",
+              "method": "walking",
+              "min_level": 16,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "morning": 20,
+                  "day": 20
+                }
+              }
+            },
+            {
+              "name": "marowak",
+              "method": "walking",
+              "min_level": 17,
+              "max_level": 41,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "morning": 10,
+                  "day": 10
+                },
+                "6 peak blocks": {
+                  "morning": 10,
+                  "day": 10
+                }
+              }
+            },
+            {
+              "name": "lotad",
+              "method": "walking",
+              "min_level": 38,
+              "max_level": 38,
+              "version": "both",
+              "rate": {
+                "8 waterside blocks": 10
+              }
+            },
+            {
+              "name": "trapinch",
+              "method": "walking",
+              "min_level": 46,
+              "max_level": 47,
+              "version": "both",
+              "rate": {
+                "50 peak blocks": ""
+              }
+            },
+            {
+              "name": "vibrava",
+              "method": "walking",
+              "min_level": 44,
+              "max_level": 45,
+              "version": "both",
+              "rate": {
+                "49 forest blocks": 10
+              }
+            },
+            {
+              "name": "cacnea",
+              "method": "walking",
+              "min_level": 35,
+              "max_level": 35,
+              "version": "both",
+              "rate": {
+                "35 forest blocks": 10
+              }
+            },
+            {
+              "name": "hippoptas",
+              "method": "walking",
+              "min_level": 43,
+              "max_level": 43,
+              "version": "both",
+              "rate": {
+                "28 peak blocks": 10
+              }
+            },
+            {
+              "name": "carnivine",
+              "method": "walking",
+              "min_level": 48,
+              "max_level": 48,
+              "version": "both",
+              "rate": {
+                "49 plains blocks": 10
+              }
+            }
+          ]
         }
       ]
     }
