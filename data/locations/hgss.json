@@ -7722,9 +7722,7 @@
               "max_level": 44,
               "version": "both",
               "rate": {
-                "no blocks": {
-                  "night": 30
-                },
+                "no blocks": 10,
                 "3 plains blocks": 10,
                 "6 peak blocks": 10
               }
@@ -7835,6 +7833,170 @@
               "version": "both",
               "rate": {
                 "49 plains blocks": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "plains",
+          "available_pokemon": [
+            {
+              "name": "rattata",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "night": 30
+                },
+                "morning": 30,
+                "day": 30
+              }
+            },
+            {
+              "name": "raticate",
+              "method": "walking",
+              "min_level": 16,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "night": 30
+                }
+              }
+            },
+            {
+              "name": "abra",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": 30
+              }
+            },
+            {
+              "name": "ponyta",
+              "method": "walking",
+              "min_level": 42,
+              "max_level": 42,
+              "version": "both",
+              "rate": {
+                "5 peak blocks": 10
+              }
+            },
+            {
+              "name": "girafarig",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "no blocks": 10,
+                "3 peak blocks": 10
+              }
+            },
+            {
+              "name": "houndoom",
+              "method": "walking",
+              "min_level": 43,
+              "max_level": 44,
+              "version": "both",
+              "rate": {
+                "10 peak blocks": 10
+              }
+            },
+            {
+              "name": "stantler",
+              "method": "walking",
+              "min_level": 17,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "night": 40
+                },
+                "3 plains blocks": {
+                  "night": 10
+                }
+              }
+            },
+            {
+              "name": "smeargle",
+              "method": "walking",
+              "min_level": 17,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "morning": 10,
+                  "day": 10
+                },
+                "3 forest blocks": {
+                  "morning": 10,
+                  "day": 10
+                }
+              }
+            },
+            {
+              "name": "zigzagoon",
+              "method": "walking",
+              "min_level": 44,
+              "max_level": 44,
+              "version": "both",
+              "rate": {
+                "15 forest blocks": 10
+              }
+            },
+            {
+              "name": "lotad",
+              "method": "walking",
+              "min_level": 42,
+              "max_level": 42,
+              "version": "both",
+              "rate": {
+                "12 waterside blocks": 10
+              }
+            },
+            {
+              "name": "surskit",
+              "method": "walking",
+              "min_level": 46,
+              "max_level": 46,
+              "version": "both",
+              "rate": {
+                "28 waterside blocks": 10
+              }
+            },
+            {
+              "name": "manectric",
+              "method": "walking",
+              "min_level": 45,
+              "max_level": 45,
+              "version": "both",
+              "rate": {
+                "12 plains blocks": 10
+              }
+            },
+            {
+              "name": "zangoose",
+              "method": "walking",
+              "min_level": 43,
+              "max_level": 45,
+              "version": "both",
+              "rate": {
+                "15 peak blocks": 10
+              }
+            },
+            {
+              "name": "shinx",
+              "method": "walking",
+              "min_level": 43,
+              "max_level": 44,
+              "version": "both",
+              "rate": {
+                "10 plains blocks": 10
               }
             }
           ]
