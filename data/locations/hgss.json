@@ -8251,6 +8251,163 @@
               }
             }
           ]
+        },
+        {
+          "type": "forest",
+          "available_pokemon": [
+            {
+              "name": "pidgey",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "morning": 20,
+                  "day": 20
+                }
+              }
+            },
+            {
+              "name": "bellsprout",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": 45
+              }
+            },
+            {
+              "name": "gastly",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "night": "--"
+                }
+              }
+            },
+            {
+              "name": "haunter",
+              "method": "walking",
+              "min_level": 16,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "night": "--"
+                }
+              }
+            },
+            {
+              "name": "lickitung",
+              "method": "walking",
+              "min_level": 40,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "3 waterside blocks": "--"
+              }
+            },
+            {
+              "name": "mr. mime",
+              "method": "walking",
+              "min_level": 16,
+              "max_level": 45,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "morning": 15,
+                  "day": 15
+                },
+                "3 plains blocks": 15
+              }
+            },
+            {
+              "name": "electabuzz",
+              "method": "walking",
+              "min_level": 41,
+              "max_level": 41,
+              "version": "both",
+              "rate": {
+                "4 peak blocks": "--"
+              }
+            },
+            {
+              "name": "mesdreavus",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 42,
+              "version": "both",
+              "rate": {
+                "no blocks": 15,
+                "4 forest blocks": 15
+              }
+            },
+            {
+              "name": "surskit",
+              "method": "walking",
+              "min_level": 42,
+              "max_level": 42,
+              "version": "both",
+              "rate": {
+                "24 waterside blocks": "--"
+              }
+            },
+            {
+              "name": "shuppet",
+              "method": "walking",
+              "min_level": 46,
+              "max_level": 46,
+              "version": "both",
+              "rate": {
+                "35 forest blocks": "--"
+              }
+            },
+            {
+              "name": "beldum",
+              "method": "walking",
+              "min_level": 44,
+              "max_level": 44,
+              "version": "both",
+              "rate": {
+                "63 peak blocks": "--"
+              }
+            },
+            {
+              "name": "bidoof",
+              "method": "walking",
+              "min_level": 40,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "10 waterside blocks": "--"
+              }
+            },
+            {
+              "name": "budew",
+              "method": "walking",
+              "min_level": 47,
+              "max_level": 47,
+              "version": "both",
+              "rate": {
+                "24 plains blocks": "--"
+              }
+            },
+            {
+              "name": "bronzong",
+              "method": "walking",
+              "min_level": 45,
+              "max_level": 45,
+              "version": "both",
+              "rate": {
+                "56 peak blocks + 35 forest blocks": "--"
+              }
+            }
+          ]
         }
       ]
     }
