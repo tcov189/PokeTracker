@@ -8628,7 +8628,7 @@
               }
             },
             {
-              "name": "chimecho",
+              "name": "chimeco",
               "method": "walking",
               "min_level": 46,
               "max_level": 47,
@@ -8665,6 +8665,293 @@
               "version": "both",
               "rate": {
                 "10 waterside blocks": "--"
+              }
+            }
+          ]
+        },
+        {
+          "type": "marshland",
+          "available_pokemon": [
+            {
+              "name": "ekans",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "morning": 20,
+                  "day": 20
+                }
+              }
+            },
+            {
+              "name": "arbok",
+              "method": "walking",
+              "min_level": 17,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "morning": 10,
+                  "day": 10
+                }
+              }
+            },
+            {
+              "name": "oddish",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "night": "--"
+                }
+              }
+            },
+            {
+              "name": "gloom",
+              "method": "walking",
+              "min_level": 16,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "night": "--"
+                },
+                "2 plains blocks": {
+                  "night": "--"
+                }
+              }
+            },
+            {
+              "name": "diglett",
+              "method": "walking",
+              "min_level": 43,
+              "max_level": 43,
+              "version": "both",
+              "rate": {
+                "5 peak blocks": "--"
+              }
+            },
+            {
+              "name": "poliwag",
+              "method": "multiple",
+              "min_level": 12,
+              "max_level": 18,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "old rod": "--",
+                  "surf": "--"
+                },
+                "2-3 waterside blocks": {
+                  "old rod": "--"
+                }
+              }
+            },
+            {
+              "name": "poliwhirl",
+              "method": "rod",
+              "min_level": 22,
+              "max_level": 37,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "good rod": 25,
+                  "super rod": "--"
+                }
+              }
+            },
+            {
+              "name": "grimer",
+              "method": "multiple",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "walking": {
+                    "morning": "--",
+                    "day": "--"
+                  },
+                  "surfing": "--"
+                }
+              }
+            },
+            {
+              "name": "muk",
+              "method": "multiple",
+              "min_level": 38,
+              "max_level": 48,
+              "version": "both",
+              "rate": {
+                "8-16 waterside blocks": {
+                  "walking": "--",
+                  "surfing": "--"
+                }
+              }
+            },
+            {
+              "name": "koffing",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": "--"
+              }
+            },
+            {
+              "name": "weezing",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "morning": "--",
+                  "day": "--"
+                }
+              }
+            },
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 12,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "old rod": 100,
+                  "good rod": 75
+                }
+              }
+            },
+            {
+              "name": "gyarados",
+              "method": "rod",
+              "min_level": 28,
+              "max_level": 37,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "super rod": "--"
+                },
+                "3-4 waterside blocks": {
+                  "good rod": "--"
+                }
+              }
+            },
+            {
+              "name": "jumpluff",
+              "method": "multiple",
+              "min_level": 38,
+              "max_level": 47,
+              "version": "both",
+              "rate": {
+                "walking": {
+                  "5 plains blocks": "--"
+                },
+                "surfing": {
+                  "10 waterside blocks": "--"
+                }
+              }
+            },
+            {
+              "name": "wooper",
+              "method": "multiple",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "walking": "--",
+                  "surf": "--"
+                }
+              }
+            },
+            {
+              "name": "quagsire",
+              "method": "surf",
+              "min_level": 43,
+              "max_level": 43,
+              "version": "both",
+              "rate": {
+                "13 waterside blocks": "--"
+              }
+            },
+            {
+              "name": "shuckle",
+              "method": "walking",
+              "min_level": 44,
+              "max_level": 44,
+              "version": "both",
+              "rate": {
+                "8 peak blocks": "--"
+              }
+            },
+            {
+              "name": "roselia",
+              "method": "walking",
+              "min_level": 46,
+              "max_level": 46,
+              "version": "both",
+              "rate": {
+                "49 forest blocks": "--"
+              }
+            },
+            {
+              "name": "seviper",
+              "method": "walking",
+              "min_level": 47,
+              "max_level": 47,
+              "version": "both",
+              "rate": {
+                "35 plains blocks": "--"
+              }
+            },
+            {
+              "name": "barboach",
+              "method": "rod",
+              "min_level": 42,
+              "max_level": 45,
+              "version": "both",
+              "rate": {
+                "4-5 waterside blocks": {
+                  "super rod": "--"
+                }
+              }
+            },
+            {
+              "name": "banette",
+              "method": "walking",
+              "min_level": 44,
+              "max_level": 44,
+              "version": "both",
+              "rate": {
+                "49 peak blocks": "--"
+              }
+            },
+            {
+              "name": "croagunk",
+              "method": "walking",
+              "min_level": 44,
+              "max_level": 44,
+              "version": "both",
+              "rate": {
+                "42 forest blocks": "--"
+              }
+            },
+            {
+              "name": "carnivine",
+              "method": "walking",
+              "min_level": 41,
+              "max_level": 41,
+              "version": "both",
+              "rate": {
+                "35 forest blocks": "--"
               }
             }
           ]
