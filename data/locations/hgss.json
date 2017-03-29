@@ -8408,6 +8408,266 @@
               }
             }
           ]
+        },
+        {
+          "type": "swamp",
+          "available_pokemon": [
+            {
+              "name": "jigglypuff",
+              "method": "walking",
+              "min_level": 16,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "morning": 40,
+                  "day": 40
+                }
+              }
+            },
+            {
+              "name": "paras",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "morning": 20,
+                  "day": 20
+                }
+              }
+            },
+            {
+              "name": "parasect",
+              "method": "walking",
+              "min_level": 41,
+              "max_level": 41,
+              "version": "both",
+              "rate": {
+                "3 plains blocks": "--"
+              }
+            },
+            {
+              "name": "weepinbell",
+              "method": "walking",
+              "min_level": 46,
+              "max_level": 46,
+              "version": "both",
+              "rate": {
+                "8 forest blocks": 22.41
+              }
+            },
+            {
+              "name": "drowzee",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "night": "--"
+                }
+              }
+            },
+            {
+              "name": "hypno",
+              "method": "walking",
+              "min_level": 16,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "night": "--"
+                }
+              }
+            },
+            {
+              "name": "voltorb",
+              "method": "walking",
+              "min_level": 42,
+              "max_level": 42,
+              "version": "both",
+              "rate": {
+                "10 peak blocks": "--"
+              }
+            },
+            {
+              "name": "goldeen",
+              "method": "multiple",
+              "min_level": 22,
+              "max_level": 24,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "rod": {
+                    "good rod": 30,
+                    "super rod": 50
+                  },
+                  "surfing": 50
+                },
+                "3 waterside blocks": "--"
+              }
+            },
+            {
+              "name": "seaking",
+              "method": "multiple",
+              "min_level": 22,
+              "max_level": 42,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "rod": {
+                    "good rod": 30,
+                    "super rod": 30
+                  }
+                },
+                "3-6 waterside blocks": {
+                  "rod": {
+                    "good rod": "--",
+                    "super rod": "--"
+                  },
+                  "surfing": "--"
+                }
+              }
+            },
+            {
+              "name": "dratini",
+              "method": "multiple",
+              "min_level": 29,
+              "max_level": 37,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "super rod": 20
+                },
+                "10 waterside blocks": {
+                  "good rod": ""
+                }
+              }
+            },
+            {
+              "name": "dragonair",
+              "method": "rod",
+              "min_level": 42,
+              "max_level": 45,
+              "version": "both",
+              "rate": {
+                "15 - 20 waterside blocks": {
+                  "good rod": "--",
+                  "super rod": "--"
+                }
+              }
+            },
+            {
+              "name": "magikarp",
+              "method": "multiple",
+              "min_level": 12,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": {
+                  "old rod": 100,
+                  "good rod": 50,
+                  "surf": 50
+                }
+              }
+            },
+            {
+              "name": "sentret",
+              "method": "walking",
+              "min_level": 15,
+              "max_level": 17,
+              "version": "both",
+              "rate": {
+                "no blocks": 30
+              }
+            },
+            {
+              "name": "furret",
+              "method": "walking",
+              "min_level": 42,
+              "max_level": 42,
+              "version": "both",
+              "rate": {
+                "5 plains blocks": "--"
+              }
+            },
+            {
+              "name": "murkrow",
+              "method": "multiple",
+              "min_level": 15,
+              "max_level": 47,
+              "version": "both",
+              "rate": {
+                "walking": {
+                  "no blocks": "--",
+                  "5 forest": {
+                    "morning": 13.79,
+                    "day": 13.79
+                  }
+                },
+                "surf": {
+                  "10 waterside blocks": "--"
+                }
+              }
+            },
+            {
+              "name": "duskull",
+              "method": "multiple",
+              "min_level": 38,
+              "max_level": 48,
+              "version": "both",
+              "rate": {
+                "walking": {
+                  "28 peak blocks": ""
+                },
+                "surfing": {
+                  "10 waterside blocks": ""
+                }
+              }
+            },
+            {
+              "name": "chimeco",
+              "method": "walking",
+              "min_level": 46,
+              "max_level": 47,
+              "version": "both",
+              "rate": {
+                "15 forest blocks": 22.41
+              }
+            },
+            {
+              "name": "bagon",
+              "method": "walking",
+              "min_level": 35,
+              "max_level": 45,
+              "version": "both",
+              "rate": {
+                "56 peak + 35 forest blocks": 22.41
+              }
+            },
+            {
+              "name": "pachirisu",
+              "method": "walking",
+              "min_level": 47,
+              "max_level": 47,
+              "version": "both",
+              "rate": {
+                "10 plains blocks": "--"
+              }
+            },
+            {
+              "name": "floatzel",
+              "method": "walking",
+              "min_level": 44,
+              "max_level": 44,
+              "version": "both",
+              "rate": {
+                "10 waterside blocks": "--"
+              }
+            }
+          ]
         }
       ]
     }
