@@ -10702,6 +10702,223 @@
           ]
         }
       ]
+    },
+    {
+      "name": "whirl islands",
+      "exits": {
+        "south": "route 41"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "zubat",
+              "method": "cave",
+              "min_level": 23,
+              "max_level": 24,
+              "version": "both",
+              "rate": {
+                "1f-b1f": 30,
+                "b2f": 30,
+                "b3f": 30
+              }
+            },
+            {
+              "name": "golbat",
+              "method": "cave",
+              "min_level": 23,
+              "max_level": 24,
+              "version": "both",
+              "rate": {
+                "1f-b1f": 5,
+                "b2f": 5,
+                "b3f": 5
+              }
+            },
+            {
+              "name": "seel",
+              "method": "cave",
+              "min_level": 22,
+              "max_level": 24,
+              "version": "both",
+              "rate": {
+                "1f-b1f": 15,
+                "b2f": 15,
+                "b3f": 15
+              }
+            },
+            {
+              "name": "krabby",
+              "method": "cave",
+              "min_level": 22,
+              "max_level": 24,
+              "version": "both",
+              "rate": {
+                "1f-b1f": 50,
+                "b2f": 50,
+                "b3f": 50
+              }
+            }
+          ]
+        },
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "tentacool",
+              "method": "water",
+              "min_level": 15,
+              "max_level": 25,
+              "version": "both",
+              "rate": {
+                "1f-b1f": 60
+              }
+            },
+            {
+              "name": "tentacruel",
+              "method": "water",
+              "min_level": 15,
+              "max_level": 25,
+              "version": "both",
+              "rate": {
+                "1f-b1f": 10,
+                "b2f": 30
+              }
+            },
+            {
+              "name": "horsea",
+              "method": "water",
+              "min_level": 15,
+              "max_level": 25,
+              "version": "both",
+              "rate": {
+                "1f-b1f": 30,
+                "b2f": 60
+              }
+            },
+            {
+              "name": "seadra",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 30,
+              "version": "both",
+              "rate": {
+                "b2f": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "krabby",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 5,
+                "good rod": 37,
+                "super rod": 60
+              }
+            },
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 20,
+              "version": "both",
+              "rate": {
+                "old rod": 95,
+                "good rod": 60
+              }
+            },
+            {
+              "name": "horsea",
+              "method": "rod",
+              "min_level": 20,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "good rod": 3,
+                "super rod": 30
+              }
+            },
+            {
+              "name": "seadra",
+              "method": "rod",
+              "min_level": 40,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "super rod": 3
+              }
+            },
+            {
+              "name": "kingler",
+              "method": "rod",
+              "min_level": 40,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "super rod": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "available_pokemon": [
+            {
+              "name": "makuhita",
+              "method": "hoenn sound",
+              "min_level": 24,
+              "max_level": 25,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "absol",
+              "method": "hoenn sound",
+              "min_level": 22,
+              "max_level": 23,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "chingling",
+              "method": "sinnoh sound",
+              "min_level": 24,
+              "max_level": 25,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "bronzor",
+              "method": "sinnoh sound",
+              "min_level": 22,
+              "max_level": 24,
+              "version": "both",
+              "rate": 20
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "lugia",
+              "method": "static",
+              "min_level": 45,
+              "max_level": "70(hg)",
+              "version": "both",
+              "rate": "one"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
