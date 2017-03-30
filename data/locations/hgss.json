@@ -10564,6 +10564,14 @@
           "type": "surfing",
           "available_pokemon": [
             {
+              "name": "poliwag",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 30,
+              "version": "both",
+              "rate": 90
+            },
+            {
               "name": "poliwhirl",
               "method": "water",
               "min_level": 15,
