@@ -10075,6 +10075,153 @@
           ]
         }
       ]
+    },
+    {
+      "name": "slowpoke well",
+      "exits": {
+        "south": "azaelea town"
+      },
+      "encounters": [
+        {
+          "type": "cave",
+          "available_pokemon": [
+            {
+              "name": "zubat",
+              "method": "walking",
+              "min_level": 5,
+              "max_level": 23,
+              "version": "both",
+              "rate": {
+                "b1f": 85,
+                "b2f": 80
+              }
+            },
+            {
+              "name": "slowpoke",
+              "method": "walking",
+              "min_level": 6,
+              "max_level": 23,
+              "version": "both",
+              "rate": {
+                "b1f": 15,
+                "b2f": 15
+              }
+            },
+            {
+              "name": "golbat",
+              "method": "walking",
+              "min_level": 23,
+              "max_level": 23,
+              "version": "both",
+              "rate": {
+                "b2f": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "slowpoke",
+              "method": "surfing",
+              "min_level": 5,
+              "max_level": 25,
+              "version": "both",
+              "rate": {
+                "b1f": 100,
+                "b2f": 90
+              }
+            },
+            {
+              "name": "slowbro",
+              "method": "surfing",
+              "min_level": 15,
+              "max_level": 30,
+              "version": "both",
+              "rate": {
+                "b2f": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "goldeen",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 5,
+                "good rod": 40,
+                "super rod": 90
+              }
+            },
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 95,
+                "good rod": 60,
+                "super rod": 7
+              }
+            },
+            {
+              "name": "seaking",
+              "method": "rod",
+              "min_level": 40,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "super rod": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "available_pokemon": [
+            {
+              "name": "makuhita",
+              "method": "hoeen sound",
+              "min_level": 7,
+              "max_level": 19,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "absol",
+              "method": "hoenn sound",
+              "min_level": 5,
+              "max_level": 23,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "chingling",
+              "method": "sinnoh sound",
+              "min_level": 7,
+              "max_level": 19,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "bronzor",
+              "method": "sinnoh sound",
+              "min_level": 5,
+              "max_level": 23,
+              "version": "both",
+              "rate": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
