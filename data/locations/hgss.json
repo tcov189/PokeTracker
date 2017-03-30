@@ -10919,6 +10919,157 @@
           ]
         }
       ]
+    },
+    {
+      "name": "route 1",
+      "exits": {
+        "north": "veridian city",
+        "south": "pallet town"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "pidgey",
+              "method": "grass",
+              "min_level": 2,
+              "max_level": 4,
+              "version": "both",
+              "rate": {
+                "morning": 55,
+                "day": 55
+              }
+            },
+            {
+              "name": "sentret",
+              "method": "grass",
+              "min_level": 3,
+              "max_level": 3,
+              "version": "both",
+              "rate": {
+                "morning": 20,
+                "day": 20
+              }
+            },
+            {
+              "name": "furret",
+              "method": "grass",
+              "min_level": 6,
+              "max_level": 6,
+              "version": "both",
+              "rate": {
+                "morning": 5,
+                "day": 5
+              }
+            },
+            {
+              "name": "rattata",
+              "method": "grass",
+              "min_level": 2,
+              "max_level": 6,
+              "version": "both",
+              "rate": {
+                "morning": 30,
+                "day": 30,
+                "night": 65
+              }
+            },
+            {
+              "name": "hoothoot",
+              "method": "grass",
+              "min_level": 2,
+              "max_level": 4,
+              "version": "both",
+              "rate": {
+                "night": 45
+              }
+            },
+            {
+              "name": "poocheyna",
+              "method": "swarm",
+              "min_level": 2,
+              "max_level": 2,
+              "version": "both",
+              "rate": 40
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "available_pokemon": [
+            {
+              "name": "plusle",
+              "method": "hoenn sound",
+              "min_level": 2,
+              "max_level": 2,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "minun",
+              "method": "hoenn sound",
+              "min_level": 3,
+              "max_level": 3,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "shinx",
+              "method": "sinnoh sound",
+              "min_level": 2,
+              "max_level": 3,
+              "version": "both",
+              "rate": 40
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "hoothoot",
+              "method": "headbutt",
+              "min_level": 2,
+              "max_level": 6,
+              "version": "both",
+              "rate": 50
+            },
+            {
+              "name": "ledyba",
+              "method": "headbutt",
+              "min_level": 5,
+              "max_level": 6,
+              "version": "ss",
+              "rate": 30
+            },
+            {
+              "name": "spinarak",
+              "method": "headbutt",
+              "min_level": 5,
+              "max_level": 6,
+              "version": "hg",
+              "rate": 30
+            },
+            {
+              "name": "pineco",
+              "method": "headbutt",
+              "min_level": 2,
+              "max_level": 3,
+              "version": "both",
+              "rate": 10
+            },
+            {
+              "name": "wurmple",
+              "method": "headbutt",
+              "min_level": 5,
+              "max_level": 6,
+              "version": "both",
+              "rate": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
