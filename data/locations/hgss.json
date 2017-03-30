@@ -10553,6 +10553,147 @@
           ]
         }
       ]
+    },
+    {
+      "name": "violet city",
+      "exits": {
+        "south": "violet city"
+      },
+      "encounters": [
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "poliwhirl",
+              "method": "water",
+              "min_level": 15,
+              "max_level": 32,
+              "version": "both",
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "poliwag",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 5,
+                "good rod": 60,
+                "super rod": 93
+              }
+            },
+            {
+              "name": "magikarp",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": 95,
+                "good rod": 40,
+                "super rod": 7
+              }
+            },
+            {
+              "name": "whiscash",
+              "method": "swarm",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "old rod": "--",
+                "good rod": "--",
+                "super rod": 100
+              }
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "exeggcute",
+              "method": "headbutt",
+              "min_level": 10,
+              "max_level": 10,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "hoothoot",
+              "method": "headbutt",
+              "min_level": 2,
+              "max_level": 10,
+              "version": "both",
+              "rate": 50
+            },
+            {
+              "name": "pineco",
+              "method": "headbutt",
+              "min_level": 10,
+              "max_level": 10,
+              "version": "both",
+              "rate": 30
+            }
+          ]
+        },
+        {
+          "type": "gift",
+          "available_pokemon": [
+            {
+              "name": "togepi",
+              "method": "professor's aide",
+              "min_level": 1,
+              "max_level": 1,
+              "version": "both",
+              "rate": "one"
+            },
+            {
+              "name": "mareep",
+              "method": "primo",
+              "min_level": 1,
+              "max_level": 1,
+              "version": "both",
+              "rate": "one"
+            },
+            {
+              "name": "wooper",
+              "method": "primo",
+              "min_level": 1,
+              "max_level": 1,
+              "version": "both",
+              "rate": "one"
+            },
+            {
+              "name": "slugma",
+              "method": "primo",
+              "min_level": 1,
+              "max_level": 1,
+              "version": "both",
+              "rate": "one"
+            }
+          ]
+        },
+        {
+          "type": "trade",
+          "available_pokemon": [
+            {
+              "name": "onix",
+              "method": "bellsprout",
+              "min_level": "same as traded",
+              "max_level": "same as traded",
+              "version": "both",
+              "rate": null
+            }
+          ]
+        }
+      ]
     }
   ]
 }
