@@ -10028,6 +10028,53 @@
           ]
         }
       ]
+    },
+    {
+      "name": "shining lighthouse",
+      "exits": {
+        "south": "olivine city"
+      },
+      "encounters": null
+    },
+    {
+      "name": "sinjoh ruins",
+      "exits": {
+        "access to": [
+          "new bark town",
+          "ruins of alph"
+        ]
+      },
+      "encounters": [
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "dialga",
+              "method": "static",
+              "min_level": 1,
+              "max_level": 1,
+              "version": "both",
+              "rate": "one"
+            },
+            {
+              "name": "palkia",
+              "method": "static",
+              "min_level": 1,
+              "max_level": 1,
+              "version": "both",
+              "rate": "one"
+            },
+            {
+              "name": "giratina",
+              "method": "static",
+              "min_level": 1,
+              "max_level": 1,
+              "version": "both",
+              "rate": "one"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
