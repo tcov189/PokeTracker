@@ -9974,6 +9974,60 @@
           ]
         }
       ]
+    },
+    {
+      "name": "safari zone gate",
+      "exits": {
+        "south": "route 48",
+        "north": "safari zone"
+      },
+      "encounters": [
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "exeggcute",
+              "method": "headbutt",
+              "min_level": 15,
+              "max_level": 18,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "hoothoot",
+              "method": "headbutt",
+              "min_level": 15,
+              "max_level": 18,
+              "version": "both",
+              "rate": 50
+            },
+            {
+              "name": "ledyba",
+              "method": "headbutt",
+              "min_level": 15,
+              "max_level": 18,
+              "version": "ss",
+              "rate": 30
+            },
+            {
+              "name": "spinarak",
+              "method": "headbutt",
+              "min_level": 15,
+              "max_level": 18,
+              "version": "hg",
+              "rate": 30
+            },
+            {
+              "name": "pineco",
+              "method": "headbutt",
+              "min_level": 15,
+              "max_level": 18,
+              "version": "both",
+              "rate": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
