@@ -10189,7 +10189,7 @@
           "available_pokemon": [
             {
               "name": "makuhita",
-              "method": "hoeen sound",
+              "method": "hoenn sound",
               "min_level": 7,
               "max_level": 19,
               "version": "both",
@@ -10253,16 +10253,6 @@
               "rate": {
                 "night": 85
               }
-            },
-            {
-              "name": "golbat",
-              "method": "walking",
-              "min_level": 23,
-              "max_level": 23,
-              "version": "both",
-              "rate": {
-                "b2f": 5
-              }
             }
           ]
         },
@@ -10271,7 +10261,7 @@
           "available_pokemon": [
             {
               "name": "zigzagoon",
-              "method": "hoeen sound",
+              "method": "hoenn sound",
               "min_level": 3,
               "max_level": 4,
               "version": "both",
@@ -10304,6 +10294,16 @@
           ]
         }
       ]
+    },
+    {
+      "name": "SS aqua",
+      "exits": {
+        "acess to": [
+          "olivine city",
+          "vermillion city"
+        ]
+      },
+      "encounters": null
     }
   ]
 }
