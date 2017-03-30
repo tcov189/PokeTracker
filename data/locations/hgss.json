@@ -10222,6 +10222,88 @@
           ]
         }
       ]
+    },
+    {
+      "name": "sprout tower",
+      "exits": {
+        "south": "violet city"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "rattata",
+              "method": "walking",
+              "min_level": 3,
+              "max_level": 6,
+              "version": "both",
+              "rate": {
+                "morning": 100,
+                "day": 100,
+                "night": 15
+              }
+            },
+            {
+              "name": "gastly",
+              "method": "walking",
+              "min_level": 3,
+              "max_level": 6,
+              "version": "both",
+              "rate": {
+                "night": 85
+              }
+            },
+            {
+              "name": "golbat",
+              "method": "walking",
+              "min_level": 23,
+              "max_level": 23,
+              "version": "both",
+              "rate": {
+                "b2f": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "available_pokemon": [
+            {
+              "name": "zigzagoon",
+              "method": "hoeen sound",
+              "min_level": 3,
+              "max_level": 4,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "meditite",
+              "method": "hoenn sound",
+              "min_level": 5,
+              "max_level": 5,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "spinda",
+              "method": "hoenn sound",
+              "min_level": 5,
+              "max_level": 5,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "chatot",
+              "method": "sinnoh sound",
+              "min_level": 3,
+              "max_level": 4,
+              "version": "both",
+              "rate": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
