@@ -10304,6 +10304,255 @@
         ]
       },
       "encounters": null
+    },
+    {
+      "name": "union cave",
+      "exits": {
+        "north": "route 32",
+        "south": "route 33",
+        "access to": "ruins of alph"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "rattata",
+              "method": "cave",
+              "min_level": 4,
+              "max_level": 20,
+              "version": "both",
+              "rate": {
+                "1f": {
+                  "hg": 10,
+                  "ss": 40
+                },
+                "b1f": {
+                  "hg": 5,
+                  "ss": 35
+                },
+                "b2f": 5
+              }
+            },
+            {
+              "name": "sandshrew",
+              "method": "cave",
+              "min_level": 6,
+              "max_level": 8,
+              "version": "hg",
+              "rate": {
+                "1f": 30,
+                "b1f": 30
+              }
+            },
+            {
+              "name": "zubat",
+              "method": "cave",
+              "min_level": 5,
+              "max_level": 23,
+              "version": "both",
+              "rate": {
+                "1f": 25,
+                "b1f": 25,
+                "b2f": 30
+              }
+            },
+            {
+              "name": "geodude",
+              "method": "cave",
+              "min_level": 6,
+              "max_level": 21,
+              "version": "both",
+              "rate": {
+                "1f": 30,
+                "b1f": 10,
+                "b2f": 10
+              }
+            },
+            {
+              "name": "onix",
+              "method": "cave",
+              "min_level": 6,
+              "max_level": 23,
+              "version": "both",
+              "rate": {
+                "1f": 5,
+                "b1f": 10,
+                "b2f": 5
+              }
+            },
+            {
+              "name": "golbat",
+              "method": "cave",
+              "min_level": 22,
+              "max_level": 22,
+              "version": "both",
+              "rate": {
+                "b2f": 20
+              }
+            }
+          ]
+        },
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "wooper",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 20,
+              "version": "both",
+              "rate": {
+                "1f": 60,
+                "b1f": 60
+              }
+            },
+            {
+              "name": "quagsire",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 25,
+              "version": "both",
+              "rate": {
+                "1f": 40,
+                "b1f": 40,
+                "b2f": 30
+              }
+            },
+            {
+              "name": "tentacool",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 20,
+              "version": "both",
+              "rate": {
+                "b2f": 60
+              }
+            },
+            {
+              "name": "tentacruel",
+              "method": "water",
+              "min_level": 15,
+              "max_level": 25,
+              "version": "both",
+              "rate": {
+                "b2f": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "rod",
+          "available_pokemon": [
+            {
+              "name": "goldeen",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "1f, b1f": {
+                  "old rod": 5,
+                  "good rod": 40,
+                  "super rod": 90
+                }
+              }
+            },
+            {
+              "name": "magikarp",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "1f, b1f": {
+                  "old rod": 95,
+                  "good rod": 60,
+                  "super rod": 7
+                },
+                "b2f": {
+                  "old rod": 95,
+                  "good rod": 37
+                }
+              }
+            },
+            {
+              "name": "seaking",
+              "method": "water",
+              "min_level": 40,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "b2f": {
+                  "super rod": 3
+                }
+              }
+            },
+            {
+              "name": "seaking",
+              "method": "water",
+              "min_level": 40,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "1f, b1f": {
+                  "super rod": 3
+                }
+              }
+            },
+            {
+              "name": "krabby",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "b2f": {
+                  "old rod": 5,
+                  "great rod": 60,
+                  "super rod": 37
+                }
+              }
+            },
+            {
+              "name": "staryu",
+              "method": "water",
+              "min_level": 20,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "b2f": {
+                  "great rod": {
+                    "night": 3
+                  },
+                  "super rod": {
+                    "night": 30
+                  }
+                }
+              }
+            },
+            {
+              "name": "corsola",
+              "method": "water",
+              "min_level": 20,
+              "max_level": 40,
+              "version": "both",
+              "rate": {
+                "b2f": {
+                  "great rod": {
+                    "morning": 3,
+                    "day": 3
+                  },
+                  "super rod": {
+                    "morning": 30,
+                    "day": 30
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
