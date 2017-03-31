@@ -30,34 +30,40 @@ $.each(locationData.locations, function (direction, loc_name){
     }
 })
     
-//Merging Data
-var encounterArray = [];
 
-$.each(currentLocationData.encounters, function (i, encounters){
-    $.each(encounters.available_pokemon, function (i,val){
-      encounterArray.push(val);  
-    })    
-});
-
-//Attempt at cleaner merge of data
-function mergeArray(pokemon, index) {
-    function findPokemon (nationalPokemon){
-        return nationalPokemon.name == pokemon.name;
-    }
+function generateHtml() {
     
-    var match = nationalDexData.find(findPokemon);
-    var type = match.type;
-    pokemon["type"] = type;    
-}
-
-encounterArray.forEach(mergeArray);
-
-function sortByKey(array, key) {
-    return array.sort(function(a, b) {
-        var x = a[key]; var y = b[key];
-        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+    //Merging Data
+    var encounterArray = [];
+    
+    //Loop through all available encounters and put them into an array
+    $.each(currentLocationData.encounters, function (i, encounters){
+        $.each(encounters.available_pokemon, function (i,val){
+          encounterArray.push(val);  
+        })    
     });
-}
+
+    //Function for merging data
+    function mergeArray(pokemon, index) {
+        function findPokemon (nationalPokemon){
+            return nationalPokemon.name == pokemon.name;
+        }
+
+        var match = nationalDexData.find(findPokemon);
+        var type = match.type;
+        pokemon["type"] = type;    
+    }
+
+    encounterArray.forEach(mergeArray);
+
+    function sortByKey(array, key) {
+        return array.sort(function(a, b) {
+            var x = a[key]; var y = b[key];
+            return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        });
+    }
+
+
 
 
 //Populate the HTML                                        
@@ -221,3 +227,4 @@ if (currentLocationData.encounters == null) {
 localStorage.setItem('current_location', currentLocationData.name);
 
 console.log(currentLocationData);
+}

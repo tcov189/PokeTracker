@@ -245,7 +245,7 @@ module.exports = function(grunt) {
     grunt.registerTask('css_build_dev', ['dist_css_clean_dir', 'css_clean_dir','less_review', 'less_compile', 'css_reorg', 'css_min', 'css_copy_dev']);
     
     grunt.registerTask('js_build_prod', ['dist_scripts_clean_dir', 'scripts_clean_dir', 'js_review', 'js_concat', 'js_uglify', 'scripts_copy_prod', 'jquery_copy']);
-    grunt.registerTask('js_build_dev', ['dist_scripts_clean_dir', 'scripts_clean_dir', 'js_review', 'js_concat', 'scripts_copy_dev', 'jquery_copy']);
+    grunt.registerTask('js_build_dev', ['dist_scripts_clean_dir', 'scripts_clean_dir', 'js_concat', 'scripts_copy_dev', 'jquery_copy']);
     
     grunt.registerTask('build_prod', ['css_build_prod', 'js_build_prod'])
     grunt.registerTask('build_dev', ['css_build_dev', 'js_build_dev']);

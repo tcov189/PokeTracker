@@ -81,13 +81,16 @@
 <script src="src/js/load_data.js"></script>
 <script src="src/js/generate_html.js"></script>
 <script>
-    //Pokeball click functionality
+    //Generate Html starting function
+    $().ready(function(){
+       generateHtml(); 
+    });
     
     //Set new current location to button click
-    $('.button_route').on('click', function(){
+    $('body').on('click', '.button_route', function(){
         newLocation = $(this).text();
         localStorage.setItem('current_location', newLocation);
-        window.location.reload();
+        generateHtml();
     })
 
     
@@ -119,7 +122,7 @@
     function selectChangeRoute (){
         var locationInfo = $('select').val();
         localStorage.setItem("current_location", locationInfo);
-        location.reload();
+        generateHtml();
     }
     
     $('.route-select').on('change', function(){
