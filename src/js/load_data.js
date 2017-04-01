@@ -34,31 +34,33 @@ function loadDataIntoLocalStorage (r_dex, n_dex, gameVersion) {
         url: 'data/pokedexes/' + r_dex,
         async: false,
         success: function(data){
-            var data = JSON.stringify(data);
             localStorage.setItem('regional_dex', data);
         }
     });
-    
+
     //Get National Dex
     $.ajax({
         url: 'data/pokedexes/' + n_dex,
         async: false,
         success: function(data){
-            var data = JSON.stringify(data);
             localStorage.setItem('national_dex', data)
         }
     });
-    
+
     //Get National Dex
     $.ajax({
         url: 'data/locations/' + gameVersion +'.json',
         async: false,
         success: function(data){
-            localStorage.setItem('region', data.name);
-            var data = JSON.stringify(data);            
+            localStorage.setItem('region', data.name);                 
             localStorage.setItem('locations', data);
         }
     });
 }
 
 loadDataIntoLocalStorage(regionalDex, nationalDex, gameVersionGroup);
+ 
+//Set vars from data from localStorage
+regionalDexData     = JSON.parse(localStorage.getItem('regional_dex'));
+nationalDexData     = JSON.parse(localStorage.getItem('national_dex'));
+locationData        = JSON.parse(localStorage.getItem('locations'));
