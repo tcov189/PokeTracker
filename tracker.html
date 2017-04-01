@@ -4,7 +4,7 @@
         <title>PokeTracker - Home</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
-        <meta name="description" content="Use Nuztracker to keep track of all of your Pokemon!" />
+        <meta name="description" content="Use PokeTracker to keep track of all of your Pokemon!" />
         <meta name="author" content="Trevor Covington" />
         <meta name="author" content="tcovington189@gmail.com" />
         <meta name="application-name" content="PokeTracker" />
@@ -94,7 +94,7 @@
     })
 
     
-    $('.block-encounters-pokemon').on('click', 'i.card_pokemon-pokeball-icon', function(){        
+    $('body').on('click', 'i.card_pokemon-pokeball-icon', function(){        
         var pokemonCaught = $(this).attr('id');
         $('i.card_pokemon-pokeball-icon#'+ pokemonCaught).toggleClass('caught');
         pkmnCaughtData = JSON.parse(localStorage.getItem('pokemon_caught'));
@@ -119,7 +119,7 @@
     })
     
     //Route selector
-    function selectChangeRoute (){
+    function selectChangeRoute(){
         var locationInfo = $('select').val();
         localStorage.setItem("current_location", locationInfo);
         generateHtml();

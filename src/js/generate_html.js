@@ -5,29 +5,46 @@ $('.header-game-block img').addClass('header-game-icon__'+ gameVersionGroup).att
 
 $('.header-game-block span').text(gameVersion)
 
-
-//Get last visited location
-var lastLocation = localStorage.getItem('current_location');
-
-//Get data from localStorage
-regionalDexData     = JSON.parse(localStorage.getItem('regional_dex'));
-nationalDexData     = JSON.parse(localStorage.getItem('national_dex'));
-locationData        = JSON.parse(localStorage.getItem('locations'));
-
 //Create empty array to store caught Pokemon
 if (localStorage.getItem('pokemon_caught') == null){
     var pkmnCaughtArr = [];
     localStorage.setItem('pokemon_caught', JSON.stringify(pkmnCaughtArr));
 } else {
     pkmnCaughtArr  = JSON.parse(localStorage.getItem('pokemon_caught'));
-}
+} 
 
+function generateHtml() {
+    
+    //Get last visited location
+    var lastLocation = localStorage.getItem('current_location');
+    
+    //Getting the last location the player visited so that when they come back it will be the first screen they see
+    $.each(locationData.locations, function (direction, loc_name){
+        if (loc_name.name == lastLocation) {                
+            currentLocationData = loc_name;
+        }
+    })
+    //Merging Data
+    var encounterArray = [];
+    
+    //Loop through all available encounters and put them into an array
+    $.each(currentLocationData.encounters, function (i, encounters){
+        $.each(encounters.available_pokemon, function (i,val){
+          encounterArray.push(val);  
+        })    
+    });
 
-//Getting the last location the player visited so that when they come back it will be the first screen they see
-$.each(locationData.locations, function (direction, loc_name){
-    if (loc_name.name == lastLocation) {                
-        currentLocationData = loc_name;
+    //Function for merging data
+    function mergeArray(pokemon, index) {
+        function findPokemon (nationalPokemon){
+            return nationalPokemon.name == pokemon.name;
+        }
+
+        var match = nationalDexData.find(findPokemon);
+        var type = match.type;
+        pokemon["type"] = type;    
     }
+<<<<<<< HEAD
 })
     
 
@@ -56,6 +73,11 @@ function generateHtml() {
 
     encounterArray.forEach(mergeArray);
 
+=======
+
+    encounterArray.forEach(mergeArray);
+
+>>>>>>> gh-pages
     function sortByKey(array, key) {
         return array.sort(function(a, b) {
             var x = a[key]; var y = b[key];
@@ -73,6 +95,7 @@ $('.block-route-header h3').text(currentLocationData.name);
 
 //Exits
 exitInfo = [];
+    
 $.each(currentLocationData.exits, function (direction, loc_name) {
     var theHtml = '<div class="block-path-group">' +
                   '<span class="block-path-group_direction">'+ direction +'</span>';
@@ -86,6 +109,12 @@ $.each(currentLocationData.exits, function (direction, loc_name) {
         }      
     exitInfo.push(theHtml);
 });
+
+//If there are already buttons, remove them
+if ($('.block-route-paths').html().length > 0) {
+    $('.block-route-paths').empty();
+}
+
 $.each(exitInfo, function(i, html){
     $('.block-route-paths').append(html);
 });
@@ -211,6 +240,9 @@ $.each(currentLocationData.encounters, function (i, encounter){
     encountersInfo.push(encounterObject)    
 });
 
+//Check to see if info exsists, delete
+$('.block-encounters').empty();
+    
 $.each(encountersInfo, function (i, encounter_info) {
     $('.block-encounters').append('<h3>'+ encounter_info.type + '</h3>');
 
