@@ -76,6 +76,7 @@ function loadDataIntoLocalStorage (r_dex, n_dex, gameVersion) {
         url: 'data/pokedexes/' + r_dex,
         async: false,
         success: function(data){
+            var data = JSON.stringify(data);
             localStorage.setItem('regional_dex', data);
         }
     });
@@ -85,6 +86,7 @@ function loadDataIntoLocalStorage (r_dex, n_dex, gameVersion) {
         url: 'data/pokedexes/' + n_dex,
         async: false,
         success: function(data){
+            var data = JSON.stringify(data);
             localStorage.setItem('national_dex', data)
         }
     });
@@ -94,7 +96,8 @@ function loadDataIntoLocalStorage (r_dex, n_dex, gameVersion) {
         url: 'data/locations/' + gameVersion +'.json',
         async: false,
         success: function(data){
-            localStorage.setItem('region', data.name);                 
+            localStorage.setItem('region', data.name);
+            var data = JSON.stringify(data);
             localStorage.setItem('locations', data);
         }
     });
