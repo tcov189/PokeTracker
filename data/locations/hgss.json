@@ -11330,6 +11330,166 @@
           ]
         }
       ]
+    },
+    {
+      "name": "route 3",
+      "exits": {
+        "north": "mt. moon",
+        "west": "pewter city"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "rattata",
+              "method": "grass",
+              "min_level": 5,
+              "max_level": 10,
+              "version": "both",
+              "rate": {
+                "morning": {
+                  "hg": 35,
+                  "ss": 30
+                },
+                "day": {
+                  "hg": 35,
+                  "ss": 30
+                },
+                "night": {
+                  "hg": 60,
+                  "ss": 30
+                }
+              }
+            },
+            {
+              "name": "spearow",
+              "method": "grass",
+              "min_level": 5,
+              "max_level": 8,
+              "version": "both",
+              "rate": {
+                "morning": {
+                  "hg": 55,
+                  "ss": 35
+                },
+                "day": {
+                  "hg": 55,
+                  "ss": 35
+                }
+              }
+            },
+            {
+              "name": "ekans",
+              "method": "grass",
+              "min_level": 8,
+              "max_level": 8,
+              "version": "ss",
+              "rate": 20
+            },
+            {
+              "name": "arbok",
+              "method": "grass",
+              "min_level": 10,
+              "max_level": 10,
+              "version": "ss",
+              "rate": 5
+            },
+            {
+              "name": "jigglypuff",
+              "method": "grass",
+              "min_level": 6,
+              "max_level": 6,
+              "version": "both",
+              "rate": 10
+            },
+            {
+              "name": "zubat",
+              "method": "grass",
+              "min_level": 5,
+              "max_level": 5,
+              "version": "both",
+              "rate": {
+                "night": 30
+              }
+            },
+            {
+              "name": "baltoy",
+              "method": "swarm",
+              "min_level": 5,
+              "max_level": 5,
+              "version": "hg",
+              "rate": 40
+            },
+            {
+              "name": "gulpin",
+              "method": "swarm",
+              "min_level": 5,
+              "max_level": 5,
+              "version": "ss",
+              "rate": 40
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "hoothoot",
+              "method": "headbutt",
+              "min_level": 6,
+              "max_level": 10,
+              "version": "both",
+              "rate": 50
+            },
+            {
+              "name": "pineco",
+              "method": "headbutt",
+              "min_level": 6,
+              "max_level": 7,
+              "version": "both",
+              "rate": 30
+            },
+            {
+              "name": "wurmple",
+              "method": "headbutt",
+              "min_level": 6,
+              "max_level": 10,
+              "version": "both",
+              "rate": 20
+            }
+          ]
+        },
+        {
+          "type": "radio",
+          "available_pokemon": [
+            {
+              "name": "plusle",
+              "method": "hoenn sound",
+              "min_level": 5,
+              "max_level": 5,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "minun",
+              "method": "hoenn sound",
+              "min_level": 8,
+              "max_level": 8,
+              "version": "both",
+              "rate": 20
+            },
+            {
+              "name": "shinx",
+              "method": "sinnoh sound",
+              "min_level": 5,
+              "max_level": 8,
+              "version": "both",
+              "rate": 40
+            }
+          ]
+        }
+      ]
     }
   ]
 }
