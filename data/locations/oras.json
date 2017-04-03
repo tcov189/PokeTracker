@@ -1,172 +1,184 @@
 {
-   "name":"hoenn",
-   "locations":[
-      {
-         "name":"route 101",
-         "exits":{
-            "north":"oldale town",
-            "south":"littleroot town"
-         },
-         "encounters":[
+  "name": "hoenn",
+  "locations": [
+    {
+      "name": "route 101",
+      "exits": {
+        "north": "oldale town",
+        "south": "littleroot town"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
             {
-               "type":"walking",
-               "available_pokemon":[
-                  {
-                     "name":"zigzagoon",
-                     "rate":40,
-                     "version":"both",
-                     "min_level":2,
-                     "max_level":2,
-                     "method":"grass"
-                  },
-                  {
-                     "name":"wurmple",
-                     "rate":40,
-                     "version":"both",
-                     "min_level":2,
-                     "max_level":2,
-                     "method":"grass"
-                  },
-                  {
-                     "name":"poochyena",
-                     "rate":20,
-                     "version":"both",
-                     "min_level":2,
-                     "max_level":2,
-                     "method":"grass"
-                  },
-                  {
-                     "name":"sewaddle",
-                     "rate":"--",
-                     "version":"both",
-                     "min_level":2,
-                     "max_level":2,
-                     "method":"dex nav"
-                  },
-                  {
-                     "name":"zorua",
-                     "rate":"--",
-                     "version":"both",
-                     "min_level":2,
-                     "max_level":2,
-                     "method":"dex nav"
-                  },
-                  {
-                     "name":"zigzagoon",
-                     "rate":"--",
-                     "version":"both",
-                     "min_level":2,
-                     "max_level":2,
-                     "method":"horde"
-                  },
-                  {
-                     "name":"poochyena",
-                     "rate":"--",
-                     "version":"both",
-                     "min_level":2,
-                     "max_level":2,
-                     "method":"horde"
-                  },
-                  {
-                     "name":"lillipup",
-                     "rate":"--",
-                     "version":"both",
-                     "min_level":2,
-                     "max_level":2,
-                     "method":"dex nav"
-                  }
-               ]
+              "name": "zigzagoon",
+              "version": "both",
+              "method": "grass",
+              "min_level": 2,
+              "max_level": 2,
+              "rate": 40
             },
             {
-               "type":"gift",
-               "available_pokemon":[
-                  {
-                     "name":"treecko",
-                     "rate":"professor birch",
-                     "min_level":5,
-                     "max_level":5,
-                     "method":"beat e4"
-                  },
-                  {
-                     "name":"torchic",
-                     "rate":"professor birch",
-                     "min_level":5,
-                     "max_level":5,
-                     "method":"beat e4"
-                  },
-                  {
-                     "name":"mudkip",
-                     "rate":"professor birch",
-                     "min_level":5,
-                     "max_level":5,
-                     "method":"beat e4"
-                  },
-                  {
-                     "name":"chikorita",
-                     "rate":"professor birch",
-                     "min_level":5,
-                     "max_level":5,
-                     "method":"beat e4"
-                  },
-                  {
-                     "name":"cyndaquil",
-                     "rate":"professor birch",
-                     "min_level":5,
-                     "max_level":5,
-                     "method":"beat e4"
-                  },
-                  {
-                     "name":"totodile",
-                     "rate":"professor birch",
-                     "min_level":5,
-                     "max_level":5,
-                     "method":"beat e4"
-                  },
-                  {
-                     "name":"turtwig",
-                     "rate":"professor birch",
-                     "min_level":5,
-                     "max_level":5,
-                     "method":"beat e4"
-                  },
-                  {
-                     "name":"chimchar",
-                     "rate":"professor birch",
-                     "min_level":5,
-                     "max_level":5,
-                     "method":"beat e4"
-                  },
-                  {
-                     "name":"piplup",
-                     "rate":"professor birch",
-                     "min_level":5,
-                     "max_level":5,
-                     "method":"beat e4"
-                  },
-                  {
-                     "name":"snivy",
-                     "rate":"professor birch",
-                     "min_level":5,
-                     "max_level":5,
-                     "method":"beat e4"
-                  },
-                  {
-                     "name":"tepig",
-                     "rate":"professor birch",
-                     "min_level":5,
-                     "max_level":5,
-                     "method":"beat e4"
-                  },
-                  {
-                     "name":"oshawott",
-                     "rate":"professor birch",
-                     "min_level":5,
-                     "max_level":5,
-                     "method":"beat e4"
-                  }
-               ]
+              "name": "wurmple",
+              "version": "both",
+              "method": "grass",
+              "min_level": 2,
+              "max_level": 2,
+              "rate": 40
+            },
+            {
+              "name": "poochyena",
+              "version": "both",
+              "method": "grass",
+              "min_level": 2,
+              "max_level": 2,
+              "rate": 20
+            },
+            {
+              "name": "sewaddle",
+              "version": "both",
+              "method": "dex nav",
+              "min_level": 2,
+              "max_level": 2,
+              "rate": null
+            },
+            {
+              "name": "zorua",
+              "version": "both",
+              "method": "dex nav",
+              "min_level": 2,
+              "max_level": 2,
+              "rate": null
+            },
+            {
+              "name": "zigzagoon",
+              "version": "both",
+              "method": "horde",
+              "min_level": 2,
+              "max_level": 2,
+              "rate": null
+            },
+            {
+              "name": "poochyena",
+              "version": "both",
+              "method": "horde",
+              "min_level": 2,
+              "max_level": 2,
+              "rate": null
+            },
+            {
+              "name": "lillipup",
+              "version": "both",
+              "method": "dex nav",
+              "min_level": 2,
+              "max_level": 2,
+              "rate": null
             }
-         ]
-      }
-   ]
+          ]
+        },
+        {
+          "type": "gift",
+          "available_pokemon": [
+            {
+              "name": "treecko",
+              "version": "both",
+              "method": "beat e4",
+              "min_level": 5,
+              "max_level": 5,
+              "rate": "professor birch"
+            },
+            {
+              "name": "torchic",
+              "version": "both",
+              "method": "beat e4",
+              "min_level": 5,
+              "max_level": 5,
+              "rate": "professor birch"
+            },
+            {
+              "name": "mudkip",
+              "version": "both",
+              "method": "beat e4",
+              "min_level": 5,
+              "max_level": 5,
+              "rate": "professor birch"
+            },
+            {
+              "name": "chikorita",
+              "version": "both",
+              "method": "beat e4",
+              "min_level": 5,
+              "max_level": 5,
+              "rate": "professor birch"
+            },
+            {
+              "name": "cyndaquil",
+              "version": "both",
+              "method": "beat e4",
+              "min_level": 5,
+              "max_level": 5,
+              "rate": "professor birch"
+            },
+            {
+              "name": "totodile",
+              "version": "both",
+              "method": "beat e4",
+              "min_level": 5,
+              "max_level": 5,
+              "rate": "professor birch"
+            },
+            {
+              "name": "turtwig",
+              "version": "both",
+              "method": "beat e4",
+              "min_level": 5,
+              "max_level": 5,
+              "rate": "professor birch"
+            },
+            {
+              "name": "chimchar",
+              "version": "both",
+              "method": "beat e4",
+              "min_level": 5,
+              "max_level": 5,
+              "rate": "professor birch"
+            },
+            {
+              "name": "piplup",
+              "version": "both",
+              "method": "beat e4",
+              "min_level": 5,
+              "max_level": 5,
+              "rate": "professor birch"
+            },
+            {
+              "name": "snivy",
+              "version": "both",
+              "method": "beat e4",
+              "min_level": 5,
+              "max_level": 5,
+              "rate": "professor birch"
+            },
+            {
+              "name": "tepig",
+              "version": "both",
+              "method": "beat e4",
+              "min_level": 5,
+              "max_level": 5,
+              "rate": "professor birch"
+            },
+            {
+              "name": "oshawott",
+              "version": "both",
+              "method": "beat e4",
+              "min_level": 5,
+              "max_level": 5,
+              "rate": "professor birch"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
