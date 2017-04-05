@@ -51,7 +51,7 @@ function loadDataIntoLocalStorage (r_dex, n_dex, gameVersion) {
 
     //Get National Dex
     $.ajax({
-        url: 'data/locations/' + gameVersion +'.json',
+        url: 'data/locations/' + gameVersionGroup +'.json',
         async: false,
         success: function(data){
             localStorage.setItem('region', data.name);
