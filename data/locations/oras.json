@@ -352,6 +352,187 @@
           ]
         }
       ]
+    },
+    {
+      "name": "route 103",
+      "exits": {
+        "south": "oldale town",
+        "east": "route 110"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "poochyena",
+              "version": "both",
+              "method": "grass",
+              "min_level": 2,
+              "max_level": 3,
+              "rate": 20
+            },
+            {
+              "name": "wurmple",
+              "version": "both",
+              "method": "grass",
+              "min_level": 2,
+              "max_level": 3,
+              "rate": 30
+            },
+            {
+              "name": "zigzagoon",
+              "version": "both",
+              "method": "multiple",
+              "min_level": 2,
+              "max_level": 3,
+              "rate": {
+                "grass": 30,
+                "horde": 60
+              }
+            },
+            {
+              "name": "lotad",
+              "version": "as",
+              "method": "multiple",
+              "min_level": 2,
+              "max_level": 3,
+              "rate": {
+                "grass": 15,
+                "horde": 35
+              }
+            },
+            {
+              "name": "seedot",
+              "version": "or",
+              "method": "multiple",
+              "min_level": 2,
+              "max_level": 3,
+              "rate": {
+                "grass": 15,
+                "horde": 35
+              }
+            },
+            {
+              "name": "ralts",
+              "version": "both",
+              "method": "multiple",
+              "min_level": 2,
+              "max_level": 3,
+              "rate": {
+                "grass": 4,
+                "horde": 5
+              }
+            },
+            {
+              "name": "surskit",
+              "version": "grass",
+              "method": "multiple",
+              "min_level": 3,
+              "max_level": 3,
+              "rate": 1
+            },
+            {
+              "name": "lillipup",
+              "version": "both",
+              "method": "dex nav",
+              "min_level": 3,
+              "max_level": 3,
+              "rate": null
+            },
+            {
+              "name": "tympole",
+              "version": "both",
+              "method": "dex nav",
+              "min_level": 3,
+              "max_level": 3,
+              "rate": null
+            },
+            {
+              "name": "gothita",
+              "version": "both",
+              "method": "dex nav",
+              "min_level": 3,
+              "max_level": 3,
+              "rate": null
+            }
+          ]
+        },
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "marill",
+              "version": "both",
+              "method": "water",
+              "min_level": 15,
+              "max_level": 15,
+              "rate": 50
+            },
+            {
+              "name": "azumarill",
+              "version": "both",
+              "method": "water",
+              "min_level": 20,
+              "max_level": 25,
+              "rate": 31
+            },
+            {
+              "name": "surskit",
+              "version": "both",
+              "method": "water",
+              "min_level": 20,
+              "max_level": 20,
+              "rate": 15
+            },
+            {
+              "name": "masquerain",
+              "version": "both",
+              "method": "water",
+              "min_level": 25,
+              "max_level": 25,
+              "rate": 4
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "goldeen",
+              "version": "both",
+              "method": "rod",
+              "min_level": 5,
+              "max_level": 25,
+              "rate": {
+                "old rod": 35,
+                "good rod": 35
+              }
+            },
+            {
+              "name": "magikarp",
+              "version": "both",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 25,
+              "rate": {
+                "old rod": 65,
+                "good rod": 60
+              }
+            },
+            {
+              "name": "corphish",
+              "version": "both",
+              "method": "rod",
+              "min_level": 25,
+              "max_level": 40,
+              "rate": {
+                "good rod": 5,
+                "super rod": 100
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
