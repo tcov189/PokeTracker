@@ -1,6 +1,5 @@
 {
   "name": "hoenn",
-  "games": "oras",
   "locations": [
     {
       "name": "route 101",
@@ -14,11 +13,14 @@
           "available_pokemon": [
             {
               "name": "zigzagoon",
-              "version": "both",
-              "method": "grass",
+              "version": "multiple",
+              "method": "multiple",
               "min_level": 2,
               "max_level": 2,
-              "rate": 40
+              "rate": {
+                "grass": 40,
+                "horde": 95
+              }
             },
             {
               "name": "wurmple",
@@ -31,10 +33,13 @@
             {
               "name": "poochyena",
               "version": "both",
-              "method": "grass",
+              "method": "multiple",
               "min_level": 2,
               "max_level": 2,
-              "rate": 20
+              "rate": {
+                "grass": 20,
+                "horde": 5
+              }
             },
             {
               "name": "sewaddle",
@@ -48,22 +53,6 @@
               "name": "zorua",
               "version": "both",
               "method": "dex nav",
-              "min_level": 2,
-              "max_level": 2,
-              "rate": null
-            },
-            {
-              "name": "zigzagoon",
-              "version": "both",
-              "method": "horde",
-              "min_level": 2,
-              "max_level": 2,
-              "rate": null
-            },
-            {
-              "name": "poochyena",
-              "version": "both",
-              "method": "horde",
               "min_level": 2,
               "max_level": 2,
               "rate": null
@@ -176,6 +165,160 @@
               "min_level": 5,
               "max_level": 5,
               "rate": "professor birch"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "littleroot town",
+      "exits": {
+        "north": "route 101"
+      },
+      "encounters": null
+    },
+    {
+      "name": "oldale town",
+      "exits": {
+        "north": "route 103",
+        "south": "route 101",
+        "west": "route 102"
+      },
+      "encounters": null
+    },
+    {
+      "name": "route 103",
+      "exits": {
+        "south": "oldale town",
+        "east": "route 110"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "poochyena",
+              "version": "both",
+              "method": "multiple",
+              "min_level": 2,
+              "max_level": 3,
+              "rate": {
+                "grass": 40,
+                "horde": 35
+              }
+            },
+            {
+              "name": "zigzagoon",
+              "version": "both",
+              "method": "multiple",
+              "min_level": 2,
+              "max_level": 3,
+              "rate": {
+                "grass": 40,
+                "horde": 60
+              }
+            },
+            {
+              "name": "wingull",
+              "version": "both",
+              "method": "multiple",
+              "min_level": 2,
+              "max_level": 3,
+              "rate": {
+                "grass": 20,
+                "horde": 5
+              }
+            },
+            {
+              "name": "shellos",
+              "version": "both",
+              "method": "dex nav",
+              "min_level": 3,
+              "max_level": 3,
+              "rate": null
+            },
+            {
+              "name": "chatot",
+              "version": "both",
+              "method": "dex nav",
+              "min_level": 3,
+              "max_level": 3,
+              "rate": null
+            },
+            {
+              "name": "lillipup",
+              "version": "both",
+              "method": "dex nav",
+              "min_level": 3,
+              "max_level": 3,
+              "rate": null
+            }
+          ]
+        },
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "tentacool",
+              "version": "both",
+              "method": "water",
+              "min_level": 20,
+              "max_level": 25,
+              "rate": 65
+            },
+            {
+              "name": "wingull",
+              "version": "both",
+              "method": "water",
+              "min_level": 20,
+              "max_level": 20,
+              "rate": 30
+            },
+            {
+              "name": "pelipper",
+              "version": "both",
+              "method": "water",
+              "min_level": 25,
+              "max_level": 30,
+              "rate": 5
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "tentacool",
+              "version": "both",
+              "method": "rod",
+              "min_level": 5,
+              "max_level": 25,
+              "rate": {
+                "old rod": 35,
+                "good rod": 35
+              }
+            },
+            {
+              "name": "magikarp",
+              "version": "both",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 25,
+              "rate": {
+                "old rod": 65,
+                "good rod": 60
+              }
+            },
+            {
+              "name": "wailmer",
+              "version": "both",
+              "method": "rod",
+              "min_level": 25,
+              "max_level": 40,
+              "rate": {
+                "good rod": 5,
+                "super rod": 100
+              }
             }
           ]
         }
