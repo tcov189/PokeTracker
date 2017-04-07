@@ -44,40 +44,9 @@ function generateHtml() {
         var type = match.type;
         pokemon["type"] = type;    
     }
-<<<<<<< HEAD
-})
-    
-
-function generateHtml() {
-    
-    //Merging Data
-    var encounterArray = [];
-    
-    //Loop through all available encounters and put them into an array
-    $.each(currentLocationData.encounters, function (i, encounters){
-        $.each(encounters.available_pokemon, function (i,val){
-          encounterArray.push(val);  
-        })    
-    });
-
-    //Function for merging data
-    function mergeArray(pokemon, index) {
-        function findPokemon (nationalPokemon){
-            return nationalPokemon.name == pokemon.name;
-        }
-
-        var match = nationalDexData.find(findPokemon);
-        var type = match.type;
-        pokemon["type"] = type;    
-    }
 
     encounterArray.forEach(mergeArray);
 
-=======
-
-    encounterArray.forEach(mergeArray);
-
->>>>>>> gh-pages
     function sortByKey(array, key) {
         return array.sort(function(a, b) {
             var x = a[key]; var y = b[key];
