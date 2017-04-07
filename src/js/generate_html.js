@@ -182,18 +182,19 @@ $.each(currentLocationData.encounters, function (i, encounter){
                           '</div>' +
                         '</div>';
 
-            encounterArr.push({'html' : theHtml, 'method' : pokemon.method, 'name' : pokemon.name, 'regional_dex' : pokemon.n_dex_num })                
+            encounterArr.push({'html' : theHtml, 'method' : pokemon.method, 'name' : pokemon.name, 'national_dex' : pokemon.n_dex_num })                
     })
-    
-    var methodOrder = ["gift", "grass", "swarm", "interaction", "horde", "fishing", "surfing", "dex nav"];
+       
+    encountersInfo.push(encounterObject)  
+     
+    var encTypeOrder = ["starter", "walking", "surfing", "fishing", "interaction", "gift"];
         
-    encounterArr.sort(function(a,b){
-        if (a.method != b.method) {                    
-            return methodOrder.indexOf(a.method) > methodOrder.indexOf(b.method) ? 1 : -1;
+    encountersInfo.sort(function(a,b){
+        if (a.type != b.type) {                    
+            return encTypeOrder.indexOf(a.type) > encTypeOrder.indexOf(b.type) ? 1 : -1;
         }
     });   
         
-    encountersInfo.push(encounterObject)    
 });
 
 //Check to see if info exsists, delete
