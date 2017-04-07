@@ -20,6 +20,7 @@
     "trailingWhitespace" : {
         "enabled" : false
     },
+    "universalSelector": false,
     "urlFormat": {
         "enabled" : false
     },

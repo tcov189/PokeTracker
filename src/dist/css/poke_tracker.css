@@ -268,22 +268,19 @@ hr {
   overflow: scroll;
 }
 .container {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          flex-direction: column;
+  display: flex;
+      flex-direction: column;
 
-  min-height: calc(100vh - 105px);
+  min-height: calc(100vh - 60px);
 
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
+  -ms-flex-direction: column;
 }
 .container .block {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          flex: 0 1 auto;
-          flex-direction: column;
+  display: flex;
+      flex: 0 1 auto;
+      flex-direction: column;
 
   margin-top: 0.5rem;
   margin-right: 0.25rem;
@@ -292,29 +289,24 @@ hr {
   padding-right: 0.25rem;
   padding-left: 0.25rem;
 
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-  -webkit-flex: 0 1 auto;
-      -ms-flex: 0 1 auto;
+  -ms-flex-direction: column;
+  -ms-flex: 0 1 auto;
 }
 .container .block.block-route {
-          flex-direction: row;
+      flex-direction: row;
 
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
+  -ms-flex-direction: row;
 }
 .container .block.block-encounters {
-          flex-direction: column;
+      flex-direction: column;
 
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
+  -ms-flex-direction: column;
 }
 .header {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          justify-content: space-around;
-          align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
   min-height: 30px;
   padding-top: 0.5rem;
@@ -323,21 +315,16 @@ hr {
   background-color: #cc000e;
   box-shadow: inset 0 0 16px -2px;
 
-  -webkit-align-items: center;
   -ms-flex-align: center;
-  -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
 }
 .header-game-block {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          flex: 1 0 auto;
-          align-items: center;
+  display: flex;
+      flex: 1 0 auto;
+  align-items: center;
 
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-  -webkit-align-items: center;
+  -ms-flex: 1 0 auto;
   -ms-flex-align: center;
 }
 .header-game-block .header-game-icon__oras {
@@ -345,15 +332,12 @@ hr {
   height: 1.5rem;
 }
 .header-brand {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          flex: 1 0 auto;
-          align-items: baseline;
+  display: flex;
+      flex: 1 0 auto;
+  align-items: baseline;
 
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-  -webkit-align-items: baseline;
+  -ms-flex: 1 0 auto;
   -ms-flex-align: baseline;
 }
 .header-brand .header-brand-logo {
@@ -361,57 +345,48 @@ hr {
   padding-left: 0.25rem;
 }
 .header-settings {
-          flex: 1 0 auto;
+      flex: 1 0 auto;
 
   padding-right: 0.25rem;
 
   text-align: right;
 
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
 }
 .footer {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          justify-content: center;
-          align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  min-height: 75px;
+  min-height: 30px;
 
   background-color: #cc000e;
   box-shadow: inset 0 0 16px -2px;
 
-  -webkit-align-items: center;
   -ms-flex-align: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
 }
 .footer select {
   text-transform: capitalize;
 }
 .footer .btm-panel {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          align-self: center;
+  display: flex;
+      flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
 
   width: 20%;
   height: 60px;
 
   border-radius: 37px;
 
-  -webkit-align-self: center;
   -ms-flex-item-align: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
+  -ms-flex-direction: column;
 }
 .footer .btm-panel:nth-child(-n+2) {
   cursor: pointer;
@@ -439,26 +414,21 @@ hr {
   cursor: pointer;
 }
 .btm-select {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          align-items: center;
+  display: flex;
+  align-items: center;
 
   color: #000;
 
-  -webkit-align-items: center;
   -ms-flex-align: center;
 }
 .btm-panel-button {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          flex-direction: column;
-          align-items: center;
+  display: flex;
+      flex-direction: column;
+  align-items: center;
 
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-  -webkit-align-items: center;
+  -ms-flex-direction: column;
   -ms-flex-align: center;
 }
 .poketrackerIcon {
@@ -494,15 +464,13 @@ hr {
   height: 45px;
 }
 .button-group {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 
   margin-top: 0.75rem;
   margin-bottom: 0.5rem;
 
-  -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
 }
 .button-group .button-group-heading {
@@ -568,25 +536,22 @@ hr {
   outline: 0;
 }
 .dropdown {
-          flex: 0 1 auto;
+      flex: 0 1 auto;
 
   margin-top: 0.5rem;
   margin-bottom: 0.2rem;
 
-  -webkit-flex: 0 1 auto;
-      -ms-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
 }
 .dropdown .dropdown-heading {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
+  display: flex;
 
   cursor: pointer;
 }
 .dropdown .dropdown-heading.open:before {
-  -webkit-transform: rotate(0);
-      -ms-transform: rotate(0);
-          transform: rotate(0);
+  -ms-transform: rotate(0);
+      transform: rotate(0);
 }
 .dropdown .dropdown-heading:before {
   display: inline-block;
@@ -597,9 +562,8 @@ hr {
 
   content: "";
   transition: all 0.1s linear;
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
 
   background: url("../images/arrow-up.png") no-repeat;
   background-size: contain;
@@ -613,26 +577,21 @@ hr {
   font-size: 0.9rem;
 }
 .block-route-info {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          flex: 2;
-          flex-direction: column;
+  display: flex;
+      flex: 2;
+      flex-direction: column;
 
-  -webkit-flex: 2;
-      -ms-flex: 2;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
+  -ms-flex: 2;
+  -ms-flex-direction: column;
 }
 .block-route-info .block-route-header {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          justify-content: center;
+  display: flex;
+  justify-content: center;
 
   text-transform: capitalize;
 
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
 }
 .block-route-info .block-route-header:before {
@@ -646,27 +605,22 @@ hr {
   background-size: contain;
 }
 .block-route-info .block-route-paths {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          flex-direction: row;
-          justify-content: space-between;
+  display: flex;
+      flex-direction: row;
+  justify-content: space-between;
 
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-  -webkit-justify-content: space-between;
+  -ms-flex-direction: row;
   -ms-flex-pack: justify;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .block-route-info .block-route-paths .block-path-group {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          flex: 1 1 50%;
-          flex-direction: column;
-          align-items: flex-start;
+  display: flex;
+      flex: 1 1 50%;
+      flex-direction: column;
+  align-items: flex-start;
 
   padding-bottom: 0.75rem;
 
@@ -674,32 +628,26 @@ hr {
 
   font-size: 0.9rem;
 
-  -webkit-flex: 1 1 50%;
-      -ms-flex: 1 1 50%;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-  -webkit-align-items: flex-start;
+  -ms-flex: 1 1 50%;
+  -ms-flex-direction: column;
   -ms-flex-align: start;
 }
 .block-route-info .block-route-paths .block-path-group:nth-child(2n) {
-          align-items: flex-end;
+  align-items: flex-end;
 
   padding-right: 0.2rem;
 
-  -webkit-align-items: flex-end;
   -ms-flex-align: end;
 }
 .block-route-info .block-route-paths .block-path-group_direction {
   font-weight: 700;
 }
 .block-route-map {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          flex: 1;
+  display: flex;
+      flex: 1;
 
-  -webkit-flex: 1;
-      -ms-flex: 1;
+  -ms-flex: 1;
 }
 .block-encounters h3,
 .block-encounters h4 {
@@ -709,29 +657,24 @@ hr {
   text-transform: capitalize;
 }
 .block-encounters-pokemon {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          flex-direction: row;
-          justify-content: center;
+  display: flex;
+      flex-direction: row;
+  justify-content: center;
 
   margin-bottom: 0.5rem;
 
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-  -webkit-justify-content: center;
+  -ms-flex-direction: row;
   -ms-flex-pack: center;
 }
 .card {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          flex-direction: row;
+  display: flex;
+      flex-direction: row;
 
   padding: 0.25rem;
 
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
+  -ms-flex-direction: row;
 }
 .card.card-default {
   border: 1px solid #ccc;
@@ -741,12 +684,11 @@ hr {
   background: #e6e6e6;
 }
 .card.card_pokemon {
-          flex: 0 0 98%;
+      flex: 0 0 98%;
 
   background: #e6e6e6;
 
-  -webkit-flex: 0 0 98%;
-      -ms-flex: 0 0 98%;
+  -ms-flex: 0 0 98%;
 }
 .card.card_pokemon.unavailable {
   opacity: 0.8;
@@ -755,20 +697,18 @@ hr {
   filter: alpha(opacity=80);
 }
 .card.card_pokemon .card_pokemon-pokeball {
-          align-self: center;
+  align-self: center;
 
   padding-right: 0.25rem;
 
   cursor: pointer;
 
-  -webkit-align-self: center;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
 }
 .card.card_pokemon .card_pokemon-pokeball-icon {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
+  display: flex;
 
   width: 1.65rem;
   height: 1.65rem;
@@ -795,51 +735,41 @@ hr {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .card.card_pokemon .card_pokemon-info {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          flex: 1;
-          flex-direction: column;
+  display: flex;
+      flex: 1;
+      flex-direction: column;
 
   border-left: 1px solid #1e1e1e;
 
-  -webkit-flex: 1;
-      -ms-flex: 1;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
+  -ms-flex: 1;
+  -ms-flex-direction: column;
 }
 .card.card_pokemon .card_pokemon-info .pokemon-info-bio {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          flex: 1;
-          justify-content: space-between;
-          align-items: center;
+  display: flex;
+      flex: 1;
+  justify-content: space-between;
+  align-items: center;
 
   font-weight: 700;
 
-  -webkit-flex: 1;
-      -ms-flex: 1;
-  -webkit-align-items: center;
+  -ms-flex: 1;
   -ms-flex-align: center;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
 }
 .card.card_pokemon .card_pokemon-info .pokemon-info-bio .pokemon-info-bio-name-sprite span {
   text-transform: capitalize;
 }
 .card.card_pokemon .card_pokemon-info .pokemon-info-rates {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          justify-content: space-between;
-          align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   padding-left: 0.4rem;
 
-  -webkit-align-items: center;
   -ms-flex-align: center;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
 }
 .card.card_pokemon .card_pokemon-info .pokemon-info-rates .pokemon-rate-block,
@@ -850,12 +780,10 @@ hr {
 }
 .card.card_pokemon .card_pokemon-info .pokemon-info-rates .pokemon-rate-block span,
 .card.card_pokemon .card_pokemon-info .pokemon-info-rates .pokemon-levels-block span {
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-          align-items: center;
+  display: flex;
+  align-items: center;
 
-  -webkit-align-items: center;
   -ms-flex-align: center;
 }
 /*========== Sprites ===========*/
@@ -3042,9 +2970,8 @@ hr {
   background-position: -196px -1470px;
 }
 .type-icon {
-  display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
-  display:         inline-flex;
+  display: inline-flex;
 
   width: 53px;
   height: 20px;
