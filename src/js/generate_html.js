@@ -40,9 +40,11 @@ function generateHtml() {
             return nationalPokemon.name == pokemon.name;
         }
 
-        var match = nationalDexData.find(findPokemon);
-        var type = match.type;
+        var match   = nationalDexData.find(findPokemon);
+        var type    = match.type;
+        var nDexNum = match.n_dex_num;
         pokemon["type"] = type;    
+        pokemon["n_dex_num"] = nDexNum;    
     }
 
     encounterArray.forEach(mergeArray);
@@ -94,9 +96,10 @@ encountersInfo = [];
 
 //Sorting array by national dex number 
 if (currentLocationData.encounters != null){
-    for (var counter = 0; counter < currentLocationData.encounters.length; counter++) {
-        currentLocationData.encounters[counter].available_pokemon = sortByKey(currentLocationData.encounters[counter].available_pokemon, 'n_dex_num');
-    }
+    
+    $.each(currentLocationData.encounters, function (i, elem){
+        sortByKey(elem.available_pokemon, 'n_dex_num');
+    })
 }
 
 $.each(currentLocationData.encounters, function (i, encounter){      
@@ -117,36 +120,20 @@ $.each(currentLocationData.encounters, function (i, encounter){
         
         if (encounter.type != 'gift' && encounter.type != 'starter') {
                             
-            if (typeof pokemon.rate == 'object'){
-                if (this.rate == null){
-                    if (encounter.type == 'trade') {
-                        theRateHtml+= '<strong>'+ encounter.type +'</strong>';
-                        theRateHtml += '<span>'+ this.method +'<i class="sprites '+ this.method +'"></i></span>';
-                    } else {
-                        theRateHtml+= '<span>&ndash;&ndash;%</span>';   
-                    }                   
-                } else {     
-                    theRateHtml+= '<strong>'+ pokemon.method +'</strong>';
-                    $.each(this.rate, function(time, rate) {
-                        if (rate != null) {
-                            if (typeof rate != 'object') {
-                             theRateHtml+= '<span>'+ time +': '+ needPercentSymbol(rate) +'</span>'     
-                            }  else {
-                                if (pokemon.method == 'rod' || pokemon.method == 'tower') {
-                                    theRateHtml += '<span>'+ time + ':</span>';
-                                    $.each(rate, function (game, rate){                             
-                                            theRateHtml += '<span style="margin-left: 5px;">'+ game +': '+ needPercentSymbol(rate) +'</span>';                     
-                                    })
-                                }
-                                $.each(rate, function (game, rate){                                
-                                    if (game == version) {
-                                        theRateHtml+= '<span>'+ time +': '+ needPercentSymbol(rate) +'</span>'     
-                                    }
-                                })
-                            }                      
-                        }
-                    })                        
-                }
+            if (typeof pokemon.rate == 'object'){                   
+                theRateHtml+= '<strong>'+ pokemon.method +'</strong>';
+                $.each(this.rate, function(time, rate) {
+                    if (rate != null) {
+                        if (typeof rate != 'object') {
+                         theRateHtml+= '<span>'+ time +': '+ needPercentSymbol(rate) +'</span>'     
+                        }  else {
+                            theRateHtml += '<span>'+ time + ':</span>';
+                            $.each(rate, function (game, rate){                             
+                                    theRateHtml += '<span style="margin-left: 5px;">'+ game +': '+ needPercentSymbol(rate) +'</span>';                     
+                            })                         
+                        }                      
+                    }
+                })                                        
             } else  {
                 theRateHtml+= '<span><strong>'+ pokemon.method +'</strong>: '+ needPercentSymbol(pokemon.rate) +'</span>';
             }
