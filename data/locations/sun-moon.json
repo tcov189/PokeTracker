@@ -13,80 +13,82 @@
         "west": "hau'oli city",
         "access to": "ten carat hill"
       },
-      "areas": [
-        {
-          "name": "east of house",
-          "encounters": [
-            {
-              "type": "walking",
-              "available_pokemon": [
-                {
-                  "name": "caterpie",
-                  "sos": "caterpie",
-                  "version": "both",
-                  "method": "grass",
-                  "min_level": 2,
-                  "max_level": 3,
-                  "rate": 20
-                },
-                {
-                  "name": "rattata-a",
-                  "sos": "rattata-a",
-                  "version": "both",
-                  "method": "grass",
-                  "min_level": 2,
-                  "max_level": 3,
-                  "rate": {
-                    "night": 30
+      "encounters": {
+        "areas": [
+          {
+            "name": "east of house",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "caterpie",
+                    "sos": "caterpie",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 2,
+                    "max_level": 3,
+                    "rate": 20
+                  },
+                  {
+                    "name": "rattata-a",
+                    "sos": "rattata-a",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 2,
+                    "max_level": 3,
+                    "rate": {
+                      "night": 30
+                    }
+                  },
+                  {
+                    "name": "ledyba",
+                    "sos": "ledyba",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 2,
+                    "max_level": 3,
+                    "rate": {
+                      "day": 30
+                    }
+                  },
+                  {
+                    "name": "spinarak",
+                    "sos": "spinarak",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 2,
+                    "max_level": 3,
+                    "rate": {
+                      "night": 20
+                    }
+                  },
+                  {
+                    "name": "pikipek",
+                    "sos": "pikipek",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 2,
+                    "max_level": 3,
+                    "rate": 30
+                  },
+                  {
+                    "name": "yungoos",
+                    "sos": "yungoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 2,
+                    "max_level": 3,
+                    "rate": {
+                      "day": 20
+                    }
                   }
-                },
-                {
-                  "name": "ledyba",
-                  "sos": "ledyba",
-                  "version": "both",
-                  "method": "grass",
-                  "min_level": 2,
-                  "max_level": 3,
-                  "rate": {
-                    "day": 30
-                  }
-                },
-                {
-                  "name": "spinarak",
-                  "sos": "spinarak",
-                  "version": "both",
-                  "method": "grass",
-                  "min_level": 2,
-                  "max_level": 3,
-                  "rate": {
-                    "night": 20
-                  }
-                },
-                {
-                  "name": "pikipek",
-                  "sos": "pikipek",
-                  "version": "both",
-                  "method": "grass",
-                  "min_level": 2,
-                  "max_level": 3,
-                  "rate": 30
-                },
-                {
-                  "name": "yungoos",
-                  "sos": "yungoos",
-                  "version": "both",
-                  "method": "grass",
-                  "min_level": 2,
-                  "max_level": 3,
-                  "rate": {
-                    "day": 20
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   ]
 }
