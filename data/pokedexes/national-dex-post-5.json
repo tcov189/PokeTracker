@@ -1,6129 +1,12 @@
 [
   {
-    "name": "bulbasaur",
-    "type": [
-      "Grass",
-      "Poison"
-    ],
-    "n_dex_num": 1,
-    "r_dex_num": ""
-  },
-  {
-    "name": "ivysaur",
-    "type": [
-      "Grass",
-      "Poison"
-    ],
-    "n_dex_num": 2,
-    "r_dex_num": ""
-  },
-  {
-    "name": "venusaur",
-    "type": [
-      "Grass",
-      "Poison"
-    ],
-    "n_dex_num": 3,
-    "r_dex_num": ""
-  },
-  {
-    "name": "charmander",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 4,
-    "r_dex_num": ""
-  },
-  {
-    "name": "charmeleon",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 5,
-    "r_dex_num": ""
-  },
-  {
-    "name": "charizard",
-    "type": [
-      "Fire",
-      "Flying"
-    ],
-    "n_dex_num": 6,
-    "r_dex_num": ""
-  },
-  {
-    "name": "squirtle",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 7,
-    "r_dex_num": ""
-  },
-  {
-    "name": "wartortle",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 8,
-    "r_dex_num": ""
-  },
-  {
-    "name": "blastoise",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 9,
-    "r_dex_num": ""
-  },
-  {
-    "name": "caterpie",
-    "type": [
-      "Bug"
-    ],
-    "n_dex_num": 10,
-    "r_dex_num": ""
-  },
-  {
-    "name": "metapod",
-    "type": [
-      "Bug"
-    ],
-    "n_dex_num": 11,
-    "r_dex_num": ""
-  },
-  {
-    "name": "butterfree",
-    "type": [
-      "Bug",
-      "Flying"
-    ],
-    "n_dex_num": 12,
-    "r_dex_num": ""
-  },
-  {
-    "name": "weedle",
-    "type": [
-      "Bug",
-      "Poison"
-    ],
-    "n_dex_num": 13,
-    "r_dex_num": ""
-  },
-  {
-    "name": "kakuna",
-    "type": [
-      "Bug",
-      "Poison"
-    ],
-    "n_dex_num": 14,
-    "r_dex_num": ""
-  },
-  {
-    "name": "beedrill",
-    "type": [
-      "Bug",
-      "Poison"
-    ],
-    "n_dex_num": 15,
-    "r_dex_num": ""
-  },
-  {
-    "name": "pidgey",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 16,
-    "r_dex_num": ""
-  },
-  {
-    "name": "pidgeotto",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 17,
-    "r_dex_num": ""
-  },
-  {
-    "name": "pidgeot",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 18,
-    "r_dex_num": ""
-  },
-  {
-    "name": "rattata",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 19,
-    "r_dex_num": ""
-  },
-  {
-    "name": "raticate",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 20,
-    "r_dex_num": ""
-  },
-  {
-    "name": "spearow",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 21,
-    "r_dex_num": ""
-  },
-  {
-    "name": "fearow",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 22,
-    "r_dex_num": ""
-  },
-  {
-    "name": "ekans",
-    "type": [
-      "Poison"
-    ],
-    "n_dex_num": 23,
-    "r_dex_num": ""
-  },
-  {
-    "name": "arbok",
-    "type": [
-      "Poison"
-    ],
-    "n_dex_num": 24,
-    "r_dex_num": ""
-  },
-  {
-    "name": "pikachu",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 25,
-    "r_dex_num": ""
-  },
-  {
-    "name": "raichu",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 26,
-    "r_dex_num": ""
-  },
-  {
-    "name": "sandshrew",
-    "type": [
-      "Ground"
-    ],
-    "n_dex_num": 27,
-    "r_dex_num": ""
-  },
-  {
-    "name": "sandslash",
-    "type": [
-      "Ground"
-    ],
-    "n_dex_num": 28,
-    "r_dex_num": ""
-  },
-  {
-    "name": "nidoran-f",
-    "type": [
-      "Poison"
-    ],
-    "n_dex_num": 29,
-    "r_dex_num": ""
-  },
-  {
-    "name": "nidorina",
-    "type": [
-      "Poison"
-    ],
-    "n_dex_num": 30,
-    "r_dex_num": ""
-  },
-  {
-    "name": "nidoqueen",
-    "type": [
-      "Poison",
-      "Ground"
-    ],
-    "n_dex_num": 31,
-    "r_dex_num": ""
-  },
-  {
-    "name": "nidoran-m",
-    "type": [
-      "Poison"
-    ],
-    "n_dex_num": 32,
-    "r_dex_num": ""
-  },
-  {
-    "name": "nidorino",
-    "type": [
-      "Poison"
-    ],
-    "n_dex_num": 33,
-    "r_dex_num": ""
-  },
-  {
-    "name": "nidoking",
-    "type": [
-      "Poison",
-      "Ground"
-    ],
-    "n_dex_num": 34,
-    "r_dex_num": ""
-  },
-  {
-    "name": "clefairy",
-    "type": [
-      "Fairy"
-    ],
-    "n_dex_num": 35,
-    "r_dex_num": ""
-  },
-  {
-    "name": "clefable",
-    "type": [
-      "Fairy"
-    ],
-    "n_dex_num": 36,
-    "r_dex_num": ""
-  },
-  {
-    "name": "vulpix",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 37,
-    "r_dex_num": ""
-  },
-  {
-    "name": "ninetales",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 38,
-    "r_dex_num": ""
-  },
-  {
-    "name": "jigglypuff",
-    "type": [
-      "Normal",
-      "Fairy"
-    ],
-    "n_dex_num": 39,
-    "r_dex_num": ""
-  },
-  {
-    "name": "wigglytuff",
-    "type": [
-      "Normal",
-      "Fairy"
-    ],
-    "n_dex_num": 40,
-    "r_dex_num": ""
-  },
-  {
-    "name": "zubat",
-    "type": [
-      "Poison",
-      "Flying"
-    ],
-    "n_dex_num": 41,
-    "r_dex_num": ""
-  },
-  {
-    "name": "golbat",
-    "type": [
-      "Poison",
-      "Flying"
-    ],
-    "n_dex_num": 42,
-    "r_dex_num": ""
-  },
-  {
-    "name": "oddish",
-    "type": [
-      "Grass",
-      "Poison"
-    ],
-    "n_dex_num": 43,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gloom",
-    "type": [
-      "Grass",
-      "Poison"
-    ],
-    "n_dex_num": 44,
-    "r_dex_num": ""
-  },
-  {
-    "name": "vileplume",
-    "type": [
-      "Grass",
-      "Poison"
-    ],
-    "n_dex_num": 45,
-    "r_dex_num": ""
-  },
-  {
-    "name": "paras",
-    "type": [
-      "Bug",
-      "Grass"
-    ],
-    "n_dex_num": 46,
-    "r_dex_num": ""
-  },
-  {
-    "name": "parasect",
-    "type": [
-      "Bug",
-      "Grass"
-    ],
-    "n_dex_num": 47,
-    "r_dex_num": ""
-  },
-  {
-    "name": "venonat",
-    "type": [
-      "Bug",
-      "Poison"
-    ],
-    "n_dex_num": 48,
-    "r_dex_num": ""
-  },
-  {
-    "name": "venomoth",
-    "type": [
-      "Bug",
-      "Poison"
-    ],
-    "n_dex_num": 49,
-    "r_dex_num": ""
-  },
-  {
-    "name": "diglett",
-    "type": [
-      "Ground"
-    ],
-    "n_dex_num": 50,
-    "r_dex_num": ""
-  },
-  {
-    "name": "dugtrio",
-    "type": [
-      "Ground"
-    ],
-    "n_dex_num": 51,
-    "r_dex_num": ""
-  },
-  {
-    "name": "meowth",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 52,
-    "r_dex_num": ""
-  },
-  {
-    "name": "persian",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 53,
-    "r_dex_num": ""
-  },
-  {
-    "name": "psyduck",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 54,
-    "r_dex_num": ""
-  },
-  {
-    "name": "golduck",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 55,
-    "r_dex_num": ""
-  },
-  {
-    "name": "mankey",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 56,
-    "r_dex_num": ""
-  },
-  {
-    "name": "primeape",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 57,
-    "r_dex_num": ""
-  },
-  {
-    "name": "growlithe",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 58,
-    "r_dex_num": ""
-  },
-  {
-    "name": "arcanine",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 59,
-    "r_dex_num": ""
-  },
-  {
-    "name": "poliwag",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 60,
-    "r_dex_num": ""
-  },
-  {
-    "name": "poliwhirl",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 61,
-    "r_dex_num": ""
-  },
-  {
-    "name": "poliwrath",
-    "type": [
-      "Water",
-      "Fighting"
-    ],
-    "n_dex_num": 62,
-    "r_dex_num": ""
-  },
-  {
-    "name": "abra",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 63,
-    "r_dex_num": ""
-  },
-  {
-    "name": "kadabra",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 64,
-    "r_dex_num": ""
-  },
-  {
-    "name": "alakazam",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 65,
-    "r_dex_num": ""
-  },
-  {
-    "name": "machop",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 66,
-    "r_dex_num": ""
-  },
-  {
-    "name": "machoke",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 67,
-    "r_dex_num": ""
-  },
-  {
-    "name": "machamp",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 68,
-    "r_dex_num": ""
-  },
-  {
-    "name": "bellsprout",
-    "type": [
-      "Grass",
-      "Poison"
-    ],
-    "n_dex_num": 69,
-    "r_dex_num": ""
-  },
-  {
-    "name": "weepinbell",
-    "type": [
-      "Grass",
-      "Poison"
-    ],
-    "n_dex_num": 70,
-    "r_dex_num": ""
-  },
-  {
-    "name": "victreebel",
-    "type": [
-      "Grass",
-      "Poison"
-    ],
-    "n_dex_num": 71,
-    "r_dex_num": ""
-  },
-  {
-    "name": "tentacool",
-    "type": [
-      "Water",
-      "Poison"
-    ],
-    "n_dex_num": 72,
-    "r_dex_num": ""
-  },
-  {
-    "name": "tentacruel",
-    "type": [
-      "Water",
-      "Poison"
-    ],
-    "n_dex_num": 73,
-    "r_dex_num": ""
-  },
-  {
-    "name": "geodude",
-    "type": [
-      "Rock",
-      "Ground"
-    ],
-    "n_dex_num": 74,
-    "r_dex_num": ""
-  },
-  {
-    "name": "graveler",
-    "type": [
-      "Rock",
-      "Ground"
-    ],
-    "n_dex_num": 75,
-    "r_dex_num": ""
-  },
-  {
-    "name": "golem",
-    "type": [
-      "Rock",
-      "Ground"
-    ],
-    "n_dex_num": 76,
-    "r_dex_num": ""
-  },
-  {
-    "name": "ponyta",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 77,
-    "r_dex_num": ""
-  },
-  {
-    "name": "rapidash",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 78,
-    "r_dex_num": ""
-  },
-  {
-    "name": "slowpoke",
-    "type": [
-      "Water",
-      "Psychic"
-    ],
-    "n_dex_num": 79,
-    "r_dex_num": ""
-  },
-  {
-    "name": "slowbro",
-    "type": [
-      "Water",
-      "Psychic"
-    ],
-    "n_dex_num": 80,
-    "r_dex_num": ""
-  },
-  {
-    "name": "magnemite",
-    "type": [
-      "Electric",
-      "Steel"
-    ],
-    "n_dex_num": 81,
-    "r_dex_num": ""
-  },
-  {
-    "name": "magneton",
-    "type": [
-      "Electric",
-      "Steel"
-    ],
-    "n_dex_num": 82,
-    "r_dex_num": ""
-  },
-  {
-    "name": "farfetchd",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 83,
-    "r_dex_num": ""
-  },
-  {
-    "name": "doduo",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 84,
-    "r_dex_num": ""
-  },
-  {
-    "name": "dodrio",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 85,
-    "r_dex_num": ""
-  },
-  {
-    "name": "seel",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 86,
-    "r_dex_num": ""
-  },
-  {
-    "name": "dewgong",
-    "type": [
-      "Water",
-      "Ice"
-    ],
-    "n_dex_num": 87,
-    "r_dex_num": ""
-  },
-  {
-    "name": "grimer",
-    "type": [
-      "Poison"
-    ],
-    "n_dex_num": 88,
-    "r_dex_num": ""
-  },
-  {
-    "name": "muk",
-    "type": [
-      "Poison"
-    ],
-    "n_dex_num": 89,
-    "r_dex_num": ""
-  },
-  {
-    "name": "shellder",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 90,
-    "r_dex_num": ""
-  },
-  {
-    "name": "cloyster",
-    "type": [
-      "Water",
-      "Ice"
-    ],
-    "n_dex_num": 91,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gastly",
-    "type": [
-      "Ghost",
-      "Poison"
-    ],
-    "n_dex_num": 92,
-    "r_dex_num": ""
-  },
-  {
-    "name": "haunter",
-    "type": [
-      "Ghost",
-      "Poison"
-    ],
-    "n_dex_num": 93,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gengar",
-    "type": [
-      "Ghost",
-      "Poison"
-    ],
-    "n_dex_num": 94,
-    "r_dex_num": ""
-  },
-  {
-    "name": "onix",
-    "type": [
-      "Rock",
-      "Ground"
-    ],
-    "n_dex_num": 95,
-    "r_dex_num": ""
-  },
-  {
-    "name": "drowzee",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 96,
-    "r_dex_num": ""
-  },
-  {
-    "name": "hypno",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 97,
-    "r_dex_num": ""
-  },
-  {
-    "name": "krabby",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 98,
-    "r_dex_num": ""
-  },
-  {
-    "name": "kingler",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 99,
-    "r_dex_num": ""
-  },
-  {
-    "name": "voltorb",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 100,
-    "r_dex_num": ""
-  },
-  {
-    "name": "electrode",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 101,
-    "r_dex_num": ""
-  },
-  {
-    "name": "exeggcute",
-    "type": [
-      "Grass",
-      "Psychic"
-    ],
-    "n_dex_num": 102,
-    "r_dex_num": ""
-  },
-  {
-    "name": "exeggutor",
-    "type": [
-      "Grass",
-      "Psychic"
-    ],
-    "n_dex_num": 103,
-    "r_dex_num": ""
-  },
-  {
-    "name": "cubone",
-    "type": [
-      "Ground"
-    ],
-    "n_dex_num": 104,
-    "r_dex_num": ""
-  },
-  {
-    "name": "marowak",
-    "type": [
-      "Ground"
-    ],
-    "n_dex_num": 105,
-    "r_dex_num": ""
-  },
-  {
-    "name": "hitmonlee",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 106,
-    "r_dex_num": ""
-  },
-  {
-    "name": "hitmonchan",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 107,
-    "r_dex_num": ""
-  },
-  {
-    "name": "lickitung",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 108,
-    "r_dex_num": ""
-  },
-  {
-    "name": "koffing",
-    "type": [
-      "Poison"
-    ],
-    "n_dex_num": 109,
-    "r_dex_num": ""
-  },
-  {
-    "name": "weezing",
-    "type": [
-      "Poison"
-    ],
-    "n_dex_num": 110,
-    "r_dex_num": ""
-  },
-  {
-    "name": "rhyhorn",
-    "type": [
-      "Rock",
-      "Ground"
-    ],
-    "n_dex_num": 111,
-    "r_dex_num": ""
-  },
-  {
-    "name": "rhydon",
-    "type": [
-      "Rock",
-      "Ground"
-    ],
-    "n_dex_num": 112,
-    "r_dex_num": ""
-  },
-  {
-    "name": "chansey",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 113,
-    "r_dex_num": ""
-  },
-  {
-    "name": "tangela",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 114,
-    "r_dex_num": ""
-  },
-  {
-    "name": "kangaskhan",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 115,
-    "r_dex_num": ""
-  },
-  {
-    "name": "horsea",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 116,
-    "r_dex_num": ""
-  },
-  {
-    "name": "seadra",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 117,
-    "r_dex_num": ""
-  },
-  {
-    "name": "goldeen",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 118,
-    "r_dex_num": ""
-  },
-  {
-    "name": "seaking",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 119,
-    "r_dex_num": ""
-  },
-  {
-    "name": "staryu",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 120,
-    "r_dex_num": ""
-  },
-  {
-    "name": "starmie",
-    "type": [
-      "Water",
-      "Psychic"
-    ],
-    "n_dex_num": 121,
-    "r_dex_num": ""
-  },
-  {
-    "name": "mr-mime",
-    "type": [
-      "Psychic",
-      "Fairy"
-    ],
-    "n_dex_num": 122,
-    "r_dex_num": ""
-  },
-  {
-    "name": "scyther",
-    "type": [
-      "Bug",
-      "Flying"
-    ],
-    "n_dex_num": 123,
-    "r_dex_num": ""
-  },
-  {
-    "name": "jynx",
-    "type": [
-      "Ice",
-      "Psychic"
-    ],
-    "n_dex_num": 124,
-    "r_dex_num": ""
-  },
-  {
-    "name": "electabuzz",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 125,
-    "r_dex_num": ""
-  },
-  {
-    "name": "magmar",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 126,
-    "r_dex_num": ""
-  },
-  {
-    "name": "pinsir",
-    "type": [
-      "Bug"
-    ],
-    "n_dex_num": 127,
-    "r_dex_num": ""
-  },
-  {
-    "name": "tauros",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 128,
-    "r_dex_num": ""
-  },
-  {
-    "name": "magikarp",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 129,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gyarados",
-    "type": [
-      "Water",
-      "Flying"
-    ],
-    "n_dex_num": 130,
-    "r_dex_num": ""
-  },
-  {
-    "name": "lapras",
-    "type": [
-      "Water",
-      "Ice"
-    ],
-    "n_dex_num": 131,
-    "r_dex_num": ""
-  },
-  {
-    "name": "ditto",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 132,
-    "r_dex_num": ""
-  },
-  {
-    "name": "eevee",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 133,
-    "r_dex_num": ""
-  },
-  {
-    "name": "vaporeon",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 134,
-    "r_dex_num": ""
-  },
-  {
-    "name": "jolteon",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 135,
-    "r_dex_num": ""
-  },
-  {
-    "name": "flareon",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 136,
-    "r_dex_num": ""
-  },
-  {
-    "name": "porygon",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 137,
-    "r_dex_num": ""
-  },
-  {
-    "name": "omanyte",
-    "type": [
-      "Rock",
-      "Water"
-    ],
-    "n_dex_num": 138,
-    "r_dex_num": ""
-  },
-  {
-    "name": "omastar",
-    "type": [
-      "Rock",
-      "Water"
-    ],
-    "n_dex_num": 139,
-    "r_dex_num": ""
-  },
-  {
-    "name": "kabuto",
-    "type": [
-      "Rock",
-      "Water"
-    ],
-    "n_dex_num": 140,
-    "r_dex_num": ""
-  },
-  {
-    "name": "kabutops",
-    "type": [
-      "Rock",
-      "Water"
-    ],
-    "n_dex_num": 141,
-    "r_dex_num": ""
-  },
-  {
-    "name": "aerodactyl",
-    "type": [
-      "Rock",
-      "Flying"
-    ],
-    "n_dex_num": 142,
-    "r_dex_num": ""
-  },
-  {
-    "name": "snorlax",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 143,
-    "r_dex_num": ""
-  },
-  {
-    "name": "articuno",
-    "type": [
-      "Ice",
-      "Flying"
-    ],
-    "n_dex_num": 144,
-    "r_dex_num": ""
-  },
-  {
-    "name": "zapdos",
-    "type": [
-      "Electirc",
-      "Flying"
-    ],
-    "n_dex_num": 145,
-    "r_dex_num": ""
-  },
-  {
-    "name": "moltres",
-    "type": [
-      "Fire",
-      "Flying"
-    ],
-    "n_dex_num": 146,
-    "r_dex_num": ""
-  },
-  {
-    "name": "dratini",
-    "type": [
-      "Dragon"
-    ],
-    "n_dex_num": 147,
-    "r_dex_num": ""
-  },
-  {
-    "name": "dragonair",
-    "type": [
-      "Dragon"
-    ],
-    "n_dex_num": 148,
-    "r_dex_num": ""
-  },
-  {
-    "name": "dragonite",
-    "type": [
-      "Dragon",
-      "Flying"
-    ],
-    "n_dex_num": 149,
-    "r_dex_num": ""
-  },
-  {
-    "name": "mewtwo",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 150,
-    "r_dex_num": ""
-  },
-  {
-    "name": "mew",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 151,
-    "r_dex_num": ""
-  },
-  {
-    "name": "chikorita",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 152,
-    "r_dex_num": ""
-  },
-  {
-    "name": "bayleef",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 153,
-    "r_dex_num": ""
-  },
-  {
-    "name": "meganium",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 154,
-    "r_dex_num": ""
-  },
-  {
-    "name": "cyndaquil",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 155,
-    "r_dex_num": ""
-  },
-  {
-    "name": "quilava",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 156,
-    "r_dex_num": ""
-  },
-  {
-    "name": "typhlosion",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 157,
-    "r_dex_num": ""
-  },
-  {
-    "name": "totodile",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 158,
-    "r_dex_num": ""
-  },
-  {
-    "name": "croconaw",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 159,
-    "r_dex_num": ""
-  },
-  {
-    "name": "feraligatr",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 160,
-    "r_dex_num": ""
-  },
-  {
-    "name": "sentret",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 161,
-    "r_dex_num": ""
-  },
-  {
-    "name": "furret",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 162,
-    "r_dex_num": ""
-  },
-  {
-    "name": "hoothoot",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 163,
-    "r_dex_num": ""
-  },
-  {
-    "name": "noctowl",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 164,
-    "r_dex_num": ""
-  },
-  {
-    "name": "ledyba",
-    "type": [
-      "Bug",
-      "Flying"
-    ],
-    "n_dex_num": 165,
-    "r_dex_num": ""
-  },
-  {
-    "name": "ledian",
-    "type": [
-      "Bug",
-      "Flying"
-    ],
-    "n_dex_num": 166,
-    "r_dex_num": ""
-  },
-  {
-    "name": "spinarak",
-    "type": [
-      "Bug",
-      "Poison"
-    ],
-    "n_dex_num": 167,
-    "r_dex_num": ""
-  },
-  {
-    "name": "ariados",
-    "type": [
-      "Bug",
-      "Poison"
-    ],
-    "n_dex_num": 168,
-    "r_dex_num": ""
-  },
-  {
-    "name": "crobat",
-    "type": [
-      "Poison",
-      "Flying"
-    ],
-    "n_dex_num": 169,
-    "r_dex_num": ""
-  },
-  {
-    "name": "chinchou",
-    "type": [
-      "Water",
-      "Electric"
-    ],
-    "n_dex_num": 170,
-    "r_dex_num": ""
-  },
-  {
-    "name": "lanturn",
-    "type": [
-      "Water",
-      "Electric"
-    ],
-    "n_dex_num": 171,
-    "r_dex_num": ""
-  },
-  {
-    "name": "pichu",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 172,
-    "r_dex_num": ""
-  },
-  {
-    "name": "cleffa",
-    "type": [
-      "Fairy"
-    ],
-    "n_dex_num": 173,
-    "r_dex_num": ""
-  },
-  {
-    "name": "igglybuff",
-    "type": [
-      "Normal",
-      "Fairy"
-    ],
-    "n_dex_num": 174,
-    "r_dex_num": ""
-  },
-  {
-    "name": "togepi",
-    "type": [
-      "Fairy"
-    ],
-    "n_dex_num": 175,
-    "r_dex_num": ""
-  },
-  {
-    "name": "togetic",
-    "type": [
-      "Fairy",
-      "Flying"
-    ],
-    "n_dex_num": 176,
-    "r_dex_num": ""
-  },
-  {
-    "name": "natu",
-    "type": [
-      "Psychic",
-      "Flying"
-    ],
-    "n_dex_num": 177,
-    "r_dex_num": ""
-  },
-  {
-    "name": "xatu",
-    "type": [
-      "Psychic",
-      "Flying"
-    ],
-    "n_dex_num": 178,
-    "r_dex_num": ""
-  },
-  {
-    "name": "mareep",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 179,
-    "r_dex_num": ""
-  },
-  {
-    "name": "flaaffy",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 180,
-    "r_dex_num": ""
-  },
-  {
-    "name": "ampharos",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 181,
-    "r_dex_num": ""
-  },
-  {
-    "name": "bellossom",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 182,
-    "r_dex_num": ""
-  },
-  {
-    "name": "marill",
-    "type": [
-      "Water",
-      "Fairy"
-    ],
-    "n_dex_num": 183,
-    "r_dex_num": ""
-  },
-  {
-    "name": "azumarill",
-    "type": [
-      "Water",
-      "Fairy"
-    ],
-    "n_dex_num": 184,
-    "r_dex_num": ""
-  },
-  {
-    "name": "sudowoodo",
-    "type": [
-      "Rock"
-    ],
-    "n_dex_num": 185,
-    "r_dex_num": ""
-  },
-  {
-    "name": "politoed",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 186,
-    "r_dex_num": ""
-  },
-  {
-    "name": "hoppip",
-    "type": [
-      "Grass",
-      "Flying"
-    ],
-    "n_dex_num": 187,
-    "r_dex_num": ""
-  },
-  {
-    "name": "skiploom",
-    "type": [
-      "Grass",
-      "Flying"
-    ],
-    "n_dex_num": 188,
-    "r_dex_num": ""
-  },
-  {
-    "name": "jumpluff",
-    "type": [
-      "Grass",
-      "Flying"
-    ],
-    "n_dex_num": 189,
-    "r_dex_num": ""
-  },
-  {
-    "name": "aipom",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 190,
-    "r_dex_num": ""
-  },
-  {
-    "name": "sunkern",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 191,
-    "r_dex_num": ""
-  },
-  {
-    "name": "sunflora",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 192,
-    "r_dex_num": ""
-  },
-  {
-    "name": "yanma",
-    "type": [
-      "Bug",
-      "Flying"
-    ],
-    "n_dex_num": 193,
-    "r_dex_num": ""
-  },
-  {
-    "name": "wooper",
-    "type": [
-      "Water",
-      "Ground"
-    ],
-    "n_dex_num": 194,
-    "r_dex_num": ""
-  },
-  {
-    "name": "quagsire",
-    "type": [
-      "Water",
-      "Ground"
-    ],
-    "n_dex_num": 195,
-    "r_dex_num": ""
-  },
-  {
-    "name": "espeon",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 196,
-    "r_dex_num": ""
-  },
-  {
-    "name": "umbreon",
-    "type": [
-      "Dark"
-    ],
-    "n_dex_num": 197,
-    "r_dex_num": ""
-  },
-  {
-    "name": "murkrow",
-    "type": [
-      "Dark",
-      "Flying"
-    ],
-    "n_dex_num": 198,
-    "r_dex_num": ""
-  },
-  {
-    "name": "slowking",
-    "type": [
-      "Water",
-      "Psychic"
-    ],
-    "n_dex_num": 199,
-    "r_dex_num": ""
-  },
-  {
-    "name": "misdreavus",
-    "type": [
-      "Ghost"
-    ],
-    "n_dex_num": 200,
-    "r_dex_num": ""
-  },
-  {
-    "name": "unown",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 201,
-    "r_dex_num": ""
-  },
-  {
-    "name": "wobbuffet",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 202,
-    "r_dex_num": ""
-  },
-  {
-    "name": "girafarig",
-    "type": [
-      "Normal",
-      "Psychic"
-    ],
-    "n_dex_num": 203,
-    "r_dex_num": ""
-  },
-  {
-    "name": "pineco",
-    "type": [
-      "Bug"
-    ],
-    "n_dex_num": 204,
-    "r_dex_num": ""
-  },
-  {
-    "name": "forretress",
-    "type": [
-      "Bug",
-      "Steel"
-    ],
-    "n_dex_num": 205,
-    "r_dex_num": ""
-  },
-  {
-    "name": "dunsparce",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 206,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gligar",
-    "type": [
-      "Ground",
-      "Flying"
-    ],
-    "n_dex_num": 207,
-    "r_dex_num": ""
-  },
-  {
-    "name": "steelix",
-    "type": [
-      "Steel",
-      "Ground"
-    ],
-    "n_dex_num": 208,
-    "r_dex_num": ""
-  },
-  {
-    "name": "snubbull",
-    "type": [
-      "Fairy"
-    ],
-    "n_dex_num": 209,
-    "r_dex_num": ""
-  },
-  {
-    "name": "granbull",
-    "type": [
-      "Fairy"
-    ],
-    "n_dex_num": 210,
-    "r_dex_num": ""
-  },
-  {
-    "name": "qwilfish",
-    "type": [
-      "Water",
-      "Poison"
-    ],
-    "n_dex_num": 211,
-    "r_dex_num": ""
-  },
-  {
-    "name": "scizor",
-    "type": [
-      "Bug",
-      "Steel"
-    ],
-    "n_dex_num": 212,
-    "r_dex_num": ""
-  },
-  {
-    "name": "shuckle",
-    "type": [
-      "Bug",
-      "Rock"
-    ],
-    "n_dex_num": 213,
-    "r_dex_num": ""
-  },
-  {
-    "name": "heracross",
-    "type": [
-      "Bug",
-      "Fighting"
-    ],
-    "n_dex_num": 214,
-    "r_dex_num": ""
-  },
-  {
-    "name": "sneasel",
-    "type": [
-      "Dark",
-      "Ice"
-    ],
-    "n_dex_num": 215,
-    "r_dex_num": ""
-  },
-  {
-    "name": "teddiursa",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 216,
-    "r_dex_num": ""
-  },
-  {
-    "name": "ursaring",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 217,
-    "r_dex_num": ""
-  },
-  {
-    "name": "slugma",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 218,
-    "r_dex_num": ""
-  },
-  {
-    "name": "magcargo",
-    "type": [
-      "Fire",
-      "Rock"
-    ],
-    "n_dex_num": 219,
-    "r_dex_num": ""
-  },
-  {
-    "name": "swinub",
-    "type": [
-      "Ice",
-      "Ground"
-    ],
-    "n_dex_num": 220,
-    "r_dex_num": ""
-  },
-  {
-    "name": "piloswine",
-    "type": [
-      "Ice",
-      "Ground"
-    ],
-    "n_dex_num": 221,
-    "r_dex_num": ""
-  },
-  {
-    "name": "corsola",
-    "type": [
-      "Water",
-      "Rock"
-    ],
-    "n_dex_num": 222,
-    "r_dex_num": ""
-  },
-  {
-    "name": "remoraid",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 223,
-    "r_dex_num": ""
-  },
-  {
-    "name": "octillery",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 224,
-    "r_dex_num": ""
-  },
-  {
-    "name": "delibird",
-    "type": [
-      "Ice",
-      "Flying"
-    ],
-    "n_dex_num": 225,
-    "r_dex_num": ""
-  },
-  {
-    "name": "mantine",
-    "type": [
-      "Water",
-      "Flying"
-    ],
-    "n_dex_num": 226,
-    "r_dex_num": ""
-  },
-  {
-    "name": "skarmory",
-    "type": [
-      "Steel",
-      "Flying"
-    ],
-    "n_dex_num": 227,
-    "r_dex_num": ""
-  },
-  {
-    "name": "houndour",
-    "type": [
-      "Dark",
-      "Fire"
-    ],
-    "n_dex_num": 228,
-    "r_dex_num": ""
-  },
-  {
-    "name": "houndoom",
-    "type": [
-      "Dark",
-      "Fire"
-    ],
-    "n_dex_num": 229,
-    "r_dex_num": ""
-  },
-  {
-    "name": "kingdra",
-    "type": [
-      "Water",
-      "Dragon"
-    ],
-    "n_dex_num": 230,
-    "r_dex_num": ""
-  },
-  {
-    "name": "phanpy",
-    "type": [
-      "Ground"
-    ],
-    "n_dex_num": 231,
-    "r_dex_num": ""
-  },
-  {
-    "name": "donphan",
-    "type": [
-      "Ground"
-    ],
-    "n_dex_num": 232,
-    "r_dex_num": ""
-  },
-  {
-    "name": "porygon2",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 233,
-    "r_dex_num": ""
-  },
-  {
-    "name": "stantler",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 234,
-    "r_dex_num": ""
-  },
-  {
-    "name": "smeargle",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 235,
-    "r_dex_num": ""
-  },
-  {
-    "name": "tyrogue",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 236,
-    "r_dex_num": ""
-  },
-  {
-    "name": "hitmontop",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 237,
-    "r_dex_num": ""
-  },
-  {
-    "name": "smoochum",
-    "type": [
-      "Ice",
-      "Psychic"
-    ],
-    "n_dex_num": 238,
-    "r_dex_num": ""
-  },
-  {
-    "name": "elekid",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 239,
-    "r_dex_num": ""
-  },
-  {
-    "name": "magby",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 240,
-    "r_dex_num": ""
-  },
-  {
-    "name": "miltank",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 241,
-    "r_dex_num": ""
-  },
-  {
-    "name": "blissey",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 242,
-    "r_dex_num": ""
-  },
-  {
-    "name": "raikou",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 243,
-    "r_dex_num": ""
-  },
-  {
-    "name": "entei",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 244,
-    "r_dex_num": ""
-  },
-  {
-    "name": "suicune",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 245,
-    "r_dex_num": ""
-  },
-  {
-    "name": "larvitar",
-    "type": [
-      "Rock",
-      "Ground"
-    ],
-    "n_dex_num": 246,
-    "r_dex_num": ""
-  },
-  {
-    "name": "pupitar",
-    "type": [
-      "Rock",
-      "Ground"
-    ],
-    "n_dex_num": 247,
-    "r_dex_num": ""
-  },
-  {
-    "name": "tyranitar",
-    "type": [
-      "Rock",
-      "Dark"
-    ],
-    "n_dex_num": 248,
-    "r_dex_num": ""
-  },
-  {
-    "name": "lugia",
-    "type": [
-      "Psychic",
-      "Flying"
-    ],
-    "n_dex_num": 249,
-    "r_dex_num": ""
-  },
-  {
-    "name": "ho-oh",
-    "type": [
-      "Fire",
-      "Flying"
-    ],
-    "n_dex_num": 250,
-    "r_dex_num": ""
-  },
-  {
-    "name": "celebi",
-    "type": [
-      "Psychic",
-      "Grass"
-    ],
-    "n_dex_num": 251,
-    "r_dex_num": ""
-  },
-  {
-    "name": "treecko",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 252,
-    "r_dex_num": ""
-  },
-  {
-    "name": "grovyle",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 253,
-    "r_dex_num": ""
-  },
-  {
-    "name": "sceptile",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 254,
-    "r_dex_num": ""
-  },
-  {
-    "name": "torchic",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 255,
-    "r_dex_num": ""
-  },
-  {
-    "name": "combusken",
-    "type": [
-      "Fire",
-      "Fighting"
-    ],
-    "n_dex_num": 256,
-    "r_dex_num": ""
-  },
-  {
-    "name": "blaziken",
-    "type": [
-      "Fire",
-      "Fighting"
-    ],
-    "n_dex_num": 257,
-    "r_dex_num": ""
-  },
-  {
-    "name": "mudkip",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 258,
-    "r_dex_num": ""
-  },
-  {
-    "name": "marshtomp",
-    "type": [
-      "Water",
-      "Ground"
-    ],
-    "n_dex_num": 259,
-    "r_dex_num": ""
-  },
-  {
-    "name": "swampert",
-    "type": [
-      "Water",
-      "Ground"
-    ],
-    "n_dex_num": 260,
-    "r_dex_num": ""
-  },
-  {
-    "name": "poochyena",
-    "type": [
-      "Dark"
-    ],
-    "n_dex_num": 261,
-    "r_dex_num": ""
-  },
-  {
-    "name": "mightyena",
-    "type": [
-      "Dark"
-    ],
-    "n_dex_num": 262,
-    "r_dex_num": ""
-  },
-  {
-    "name": "zigzagoon",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 263,
-    "r_dex_num": ""
-  },
-  {
-    "name": "linoone",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 264,
-    "r_dex_num": ""
-  },
-  {
-    "name": "wurmple",
-    "type": [
-      "Bug"
-    ],
-    "n_dex_num": 265,
-    "r_dex_num": ""
-  },
-  {
-    "name": "silcoon",
-    "type": [
-      "Bug"
-    ],
-    "n_dex_num": 266,
-    "r_dex_num": ""
-  },
-  {
-    "name": "beautifly",
-    "type": [
-      "Bug",
-      "Flying"
-    ],
-    "n_dex_num": 267,
-    "r_dex_num": ""
-  },
-  {
-    "name": "cascoon",
-    "type": [
-      "Bug"
-    ],
-    "n_dex_num": 268,
-    "r_dex_num": ""
-  },
-  {
-    "name": "dustox",
-    "type": [
-      "Bug",
-      "Poison"
-    ],
-    "n_dex_num": 269,
-    "r_dex_num": ""
-  },
-  {
-    "name": "lotad",
-    "type": [
-      "Water",
-      "Grass"
-    ],
-    "n_dex_num": 270,
-    "r_dex_num": ""
-  },
-  {
-    "name": "lombre",
-    "type": [
-      "Water",
-      "Grass"
-    ],
-    "n_dex_num": 271,
-    "r_dex_num": ""
-  },
-  {
-    "name": "ludicolo",
-    "type": [
-      "Water",
-      "Grass"
-    ],
-    "n_dex_num": 272,
-    "r_dex_num": ""
-  },
-  {
-    "name": "seedot",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 273,
-    "r_dex_num": ""
-  },
-  {
-    "name": "nuzleaf",
-    "type": [
-      "Grass",
-      "Dark"
-    ],
-    "n_dex_num": 274,
-    "r_dex_num": ""
-  },
-  {
-    "name": "shiftry",
-    "type": [
-      "Grass",
-      "Dark"
-    ],
-    "n_dex_num": 275,
-    "r_dex_num": ""
-  },
-  {
-    "name": "taillow",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 276,
-    "r_dex_num": ""
-  },
-  {
-    "name": "swellow",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 277,
-    "r_dex_num": ""
-  },
-  {
-    "name": "wingull",
-    "type": [
-      "Water",
-      "Flying"
-    ],
-    "n_dex_num": 278,
-    "r_dex_num": ""
-  },
-  {
-    "name": "pelipper",
-    "type": [
-      "Water",
-      "Flying"
-    ],
-    "n_dex_num": 279,
-    "r_dex_num": ""
-  },
-  {
-    "name": "ralts",
-    "type": [
-      "Psychic",
-      "Fairy"
-    ],
-    "n_dex_num": 280,
-    "r_dex_num": ""
-  },
-  {
-    "name": "kirlia",
-    "type": [
-      "Psychic",
-      "Fairy"
-    ],
-    "n_dex_num": 281,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gardevoir",
-    "type": [
-      "Psychic",
-      "Fairy"
-    ],
-    "n_dex_num": 282,
-    "r_dex_num": ""
-  },
-  {
-    "name": "surskit",
-    "type": [
-      "Bug",
-      "Water"
-    ],
-    "n_dex_num": 283,
-    "r_dex_num": ""
-  },
-  {
-    "name": "masquerain",
-    "type": [
-      "Bug",
-      "Flying"
-    ],
-    "n_dex_num": 284,
-    "r_dex_num": ""
-  },
-  {
-    "name": "shroomish",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 285,
-    "r_dex_num": ""
-  },
-  {
-    "name": "breloom",
-    "type": [
-      "Grass",
-      "Fighting"
-    ],
-    "n_dex_num": 286,
-    "r_dex_num": ""
-  },
-  {
-    "name": "slakoth",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 287,
-    "r_dex_num": ""
-  },
-  {
-    "name": "vigoroth",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 288,
-    "r_dex_num": ""
-  },
-  {
-    "name": "slaking",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 289,
-    "r_dex_num": ""
-  },
-  {
-    "name": "nincada",
-    "type": [
-      "Bug",
-      "Ground"
-    ],
-    "n_dex_num": 290,
-    "r_dex_num": ""
-  },
-  {
-    "name": "ninjask",
-    "type": [
-      "Bug",
-      "Flying"
-    ],
-    "n_dex_num": 291,
-    "r_dex_num": ""
-  },
-  {
-    "name": "shedinja",
-    "type": [
-      "Bug",
-      "Ghost"
-    ],
-    "n_dex_num": 292,
-    "r_dex_num": ""
-  },
-  {
-    "name": "whismur",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 293,
-    "r_dex_num": ""
-  },
-  {
-    "name": "loudred",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 294,
-    "r_dex_num": ""
-  },
-  {
-    "name": "exploud",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 295,
-    "r_dex_num": ""
-  },
-  {
-    "name": "makuhita",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 296,
-    "r_dex_num": ""
-  },
-  {
-    "name": "hariyama",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 297,
-    "r_dex_num": ""
-  },
-  {
-    "name": "azurill",
-    "type": [
-      "Normal",
-      "Fairy"
-    ],
-    "n_dex_num": 298,
-    "r_dex_num": ""
-  },
-  {
-    "name": "nosepass",
-    "type": [
-      "Rock"
-    ],
-    "n_dex_num": 299,
-    "r_dex_num": ""
-  },
-  {
-    "name": "skitty",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 300,
-    "r_dex_num": ""
-  },
-  {
-    "name": "delcatty",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 301,
-    "r_dex_num": ""
-  },
-  {
-    "name": "sableye",
-    "type": [
-      "Dark",
-      "Ghost"
-    ],
-    "n_dex_num": 302,
-    "r_dex_num": ""
-  },
-  {
-    "name": "mawile",
-    "type": [
-      "Steel",
-      "Fairy"
-    ],
-    "n_dex_num": 303,
-    "r_dex_num": ""
-  },
-  {
-    "name": "aron",
-    "type": [
-      "Steel",
-      "Rock"
-    ],
-    "n_dex_num": 304,
-    "r_dex_num": ""
-  },
-  {
-    "name": "lairon",
-    "type": [
-      "Steel",
-      "Rock"
-    ],
-    "n_dex_num": 305,
-    "r_dex_num": ""
-  },
-  {
-    "name": "aggron",
-    "type": [
-      "Steel",
-      "Rock"
-    ],
-    "n_dex_num": 306,
-    "r_dex_num": ""
-  },
-  {
-    "name": "meditite",
-    "type": [
-      "Fighting",
-      "Psychic"
-    ],
-    "n_dex_num": 307,
-    "r_dex_num": ""
-  },
-  {
-    "name": "medicham",
-    "type": [
-      "Fighting",
-      "Psychic"
-    ],
-    "n_dex_num": 308,
-    "r_dex_num": ""
-  },
-  {
-    "name": "electrike",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 309,
-    "r_dex_num": ""
-  },
-  {
-    "name": "manectric",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 310,
-    "r_dex_num": ""
-  },
-  {
-    "name": "plusle",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 311,
-    "r_dex_num": ""
-  },
-  {
-    "name": "minun",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 312,
-    "r_dex_num": ""
-  },
-  {
-    "name": "volbeat",
-    "type": [
-      "Bug"
-    ],
-    "n_dex_num": 313,
-    "r_dex_num": ""
-  },
-  {
-    "name": "illumise",
-    "type": [
-      "Bug"
-    ],
-    "n_dex_num": 314,
-    "r_dex_num": ""
-  },
-  {
-    "name": "roselia",
-    "type": [
-      "Grass",
-      "Poison"
-    ],
-    "n_dex_num": 315,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gulpin",
-    "type": [
-      "Poison"
-    ],
-    "n_dex_num": 316,
-    "r_dex_num": ""
-  },
-  {
-    "name": "swalot",
-    "type": [
-      "Poison"
-    ],
-    "n_dex_num": 317,
-    "r_dex_num": ""
-  },
-  {
-    "name": "carvanha",
-    "type": [
-      "Water",
-      "Dark"
-    ],
-    "n_dex_num": 318,
-    "r_dex_num": ""
-  },
-  {
-    "name": "sharpedo",
-    "type": [
-      "Water",
-      "Dark"
-    ],
-    "n_dex_num": 319,
-    "r_dex_num": ""
-  },
-  {
-    "name": "wailmer",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 320,
-    "r_dex_num": ""
-  },
-  {
-    "name": "wailord",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 321,
-    "r_dex_num": ""
-  },
-  {
-    "name": "numel",
-    "type": [
-      "Fire",
-      "Ground"
-    ],
-    "n_dex_num": 322,
-    "r_dex_num": ""
-  },
-  {
-    "name": "camerupt",
-    "type": [
-      "Fire",
-      "Ground"
-    ],
-    "n_dex_num": 323,
-    "r_dex_num": ""
-  },
-  {
-    "name": "torkoal",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 324,
-    "r_dex_num": ""
-  },
-  {
-    "name": "spoink",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 325,
-    "r_dex_num": ""
-  },
-  {
-    "name": "grumpig",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 326,
-    "r_dex_num": ""
-  },
-  {
-    "name": "spinda",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 327,
-    "r_dex_num": ""
-  },
-  {
-    "name": "trapinch",
-    "type": [
-      "Ground"
-    ],
-    "n_dex_num": 328,
-    "r_dex_num": ""
-  },
-  {
-    "name": "vibrava",
-    "type": [
-      "Ground",
-      "Ghost"
-    ],
-    "n_dex_num": 329,
-    "r_dex_num": ""
-  },
-  {
-    "name": "flygon",
-    "type": [
-      "Ground",
-      "Dragon"
-    ],
-    "n_dex_num": 330,
-    "r_dex_num": ""
-  },
-  {
-    "name": "cacnea",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 331,
-    "r_dex_num": ""
-  },
-  {
-    "name": "cacturne",
-    "type": [
-      "Grass",
-      "Dark"
-    ],
-    "n_dex_num": 332,
-    "r_dex_num": ""
-  },
-  {
-    "name": "swablu",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 333,
-    "r_dex_num": ""
-  },
-  {
-    "name": "altaria",
-    "type": [
-      "Dragon",
-      "Flying"
-    ],
-    "n_dex_num": 334,
-    "r_dex_num": ""
-  },
-  {
-    "name": "zangoose",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 335,
-    "r_dex_num": ""
-  },
-  {
-    "name": "seviper",
-    "type": [
-      "Poison"
-    ],
-    "n_dex_num": 336,
-    "r_dex_num": ""
-  },
-  {
-    "name": "lunatone",
-    "type": [
-      "Rock",
-      "Psychic"
-    ],
-    "n_dex_num": 337,
-    "r_dex_num": ""
-  },
-  {
-    "name": "solrock",
-    "type": [
-      "Rock",
-      "Psychic"
-    ],
-    "n_dex_num": 338,
-    "r_dex_num": ""
-  },
-  {
-    "name": "barboach",
-    "type": [
-      "Water",
-      "Ground"
-    ],
-    "n_dex_num": 339,
-    "r_dex_num": ""
-  },
-  {
-    "name": "whiscash",
-    "type": [
-      "Water",
-      "Ground"
-    ],
-    "n_dex_num": 340,
-    "r_dex_num": ""
-  },
-  {
-    "name": "corphish",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 341,
-    "r_dex_num": ""
-  },
-  {
-    "name": "crawdaunt",
-    "type": [
-      "Water",
-      "Dark"
-    ],
-    "n_dex_num": 342,
-    "r_dex_num": ""
-  },
-  {
-    "name": "baltoy",
-    "type": [
-      "Ground",
-      "Psychic"
-    ],
-    "n_dex_num": 343,
-    "r_dex_num": ""
-  },
-  {
-    "name": "claydol",
-    "type": [
-      "Ground",
-      "Psychic"
-    ],
-    "n_dex_num": 344,
-    "r_dex_num": ""
-  },
-  {
-    "name": "lileep",
-    "type": [
-      "Rock",
-      "Grass"
-    ],
-    "n_dex_num": 345,
-    "r_dex_num": ""
-  },
-  {
-    "name": "cradily",
-    "type": [
-      "Rock",
-      "Grass"
-    ],
-    "n_dex_num": 346,
-    "r_dex_num": ""
-  },
-  {
-    "name": "anorith",
-    "type": [
-      "Rock",
-      "Bug"
-    ],
-    "n_dex_num": 347,
-    "r_dex_num": ""
-  },
-  {
-    "name": "armaldo",
-    "type": [
-      "Rock",
-      "Bug"
-    ],
-    "n_dex_num": 348,
-    "r_dex_num": ""
-  },
-  {
-    "name": "feebas",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 349,
-    "r_dex_num": ""
-  },
-  {
-    "name": "milotic",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 350,
-    "r_dex_num": ""
-  },
-  {
-    "name": "castform",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 351,
-    "r_dex_num": ""
-  },
-  {
-    "name": "kecleon",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 352,
-    "r_dex_num": ""
-  },
-  {
-    "name": "shuppet",
-    "type": [
-      "Ghost"
-    ],
-    "n_dex_num": 353,
-    "r_dex_num": ""
-  },
-  {
-    "name": "banette",
-    "type": [
-      "Ghost"
-    ],
-    "n_dex_num": 354,
-    "r_dex_num": ""
-  },
-  {
-    "name": "duskull",
-    "type": [
-      "Ghost"
-    ],
-    "n_dex_num": 355,
-    "r_dex_num": ""
-  },
-  {
-    "name": "dusclops",
-    "type": [
-      "Ghost"
-    ],
-    "n_dex_num": 356,
-    "r_dex_num": ""
-  },
-  {
-    "name": "tropius",
-    "type": [
-      "Grass",
-      "Flying"
-    ],
-    "n_dex_num": 357,
-    "r_dex_num": ""
-  },
-  {
-    "name": "chimecho",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 358,
-    "r_dex_num": ""
-  },
-  {
-    "name": "absol",
-    "type": [
-      "Dark"
-    ],
-    "n_dex_num": 359,
-    "r_dex_num": ""
-  },
-  {
-    "name": "wynaut",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 360,
-    "r_dex_num": ""
-  },
-  {
-    "name": "snorunt",
-    "type": [
-      "Ice"
-    ],
-    "n_dex_num": 361,
-    "r_dex_num": ""
-  },
-  {
-    "name": "glalie",
-    "type": [
-      "Ice"
-    ],
-    "n_dex_num": 362,
-    "r_dex_num": ""
-  },
-  {
-    "name": "spheal",
-    "type": [
-      "Ice",
-      "Water"
-    ],
-    "n_dex_num": 363,
-    "r_dex_num": ""
-  },
-  {
-    "name": "sealeo",
-    "type": [
-      "Ice",
-      "Water"
-    ],
-    "n_dex_num": 364,
-    "r_dex_num": ""
-  },
-  {
-    "name": "walrein",
-    "type": [
-      "Ice",
-      "Water"
-    ],
-    "n_dex_num": 365,
-    "r_dex_num": ""
-  },
-  {
-    "name": "clamperl",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 366,
-    "r_dex_num": ""
-  },
-  {
-    "name": "huntail",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 367,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gorebyss",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 368,
-    "r_dex_num": ""
-  },
-  {
-    "name": "relicanth",
-    "type": [
-      "Water",
-      "Rock"
-    ],
-    "n_dex_num": 369,
-    "r_dex_num": ""
-  },
-  {
-    "name": "luvdisc",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 370,
-    "r_dex_num": ""
-  },
-  {
-    "name": "bagon",
-    "type": [
-      "Dragon"
-    ],
-    "n_dex_num": 371,
-    "r_dex_num": ""
-  },
-  {
-    "name": "shelgon",
-    "type": [
-      "Dragon"
-    ],
-    "n_dex_num": 372,
-    "r_dex_num": ""
-  },
-  {
-    "name": "salamence",
-    "type": [
-      "Dragon",
-      "Flying"
-    ],
-    "n_dex_num": 373,
-    "r_dex_num": ""
-  },
-  {
-    "name": "beldum",
-    "type": [
-      "Steel",
-      "Psychic"
-    ],
-    "n_dex_num": 374,
-    "r_dex_num": ""
-  },
-  {
-    "name": "metang",
-    "type": [
-      "Steel",
-      "Psychic"
-    ],
-    "n_dex_num": 375,
-    "r_dex_num": ""
-  },
-  {
-    "name": "metagross",
-    "type": [
-      "Steel",
-      "Psychic"
-    ],
-    "n_dex_num": 376,
-    "r_dex_num": ""
-  },
-  {
-    "name": "regirock",
-    "type": [
-      "Rock"
-    ],
-    "n_dex_num": 377,
-    "r_dex_num": ""
-  },
-  {
-    "name": "regice",
-    "type": [
-      "Ice"
-    ],
-    "n_dex_num": 378,
-    "r_dex_num": ""
-  },
-  {
-    "name": "registeel",
-    "type": [
-      "Steel"
-    ],
-    "n_dex_num": 379,
-    "r_dex_num": ""
-  },
-  {
-    "name": "latias",
-    "type": [
-      "Dragon",
-      "Psychic"
-    ],
-    "n_dex_num": 380,
-    "r_dex_num": ""
-  },
-  {
-    "name": "latios",
-    "type": [
-      "Dragon",
-      "Psychic"
-    ],
-    "n_dex_num": 381,
-    "r_dex_num": ""
-  },
-  {
-    "name": "kyogre",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 382,
-    "r_dex_num": ""
-  },
-  {
-    "name": "groudon",
-    "type": [
-      "Ground"
-    ],
-    "n_dex_num": 383,
-    "r_dex_num": ""
-  },
-  {
-    "name": "rayquaza",
-    "type": [
-      "Dragon",
-      "Flying"
-    ],
-    "n_dex_num": 384,
-    "r_dex_num": ""
-  },
-  {
-    "name": "jirachi",
-    "type": [
-      "Steel",
-      "Psychic"
-    ],
-    "n_dex_num": 385,
-    "r_dex_num": ""
-  },
-  {
-    "name": "deoxys",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 386,
-    "r_dex_num": ""
-  },
-  {
-    "name": "turtwig",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 387,
-    "r_dex_num": ""
-  },
-  {
-    "name": "grotle",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 388,
-    "r_dex_num": ""
-  },
-  {
-    "name": "torterra",
-    "type": [
-      "Grass",
-      "Ground"
-    ],
-    "n_dex_num": 389,
-    "r_dex_num": ""
-  },
-  {
-    "name": "chimchar",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 390,
-    "r_dex_num": ""
-  },
-  {
-    "name": "monferno",
-    "type": [
-      "Fire",
-      "Fighting"
-    ],
-    "n_dex_num": 391,
-    "r_dex_num": ""
-  },
-  {
-    "name": "infernape",
-    "type": [
-      "Fire",
-      "Fighting"
-    ],
-    "n_dex_num": 392,
-    "r_dex_num": ""
-  },
-  {
-    "name": "piplup",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 393,
-    "r_dex_num": ""
-  },
-  {
-    "name": "prinplup",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 394,
-    "r_dex_num": ""
-  },
-  {
-    "name": "empoleon",
-    "type": [
-      "Water",
-      "Steel"
-    ],
-    "n_dex_num": 395,
-    "r_dex_num": ""
-  },
-  {
-    "name": "starly",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 396,
-    "r_dex_num": ""
-  },
-  {
-    "name": "staravia",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 397,
-    "r_dex_num": ""
-  },
-  {
-    "name": "staraptor",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 398,
-    "r_dex_num": ""
-  },
-  {
-    "name": "bidoof",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 399,
-    "r_dex_num": ""
-  },
-  {
-    "name": "bibarel",
-    "type": [
-      "Normal",
-      "Water"
-    ],
-    "n_dex_num": 400,
-    "r_dex_num": ""
-  },
-  {
-    "name": "kricketot",
-    "type": [
-      "Bug"
-    ],
-    "n_dex_num": 401,
-    "r_dex_num": ""
-  },
-  {
-    "name": "kricketune",
-    "type": [
-      "Bug"
-    ],
-    "n_dex_num": 402,
-    "r_dex_num": ""
-  },
-  {
-    "name": "shinx",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 403,
-    "r_dex_num": ""
-  },
-  {
-    "name": "luxio",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 404,
-    "r_dex_num": ""
-  },
-  {
-    "name": "luxray",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 405,
-    "r_dex_num": ""
-  },
-  {
-    "name": "budew",
-    "type": [
-      "Grass",
-      "Poison"
-    ],
-    "n_dex_num": 406,
-    "r_dex_num": ""
-  },
-  {
-    "name": "roserade",
-    "type": [
-      "Grass",
-      "Poison"
-    ],
-    "n_dex_num": 407,
-    "r_dex_num": ""
-  },
-  {
-    "name": "cranidos",
-    "type": [
-      "Rock"
-    ],
-    "n_dex_num": 408,
-    "r_dex_num": ""
-  },
-  {
-    "name": "rampardos",
-    "type": [
-      "Rock"
-    ],
-    "n_dex_num": 409,
-    "r_dex_num": ""
-  },
-  {
-    "name": "shieldon",
-    "type": [
-      "Rock",
-      "Steel"
-    ],
-    "n_dex_num": 410,
-    "r_dex_num": ""
-  },
-  {
-    "name": "bastiodon",
-    "type": [
-      "Rock",
-      "Steel"
-    ],
-    "n_dex_num": 411,
-    "r_dex_num": ""
-  },
-  {
-    "name": "burmy",
-    "type": [
-      "Bug"
-    ],
-    "n_dex_num": 412,
-    "r_dex_num": ""
-  },
-  {
-    "name": "wormadam",
-    "type": [
-      "Bug",
-      "Grass"
-    ],
-    "n_dex_num": 413,
-    "r_dex_num": ""
-  },
-  {
-    "name": "mothim",
-    "type": [
-      "Bug",
-      "Flying"
-    ],
-    "n_dex_num": 414,
-    "r_dex_num": ""
-  },
-  {
-    "name": "combee",
-    "type": [
-      "Bug",
-      "Flying"
-    ],
-    "n_dex_num": 415,
-    "r_dex_num": ""
-  },
-  {
-    "name": "vespiquen",
-    "type": [
-      "Bug",
-      "Flying"
-    ],
-    "n_dex_num": 416,
-    "r_dex_num": ""
-  },
-  {
-    "name": "pachirisu",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 417,
-    "r_dex_num": ""
-  },
-  {
-    "name": "buizel",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 418,
-    "r_dex_num": ""
-  },
-  {
-    "name": "floatzel",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 419,
-    "r_dex_num": ""
-  },
-  {
-    "name": "cherubi",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 420,
-    "r_dex_num": ""
-  },
-  {
-    "name": "cherrim",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 421,
-    "r_dex_num": ""
-  },
-  {
-    "name": "shellos",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 422,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gastrodon",
-    "type": [
-      "Water",
-      "Ground"
-    ],
-    "n_dex_num": 423,
-    "r_dex_num": ""
-  },
-  {
-    "name": "ambipom",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 424,
-    "r_dex_num": ""
-  },
-  {
-    "name": "drifloon",
-    "type": [
-      "Ghost",
-      "Flying"
-    ],
-    "n_dex_num": 425,
-    "r_dex_num": ""
-  },
-  {
-    "name": "drifblim",
-    "type": [
-      "Ghost",
-      "Flying"
-    ],
-    "n_dex_num": 426,
-    "r_dex_num": ""
-  },
-  {
-    "name": "buneary",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 427,
-    "r_dex_num": ""
-  },
-  {
-    "name": "lopunny",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 428,
-    "r_dex_num": ""
-  },
-  {
-    "name": "mismagius",
-    "type": [
-      "Ghost"
-    ],
-    "n_dex_num": 429,
-    "r_dex_num": ""
-  },
-  {
-    "name": "honchkrow",
-    "type": [
-      "Dark",
-      "Flying"
-    ],
-    "n_dex_num": 430,
-    "r_dex_num": ""
-  },
-  {
-    "name": "glameow",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 431,
-    "r_dex_num": ""
-  },
-  {
-    "name": "purugly",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 432,
-    "r_dex_num": ""
-  },
-  {
-    "name": "chingling",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 433,
-    "r_dex_num": ""
-  },
-  {
-    "name": "stunky",
-    "type": [
-      "Poison",
-      "Dark"
-    ],
-    "n_dex_num": 434,
-    "r_dex_num": ""
-  },
-  {
-    "name": "skuntank",
-    "type": [
-      "Poison",
-      "Dark"
-    ],
-    "n_dex_num": 435,
-    "r_dex_num": ""
-  },
-  {
-    "name": "bronzor",
-    "type": [
-      "Steel",
-      "Psychic"
-    ],
-    "n_dex_num": 436,
-    "r_dex_num": ""
-  },
-  {
-    "name": "bronzong",
-    "type": [
-      "Steel",
-      "Psychic"
-    ],
-    "n_dex_num": 437,
-    "r_dex_num": ""
-  },
-  {
-    "name": "bonsly",
-    "type": [
-      "Rock"
-    ],
-    "n_dex_num": 438,
-    "r_dex_num": ""
-  },
-  {
-    "name": "mime-jr",
-    "type": [
-      "Psychic",
-      "Fairy"
-    ],
-    "n_dex_num": 439,
-    "r_dex_num": ""
-  },
-  {
-    "name": "happiny",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 440,
-    "r_dex_num": ""
-  },
-  {
-    "name": "chatot",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 441,
-    "r_dex_num": ""
-  },
-  {
-    "name": "spiritomb",
-    "type": [
-      "Ghost",
-      "Dark"
-    ],
-    "n_dex_num": 442,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gible",
-    "type": [
-      "Dragon",
-      "Ground"
-    ],
-    "n_dex_num": 443,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gabite",
-    "type": [
-      "Dragon",
-      "Ground"
-    ],
-    "n_dex_num": 444,
-    "r_dex_num": ""
-  },
-  {
-    "name": "garchomp",
-    "type": [
-      "Dragon",
-      "Ground"
-    ],
-    "n_dex_num": 445,
-    "r_dex_num": ""
-  },
-  {
-    "name": "munchlax",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 446,
-    "r_dex_num": ""
-  },
-  {
-    "name": "riolu",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 447,
-    "r_dex_num": ""
-  },
-  {
-    "name": "lucario",
-    "type": [
-      "Fighting",
-      "Steel"
-    ],
-    "n_dex_num": 448,
-    "r_dex_num": ""
-  },
-  {
-    "name": "hippopotas",
-    "type": [
-      "Ground"
-    ],
-    "n_dex_num": 449,
-    "r_dex_num": ""
-  },
-  {
-    "name": "hippowdon",
-    "type": [
-      "Ground"
-    ],
-    "n_dex_num": 450,
-    "r_dex_num": ""
-  },
-  {
-    "name": "skorupi",
-    "type": [
-      "Poison",
-      "Bug"
-    ],
-    "n_dex_num": 451,
-    "r_dex_num": ""
-  },
-  {
-    "name": "drapion",
-    "type": [
-      "Poison",
-      "Dark"
-    ],
-    "n_dex_num": 452,
-    "r_dex_num": ""
-  },
-  {
-    "name": "croagunk",
-    "type": [
-      "Poison",
-      "Fighting"
-    ],
-    "n_dex_num": 453,
-    "r_dex_num": ""
-  },
-  {
-    "name": "toxicroak",
-    "type": [
-      "Poison",
-      "Fighting"
-    ],
-    "n_dex_num": 454,
-    "r_dex_num": ""
-  },
-  {
-    "name": "carnivine",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 455,
-    "r_dex_num": ""
-  },
-  {
-    "name": "finneon",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 456,
-    "r_dex_num": ""
-  },
-  {
-    "name": "lumineon",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 457,
-    "r_dex_num": ""
-  },
-  {
-    "name": "mantyke",
-    "type": [
-      "Water",
-      "Flying"
-    ],
-    "n_dex_num": 458,
-    "r_dex_num": ""
-  },
-  {
-    "name": "snover",
-    "type": [
-      "Grass",
-      "Ice"
-    ],
-    "n_dex_num": 459,
-    "r_dex_num": ""
-  },
-  {
-    "name": "abomasnow",
-    "type": [
-      "Grass",
-      "Ice"
-    ],
-    "n_dex_num": 460,
-    "r_dex_num": ""
-  },
-  {
-    "name": "weavile",
-    "type": [
-      "Dark",
-      "Ice"
-    ],
-    "n_dex_num": 461,
-    "r_dex_num": ""
-  },
-  {
-    "name": "magnezone",
-    "type": [
-      "Electric",
-      "Steel"
-    ],
-    "n_dex_num": 462,
-    "r_dex_num": ""
-  },
-  {
-    "name": "lickilicky",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 463,
-    "r_dex_num": ""
-  },
-  {
-    "name": "rhyperior",
-    "type": [
-      "Ground",
-      "Rock"
-    ],
-    "n_dex_num": 464,
-    "r_dex_num": ""
-  },
-  {
-    "name": "tangrowth",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 465,
-    "r_dex_num": ""
-  },
-  {
-    "name": "electivire",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 466,
-    "r_dex_num": ""
-  },
-  {
-    "name": "magmortar",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 467,
-    "r_dex_num": ""
-  },
-  {
-    "name": "togekiss",
-    "type": [
-      "Fairy",
-      "Flying"
-    ],
-    "n_dex_num": 468,
-    "r_dex_num": ""
-  },
-  {
-    "name": "yanmega",
-    "type": [
-      "Bug",
-      "Flying"
-    ],
-    "n_dex_num": 469,
-    "r_dex_num": ""
-  },
-  {
-    "name": "leafeon",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 470,
-    "r_dex_num": ""
-  },
-  {
-    "name": "glaceon",
-    "type": [
-      "Ice"
-    ],
-    "n_dex_num": 471,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gliscor",
-    "type": [
-      "Ground",
-      "Flying"
-    ],
-    "n_dex_num": 472,
-    "r_dex_num": ""
-  },
-  {
-    "name": "mamoswine",
-    "type": [
-      "Ice",
-      "Ground"
-    ],
-    "n_dex_num": 473,
-    "r_dex_num": ""
-  },
-  {
-    "name": "porygon-z",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 474,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gallade",
-    "type": [
-      "Psychic",
-      "Fighting"
-    ],
-    "n_dex_num": 475,
-    "r_dex_num": ""
-  },
-  {
-    "name": "probopass",
-    "type": [
-      "Rock",
-      "Steel"
-    ],
-    "n_dex_num": 476,
-    "r_dex_num": ""
-  },
-  {
-    "name": "dusknoir",
-    "type": [
-      "Ghost"
-    ],
-    "n_dex_num": 477,
-    "r_dex_num": ""
-  },
-  {
-    "name": "froslass",
-    "type": [
-      "Ice",
-      "Ghost"
-    ],
-    "n_dex_num": 478,
-    "r_dex_num": ""
-  },
-  {
-    "name": "rotom",
-    "type": [
-      "Electric",
-      "Ghost"
-    ],
-    "n_dex_num": 479,
-    "r_dex_num": ""
-  },
-  {
-    "name": "uxie",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 480,
-    "r_dex_num": ""
-  },
-  {
-    "name": "mesprit",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 481,
-    "r_dex_num": ""
-  },
-  {
-    "name": "azelf",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 482,
-    "r_dex_num": ""
-  },
-  {
-    "name": "dialga",
-    "type": [
-      "Steel",
-      "Dragon"
-    ],
-    "n_dex_num": 483,
-    "r_dex_num": ""
-  },
-  {
-    "name": "palkia",
-    "type": [
-      "Water",
-      "Dragon"
-    ],
-    "n_dex_num": 484,
-    "r_dex_num": ""
-  },
-  {
-    "name": "heatran",
-    "type": [
-      "Fire",
-      "Steel"
-    ],
-    "n_dex_num": 485,
-    "r_dex_num": ""
-  },
-  {
-    "name": "regigigas",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 486,
-    "r_dex_num": ""
-  },
-  {
-    "name": "giratina",
-    "type": [
-      "Ghost"
-    ],
-    "n_dex_num": 487,
-    "r_dex_num": ""
-  },
-  {
-    "name": "cresselia",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 488,
-    "r_dex_num": ""
-  },
-  {
-    "name": "phione",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 489,
-    "r_dex_num": ""
-  },
-  {
-    "name": "manaphy",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 490,
-    "r_dex_num": ""
-  },
-  {
-    "name": "darkrai",
-    "type": [
-      "Dark"
-    ],
-    "n_dex_num": 491,
-    "r_dex_num": ""
-  },
-  {
-    "name": "shaymin",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 492,
-    "r_dex_num": ""
-  },
-  {
-    "name": "arceus",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 493,
-    "r_dex_num": ""
-  },
-  {
-    "name": "victini",
-    "type": [
-      "Psychic",
-      "Fire"
-    ],
-    "n_dex_num": 494,
-    "r_dex_num": ""
-  },
-  {
-    "name": "snivy",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 495,
-    "r_dex_num": ""
-  },
-  {
-    "name": "servine",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 496,
-    "r_dex_num": ""
-  },
-  {
-    "name": "serperior",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 497,
-    "r_dex_num": ""
-  },
-  {
-    "name": "tepig",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 498,
-    "r_dex_num": ""
-  },
-  {
-    "name": "pignite",
-    "type": [
-      "Fire",
-      "Fighting"
-    ],
-    "n_dex_num": 499,
-    "r_dex_num": ""
-  },
-  {
-    "name": "emboar",
-    "type": [
-      "Fire",
-      "Fighting"
-    ],
-    "n_dex_num": 500,
-    "r_dex_num": ""
-  },
-  {
-    "name": "oshawott",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 501,
-    "r_dex_num": ""
-  },
-  {
-    "name": "dewott",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 502,
-    "r_dex_num": ""
-  },
-  {
-    "name": "samurott",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 503,
-    "r_dex_num": ""
-  },
-  {
-    "name": "patrat",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 504,
-    "r_dex_num": ""
-  },
-  {
-    "name": "watchog",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 505,
-    "r_dex_num": ""
-  },
-  {
-    "name": "lillipup",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 506,
-    "r_dex_num": ""
-  },
-  {
-    "name": "herdier",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 507,
-    "r_dex_num": ""
-  },
-  {
-    "name": "stoutland",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 508,
-    "r_dex_num": ""
-  },
-  {
-    "name": "purrloin",
-    "type": [
-      "Dark"
-    ],
-    "n_dex_num": 509,
-    "r_dex_num": ""
-  },
-  {
-    "name": "liepard",
-    "type": [
-      "Dark"
-    ],
-    "n_dex_num": 510,
-    "r_dex_num": ""
-  },
-  {
-    "name": "pansage",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 511,
-    "r_dex_num": ""
-  },
-  {
-    "name": "simisage",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 512,
-    "r_dex_num": ""
-  },
-  {
-    "name": "pansear",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 513,
-    "r_dex_num": ""
-  },
-  {
-    "name": "simisear",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 514,
-    "r_dex_num": ""
-  },
-  {
-    "name": "panpour",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 515,
-    "r_dex_num": ""
-  },
-  {
-    "name": "simipour",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 516,
-    "r_dex_num": ""
-  },
-  {
-    "name": "munna",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 517,
-    "r_dex_num": ""
-  },
-  {
-    "name": "musharna",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 518,
-    "r_dex_num": ""
-  },
-  {
-    "name": "pidove",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 519,
-    "r_dex_num": ""
-  },
-  {
-    "name": "tranquill",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 520,
-    "r_dex_num": ""
-  },
-  {
-    "name": "unfezant",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 521,
-    "r_dex_num": ""
-  },
-  {
-    "name": "blitzle",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 522,
-    "r_dex_num": ""
-  },
-  {
-    "name": "zebstrika",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 523,
-    "r_dex_num": ""
-  },
-  {
-    "name": "roggenrola",
-    "type": [
-      "Rock"
-    ],
-    "n_dex_num": 524,
-    "r_dex_num": ""
-  },
-  {
-    "name": "boldore",
-    "type": [
-      "Rock"
-    ],
-    "n_dex_num": 525,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gigalith",
-    "type": [
-      "Rock"
-    ],
-    "n_dex_num": 526,
-    "r_dex_num": ""
-  },
-  {
-    "name": "woobat",
-    "type": [
-      "Psychic",
-      "Flying"
-    ],
-    "n_dex_num": 527,
-    "r_dex_num": ""
-  },
-  {
-    "name": "swoobat",
-    "type": [
-      "Psychic",
-      "Flying"
-    ],
-    "n_dex_num": 528,
-    "r_dex_num": ""
-  },
-  {
-    "name": "drilbur",
-    "type": [
-      "Ground"
-    ],
-    "n_dex_num": 529,
-    "r_dex_num": ""
-  },
-  {
-    "name": "excadrill",
-    "type": [
-      "Ground",
-      "Steel"
-    ],
-    "n_dex_num": 530,
-    "r_dex_num": ""
-  },
-  {
-    "name": "audino",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 531,
-    "r_dex_num": ""
-  },
-  {
-    "name": "timburr",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 532,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gurdurr",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 533,
-    "r_dex_num": ""
-  },
-  {
-    "name": "conkeldurr",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 534,
-    "r_dex_num": ""
-  },
-  {
-    "name": "tympole",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 535,
-    "r_dex_num": ""
-  },
-  {
-    "name": "palpitoad",
-    "type": [
-      "Water",
-      "Ground"
-    ],
-    "n_dex_num": 536,
-    "r_dex_num": ""
-  },
-  {
-    "name": "seismitoad",
-    "type": [
-      "Water",
-      "Ground"
-    ],
-    "n_dex_num": 537,
-    "r_dex_num": ""
-  },
-  {
-    "name": "throh",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 538,
-    "r_dex_num": ""
-  },
-  {
-    "name": "sawk",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 539,
-    "r_dex_num": ""
-  },
-  {
-    "name": "sewaddle",
-    "type": [
-      "Bug",
-      "Grass"
-    ],
-    "n_dex_num": 540,
-    "r_dex_num": ""
-  },
-  {
-    "name": "swadloon",
-    "type": [
-      "Bug",
-      "Grass"
-    ],
-    "n_dex_num": 541,
-    "r_dex_num": ""
-  },
-  {
-    "name": "leavanny",
-    "type": [
-      "Bug",
-      "Grass"
-    ],
-    "n_dex_num": 542,
-    "r_dex_num": ""
-  },
-  {
-    "name": "venipede",
-    "type": [
-      "Bug",
-      "Poison"
-    ],
-    "n_dex_num": 543,
-    "r_dex_num": ""
-  },
-  {
-    "name": "whirlipede",
-    "type": [
-      "Bug",
-      "Poison"
-    ],
-    "n_dex_num": 544,
-    "r_dex_num": ""
-  },
-  {
-    "name": "scolipede",
-    "type": [
-      "Bug",
-      "Poison"
-    ],
-    "n_dex_num": 545,
-    "r_dex_num": ""
-  },
-  {
-    "name": "cottonee",
-    "type": [
-      "Grass",
-      "Fairy"
-    ],
-    "n_dex_num": 546,
-    "r_dex_num": ""
-  },
-  {
-    "name": "whimsicott",
-    "type": [
-      "Grass",
-      "Fairy"
-    ],
-    "n_dex_num": 547,
-    "r_dex_num": ""
-  },
-  {
-    "name": "petilil",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 548,
-    "r_dex_num": ""
-  },
-  {
-    "name": "lilligant",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 549,
-    "r_dex_num": ""
-  },
-  {
-    "name": "basculin",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 550,
-    "r_dex_num": ""
-  },
-  {
-    "name": "sandile",
-    "type": [
-      "Ground",
-      "Dark"
-    ],
-    "n_dex_num": 551,
-    "r_dex_num": ""
-  },
-  {
-    "name": "krokorok",
-    "type": [
-      "Ground",
-      "Dark"
-    ],
-    "n_dex_num": 552,
-    "r_dex_num": ""
-  },
-  {
-    "name": "krookodile",
-    "type": [
-      "Ground",
-      "Dark"
-    ],
-    "n_dex_num": 553,
-    "r_dex_num": ""
-  },
-  {
-    "name": "darumaka",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 554,
-    "r_dex_num": ""
-  },
-  {
-    "name": "darmanitan",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 555,
-    "r_dex_num": ""
-  },
-  {
-    "name": "maractus",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 556,
-    "r_dex_num": ""
-  },
-  {
-    "name": "dwebble",
-    "type": [
-      "Bug",
-      "Rock"
-    ],
-    "n_dex_num": 557,
-    "r_dex_num": ""
-  },
-  {
-    "name": "crustle",
-    "type": [
-      "Bug",
-      "Rock"
-    ],
-    "n_dex_num": 558,
-    "r_dex_num": ""
-  },
-  {
-    "name": "scraggy",
-    "type": [
-      "Dark",
-      "Fighting"
-    ],
-    "n_dex_num": 559,
-    "r_dex_num": ""
-  },
-  {
-    "name": "scrafty",
-    "type": [
-      "Dark",
-      "Fighting"
-    ],
-    "n_dex_num": 560,
-    "r_dex_num": ""
-  },
-  {
-    "name": "sigilyph",
-    "type": [
-      "Psychic",
-      "Flying"
-    ],
-    "n_dex_num": 561,
-    "r_dex_num": ""
-  },
-  {
-    "name": "yamask",
-    "type": [
-      "Ghost"
-    ],
-    "n_dex_num": 562,
-    "r_dex_num": ""
-  },
-  {
-    "name": "cofagrigus",
-    "type": [
-      "Ghost"
-    ],
-    "n_dex_num": 563,
-    "r_dex_num": ""
-  },
-  {
-    "name": "tirtouga",
-    "type": [
-      "Water",
-      "Rock"
-    ],
-    "n_dex_num": 564,
-    "r_dex_num": ""
-  },
-  {
-    "name": "carracosta",
-    "type": [
-      "Water",
-      "Rock"
-    ],
-    "n_dex_num": 565,
-    "r_dex_num": ""
-  },
-  {
-    "name": "archen",
-    "type": [
-      "Rock",
-      "Flying"
-    ],
-    "n_dex_num": 566,
-    "r_dex_num": ""
-  },
-  {
-    "name": "archeops",
-    "type": [
-      "Rock",
-      "Flying"
-    ],
-    "n_dex_num": 567,
-    "r_dex_num": ""
-  },
-  {
-    "name": "trubbish",
-    "type": [
-      "Poison"
-    ],
-    "n_dex_num": 568,
-    "r_dex_num": ""
-  },
-  {
-    "name": "garbodor",
-    "type": [
-      "Poison"
-    ],
-    "n_dex_num": 569,
-    "r_dex_num": ""
-  },
-  {
-    "name": "zorua",
-    "type": [
-      "Dark"
-    ],
-    "n_dex_num": 570,
-    "r_dex_num": ""
-  },
-  {
-    "name": "zoroark",
-    "type": [
-      "Dark"
-    ],
-    "n_dex_num": 571,
-    "r_dex_num": ""
-  },
-  {
-    "name": "minccino",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 572,
-    "r_dex_num": ""
-  },
-  {
-    "name": "cinccino",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 573,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gothita",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 574,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gothorita",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 575,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gothitelle",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 576,
-    "r_dex_num": ""
-  },
-  {
-    "name": "solosis",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 577,
-    "r_dex_num": ""
-  },
-  {
-    "name": "duosion",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 578,
-    "r_dex_num": ""
-  },
-  {
-    "name": "reuniclus",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 579,
-    "r_dex_num": ""
-  },
-  {
-    "name": "ducklett",
-    "type": [
-      "Water",
-      "Flying"
-    ],
-    "n_dex_num": 580,
-    "r_dex_num": ""
-  },
-  {
-    "name": "swanna",
-    "type": [
-      "Water",
-      "Flying"
-    ],
-    "n_dex_num": 581,
-    "r_dex_num": ""
-  },
-  {
-    "name": "vanillite",
-    "type": [
-      "Ice"
-    ],
-    "n_dex_num": 582,
-    "r_dex_num": ""
-  },
-  {
-    "name": "vanillish",
-    "type": [
-      "Ice"
-    ],
-    "n_dex_num": 583,
-    "r_dex_num": ""
-  },
-  {
-    "name": "vanilluxe",
-    "type": [
-      "Ice"
-    ],
-    "n_dex_num": 584,
-    "r_dex_num": ""
-  },
-  {
-    "name": "deerling",
-    "type": [
-      "Normal",
-      "Grass"
-    ],
-    "n_dex_num": 585,
-    "r_dex_num": ""
-  },
-  {
-    "name": "sawsbuck",
-    "type": [
-      "Normal",
-      "Grass"
-    ],
-    "n_dex_num": 586,
-    "r_dex_num": ""
-  },
-  {
-    "name": "emolga",
-    "type": [
-      "Electric",
-      "Flying"
-    ],
-    "n_dex_num": 587,
-    "r_dex_num": ""
-  },
-  {
-    "name": "karrablast",
-    "type": [
-      "Bug"
-    ],
-    "n_dex_num": 588,
-    "r_dex_num": ""
-  },
-  {
-    "name": "escavalier",
-    "type": [
-      "Bug",
-      "Steel"
-    ],
-    "n_dex_num": 589,
-    "r_dex_num": ""
-  },
-  {
-    "name": "foongus",
-    "type": [
-      "Grass",
-      "Poison"
-    ],
-    "n_dex_num": 590,
-    "r_dex_num": ""
-  },
-  {
-    "name": "amoonguss",
-    "type": [
-      "Grass",
-      "Poison"
-    ],
-    "n_dex_num": 591,
-    "r_dex_num": ""
-  },
-  {
-    "name": "frillish",
-    "type": [
-      "Water",
-      "Ghost"
-    ],
-    "n_dex_num": 592,
-    "r_dex_num": ""
-  },
-  {
-    "name": "jellicent",
-    "type": [
-      "Water",
-      "Ghost"
-    ],
-    "n_dex_num": 593,
-    "r_dex_num": ""
-  },
-  {
-    "name": "alomomola",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 594,
-    "r_dex_num": ""
-  },
-  {
-    "name": "joltik",
-    "type": [
-      "Bug",
-      "Electric"
-    ],
-    "n_dex_num": 595,
-    "r_dex_num": ""
-  },
-  {
-    "name": "galvantula",
-    "type": [
-      "Bug",
-      "Electric"
-    ],
-    "n_dex_num": 596,
-    "r_dex_num": ""
-  },
-  {
-    "name": "ferroseed",
-    "type": [
-      "Grass",
-      "Steel"
-    ],
-    "n_dex_num": 597,
-    "r_dex_num": ""
-  },
-  {
-    "name": "ferrothorn",
-    "type": [
-      "Grass",
-      "Steel"
-    ],
-    "n_dex_num": 598,
-    "r_dex_num": ""
-  },
-  {
-    "name": "klink",
-    "type": [
-      "Steel"
-    ],
-    "n_dex_num": 599,
-    "r_dex_num": ""
-  },
-  {
-    "name": "klang",
-    "type": [
-      "Steel"
-    ],
-    "n_dex_num": 600,
-    "r_dex_num": ""
-  },
-  {
-    "name": "klinklang",
-    "type": [
-      "Steel"
-    ],
-    "n_dex_num": 601,
-    "r_dex_num": ""
-  },
-  {
-    "name": "tynamo",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 602,
-    "r_dex_num": ""
-  },
-  {
-    "name": "eelektrik",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 603,
-    "r_dex_num": ""
-  },
-  {
-    "name": "eelektross",
-    "type": [
-      "Electric"
-    ],
-    "n_dex_num": 604,
-    "r_dex_num": ""
-  },
-  {
-    "name": "elgyem",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 605,
-    "r_dex_num": ""
-  },
-  {
-    "name": "beheeyem",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 606,
-    "r_dex_num": ""
-  },
-  {
-    "name": "litwick",
-    "type": [
-      "Ghost",
-      "Fire"
-    ],
-    "n_dex_num": 607,
-    "r_dex_num": ""
-  },
-  {
-    "name": "lampent",
-    "type": [
-      "Ghost",
-      "Fire"
-    ],
-    "n_dex_num": 608,
-    "r_dex_num": ""
-  },
-  {
-    "name": "chandelure",
-    "type": [
-      "Ghost",
-      "Fire"
-    ],
-    "n_dex_num": 609,
-    "r_dex_num": ""
-  },
-  {
-    "name": "axew",
-    "type": [
-      "Dragon"
-    ],
-    "n_dex_num": 610,
-    "r_dex_num": ""
-  },
-  {
-    "name": "fraxure",
-    "type": [
-      "Dragon"
-    ],
-    "n_dex_num": 611,
-    "r_dex_num": ""
-  },
-  {
-    "name": "haxorus",
-    "type": [
-      "Dragon"
-    ],
-    "n_dex_num": 612,
-    "r_dex_num": ""
-  },
-  {
-    "name": "cubchoo",
-    "type": [
-      "Ice"
-    ],
-    "n_dex_num": 613,
-    "r_dex_num": ""
-  },
-  {
-    "name": "beartic",
-    "type": [
-      "Ice"
-    ],
-    "n_dex_num": 614,
-    "r_dex_num": ""
-  },
-  {
-    "name": "cryogonal",
-    "type": [
-      "Ice"
-    ],
-    "n_dex_num": 615,
-    "r_dex_num": ""
-  },
-  {
-    "name": "shelmet",
-    "type": [
-      "Bug"
-    ],
-    "n_dex_num": 616,
-    "r_dex_num": ""
-  },
-  {
-    "name": "accelgor",
-    "type": [
-      "Bug"
-    ],
-    "n_dex_num": 617,
-    "r_dex_num": ""
-  },
-  {
-    "name": "stunfisk",
-    "type": [
-      "Ground",
-      "Electric"
-    ],
-    "n_dex_num": 618,
-    "r_dex_num": ""
-  },
-  {
-    "name": "mienfoo",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 619,
-    "r_dex_num": ""
-  },
-  {
-    "name": "mienshao",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 620,
-    "r_dex_num": ""
-  },
-  {
-    "name": "druddigon",
-    "type": [
-      "Dragon"
-    ],
-    "n_dex_num": 621,
-    "r_dex_num": ""
-  },
-  {
-    "name": "golett",
-    "type": [
-      "Ground",
-      "Ghost"
-    ],
-    "n_dex_num": 622,
-    "r_dex_num": ""
-  },
-  {
-    "name": "golurk",
-    "type": [
-      "Ground",
-      "Ghost"
-    ],
-    "n_dex_num": 623,
-    "r_dex_num": ""
-  },
-  {
-    "name": "pawniard",
-    "type": [
-      "Dark",
-      "Steel"
-    ],
-    "n_dex_num": 624,
-    "r_dex_num": ""
-  },
-  {
-    "name": "bisharp",
-    "type": [
-      "Dark",
-      "Steel"
-    ],
-    "n_dex_num": 625,
-    "r_dex_num": ""
-  },
-  {
-    "name": "bouffalant",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 626,
-    "r_dex_num": ""
-  },
-  {
-    "name": "rufflet",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 627,
-    "r_dex_num": ""
-  },
-  {
-    "name": "braviary",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 628,
-    "r_dex_num": ""
-  },
-  {
-    "name": "vullaby",
-    "type": [
-      "Dark",
-      "Flying"
-    ],
-    "n_dex_num": 629,
-    "r_dex_num": ""
-  },
-  {
-    "name": "mandibuzz",
-    "type": [
-      "Dark",
-      "Flying"
-    ],
-    "n_dex_num": 630,
-    "r_dex_num": ""
-  },
-  {
-    "name": "heatmor",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 631,
-    "r_dex_num": ""
-  },
-  {
-    "name": "durant",
-    "type": [
-      "Bug",
-      "Steel"
-    ],
-    "n_dex_num": 632,
-    "r_dex_num": ""
-  },
-  {
-    "name": "deino",
-    "type": [
-      "Dark",
-      "Dragon"
-    ],
-    "n_dex_num": 633,
-    "r_dex_num": ""
-  },
-  {
-    "name": "zweilous",
-    "type": [
-      "Dark",
-      "Dragon"
-    ],
-    "n_dex_num": 634,
-    "r_dex_num": ""
-  },
-  {
-    "name": "hydreigon",
-    "type": [
-      "Dark",
-      "Dragon"
-    ],
-    "n_dex_num": 635,
-    "r_dex_num": ""
-  },
-  {
-    "name": "larvesta",
-    "type": [
-      "Bug",
-      "Fire"
-    ],
-    "n_dex_num": 636,
-    "r_dex_num": ""
-  },
-  {
-    "name": "volcarona",
-    "type": [
-      "Bug",
-      "Fire"
-    ],
-    "n_dex_num": 637,
-    "r_dex_num": ""
-  },
-  {
-    "name": "cobalion",
-    "type": [
-      "Steel",
-      "Fighting"
-    ],
-    "n_dex_num": 638,
-    "r_dex_num": ""
-  },
-  {
-    "name": "terrakion",
-    "type": [
-      "Rock",
-      "Fighting"
-    ],
-    "n_dex_num": 639,
-    "r_dex_num": ""
-  },
-  {
-    "name": "virizion",
-    "type": [
-      "Grass",
-      "Fighting"
-    ],
-    "n_dex_num": 640,
-    "r_dex_num": ""
-  },
-  {
-    "name": "tornadus",
-    "type": [
-      "Flying"
-    ],
-    "n_dex_num": 641,
-    "r_dex_num": ""
-  },
-  {
-    "name": "thundurus",
-    "type": [
-      "Electric",
-      "Flying"
-    ],
-    "n_dex_num": 642,
-    "r_dex_num": ""
-  },
-  {
-    "name": "reshiram",
-    "type": [
-      "Dragon",
-      "Fire"
-    ],
-    "n_dex_num": 643,
-    "r_dex_num": ""
-  },
-  {
-    "name": "zekrom",
-    "type": [
-      "Dragon",
-      "Electric"
-    ],
-    "n_dex_num": 644,
-    "r_dex_num": ""
-  },
-  {
-    "name": "landorus",
-    "type": [
-      "Ground",
-      "Flying"
-    ],
-    "n_dex_num": 645,
-    "r_dex_num": ""
-  },
-  {
-    "name": "kyurem",
-    "type": [
-      "Dragon",
-      "Ice"
-    ],
-    "n_dex_num": 646,
-    "r_dex_num": ""
-  },
-  {
-    "name": "keldeo",
-    "type": [
-      "Water",
-      "Fighting"
-    ],
-    "n_dex_num": 647,
-    "r_dex_num": ""
-  },
-  {
-    "name": "meloetta",
-    "type": [
-      "Normal",
-      "Psychic"
-    ],
-    "n_dex_num": 648,
-    "r_dex_num": ""
-  },
-  {
-    "name": "genesect",
-    "type": [
-      "Bug",
-      "Steel"
-    ],
-    "n_dex_num": 649,
-    "r_dex_num": ""
-  },
-  {
-    "name": "chespin",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 650,
-    "r_dex_num": ""
-  },
-  {
-    "name": "quilladin",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 651,
-    "r_dex_num": ""
-  },
-  {
-    "name": "chesnaught",
-    "type": [
-      "Grass",
-      "Fighting"
-    ],
-    "n_dex_num": 652,
-    "r_dex_num": ""
-  },
-  {
-    "name": "fennekin",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 653,
-    "r_dex_num": ""
-  },
-  {
-    "name": "braixen",
-    "type": [
-      "Fire"
-    ],
-    "n_dex_num": 654,
-    "r_dex_num": ""
-  },
-  {
-    "name": "delphox",
-    "type": [
-      "Fire",
-      "Psychic"
-    ],
-    "n_dex_num": 655,
-    "r_dex_num": ""
-  },
-  {
-    "name": "froakie",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 656,
-    "r_dex_num": ""
-  },
-  {
-    "name": "frogadier",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 657,
-    "r_dex_num": ""
-  },
-  {
-    "name": "greninja",
-    "type": [
-      "Water",
-      "Dark"
-    ],
-    "n_dex_num": 658,
-    "r_dex_num": ""
-  },
-  {
-    "name": "bunnelby",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 659,
-    "r_dex_num": ""
-  },
-  {
-    "name": "diggersby",
-    "type": [
-      "Normal",
-      "Ground"
-    ],
-    "n_dex_num": 660,
-    "r_dex_num": ""
-  },
-  {
-    "name": "fletchling",
-    "type": [
-      "Normal",
-      "Flying"
-    ],
-    "n_dex_num": 661,
-    "r_dex_num": ""
-  },
-  {
-    "name": "fletchinder",
-    "type": [
-      "Fire",
-      "Flying"
-    ],
-    "n_dex_num": 662,
-    "r_dex_num": ""
-  },
-  {
-    "name": "talonflame",
-    "type": [
-      "Fire",
-      "Flying"
-    ],
-    "n_dex_num": 663,
-    "r_dex_num": ""
-  },
-  {
-    "name": "scatterbug",
-    "type": [
-      "Bug"
-    ],
-    "n_dex_num": 664,
-    "r_dex_num": ""
-  },
-  {
-    "name": "spewpa",
-    "type": [
-      "Bug"
-    ],
-    "n_dex_num": 665,
-    "r_dex_num": ""
-  },
-  {
-    "name": "vivillon",
-    "type": [
-      "Bug",
-      "Flying"
-    ],
-    "n_dex_num": 666,
-    "r_dex_num": ""
-  },
-  {
-    "name": "litleo",
-    "type": [
-      "Fire",
-      "Normal"
-    ],
-    "n_dex_num": 667,
-    "r_dex_num": ""
-  },
-  {
-    "name": "pyroar",
-    "type": [
-      "Fire",
-      "Normal"
-    ],
-    "n_dex_num": 668,
-    "r_dex_num": ""
-  },
-  {
-    "name": "flabebe",
-    "type": [
-      "Fairy"
-    ],
-    "n_dex_num": 669,
-    "r_dex_num": ""
-  },
-  {
-    "name": "floette",
-    "type": [
-      "Fairy"
-    ],
-    "n_dex_num": 670,
-    "r_dex_num": ""
-  },
-  {
-    "name": "florges",
-    "type": [
-      "Fairy"
-    ],
-    "n_dex_num": 671,
-    "r_dex_num": ""
-  },
-  {
-    "name": "skiddo",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 672,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gogoat",
-    "type": [
-      "Grass"
-    ],
-    "n_dex_num": 673,
-    "r_dex_num": ""
-  },
-  {
-    "name": "pancham",
-    "type": [
-      "Fighting"
-    ],
-    "n_dex_num": 674,
-    "r_dex_num": ""
-  },
-  {
-    "name": "pangoro",
-    "type": [
-      "Fighting",
-      "Dark"
-    ],
-    "n_dex_num": 675,
-    "r_dex_num": ""
-  },
-  {
-    "name": "furfrou",
-    "type": [
-      "Normal"
-    ],
-    "n_dex_num": 676,
-    "r_dex_num": ""
-  },
-  {
-    "name": "espurr",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 677,
-    "r_dex_num": ""
-  },
-  {
-    "name": "meowstic",
-    "type": [
-      "Psychic"
-    ],
-    "n_dex_num": 678,
-    "r_dex_num": ""
-  },
-  {
-    "name": "honedge",
-    "type": [
-      "Steel",
-      "Ghost"
-    ],
-    "n_dex_num": 679,
-    "r_dex_num": ""
-  },
-  {
-    "name": "doublade",
-    "type": [
-      "Steel",
-      "Ghost"
-    ],
-    "n_dex_num": 680,
-    "r_dex_num": ""
-  },
-  {
-    "name": "aegislash",
-    "type": [
-      "Steel",
-      "Ghost"
-    ],
-    "n_dex_num": 681,
-    "r_dex_num": ""
-  },
-  {
-    "name": "spritzee",
-    "type": [
-      "Fairy"
-    ],
-    "n_dex_num": 682,
-    "r_dex_num": ""
-  },
-  {
-    "name": "aromatisse",
-    "type": [
-      "Fairy"
-    ],
-    "n_dex_num": 683,
-    "r_dex_num": ""
-  },
-  {
-    "name": "swirlix",
-    "type": [
-      "Fairy"
-    ],
-    "n_dex_num": 684,
-    "r_dex_num": ""
-  },
-  {
-    "name": "slurpuff",
-    "type": [
-      "Fairy"
-    ],
-    "n_dex_num": 685,
-    "r_dex_num": ""
-  },
-  {
-    "name": "inkay",
-    "type": [
-      "Dark",
-      "Psychic"
-    ],
-    "n_dex_num": 686,
-    "r_dex_num": ""
-  },
-  {
-    "name": "malamar",
-    "type": [
-      "Dark",
-      "Psychic"
-    ],
-    "n_dex_num": 687,
-    "r_dex_num": ""
-  },
-  {
-    "name": "binacle",
-    "type": [
-      "Rock",
-      "Water"
-    ],
-    "n_dex_num": 688,
-    "r_dex_num": ""
-  },
-  {
-    "name": "barbaracle",
-    "type": [
-      "Rock",
-      "Water"
-    ],
-    "n_dex_num": 689,
-    "r_dex_num": ""
-  },
-  {
-    "name": "skrelp",
-    "type": [
-      "Poison",
-      "Water"
-    ],
-    "n_dex_num": 690,
-    "r_dex_num": ""
-  },
-  {
-    "name": "dragalge",
-    "type": [
-      "Poison",
-      "Dragon"
-    ],
-    "n_dex_num": 691,
-    "r_dex_num": ""
-  },
-  {
-    "name": "clauncher",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 692,
-    "r_dex_num": ""
-  },
-  {
-    "name": "clawitzer",
-    "type": [
-      "Water"
-    ],
-    "n_dex_num": 693,
-    "r_dex_num": ""
-  },
-  {
-    "name": "helioptile",
-    "type": [
-      "Electric",
-      "Normal"
-    ],
-    "n_dex_num": 694,
-    "r_dex_num": ""
-  },
-  {
-    "name": "heliolisk",
-    "type": [
-      "Electric",
-      "Normal"
-    ],
-    "n_dex_num": 695,
-    "r_dex_num": ""
-  },
-  {
-    "name": "tyrunt",
-    "type": [
-      "Rock",
-      "Dragon"
-    ],
-    "n_dex_num": 696,
-    "r_dex_num": ""
-  },
-  {
-    "name": "tyrantrum",
-    "type": [
-      "Rock",
-      "Dragon"
-    ],
-    "n_dex_num": 697,
-    "r_dex_num": ""
-  },
-  {
-    "name": "amaura",
-    "type": [
-      "Rock",
-      "Ice"
-    ],
-    "n_dex_num": 698,
-    "r_dex_num": ""
-  },
-  {
-    "name": "aurorus",
-    "type": [
-      "Rock",
-      "Ice"
-    ],
-    "n_dex_num": 699,
-    "r_dex_num": ""
-  },
-  {
-    "name": "sylveon",
-    "type": [
-      "Fairy"
-    ],
-    "n_dex_num": 700,
-    "r_dex_num": ""
-  },
-  {
-    "name": "hawlucha",
-    "type": [
-      "Fighting",
-      "Flying"
-    ],
-    "n_dex_num": 701,
-    "r_dex_num": ""
-  },
-  {
-    "name": "dedenne",
-    "type": [
-      "Electric",
-      "Fairy"
-    ],
-    "n_dex_num": 702,
-    "r_dex_num": ""
-  },
-  {
-    "name": "carbink",
-    "type": [
-      "Rock",
-      "Fairy"
-    ],
-    "n_dex_num": 703,
-    "r_dex_num": ""
-  },
-  {
-    "name": "goomy",
-    "type": [
-      "Dragon"
-    ],
-    "n_dex_num": 704,
-    "r_dex_num": ""
-  },
-  {
-    "name": "sliggoo",
-    "type": [
-      "Dragon"
-    ],
-    "n_dex_num": 705,
-    "r_dex_num": ""
-  },
-  {
-    "name": "goodra",
-    "type": [
-      "Dragon"
-    ],
-    "n_dex_num": 706,
-    "r_dex_num": ""
-  },
-  {
-    "name": "klefki",
-    "type": [
-      "Steel",
-      "Fairy"
-    ],
-    "n_dex_num": 707,
-    "r_dex_num": ""
-  },
-  {
-    "name": "phantump",
-    "type": [
-      "Ghost",
-      "Grass"
-    ],
-    "n_dex_num": 708,
-    "r_dex_num": ""
-  },
-  {
-    "name": "trevenant",
-    "type": [
-      "Ghost",
-      "Grass"
-    ],
-    "n_dex_num": 709,
-    "r_dex_num": ""
-  },
-  {
-    "name": "pumpkaboo",
-    "type": [
-      "Ghost",
-      "Grass"
-    ],
-    "n_dex_num": 710,
-    "r_dex_num": ""
-  },
-  {
-    "name": "gourgeist",
-    "type": [
-      "Ghost",
-      "Grass"
-    ],
-    "n_dex_num": 711,
-    "r_dex_num": ""
-  },
-  {
-    "name": "bergmite",
-    "type": [
-      "Ice"
-    ],
-    "n_dex_num": 712,
-    "r_dex_num": ""
-  },
-  {
-    "name": "avalugg",
-    "type": [
-      "Ice"
-    ],
-    "n_dex_num": 713,
-    "r_dex_num": ""
-  },
-  {
-    "name": "noibat",
-    "type": [
-      "Flying",
-      "Dragon"
-    ],
-    "n_dex_num": 714,
-    "r_dex_num": ""
-  },
-  {
-    "name": "noivern",
-    "type": [
-      "Flying",
-      "Dragon"
-    ],
-    "n_dex_num": 715,
-    "r_dex_num": ""
-  },
-  {
-    "name": "xerneas",
-    "type": [
-      "Fairy"
-    ],
-    "n_dex_num": 716,
-    "r_dex_num": ""
-  },
-  {
-    "name": "yveltal",
-    "type": [
-      "Dark",
-      "Flying"
-    ],
-    "n_dex_num": 717,
-    "r_dex_num": ""
-  },
-  {
-    "name": "zygarde",
-    "type": [
-      "Dragon",
-      "Ground"
-    ],
-    "n_dex_num": 718,
-    "r_dex_num": ""
-  },
-  {
-    "name": "diancie",
-    "type": [
-      "Rock",
-      "Fairy"
-    ],
-    "n_dex_num": 719,
-    "r_dex_num": ""
-  },
-  {
-    "name": "hoopa",
-    "type": [
-      "Psychic",
-      "Ghost"
-    ],
-    "n_dex_num": 720,
-    "r_dex_num": ""
-  },
-  {
-    "name": "volcanion",
-    "type": [
-      "Fire",
-      "Water"
-    ],
-    "n_dex_num": 721,
-    "r_dex_num": ""
-  },
-  {
     "name": "rowlet",
     "type": [
       "grass",
       "flying"
     ],
     "n_dex_num": 722,
-    "r_dex_num": ""
+    "r_dex_num": 1
   },
   {
     "name": "dartrix",
@@ -6132,7 +15,7 @@
       "flying"
     ],
     "n_dex_num": 723,
-    "r_dex_num": ""
+    "r_dex_num": 2
   },
   {
     "name": "decidueye",
@@ -6141,7 +24,7 @@
       "ghost"
     ],
     "n_dex_num": 724,
-    "r_dex_num": ""
+    "r_dex_num": 3
   },
   {
     "name": "litten",
@@ -6149,7 +32,7 @@
       "fire"
     ],
     "n_dex_num": 725,
-    "r_dex_num": ""
+    "r_dex_num": 4
   },
   {
     "name": "torracat",
@@ -6157,7 +40,7 @@
       "fire"
     ],
     "n_dex_num": 726,
-    "r_dex_num": ""
+    "r_dex_num": 5
   },
   {
     "name": "incineroar",
@@ -6166,7 +49,7 @@
       "dark"
     ],
     "n_dex_num": 727,
-    "r_dex_num": ""
+    "r_dex_num": 6
   },
   {
     "name": "popplio",
@@ -6174,7 +57,7 @@
       "water"
     ],
     "n_dex_num": 728,
-    "r_dex_num": ""
+    "r_dex_num": 7
   },
   {
     "name": "brionne",
@@ -6182,7 +65,7 @@
       "water"
     ],
     "n_dex_num": 729,
-    "r_dex_num": ""
+    "r_dex_num": 8
   },
   {
     "name": "primarina",
@@ -6191,7 +74,7 @@
       "fairy"
     ],
     "n_dex_num": 730,
-    "r_dex_num": ""
+    "r_dex_num": 9
   },
   {
     "name": "pikipek",
@@ -6200,7 +83,7 @@
       "flying"
     ],
     "n_dex_num": 731,
-    "r_dex_num": ""
+    "r_dex_num": 10
   },
   {
     "name": "trumbeak",
@@ -6209,7 +92,7 @@
       "flying"
     ],
     "n_dex_num": 732,
-    "r_dex_num": ""
+    "r_dex_num": 11
   },
   {
     "name": "toucannon",
@@ -6218,7 +101,7 @@
       "flying"
     ],
     "n_dex_num": 733,
-    "r_dex_num": ""
+    "r_dex_num": 12
   },
   {
     "name": "yungoos",
@@ -6226,7 +109,7 @@
       "normal"
     ],
     "n_dex_num": 734,
-    "r_dex_num": ""
+    "r_dex_num": 13
   },
   {
     "name": "gumshoos",
@@ -6234,7 +117,111 @@
       "normal"
     ],
     "n_dex_num": 735,
-    "r_dex_num": ""
+    "r_dex_num": 14
+  },
+  {
+    "name": "rattata-a",
+    "type": [
+      "dark",
+      "normal"
+    ],
+    "n_dex_num": 19,
+    "r_dex_num": 15
+  },
+  {
+    "name": "raticate-a",
+    "type": [
+      "dark",
+      "normal"
+    ],
+    "n_dex_num": 20,
+    "r_dex_num": 16
+  },
+  {
+    "name": "caterpie",
+    "type": [
+      "bug"
+    ],
+    "n_dex_num": 10,
+    "r_dex_num": 17
+  },
+  {
+    "name": "metapod",
+    "type": [
+      "bug"
+    ],
+    "n_dex_num": 11,
+    "r_dex_num": 18
+  },
+  {
+    "name": "butterfree",
+    "type": [
+      "bug",
+      "flying"
+    ],
+    "n_dex_num": 12,
+    "r_dex_num": 19
+  },
+  {
+    "name": "ledyba",
+    "type": [
+      "bug",
+      "flying"
+    ],
+    "n_dex_num": 165,
+    "r_dex_num": 20
+  },
+  {
+    "name": "ledian",
+    "type": [
+      "bug",
+      "flying"
+    ],
+    "n_dex_num": 166,
+    "r_dex_num": 21
+  },
+  {
+    "name": "spinarak",
+    "type": [
+      "bug",
+      "poison"
+    ],
+    "n_dex_num": 167,
+    "r_dex_num": 22
+  },
+  {
+    "name": "ariados",
+    "type": [
+      "bug",
+      "poison"
+    ],
+    "n_dex_num": 168,
+    "r_dex_num": 23
+  },
+  {
+    "name": "pichu",
+    "type": [
+      "electric"
+    ],
+    "n_dex_num": 172,
+    "r_dex_num": 24
+  },
+  {
+    "name": "pikachu",
+    "type": [
+      "electric"
+    ],
+    "n_dex_num": 25,
+    "r_dex_num": 25
+  },
+  {
+    "name": "raichu-a",
+    "type": [
+      "electric",
+      "psychic"
+    ],
+    "n_dex_num": 26,
+    "r_dex_num": 26
   },
   {
     "name": "grubbin",
@@ -6242,7 +229,7 @@
       "bug"
     ],
     "n_dex_num": 736,
-    "r_dex_num": ""
+    "r_dex_num": 27
   },
   {
     "name": "charjabug",
@@ -6251,7 +238,7 @@
       "electric"
     ],
     "n_dex_num": 737,
-    "r_dex_num": ""
+    "r_dex_num": 28
   },
   {
     "name": "vikavolt",
@@ -6260,7 +247,249 @@
       "electric"
     ],
     "n_dex_num": 738,
-    "r_dex_num": ""
+    "r_dex_num": 29
+  },
+  {
+    "name": "bonsly",
+    "type": [
+      "rock"
+    ],
+    "n_dex_num": 438,
+    "r_dex_num": 30
+  },
+  {
+    "name": "sudowoodo",
+    "type": [
+      "rock"
+    ],
+    "n_dex_num": 185,
+    "r_dex_num": 31
+  },
+  {
+    "name": "happiny",
+    "type": [
+      "normal"
+    ],
+    "n_dex_num": 440,
+    "r_dex_num": 32
+  },
+  {
+    "name": "chansey",
+    "type": [
+      "normal"
+    ],
+    "n_dex_num": 113,
+    "r_dex_num": 33
+  },
+  {
+    "name": "blissey",
+    "type": [
+      "normal"
+    ],
+    "n_dex_num": 242,
+    "r_dex_num": 34
+  },
+  {
+    "name": "munchlax",
+    "type": [
+      "normal"
+    ],
+    "n_dex_num": 446,
+    "r_dex_num": 35
+  },
+  {
+    "name": "snorlax",
+    "type": [
+      "normal"
+    ],
+    "n_dex_num": 143,
+    "r_dex_num": 36
+  },
+  {
+    "name": "slowpoke",
+    "type": [
+      "water",
+      "psychic"
+    ],
+    "n_dex_num": 79,
+    "r_dex_num": 37
+  },
+  {
+    "name": "slowbro",
+    "type": [
+      "water",
+      "psychic"
+    ],
+    "n_dex_num": 80,
+    "r_dex_num": 38
+  },
+  {
+    "name": "slowking",
+    "type": [
+      "water",
+      "psychic"
+    ],
+    "n_dex_num": 199,
+    "r_dex_num": 39
+  },
+  {
+    "name": "wingull",
+    "type": [
+      "water",
+      "flying"
+    ],
+    "n_dex_num": 278,
+    "r_dex_num": 40
+  },
+  {
+    "name": "pelipper",
+    "type": [
+      "water",
+      "flying"
+    ],
+    "n_dex_num": 279,
+    "r_dex_num": 41
+  },
+  {
+    "name": "abra",
+    "type": [
+      "psychic"
+    ],
+    "n_dex_num": 63,
+    "r_dex_num": 42
+  },
+  {
+    "name": "kadabra",
+    "type": [
+      "psychic"
+    ],
+    "n_dex_num": 64,
+    "r_dex_num": 43
+  },
+  {
+    "name": "alakazam",
+    "type": [
+      "psychic"
+    ],
+    "n_dex_num": 65,
+    "r_dex_num": 44
+  },
+  {
+    "name": "meowth-a",
+    "type": [
+      "dark"
+    ],
+    "n_dex_num": 52,
+    "r_dex_num": 45
+  },
+  {
+    "name": "persian-a",
+    "type": [
+      "dark"
+    ],
+    "n_dex_num": 53,
+    "r_dex_num": 46
+  },
+  {
+    "name": "magnemite",
+    "type": [
+      "electric",
+      "steel"
+    ],
+    "n_dex_num": 81,
+    "r_dex_num": 47
+  },
+  {
+    "name": "magneton",
+    "type": [
+      "electric",
+      "steel"
+    ],
+    "n_dex_num": 82,
+    "r_dex_num": 48
+  },
+  {
+    "name": "magnezone",
+    "type": [
+      "electric",
+      "steel"
+    ],
+    "n_dex_num": 462,
+    "r_dex_num": 49
+  },
+  {
+    "name": "grimer-a",
+    "type": [
+      "poison",
+      "dark"
+    ],
+    "n_dex_num": 88,
+    "r_dex_num": 50
+  },
+  {
+    "name": "muk-a",
+    "type": [
+      "poison",
+      "dark"
+    ],
+    "n_dex_num": 89,
+    "r_dex_num": 51
+  },
+  {
+    "name": "growlithe",
+    "type": [
+      "fire"
+    ],
+    "n_dex_num": 58,
+    "r_dex_num": 52
+  },
+  {
+    "name": "arcanine",
+    "type": [
+      "fire"
+    ],
+    "n_dex_num": 59,
+    "r_dex_num": 53
+  },
+  {
+    "name": "drowzee",
+    "type": [
+      "psychic"
+    ],
+    "n_dex_num": 96,
+    "r_dex_num": 54
+  },
+  {
+    "name": "hypno",
+    "type": [
+      "psychic"
+    ],
+    "n_dex_num": 97,
+    "r_dex_num": 55
+  },
+  {
+    "name": "makuhita",
+    "type": [
+      "fighting"
+    ],
+    "n_dex_num": 296,
+    "r_dex_num": 56
+  },
+  {
+    "name": "hariyama",
+    "type": [
+      "fighting"
+    ],
+    "n_dex_num": 297,
+    "r_dex_num": 57
+  },
+  {
+    "name": "smeargle",
+    "type": [
+      "normal"
+    ],
+    "n_dex_num": 235,
+    "r_dex_num": 58
   },
   {
     "name": "crabrawler",
@@ -6268,7 +497,7 @@
       "fighting"
     ],
     "n_dex_num": 739,
-    "r_dex_num": ""
+    "r_dex_num": 59
   },
   {
     "name": "crabominable",
@@ -6277,7 +506,192 @@
       "ice"
     ],
     "n_dex_num": 740,
-    "r_dex_num": ""
+    "r_dex_num": 60
+  },
+  {
+    "name": "gastly",
+    "type": [
+      "ghost",
+      "poison"
+    ],
+    "n_dex_num": 92,
+    "r_dex_num": 61
+  },
+  {
+    "name": "haunter",
+    "type": [
+      "ghost",
+      "poison"
+    ],
+    "n_dex_num": 93,
+    "r_dex_num": 62
+  },
+  {
+    "name": "gengar",
+    "type": [
+      "ghost",
+      "poison"
+    ],
+    "n_dex_num": 94,
+    "r_dex_num": 63
+  },
+  {
+    "name": "drifloon",
+    "type": [
+      "ghost",
+      "flying"
+    ],
+    "n_dex_num": 425,
+    "r_dex_num": 64
+  },
+  {
+    "name": "drifblim",
+    "type": [
+      "ghost",
+      "flying"
+    ],
+    "n_dex_num": 426,
+    "r_dex_num": 65
+  },
+  {
+    "name": "misdreavus",
+    "type": [
+      "ghost"
+    ],
+    "n_dex_num": 200,
+    "r_dex_num": 66
+  },
+  {
+    "name": "mismagius",
+    "type": [
+      "ghost"
+    ],
+    "n_dex_num": 429,
+    "r_dex_num": 67
+  },
+  {
+    "name": "zubat",
+    "type": [
+      "poison",
+      "flying"
+    ],
+    "n_dex_num": 41,
+    "r_dex_num": 68
+  },
+  {
+    "name": "golbat",
+    "type": [
+      "poison",
+      "flying"
+    ],
+    "n_dex_num": 42,
+    "r_dex_num": 69
+  },
+  {
+    "name": "crobat",
+    "type": [
+      "poison",
+      "flying"
+    ],
+    "n_dex_num": 169,
+    "r_dex_num": 70
+  },
+  {
+    "name": "diglett-a",
+    "type": [
+      "ground",
+      "steel"
+    ],
+    "n_dex_num": 50,
+    "r_dex_num": 71
+  },
+  {
+    "name": "dugtrio-a",
+    "type": [
+      "ground",
+      "steel"
+    ],
+    "n_dex_num": 51,
+    "r_dex_num": 72
+  },
+  {
+    "name": "spearow",
+    "type": [
+      "normal",
+      "flying"
+    ],
+    "n_dex_num": 21,
+    "r_dex_num": 73
+  },
+  {
+    "name": "fearow",
+    "type": [
+      "normal",
+      "flying"
+    ],
+    "n_dex_num": 22,
+    "r_dex_num": 74
+  },
+  {
+    "name": "rufflet",
+    "type": [
+      "normal",
+      "flying"
+    ],
+    "n_dex_num": 627,
+    "r_dex_num": 75
+  },
+  {
+    "name": "braviary",
+    "type": [
+      "normal",
+      "flying"
+    ],
+    "n_dex_num": 628,
+    "r_dex_num": 76
+  },
+  {
+    "name": "vullaby",
+    "type": [
+      "dark",
+      "flying"
+    ],
+    "n_dex_num": 629,
+    "r_dex_num": 77
+  },
+  {
+    "name": "mandibuzz",
+    "type": [
+      "dark",
+      "flying"
+    ],
+    "n_dex_num": 630,
+    "r_dex_num": 78
+  },
+  {
+    "name": "mankey",
+    "type": [
+      "fighting"
+    ],
+    "n_dex_num": 56,
+    "r_dex_num": 79
+  },
+  {
+    "name": "primeape",
+    "type": [
+      "fighting"
+    ],
+    "n_dex_num": 57,
+    "r_dex_num": 80
+  },
+  {
+    "name": "delibird",
+    "type": [
+      "ice",
+      "flying"
+    ],
+    "n_dex_num": 225,
+    "r_dex_num": 81
   },
   {
     "name": "oricorio-ballie",
@@ -6286,7 +700,7 @@
       "flying"
     ],
     "n_dex_num": 741,
-    "r_dex_num": ""
+    "r_dex_num": 82
   },
   {
     "name": "oricorio-pom-pom",
@@ -6295,7 +709,7 @@
       "flying"
     ],
     "n_dex_num": 741,
-    "r_dex_num": ""
+    "r_dex_num": 82
   },
   {
     "name": "oricorio-pau",
@@ -6304,7 +718,7 @@
       "flying"
     ],
     "n_dex_num": 741,
-    "r_dex_num": ""
+    "r_dex_num": 82
   },
   {
     "name": "oricorio-sensu",
@@ -6313,7 +727,7 @@
       "flying"
     ],
     "n_dex_num": 741,
-    "r_dex_num": ""
+    "r_dex_num": 82
   },
   {
     "name": "cutiefly",
@@ -6322,7 +736,7 @@
       "fairy"
     ],
     "n_dex_num": 742,
-    "r_dex_num": ""
+    "r_dex_num": 83
   },
   {
     "name": "ribombee",
@@ -6331,7 +745,158 @@
       "fairy"
     ],
     "n_dex_num": 743,
-    "r_dex_num": ""
+    "r_dex_num": 84
+  },
+  {
+    "name": "petilil",
+    "type": [
+      "grass"
+    ],
+    "n_dex_num": 548,
+    "r_dex_num": 85
+  },
+  {
+    "name": "lilligant",
+    "type": [
+      "grass"
+    ],
+    "n_dex_num": 549,
+    "r_dex_num": 86
+  },
+  {
+    "name": "cottonee",
+    "type": [
+      "grass",
+      "fairy"
+    ],
+    "n_dex_num": 546,
+    "r_dex_num": 87
+  },
+  {
+    "name": "whimsicott",
+    "type": [
+      "grass",
+      "fairy"
+    ],
+    "n_dex_num": 547,
+    "r_dex_num": 88
+  },
+  {
+    "name": "psyduck",
+    "type": [
+      "water"
+    ],
+    "n_dex_num": 54,
+    "r_dex_num": 89
+  },
+  {
+    "name": "golduck",
+    "type": [
+      "water"
+    ],
+    "n_dex_num": 55,
+    "r_dex_num": 90
+  },
+  {
+    "name": "magikarp",
+    "type": [
+      "water"
+    ],
+    "n_dex_num": 129,
+    "r_dex_num": 91
+  },
+  {
+    "name": "gyarados",
+    "type": [
+      "water",
+      "flying"
+    ],
+    "n_dex_num": 130,
+    "r_dex_num": 92
+  },
+  {
+    "name": "barboach",
+    "type": [
+      "water",
+      "ground"
+    ],
+    "n_dex_num": 339,
+    "r_dex_num": 93
+  },
+  {
+    "name": "whiscash",
+    "type": [
+      "water",
+      "ground"
+    ],
+    "n_dex_num": 340,
+    "r_dex_num": 94
+  },
+  {
+    "name": "machop",
+    "type": [
+      "fighting"
+    ],
+    "n_dex_num": 66,
+    "r_dex_num": 95
+  },
+  {
+    "name": "machoke",
+    "type": [
+      "fighting"
+    ],
+    "n_dex_num": 67,
+    "r_dex_num": 96
+  },
+  {
+    "name": "machamp",
+    "type": [
+      "fighting"
+    ],
+    "n_dex_num": 68,
+    "r_dex_num": 97
+  },
+  {
+    "name": "roggenrola",
+    "type": [
+      "rock"
+    ],
+    "n_dex_num": 524,
+    "r_dex_num": 98
+  },
+  {
+    "name": "boldore",
+    "type": [
+      "rock"
+    ],
+    "n_dex_num": 525,
+    "r_dex_num": 99
+  },
+  {
+    "name": "gigalith",
+    "type": [
+      "rock"
+    ],
+    "n_dex_num": 526,
+    "r_dex_num": 100
+  },
+  {
+    "name": "carbink",
+    "type": [
+      "rock",
+      "fairy"
+    ],
+    "n_dex_num": 703,
+    "r_dex_num": 101
+  },
+  {
+    "name": "sableye",
+    "type": [
+      "dark",
+      "ghost"
+    ],
+    "n_dex_num": 302,
+    "r_dex_num": 102
   },
   {
     "name": "rockruff",
@@ -6339,7 +904,7 @@
       "rock"
     ],
     "n_dex_num": 744,
-    "r_dex_num": ""
+    "r_dex_num": 103
   },
   {
     "name": "lyncaroc",
@@ -6347,7 +912,49 @@
       "rock"
     ],
     "n_dex_num": 745,
-    "r_dex_num": ""
+    "r_dex_num": 104
+  },
+  {
+    "name": "spinda",
+    "type": [
+      "normal"
+    ],
+    "n_dex_num": 327,
+    "r_dex_num": 105
+  },
+  {
+    "name": "tentacool",
+    "type": [
+      "water",
+      "poison"
+    ],
+    "n_dex_num": 72,
+    "r_dex_num": 106
+  },
+  {
+    "name": "tentacruel",
+    "type": [
+      "water",
+      "poison"
+    ],
+    "n_dex_num": 73,
+    "r_dex_num": 107
+  },
+  {
+    "name": "finneon",
+    "type": [
+      "water"
+    ],
+    "n_dex_num": 456,
+    "r_dex_num": 108
+  },
+  {
+    "name": "lumineon",
+    "type": [
+      "water"
+    ],
+    "n_dex_num": 457,
+    "r_dex_num": 109
   },
   {
     "name": "wishiwashi",
@@ -6355,7 +962,7 @@
       "water"
     ],
     "n_dex_num": 746,
-    "r_dex_num": ""
+    "r_dex_num": 110
   },
   {
     "name": "wishiwashi-school",
@@ -6363,7 +970,24 @@
       "water"
     ],
     "n_dex_num": 746,
-    "r_dex_num": ""
+    "r_dex_num": 110
+  },
+  {
+    "name": "luvdisc",
+    "type": [
+      "water"
+    ],
+    "n_dex_num": 370,
+    "r_dex_num": 111
+  },
+  {
+    "name": "corsola",
+    "type": [
+      "water",
+      "rock"
+    ],
+    "n_dex_num": 222,
+    "r_dex_num": 112
   },
   {
     "name": "mareanie",
@@ -6372,7 +996,7 @@
       "water"
     ],
     "n_dex_num": 747,
-    "r_dex_num": ""
+    "r_dex_num": 113
   },
   {
     "name": "toxapex",
@@ -6381,7 +1005,153 @@
       "water"
     ],
     "n_dex_num": 748,
-    "r_dex_num": ""
+    "r_dex_num": 114
+  },
+  {
+    "name": "shellder",
+    "type": [
+      "water"
+    ],
+    "n_dex_num": 90,
+    "r_dex_num": 115
+  },
+  {
+    "name": "cloyster",
+    "type": [
+      "water",
+      "ice"
+    ],
+    "n_dex_num": 91,
+    "r_dex_num": 116
+  },
+  {
+    "name": "bagon",
+    "type": [
+      "dragon"
+    ],
+    "n_dex_num": 371,
+    "r_dex_num": 117
+  },
+  {
+    "name": "shelgon",
+    "type": [
+      "dragon"
+    ],
+    "n_dex_num": 372,
+    "r_dex_num": 118
+  },
+  {
+    "name": "salamence",
+    "type": [
+      "dragon",
+      "flying"
+    ],
+    "n_dex_num": 373,
+    "r_dex_num": 119
+  },
+  {
+    "name": "lillipup",
+    "type": [
+      "normal"
+    ],
+    "n_dex_num": 506,
+    "r_dex_num": 120
+  },
+  {
+    "name": "lillipup",
+    "type": [
+      "normal"
+    ],
+    "n_dex_num": 506,
+    "r_dex_num": 120
+  },
+  {
+    "name": "herdier",
+    "type": [
+      "normal"
+    ],
+    "n_dex_num": 507,
+    "r_dex_num": 121
+  },
+  {
+    "name": "stoutland",
+    "type": [
+      "normal"
+    ],
+    "n_dex_num": 508,
+    "r_dex_num": 122
+  },
+  {
+    "name": "eevee",
+    "type": [
+      "normal"
+    ],
+    "n_dex_num": 133,
+    "r_dex_num": 123
+  },
+  {
+    "name": "vaporeon",
+    "type": [
+      "water"
+    ],
+    "n_dex_num": 134,
+    "r_dex_num": 124
+  },
+  {
+    "name": "jolteon",
+    "type": [
+      "electric"
+    ],
+    "n_dex_num": 135,
+    "r_dex_num": 125
+  },
+  {
+    "name": "flareon",
+    "type": [
+      "fire"
+    ],
+    "n_dex_num": 136,
+    "r_dex_num": 126
+  },
+  {
+    "name": "espeon",
+    "type": [
+      "psychic"
+    ],
+    "n_dex_num": 137,
+    "r_dex_num": 127
+  },
+  {
+    "name": "umbreon",
+    "type": [
+      "dark"
+    ],
+    "n_dex_num": 138,
+    "r_dex_num": 128
+  },
+  {
+    "name": "leafeon",
+    "type": [
+      "grass"
+    ],
+    "n_dex_num": 470,
+    "r_dex_num": 129
+  },
+  {
+    "name": "glaceon",
+    "type": [
+      "ice"
+    ],
+    "n_dex_num": 472,
+    "r_dex_num": 130
+  },
+  {
+    "name": "slyveon",
+    "type": [
+      "fairy"
+    ],
+    "n_dex_num": 700,
+    "r_dex_num": 131
   },
   {
     "name": "mudbray",
@@ -6389,15 +1159,15 @@
       "ground"
     ],
     "n_dex_num": 749,
-    "r_dex_num": ""
+    "r_dex_num": 132
   },
   {
-    "name": "mudbray",
+    "name": "mudsdale",
     "type": [
       "ground"
     ],
-    "n_dex_num": 749,
-    "r_dex_num": ""
+    "n_dex_num": 750,
+    "r_dex_num": 133
   },
   {
     "name": "dewpider",
