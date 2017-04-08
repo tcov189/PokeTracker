@@ -6115,5 +6115,740 @@
     ],
     "n_dex_num": 721,
     "r_dex_num": ""
+  },
+  {
+    "name": "rowlet",
+    "type": [
+      "grass",
+      "flying"
+    ],
+    "n_dex_num": 722,
+    "r_dex_num": ""
+  },
+  {
+    "name": "dartrix",
+    "type": [
+      "grass",
+      "flying"
+    ],
+    "n_dex_num": 723,
+    "r_dex_num": ""
+  },
+  {
+    "name": "decidueye",
+    "type": [
+      "grass",
+      "ghost"
+    ],
+    "n_dex_num": 724,
+    "r_dex_num": ""
+  },
+  {
+    "name": "litten",
+    "type": [
+      "fire"
+    ],
+    "n_dex_num": 725,
+    "r_dex_num": ""
+  },
+  {
+    "name": "torracat",
+    "type": [
+      "fire"
+    ],
+    "n_dex_num": 726,
+    "r_dex_num": ""
+  },
+  {
+    "name": "incineroar",
+    "type": [
+      "fire",
+      "dark"
+    ],
+    "n_dex_num": 727,
+    "r_dex_num": ""
+  },
+  {
+    "name": "popplio",
+    "type": [
+      "water"
+    ],
+    "n_dex_num": 728,
+    "r_dex_num": ""
+  },
+  {
+    "name": "brionne",
+    "type": [
+      "water"
+    ],
+    "n_dex_num": 729,
+    "r_dex_num": ""
+  },
+  {
+    "name": "primarina",
+    "type": [
+      "water",
+      "fairy"
+    ],
+    "n_dex_num": 730,
+    "r_dex_num": ""
+  },
+  {
+    "name": "pikipek",
+    "type": [
+      "normal",
+      "flying"
+    ],
+    "n_dex_num": 731,
+    "r_dex_num": ""
+  },
+  {
+    "name": "trumbeak",
+    "type": [
+      "normal",
+      "flying"
+    ],
+    "n_dex_num": 732,
+    "r_dex_num": ""
+  },
+  {
+    "name": "toucannon",
+    "type": [
+      "normal",
+      "flying"
+    ],
+    "n_dex_num": 733,
+    "r_dex_num": ""
+  },
+  {
+    "name": "yungoos",
+    "type": [
+      "normal"
+    ],
+    "n_dex_num": 734,
+    "r_dex_num": ""
+  },
+  {
+    "name": "gumshoos",
+    "type": [
+      "normal"
+    ],
+    "n_dex_num": 735,
+    "r_dex_num": ""
+  },
+  {
+    "name": "grubbin",
+    "type": [
+      "bug"
+    ],
+    "n_dex_num": 736,
+    "r_dex_num": ""
+  },
+  {
+    "name": "charjabug",
+    "type": [
+      "bug",
+      "electric"
+    ],
+    "n_dex_num": 737,
+    "r_dex_num": ""
+  },
+  {
+    "name": "vikavolt",
+    "type": [
+      "bug",
+      "electric"
+    ],
+    "n_dex_num": 738,
+    "r_dex_num": ""
+  },
+  {
+    "name": "crabrawler",
+    "type": [
+      "fighting"
+    ],
+    "n_dex_num": 739,
+    "r_dex_num": ""
+  },
+  {
+    "name": "crabominable",
+    "type": [
+      "fighting",
+      "ice"
+    ],
+    "n_dex_num": 740,
+    "r_dex_num": ""
+  },
+  {
+    "name": "oricorio-ballie",
+    "type": [
+      "fire",
+      "flying"
+    ],
+    "n_dex_num": 741,
+    "r_dex_num": ""
+  },
+  {
+    "name": "oricorio-pom-pom",
+    "type": [
+      "electric",
+      "flying"
+    ],
+    "n_dex_num": 741,
+    "r_dex_num": ""
+  },
+  {
+    "name": "oricorio-pau",
+    "type": [
+      "psychic",
+      "flying"
+    ],
+    "n_dex_num": 741,
+    "r_dex_num": ""
+  },
+  {
+    "name": "oricorio-sensu",
+    "type": [
+      "ghost",
+      "flying"
+    ],
+    "n_dex_num": 741,
+    "r_dex_num": ""
+  },
+  {
+    "name": "cutiefly",
+    "type": [
+      "bug",
+      "fairy"
+    ],
+    "n_dex_num": 742,
+    "r_dex_num": ""
+  },
+  {
+    "name": "ribombee",
+    "type": [
+      "bug",
+      "fairy"
+    ],
+    "n_dex_num": 743,
+    "r_dex_num": ""
+  },
+  {
+    "name": "rockruff",
+    "type": [
+      "rock"
+    ],
+    "n_dex_num": 744,
+    "r_dex_num": ""
+  },
+  {
+    "name": "lyncaroc",
+    "type": [
+      "rock"
+    ],
+    "n_dex_num": 745,
+    "r_dex_num": ""
+  },
+  {
+    "name": "wishiwashi",
+    "type": [
+      "water"
+    ],
+    "n_dex_num": 746,
+    "r_dex_num": ""
+  },
+  {
+    "name": "wishiwashi-school",
+    "type": [
+      "water"
+    ],
+    "n_dex_num": 746,
+    "r_dex_num": ""
+  },
+  {
+    "name": "mareanie",
+    "type": [
+      "poison",
+      "water"
+    ],
+    "n_dex_num": 747,
+    "r_dex_num": ""
+  },
+  {
+    "name": "toxapex",
+    "type": [
+      "poison",
+      "water"
+    ],
+    "n_dex_num": 748,
+    "r_dex_num": ""
+  },
+  {
+    "name": "mudbray",
+    "type": [
+      "ground"
+    ],
+    "n_dex_num": 749,
+    "r_dex_num": ""
+  },
+  {
+    "name": "mudsdale",
+    "type": [
+      "ground"
+    ],
+    "n_dex_num": 750,
+    "r_dex_num": ""
+  },
+  {
+    "name": "dewpider",
+    "type": [
+      "water",
+      "bug"
+    ],
+    "n_dex_num": 751,
+    "r_dex_num": ""
+  },
+  {
+    "name": "araquanid",
+    "type": [
+      "water",
+      "bug"
+    ],
+    "n_dex_num": 752,
+    "r_dex_num": ""
+  },
+  {
+    "name": "fomantis",
+    "type": [
+      "grass"
+    ],
+    "n_dex_num": 753,
+    "r_dex_num": ""
+  },
+  {
+    "name": "lurantis",
+    "type": [
+      "grass"
+    ],
+    "n_dex_num": 754,
+    "r_dex_num": ""
+  },
+  {
+    "name": "morelull",
+    "type": [
+      "grass",
+      "fairy"
+    ],
+    "n_dex_num": 755,
+    "r_dex_num": ""
+  },
+  {
+    "name": "shiinotic",
+    "type": [
+      "grass",
+      "fairy"
+    ],
+    "n_dex_num": 756,
+    "r_dex_num": ""
+  },
+  {
+    "name": "salandit",
+    "type": [
+      "poison",
+      "fire"
+    ],
+    "n_dex_num": 757,
+    "r_dex_num": ""
+  },
+  {
+    "name": "salazzle",
+    "type": [
+      "poison",
+      "fire"
+    ],
+    "n_dex_num": 758,
+    "r_dex_num": ""
+  },
+  {
+    "name": "stufful",
+    "type": [
+      "normal",
+      "fighting"
+    ],
+    "n_dex_num": 759,
+    "r_dex_num": ""
+  },
+  {
+    "name": "bewear",
+    "type": [
+      "normal",
+      "fighting"
+    ],
+    "n_dex_num": 760,
+    "r_dex_num": ""
+  },
+  {
+    "name": "bounsweet",
+    "type": [
+      "grass"
+    ],
+    "n_dex_num": 761,
+    "r_dex_num": ""
+  },
+  {
+    "name": "steenee",
+    "type": [
+      "grass"
+    ],
+    "n_dex_num": 762,
+    "r_dex_num": ""
+  },
+  {
+    "name": "tsareena",
+    "type": [
+      "grass"
+    ],
+    "n_dex_num": 763,
+    "r_dex_num": ""
+  },
+  {
+    "name": "comfey",
+    "type": [
+      "fairy"
+    ],
+    "n_dex_num": 764,
+    "r_dex_num": ""
+  },
+  {
+    "name": "oranguru",
+    "type": [
+      "normal",
+      "psychic"
+    ],
+    "n_dex_num": 765,
+    "r_dex_num": ""
+  },
+  {
+    "name": "passimian",
+    "type": [
+      "fighting"
+    ],
+    "n_dex_num": 766,
+    "r_dex_num": ""
+  },
+  {
+    "name": "wimpod",
+    "type": [
+      "bug",
+      "water"
+    ],
+    "n_dex_num": 767,
+    "r_dex_num": ""
+  },
+  {
+    "name": "golisopod",
+    "type": [
+      "bug",
+      "water"
+    ],
+    "n_dex_num": 768,
+    "r_dex_num": ""
+  },
+  {
+    "name": "sandygast",
+    "type": [
+      "ghost",
+      "ground"
+    ],
+    "n_dex_num": 769,
+    "r_dex_num": ""
+  },
+  {
+    "name": "palossand",
+    "type": [
+      "ghost",
+      "ground"
+    ],
+    "n_dex_num": 770,
+    "r_dex_num": ""
+  },
+  {
+    "name": "pyukumuku",
+    "type": [
+      "water"
+    ],
+    "n_dex_num": 771,
+    "r_dex_num": ""
+  },
+  {
+    "name": "type-null",
+    "type": [
+      "normal"
+    ],
+    "n_dex_num": 772,
+    "r_dex_num": ""
+  },
+  {
+    "name": "silvally",
+    "type": [
+      "normal"
+    ],
+    "n_dex_num": 773,
+    "r_dex_num": ""
+  },
+  {
+    "name": "minior",
+    "type": [
+      "rock",
+      "flying"
+    ],
+    "n_dex_num": 774,
+    "r_dex_num": ""
+  },
+  {
+    "name": "komala",
+    "type": [
+      "normal"
+    ],
+    "n_dex_num": 775,
+    "r_dex_num": ""
+  },
+  {
+    "name": "turtonator",
+    "type": [
+      "fire",
+      "dragon"
+    ],
+    "n_dex_num": 776,
+    "r_dex_num": ""
+  },
+  {
+    "name": "togedemaru",
+    "type": [
+      "electric",
+      "steel"
+    ],
+    "n_dex_num": 777,
+    "r_dex_num": ""
+  },
+  {
+    "name": "mimikyu",
+    "type": [
+      "ghost",
+      "fairy"
+    ],
+    "n_dex_num": 778,
+    "r_dex_num": ""
+  },
+  {
+    "name": "bruxish",
+    "type": [
+      "water",
+      "psychic"
+    ],
+    "n_dex_num": 779,
+    "r_dex_num": ""
+  },
+  {
+    "name": "drampa",
+    "type": [
+      "normal",
+      "dragon"
+    ],
+    "n_dex_num": 780,
+    "r_dex_num": ""
+  },
+  {
+    "name": "dhelmise",
+    "type": [
+      "ghost",
+      "grass"
+    ],
+    "n_dex_num": 781,
+    "r_dex_num": ""
+  },
+  {
+    "name": "jangmo-o",
+    "type": [
+      "dragon"
+    ],
+    "n_dex_num": 782,
+    "r_dex_num": ""
+  },
+  {
+    "name": "hakamo-o",
+    "type": [
+      "dragon",
+      "fighting"
+    ],
+    "n_dex_num": 783,
+    "r_dex_num": ""
+  },
+  {
+    "name": "kommo-o",
+    "type": [
+      "dragon",
+      "fighting"
+    ],
+    "n_dex_num": 784,
+    "r_dex_num": ""
+  },
+  {
+    "name": "tapu koko",
+    "type": [
+      "electric",
+      "fairy"
+    ],
+    "n_dex_num": 785,
+    "r_dex_num": ""
+  },
+  {
+    "name": "tapu lele",
+    "type": [
+      "psychic",
+      "fairy"
+    ],
+    "n_dex_num": 786,
+    "r_dex_num": ""
+  },
+  {
+    "name": "tapu bulu",
+    "type": [
+      "grass",
+      "fairy"
+    ],
+    "n_dex_num": 787,
+    "r_dex_num": ""
+  },
+  {
+    "name": "tapu fini",
+    "type": [
+      "water",
+      "fairy"
+    ],
+    "n_dex_num": 788,
+    "r_dex_num": ""
+  },
+  {
+    "name": "cosmog",
+    "type": [
+      "psychic"
+    ],
+    "n_dex_num": 789,
+    "r_dex_num": ""
+  },
+  {
+    "name": "cosmoem",
+    "type": [
+      "psychic"
+    ],
+    "n_dex_num": 790,
+    "r_dex_num": ""
+  },
+  {
+    "name": "solgaleo",
+    "type": [
+      "psychic",
+      "steel"
+    ],
+    "n_dex_num": 791,
+    "r_dex_num": ""
+  },
+  {
+    "name": "lunala",
+    "type": [
+      "psychic",
+      "ghost"
+    ],
+    "n_dex_num": 792,
+    "r_dex_num": ""
+  },
+  {
+    "name": "nihilego",
+    "type": [
+      "rock",
+      "poison"
+    ],
+    "n_dex_num": 793,
+    "r_dex_num": ""
+  },
+  {
+    "name": "buzzwole",
+    "type": [
+      "bug",
+      "fighting"
+    ],
+    "n_dex_num": 794,
+    "r_dex_num": ""
+  },
+  {
+    "name": "pheromosa",
+    "type": [
+      "bug",
+      "fighting"
+    ],
+    "n_dex_num": 795,
+    "r_dex_num": ""
+  },
+  {
+    "name": "xurkitree",
+    "type": [
+      "electric"
+    ],
+    "n_dex_num": 796,
+    "r_dex_num": ""
+  },
+  {
+    "name": "celesteela",
+    "type": [
+      "steel",
+      "flying"
+    ],
+    "n_dex_num": 797,
+    "r_dex_num": ""
+  },
+  {
+    "name": "kartana",
+    "type": [
+      "grass",
+      "steel"
+    ],
+    "n_dex_num": 798,
+    "r_dex_num": ""
+  },
+  {
+    "name": "guzzlord",
+    "type": [
+      "dark",
+      "dragon"
+    ],
+    "n_dex_num": 799,
+    "r_dex_num": ""
+  },
+  {
+    "name": "necrozma",
+    "type": [
+      "psychic"
+    ],
+    "n_dex_num": 800,
+    "r_dex_num": ""
+  },
+  {
+    "name": "magearna",
+    "type": [
+      "steel",
+      "fairy"
+    ],
+    "n_dex_num": 801,
+    "r_dex_num": ""
+  },
+  {
+    "name": "marshadow",
+    "type": [
+      "fighting",
+      "ghost"
+    ],
+    "n_dex_num": 802,
+    "r_dex_num": ""
   }
 ]
