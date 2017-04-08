@@ -28,11 +28,19 @@ function generateHtml() {
     var encounterArray = [];
     
     //Loop through all available encounters and put them into an array
-    $.each(currentLocationData.encounters, function (i, encounters){
-        $.each(encounters.available_pokemon, function (i,val){
-          encounterArray.push(val);  
-        })    
-    });
+    if (gameVersionGroup !== 'sun-moon') {
+        $.each(currentLocationData.encounters, function (i, encounters){
+            $.each(encounters.available_pokemon, function (i,val){
+              encounterArray.push(val);  
+            })    
+        });
+    } else {
+        $.each(currentLocationData.encounters.areas, function (i, area_encounters){
+            $.each(area_encounters.encounters[i].available_pokemon, function (i,val){
+                encounterArray.push(val);  
+            })    
+        });
+    }
 
     //Function for merging data
     function mergeArray(pokemon, index) {
@@ -97,9 +105,15 @@ encountersInfo = [];
 //Sorting array by national dex number 
 if (currentLocationData.encounters != null){
     
-    $.each(currentLocationData.encounters, function (i, elem){
-        sortByKey(elem.available_pokemon, 'n_dex_num');
-    })
+    if (gameVersionGroup !== 'sun-moon') {
+        $.each(currentLocationData.encounters, function (i, elem){
+            sortByKey(elem.available_pokemon, 'n_dex_num');
+        })   
+    } else {
+        $.each(currentLocationData.encounters.areas, function (i, elem) {
+            sortByKey(elem.encounters[i].available_pokemon, 'n_dex_num');
+        })
+    }        
 }
 
 $.each(currentLocationData.encounters, function (i, encounter){      
