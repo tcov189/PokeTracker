@@ -5,6 +5,15 @@ var version = localStorage.getItem("version");
 
 //Get Pokedex
 switch (true) {
+    case version == 'sun' || version == 'moon':
+        var regionalDex = 'sun-moon-pokedex.json';
+        var nationalDex = 'national-dex-post-6.json';
+        var gameVersionGroup = 'sun-moon';
+        var gameVersion = version == 'sun' ? 'Sun' : 'Moon';   
+        if (!localStorage.getItem('current_location')) {
+            localStorage.setItem('current_location', 'route 1');   
+        }  
+        break;
     case version == 'or' || version == 'as' :
         var regionalDex = 'oras-pokedex.json';
         var nationalDex = 'national-dex-post-5.json';
