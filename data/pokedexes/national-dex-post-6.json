@@ -159,6 +159,14 @@
     "type": [
       "Normal"
     ],
+    "forms": {
+      "alolan": {
+        "type": [
+          "dark",
+          "normal"
+        ]
+      }
+    },
     "n_dex_num": 19,
     "r_dex_num": ""
   },
@@ -167,6 +175,14 @@
     "type": [
       "Normal"
     ],
+    "forms": {
+      "alolan": {
+        "type": [
+          "dark",
+          "normal"
+        ]
+      }
+    },
     "n_dex_num": 20,
     "r_dex_num": ""
   },
@@ -217,6 +233,14 @@
     "type": [
       "Electric"
     ],
+    "forms": {
+      "alolan": {
+        "type": [
+          "electric",
+          "psychic"
+        ]
+      }
+    },
     "n_dex_num": 26,
     "r_dex_num": ""
   },
