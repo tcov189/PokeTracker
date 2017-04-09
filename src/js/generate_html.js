@@ -28,7 +28,7 @@ function generateHtml() {
     var encounterArray = [];
     
     //Loop through all available encounters and put them into an array
-    if (gameVersionGroup !== 'sun-moon') {
+    if (!currentLocationData.encounters.hasOwnProperty('areas')) {
         $.each(currentLocationData.encounters, function (i, encounters){
             $.each(encounters.available_pokemon, function (i,val){
               encounterArray.push(val);  
@@ -105,7 +105,7 @@ encountersInfo = [];
 //Sorting array by national dex number 
 if (currentLocationData.encounters != null){
     
-    if (gameVersionGroup !== 'sun-moon') {
+    if (!currentLocationData.encounters.hasOwnProperty('areas')) {
         $.each(currentLocationData.encounters, function (i, elem){
             sortByKey(elem.available_pokemon, 'n_dex_num');
         })   
