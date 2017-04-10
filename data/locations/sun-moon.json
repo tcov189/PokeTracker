@@ -31,8 +31,8 @@
                     "rate": 20
                   },
                   {
-                    "name": "rattata-a",
-                    "sos": "rattata-a",
+                    "name": "rattata",
+                    "sos": "rattata",
                     "version": "both",
                     "method": "grass",
                     "min_level": 2,

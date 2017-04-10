@@ -10,6 +10,7 @@ switch (true) {
         var nationalDex = 'national-dex-post-6.json';
         var gameVersionGroup = 'sun-moon';
         var gameVersion = version == 'sun' ? 'Sun' : 'Moon';   
+        var formPriority = 'alolan';
         if (!localStorage.getItem('current_location')) {
             localStorage.setItem('current_location', 'route 1');   
         }  
