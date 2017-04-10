@@ -49,9 +49,16 @@ function generateHtml() {
         }
 
         var match   = nationalDexData.find(findPokemon);
-        var type    = match.type;
+        if (!match.forms){
+            var type    = match.type;   
+        } else {
+            var type = match.forms[0].type;
+            var form = match.forms[0].name;
+            debugger;
+        }        
         var nDexNum = match.n_dex_num;
         pokemon["type"] = type;    
+        pokemon["form"] = form;
         pokemon["n_dex_num"] = nDexNum;    
     }
 
@@ -201,7 +208,7 @@ $.each(currentLocationData.encounters, function (i, encounter){
        
     encountersInfo.push(encounterObject)  
      
-    var encTypeOrder = ["starter", "walking", "surfing", "fishing", "interaction", "gift"];
+    var encTypeOrder = ["starter", "walking", "surfing", "fishing", "interaction", "radio", "gift"];
         
     encountersInfo.sort(function(a,b){
         if (a.type != b.type) {                    

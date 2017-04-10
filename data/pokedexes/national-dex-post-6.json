@@ -159,14 +159,15 @@
     "type": [
       "Normal"
     ],
-    "forms": {
-      "alolan": {
+    "forms": [
+      {
+        "name": "alolan",
         "type": [
           "dark",
           "normal"
         ]
       }
-    },
+    ],
     "n_dex_num": 19,
     "r_dex_num": ""
   },
@@ -175,14 +176,15 @@
     "type": [
       "Normal"
     ],
-    "forms": {
-      "alolan": {
+    "forms": [
+      {
+        "name": "alolan",
         "type": [
           "dark",
           "normal"
         ]
       }
-    },
+    ],
     "n_dex_num": 20,
     "r_dex_num": ""
   },
@@ -233,27 +235,29 @@
     "type": [
       "Electric"
     ],
-    "forms": {
-      "alolan": {
+    "forms": [
+      {
+        "name": "alolan",
         "type": [
           "electric",
           "psychic"
         ]
       }
-    },
+    ],
     "n_dex_num": 26,
     "r_dex_num": ""
   },
   {
     "name": "sandshrew",
-    "forms": {
-      "alolan": {
+    "forms": [
+      {
+        "name": "alolan",
         "type": [
           "ice",
           "steel"
         ]
       }
-    },
+    ],
     "type": [
       "Ground"
     ],
@@ -262,14 +266,15 @@
   },
   {
     "name": "sandslash",
-    "forms": {
-      "alolan": {
+    "forms": [
+      {
+        "name": "alolan",
         "type": [
           "ice",
           "steel"
         ]
       }
-    },
+    ],
     "type": [
       "Ground"
     ],
@@ -344,13 +349,14 @@
   },
   {
     "name": "vulpix",
-    "forms": {
-      "alolan": {
+    "forms": [
+      {
+        "name": "alolan",
         "type": [
           "ice"
         ]
       }
-    },
+    ],
     "type": [
       "Fire"
     ],
@@ -359,14 +365,15 @@
   },
   {
     "name": "ninetales",
-    "forms": {
-      "alolan": {
+    "forms": [
+      {
+        "name": "alolan",
         "type": [
           "ice",
           "fairy"
         ]
       }
-    },
+    ],
     "type": [
       "Fire"
     ],
@@ -474,14 +481,15 @@
   },
   {
     "name": "diglett",
-    "forms": {
-      "alolan": {
+    "forms": [
+      {
+        "name": "alolan",
         "type": [
           "ground",
           "steel"
         ]
       }
-    },
+    ],
     "type": [
       "Ground"
     ],
@@ -490,14 +498,15 @@
   },
   {
     "name": "dugtrio",
-    "forms": {
-      "alolan": {
+    "forms": [
+      {
+        "name": "alolan",
         "type": [
           "ground",
           "steel"
         ]
       }
-    },
+    ],
     "type": [
       "Ground"
     ],
@@ -506,13 +515,14 @@
   },
   {
     "name": "meowth",
-    "forms": {
-      "alolan": {
+    "forms": [
+      {
+        "name": "alolan",
         "type": [
           "dark"
         ]
       }
-    },
+    ],
     "type": [
       "Normal"
     ],
@@ -521,13 +531,14 @@
   },
   {
     "name": "persian",
-    "forms": {
-      "alolan": {
+    "forms": [
+      {
+        "name": "alolan",
         "type": [
           "dark"
         ]
       }
-    },
+    ],
     "type": [
       "Normal"
     ],
@@ -702,14 +713,15 @@
   },
   {
     "name": "geodude",
-    "forms": {
-      "alolan": {
+    "forms": [
+      {
+        "name": "alolan",
         "type": [
           "rock",
           "electric"
         ]
       }
-    },
+    ],
     "type": [
       "Rock",
       "Ground"
@@ -719,14 +731,15 @@
   },
   {
     "name": "graveler",
-    "forms": {
-      "alolan": {
+    "forms": [
+      {
+        "name": "alolan",
         "type": [
           "rock",
           "electric"
         ]
       }
-    },
+    ],
     "type": [
       "Rock",
       "Ground"
@@ -736,14 +749,15 @@
   },
   {
     "name": "golem",
-    "forms": {
-      "alolan": {
+    "forms": [
+      {
+        "name": "alolan",
         "type": [
           "rock",
           "electric"
         ]
       }
-    },
+    ],
     "type": [
       "Rock",
       "Ground"
@@ -849,14 +863,15 @@
   },
   {
     "name": "grimer",
-    "forms": {
-      "alolan": {
+    "forms": [
+      {
+        "name": "alolan",
         "type": [
           "poison",
           "dark"
         ]
       }
-    },
+    ],
     "type": [
       "Poison"
     ],
@@ -865,14 +880,15 @@
   },
   {
     "name": "muk",
-    "forms": {
-      "alolan": {
+    "forms": [
+      {
+        "name": "alolan",
         "type": [
           "poison",
           "dark"
         ]
       }
-    },
+    ],
     "type": [
       "Poison"
     ],
@@ -991,14 +1007,15 @@
   },
   {
     "name": "exeggutor",
-    "forms": {
-      "alolan": {
+    "forms": [
+      {
+        "name": "alolan",
         "type": [
           "grass",
           "dragon"
         ]
       }
-    },
+    ],
     "type": [
       "Grass",
       "Psychic"
@@ -1016,14 +1033,15 @@
   },
   {
     "name": "marowak",
-    "forms": {
-      "alolan": {
+    "forms": [
+      {
+        "name": "alolan",
         "type": [
           "fire",
           "ghost"
         ]
       }
-    },
+    ],
     "type": [
       "Ground"
     ],
