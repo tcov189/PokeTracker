@@ -120,7 +120,8 @@
     "r_dex_num": 14
   },
   {
-    "name": "rattata-a",
+    "name": "rattata",
+    "form": "alolan",
     "type": [
       "dark",
       "normal"
@@ -129,7 +130,8 @@
     "r_dex_num": 15
   },
   {
-    "name": "raticate-a",
+    "name": "raticate",
+    "form": "alolan",
     "type": [
       "dark",
       "normal"
@@ -215,7 +217,8 @@
     "r_dex_num": 25
   },
   {
-    "name": "raichu-a",
+    "name": "raichu",
+    "form": "alolan",
     "type": [
       "electric",
       "psychic"
@@ -375,7 +378,8 @@
     "r_dex_num": 44
   },
   {
-    "name": "meowth-a",
+    "name": "meowth",
+    "form": "alolan",
     "type": [
       "dark"
     ],
@@ -383,7 +387,8 @@
     "r_dex_num": 45
   },
   {
-    "name": "persian-a",
+    "name": "persian",
+    "form": "alolan",
     "type": [
       "dark"
     ],
@@ -418,7 +423,8 @@
     "r_dex_num": 49
   },
   {
-    "name": "grimer-a",
+    "name": "grimer",
+    "form": "alolan",
     "type": [
       "poison",
       "dark"
@@ -427,7 +433,8 @@
     "r_dex_num": 50
   },
   {
-    "name": "muk-a",
+    "name": "muk",
+    "form": "alolan",
     "type": [
       "poison",
       "dark"
@@ -597,7 +604,8 @@
     "r_dex_num": 70
   },
   {
-    "name": "diglett-a",
+    "name": "diglett",
+    "form": "alolan",
     "type": [
       "ground",
       "steel"
@@ -606,7 +614,8 @@
     "r_dex_num": 71
   },
   {
-    "name": "dugtrio-a",
+    "name": "dugtrio",
+    "form": "alolan",
     "type": [
       "ground",
       "steel"
@@ -1427,7 +1436,8 @@
     "r_dex_num": 163
   },
   {
-    "name": "marowak-a",
+    "name": "marowak",
+    "form": "alolan",
     "type": [
       "fire",
       "ghost"
@@ -1994,7 +2004,8 @@
     "r_dex_num": 228
   },
   {
-    "name": "geodude-a",
+    "name": "geodude",
+    "form": "alolan",
     "type": [
       "rock",
       "electric"
@@ -2003,7 +2014,8 @@
     "r_dex_num": 229
   },
   {
-    "name": "graveler-a",
+    "name": "graveler",
+    "form": "alolan",
     "type": [
       "rock",
       "electric"
@@ -2012,7 +2024,8 @@
     "r_dex_num": 230
   },
   {
-    "name": "golem-a",
+    "name": "golem",
+    "form": "alolan",
     "type": [
       "rock",
       "electric"
@@ -2188,7 +2201,8 @@
     "r_dex_num": 250
   },
   {
-    "name": "sandshrew-a",
+    "name": "sandshrew",
+    "form": "alolan",
     "type": [
       "ice",
       "steel"
@@ -2197,7 +2211,8 @@
     "r_dex_num": 251
   },
   {
-    "name": "sandslash-a",
+    "name": "sandslash",
+    "form": "alolan",
     "type": [
       "ice",
       "steel"
@@ -2206,7 +2221,8 @@
     "r_dex_num": 252
   },
   {
-    "name": "vulpix-a",
+    "name": "vulpix",
+    "form": "alolan",
     "type": [
       "ice",
       "fairy"
@@ -2215,7 +2231,8 @@
     "r_dex_num": 253
   },
   {
-    "name": "ninetales-a",
+    "name": "ninetales",
+    "form": "alolan",
     "type": [
       "ice",
       "fairy"
@@ -2360,7 +2377,8 @@
     "r_dex_num": 269
   },
   {
-    "name": "exeggutor-a",
+    "name": "exeggutor",
+    "form": "alolan",
     "type": [
       "grass",
       "dragon"
