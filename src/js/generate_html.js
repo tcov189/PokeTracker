@@ -232,11 +232,14 @@ if (currentLocationData.encounters != null) {
         });
     } else {//Seperate function for locations that 
         $.each(currentLocationData.encounters.areas, function(i, area){
-          console.log(area)  
+            
             $.each(area.encounters, function (i, encounter){
-                var encounterObject = {             
-                    'type' : encounter.type,        
-                    'encounters' : encounterArr = []
+                var encounterObject = {   
+                    'area_name' : area.name,
+                    'area_encounters' : [{
+                        'type' : encounter.type,        
+                        'encounters' : encounterArr = []  
+                    }]                    
                 }; 
 
                 $.each(encounter.available_pokemon, function (i, pokemon){
@@ -246,8 +249,8 @@ if (currentLocationData.encounters != null) {
                 encountersInfo.push(encounterObject)  
 
                 encountersInfo.sort(function(a,b){
-                    if (a.type != b.type) {                    
-                        return encTypeOrder.indexOf(a.type) > encTypeOrder.indexOf(b.type) ? 1 : -1;
+                    if (a.area_encounters.type != b.area_encounters.type) {                    
+                        return encTypeOrder.indexOf(a.area_encounters.type) > encTypeOrder.indexOf(b.area_encounters.type) ? 1 : -1;
                     }
                 });   
             }) 
@@ -257,12 +260,25 @@ if (currentLocationData.encounters != null) {
 //Check to see if info exsists, delete
 $('.block-encounters').empty();
     
-$.each(encountersInfo, function (i, encounter_info) {
-    $('.block-encounters').append('<h3>'+ encounter_info.type + '</h3>');
-
-    $.each(encounter_info.encounters, function (i, info){
-        $('.block-encounters').append(info.html);  
-    })            
+$.each(encountersInfo, function (i, encounter_info) {    
+    if (!encountersInfo[i].area_name) {
+        $('.block-encounters').append('<h3>'+ encounter_info.type + '</h3>');   
+        
+        $.each(encounter_info.encounters, function (i, info){
+            $('.block-encounters').append(info.html);  
+        })            
+    } else {
+        $('.block-encounters').append('<h3>'+ encounter_info.area_name + '</h3>'); 
+        
+        $.each(encounter_info.area_encounters, function (index, encounters){
+            $('.block-encounters').append('<h4>'+ encounters.type +'</h4>');  
+            
+            $.each(encounters.encounters, function (counter, elem){
+              $('.block-encounters').append(elem.html);    
+            })            
+        })            
+    }
+    
 });
 
 if (currentLocationData.encounters == null) {
