@@ -27,21 +27,23 @@ function generateHtml() {
     //Merging Data
     var encounterArray = [];
     
-    //Loop through all available encounters and put them into an array
-    if (!currentLocationData.encounters.hasOwnProperty('areas')) {
-        $.each(currentLocationData.encounters, function (i, encounters){
-            $.each(encounters.available_pokemon, function (i,val){
-              encounterArray.push(val);  
-            })    
-        });
-    } else {
-        $.each(currentLocationData.encounters.areas, function (i, area_encounters){
-            $.each(area_encounters.encounters[i].available_pokemon, function (i,val){
-                encounterArray.push(val);  
-            })    
-        });
+    //Loop through all available encounters and put them into an array if there are encounters
+    if (currentLocationData.encounters != null) {
+    
+        if (!currentLocationData.encounters.hasOwnProperty('areas')) {
+            $.each(currentLocationData.encounters, function (i, encounters){
+                $.each(encounters.available_pokemon, function (i,val){
+                  encounterArray.push(val);  
+                })    
+            });
+        } else {
+            $.each(currentLocationData.encounters.areas, function (i, area_encounters){
+                $.each(area_encounters.encounters[i].available_pokemon, function (i,val){
+                    encounterArray.push(val);  
+                })    
+            });
+        }
     }
-
     //Function for merging data
     function mergeArray(pokemon, index) {
         function findPokemon (nationalPokemon){
@@ -49,12 +51,11 @@ function generateHtml() {
         }
 
         var match   = nationalDexData.find(findPokemon);
-        if (!match.forms){
+        if (!match.forms){ //see if mon has form
             var type    = match.type;   
         } else {
             var type = match.forms[0].type;
             var form = match.forms[0].name;
-            debugger;
         }        
         var nDexNum = match.n_dex_num;
         pokemon["type"] = type;    
@@ -123,101 +124,136 @@ if (currentLocationData.encounters != null){
     }        
 }
 
-$.each(currentLocationData.encounters, function (i, encounter){      
-    var encounterObject = {
-        'type' : encounter.type,        
-        'encounters' : encounterArr = []
-    };                        
+//General functions and vars
     
-    $.each(encounter.available_pokemon, function(i, pokemon){   
-        theRateHtml = '';
-        function needPercentSymbol(x) {
-            if (typeof x == 'number') {
-                return x +'%';
-            } else {
-                return x;
-            }
+//NeedPercent function
+function needPercentSymbol(x) {
+    if (typeof x == 'number') {
+        return x +'%';
+    } else {
+        return x;
+    }
+}
+    
+//Generate EncounterArr
+function generateEncounterArr(pokemon, encounter) {
+    theRateHtml = '';            
+
+    if (encounter.type != 'gift' && encounter.type != 'starter') {
+
+        if (typeof pokemon.rate == 'object'){                   
+            theRateHtml+= '<strong>'+ pokemon.method +'</strong>';
+
+            $.each(pokemon.rate, function(time, rate) {
+                if (rate != null) {
+                    if (typeof rate != 'object') {
+                     theRateHtml+= '<span>'+ time +': '+ needPercentSymbol(rate) +'</span>'     
+                    }  else {
+                        theRateHtml += '<span>'+ time + ':</span>';
+                        $.each(rate, function (game, rate){                             
+                                theRateHtml += '<span style="margin-left: 5px;">'+ game +': '+ needPercentSymbol(rate) +'</span>';                     
+                        })                         
+                    }                      
+                }
+            })                                        
+        } else  {
+            theRateHtml+= '<span><strong>'+ pokemon.method +'</strong>: '+ needPercentSymbol(pokemon.rate) +'</span>';
         }
-        
-        if (encounter.type != 'gift' && encounter.type != 'starter') {
-                            
-            if (typeof pokemon.rate == 'object'){                   
-                theRateHtml+= '<strong>'+ pokemon.method +'</strong>';
-                $.each(this.rate, function(time, rate) {
-                    if (rate != null) {
-                        if (typeof rate != 'object') {
-                         theRateHtml+= '<span>'+ time +': '+ needPercentSymbol(rate) +'</span>'     
-                        }  else {
-                            theRateHtml += '<span>'+ time + ':</span>';
-                            $.each(rate, function (game, rate){                             
-                                    theRateHtml += '<span style="margin-left: 5px;">'+ game +': '+ needPercentSymbol(rate) +'</span>';                     
-                            })                         
-                        }                      
+    } else {
+        theRateHtml+= '<span><strong>From:</strong>&nbsp;' + pokemon.method + '</span>';
+}// End generateEncounterArr
+
+//Encounter type order    
+encTypeOrder = ["starter", "walking", "surfing", "fishing", "interaction", "radio", "gift"];    
+    
+//Get version exclusive info
+var isUnavailable       = pokemon.version != version && pokemon.version != 'both' && pokemon.version != undefined ? true : false; 
+var isUnavailableClass  = isUnavailable ? 'unavailable' : '';
+
+
+var levelRange = pokemon.min_level != pokemon.max_level ? pokemon.min_level + '&ndash;'+ pokemon.max_level : pokemon.min_level;
+
+var isCaught = $.inArray(pokemon.name, pkmnCaughtArr) !== -1 ? ' caught' : '';                            
+var theHtml = '<div class="block-encounters-pokemon">' +
+                  '<div class="card card-default card_pokemon '+ isUnavailableClass +'">' +
+                    '<div class="card_pokemon-pokeball">' +
+                        '<i class="card_pokemon-pokeball-icon'+ isCaught +'" id="'+ pokemon.name +'"></i>' +
+                    '</div>' +
+                    '<div class="card_pokemon-info">';
+                    if (isUnavailable) {
+                        theHtml += '<span class="text-center">Not in ' + gameVersion + '</span>';
                     }
-                })                                        
-            } else  {
-                theRateHtml+= '<span><strong>'+ pokemon.method +'</strong>: '+ needPercentSymbol(pokemon.rate) +'</span>';
-            }
-        } else {
-            theRateHtml+= '<span><strong>From:</strong>&nbsp;' + pokemon.method + '</span>';
-        }
-        
-        //Get version exclusive info
-        var isUnavailable       = pokemon.version != version && pokemon.version != 'both' && pokemon.version != undefined ? true : false; 
-        var isUnavailableClass  = isUnavailable ? 'unavailable' : '';
-        
-        
-        var levelRange = pokemon.min_level != pokemon.max_level ? pokemon.min_level + '&ndash;'+ pokemon.max_level : pokemon.min_level;
+                    theHtml +=   '<div class="pokemon-info-bio">' +
+                            '<div class="pokemon-info-bio-name-sprite">' +
+                                '<i class="sprites '+ pokemon.name +'"></i>' +
+                                '<span class="pokemon-bio-name">'+ pokemon.name +'</span>' +
+                            '</div>'+
+                            '<div class="pokemon-bio-types">';
+                               $.each(pokemon.type, function (i, type){
+                                   theHtml += '<i class="type-icon '+ type.toLowerCase() +' "></i>'; 
+                               })
+                            theHtml += '</div>' +
+                        '</div>' +
+                        '<hr>' +
+                        '<div class="pokemon-info-rates">' +
+                            '<div class="pokemon-rate-block">' +
+                                theRateHtml +
+                            '</div>'+
+                            '<div class="pokemon-levels-block">' +
+                                '<span class="level-range">Lvl: '+ levelRange +'</span>' +
+                            '</div>'+
+                        '</div>' +
+                    '</div>' +
+                  '</div>' +
+                '</div>';
 
-        var isCaught = $.inArray(pokemon.name, pkmnCaughtArr) !== -1 ? ' caught' : '';                            
-        var theHtml = '<div class="block-encounters-pokemon">' +
-                          '<div class="card card-default card_pokemon '+ isUnavailableClass +'">' +
-                            '<div class="card_pokemon-pokeball">' +
-                                '<i class="card_pokemon-pokeball-icon'+ isCaught +'" id="'+ pokemon.name +'"></i>' +
-                            '</div>' +
-                            '<div class="card_pokemon-info">';
-                            if (isUnavailable) {
-                                theHtml += '<span class="text-center">Not in ' + gameVersion + '</span>';
-                            }
-                            theHtml +=   '<div class="pokemon-info-bio">' +
-                                    '<div class="pokemon-info-bio-name-sprite">' +
-                                        '<i class="sprites '+ pokemon.name +'"></i>' +
-                                        '<span class="pokemon-bio-name">'+ pokemon.name +'</span>' +
-                                    '</div>'+
-                                    '<div class="pokemon-bio-types">';
-                                       $.each(pokemon.type, function (i, type){
-                                           theHtml += '<i class="type-icon '+ type.toLowerCase() +' "></i>'; 
-                                       })
-                                    theHtml += '</div>' +
-                                '</div>' +
-                                '<hr>' +
-                                '<div class="pokemon-info-rates">' +
-                                    '<div class="pokemon-rate-block">' +
-                                        theRateHtml +
-                                    '</div>'+
-                                    '<div class="pokemon-levels-block">' +
-                                        '<span class="level-range">Lvl: '+ levelRange +'</span>' +
-                                    '</div>'+
-                                '</div>' +
-                            '</div>' +
-                          '</div>' +
-                        '</div>';
+    encounterArr.push({'html' : theHtml, 'method' : pokemon.method, 'name' : pokemon.name, 'national_dex' : pokemon.n_dex_num })               
+}
 
-            encounterArr.push({'html' : theHtml, 'method' : pokemon.method, 'name' : pokemon.name, 'national_dex' : pokemon.n_dex_num })                
-    })
-       
-    encountersInfo.push(encounterObject)  
-     
-    var encTypeOrder = ["starter", "walking", "surfing", "fishing", "interaction", "radio", "gift"];
-        
-    encountersInfo.sort(function(a,b){
-        if (a.type != b.type) {                    
-            return encTypeOrder.indexOf(a.type) > encTypeOrder.indexOf(b.type) ? 1 : -1;
-        }
-    });   
-        
-});
+if (currentLocationData.encounters != null) {
+    if (!currentLocationData.encounters.areas) {        
+        $.each(currentLocationData.encounters, function (i, encounter){      
+            var encounterObject = {             
+                'type' : encounter.type,        
+                'encounters' : encounterArr = []
+            };                        
 
+            $.each(encounter.available_pokemon, function(i, pokemon){   
+                generateEncounterArr(pokemon, encounter);
+            })
+
+            encountersInfo.push(encounterObject)         
+
+            encountersInfo.sort(function(a,b){
+                if (a.type != b.type) {                    
+                    return encTypeOrder.indexOf(a.type) > encTypeOrder.indexOf(b.type) ? 1 : -1;
+                }
+            });   
+        });
+    } else {//Seperate function for locations that 
+        $.each(currentLocationData.encounters.areas, function(i, area){
+          console.log(area)  
+            $.each(area.encounters, function (i, encounter){
+                var encounterObject = {             
+                    'type' : encounter.type,        
+                    'encounters' : encounterArr = []
+                }; 
+
+                $.each(encounter.available_pokemon, function (i, pokemon){
+                    generateEncounterArr(pokemon, encounter);    
+                })
+
+                encountersInfo.push(encounterObject)  
+
+                encountersInfo.sort(function(a,b){
+                    if (a.type != b.type) {                    
+                        return encTypeOrder.indexOf(a.type) > encTypeOrder.indexOf(b.type) ? 1 : -1;
+                    }
+                });   
+            }) 
+        })
+    }
+}
 //Check to see if info exsists, delete
 $('.block-encounters').empty();
     
@@ -236,5 +272,4 @@ if (currentLocationData.encounters == null) {
 //Revert current_location to originial value so that it can be read again if refreshed
 localStorage.setItem('current_location', currentLocationData.name);
 
-console.log(currentLocationData);
 }
