@@ -38,8 +38,10 @@ function generateHtml() {
             });
         } else {
             $.each(currentLocationData.encounters.areas, function (i, area_encounters){
-                $.each(area_encounters.encounters[i].available_pokemon, function (i,val){
-                    encounterArray.push(val);  
+                $.each(area_encounters.encounters, function (i,val){
+                    $.each(val.available_pokemon, function (index, elem){
+                        encounterArray.push(elem);
+                    }) 
                 })    
             });
         }
@@ -119,7 +121,9 @@ if (currentLocationData.encounters != null){
         })   
     } else {
         $.each(currentLocationData.encounters.areas, function (i, elem) {
-            sortByKey(elem.encounters[i].available_pokemon, 'n_dex_num');
+            $.each(elem.encounters.available_pokemon, function (index, pokemon){
+                sortByKey(elem.encounters[i].available_pokemon, 'n_dex_num');
+            })            
         })
     }        
 }
