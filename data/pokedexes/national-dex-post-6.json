@@ -19,6 +19,15 @@
   },
   {
     "name": "venusaur",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "grass",
+          "poison"
+        ]
+      }
+    ],
     "type": [
       "Grass",
       "Poison"
@@ -44,6 +53,22 @@
   },
   {
     "name": "charizard",
+    "forms": [
+      {
+        "name": "mega-y",
+        "type": [
+          "fire",
+          "flying"
+        ]
+      },
+      {
+        "name": "mega-x",
+        "type": [
+          "fire",
+          "dragon"
+        ]
+      }
+    ],
     "type": [
       "Fire",
       "Flying"
@@ -69,6 +94,14 @@
   },
   {
     "name": "blastoise",
+    "forms": [
+      {
+        "type": [
+          "water"
+        ],
+        "name": "mega"
+      }
+    ],
     "type": [
       "Water"
     ],
@@ -120,6 +153,15 @@
   },
   {
     "name": "beedrill",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Bug",
+          "Poison"
+        ]
+      }
+    ],
     "type": [
       "Bug",
       "Poison"
@@ -147,6 +189,15 @@
   },
   {
     "name": "pidgeot",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Normal",
+          "Flying"
+        ]
+      }
+    ],
     "type": [
       "Normal",
       "Flying"
@@ -636,6 +687,14 @@
   },
   {
     "name": "alakazam",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "psychic"
+        ]
+      }
+    ],
     "type": [
       "Psychic"
     ],
@@ -792,6 +851,15 @@
   },
   {
     "name": "slowbro",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Water",
+          "Psychic"
+        ]
+      }
+    ],
     "type": [
       "Water",
       "Psychic"
@@ -932,6 +1000,15 @@
   },
   {
     "name": "gengar",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "ghost",
+          "poison"
+        ]
+      }
+    ],
     "type": [
       "Ghost",
       "Poison"
@@ -1124,6 +1201,14 @@
   },
   {
     "name": "kangaskhan",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "normal"
+        ]
+      }
+    ],
     "type": [
       "Normal"
     ],
@@ -1224,6 +1309,15 @@
   },
   {
     "name": "pinsir",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "bug",
+          "flying"
+        ]
+      }
+    ],
     "type": [
       "Bug"
     ],
@@ -1248,6 +1342,15 @@
   },
   {
     "name": "gyarados",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "water",
+          "dark"
+        ]
+      }
+    ],
     "type": [
       "Water",
       "Flying"
@@ -1350,6 +1453,15 @@
   },
   {
     "name": "aerodactyl",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "rock",
+          "flying"
+        ]
+      }
+    ],
     "type": [
       "Rock",
       "Flying"
@@ -1419,6 +1531,21 @@
   },
   {
     "name": "mewtwo",
+    "forms": [
+      {
+        "name": "mega-x",
+        "types": [
+          "psychic",
+          "fighting"
+        ]
+      },
+      {
+        "name": "mega-y",
+        "types": [
+          "psychic"
+        ]
+      }
+    ],
     "type": [
       "Psychic"
     ],
@@ -1680,6 +1807,15 @@
   },
   {
     "name": "ampharos",
+    "forms": [
+      {
+        "name": "mega",
+        "types": [
+          "electric",
+          "dragon"
+        ]
+      }
+    ],
     "type": [
       "Electric"
     ],
@@ -1909,6 +2045,15 @@
   },
   {
     "name": "steelix",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Steel",
+          "Ground"
+        ]
+      }
+    ],
     "type": [
       "Steel",
       "Ground"
@@ -1943,6 +2088,15 @@
   },
   {
     "name": "scizor",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Bug",
+          "Steel"
+        ]
+      }
+    ],
     "type": [
       "Bug",
       "Steel"
@@ -1961,6 +2115,15 @@
   },
   {
     "name": "heracross",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Bug",
+          "Fighting"
+        ]
+      }
+    ],
     "type": [
       "Bug",
       "Fighting"
@@ -2091,6 +2254,15 @@
   },
   {
     "name": "houndoom",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Dark",
+          "Fire"
+        ]
+      }
+    ],
     "type": [
       "Dark",
       "Fire"
@@ -2248,6 +2420,15 @@
   },
   {
     "name": "tyranitar",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Rock",
+          "Dark"
+        ]
+      }
+    ],
     "type": [
       "Rock",
       "Dark"
@@ -2300,6 +2481,15 @@
   },
   {
     "name": "sceptile",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Grass",
+          "dragon"
+        ]
+      }
+    ],
     "type": [
       "Grass"
     ],
@@ -2325,6 +2515,15 @@
   },
   {
     "name": "blaziken",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Fire",
+          "Fighting"
+        ]
+      }
+    ],
     "type": [
       "Fire",
       "Fighting"
@@ -2351,6 +2550,15 @@
   },
   {
     "name": "swampert",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Water",
+          "Ground"
+        ]
+      }
+    ],
     "type": [
       "Water",
       "Ground"
@@ -2541,6 +2749,15 @@
   },
   {
     "name": "gardevoir",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Psychic",
+          "Fairy"
+        ]
+      }
+    ],
     "type": [
       "Psychic",
       "Fairy"
@@ -2709,6 +2926,15 @@
   },
   {
     "name": "sableye",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Dark",
+          "Ghost"
+        ]
+      }
+    ],
     "type": [
       "Dark",
       "Ghost"
@@ -2718,6 +2944,15 @@
   },
   {
     "name": "mawile",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Steel",
+          "Fairy"
+        ]
+      }
+    ],
     "type": [
       "Steel",
       "Fairy"
@@ -2745,6 +2980,15 @@
   },
   {
     "name": "aggron",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Steel",
+          "Rock"
+        ]
+      }
+    ],
     "type": [
       "Steel",
       "Rock"
@@ -2763,6 +3007,15 @@
   },
   {
     "name": "medicham",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Fighting",
+          "Psychic"
+        ]
+      }
+    ],
     "type": [
       "Fighting",
       "Psychic"
@@ -2780,6 +3033,14 @@
   },
   {
     "name": "manectric",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Electric"
+        ]
+      }
+    ],
     "type": [
       "Electric"
     ],
@@ -2854,6 +3115,15 @@
   },
   {
     "name": "sharpedo",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Water",
+          "Dark"
+        ]
+      }
+    ],
     "type": [
       "Water",
       "Dark"
@@ -2888,6 +3158,15 @@
   },
   {
     "name": "camerupt",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Fire",
+          "Ground"
+        ]
+      }
+    ],
     "type": [
       "Fire",
       "Ground"
@@ -2981,6 +3260,15 @@
   },
   {
     "name": "altaria",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Dragon",
+          "Flying"
+        ]
+      }
+    ],
     "type": [
       "Dragon",
       "Flying"
@@ -3153,6 +3441,14 @@
   },
   {
     "name": "banette",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Ghost"
+        ]
+      }
+    ],
     "type": [
       "Ghost"
     ],
@@ -3194,6 +3490,14 @@
   },
   {
     "name": "absol",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Dark"
+        ]
+      }
+    ],
     "type": [
       "Dark"
     ],
@@ -3218,6 +3522,14 @@
   },
   {
     "name": "glalie",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Ice"
+        ]
+      }
+    ],
     "type": [
       "Ice"
     ],
@@ -3337,6 +3649,15 @@
   },
   {
     "name": "metagross",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Steel",
+          "Psychic"
+        ]
+      }
+    ],
     "type": [
       "Steel",
       "Psychic"
@@ -3370,6 +3691,15 @@
   },
   {
     "name": "latias",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Dragon",
+          "Psychic"
+        ]
+      }
+    ],
     "type": [
       "Dragon",
       "Psychic"
@@ -3379,6 +3709,15 @@
   },
   {
     "name": "latios",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Dragon",
+          "Psychic"
+        ]
+      }
+    ],
     "type": [
       "Dragon",
       "Psychic"
@@ -3404,6 +3743,15 @@
   },
   {
     "name": "rayquaza",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Dragon",
+          "Flying"
+        ]
+      }
+    ],
     "type": [
       "Dragon",
       "Flying"
@@ -3777,6 +4125,15 @@
   },
   {
     "name": "lopunny",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Normal",
+          "fighting"
+        ]
+      }
+    ],
     "type": [
       "Normal"
     ],
@@ -3923,6 +4280,15 @@
   },
   {
     "name": "garchomp",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Dragon",
+          "Ground"
+        ]
+      }
+    ],
     "type": [
       "Dragon",
       "Ground"
@@ -3948,6 +4314,15 @@
   },
   {
     "name": "lucario",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Fighting",
+          "Steel"
+        ]
+      }
+    ],
     "type": [
       "Fighting",
       "Steel"
@@ -4051,6 +4426,15 @@
   },
   {
     "name": "abomasnow",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Grass",
+          "Ice"
+        ]
+      }
+    ],
     "type": [
       "Grass",
       "Ice"
@@ -4179,6 +4563,15 @@
   },
   {
     "name": "gallade",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Psychic",
+          "Fighting"
+        ]
+      }
+    ],
     "type": [
       "Psychic",
       "Fighting"
@@ -4643,6 +5036,15 @@
   },
   {
     "name": "audino",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Normal",
+          "fairy"
+        ]
+      }
+    ],
     "type": [
       "Normal"
     ],
@@ -6250,6 +6652,15 @@
   },
   {
     "name": "diancie",
+    "forms": [
+      {
+        "name": "mega",
+        "type": [
+          "Rock",
+          "Fairy"
+        ]
+      }
+    ],
     "type": [
       "Rock",
       "Fairy"
