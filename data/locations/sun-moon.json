@@ -49,7 +49,7 @@
                     "min_level": 2,
                     "max_level": 3,
                     "rate": {
-                      "day": 30
+                      "day": 20
                     }
                   },
                   {
@@ -79,6 +79,78 @@
                     "method": "grass",
                     "min_level": 2,
                     "max_level": 3,
+                    "rate": {
+                      "day": 20
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "grass overlooking bay ",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "caterpie",
+                    "sos": "caterpie",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 2,
+                    "max_level": 4,
+                    "rate": 20
+                  },
+                  {
+                    "name": "rattata",
+                    "sos": "rattata",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 2,
+                    "max_level": 4,
+                    "rate": {
+                      "night": 30
+                    }
+                  },
+                  {
+                    "name": "ledyba",
+                    "sos": "ledyba",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 2,
+                    "max_level": 4,
+                    "rate": {
+                      "day": 20
+                    }
+                  },
+                  {
+                    "name": "spinarak",
+                    "sos": "spinarak",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 2,
+                    "max_level": 4,
+                    "rate": {
+                      "night": 20
+                    }
+                  },
+                  {
+                    "name": "pikipek",
+                    "sos": "pikipek",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 2,
+                    "max_level": 4,
+                    "rate": 30
+                  },
+                  {
+                    "name": "yungoos",
+                    "sos": "yungoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 2,
+                    "max_level": 4,
                     "rate": {
                       "day": 20
                     }
