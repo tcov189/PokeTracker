@@ -165,57 +165,84 @@ function generateEncounterArr(pokemon, encounter) {
         }
     } else {
         theRateHtml+= '<span><strong>From:</strong>&nbsp;' + pokemon.method + '</span>';
-}// End generateEncounterArr
+    }
 
-//Encounter type order    
-encTypeOrder = ["starter", "walking", "surfing", "fishing", "interaction", "radio", "gift"];    
+    //Encounter type order    
+    encTypeOrder = ["starter", "walking", "surfing", "fishing", "interaction", "radio", "gift"];    
+
+    //Get version exclusive info
+    var isUnavailable       = pokemon.version != version && pokemon.version != 'both' && pokemon.version != undefined ? true : false; 
+    var isUnavailableClass  = isUnavailable ? 'unavailable' : '';
+
+    var hasForm = pokemon.form ? true : false;
+    var hasFormClass = hasForm ? pokemon.form : '';
     
-//Get version exclusive info
-var isUnavailable       = pokemon.version != version && pokemon.version != 'both' && pokemon.version != undefined ? true : false; 
-var isUnavailableClass  = isUnavailable ? 'unavailable' : '';
+    if (gameVersionGroup == "sun-moon") {
+        var sosEncounters = pokemon.sos;
 
+        function generateSosDiv(sos) {
+            theSosHtml = '<div class="pokemon-sos-block"><div class="text-center">S.O.S:</div>';
 
-var levelRange = pokemon.min_level != pokemon.max_level ? pokemon.min_level + '&ndash;'+ pokemon.max_level : pokemon.min_level;
+            if (sos.constructor != Array) {
+                theSosHtml += '<i class="sprites '+ sos +' '+ hasFormClass +'"></i>'
+            } else {
+                $.each(sos, function (i, val) {
+                    theSosHtml += '<i class="sprites '+ val +' '+ hasFormClass +'"></i>'
+                })
+            }
 
-var isCaught = $.inArray(pokemon.name, pkmnCaughtArr) !== -1 ? ' caught' : '';                            
-var theHtml = '<div class="block-encounters-pokemon">' +
-                  '<div class="card card-default card_pokemon '+ isUnavailableClass +'">' +
-                    '<div class="card_pokemon-pokeball">' +
-                        '<i class="card_pokemon-pokeball-icon'+ isCaught +'" id="'+ pokemon.name +'"></i>' +
-                    '</div>' +
-                    '<div class="card_pokemon-info">';
-                    if (isUnavailable) {
-                        theHtml += '<span class="text-center">Not in ' + gameVersion + '</span>';
-                    }
-                    theHtml +=   '<div class="pokemon-info-bio">' +
-                            '<div class="pokemon-info-bio-name-sprite">' +
-                                '<i class="sprites '+ pokemon.name +'"></i>' +
-                                '<span class="pokemon-bio-name">'+ pokemon.name +'</span>' +
-                            '</div>'+
-                            '<div class="pokemon-bio-types">';
-                               $.each(pokemon.type, function (i, type){
-                                   theHtml += '<i class="type-icon '+ type.toLowerCase() +' "></i>'; 
-                               })
-                            theHtml += '</div>' +
+            theSosHtml += '</div>';
+
+            return theSosHtml;
+
+        }
+    }
+    
+    var levelRange = pokemon.min_level != pokemon.max_level ? pokemon.min_level + '&ndash;'+ pokemon.max_level : pokemon.min_level;
+
+    var isCaught = $.inArray(pokemon.name, pkmnCaughtArr) !== -1 ? ' caught' : '';                            
+    var theHtml = '<div class="block-encounters-pokemon">' +
+                      '<div class="card card-default card_pokemon '+ isUnavailableClass +'">' +
+                        '<div class="card_pokemon-pokeball">' +
+                            '<i class="card_pokemon-pokeball-icon'+ isCaught +'" id="'+ pokemon.name +'"></i>' +
                         '</div>' +
-                        '<hr>' +
-                        '<div class="pokemon-info-rates">' +
-                            '<div class="pokemon-rate-block">' +
-                                theRateHtml +
-                            '</div>'+
-                            '<div class="pokemon-levels-block">' +
-                                '<span class="level-range">Lvl: '+ levelRange +'</span>' +
-                            '</div>'+
+                        '<div class="card_pokemon-info">';
+                        if (isUnavailable) {
+                            theHtml += '<span class="text-center">Not in ' + gameVersion + '</span>';
+                        }
+                        theHtml +=   '<div class="pokemon-info-bio">' +
+                                '<div class="pokemon-info-bio-name-sprite">' +
+                                    '<i class="sprites '+ pokemon.name +' '+ hasFormClass +'"></i>' +
+                                    '<span class="pokemon-bio-name">'+ pokemon.name +'</span>' +
+                                '</div>'+
+                                '<div class="pokemon-bio-types">';
+                                   $.each(pokemon.type, function (i, type){
+                                       theHtml += '<i class="type-icon '+ type.toLowerCase() +' "></i>'; 
+                                   })
+                                theHtml += '</div>' +
+                            '</div>' +
+                            '<hr>' +
+                            '<div class="pokemon-info-rates">' +
+                                '<div class="pokemon-rate-block">' +
+                                    theRateHtml +
+                                '</div>';
+                                    if (gameVersionGroup == 'sun-moon'){
+                                        theHtml += generateSosDiv(sosEncounters)
+                                    } 
+                                theHtml += '<div class="pokemon-levels-block">' +
+                                    '<span class="level-range">Lvl: '+ levelRange +'</span>' +
+                                '</div>'+
+                            '</div>' +
                         '</div>' +
-                    '</div>' +
-                  '</div>' +
-                '</div>';
+                      '</div>' +
+                    '</div>';
 
     encounterArr.push({'html' : theHtml, 'method' : pokemon.method, 'name' : pokemon.name, 'national_dex' : pokemon.n_dex_num })               
 }
 
 if (currentLocationData.encounters != null) {
-    if (!currentLocationData.encounters.areas) {        
+    if (!currentLocationData.encounters.areas) {      
+        
         $.each(currentLocationData.encounters, function (i, encounter){      
             var encounterObject = {             
                 'type' : encounter.type,        
@@ -237,26 +264,26 @@ if (currentLocationData.encounters != null) {
     } else {//Seperate function for locations that 
         $.each(currentLocationData.encounters.areas, function(i, area){
             
+            encounterObject = {
+                'area_name' : area.name,
+                'area_encounters' : [] 
+            };
+            
             $.each(area.encounters, function (i, encounter){
-                var encounterObject = {   
-                    'area_name' : area.name,
-                    'area_encounters' : [{
-                        'type' : encounter.type,        
-                        'encounters' : encounterArr = []  
-                    }]                    
-                }; 
+                encounterObject.area_encounters.push({ 'type' : encounter.type, 'encounters' : encounterArr = [] })
 
                 $.each(encounter.available_pokemon, function (i, pokemon){
                     generateEncounterArr(pokemon, encounter);    
                 })
 
-                encountersInfo.push(encounterObject)  
+            });   
+             
+            encountersInfo.push(encounterObject)  
 
-                encountersInfo.sort(function(a,b){
-                    if (a.area_encounters.type != b.area_encounters.type) {                    
-                        return encTypeOrder.indexOf(a.area_encounters.type) > encTypeOrder.indexOf(b.area_encounters.type) ? 1 : -1;
-                    }
-                });   
+            encountersInfo.sort(function(a,b){
+                if (a.area_encounters.type != b.area_encounters.type) {                    
+                    return encTypeOrder.indexOf(a.area_encounters.type) > encTypeOrder.indexOf(b.area_encounters.type) ? 1 : -1;
+                }
             }) 
         })
     }

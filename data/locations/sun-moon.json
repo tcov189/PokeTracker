@@ -158,6 +158,335 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "grass near iki town ",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "caterpie",
+                    "sos": "caterpie",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 3,
+                    "max_level": 5,
+                    "rate": 10
+                  },
+                  {
+                    "name": "metapod",
+                    "sos": "caterpie",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 3,
+                    "max_level": 5,
+                    "rate": 10
+                  },
+                  {
+                    "name": "rattata",
+                    "sos": "rattata",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 2,
+                    "max_level": 5,
+                    "rate": {
+                      "night": 30
+                    }
+                  },
+                  {
+                    "name": "ledyba",
+                    "sos": "ledyba",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 3,
+                    "max_level": 5,
+                    "rate": {
+                      "day": 15
+                    }
+                  },
+                  {
+                    "name": "spinarak",
+                    "sos": "spinarak",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 3,
+                    "max_level": 5,
+                    "rate": {
+                      "night": 15
+                    }
+                  },
+                  {
+                    "name": "pichu",
+                    "sos": [
+                      "pichu",
+                      "pikachu",
+                      "happiny"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 3,
+                    "max_level": 5,
+                    "rate": 5
+                  },
+                  {
+                    "name": "pikipek",
+                    "sos": "pikipek",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 3,
+                    "max_level": 5,
+                    "rate": 20
+                  },
+                  {
+                    "name": "yungoos",
+                    "sos": "yungoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 3,
+                    "max_level": 5,
+                    "rate": {
+                      "day": 10
+                    }
+                  },
+                  {
+                    "name": "grubbin",
+                    "sos": "grubbin",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 3,
+                    "max_level": 5,
+                    "rate": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "south of iki town (blocked by rocks)",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "caterpie",
+                    "sos": "caterpie",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 10,
+                    "max_level": 13,
+                    "rate": 10
+                  },
+                  {
+                    "name": "metapod",
+                    "sos": "caterpie",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 10,
+                    "max_level": 13,
+                    "rate": 10
+                  },
+                  {
+                    "name": "rattata",
+                    "sos": "rattata",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 10,
+                    "max_level": 13,
+                    "rate": {
+                      "night": 30
+                    }
+                  },
+                  {
+                    "name": "ledyba",
+                    "sos": "ledyba",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 10,
+                    "max_level": 13,
+                    "rate": {
+                      "day": 10
+                    }
+                  },
+                  {
+                    "name": "spinarak",
+                    "sos": "spinarak",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 10,
+                    "max_level": 13,
+                    "rate": {
+                      "night": 10
+                    }
+                  },
+                  {
+                    "name": "bonsly",
+                    "sos": [
+                      "bonsly",
+                      "sudowoodo",
+                      "happiny"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 10,
+                    "max_level": 13,
+                    "rate": 15
+                  },
+                  {
+                    "name": "munchlax",
+                    "sos": [
+                      "munchlax",
+                      "snorlax",
+                      "happiny"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 10,
+                    "max_level": 13,
+                    "rate": 5
+                  },
+                  {
+                    "name": "pikipek",
+                    "sos": "pikipek",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 10,
+                    "max_level": 13,
+                    "rate": 20
+                  },
+                  {
+                    "name": "yungoos",
+                    "sos": "yungoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 10,
+                    "max_level": 13,
+                    "rate": {
+                      "day": 30
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "hau'oli outskirts - beachfront",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "rattata",
+                    "sos": "rattata",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 5,
+                    "max_level": 7,
+                    "rate": {
+                      "night": 30
+                    }
+                  },
+                  {
+                    "name": "slowpoke",
+                    "sos": "slowpoke",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 5,
+                    "max_level": 7,
+                    "rate": 20
+                  },
+                  {
+                    "name": "wingull",
+                    "sos": "wingull",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 5,
+                    "max_level": 7,
+                    "rate": 50
+                  },
+                  {
+                    "name": "yungoos",
+                    "sos": "yungoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 5,
+                    "max_level": 7,
+                    "rate": {
+                      "day": 30
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "surfing",
+                "available_pokemon": [
+                  {
+                    "name": "tentacool",
+                    "sos": "tentacool",
+                    "version": "both",
+                    "method": "water",
+                    "min_level": 15,
+                    "max_level": 18,
+                    "rate": 40
+                  },
+                  {
+                    "name": "wingull",
+                    "sos": "wingull",
+                    "version": "both",
+                    "method": "water",
+                    "min_level": 15,
+                    "max_level": 18,
+                    "rate": 20
+                  },
+                  {
+                    "name": "finneon",
+                    "sos": "finneon",
+                    "version": "both",
+                    "method": "water",
+                    "min_level": 15,
+                    "max_level": 18,
+                    "rate": 40
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "hau'oli outskirts - trainers' school",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "meowth",
+                    "sos": "meowth",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 6,
+                    "max_level": 8,
+                    "rate": 30
+                  },
+                  {
+                    "name": "magnemite",
+                    "sos": "magnemite",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 6,
+                    "max_level": 8,
+                    "rate": 50
+                  },
+                  {
+                    "name": "grimer",
+                    "sos": "grimer",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 6,
+                    "max_level": 8,
+                    "rate": 20
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
