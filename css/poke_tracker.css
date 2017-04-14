@@ -818,7 +818,7 @@ hr {
   background-position: -84px -2px;
 }
 .sprites.venusaur.mega {
-  background-position: -124px -4px;
+  background-position: -124px -1px;
 }
 .sprites.charmander {
   background-position: -164px -4px;
@@ -827,13 +827,13 @@ hr {
   background-position: -204px -4px;
 }
 .sprites.charizard {
-  background-position: -244px -4px;
+  background-position: -244px -0;
 }
 .sprites.charizard.mega-x {
-  background-position: -284px -4px;
+  background-position: -284px -0;
 }
 .sprites.charizard.mega-y {
-  background-position: -324px -4px;
+  background-position: -324px -0;
 }
 .sprites.squirtle {
   background-position: -364px -4px;
@@ -854,7 +854,7 @@ hr {
   background-position: -564px -4px;
 }
 .sprites.butterfree {
-  background-position: -604px -4px;
+  background-position: -604px -2px;
 }
 .sprites.weedle {
   background-position: -4px -32px;
@@ -863,10 +863,10 @@ hr {
   background-position: -44px -32px;
 }
 .sprites.beedrill {
-  background-position: -84px -32px;
+  background-position: -84px -28px;
 }
 .sprites.beedrill.mega {
-  background-position: -124px -32px;
+  background-position: -124px -29px;
 }
 .sprites.pidgey {
   background-position: -164px -32px;
@@ -893,7 +893,7 @@ hr {
   background-position: -444px -32px;
 }
 .sprites.spearow {
-  background-position: -484px -32px;
+  background-position: -484px -31px;
 }
 .sprites.fearow {
   background-position: -524px -32px;
@@ -914,10 +914,10 @@ hr {
   background-position: -84px -59px;
 }
 .sprites.sandshrew {
-  background-position: -124px -62px;
+  background-position: -124px -61px;
 }
 .sprites.sandshrew.alolan {
-  background-position: -164px -62px;
+  background-position: -164px -61px;
 }
 .sprites.sandslash {
   background-position: -204px -62px;
@@ -941,7 +941,7 @@ hr {
   background-position: -444px -62px;
 }
 .sprites.nidoking {
-  background-position: -484px -62px;
+  background-position: -484px -60px;
 }
 .sprites.clefairy {
   background-position: -524px -62px;
@@ -986,7 +986,7 @@ hr {
   background-position: -404px -92px;
 }
 .sprites.parasect {
-  background-position: -444px -92px;
+  background-position: -444px -90px;
 }
 .sprites.venonat {
   background-position: -484px -92px;
@@ -1001,13 +1001,15 @@ hr {
   background-position: -604px -92px;
 }
 .sprites.dugtrio {
-  background-position: -4px -122px;
+  background-position: -4px -120px;
 }
 .sprites.dugtrio.alolan {
-  background-position: -44px -122px;
+  background-position: -44px -119px;
 }
 .sprites.meowth {
-  background-position: -84px -122px;
+  height: 30px;
+
+  background-position: -84px -120px;
 }
 .sprites.meowth.alolan {
   background-position: -124px -122px;
@@ -1052,10 +1054,10 @@ hr {
   background-position: -4px -152px;
 }
 .sprites.alakazam {
-  background-position: -44px -152px;
+  background-position: -44px -150px;
 }
 .sprites.alakazam.mega {
-  background-position: -84px -152px;
+  background-position: -84px -150px;
 }
 .sprites.machop {
   background-position: -124px -152px;
@@ -1064,7 +1066,7 @@ hr {
   background-position: -164px -152px;
 }
 .sprites.machamp {
-  background-position: -204px -152px;
+  background-position: -204px -150px;
 }
 .sprites.bellsprout {
   background-position: -244px -152px;
@@ -1079,7 +1081,7 @@ hr {
   background-position: -364px -152px;
 }
 .sprites.tentacruel {
-  background-position: -404px -152px;
+  background-position: -404px -150px;
 }
 .sprites.geodude {
   background-position: -444px -152px;
@@ -1094,10 +1096,10 @@ hr {
   background-position: -564px -152px;
 }
 .sprites.golem {
-  background-position: -604px -152px;
+  background-position: -604px -150px;
 }
 .sprites.golem.alolan {
-  background-position: -4px -182px;
+  background-position: -4px -180px;
 }
 .sprites.ponyta {
   background-position: -44px -182px;
@@ -1109,16 +1111,18 @@ hr {
   background-position: -124px -182px;
 }
 .sprites.slowbro {
-  background-position: -164px -182px;
+  background-position: -164px -180px;
 }
 .sprites.slowbro.mega {
-  background-position: -204px -182px;
+  background-position: -204px -180px;
 }
 .sprites.magnemite {
-  background-position: -244px -182px;
+  height: 24px;
+
+  background-position: -244px -187px;
 }
 .sprites.magneton {
-  background-position: -284px -182px;
+  background-position: -284px -179px;
 }
 .sprites.farfetchd {
   background-position: -324px -182px;
@@ -1142,10 +1146,10 @@ hr {
   background-position: -564px -182px;
 }
 .sprites.muk {
-  background-position: -604px -182px;
+  background-position: -604px -180px;
 }
 .sprites.muk.alolan {
-  background-position: -4px -212px;
+  background-position: -4px -208px;
 }
 .sprites.shellder {
   background-position: -44px -212px;
@@ -1169,7 +1173,9 @@ hr {
   background-position: -284px -212px;
 }
 .sprites.drowzee {
-  background-position: -324px -212px;
+  height: 30px;
+
+  background-position: -324px -211px;
 }
 .sprites.hypno {
   background-position: -364px -212px;
@@ -1181,10 +1187,10 @@ hr {
   background-position: -444px -212px;
 }
 .sprites.voltorb {
-  background-position: -484px -212px;
+  background-position: -484px -216px;
 }
 .sprites.electrode {
-  background-position: -524px -212px;
+  background-position: -524px -214px;
 }
 .sprites.exeggcute {
   background-position: -564px -212px;
@@ -1201,7 +1207,7 @@ hr {
 .sprites.marowak {
   background-position: -84px -242px;
 }
-.sprites.marowak .alolan {
+.sprites.marowak.alolan {
   background-position: -124px -242px;
 }
 .sprites.hitmonlee {
@@ -1234,125 +1240,135 @@ hr {
 .sprites.kangaskhan {
   background-position: -524px -242px;
 }
+.sprites.kangaskhan.mega {
+  background-position: -564px -240px;
+}
 .sprites.horsea {
-  background-position: -564px -242px;
+  height: 26px;
+
+  background-position: -604px -244px;
 }
 .sprites.seadra {
-  background-position: -604px -242px;
-}
-.sprites.goldeen {
   background-position: -4px -272px;
 }
-.sprites.seaking {
+.sprites.goldeen {
   background-position: -44px -272px;
 }
-.sprites.staryu {
+.sprites.seaking {
   background-position: -84px -272px;
 }
-.sprites.starmie {
+.sprites.staryu {
   background-position: -124px -272px;
 }
-.sprites.mr-mime {
+.sprites.starmie {
   background-position: -164px -272px;
 }
-.sprites.scyther {
+.sprites.mr-mime {
   background-position: -204px -272px;
 }
-.sprites.jynx {
+.sprites.scyther {
   background-position: -244px -272px;
 }
-.sprites.electabuzz {
+.sprites.jynx {
   background-position: -284px -272px;
 }
-.sprites.magmar {
+.sprites.electabuzz {
   background-position: -324px -272px;
 }
-.sprites.pinsir {
+.sprites.magmar {
   background-position: -364px -272px;
 }
-.sprites.pinsir.mega {
+.sprites.pinsir {
   background-position: -404px -272px;
 }
-.sprites.tauros {
+.sprites.pinsir.mega {
   background-position: -444px -272px;
 }
-.sprites.magikarp {
+.sprites.tauros {
   background-position: -484px -272px;
 }
-.sprites.gyarados {
+.sprites.magikarp {
   background-position: -524px -272px;
 }
-.sprites.gyarados.mega {
+.sprites.gyarados {
   background-position: -564px -272px;
 }
-.sprites.lapras {
+.sprites.gyarados.mega {
   background-position: -604px -272px;
 }
-.sprites.ditto {
+.sprites.lapras {
   background-position: -4px -302px;
 }
-.sprites.eevee {
+.sprites.ditto {
   background-position: -44px -302px;
 }
-.sprites.vaporeon {
+.sprites.eevee {
   background-position: -84px -302px;
 }
-.sprites.jolteon {
+.sprites.vaporeon {
   background-position: -124px -302px;
 }
-.sprites.flareon {
+.sprites.jolteon {
   background-position: -164px -302px;
 }
-.sprites.porygon {
+.sprites.flareon {
+  height: 28px;
+
   background-position: -204px -302px;
 }
+.sprites.porygon {
+  background-position: -244px -300px;
+}
 .sprites.omanyte {
-  background-position: -244px -302px;
+  background-position: -284px -300px;
 }
 .sprites.omastar {
-  background-position: -284px -302px;
-}
-.sprites.kabuto {
   background-position: -324px -302px;
 }
-.sprites.kabutops {
+.sprites.kabuto {
   background-position: -364px -302px;
 }
-.sprites.aerodactyl {
-  background-position: -404px -302px;
+.sprites.kabutops {
+  background-position: -404px -299px;
 }
-.sprites.snorlax {
+.sprites.aerodactyl {
   background-position: -444px -302px;
 }
-.sprites.articuno {
+.sprites.aerodactyl.mega {
   background-position: -484px -302px;
 }
-.sprites.zapdos {
+.sprites.snorlax {
   background-position: -524px -302px;
 }
-.sprites.moltres {
+.sprites.articuno {
   background-position: -564px -302px;
 }
+.sprites.zapdos {
+  background-position: -604px -301px;
+}
+.sprites.moltres {
+  background-position: -4px -330px;
+}
 .sprites.dratini {
-  background-position: -604px -302px;
-}
-.sprites.dragonair {
-  background-position: -4px -332px;
-}
-.sprites.dragonite {
   background-position: -44px -332px;
 }
-.sprites.mewtwo {
+.sprites.dragonair {
   background-position: -84px -332px;
 }
-.sprites.mewtwo.mega-y {
+.sprites.dragonite {
   background-position: -124px -332px;
 }
-.sprites.mewtwo.mega-x {
+.sprites.mewtwo {
   background-position: -164px -332px;
 }
-.sprites.mew {
+.sprites.mewtwo.mega-y {
   background-position: -204px -332px;
+}
+.sprites.mewtwo.mega-x {
+  background-position: -244px -330px;
+}
+.sprites.mew {
+  background-position: -284px -332px;
 }
 /* johto sprites 152- 251*/
 .sprites.chikorita {
