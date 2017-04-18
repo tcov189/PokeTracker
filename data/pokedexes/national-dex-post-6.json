@@ -6936,14 +6936,14 @@
     "name": "zygarde",
     "forms": [
       {
-        "name": "f-10",
+        "name": "-10",
         "type": [
           "Dragon",
           "Ground"
         ]
       },
       {
-        "name": "f-50",
+        "name": "-50",
         "type": [
           "Dragon",
           "Ground"
@@ -7242,7 +7242,21 @@
     "r_dex_num": ""
   },
   {
-    "name": "lyncaroc",
+    "name": "lycanroc",
+    "forms": [
+      {
+        "name": "midday",
+        "type": [
+          "rock"
+        ]
+      },
+      {
+        "name": "midnight",
+        "type": [
+          "rock"
+        ]
+      }
+    ],
     "type": [
       "rock"
     ],
@@ -7251,14 +7265,14 @@
   },
   {
     "name": "wishiwashi",
-    "type": [
-      "water"
+    "forms": [
+      {
+        "name": "school",
+        "type": [
+          "water"
+        ]
+      }
     ],
-    "n_dex_num": 746,
-    "r_dex_num": ""
-  },
-  {
-    "name": "wishiwashi-school",
     "type": [
       "water"
     ],
@@ -7498,6 +7512,22 @@
   },
   {
     "name": "minior",
+    "forms": [
+      {
+        "name": "meteor",
+        "type": [
+          "rock",
+          "flying"
+        ]
+      },
+      {
+        "name": "core",
+        "type": [
+          "rock",
+          "flying"
+        ]
+      }
+    ],
     "type": [
       "rock",
       "flying"
