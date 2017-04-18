@@ -6380,6 +6380,15 @@
   },
   {
     "name": "greninja",
+    "forms": [
+      {
+        "name": "ash-greninja",
+        "type": [
+          "Water",
+          "Dark"
+        ]
+      }
+    ],
     "type": [
       "Water",
       "Dark"
@@ -6549,6 +6558,20 @@
   },
   {
     "name": "meowstic",
+    "forms": [
+      {
+        "name": "female",
+        "type": [
+          "Psychic"
+        ]
+      },
+      {
+        "name": "male",
+        "type": [
+          "Psychic"
+        ]
+      }
+    ],
     "type": [
       "Psychic"
     ],
@@ -6575,6 +6598,22 @@
   },
   {
     "name": "aegislash",
+    "forms": [
+      {
+        "name": "blade",
+        "type": [
+          "Steel",
+          "Ghost"
+        ]
+      },
+      {
+        "name": "shield",
+        "type": [
+          "Steel",
+          "Ghost"
+        ]
+      }
+    ],
     "type": [
       "Steel",
       "Ghost"
@@ -6895,6 +6934,29 @@
   },
   {
     "name": "zygarde",
+    "forms": [
+      {
+        "name": "f-10",
+        "type": [
+          "Dragon",
+          "Ground"
+        ]
+      },
+      {
+        "name": "f-50",
+        "type": [
+          "Dragon",
+          "Ground"
+        ]
+      },
+      {
+        "name": "complete",
+        "type": [
+          "Dragon",
+          "Ground"
+        ]
+      }
+    ],
     "type": [
       "Dragon",
       "Ground"
@@ -6922,6 +6984,22 @@
   },
   {
     "name": "hoopa",
+    "forms": [
+      {
+        "name": "confined",
+        "type": [
+          "Psychic",
+          "Ghost"
+        ]
+      },
+      {
+        "name": "unbound",
+        "type": [
+          "Psychic",
+          "Ghost"
+        ]
+      }
+    ],
     "type": [
       "Psychic",
       "Ghost"
