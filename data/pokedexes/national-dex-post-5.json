@@ -4035,6 +4035,29 @@
   },
   {
     "name": "wormadam",
+    "forms": [
+      {
+        "name": "plant-cloak",
+        "type": [
+          "Bug",
+          "grass"
+        ]
+      },
+      {
+        "name": "sand-cloak",
+        "type": [
+          "Bug",
+          "ground"
+        ]
+      },
+      {
+        "name": "trash-cloak",
+        "type": [
+          "Bug",
+          "steel"
+        ]
+      }
+    ],
     "type": [
       "Bug",
       "Grass"
@@ -4103,6 +4126,20 @@
   },
   {
     "name": "cherrim",
+    "forms": [
+      {
+        "name": "overcast",
+        "type": [
+          "Grass"
+        ]
+      },
+      {
+        "name": "sunshine",
+        "type": [
+          "Grass"
+        ]
+      }
+    ],
     "type": [
       "Grass"
     ],
@@ -4644,6 +4681,43 @@
   },
   {
     "name": "rotom",
+    "forms": [
+      {
+        "name": "fan",
+        "type": [
+          "Electric",
+          "flying"
+        ]
+      },
+      {
+        "name": "frost",
+        "type": [
+          "Electric",
+          "ice"
+        ]
+      },
+      {
+        "name": "heat",
+        "type": [
+          "Electric",
+          "fire"
+        ]
+      },
+      {
+        "name": "mow",
+        "type": [
+          "Electric",
+          "grass"
+        ]
+      },
+      {
+        "name": "wash",
+        "type": [
+          "Electric",
+          "water"
+        ]
+      }
+    ],
     "type": [
       "Electric",
       "Ghost"
@@ -4712,8 +4786,25 @@
   },
   {
     "name": "giratina",
+    "forms": [
+      {
+        "name": "altered",
+        "type": [
+          "Ghost",
+          "dragon"
+        ]
+      },
+      {
+        "name": "origin",
+        "type": [
+          "Ghost",
+          "dragon"
+        ]
+      }
+    ],
     "type": [
-      "Ghost"
+      "Ghost",
+      "dragon"
     ],
     "n_dex_num": 487,
     "r_dex_num": ""
@@ -4752,6 +4843,21 @@
   },
   {
     "name": "shaymin",
+    "forms": [
+      {
+        "name": "land",
+        "type": [
+          "Grass"
+        ]
+      },
+      {
+        "name": "sky",
+        "type": [
+          "Grass",
+          "flying"
+        ]
+      }
+    ],
     "type": [
       "Grass"
     ],
@@ -5287,6 +5393,21 @@
   },
   {
     "name": "darmanitan",
+    "forms": [
+      {
+        "name": "standard",
+        "type": [
+          "Fire"
+        ]
+      },
+      {
+        "name": "zen",
+        "type": [
+          "Fire",
+          "psychic"
+        ]
+      }
+    ],
     "type": [
       "Fire"
     ],
@@ -6019,6 +6140,20 @@
   },
   {
     "name": "tornadus",
+    "forms": [
+      {
+        "name": "incarnate",
+        "type": [
+          "Flying"
+        ]
+      },
+      {
+        "name": "therian",
+        "type": [
+          "Flying"
+        ]
+      }
+    ],
     "type": [
       "Flying"
     ],
@@ -6027,6 +6162,22 @@
   },
   {
     "name": "thundurus",
+    "forms": [
+      {
+        "name": "incarnate",
+        "type": [
+          "Electric",
+          "Flying"
+        ]
+      },
+      {
+        "name": "therian",
+        "type": [
+          "Electric",
+          "Flying"
+        ]
+      }
+    ],
     "type": [
       "Electric",
       "Flying"
@@ -6054,6 +6205,22 @@
   },
   {
     "name": "landorus",
+    "forms": [
+      {
+        "name": "incarnate",
+        "type": [
+          "Ground",
+          "Flying"
+        ]
+      },
+      {
+        "name": "therian",
+        "type": [
+          "Ground",
+          "Flying"
+        ]
+      }
+    ],
     "type": [
       "Ground",
       "Flying"
@@ -6063,6 +6230,22 @@
   },
   {
     "name": "kyurem",
+    "forms": [
+      {
+        "name": "white",
+        "type": [
+          "Dragon",
+          "Ice"
+        ]
+      },
+      {
+        "name": "black",
+        "type": [
+          "Dragon",
+          "Ice"
+        ]
+      }
+    ],
     "type": [
       "Dragon",
       "Ice"
@@ -6072,6 +6255,22 @@
   },
   {
     "name": "keldeo",
+    "forms": [
+      {
+        "name": "ordinary",
+        "type": [
+          "Water",
+          "Fighting"
+        ]
+      },
+      {
+        "name": "resolute",
+        "type": [
+          "Water",
+          "Fighting"
+        ]
+      }
+    ],
     "type": [
       "Water",
       "Fighting"
@@ -6081,6 +6280,22 @@
   },
   {
     "name": "meloetta",
+    "forms": [
+      {
+        "name": "aria",
+        "type": [
+          "Normal",
+          "Psychic"
+        ]
+      },
+      {
+        "name": "pirouette",
+        "type": [
+          "Normal",
+          "fighting"
+        ]
+      }
+    ],
     "type": [
       "Normal",
       "Psychic"
