@@ -2205,794 +2205,923 @@ hr {
 }
 /* sinnoh sprites 387 - 493 */
 .sprites.turtwig {
-  background-position: -161px -772px;
+  background-position: -84px -842px;
 }
 .sprites.grotle {
-  background-position: -191px -773px;
+  background-position: -124px -842px;
 }
 .sprites.torterra {
-  background-position: -225px -773px;
+  background-position: -164px -841px;
 }
 .sprites.chimchar {
-  background-position: -256px -772px;
+  background-position: -204px -842px;
 }
 .sprites.monferno {
-  background-position: -290px -772px;
+  background-position: -244px -842px;
 }
 .sprites.infernape {
-  background-position: -320px -772px;
+  background-position: -284px -842px;
 }
 .sprites.piplup {
-  background-position: -353px -772px;
+  background-position: -324px -842px;
 }
 .sprites.prinplup {
-  background-position: -385px -772px;
+  background-position: -364px -842px;
 }
 .sprites.empoleon {
-  background-position: -416px -772px;
+  background-position: -404px -842px;
 }
 .sprites.starly {
-  background-position: -448px -773px;
+  background-position: -444px -842px;
 }
 .sprites.staravia {
-  background-position: -480px -772px;
+  background-position: -484px -842px;
 }
 .sprites.staraptor {
-  background-position: 0 -805px;
+  background-position: -524px -842px;
 }
 .sprites.bidoof {
-  background-position: -32px -805px;
+  background-position: -564px -842px;
 }
 .sprites.bibarel {
-  background-position: -63px -804px;
+  background-position: -604px -842px;
 }
 .sprites.kricketot {
-  background-position: -96px -805px;
+  background-position: -4px -872px;
 }
 .sprites.kricketune {
-  background-position: -128px -805px;
+  background-position: -44px -872px;
 }
 .sprites.shinx {
-  background-position: -158px -805px;
+  background-position: -84px -872px;
 }
 .sprites.luxio {
-  background-position: -191px -805px;
+  background-position: -124px -872px;
 }
 .sprites.luxray {
-  background-position: -224px -803px;
+  background-position: -164px -872px;
 }
 .sprites.budew {
-  background-position: -256px -805px;
+  background-position: -204px -872px;
 }
 .sprites.roserade {
-  background-position: -287px -803px;
+  background-position: -244px -872px;
 }
 .sprites.cranidos {
-  background-position: -287px -803px;
+  background-position: -284px -872px;
 }
 .sprites.rampardos {
-  background-position: -352px -805px;
+  background-position: -324px -872px;
 }
 .sprites.shieldon {
-  background-position: -384px -805px;
+  background-position: -364px -871px;
 }
 .sprites.bastiodon {
-  background-position: -413px -805px;
+  background-position: -404px -872px;
 }
 .sprites.burmy {
-  background-position: -448px -804px;
+  background-position: -444px -872px;
 }
-.sprites.wormadam {
-  background-position: -479px -805px;
+.sprites.wormadam.plant-cloak {
+  background-position: -484px -872px;
+}
+.sprites.wormadam.sand-cloak {
+  background-position: -524px -872px;
+}
+.sprites.wormadam.trash-cloak {
+  background-position: -564px -872px;
 }
 .sprites.mothim {
-  background-position: -63px -835px;
+  background-position: -604px -870px;
 }
 .sprites.combee {
-  background-position: -96px -836px;
+  background-position: -4px -902px;
 }
 .sprites.vespiquen {
-  background-position: -128px -835px;
+  background-position: -44px -902px;
 }
 .sprites.pachirisu {
-  background-position: -160px -838px;
+  background-position: -84px -902px;
 }
 .sprites.buizel {
-  background-position: -192px -837px;
+  background-position: -124px -902px;
 }
 .sprites.floatzel {
-  background-position: -221px -837px;
+  background-position: -164px -902px;
 }
 .sprites.cherubi {
-  background-position: -256px -836px;
+  background-position: -204px -902px;
 }
-.sprites.cherrim {
-  background-position: -288px -836px;
+.sprites.cherrim.overcast {
+  background-position: -244px -902px;
 }
 .sprites.shellos {
-  background-position: -320px -835px;
+  background-position: -284px -902px;
 }
 .sprites.gastrodon {
-  background-position: -352px -837px;
+  background-position: -324px -902px;
 }
 .sprites.ambipom {
-  background-position: -383px -835px;
+  background-position: -364px -902px;
 }
 .sprites.drifloon {
-  background-position: -416px -836px;
+  background-position: -404px -902px;
 }
 .sprites.drifblim {
-  background-position: -448px -837px;
+  background-position: -444px -902px;
 }
 .sprites.buneary {
-  background-position: -478px -836px;
+  background-position: -484px -902px;
 }
 .sprites.lopunny {
-  background-position: 0 -869px;
+  background-position: -524px -902px;
+}
+.sprites.lopunny.mega {
+  background-position: -564px -902px;
 }
 .sprites.mismagius {
-  background-position: -32px -868px;
+  background-position: -604px -902px;
 }
 .sprites.honchkrow {
-  background-position: -64px -868px;
+  background-position: -4px -932px;
 }
 .sprites.glameow {
-  background-position: -92px -868px;
+  background-position: -44px -932px;
 }
 .sprites.purugly {
-  background-position: -127px -871px;
+  background-position: -84px -932px;
 }
 .sprites.chingling {
-  background-position: -159px -869px;
-}
-.sprites.mime.jr {
-  background-position: -352px -869px;
+  background-position: -124px -932px;
 }
 .sprites.stunky {
-  background-position: -192px -869px;
+  background-position: -164px -932px;
 }
 .sprites.skuntank {
-  background-position: -225px -870px;
+  background-position: -204px -932px;
 }
 .sprites.bronzor {
-  background-position: -257px -868px;
+  background-position: -244px -932px;
 }
 .sprites.bronzong {
-  background-position: -289px -868px;
+  background-position: -284px -932px;
 }
 .sprites.bonsly {
-  background-position: -320px -868px;
+  background-position: -324px -932px;
+}
+.sprites.mime-jr {
+  background-position: -364px -932px;
 }
 .sprites.happiny {
-  background-position: -385px -867px;
+  background-position: -404px -932px;
 }
 .sprites.chatot {
-  background-position: -416px -868px;
+  background-position: -444px -932px;
 }
 .sprites.spiritomb {
-  background-position: -447px -867px;
+  background-position: -484px -932px;
 }
 .sprites.gible {
-  background-position: -480px -867px;
+  background-position: -524px -932px;
 }
 .sprites.gabite {
-  background-position: 0 -903px;
+  background-position: -564px -932px;
 }
 .sprites.garchomp {
-  background-position: -30px -901px;
+  background-position: -604px -932px;
+}
+.sprites.garchomp.mega {
+  background-position: -4px -962px;
 }
 .sprites.munchlax {
-  background-position: -64px -899px;
+  background-position: -44px -961px;
 }
 .sprites.riolu {
-  background-position: -96px -901px;
+  background-position: -84px -962px;
 }
 .sprites.lucario {
-  background-position: -128px -900px;
+  background-position: -124px -962px;
+}
+.sprites.lucario.mega {
+  background-position: -164px -962px;
 }
 .sprites.hippopotas {
-  background-position: -159px -903px;
+  background-position: -204px -962px;
 }
 .sprites.hippowdon {
-  background-position: -191px -903px;
+  background-position: -244px -962px;
 }
 .sprites.skorupi {
-  background-position: -226px -903px;
+  background-position: -284px -962px;
 }
 .sprites.drapion {
-  background-position: -255px -899px;
+  background-position: -324px -962px;
 }
 .sprites.croagunk {
-  background-position: -289px -901px;
+  background-position: -364px -962px;
 }
 .sprites.toxicroak {
-  background-position: -318px -900px;
+  background-position: -404px -962px;
 }
 .sprites.carnivine {
-  background-position: -351px -900px;
+  background-position: -444px -962px;
 }
 .sprites.finneon {
-  background-position: -384px -899px;
+  background-position: -484px -962px;
 }
 .sprites.lumineon {
-  background-position: -415px -899px;
+  background-position: -524px -962px;
 }
 .sprites.mantyke {
-  background-position: -448px -901px;
+  background-position: -564px -962px;
 }
 .sprites.snover {
-  background-position: -480px -900px;
+  background-position: -604px -962px;
 }
 .sprites.abomasnow {
-  background-position: 0 -933px;
+  background-position: -4px -991px;
+}
+.sprites.abomasnow.mega {
+  background-position: -44px -990px;
 }
 .sprites.weavile {
-  background-position: -34px -933px;
+  background-position: -84px -992px;
 }
 .sprites.magnezone {
-  background-position: -64px -932px;
+  background-position: -124px -992px;
 }
 .sprites.lickilicky {
-  background-position: -98px -932px;
+  background-position: -164px -992px;
 }
 .sprites.rhyperior {
-  background-position: -128px -931px;
+  background-position: -204px -992px;
 }
 .sprites.tangrowth {
-  background-position: -160px -930px;
+  background-position: -244px -992px;
 }
 .sprites.electivire {
-  background-position: -191px -932px;
+  background-position: -284px -992px;
 }
 .sprites.magmortar {
-  background-position: -223px -932px;
+  background-position: -324px -992px;
 }
 .sprites.togekiss {
-  background-position: -253px -932px;
+  background-position: -364px -992px;
 }
 .sprites.yanmega {
-  background-position: -288px -931px;
+  background-position: -404px -992px;
 }
 .sprites.leafeon {
-  background-position: -319px -929px;
+  background-position: -444px -992px;
 }
 .sprites.glaceon {
-  background-position: -349px -932px;
+  background-position: -484px -992px;
 }
 .sprites.gliscor {
-  background-position: -382px -931px;
+  background-position: -524px -992px;
 }
 .sprites.mamoswine {
-  background-position: -416px -930px;
+  background-position: -564px -990px;
 }
 .sprites.porygon-z {
-  background-position: -448px -928px;
+  background-position: -604px -990px;
 }
 .sprites.gallade {
-  background-position: -480px -931px;
+  background-position: -4px -1022px;
+}
+.sprites.gallade.mega {
+  background-position: -44px -1022px;
 }
 .sprites.probopass {
-  background-position: 0 -965px;
+  background-position: -84px -1020px;
 }
 .sprites.dusknoir {
-  background-position: -34px -963px;
+  background-position: -124px -1022px;
 }
 .sprites.froslass {
-  background-position: -62px -965px;
+  background-position: -164px -1020px;
 }
 .sprites.rotom {
-  background-position: -95px -963px;
+  background-position: -364px -1022px;
+}
+.sprites.rotom.fan {
+  background-position: -204px -1022px;
+}
+.sprites.rotom.frost {
+  background-position: -244px -1022px;
+}
+.sprites.rotom.heat {
+  height: 29px;
+
+  background-position: -284px -1022px;
+}
+.sprites.rotom.mow {
+  background-position: -324px -1022px;
+}
+.sprites.rotom.wash {
+  height: 30px;
+
+  background-position: -404px -1022px;
 }
 .sprites.uxie {
-  background-position: -287px -964px;
+  background-position: -444px -1022px;
 }
 .sprites.mesprit {
-  background-position: -322px -964px;
+  background-position: -484px -1022px;
 }
 .sprites.azelf {
-  background-position: -350px -965px;
+  background-position: -524px -1022px;
 }
 .sprites.dialga {
-  background-position: -384px -964px;
+  background-position: -564px -1022px;
 }
 .sprites.palkia {
-  background-position: -416px -964px;
+  background-position: -604px -1022px;
 }
 .sprites.heatran {
-  background-position: -449px -965px;
+  background-position: -4px -1052px;
 }
 .sprites.regigigas {
-  background-position: -480px -964px;
+  background-position: -44px -1051px;
 }
 .sprites.giratina {
-  background-position: 0 -995px;
+  background-position: -84px -1052px;
+}
+.sprites.giratina.altered {
+  background-position: -84px -1052px;
+}
+.sprites.giratina.origin {
+  background-position: -124px -1052px;
 }
 .sprites.cresselia {
-  background-position: -63px -997px;
+  background-position: -164px -1052px;
 }
 .sprites.phione {
-  background-position: -95px -997px;
+  background-position: -204px -1052px;
 }
 .sprites.manaphy {
-  background-position: -127px -996px;
+  background-position: -244px -1052px;
 }
 .sprites.darkrai {
-  background-position: -159px -996px;
+  background-position: -284px -1052px;
 }
 .sprites.shaymin {
-  background-position: -191px -996px;
+  background-position: -324px -1052px;
+}
+.sprites.shaymin.sky {
+  background-position: -364px -1052px;
 }
 .sprites.arceus {
-  background-position: -253px -995px;
+  background-position: -404px -1052px;
 }
 /* unova sprites 494 - 649 */
 .sprites.victini {
-  background-position: -288px -996px;
+  background-position: -444px -1052px;
 }
 .sprites.snivy {
-  background-position: -320px -996px;
+  background-position: -484px -1052px;
 }
 .sprites.servine {
-  background-position: -351px -996px;
+  background-position: -524px -1052px;
 }
 .sprites.serperior {
-  background-position: -385px -996px;
+  background-position: -564px -1052px;
 }
 .sprites.tepig {
-  background-position: -416px -996px;
+  background-position: -604px -1052px;
 }
 .sprites.pignite {
-  background-position: -449px -996px;
+  background-position: -4px -1082px;
 }
 .sprites.emboar {
-  background-position: -480px -996px;
+  background-position: -44px -1082px;
 }
 .sprites.oshawott {
-  background-position: 0 -1028px;
+  background-position: -84px -1082px;
 }
 .sprites.dewott {
-  background-position: -31px -1029px;
+  background-position: -124px -1082px;
 }
 .sprites.samurott {
-  background-position: -65px -1029px;
+  background-position: -164px -1082px;
 }
 .sprites.patrat {
-  background-position: -95px -1029px;
+  background-position: -204px -1082px;
 }
 .sprites.watchog {
-  background-position: -127px -1029px;
+  background-position: -244px -1082px;
 }
 .sprites.lillipup {
-  background-position: -160px -1029px;
+  background-position: -284px -1082px;
 }
 .sprites.herdier {
-  background-position: -191px -1028px;
+  background-position: -324px -1082px;
 }
 .sprites.stoutland {
-  background-position: -224px -1028px;
+  background-position: -364px -1082px;
 }
 .sprites.purrloin {
-  background-position: -255px -1028px;
+  background-position: -404px -1082px;
 }
 .sprites.liepard {
-  background-position: -287px -1028px;
+  background-position: -444px -31px;
 }
 .sprites.pansage {
-  background-position: -321px -1029px;
+  background-position: -484px -1082px;
 }
 .sprites.simisage {
-  background-position: -350px -1029px;
+  background-position: -524px -1082px;
 }
 .sprites.pansear {
-  background-position: -384px -1029px;
+  background-position: -564px -1082px;
 }
 .sprites.simisear {
-  background-position: -413px -1028px;
+  background-position: -604px -1082px;
 }
 .sprites.panpour {
-  background-position: -448px -1029px;
+  background-position: -4px -1112px;
 }
 .sprites.simipour {
-  background-position: -480px -1029px;
+  height: 30px;
+
+  background-position: -44px -1112px;
 }
 .sprites.munna {
-  background-position: 0 -1060px;
+  background-position: -84px -1112px;
 }
 .sprites.musharna {
-  background-position: -33px -1058px;
+  background-position: -124px -1112px;
 }
 .sprites.pidove {
-  background-position: -64px -1060px;
+  background-position: -164px -1112px;
 }
 .sprites.tranquill {
-  background-position: -96px -1062px;
+  background-position: -204px -1112px;
 }
 .sprites.unfezant {
-  background-position: -128px -1060px;
+  background-position: -244px -1112px;
 }
 .sprites.blitzle {
-  background-position: -161px -1060px;
+  background-position: -284px -1112px;
 }
 .sprites.zebstrika {
-  background-position: -192px -1060px;
+  background-position: -324px -1112px;
 }
 .sprites.roggenrola {
-  background-position: -225px -1060px;
+  background-position: -364px -1112px;
 }
 .sprites.boldore {
-  background-position: -255px -1060px;
+  background-position: -404px -1112px;
 }
 .sprites.gigalith {
-  background-position: -289px -1061px;
+  background-position: -444px -1112px;
 }
 .sprites.woobat {
-  background-position: -320px -1060px;
+  background-position: -484px -1112px;
 }
 .sprites.swoobat {
-  background-position: -352px -1061px;
+  background-position: -524px -1112px;
 }
 .sprites.drilbur {
-  background-position: -383px -1061px;
+  background-position: -564px -1112px;
 }
 .sprites.excadrill {
-  background-position: -415px -1061px;
+  background-position: -604px -1112px;
 }
 .sprites.audino {
-  background-position: -448px -1060px;
+  background-position: -4px -1142px;
+}
+.sprites.audino.mega {
+  background-position: -44px -1142px;
 }
 .sprites.timburr {
-  background-position: -480px -1062px;
+  background-position: -84px -1142px;
 }
 .sprites.gurdurr {
-  background-position: 0 -1091px;
+  background-position: -124px -1142px;
 }
 .sprites.conkeldurr {
-  background-position: -32px -1092px;
+  background-position: -164px -1142px;
 }
 .sprites.tympole {
-  background-position: -64px -1092px;
+  background-position: -204px -1142px;
 }
 .sprites.palpitoad {
-  background-position: -96px -1091px;
+  background-position: -244px -1142px;
 }
 .sprites.seismitoad {
-  background-position: -130px -1091px;
+  background-position: -284px -1142px;
 }
 .sprites.throh {
-  background-position: -160px -1092px;
+  background-position: -324px -1142px;
 }
 .sprites.sawk {
-  background-position: -191px -1092px;
+  background-position: -364px -1142px;
 }
 .sprites.sewaddle {
-  background-position: -225px -1093px;
+  background-position: -404px -1142px;
 }
 .sprites.swadloon {
-  background-position: -257px -1092px;
+  background-position: -444px -1142px;
 }
 .sprites.leavanny {
-  background-position: -288px -1092px;
+  background-position: -484px -1142px;
 }
 .sprites.venipede {
-  background-position: -320px -1092px;
+  background-position: -524px -1142px;
 }
 .sprites.whirlipede {
-  background-position: -352px -1092px;
+  background-position: -564px -1142px;
 }
 .sprites.scolipede {
-  background-position: -383px -1092px;
+  background-position: -604px -1142px;
 }
 .sprites.cottonee {
-  background-position: -417px -1093px;
+  background-position: -4px -1172px;
 }
 .sprites.whimsicott {
-  background-position: -447px -1091px;
+  background-position: -44px -1172px;
 }
 .sprites.petilil {
-  background-position: -480px -1092px;
+  height: 31px;
+
+  background-position: -84px -1172px;
 }
 .sprites.lilligant {
-  background-position: 0 -1124px;
+  background-position: -124px -1172px;
 }
 .sprites.basculin {
-  background-position: -32px -1124px;
+  background-position: -164px -1172px;
 }
 .sprites.sandile {
-  background-position: -64px -1124px;
+  background-position: -204px -1172px;
 }
 .sprites.krokorok {
-  background-position: -96px -1123px;
+  background-position: -244px -1172px;
 }
 .sprites.krookodile {
-  background-position: -130px -1122px;
+  background-position: -284px -1172px;
 }
 .sprites.darumaka {
-  background-position: -162px -1124px;
+  background-position: -324px -1172px;
 }
 .sprites.darmanitan {
-  background-position: -191px -1123px;
+  background-position: -364px -1172px;
+}
+.sprites.darmanitan.zen {
+  background-position: -404px -1172px;
 }
 .sprites.maractus {
-  background-position: -258px -1124px;
+  background-position: -444px -1172px;
 }
 .sprites.dwebble {
-  background-position: -288px -1125px;
+  background-position: -484px -1172px;
 }
 .sprites.crustle {
-  background-position: -321px -1124px;
+  background-position: -524px -1172px;
 }
 .sprites.scraggy {
-  background-position: -352px -1125px;
+  background-position: -564px -1172px;
 }
 .sprites.scrafty {
-  background-position: -383px -1125px;
+  background-position: -604px -1172px;
 }
 .sprites.sigilyph {
-  background-position: -415px -1124px;
+  background-position: -4px -1202px;
 }
 .sprites.yamask {
-  background-position: -447px -1124px;
+  background-position: -44px -1202px;
 }
 .sprites.cofagrigus {
-  background-position: -479px -1124px;
+  background-position: -84px -1202px;
 }
 .sprites.tirtouga {
-  background-position: 0 -1158px;
+  background-position: -124px -1202px;
 }
 .sprites.carracosta {
-  background-position: -32px -1156px;
+  background-position: -164px -1202px;
 }
 .sprites.archen {
-  background-position: -65px -1156px;
+  background-position: -204px -1202px;
 }
 .sprites.archeops {
-  background-position: -98px -1156px;
+  background-position: -244px -1202px;
 }
 .sprites.trubbish {
-  background-position: -128px -1157px;
+  background-position: -284px -1202px;
 }
 .sprites.garbodor {
-  background-position: -160px -1156px;
+  background-position: -324px -1202px;
 }
 .sprites.zorua {
-  background-position: -192px -1155px;
+  background-position: -364px -1202px;
 }
 .sprites.zoroark {
-  background-position: -223px -1155px;
+  background-position: -404px -1202px;
 }
 .sprites.minccino {
-  background-position: -257px -1155px;
+  background-position: -444px -1202px;
 }
 .sprites.cinccino {
-  background-position: -288px -1156px;
+  background-position: -484px -1202px;
 }
 .sprites.gothita {
-  background-position: -320px -1155px;
+  background-position: -524px -1202px;
 }
 .sprites.gothorita {
-  background-position: -352px -1155px;
+  background-position: -564px -1202px;
 }
 .sprites.gothitelle {
-  background-position: -383px -1155px;
+  background-position: -604px -1202px;
 }
 .sprites.solosis {
-  background-position: -416px -1156px;
+  background-position: -4px -1232px;
 }
 .sprites.duosion {
-  background-position: -448px -1155px;
+  background-position: -44px -1232px;
 }
 .sprites.reuniclus {
-  background-position: -479px -1155px;
+  background-position: -84px -1232px;
 }
 .sprites.ducklett {
-  background-position: 0 -1188px;
+  background-position: -124px -1232px;
 }
 .sprites.swanna {
-  background-position: -34px -1189px;
+  background-position: -164px -1232px;
 }
 .sprites.vanillite {
-  background-position: -64px -1187px;
+  background-position: -204px -1232px;
 }
 .sprites.vanillish {
-  background-position: -95px -1188px;
+  background-position: -244px -1232px;
 }
 .sprites.vanilluxe {
-  background-position: -129px -1187px;
+  background-position: -284px -1232px;
 }
 .sprites.deerling {
-  background-position: -159px -1188px;
+  background-position: -324px -1232px;
 }
 .sprites.sawsbuck {
-  background-position: -191px -1188px;
+  background-position: -364px -1232px;
 }
 .sprites.emolga {
-  background-position: -224px -1188px;
+  background-position: -404px -1232px;
 }
 .sprites.karrablast {
-  background-position: -257px -1188px;
+  background-position: -444px -1232px;
 }
 .sprites.escavalier {
-  background-position: -288px -1187px;
+  background-position: -484px -1232px;
 }
 .sprites.foongus {
-  background-position: -322px -1188px;
+  background-position: -524px -1232px;
 }
 .sprites.amoonguss {
-  background-position: -351px -1189px;
+  background-position: -564px -1232px;
 }
 .sprites.frillish {
-  background-position: -383px -1188px;
+  background-position: -604px -1232px;
 }
 .sprites.jellicent {
-  background-position: -417px -1189px;
+  background-position: -4px -1262px;
 }
 .sprites.alomomola {
-  background-position: -448px -1189px;
+  background-position: -44px -1262px;
 }
 .sprites.joltik {
-  background-position: -480px -1188px;
+  background-position: -84px -1262px;
 }
 .sprites.galvantula {
-  background-position: 0 -1222px;
+  background-position: -124px -1262px;
 }
 .sprites.ferroseed {
-  background-position: -32px -1220px;
+  background-position: -164px -1262px;
 }
 .sprites.ferrothorn {
-  background-position: -66px -1218px;
+  background-position: -204px -1262px;
 }
 .sprites.klink {
-  background-position: -96px -1220px;
+  background-position: -244px -1262px;
 }
 .sprites.klang {
-  background-position: -129px -1220px;
+  background-position: -284px -1262px;
 }
 .sprites.klinklang {
-  background-position: -159px -1220px;
+  background-position: -324px -1262px;
 }
 .sprites.tynamo {
-  background-position: -193px -1219px;
+  background-position: -364px -1266px;
 }
 .sprites.eelektrik {
-  background-position: -225px -1220px;
+  background-position: -404px -1262px;
 }
 .sprites.eelektross {
-  background-position: -257px -1220px;
+  background-position: -444px -1262px;
 }
 .sprites.elgyem {
-  background-position: -287px -1220px;
+  background-position: -484px -1262px;
 }
 .sprites.beheeyem {
-  background-position: -318px -1219px;
+  background-position: -524px -1262px;
 }
 .sprites.litwick {
-  background-position: -352px -1219px;
+  height: 31px;
+
+  background-position: -564px -1262px;
 }
 .sprites.lampent {
-  background-position: -383px -1219px;
+  background-position: -604px -1262px;
 }
 .sprites.chandelure {
-  background-position: -415px -1220px;
+  background-position: -4px -1292px;
 }
 .sprites.axew {
-  background-position: -448px -1221px;
+  background-position: -44px -1292px;
 }
 .sprites.fraxure {
-  background-position: -480px -1221px;
+  background-position: -84px -1292px;
 }
 .sprites.haxorus {
-  background-position: 0 -1251px;
+  background-position: -124px -1292px;
 }
 .sprites.cubchoo {
-  background-position: -32px -1251px;
+  background-position: -164px -1292px;
 }
 .sprites.beartic {
-  background-position: -66px -1252px;
+  background-position: -204px -1292px;
 }
 .sprites.cryogonal {
-  background-position: -96px -1252px;
+  background-position: -244px -1292px;
 }
 .sprites.shelmet {
-  background-position: -128px -1251px;
+  background-position: -284px -1292px;
 }
 .sprites.accelgor {
-  background-position: -158px -1253px;
+  background-position: -324px -1292px;
 }
 .sprites.stunfisk {
-  background-position: -192px -1253px;
+  background-position: -364px -1292px;
 }
 .sprites.mienfoo {
-  background-position: -225px -1251px;
+  background-position: -404px -1292px;
 }
 .sprites.mienshao {
-  background-position: -253px -1250px;
+  background-position: -444px -1292px;
 }
 .sprites.druddigon {
-  background-position: -288px -1251px;
+  background-position: -484px -1292px;
 }
 .sprites.golett {
-  background-position: -320px -1252px;
+  height: 31px;
+
+  background-position: -524px -1292px;
 }
 .sprites.golurk {
-  background-position: -352px -1250px;
+  background-position: -564px -1292px;
 }
 .sprites.pawniard {
-  background-position: -386px -1251px;
+  height: 30px;
+
+  background-position: -604px -1292px;
 }
 .sprites.bisharp {
-  background-position: -414px -1251px;
+  height: 30px;
+
+  background-position: -4px -1322px;
 }
 .sprites.bouffalant {
-  background-position: -449px -1250px;
+  height: 29px;
+
+  background-position: -44px -1322px;
 }
 .sprites.rufflet {
-  background-position: -480px -1252px;
+  height: 29px;
+
+  background-position: -84px -1322px;
 }
 .sprites.braviary {
-  background-position: 0 -1285px;
+  height: 30px;
+
+  background-position: -124px -1322px;
 }
 .sprites.vullaby {
-  background-position: -33px -1283px;
+  height: 29px;
+
+  background-position: -164px -1322px;
 }
 .sprites.mandibuzz {
-  background-position: -64px -1283px;
+  height: 29px;
+
+  background-position: -204px -1322px;
 }
 .sprites.heatmor {
-  background-position: -96px -1283px;
+  height: 30px;
+
+  background-position: -244px -1322px;
 }
 .sprites.durant {
-  background-position: -129px -1284px;
+  height: 28px;
+
+  background-position: -284px -1322px;
 }
 .sprites.deino {
-  background-position: -159px -1284px;
+  height: 28px;
+
+  background-position: -324px -1322px;
 }
 .sprites.zweilous {
-  background-position: -191px -1282px;
+  height: 28px;
+
+  background-position: -364px -1322px;
 }
 .sprites.hydreigon {
-  background-position: -225px -1284px;
+  height: 28px;
+
+  background-position: -404px -1322px;
 }
 .sprites.larvesta {
-  background-position: -256px -1284px;
+  background-position: -444px -1322px;
 }
 .sprites.volcarona {
-  background-position: -288px -1285px;
+  background-position: -484px -1322px;
 }
 .sprites.cobalion {
-  background-position: -322px -1283px;
+  background-position: -524px -1322px;
 }
 .sprites.terrakion {
-  background-position: -354px -1282px;
+  background-position: -564px -1322px;
 }
 .sprites.virizion {
-  background-position: -382px -1286px;
+  background-position: -604px -1322px;
 }
 .sprites.tornadus {
-  background-position: -414px -1284px;
+  background-position: -4px -1352px;
+}
+.sprites.tornadus.incarnate {
+  background-position: -4px -1352px;
+}
+.sprites.tornadus.therian {
+  background-position: -44px -1352px;
 }
 .sprites.thundurus {
-  background-position: -480px -1283px;
+  background-position: -84px -1352px;
+}
+.sprites.thundurus.incarnate {
+  background-position: -84px -1352px;
+}
+.sprites.thundurus.therian {
+  background-position: -124px -1352px;
 }
 .sprites.reshiram {
-  background-position: -31px -1317px;
+  background-position: -164px -1352px;
 }
 .sprites.zekrom {
-  background-position: -63px -1314px;
+  background-position: -204px -1352px;
 }
 .sprites.landorus {
-  background-position: -96px -1314px;
+  background-position: -244px -1352px;
+}
+.sprites.landorus.incarnate {
+  background-position: -244px -1352px;
+}
+.sprites.landorus.therian {
+  background-position: -284px -1352px;
 }
 .sprites.kyurem {
-  background-position: -160px -1315px;
+  background-position: -364px -1352px;
+}
+.sprites.kyurem.black {
+  background-position: -324px -1352px;
+}
+.sprites.kyurem.white {
+  height: 31px;
+
+  background-position: -404px -1352px;
 }
 .sprites.keldeo {
-  background-position: -254px -1315px;
+  height: 31px;
+
+  background-position: -444px -1352px;
+}
+.sprites.keldeo.ordinary {
+  height: 31px;
+
+  background-position: -444px -1352px;
+}
+.sprites.keldeo.resolute {
+  background-position: -484px -1352px;
 }
 .sprites.meloetta {
-  background-position: -320px -1315px;
+  background-position: -524px -1352px;
+}
+.sprites.meloetta.aria {
+  background-position: -524px -1352px;
+}
+.sprites.meloetta.pirouette {
+  background-position: -564px -1352px;
 }
 .sprites.genesect {
-  background-position: -384px -1314px;
+  background-position: -604px -1352px;
 }
 /* kalos sprites 650 - 721 */
 .sprites.chespin {
