@@ -1200,7 +1200,7 @@
                     "name": "crabrawler",
                     "sos": "crabrawler",
                     "version": "both",
-                    "method": "grass",
+                    "method": "berry field",
                     "min_level": 18,
                     "max_level": 21,
                     "rate": 100
@@ -1317,6 +1317,265 @@
                     "min_level": 18,
                     "max_level": 21,
                     "rate": 100
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "route 6",
+      "exits": {
+        "north": "route 5",
+        "south": "heahea city",
+        "east": "royal avenue",
+        "west": "paniola town"
+      },
+      "encounters": {
+        "areas": [
+          {
+            "name": "all",
+            "encounters": [
+              {
+                "type": "island scan",
+                "available_pokemon": [
+                  {
+                    "name": "gothita",
+                    "version": "both",
+                    "method": "sunday",
+                    "min_level": 17,
+                    "max_level": 17,
+                    "rate": "one"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "north",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "rattata",
+                    "sos": "rattata",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "night": 10
+                    }
+                  },
+                  {
+                    "name": "eevee",
+                    "sos": [
+                      "eevee",
+                      "espeon"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "day": 5
+                    }
+                  },
+                  {
+                    "name": "eevee",
+                    "sos": [
+                      "eevee",
+                      "umbreon"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "night": 5
+                    }
+                  },
+                  {
+                    "name": "igglybuff",
+                    "sos": [
+                      "igglybuff",
+                      "jigglypuff",
+                      "happiny"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "day": 10
+                    }
+                  },
+                  {
+                    "name": "lillipup",
+                    "sos": "lillipup",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 30
+                  },
+                  {
+                    "name": "pikipek",
+                    "sos": "pikipek",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "day": 15,
+                      "night": 25
+                    }
+                  },
+                  {
+                    "name": "yungoos",
+                    "sos": "yungoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "day": 10
+                    }
+                  },
+                  {
+                    "name": "grubbin",
+                    "sos": "grubbin",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 10
+                  },
+                  {
+                    "name": "mudbray",
+                    "sos": "mudbray",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 20
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "south",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "rattata",
+                    "sos": "rattata",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "night": 10
+                    }
+                  },
+                  {
+                    "name": "eevee",
+                    "sos": [
+                      "eevee",
+                      "espeon"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "day": 5
+                    }
+                  },
+                  {
+                    "name": "eevee",
+                    "sos": [
+                      "eevee",
+                      "umbreon"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "night": 5
+                    }
+                  },
+                  {
+                    "name": "igglybuff",
+                    "sos": [
+                      "igglybuff",
+                      "jigglypuff",
+                      "happiny"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "day": 10
+                    }
+                  },
+                  {
+                    "name": "lillipup",
+                    "sos": "lillipup",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 30
+                  },
+                  {
+                    "name": "pikipek",
+                    "sos": "pikipek",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "day": 15,
+                      "night": 25
+                    }
+                  },
+                  {
+                    "name": "yungoos",
+                    "sos": "yungoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "day": 10
+                    }
+                  },
+                  {
+                    "name": "grubbin",
+                    "sos": "grubbin",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 10
+                  },
+                  {
+                    "name": "oricorio-pau",
+                    "sos": "oricorio-pau",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 20
                   }
                 ]
               }
