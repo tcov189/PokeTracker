@@ -723,6 +723,221 @@
           }
         ]
       }
+    },
+    {
+      "name": "route 3",
+      "exits": {
+        "west": "route 2",
+        "south": "route 1",
+        "access to": "melemele meadow"
+      },
+      "encounters": {
+        "areas": [
+          {
+            "name": "all",
+            "encounters": [
+              {
+                "type": "ambush",
+                "available_pokemon": [
+                  {
+                    "name": "spearow",
+                    "sos": "spearow",
+                    "version": "both",
+                    "method": "shadow",
+                    "min_level": 11,
+                    "max_level": 12,
+                    "rate": 70
+                  },
+                  {
+                    "name": "rufflet",
+                    "sos": "rufflet",
+                    "version": "sun",
+                    "method": "shadow",
+                    "min_level": 11,
+                    "max_level": 12,
+                    "rate": 30
+                  },
+                  {
+                    "name": "vullaby",
+                    "sos": "vullaby",
+                    "version": "moon",
+                    "method": "shadow",
+                    "min_level": 11,
+                    "max_level": 12,
+                    "rate": 30
+                  }
+                ]
+              },
+              {
+                "type": "interaction",
+                "available_pokemon": [
+                  {
+                    "name": "crabrawler",
+                    "sos": "crabrawler",
+                    "version": "both",
+                    "method": "berry pile",
+                    "min_level": 9,
+                    "max_level": 12,
+                    "rate": 100
+                  }
+                ]
+              },
+              {
+                "type": "island scan",
+                "available_pokemon": [
+                  {
+                    "name": "cyndaquil",
+                    "version": "both",
+                    "method": "sunday",
+                    "min_level": 10,
+                    "max_level": 10,
+                    "rate": "one"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "north of bridge",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "rattata",
+                    "sos": "rattata",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 9,
+                    "max_level": 12,
+                    "rate": {
+                      "night": 10
+                    }
+                  },
+                  {
+                    "name": "spearow",
+                    "sos": "spearow",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 9,
+                    "max_level": 12,
+                    "rate": 40
+                  },
+                  {
+                    "name": "mankey",
+                    "sos": "mankey",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 9,
+                    "max_level": 12,
+                    "rate": 20
+                  },
+                  {
+                    "name": "delibird",
+                    "sos": "delibird",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 9,
+                    "max_level": 12,
+                    "rate": 10
+                  },
+                  {
+                    "name": "cutiefly",
+                    "sos": "cutiefly",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 9,
+                    "max_level": 12,
+                    "rate": 20
+                  },
+                  {
+                    "name": "yungoos",
+                    "sos": "yungoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 9,
+                    "max_level": 12,
+                    "rate": {
+                      "day": 10
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "south of bridge",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "rattata",
+                    "sos": "rattata",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 9,
+                    "max_level": 12,
+                    "rate": {
+                      "night": 10
+                    }
+                  },
+                  {
+                    "name": "spearow",
+                    "sos": "spearow",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 9,
+                    "max_level": 12,
+                    "rate": 49
+                  },
+                  {
+                    "name": "mankey",
+                    "sos": "mankey",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 9,
+                    "max_level": 12,
+                    "rate": 20
+                  },
+                  {
+                    "name": "bagon",
+                    "sos": [
+                      "bagon",
+                      "salamence"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 9,
+                    "max_level": 12,
+                    "rate": 1
+                  },
+                  {
+                    "name": "cutiefly",
+                    "sos": "cutiefly",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 9,
+                    "max_level": 12,
+                    "rate": 20
+                  },
+                  {
+                    "name": "yungoos",
+                    "sos": "yungoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 9,
+                    "max_level": 12,
+                    "rate": {
+                      "day": 10
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   ]
 }
