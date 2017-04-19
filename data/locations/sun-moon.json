@@ -490,6 +490,239 @@
           }
         ]
       }
+    },
+    {
+      "name": "route 2",
+      "exits": {
+        "north": "route 3",
+        "east": "hau'oli cemetery",
+        "south": "hau'oli city",
+        "access to": [
+          "berry fields",
+          "verdant cavern"
+        ]
+      },
+      "encounters": {
+        "areas": [
+          {
+            "name": "all",
+            "encounters": [
+              {
+                "type": "ambush",
+                "available_pokemon": [
+                  {
+                    "name": "rattata",
+                    "sos": "rattata",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 9,
+                    "max_level": 10,
+                    "rate": {
+                      "night": 70
+                    }
+                  },
+                  {
+                    "name": "makuhita",
+                    "sos": "makuhita",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 9,
+                    "max_level": 10,
+                    "rate": 30
+                  },
+                  {
+                    "name": "yungoos",
+                    "sos": "yungoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 9,
+                    "max_level": 10,
+                    "rate": {
+                      "day": 70
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "interaction",
+                "available_pokemon": [
+                  {
+                    "name": "crabrawler",
+                    "sos": "crabrawler",
+                    "version": "both",
+                    "method": "berry pile",
+                    "min_level": 7,
+                    "max_level": 10,
+                    "rate": 100
+                  }
+                ]
+              },
+              {
+                "type": "trade",
+                "available_pokemon": [
+                  {
+                    "name": "machop",
+                    "version": "both",
+                    "method": "spearow",
+                    "min_level": "same as traded",
+                    "max_level": "same as traded",
+                    "rate": null
+                  }
+                ]
+              },
+              {
+                "type": "island scan",
+                "available_pokemon": [
+                  {
+                    "name": "chikorita",
+                    "version": "both",
+                    "method": "friday",
+                    "min_level": 10,
+                    "max_level": 10,
+                    "rate": "one"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "southern area",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "rattata",
+                    "sos": "rattata",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 7,
+                    "max_level": 10,
+                    "rate": {
+                      "night": 10
+                    }
+                  },
+                  {
+                    "name": "meowth",
+                    "sos": "meowth",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 7,
+                    "max_level": 10,
+                    "rate": 30
+                  },
+                  {
+                    "name": "abra",
+                    "sos": "abra",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 7,
+                    "max_level": 10,
+                    "rate": 20
+                  },
+                  {
+                    "name": "drowzee",
+                    "sos": "drowzee",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 7,
+                    "max_level": 10,
+                    "rate": 20
+                  },
+                  {
+                    "name": "smeargle",
+                    "sos": "smeargle",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 7,
+                    "max_level": 10,
+                    "rate": 20
+                  },
+                  {
+                    "name": "yungoos",
+                    "sos": "yungoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 7,
+                    "max_level": 10,
+                    "rate": {
+                      "day": 10
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "northern area",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "rattata",
+                    "sos": "rattata",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 7,
+                    "max_level": 10,
+                    "rate": {
+                      "night": 10
+                    }
+                  },
+                  {
+                    "name": "spearow",
+                    "sos": "spearow",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 7,
+                    "max_level": 10,
+                    "rate": 40
+                  },
+                  {
+                    "name": "growlithe",
+                    "sos": "growlithe",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 7,
+                    "max_level": 10,
+                    "rate": 20
+                  },
+                  {
+                    "name": "smeargle",
+                    "sos": "smeargle",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 7,
+                    "max_level": 10,
+                    "rate": 10
+                  },
+                  {
+                    "name": "cutiefly",
+                    "sos": "cutiefly",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 7,
+                    "max_level": 10,
+                    "rate": 20
+                  },
+                  {
+                    "name": "yungoos",
+                    "sos": "yungoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 7,
+                    "max_level": 10,
+                    "rate": {
+                      "day": 10
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   ]
 }

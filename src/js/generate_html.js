@@ -177,7 +177,7 @@ function generateEncounterArr(pokemon, encounter) {
     var hasForm = pokemon.form ? true : false;
     var hasFormClass = hasForm ? pokemon.form : '';
     
-    if (gameVersionGroup == "sun-moon") {
+    if (gameVersionGroup == "sun-moon" && pokemon.sos) {
         var sosEncounters = pokemon.sos;
 
         function generateSosDiv(sos) {
@@ -226,7 +226,7 @@ function generateEncounterArr(pokemon, encounter) {
                                 '<div class="pokemon-rate-block">' +
                                     theRateHtml +
                                 '</div>';
-                                    if (gameVersionGroup == 'sun-moon'){
+                                    if (gameVersionGroup == 'sun-moon' && pokemon.sos){
                                         theHtml += generateSosDiv(sosEncounters)
                                     } 
                                 theHtml += '<div class="pokemon-levels-block">' +
