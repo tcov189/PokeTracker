@@ -168,7 +168,7 @@ function generateEncounterArr(pokemon, encounter) {
     }
 
     //Encounter type order    
-    encTypeOrder = ["starter", "walking", "surfing", "fishing", "interaction", "radio", "gift"];    
+    encTypeOrder = ["starter", "walking", "surfing", "fishing", "interaction", "radio", "gift", "island scan"];    
 
     //Get version exclusive info
     var isUnavailable       = pokemon.version != version && pokemon.version != 'both' && pokemon.version != undefined ? true : false; 
