@@ -1197,12 +1197,12 @@
                 "type": "interaction",
                 "available_pokemon": [
                   {
-                    "name": "fomantis",
-                    "sos": "fomantis",
+                    "name": "crabrawler",
+                    "sos": "crabrawler",
                     "version": "both",
                     "method": "grass",
-                    "min_level": 13,
-                    "max_level": 16,
+                    "min_level": 18,
+                    "max_level": 21,
                     "rate": 100
                   }
                 ]
