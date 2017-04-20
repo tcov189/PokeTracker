@@ -2344,6 +2344,91 @@
           ]
         }
       ]
+    },
+    {
+      "name": "route 14",
+      "exits": {
+        "access to": "thrifty megamart",
+        "north": "tapu village"
+      },
+      "encounters": [
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "tentacool",
+              "sos": "tentacool",
+              "version": "both",
+              "method": "water",
+              "min_level": 28,
+              "max_level": 31,
+              "rate": 40
+            },
+            {
+              "name": "pelipper",
+              "sos": "pelipper",
+              "version": "both",
+              "method": "water",
+              "min_level": 28,
+              "max_level": 31,
+              "rate": 20
+            },
+            {
+              "name": "finneon",
+              "sos": "finneon",
+              "version": "both",
+              "method": "water",
+              "min_level": 28,
+              "max_level": 31,
+              "rate": 20
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "sos": [
+                "magikarp",
+                "gyarados"
+              ],
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 30,
+              "rate": {
+                "normal": 79,
+                "bubbling spot": 50
+              }
+            },
+            {
+              "name": "wishiwashi",
+              "sos": "wishiwashi",
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 30,
+              "rate": {
+                "normal": 20,
+                "bubbling spot": 30
+              }
+            },
+            {
+              "name": "bruxish",
+              "sos": "bruxish",
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 30,
+              "rate": {
+                "normal": 1,
+                "bubbling spot": 20
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
