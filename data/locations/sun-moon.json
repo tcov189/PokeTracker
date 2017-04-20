@@ -1583,6 +1583,316 @@
           }
         ]
       }
+    },
+    {
+      "name": "route 7",
+      "exits": {
+        "north": "route 8",
+        "south": "royal avenue",
+        "west": "wela volcano park"
+      },
+      "encounters": [
+        {
+          "type": "ambush",
+          "available_pokemon": [
+            {
+              "name": "diglett",
+              "sos": "diglett",
+              "version": "both",
+              "method": "dirt cloud",
+              "min_level": 16,
+              "max_level": 19,
+              "rate": 100
+            }
+          ]
+        },
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "tentacool",
+              "sos": "tentacool",
+              "version": "both",
+              "method": "water",
+              "min_level": 16,
+              "max_level": 19,
+              "rate": 30
+            },
+            {
+              "name": "wingull",
+              "sos": "wingull",
+              "version": "both",
+              "method": "water",
+              "min_level": 16,
+              "max_level": 19,
+              "rate": 20
+            },
+            {
+              "name": "finneon",
+              "sos": "finneon",
+              "version": "both",
+              "method": "water",
+              "min_level": 16,
+              "max_level": 19,
+              "rate": 30
+            },
+            {
+              "name": "pyukumuku",
+              "sos": "pyukumuku",
+              "version": "both",
+              "method": "water",
+              "min_level": 16,
+              "max_level": 19,
+              "rate": 20
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "sos": [
+                "magikarp",
+                "gyarados"
+              ],
+              "version": "both",
+              "method": "water",
+              "min_level": 16,
+              "max_level": 19,
+              "rate": {
+                "normal": 79,
+                "bubbling spot": 60
+              }
+            },
+            {
+              "name": "staryu",
+              "sos": [
+                "staryu",
+                "starmie"
+              ],
+              "version": "both",
+              "method": "water",
+              "min_level": 16,
+              "max_level": 19,
+              "rate": {
+                "normal": 1,
+                "bubbling spot": 20
+              }
+            },
+            {
+              "name": "wishiwashi",
+              "sos": "wishiwashi",
+              "version": "both",
+              "method": "water",
+              "min_level": 16,
+              "max_level": 19,
+              "rate": 20
+            }
+          ]
+        },
+        {
+          "type": "island scan",
+          "available_pokemon": [
+            {
+              "name": "spheal",
+              "version": "both",
+              "method": "monday",
+              "min_level": 19,
+              "max_level": 19,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "route 8",
+      "exits": {
+        "south": [
+          "route 5",
+          "route 7"
+        ]
+      },
+      "encounters": [
+        {
+          "type": "ambush",
+          "available_pokemon": [
+            {
+              "name": "wimpod",
+              "sos": null,
+              "version": "both",
+              "method": "chase",
+              "min_level": 17,
+              "max_level": 20,
+              "rate": 100
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "crabrawler",
+              "sos": "crabrawler",
+              "version": "both",
+              "method": "berry pile",
+              "min_level": 17,
+              "max_level": 20,
+              "rate": 100
+            }
+          ]
+        },
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "rattata",
+              "sos": "rattata",
+              "version": "both",
+              "method": "grass",
+              "min_level": 17,
+              "max_level": 20,
+              "rate": {
+                "night": 30
+              }
+            },
+            {
+              "name": "yungoos",
+              "sos": "yungoos",
+              "version": "both",
+              "method": "grass",
+              "min_level": 17,
+              "max_level": 20,
+              "rate": {
+                "day": 30
+              }
+            },
+            {
+              "name": "fletchinder",
+              "sos": "fletchinder",
+              "version": "both",
+              "method": "grass",
+              "min_level": 17,
+              "max_level": 20,
+              "rate": 15
+            },
+            {
+              "name": "trumbeak",
+              "sos": "pikipek",
+              "version": "both",
+              "method": "grass",
+              "min_level": 17,
+              "max_level": 20,
+              "rate": 30
+            },
+            {
+              "name": "salandit",
+              "sos": "salandit",
+              "version": "both",
+              "method": "grass",
+              "min_level": 17,
+              "max_level": 20,
+              "rate": 20
+            },
+            {
+              "name": "stufful",
+              "sos": "stufful",
+              "version": "both",
+              "method": "grass",
+              "min_level": 17,
+              "max_level": 20,
+              "rate": 5
+            }
+          ]
+        },
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "tentacool",
+              "sos": "tentacool",
+              "version": "both",
+              "method": "water",
+              "min_level": 17,
+              "max_level": 20,
+              "rate": 40
+            },
+            {
+              "name": "wingull",
+              "sos": "wingull",
+              "version": "both",
+              "method": "water",
+              "min_level": 17,
+              "max_level": 20,
+              "rate": 20
+            },
+            {
+              "name": "finneon",
+              "sos": "finneon",
+              "version": "both",
+              "method": "water",
+              "min_level": 17,
+              "max_level": 20,
+              "rate": 40
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "sos": [
+                "magikarp",
+                "gyarados"
+              ],
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 20,
+              "rate": {
+                "normal": 79,
+                "bubbling spot": 60
+              }
+            },
+            {
+              "name": "chinchou",
+              "sos": "chinchou",
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 20,
+              "rate": {
+                "normal": 1,
+                "bubbling spot": 20
+              }
+            },
+            {
+              "name": "wishiwashi",
+              "sos": "wishiwashi",
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 20,
+              "rate": 20
+            }
+          ]
+        },
+        {
+          "type": "island scan",
+          "available_pokemon": [
+            {
+              "name": "luxio",
+              "version": "both",
+              "method": "tuesday",
+              "min_level": 20,
+              "max_level": 20,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

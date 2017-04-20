@@ -53,7 +53,7 @@ function generateHtml() {
         }
 
         var match   = nationalDexData.find(findPokemon);
-        if (!match.forms){ //see if mon has form
+        if (!match.forms || !formPriority){ //see if mon has form
             var type    = match.type;   
         } else {
             var type = match.forms[0].type;
@@ -174,8 +174,11 @@ function generateEncounterArr(pokemon, encounter) {
     var isUnavailable       = pokemon.version != version && pokemon.version != 'both' && pokemon.version != undefined ? true : false; 
     var isUnavailableClass  = isUnavailable ? 'unavailable' : '';
 
-    var hasForm = pokemon.form ? true : false;
-    var hasFormClass = hasForm ? pokemon.form : '';
+    if (pokemon.form && pokemon.form == formPriority) {
+        var formClass = pokemon.form;    
+    } else {
+        var formClass = '';    
+    }        
     
     if (gameVersionGroup == "sun-moon" && pokemon.sos) {
         var sosEncounters = pokemon.sos;
@@ -184,10 +187,10 @@ function generateEncounterArr(pokemon, encounter) {
             theSosHtml = '<div class="pokemon-sos-block"><div class="text-center">S.O.S:</div>';
 
             if (sos.constructor != Array) {
-                theSosHtml += '<i class="sprites '+ sos +' '+ hasFormClass +'"></i>'
+                theSosHtml += '<i class="sprites '+ sos +' '+ formClass +'"></i>'
             } else {
                 $.each(sos, function (i, val) {
-                    theSosHtml += '<i class="sprites '+ val +' '+ hasFormClass +'"></i>'
+                    theSosHtml += '<i class="sprites '+ val +' '+ formClass +'"></i>'
                 })
             }
 
@@ -212,7 +215,7 @@ function generateEncounterArr(pokemon, encounter) {
                         }
                         theHtml +=   '<div class="pokemon-info-bio">' +
                                 '<div class="pokemon-info-bio-name-sprite">' +
-                                    '<i class="sprites '+ pokemon.name +' '+ hasFormClass +'"></i>' +
+                                    '<i class="sprites '+ pokemon.name +' '+ formClass +'"></i>' +
                                     '<span class="pokemon-bio-name">'+ pokemon.name +'</span>' +
                                 '</div>'+
                                 '<div class="pokemon-bio-types">';

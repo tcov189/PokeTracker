@@ -91,6 +91,14 @@
               "rate": 25
             },
             {
+              "name": "audino",
+              "version": "both",
+              "method": "rustling grass",
+              "min_level": 2,
+              "max_level": 4,
+              "rate": 100
+            },
+            {
               "name": "farfetchd",
               "version": "both",
               "method": "swarm",
