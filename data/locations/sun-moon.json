@@ -1893,6 +1893,348 @@
           ]
         }
       ]
+    },
+    {
+      "name": "route 9",
+      "exits": {
+        "north": "konikoni city",
+        "east": "memorial hill",
+        "access to": "diglett's tunnel"
+      },
+      "encounters": [
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "sos": [
+                "magikarp",
+                "gyarados"
+              ],
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 23,
+              "rate": 15
+            },
+            {
+              "name": "corsola",
+              "sos": [
+                "corsola",
+                "mareanie"
+              ],
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 23,
+              "rate": 5
+            },
+            {
+              "name": "luvdisc",
+              "sos": "luvdisc",
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 23,
+              "rate": 70
+            },
+            {
+              "name": "wishiwashi",
+              "sos": "wishiwashi",
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 23,
+              "rate": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "route 10",
+      "exits": {
+        "east": "malie city",
+        "access to": "mount hokulani"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "raticate",
+              "sos": "raticate",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "night": 30
+              }
+            },
+            {
+              "name": "fearow",
+              "sos": "fearow",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 30
+            },
+            {
+              "name": "ledian",
+              "sos": "ledian",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "day": 20
+              }
+            },
+            {
+              "name": "ariados",
+              "sos": "ariados",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "night": 20
+              }
+            },
+            {
+              "name": "skarmory",
+              "sos": "skarmory",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 10
+            },
+            {
+              "name": "pancham",
+              "sos": [
+                "pancham",
+                "pangoro"
+              ],
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 10
+            },
+            {
+              "name": "gumshoos",
+              "sos": "gumshoos",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "day": 30
+              }
+            }
+          ]
+        },
+        {
+          "type": "ambush",
+          "available_pokemon": [
+            {
+              "name": "fearow",
+              "sos": "fearow",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 80
+            },
+            {
+              "name": "skarmory",
+              "sos": "skarmory",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 20
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "crabrawler",
+              "sos": "crabrawler",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 100
+            }
+          ]
+        },
+        {
+          "type": "island scan",
+          "available_pokemon": [
+            {
+              "name": "staravia",
+              "sos": null,
+              "version": "both",
+              "method": "thursday",
+              "min_level": 27,
+              "max_level": 27,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "route 11",
+      "exits": {
+        "north": "malie city",
+        "east": "route 12"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "raticate",
+              "sos": "raticate",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "night": 20
+              }
+            },
+            {
+              "name": "paras",
+              "sos": "paras",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "day": 10
+              }
+            },
+            {
+              "name": "ledian",
+              "sos": "ledian",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "day": 20
+              }
+            },
+            {
+              "name": "ariados",
+              "sos": "ariados",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "night": 20
+              }
+            },
+            {
+              "name": "ledian",
+              "sos": "ledian",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "day": 20
+              }
+            },
+            {
+              "name": "ariados",
+              "sos": "ariados",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "night": 20
+              }
+            },
+            {
+              "name": "pancham",
+              "sos": [
+                "pancham",
+                "pangoro"
+              ],
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 20
+            },
+            {
+              "name": "trumbeak",
+              "sos": "trumbeak",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 20
+            },
+            {
+              "name": "gumshoos",
+              "sos": "gumshoos",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "day": 20
+              }
+            },
+            {
+              "name": "morelull",
+              "sos": "morelull",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "night": 10
+              }
+            },
+            {
+              "name": "komala",
+              "sos": "komala",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "island scan",
+          "available_pokemon": [
+            {
+              "name": "vigoroth",
+              "sos": null,
+              "version": "both",
+              "method": "friday",
+              "min_level": 27,
+              "max_level": 27,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
