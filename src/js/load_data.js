@@ -24,6 +24,15 @@ switch (true) {
             localStorage.setItem('current_location', 'route 101');   
         }        
         break;
+    case version == 'black' || version == 'white' :
+        var regionalDex = 'black-white-pokedex.json';
+        var nationalDex = 'national-dex.json';
+        var gameVersionGroup = 'black-white';
+        var gameVersion = version == 'black' ? 'Black' : 'White';   
+        if (!localStorage.getItem('current_location')) {
+            localStorage.setItem('current_location', 'nuvema town');   
+        }        
+        break;
     case version == 'hg' || version == 'ss' :
         var regionalDex = 'hgss-pokedex.json';
         var nationalDex = 'national-dex.json';

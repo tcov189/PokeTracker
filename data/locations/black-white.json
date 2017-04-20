@@ -1,0 +1,154 @@
+{
+  "name": "unova",
+  "games": "black-white",
+  "locations": [
+    {
+      "name": "nuvema town",
+      "exits": {
+        "north": "route 1"
+      },
+      "encounters": [
+        {
+          "type": "starter",
+          "available_pokemon": [
+            {
+              "name": "snivy",
+              "version": "both",
+              "method": "professor juniper",
+              "min_level": 5,
+              "max_level": 5,
+              "rate": null
+            },
+            {
+              "name": "tepig",
+              "version": "both",
+              "method": "professor juniper",
+              "min_level": 5,
+              "max_level": 5,
+              "rate": null
+            },
+            {
+              "name": "oshawott",
+              "version": "both",
+              "method": "professor juniper",
+              "min_level": 5,
+              "max_level": 5,
+              "rate": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "route 1",
+      "exits": {
+        "north": "accumula town",
+        "south": "nuvema town",
+        "west": "route 17"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "patrat",
+              "version": "both",
+              "method": "grass",
+              "min_level": 2,
+              "max_level": 4,
+              "rate": 50
+            },
+            {
+              "name": "lillipup",
+              "version": "both",
+              "method": "grass",
+              "min_level": 2,
+              "max_level": 4,
+              "rate": 50
+            },
+            {
+              "name": "watchog",
+              "version": "both",
+              "method": "dark grass",
+              "min_level": 32,
+              "max_level": 35,
+              "rate": 36
+            },
+            {
+              "name": "herdier",
+              "version": "both",
+              "method": "dark grass",
+              "min_level": 32,
+              "max_level": 34,
+              "rate": 39
+            },
+            {
+              "name": "scraggy",
+              "version": "both",
+              "method": "dark grass",
+              "min_level": 32,
+              "max_level": 35,
+              "rate": 25
+            },
+            {
+              "name": "farfetchd",
+              "version": "both",
+              "method": "swarm",
+              "min_level": 15,
+              "max_level": 55,
+              "rate": 40
+            }
+          ]
+        },
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "basculin",
+              "version": "both",
+              "method": "water",
+              "min_level": 5,
+              "max_level": 15,
+              "rate": 100
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "feebas",
+              "version": "both",
+              "method": "water",
+              "min_level": 35,
+              "max_level": 60,
+              "rate": {
+                "water": 5,
+                "rippling water": 60
+              }
+            },
+            {
+              "name": "basculin",
+              "version": "both",
+              "method": "water",
+              "min_level": 35,
+              "max_level": 70,
+              "rate": {
+                "water": 95,
+                "rippling water": 35
+              }
+            },
+            {
+              "name": "milotic",
+              "version": "both",
+              "method": "rippling water",
+              "min_level": 45,
+              "max_level": 70,
+              "rate": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
