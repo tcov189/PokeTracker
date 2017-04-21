@@ -3285,6 +3285,449 @@
           ]
         }
       ]
+    },
+    {
+      "name": "brooklet hill",
+      "exits": {
+        "east": "route 5"
+      },
+      "encounters": {
+        "areas": [
+          {
+            "name": "all",
+            "encounters": [
+              {
+                "type": "island scan",
+                "available_pokemon": [
+                  {
+                    "name": "marill",
+                    "sos": null,
+                    "version": "both",
+                    "method": "saturday",
+                    "min_level": 17,
+                    "max_level": 17,
+                    "rate": 20
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "first field of grass",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "paras",
+                    "sos": "paras",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "day": 20
+                    }
+                  },
+                  {
+                    "name": "psyduck",
+                    "sos": "psyduck",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 30
+                  },
+                  {
+                    "name": "poliwag",
+                    "sos": "poliwag",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 10
+                  },
+                  {
+                    "name": "wingull",
+                    "sos": "wingull",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 10
+                  },
+                  {
+                    "name": "surskit",
+                    "sos": "surskit",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "night": 10
+                    }
+                  },
+                  {
+                    "name": "lillipup",
+                    "sos": "lillipup",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 20
+                  },
+                  {
+                    "name": "dewpider",
+                    "sos": "dewpider",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "day": 10
+                    }
+                  },
+                  {
+                    "name": "morelull",
+                    "sos": "morelull",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "night": 20
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "surfing",
+                "available_pokemon": [
+                  {
+                    "name": "psyduck",
+                    "sos": "psyduck",
+                    "version": "both",
+                    "method": "water",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 20
+                  },
+                  {
+                    "name": "poliwag",
+                    "sos": "poliwag",
+                    "version": "both",
+                    "method": "water",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 40
+                  },
+                  {
+                    "name": "surskit",
+                    "sos": "surskit",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "night": 40
+                    }
+                  },
+                  {
+                    "name": "dewpider",
+                    "sos": "dewpider",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "day": 40
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "fishing",
+                "available_pokemon": [
+                  {
+                    "name": "goldeen",
+                    "sos": [
+                      "goldeen",
+                      "seaking"
+                    ],
+                    "version": "both",
+                    "method": "rod",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "standard": 29,
+                      "bubbling spot": 45
+                    }
+                  },
+                  {
+                    "name": "magikarp",
+                    "sos": [
+                      "magikarp",
+                      "gyarados"
+                    ],
+                    "version": "both",
+                    "method": "rod",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "standard": 70,
+                      "bubbling spot": 50
+                    }
+                  },
+                  {
+                    "name": "feebas",
+                    "sos": "feebas",
+                    "version": "both",
+                    "method": "rod",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "standard": 1,
+                      "bubbling spot": 5
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "grass beyond 2nd lake",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "psyduck",
+                    "sos": "psyduck",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 30
+                  },
+                  {
+                    "name": "poliwag",
+                    "sos": "poliwag",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 20
+                  },
+                  {
+                    "name": "wingull",
+                    "sos": "wingull",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 30
+                  },
+                  {
+                    "name": "surskit",
+                    "sos": "surskit",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "night": 20
+                    }
+                  },
+                  {
+                    "name": "dewpider",
+                    "sos": "dewpider",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "day": 20
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "fishing",
+                "available_pokemon": [
+                  {
+                    "name": "goldeen",
+                    "sos": [
+                      "goldeen",
+                      "seaking"
+                    ],
+                    "version": "both",
+                    "method": "rod",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "standard": 29,
+                      "bubbling spot": 45
+                    }
+                  },
+                  {
+                    "name": "magikarp",
+                    "sos": [
+                      "magikarp",
+                      "gyarados"
+                    ],
+                    "version": "both",
+                    "method": "rod",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "standard": 70,
+                      "bubbling spot": 50
+                    }
+                  },
+                  {
+                    "name": "feebas",
+                    "sos": "feebas",
+                    "version": "both",
+                    "method": "rod",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "standard": 1,
+                      "bubbling spot": 5
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "surfing",
+                "available_pokemon": [
+                  {
+                    "name": "psyduck",
+                    "sos": "psyduck",
+                    "version": "both",
+                    "method": "water",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 20
+                  },
+                  {
+                    "name": "poliwag",
+                    "sos": "poliwag",
+                    "version": "both",
+                    "method": "water",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 40
+                  },
+                  {
+                    "name": "surskit",
+                    "sos": "surskit",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "night": 40
+                    }
+                  },
+                  {
+                    "name": "dewpider",
+                    "sos": "dewpider",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "day": 40
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "totem's den",
+            "encounters": [
+              {
+                "type": "surfing",
+                "available_pokemon": [
+                  {
+                    "name": "tentacool",
+                    "sos": "tentacool",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 40
+                  },
+                  {
+                    "name": "wingull",
+                    "sos": "wingull",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 20
+                  },
+                  {
+                    "name": "finneon",
+                    "sos": "finneon",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": 40
+                  }
+                ]
+              },
+              {
+                "type": "fishing",
+                "available_pokemon": [
+                  {
+                    "name": "alomomola",
+                    "sos": "alomomola",
+                    "version": "both",
+                    "method": "rod",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "standard": 1,
+                      "bubbling spot": 20
+                    }
+                  },
+                  {
+                    "name": "magikarp",
+                    "sos": [
+                      "magikarp",
+                      "gyarados"
+                    ],
+                    "version": "both",
+                    "method": "rod",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "standard": 79,
+                      "bubbling spot": 50
+                    }
+                  },
+                  {
+                    "name": "wishiwashi",
+                    "sos": "wishiwashi",
+                    "version": "both",
+                    "method": "rod",
+                    "min_level": 14,
+                    "max_level": 17,
+                    "rate": {
+                      "standard": 20,
+                      "bubbling spot": 30
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   ]
 }
