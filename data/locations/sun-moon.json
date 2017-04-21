@@ -4349,6 +4349,161 @@
           ]
         }
       ]
+    },
+    {
+      "name": "kala'e bay",
+      "exits": {
+        "access to": "seaward cave"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "ratatta",
+              "sos": "ratatta",
+              "version": "both",
+              "method": "grass",
+              "min_level": 15,
+              "max_level": 18,
+              "rate": {
+                "night": 30
+              }
+            },
+            {
+              "name": "yungoos",
+              "sos": "yungoos",
+              "version": "both",
+              "method": "grass",
+              "min_level": 15,
+              "max_level": 18,
+              "rate": {
+                "day": 30
+              }
+            },
+            {
+              "name": "slowpoke",
+              "sos": [
+                "slowpoke",
+                "slowbro"
+              ],
+              "version": "both",
+              "method": "grass",
+              "min_level": 15,
+              "max_level": 18,
+              "rate": 20
+            },
+            {
+              "name": "wingull",
+              "sos": "wingull",
+              "version": "both",
+              "method": "grass",
+              "min_level": 15,
+              "max_level": 18,
+              "rate": 40
+            },
+            {
+              "name": "bagon",
+              "sos": [
+                "bagon",
+                "salamence"
+              ],
+              "version": "both",
+              "method": "grass",
+              "min_level": 15,
+              "max_level": 18,
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "tentacool",
+              "sos": "tentacool",
+              "version": "both",
+              "method": "water",
+              "min_level": 15,
+              "max_level": 18,
+              "rate": 40
+            },
+            {
+              "name": "wingull",
+              "sos": "wingull",
+              "version": "both",
+              "method": "water",
+              "min_level": 15,
+              "max_level": 18,
+              "rate": 20
+            },
+            {
+              "name": "finneon",
+              "sos": "finneon",
+              "version": "both",
+              "method": "water",
+              "min_level": 15,
+              "max_level": 18,
+              "rate": 40
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "sos": [
+                "magikarp",
+                "gyarados"
+              ],
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 15,
+              "rate": {
+                "normal": 79,
+                "bubbling spot": 50
+              }
+            },
+            {
+              "name": "shellder",
+              "sos": "shellder",
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 15,
+              "rate": {
+                "normal": 1,
+                "bubbling spot": 20
+              }
+            },
+            {
+              "name": "wishiwashi",
+              "sos": "wishiwashi",
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 15,
+              "rate": 30
+            }
+          ]
+        },
+        {
+          "type": "island scan",
+          "available_pokemon": [
+            {
+              "name": "horsea",
+              "sos": null,
+              "version": "both",
+              "method": "wednesday",
+              "min_level": 18,
+              "max_level": 18,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
