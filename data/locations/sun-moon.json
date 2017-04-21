@@ -3069,6 +3069,103 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ancient poni path",
+      "exits": {
+        "north": "vast poni canyon",
+        "west": "poni wilds",
+        "east": [
+          "poni grove",
+          "poni breaker grove"
+        ]
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "raticate",
+              "sos": "raticate",
+              "version": "both",
+              "method": "grass",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": {
+                "night": 30
+              }
+            },
+            {
+              "name": "exeggcute",
+              "sos": "exeggcute",
+              "version": "both",
+              "method": "grass",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 10
+            },
+            {
+              "name": "granbull",
+              "sos": "granbull",
+              "version": "both",
+              "method": "grass",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 20
+            },
+            {
+              "name": "pelipper",
+              "sos": "pelipper",
+              "version": "both",
+              "method": "grass",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 30
+            },
+            {
+              "name": "gastrodon",
+              "sos": "gastrodon",
+              "version": "both",
+              "method": "grass",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 10
+            },
+            {
+              "name": "gumshoos",
+              "sos": "gumshoos",
+              "version": "both",
+              "method": "grass",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": {
+                "day": 30
+              }
+            }
+          ]
+        },
+        {
+          "type": "island scan",
+          "available_pokemon": [
+            {
+              "name": "emboar",
+              "sos": "emboar",
+              "version": "both",
+              "method": "saturday",
+              "min_level": 43,
+              "max_level": 43,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "battle tree",
+      "exits": {
+        "south": "poni gauntlet"
+      },
+      "encounters": null
     }
   ]
 }
