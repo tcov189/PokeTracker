@@ -2484,7 +2484,7 @@
           ]
         },
         {
-          "type": "fishing",
+          "type": "surfing",
           "available_pokemon": [
             {
               "name": "tentacool",
@@ -2560,6 +2560,314 @@
           ]
         }
       ]
+    },
+    {
+      "name": "route 16",
+      "exits": {
+        "north": "ula'ula meadow ",
+        "south": "route 15"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "raticate",
+              "sos": "raticate",
+              "version": "both",
+              "method": "grass",
+              "min_level": 30,
+              "max_level": 33,
+              "rate": {
+                "night": 30
+              }
+            },
+            {
+              "name": "slowpoke",
+              "sos": "slowpoke",
+              "version": "both",
+              "method": "grass",
+              "min_level": 30,
+              "max_level": 33,
+              "rate": 20
+            },
+            {
+              "name": "pelipper",
+              "sos": "pelipper",
+              "version": "both",
+              "method": "grass",
+              "min_level": 30,
+              "max_level": 33,
+              "rate": 50
+            },
+            {
+              "name": "gumshoos",
+              "sos": "gumshoos",
+              "version": "both",
+              "method": "grass",
+              "min_level": 30,
+              "max_level": 33,
+              "rate": {
+                "day": 30
+              }
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "crabrawler",
+              "sos": "crabrawler",
+              "version": "both",
+              "method": "berry pile",
+              "min_level": 30,
+              "max_level": 33,
+              "rate": 100
+            }
+          ]
+        },
+        {
+          "type": "island scan",
+          "available_pokemon": [
+            {
+              "name": "duosion",
+              "sos": "duosion",
+              "version": "both",
+              "method": "tuesday",
+              "min_level": 30,
+              "max_level": 33,
+              "rate": "one"
+            }
+          ]
+        },
+        {
+          "type": "gift",
+          "available_pokemon": [
+            {
+              "name": "zygarde",
+              "version": "both",
+              "method": "assembly",
+              "min_level": 30,
+              "max_level": 30,
+              "rate": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "route 17",
+      "exits": {
+        "south": "ula'ula meadow ",
+        "access to": "po town"
+      },
+      "encounters": {
+        "areas": [
+          {
+            "name": "all",
+            "encounters": [
+              {
+                "type": "sos ally in rain",
+                "available_pokemon": [
+                  {
+                    "name": "goomy",
+                    "sos": null,
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 31,
+                    "max_level": 34,
+                    "rate": 10
+                  },
+                  {
+                    "name": "castform",
+                    "sos": null,
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 31,
+                    "max_level": 34,
+                    "rate": 1
+                  }
+                ]
+              },
+              {
+                "type": "interaction",
+                "available_pokemon": [
+                  {
+                    "name": "crabrawler",
+                    "sos": "crabrawler",
+                    "version": "both",
+                    "method": "berry pile",
+                    "min_level": 31,
+                    "max_level": 34,
+                    "rate": 100
+                  }
+                ]
+              },
+              {
+                "type": "special",
+                "available_pokemon": [
+                  {
+                    "name": "kartana",
+                    "sos": "kartana",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 60,
+                    "max_level": 60,
+                    "rate": "Four"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "grass before mountain",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "raticate",
+                    "sos": "raticate",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 31,
+                    "max_level": 34,
+                    "rate": {
+                      "night": 30
+                    }
+                  },
+                  {
+                    "name": "fearow",
+                    "sos": "fearow",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 31,
+                    "max_level": 34,
+                    "rate": 30
+                  },
+                  {
+                    "name": "ledian",
+                    "sos": "ledian",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 31,
+                    "max_level": 34,
+                    "rate": {
+                      "day": 20
+                    }
+                  },
+                  {
+                    "name": "ariados",
+                    "sos": "ariados",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 31,
+                    "max_level": 34,
+                    "rate": {
+                      "night": 20
+                    }
+                  },
+                  {
+                    "name": "pancham",
+                    "sos": [
+                      "pancham",
+                      "pangoro"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 31,
+                    "max_level": 34,
+                    "rate": 20
+                  },
+                  {
+                    "name": "gumshoos",
+                    "sos": "gumshoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 31,
+                    "max_level": 34,
+                    "rate": {
+                      "day": 30
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "yellow grass on mountain",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "raticate",
+                    "sos": "raticate",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 31,
+                    "max_level": 34,
+                    "rate": {
+                      "night": 30
+                    }
+                  },
+                  {
+                    "name": "fearow",
+                    "sos": "fearow",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 31,
+                    "max_level": 34,
+                    "rate": 30
+                  },
+                  {
+                    "name": "graveler",
+                    "sos": "graveler",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 31,
+                    "max_level": 34,
+                    "rate": 20
+                  },
+                  {
+                    "name": "skarmory",
+                    "sos": "skarmory",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 31,
+                    "max_level": 34,
+                    "rate": 10
+                  },
+                  {
+                    "name": "pancham",
+                    "sos": [
+                      "pancham",
+                      "pangoro"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 31,
+                    "max_level": 34,
+                    "rate": 10
+                  },
+                  {
+                    "name": "gumshoos",
+                    "sos": "gumshoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 31,
+                    "max_level": 34,
+                    "rate": {
+                      "day": 30
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   ]
 }
