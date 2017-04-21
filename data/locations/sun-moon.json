@@ -3728,6 +3728,235 @@
           }
         ]
       }
+    },
+    {
+      "name": "diglett's tunnel",
+      "exits": {
+        "north": "heahea city",
+        "south": "route 9"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "zubat",
+              "sos": "zubat",
+              "version": "both",
+              "method": "cave",
+              "min_level": 19,
+              "max_level": 22,
+              "rate": 70
+            },
+            {
+              "name": "diglett",
+              "sos": "diglett",
+              "version": "both",
+              "method": "cave",
+              "min_level": 19,
+              "max_level": 22,
+              "rate": 30
+            }
+          ]
+        },
+        {
+          "type": "ambush",
+          "available_pokemon": [
+            {
+              "name": "diglett",
+              "sos": "diglett",
+              "version": "both",
+              "method": "dirt cloud",
+              "min_level": 19,
+              "max_level": 22,
+              "rate": 100
+            }
+          ]
+        },
+        {
+          "type": "special",
+          "available_pokemon": [
+            {
+              "name": "nihilego",
+              "sos": null,
+              "version": "both",
+              "method": "cave",
+              "min_level": 55,
+              "max_level": 55,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "exeggutor island",
+      "exits": {
+        "access to": "seafolk village"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "exeggcute",
+              "sos": "exeggcute",
+              "version": "both",
+              "method": "grass",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 40
+            },
+            {
+              "name": "exeggutor",
+              "sos": null,
+              "version": "both",
+              "method": "grass",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 20
+            },
+            {
+              "name": "pelipper",
+              "sos": "pelipper",
+              "version": "both",
+              "method": "grass",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 30
+            },
+            {
+              "name": "gastrodon",
+              "sos": "gastrodon",
+              "version": "both",
+              "method": "grass",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "sos ally in rain",
+          "available_pokemon": [
+            {
+              "name": "goomy",
+              "sos": null,
+              "version": "both",
+              "method": "sos",
+              "min_level": 31,
+              "max_level": 34,
+              "rate": 10
+            },
+            {
+              "name": "castform",
+              "sos": null,
+              "version": "both",
+              "method": "sos",
+              "min_level": 31,
+              "max_level": 34,
+              "rate": 1
+            }
+          ]
+        },
+        {
+          "type": "island scan",
+          "available_pokemon": [
+            {
+              "name": "serperior",
+              "sos": null,
+              "version": "both",
+              "method": "thursday",
+              "min_level": 43,
+              "max_level": 43,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "haina desert",
+      "exits": {
+        "north": "ruins of abundance",
+        "south": "route 13"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "dugtrio",
+              "sos": "dugtrio",
+              "version": "both",
+              "method": "deep sand",
+              "min_level": 28,
+              "max_level": 31,
+              "rate": 30
+            },
+            {
+              "name": "sandile",
+              "sos": "sandile",
+              "version": "both",
+              "method": "deep sand",
+              "min_level": 28,
+              "max_level": 31,
+              "rate": 70
+            }
+          ]
+        },
+        {
+          "type": "sos ally in rain",
+          "available_pokemon": [
+            {
+              "name": "castform",
+              "sos": null,
+              "version": "both",
+              "method": "sos",
+              "min_level": 28,
+              "max_level": 31,
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "sos ally in sand",
+          "available_pokemon": [
+            {
+              "name": "castform",
+              "sos": null,
+              "version": "both",
+              "method": "sos",
+              "min_level": 28,
+              "max_level": 31,
+              "rate": 1
+            },
+            {
+              "name": "gabite",
+              "sos": null,
+              "version": "both",
+              "method": "sos",
+              "min_level": 31,
+              "max_level": 34,
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "special",
+          "available_pokemon": [
+            {
+              "name": "celesteela",
+              "sos": null,
+              "version": "both",
+              "method": "deep sand",
+              "min_level": 65,
+              "max_level": 65,
+              "rate": "two"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
