@@ -3166,6 +3166,125 @@
         "south": "poni gauntlet"
       },
       "encounters": null
+    },
+    {
+      "name": "berry fields",
+      "exits": {
+        "west": "route 2"
+      },
+      "encounters": [
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "crabrawler",
+              "sos": "crabrawler",
+              "version": "both",
+              "method": "berry pile",
+              "min_level": 7,
+              "max_level": 10,
+              "rate": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "blush mountains",
+      "exits": {
+        "south": "route 12"
+      },
+      "encounters": [
+        {
+          "name": "walking",
+          "available_pokemon": [
+            {
+              "name": "geodude",
+              "sos": "geodude",
+              "version": "both",
+              "method": "grass",
+              "min_level": 26,
+              "max_level": 30,
+              "rate": 30
+            },
+            {
+              "name": "elekid",
+              "sos": [
+                "elekid",
+                "electabuzz",
+                "chansey"
+              ],
+              "version": "both",
+              "method": "grass",
+              "min_level": 26,
+              "max_level": 30,
+              "rate": 10
+            },
+            {
+              "name": "torkoal",
+              "sos": "torkoal",
+              "version": "both",
+              "method": "grass",
+              "min_level": 26,
+              "max_level": 30,
+              "rate": {
+                "sun": 10,
+                "moon": 20
+              }
+            },
+            {
+              "name": "charjabug",
+              "sos": "charjabug",
+              "version": "both",
+              "method": "grass",
+              "min_level": 26,
+              "max_level": 30,
+              "rate": 10
+            },
+            {
+              "name": "mudbray",
+              "sos": "mudbray",
+              "version": "both",
+              "method": "grass",
+              "min_level": 26,
+              "max_level": 30,
+              "rate": 20
+            },
+            {
+              "name": "turtonator",
+              "sos": "turtonator",
+              "version": "sun",
+              "method": "grass",
+              "min_level": 27,
+              "max_level": 30,
+              "rate": 10
+            },
+            {
+              "name": "togedemaru",
+              "sos": "togedemaru",
+              "version": "both",
+              "method": "grass",
+              "min_level": 27,
+              "max_level": 30,
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "name": "island scan",
+          "available_pokemon": [
+            {
+              "name": "rhyhorn",
+              "sos": "rhyhorn",
+              "version": "both",
+              "method": "sunday",
+              "min_level": 30,
+              "max_level": 30,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
