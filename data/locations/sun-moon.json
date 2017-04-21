@@ -2868,6 +2868,55 @@
           }
         ]
       }
+    },
+    {
+      "name": "aether house",
+      "exits": {
+        "south": "route 15"
+      },
+      "encounters": [
+        {
+          "type": "gift",
+          "available_pokemon": [
+            {
+              "name": "porygon",
+              "sos": null,
+              "version": "both",
+              "method": "aether employee",
+              "min_level": 30,
+              "max_level": 30,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "aether paradise",
+      "exits": {
+        "access to": [
+          "hau'oli city",
+          "heahea city",
+          "malie city",
+          "seafolk village"
+        ]
+      },
+      "encounters": [
+        {
+          "type": "gift",
+          "available_pokemon": [
+            {
+              "name": "type-null",
+              "sos": null,
+              "version": "both",
+              "method": "gladion",
+              "min_level": 40,
+              "max_level": 40,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
