@@ -2674,7 +2674,7 @@
                     "name": "goomy",
                     "sos": null,
                     "version": "both",
-                    "method": "grass",
+                    "method": "sos",
                     "min_level": 31,
                     "max_level": 34,
                     "rate": 10
@@ -2683,7 +2683,7 @@
                     "name": "castform",
                     "sos": null,
                     "version": "both",
-                    "method": "grass",
+                    "method": "sos",
                     "min_level": 31,
                     "max_level": 34,
                     "rate": 1
@@ -2709,7 +2709,7 @@
                 "available_pokemon": [
                   {
                     "name": "kartana",
-                    "sos": "kartana",
+                    "sos": null,
                     "version": "both",
                     "method": "grass",
                     "min_level": 60,
@@ -2913,6 +2913,127 @@
               "min_level": 40,
               "max_level": 40,
               "rate": "one"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "akala outskirts",
+      "exits": {
+        "north": "ruins of life",
+        "west": "memorial hill"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "raticate",
+              "sos": "raticate",
+              "version": "both",
+              "method": "grass",
+              "min_level": 20,
+              "max_level": 23,
+              "rate": {
+                "night": 30
+              }
+            },
+            {
+              "name": "wingull",
+              "sos": "wingull",
+              "version": "both",
+              "method": "grass",
+              "min_level": 20,
+              "max_level": 23,
+              "rate": 50
+            },
+            {
+              "name": "nosepass",
+              "sos": "nosepass",
+              "version": "both",
+              "method": "grass",
+              "min_level": 20,
+              "max_level": 23,
+              "rate": 15
+            },
+            {
+              "name": "gumshoos",
+              "sos": "gumshoos",
+              "version": "both",
+              "method": "grass",
+              "min_level": 20,
+              "max_level": 23,
+              "rate": {
+                "day": 30
+              }
+            },
+            {
+              "name": "stufful",
+              "sos": "stufful",
+              "version": "both",
+              "method": "grass",
+              "min_level": 20,
+              "max_level": 23,
+              "rate": 5
+            }
+          ]
+        },
+        {
+          "type": "island scan",
+          "available_pokemon": [
+            {
+              "name": "honedge",
+              "sos": null,
+              "version": "both",
+              "method": "wednesday",
+              "min_level": 23,
+              "max_level": 23,
+              "rate": "one"
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "sos": [
+                "magikarp",
+                "gyarados"
+              ],
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 23,
+              "rate": {
+                "normal": 79,
+                "bubbling spot": 60
+              }
+            },
+            {
+              "name": "wishiwashi",
+              "sos": "wishiwashi",
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 23,
+              "rate": {
+                "normal": 20,
+                "bubbling spot": 20
+              }
+            },
+            {
+              "name": "chinchou",
+              "sos": "chinchou",
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 23,
+              "rate": {
+                "normal": 1,
+                "bubbling spot": 20
+              }
             }
           ]
         }
