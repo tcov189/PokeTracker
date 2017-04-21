@@ -3957,6 +3957,398 @@
           ]
         }
       ]
+    },
+    {
+      "name": "hano beach",
+      "exits": {
+        "west": "hano grand resort"
+      },
+      "encounters": [
+        {
+          "type": "ambush",
+          "available_pokemon": [
+            {
+              "name": "staryu",
+              "sos": "staryu",
+              "version": "both",
+              "method": "sand",
+              "min_level": 21,
+              "max_level": 24,
+              "rate": 80
+            },
+            {
+              "name": "sandygast",
+              "sos": "sandygast",
+              "version": "both",
+              "method": "sand",
+              "min_level": 21,
+              "max_level": 24,
+              "rate": 20
+            },
+            {
+              "name": "tentacool",
+              "sos": "tentacool",
+              "version": "both",
+              "method": "water",
+              "min_level": 21,
+              "max_level": 24,
+              "rate": 100
+            }
+          ]
+        },
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "tentacool",
+              "sos": "tentacool",
+              "version": "both",
+              "method": "water",
+              "min_level": 21,
+              "max_level": 24,
+              "rate": 30
+            },
+            {
+              "name": "wingull",
+              "sos": "wingull",
+              "version": "both",
+              "method": "water",
+              "min_level": 21,
+              "max_level": 24,
+              "rate": 20
+            },
+            {
+              "name": "finneon",
+              "sos": "finneon",
+              "version": "both",
+              "method": "water",
+              "min_level": 21,
+              "max_level": 24,
+              "rate": 30
+            },
+            {
+              "name": "pyukumuku",
+              "sos": "pyukumuku",
+              "version": "both",
+              "method": "water",
+              "min_level": 21,
+              "max_level": 24,
+              "rate": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hano grand resort",
+      "exits": {
+        "east": "hano beach",
+        "west": "heahea city"
+      },
+      "encounters": null
+    },
+    {
+      "name": "hau'oli cemetery",
+      "exits": {
+        "west": "route 2"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "zubat",
+              "sos": "zubat",
+              "version": "both",
+              "method": "grass",
+              "min_level": 7,
+              "max_level": 10,
+              "rate": 20
+            },
+            {
+              "name": "gastly",
+              "sos": "gastly",
+              "version": "both",
+              "method": "grass",
+              "min_level": 7,
+              "max_level": 10,
+              "rate": 50
+            },
+            {
+              "name": "misdreavus",
+              "sos": "misdreavus",
+              "version": "both",
+              "method": "grass",
+              "min_level": 7,
+              "max_level": 10,
+              "rate": {
+                "night": 30
+              }
+            },
+            {
+              "name": "drifloon",
+              "sos": "drifloon",
+              "version": "both",
+              "method": "grass",
+              "min_level": 7,
+              "max_level": 10,
+              "rate": {
+                "day": 30
+              }
+            }
+          ]
+        },
+        {
+          "type": "island scan",
+          "available_pokemon": [
+            {
+              "name": "litwick",
+              "sos": "litwick",
+              "version": "both",
+              "method": "saturday",
+              "min_level": 10,
+              "max_level": 10,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hau'oli city",
+      "exits": {
+        "north": "route 2",
+        "south": "melemele sea",
+        "access to": [
+          "aether paradise",
+          "heahea city",
+          "malie city",
+          "seafolk village"
+        ]
+      },
+      "encounters": {
+        "areas": [
+          {
+            "name": "beachfront",
+            "encounters": [
+              {
+                "type": "surfing",
+                "available_pokemon": [
+                  {
+                    "name": "tentacool",
+                    "sos": "tentacool",
+                    "version": "both",
+                    "method": "water",
+                    "min_level": 15,
+                    "max_level": 18,
+                    "rate": 40
+                  },
+                  {
+                    "name": "wingull",
+                    "sos": "wingull",
+                    "version": "both",
+                    "method": "water",
+                    "min_level": 15,
+                    "max_level": 18,
+                    "rate": 20
+                  },
+                  {
+                    "name": "finneon",
+                    "sos": "finneon",
+                    "version": "both",
+                    "method": "water",
+                    "min_level": 15,
+                    "max_level": 18,
+                    "rate": 40
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "shopping cart",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "rattata",
+                    "sos": "rattata",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 5,
+                    "max_level": 8,
+                    "rate": {
+                      "night": 20
+                    }
+                  },
+                  {
+                    "name": "meowth",
+                    "sos": "meowth",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 5,
+                    "max_level": 8,
+                    "rate": 10
+                  },
+                  {
+                    "name": "abra",
+                    "sos": "abra",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 5,
+                    "max_level": 8,
+                    "rate": 25
+                  },
+                  {
+                    "name": "magnemite",
+                    "sos": "magnemite",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 5,
+                    "max_level": 8,
+                    "rate": 10
+                  },
+                  {
+                    "name": "grimer",
+                    "sos": "grimer",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 5,
+                    "max_level": 8,
+                    "rate": 10
+                  },
+                  {
+                    "name": "pichu",
+                    "sos": [
+                      "pichu",
+                      "pikachu",
+                      "happiny"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 5,
+                    "max_level": 8,
+                    "rate": 5
+                  },
+                  {
+                    "name": "wingull",
+                    "sos": "wingull",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 5,
+                    "max_level": 8,
+                    "rate": 20
+                  },
+                  {
+                    "name": "yungoos",
+                    "sos": "yungoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 5,
+                    "max_level": 8,
+                    "rate": {
+                      "day": 20
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "island scan",
+                "available_pokemon": [
+                  {
+                    "name": "klink",
+                    "sos": null,
+                    "version": "both",
+                    "method": "thursday",
+                    "min_level": 8,
+                    "max_level": 8,
+                    "rate": "one"
+                  }
+                ]
+              },
+              {
+                "type": "event",
+                "available_pokemon": [
+                  {
+                    "name": "magearna",
+                    "version": "both",
+                    "method": "qr code",
+                    "min_level": 50,
+                    "max_level": 50,
+                    "rate": null
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "heahea city",
+      "exits": {
+        "north": [
+          "route 4",
+          "route 6"
+        ],
+        "south": "diglett's tunnel",
+        "access to": [
+          "aether paradise",
+          "hau'oli city",
+          "malie city",
+          "seafolk village"
+        ]
+      },
+      "encounters": null
+    },
+    {
+      "name": "hokulani observatory",
+      "exits": {
+        "south": "mount hokulani"
+      },
+      "encounters": null
+    },
+    {
+      "name": "iki town",
+      "exits": {
+        "south": "route 1",
+        "north": "mahalo trail"
+      },
+      "encounters": [
+        {
+          "type": "starter",
+          "available_pokemon": [
+            {
+              "name": "rowlet",
+              "sos": null,
+              "version": "both",
+              "method": "professor kukui",
+              "min_level": 5,
+              "max_level": 5,
+              "rate": null
+            },
+            {
+              "name": "litten",
+              "sos": null,
+              "version": "both",
+              "method": "professor kukui",
+              "min_level": 5,
+              "max_level": 5,
+              "rate": null
+            },
+            {
+              "name": "popplio",
+              "sos": null,
+              "version": "both",
+              "method": "professor kukui",
+              "min_level": 5,
+              "max_level": 5,
+              "rate": null
+            }
+          ]
+        }
+      ]
     }
   ]
 }
