@@ -4360,8 +4360,8 @@
           "type": "walking",
           "available_pokemon": [
             {
-              "name": "ratatta",
-              "sos": "ratatta",
+              "name": "rattata",
+              "sos": "rattata",
               "version": "both",
               "method": "grass",
               "min_level": 15,
@@ -4504,6 +4504,421 @@
           ]
         }
       ]
+    },
+    {
+      "name": "konikoni city",
+      "exits": {
+        "south": "route 9"
+      },
+      "encounters": [
+        {
+          "type": "trade",
+          "available_pokemon": [
+            {
+              "name": "poliwhirl",
+              "sos": null,
+              "version": "both",
+              "method": "zubat",
+              "min_level": "same as traded",
+              "max_level": "same as traded",
+              "rate": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lake of the moone/sunne",
+      "exits": {
+        "west": "ula'ula meadow"
+      },
+      "encounters": [
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "cosmog",
+              "sos": null,
+              "version": "both",
+              "method": "static",
+              "min_level": 5,
+              "max_level": 5,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lush jungle",
+      "exits": {
+        "north": [
+          "route 3",
+          "iki town"
+        ],
+        "south": "route 5",
+        "east": "route 8"
+      },
+      "encounters": {
+        "areas": [
+          {
+            "name": "all",
+            "encounters": [
+              {
+                "type": "sos ally in rain",
+                "available_pokemon": [
+                  {
+                    "name": "goomy",
+                    "sos": null,
+                    "version": "both",
+                    "method": "sos",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 10
+                  },
+                  {
+                    "name": "castform",
+                    "sos": null,
+                    "version": "both",
+                    "method": "sos",
+                    "min_level": 31,
+                    "max_level": 34,
+                    "rate": 1
+                  }
+                ]
+              },
+              {
+                "type": "special",
+                "available_pokemon": [
+                  {
+                    "name": "xurkitree",
+                    "sos": null,
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 65,
+                    "max_level": 65,
+                    "rate": "two"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "central area",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "caterpie",
+                    "sos": [
+                      "caterpie",
+                      "butterfree"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 10
+                  },
+                  {
+                    "name": "metapod",
+                    "sos": [
+                      "caterpie",
+                      "butterfree"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 10
+                  },
+                  {
+                    "name": "paras",
+                    "sos": "paras",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": {
+                      "day": 20
+                    }
+                  },
+                  {
+                    "name": "bonsly",
+                    "sos": [
+                      "bonsly",
+                      "sudowoodo",
+                      "happiny"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 10
+                  },
+                  {
+                    "name": "trumbeak",
+                    "sos": "trumbeak",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 20
+                  },
+                  {
+                    "name": "fomantis",
+                    "sos": "fomantis",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 20
+                  },
+                  {
+                    "name": "morelull",
+                    "sos": "morelull",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": {
+                      "night": 20
+                    }
+                  },
+                  {
+                    "name": "comfey",
+                    "sos": "comfey",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 5
+                  },
+                  {
+                    "name": "oranguru",
+                    "sos": "oranguru",
+                    "version": "moon",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 5
+                  },
+                  {
+                    "name": "passimian",
+                    "sos": "passimian",
+                    "version": "sun",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "northwest area",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "paras",
+                    "sos": "paras",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": {
+                      "day": 10
+                    }
+                  },
+                  {
+                    "name": "trumbeak",
+                    "sos": "trumbeak",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 20
+                  },
+                  {
+                    "name": "fomantis",
+                    "sos": "fomantis",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 20
+                  },
+                  {
+                    "name": "morelull",
+                    "sos": "morelull",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": {
+                      "night": 10
+                    }
+                  },
+                  {
+                    "name": "comfey",
+                    "sos": "comfey",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 5
+                  },
+                  {
+                    "name": "bounsweet",
+                    "sos": "bounsweet",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 40
+                  },
+                  {
+                    "name": "oranguru",
+                    "sos": "oranguru",
+                    "version": "moon",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 5
+                  },
+                  {
+                    "name": "passimian",
+                    "sos": "passimian",
+                    "version": "sun",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "north area",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "paras",
+                    "sos": "paras",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": {
+                      "day": 30
+                    }
+                  },
+                  {
+                    "name": "pinsir",
+                    "sos": "pinsir",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 10
+                  },
+                  {
+                    "name": "trumbeak",
+                    "sos": "trumbeak",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 20
+                  },
+                  {
+                    "name": "fomantis",
+                    "sos": "fomantis",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 20
+                  },
+                  {
+                    "name": "morelull",
+                    "sos": "morelull",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": {
+                      "night": 30
+                    }
+                  },
+                  {
+                    "name": "comfey",
+                    "sos": "comfey",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 5
+                  },
+                  {
+                    "name": "oranguru",
+                    "sos": "oranguru",
+                    "version": "moon",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 5
+                  },
+                  {
+                    "name": "passimian",
+                    "sos": "passimian",
+                    "version": "sun",
+                    "method": "grass",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "cave",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "zubat",
+                    "sos": "zubat",
+                    "version": "both",
+                    "method": "cave",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 70
+                  },
+                  {
+                    "name": "diglett",
+                    "sos": "diglett",
+                    "version": "both",
+                    "method": "cave",
+                    "min_level": 18,
+                    "max_level": 21,
+                    "rate": 30
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   ]
 }
