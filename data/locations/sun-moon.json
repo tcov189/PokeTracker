@@ -3038,6 +3038,37 @@
           ]
         }
       ]
+    },
+    {
+      "name": "altar of the moone/sunne",
+      "exits": {
+        "south": "vast poni canyon"
+      },
+      "encounters": [
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "solgaleo",
+              "sos": null,
+              "version": "sun",
+              "method": "static",
+              "min_level": 55,
+              "max_level": 55,
+              "rate": "one"
+            },
+            {
+              "name": "lunala",
+              "sos": null,
+              "version": "moon",
+              "method": "static",
+              "min_level": 55,
+              "max_level": 55,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
