@@ -5026,6 +5026,291 @@
           }
         ]
       }
+    },
+    {
+      "name": "malie garden",
+      "exits": {
+        "south": "malie city"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "meowth",
+              "sos": "meowth",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 20
+            },
+            {
+              "name": "psyduck",
+              "sos": "psyduck",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 10
+            },
+            {
+              "name": "poliwag",
+              "sos": "poliwag",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 10
+            },
+            {
+              "name": "ledian",
+              "sos": "ledian",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "day": 20
+              }
+            },
+            {
+              "name": "ariados",
+              "sos": "ariados",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "night": 20
+              }
+            },
+            {
+              "name": "masquerain",
+              "sos": "masquerain",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "night": 20
+              }
+            },
+            {
+              "name": "cottonee",
+              "sos": "cottonee",
+              "version": "sun",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 10
+            },
+            {
+              "name": "petilil",
+              "sos": "petilil",
+              "version": "moon",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 10
+            },
+            {
+              "name": "araquanid",
+              "sos": "araquanid",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "day": 20
+              }
+            }
+          ]
+        },
+        {
+          "type": "sos ally",
+          "available_pokemon": [
+            {
+              "name": "poliwhirl",
+              "sos": null,
+              "version": "both",
+              "method": "rain",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 10
+            },
+            {
+              "name": "poliwrath",
+              "sos": null,
+              "version": "both",
+              "method": "rain",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "day": 1
+              }
+            },
+            {
+              "name": "politoed",
+              "sos": null,
+              "version": "both",
+              "method": "rain",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "night": 1
+              }
+            },
+            {
+              "name": "castform",
+              "sos": null,
+              "version": "both",
+              "method": "sand/hail",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "goldeen",
+              "sos": [
+                "goldeen",
+                "seaking"
+              ],
+              "version": "both",
+              "method": "rod",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "standard": 60,
+                "bubbling spot": 50
+              }
+            },
+            {
+              "name": "magikarp",
+              "sos": [
+                "magikarp",
+                "gyarados"
+              ],
+              "version": "both",
+              "method": "rod",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "standard": 60,
+                "bubbling spot": 50
+              }
+            },
+            {
+              "name": "psyduck",
+              "sos": "psyduck",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 10
+            },
+            {
+              "name": "poliwag",
+              "sos": "poliwag",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 10
+            },
+            {
+              "name": "ledian",
+              "sos": "ledian",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "day": 20
+              }
+            },
+            {
+              "name": "ariados",
+              "sos": "ariados",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "night": 20
+              }
+            },
+            {
+              "name": "masquerain",
+              "sos": "masquerain",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "night": 20
+              }
+            },
+            {
+              "name": "cottonee",
+              "sos": "cottonee",
+              "version": "sun",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 10
+            },
+            {
+              "name": "petilil",
+              "sos": "petilil",
+              "version": "moon",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": 10
+            },
+            {
+              "name": "araquanid",
+              "sos": "araquanid",
+              "version": "both",
+              "method": "grass",
+              "min_level": 24,
+              "max_level": 27,
+              "rate": {
+                "day": 20
+              }
+            }
+          ]
+        },
+        {
+          "type": "special",
+          "available_pokemon": [
+            {
+              "name": "celesteela",
+              "sos": null,
+              "version": "moon",
+              "method": "grass",
+              "min_level": 65,
+              "max_level": 65,
+              "rate": "two"
+            },
+            {
+              "name": "kartana",
+              "sos": null,
+              "version": "sun",
+              "method": "grass",
+              "min_level": 65,
+              "max_level": 65,
+              "rate": "four"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
