@@ -4919,6 +4919,113 @@
           }
         ]
       }
+    },
+    {
+      "name": "mahalo trail",
+      "exits": {
+        "north": "ruins of conflict",
+        "south": "iki town"
+      },
+      "encounters": null
+    },
+    {
+      "name": "malie city",
+      "exits": {
+        "north": "malie garden",
+        "south": "route 11",
+        "west": "route 10",
+        "access to": [
+          "aether paradise",
+          "hau'oli city",
+          "heahea city",
+          "seafolk village"
+        ]
+      },
+      "encounters": {
+        "areas": [
+          {
+            "name": "malie city proper",
+            "encounters": [
+              {
+                "type": "trade",
+                "available_pokemon": [
+                  {
+                    "name": "happiny",
+                    "sos": null,
+                    "version": "both",
+                    "method": "pancham",
+                    "min_level": 27,
+                    "max_level": 27,
+                    "rate": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "outer cape",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "raticate",
+                    "sos": "raticate",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 24,
+                    "max_level": 27,
+                    "rate": {
+                      "night": 20
+                    }
+                  },
+                  {
+                    "name": "magnemite",
+                    "sos": "magnemite",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 24,
+                    "max_level": 27,
+                    "rate": 20
+                  },
+                  {
+                    "name": "grimer",
+                    "sos": "grimer",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 24,
+                    "max_level": 27,
+                    "rate": 30
+                  },
+                  {
+                    "name": "trubbish",
+                    "sos": [
+                      "trubbish",
+                      "garbodor"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 24,
+                    "max_level": 27,
+                    "rate": 30
+                  },
+                  {
+                    "name": "yungoos",
+                    "sos": "yungoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 24,
+                    "max_level": 27,
+                    "rate": {
+                      "day": 20
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   ]
 }
