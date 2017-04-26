@@ -5828,6 +5828,123 @@
           }
         ]
       }
+    },
+    {
+      "name": "paniola ranch",
+      "exits": {
+        "south": [
+          "route 6",
+          "paniola town"
+        ],
+        "north": "route 5"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "tauros",
+              "sos": [
+                "tauros",
+                "miltank"
+              ],
+              "version": "both",
+              "method": "grass",
+              "min_level": 12,
+              "max_level": 15,
+              "rate": 5
+            },
+            {
+              "name": "miltank",
+              "sos": [
+                "miltank",
+                "tauros"
+              ],
+              "version": "both",
+              "method": "grass",
+              "min_level": 12,
+              "max_level": 15,
+              "rate": 5
+            },
+            {
+              "name": "lillipup",
+              "sos": "lillipup",
+              "version": "both",
+              "method": "grass",
+              "min_level": 12,
+              "max_level": 15,
+              "rate": 40
+            },
+            {
+              "name": "mudbray",
+              "sos": "mudbray",
+              "version": "both",
+              "method": "grass",
+              "min_level": 12,
+              "max_level": 15,
+              "rate": 50
+            }
+          ]
+        },
+        {
+          "type": "gift",
+          "available_pokemon": [
+            {
+              "name": "eevee",
+              "sos": "eevee",
+              "version": "both",
+              "method": "woman at nursery",
+              "min_level": 1,
+              "max_level": 1,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "paniola town",
+      "exits": {
+        "south": "route 4",
+        "north": "paniola ranch"
+      },
+      "encounters": [
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "sos": [
+                "magikarp",
+                "gyarados"
+              ],
+              "version": "both",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 18,
+              "rate": {
+                "standard": 99,
+                "bubbling spot": 50
+              }
+            },
+            {
+              "name": "barboach",
+              "sos": [
+                "barboach",
+                "whiscash"
+              ],
+              "version": "both",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 18,
+              "rate": {
+                "standard": 1,
+                "bubbling spot": 50
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
