@@ -5311,6 +5311,523 @@
           ]
         }
       ]
+    },
+    {
+      "name": "melemele meadow",
+      "exits": {
+        "east": "route 3",
+        "access to": "seaward cave"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "caterpie",
+              "sos": [
+                "caterpie",
+                "butterfree"
+              ],
+              "version": "both",
+              "method": "grass",
+              "min_level": 9,
+              "max_level": 12,
+              "rate": 10
+            },
+            {
+              "name": "metapod",
+              "sos": [
+                "caterpie",
+                "butterfree"
+              ],
+              "version": "both",
+              "method": "grass",
+              "min_level": 9,
+              "max_level": 12,
+              "rate": 9
+            },
+            {
+              "name": "butterfree",
+              "sos": null,
+              "version": "both",
+              "method": "grass",
+              "min_level": 9,
+              "max_level": 12,
+              "rate": 1
+            },
+            {
+              "name": "cottonee",
+              "sos": "cottonee",
+              "version": "sun",
+              "method": "grass",
+              "min_level": 9,
+              "max_level": 12,
+              "rate": 30
+            },
+            {
+              "name": "petilil",
+              "sos": "petilil",
+              "version": "moon",
+              "method": "grass",
+              "min_level": 9,
+              "max_level": 12,
+              "rate": 30
+            },
+            {
+              "name": "oricorio-pom-pom",
+              "sos": "oricorio-pom-pom",
+              "version": "both",
+              "method": "grass",
+              "min_level": 9,
+              "max_level": 12,
+              "rate": 20
+            },
+            {
+              "name": "cutiefly",
+              "sos": "cutiefly",
+              "version": "both",
+              "method": "grass",
+              "min_level": 9,
+              "max_level": 12,
+              "rate": 30
+            }
+          ]
+        },
+        {
+          "type": "special",
+          "available_pokemon": [
+            {
+              "name": "buzzwole",
+              "sos": null,
+              "version": "sun",
+              "method": "grass",
+              "min_level": 65,
+              "max_level": 65,
+              "rate": "two"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "melemele sea",
+      "exits": {
+        "north": [
+          "route 1",
+          "hau'oli city"
+        ],
+        "access to": "ten carat hill"
+      },
+      "encounters": [
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "tentacool",
+              "sos": "tentacool",
+              "version": "both",
+              "method": "water",
+              "min_level": 15,
+              "max_level": 18,
+              "rate": 40
+            },
+            {
+              "name": "wingull",
+              "sos": "wingull",
+              "version": "both",
+              "method": "water",
+              "min_level": 15,
+              "max_level": 18,
+              "rate": 20
+            },
+            {
+              "name": "finneon",
+              "sos": "finneon",
+              "version": "both",
+              "method": "water",
+              "min_level": 15,
+              "max_level": 18,
+              "rate": 40
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "sos": [
+                "magikarp",
+                "gyarados"
+              ],
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 18,
+              "rate": {
+                "standard": 78,
+                "bubbling spot": 20
+              }
+            },
+            {
+              "name": "corsola",
+              "sos": [
+                "corsola",
+                "mareanie"
+              ],
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 23,
+              "rate": {
+                "standard": 1,
+                "bubbling spot": 20
+              }
+            },
+            {
+              "name": "luvdisc",
+              "sos": "luvdisc",
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 23,
+              "rate": {
+                "standard": 1,
+                "bubbling spot": 40
+              }
+            },
+            {
+              "name": "wishiwashi",
+              "sos": "wishiwashi",
+              "version": "both",
+              "method": "water",
+              "min_level": 10,
+              "max_level": 23,
+              "rate": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "memorial hill",
+      "exits": {
+        "east": "akala outskirts",
+        "west": "route 9"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "zubat",
+              "sos": "zubat",
+              "version": "both",
+              "method": "grass",
+              "min_level": 20,
+              "max_level": 23,
+              "rate": 20
+            },
+            {
+              "name": "gastly",
+              "sos": "gastly",
+              "version": "both",
+              "method": "grass",
+              "min_level": 20,
+              "max_level": 23,
+              "rate": 50
+            },
+            {
+              "name": "phantump",
+              "sos": "phantump",
+              "version": "both",
+              "method": "grass",
+              "min_level": 20,
+              "max_level": 23,
+              "rate": 30
+            }
+          ]
+        },
+        {
+          "type": "special",
+          "available_pokemon": [
+            {
+              "name": "xurkitree",
+              "sos": null,
+              "version": "both",
+              "method": "grass",
+              "min_level": 65,
+              "max_level": 65,
+              "rate": "two"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mount hokulani",
+      "exits": {
+        "access to": [
+          "route 10",
+          "hokulani observatory"
+        ],
+        "west": "route 9"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "fearow",
+              "sos": "fearow",
+              "version": "both",
+              "method": "grass",
+              "min_level": 25,
+              "max_level": 28,
+              "rate": {
+                "day": 40,
+                "night": 30
+              }
+            },
+            {
+              "name": "ditto",
+              "sos": "ditto",
+              "version": "both",
+              "method": "grass",
+              "min_level": 25,
+              "max_level": 28,
+              "rate": 10
+            },
+            {
+              "name": "cleffa",
+              "sos": [
+                "cleffa",
+                "clefairy",
+                "chansey"
+              ],
+              "version": "both",
+              "method": "grass",
+              "min_level": 25,
+              "max_level": 28,
+              "rate": {
+                "night": 10
+              }
+            },
+            {
+              "name": "skarmory",
+              "sos": "skarmory",
+              "version": "both",
+              "method": "grass",
+              "min_level": 25,
+              "max_level": 28,
+              "rate": 10
+            },
+            {
+              "name": "beldum",
+              "sos": "beldum",
+              "version": "both",
+              "method": "grass",
+              "min_level": 25,
+              "max_level": 28,
+              "rate": 10
+            },
+            {
+              "name": "minior",
+              "sos": "minior",
+              "version": "both",
+              "method": "grass",
+              "min_level": 25,
+              "max_level": 28,
+              "rate": 30
+            }
+          ]
+        },
+        {
+          "type": "island scan",
+          "available_pokemon": [
+            {
+              "name": "axew",
+              "sos": null,
+              "version": "both",
+              "method": "saturday",
+              "min_level": 28,
+              "max_level": 28,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mount lanakila",
+      "exits": {
+        "access to": "pokemon league",
+        "south": "tapu village"
+      },
+      "encounters": {
+        "areas": [
+          {
+            "name": "outside",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "sandshrew",
+                    "sos": "sandshrew",
+                    "version": "moon",
+                    "method": "grass",
+                    "min_level": 42,
+                    "max_level": 45,
+                    "rate": 30
+                  },
+                  {
+                    "name": "vulpix",
+                    "sos": "vulpix",
+                    "version": "sun",
+                    "method": "grass",
+                    "min_level": 42,
+                    "max_level": 45,
+                    "rate": 30
+                  },
+                  {
+                    "name": "sneasel",
+                    "sos": "sneasel",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 42,
+                    "max_level": 48,
+                    "rate": 20
+                  },
+                  {
+                    "name": "absol",
+                    "sos": "absol",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 42,
+                    "max_level": 48,
+                    "rate": 20
+                  },
+                  {
+                    "name": "snorunt",
+                    "sos": [
+                      "snorunt",
+                      "glalie"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 42,
+                    "max_level": 48,
+                    "rate": 30
+                  }
+                ]
+              },
+              {
+                "type": "sos ally",
+                "available_pokemon": [
+                  {
+                    "name": "vanillish",
+                    "sos": null,
+                    "version": "both",
+                    "method": "hail",
+                    "min_level": 42,
+                    "max_level": 45,
+                    "rate": 10
+                  },
+                  {
+                    "name": "castform",
+                    "sos": null,
+                    "version": "both",
+                    "method": "hail",
+                    "form": "hail",
+                    "min_level": 42,
+                    "max_level": 45,
+                    "rate": 1
+                  },
+                  {
+                    "name": "castform",
+                    "sos": null,
+                    "version": "both",
+                    "method": "rain",
+                    "form": "rain",
+                    "min_level": 42,
+                    "max_level": 45,
+                    "rate": 1
+                  },
+                  {
+                    "name": "castform",
+                    "sos": null,
+                    "version": "both",
+                    "method": "sandstorm",
+                    "form": "sandstorm",
+                    "min_level": 42,
+                    "max_level": 45,
+                    "rate": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "cave",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "golbat",
+                    "sos": "golbat",
+                    "version": "both",
+                    "method": "cave",
+                    "min_level": 42,
+                    "max_level": 45,
+                    "rate": 30
+                  },
+                  {
+                    "name": "sneasel",
+                    "sos": "sneasel",
+                    "version": "both",
+                    "method": "cave",
+                    "min_level": 42,
+                    "max_level": 45,
+                    "rate": 20
+                  },
+                  {
+                    "name": "absol",
+                    "sos": "absol",
+                    "version": "both",
+                    "method": "cave",
+                    "min_level": 42,
+                    "max_level": 45,
+                    "rate": {
+                      "sun": 20,
+                      "moon": 10
+                    }
+                  },
+                  {
+                    "name": "snorunt",
+                    "sos": "snorunt",
+                    "version": "both",
+                    "method": "cave",
+                    "min_level": 42,
+                    "max_level": 45,
+                    "rate": 30
+                  },
+                  {
+                    "name": "drampa",
+                    "sos": "drampa",
+                    "version": "moon",
+                    "method": "cave",
+                    "min_level": 42,
+                    "max_level": 45,
+                    "rate": 10
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   ]
 }
