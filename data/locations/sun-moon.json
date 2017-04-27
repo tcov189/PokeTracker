@@ -5945,6 +5945,462 @@
           ]
         }
       ]
+    },
+    {
+      "name": "po town",
+      "exits": {
+        "south": "route 17"
+      },
+      "encounters": null
+    },
+    {
+      "name": "pokemon league",
+      "exits": {
+        "south": "tapu village"
+      },
+      "encounters": null
+    },
+    {
+      "name": "poni breaker coast",
+      "exits": {
+        "north": "acient poni path",
+        "east": "ruins of hope"
+      },
+      "encounters": [
+        {
+          "type": "ambush",
+          "available_pokemon": [
+            {
+              "name": "wimpod",
+              "sos": null,
+              "version": "both",
+              "method": "chase",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 100
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "sos": [
+                "magikarp",
+                "gyarados"
+              ],
+              "version": "both",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 43,
+              "rate": {
+                "standard": 79,
+                "bubbling spot": 50
+              }
+            },
+            {
+              "name": "sharpedo",
+              "sos": "sharpedo",
+              "version": "both",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 43,
+              "rate": {
+                "standard": 1,
+                "bubbling spot": 10
+              }
+            },
+            {
+              "name": "wailmer",
+              "sos": [
+                "wailmer",
+                "wailord"
+              ],
+              "version": "both",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 43,
+              "rate": {
+                "standard": 20,
+                "bubbling spot": 40
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "poni coast",
+      "exits": {
+        "north": "poni gauntlet",
+        "south": "poni plains"
+      },
+      "encounters": [
+        {
+          "type": "ambush",
+          "available_pokemon": [
+            {
+              "name": "dugtrio",
+              "sos": "dugtrio",
+              "version": "both",
+              "method": "dirt cloud",
+              "min_level": 56,
+              "max_level": 59,
+              "rate": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "poni gauntlet",
+      "exits": {
+        "north": "battle tree",
+        "south": "poni coast"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "raticate",
+              "sos": "raticate",
+              "version": "both",
+              "method": "grass",
+              "min_level": 56,
+              "max_level": 59,
+              "rate": {
+                "night": 30
+              }
+            },
+            {
+              "name": "golduck",
+              "sos": "golduck",
+              "version": "both",
+              "method": "grass",
+              "min_level": 56,
+              "max_level": 59,
+              "rate": 15
+            },
+            {
+              "name": "granbull",
+              "sos": "granbull",
+              "version": "both",
+              "method": "grass",
+              "min_level": 56,
+              "max_level": 59,
+              "rate": 20
+            },
+            {
+              "name": "pelipper",
+              "sos": "pelipper",
+              "version": "both",
+              "method": "grass",
+              "min_level": 56,
+              "max_level": 59,
+              "rate": 30
+            },
+            {
+              "name": "gumshoos",
+              "sos": "gumshoos",
+              "version": "both",
+              "method": "grass",
+              "min_level": 56,
+              "max_level": 59,
+              "rate": {
+                "day": 30
+              }
+            },
+            {
+              "name": "bewear",
+              "sos": "bewear",
+              "version": "both",
+              "method": "grass",
+              "min_level": 56,
+              "max_level": 59,
+              "rate": 5
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "sos": [
+                "magikarp",
+                "gyarados"
+              ],
+              "version": "both",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 59,
+              "rate": {
+                "standard": 59,
+                "bubbling spot": 50
+              }
+            },
+            {
+              "name": "dratini",
+              "sos": [
+                "dratini",
+                "dragonair",
+                "dragonite"
+              ],
+              "version": "both",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 43,
+              "rate": {
+                "standard": 1,
+                "bubbling spot": 10
+              }
+            },
+            {
+              "name": "barboach",
+              "sos": [
+                "barboach",
+                "whiscash"
+              ],
+              "version": "both",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 59,
+              "rate": 40
+            }
+          ]
+        },
+        {
+          "type": "trade",
+          "available_pokemon": [
+            {
+              "name": "talonflame",
+              "sos": null,
+              "version": "both",
+              "method": "bewear",
+              "min_level": 59,
+              "max_level": 59,
+              "rate": null
+            }
+          ]
+        },
+        {
+          "type": "island scan",
+          "available_pokemon": [
+            {
+              "name": "togekiss",
+              "sos": null,
+              "version": "both",
+              "method": "tuesday",
+              "min_level": 59,
+              "max_level": 59,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "poni grove",
+      "exits": {
+        "north": "poni plains",
+        "south": "acient poni path"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "raticate",
+              "sos": "raticate",
+              "version": "both",
+              "method": "grass",
+              "min_level": 52,
+              "max_level": 55,
+              "rate": {
+                "night": 30
+              }
+            },
+            {
+              "name": "pinsir",
+              "sos": "pinsir",
+              "version": "both",
+              "method": "grass",
+              "min_level": 52,
+              "max_level": 55,
+              "rate": 10
+            },
+            {
+              "name": "granbull",
+              "sos": "granbull",
+              "version": "both",
+              "method": "grass",
+              "min_level": 52,
+              "max_level": 55,
+              "rate": 20
+            },
+            {
+              "name": "riolu",
+              "sos": [
+                "riolu",
+                "lucario",
+                "chansey"
+              ],
+              "version": "both",
+              "method": "grass",
+              "min_level": 52,
+              "max_level": 55,
+              "rate": 10
+            },
+            {
+              "name": "gumshoos",
+              "sos": "gumshoos",
+              "version": "both",
+              "method": "grass",
+              "min_level": 52,
+              "max_level": 55,
+              "rate": {
+                "day": 30
+              }
+            },
+            {
+              "name": "trumbeak",
+              "sos": "trumbeak",
+              "version": "both",
+              "method": "grass",
+              "min_level": 52,
+              "max_level": 55,
+              "rate": 30
+            }
+          ]
+        },
+        {
+          "type": "island scan",
+          "available_pokemon": [
+            {
+              "name": "eelektross",
+              "sos": null,
+              "version": "both",
+              "method": "sunday",
+              "min_level": 55,
+              "max_level": 55,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "poni meadow",
+      "exits": {
+        "access to": "resolution cave",
+        "south": "poni plains"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "cottonee",
+              "sos": "cottonee",
+              "version": "sun",
+              "method": "grass",
+              "min_level": 54,
+              "max_level": 57,
+              "rate": 50
+            },
+            {
+              "name": "petilil",
+              "sos": "petilil",
+              "version": "moon",
+              "method": "grass",
+              "min_level": 54,
+              "max_level": 57,
+              "rate": 50
+            },
+            {
+              "name": "oricorio-sensu",
+              "sos": "oricorio-sensu",
+              "version": "both",
+              "method": "grass",
+              "min_level": 54,
+              "max_level": 57,
+              "rate": 20
+            },
+            {
+              "name": "ribombee",
+              "sos": "ribombee",
+              "version": "both",
+              "method": "grass",
+              "min_level": 54,
+              "max_level": 57,
+              "rate": 30
+            }
+          ]
+        },
+        {
+          "type": "island scan",
+          "available_pokemon": [
+            {
+              "name": "leavanny",
+              "sos": null,
+              "version": "both",
+              "method": "wednesday",
+              "min_level": 57,
+              "max_level": 57,
+              "rate": "one"
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "sos": [
+                "magikarp",
+                "gyarados"
+              ],
+              "version": "both",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 57,
+              "rate": {
+                "standard": 59,
+                "bubbling spot": 50
+              }
+            },
+            {
+              "name": "dratini",
+              "sos": [
+                "dratini",
+                "dragonair"
+              ],
+              "version": "both",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 57,
+              "rate": {
+                "standard": 1,
+                "bubbling spot": 10
+              }
+            },
+            {
+              "name": "barboach",
+              "sos": [
+                "barboach",
+                "whiscash"
+              ],
+              "version": "both",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 57,
+              "rate": 40
+            }
+          ]
+        }
+      ]
     }
   ]
 }
