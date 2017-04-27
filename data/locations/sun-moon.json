@@ -6401,6 +6401,761 @@
           ]
         }
       ]
+    },
+    {
+      "name": "poni plains",
+      "exits": {
+        "north": [
+          "poni coast",
+          "poni meadow"
+        ],
+        "south": "poni grove"
+      },
+      "encounters": {
+        "areas": [
+          {
+            "name": "seven small fields of grass scattered in the middle",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "raticate",
+                    "sos": "raticate",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": {
+                      "night": 30
+                    }
+                  },
+                  {
+                    "name": "tauros",
+                    "sos": [
+                      "tauros",
+                      "miltank"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 10
+                  },
+                  {
+                    "name": "miltank",
+                    "sos": [
+                      "miltank",
+                      "tauros"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 10
+                  },
+                  {
+                    "name": "cottonee",
+                    "sos": "cottonee",
+                    "version": "sun",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 20
+                  },
+                  {
+                    "name": "petilil",
+                    "sos": "petilil",
+                    "version": "moon",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 20
+                  },
+                  {
+                    "name": "trumbeak",
+                    "sos": "trumbeak",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 30
+                  },
+                  {
+                    "name": "gumshoos",
+                    "sos": "gumshoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": {
+                      "day": 30
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "two large fields of grass in the north and around central tree",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "raticate",
+                    "sos": "raticate",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": {
+                      "night": 30
+                    }
+                  },
+                  {
+                    "name": "tauros",
+                    "sos": [
+                      "tauros",
+                      "miltank"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 10
+                  },
+                  {
+                    "name": "miltank",
+                    "sos": [
+                      "miltank",
+                      "tauros"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 10
+                  },
+                  {
+                    "name": "cottonee",
+                    "sos": "cottonee",
+                    "version": "sun",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 20
+                  },
+                  {
+                    "name": "hypno",
+                    "sos": "hypno",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 30
+                  },
+                  {
+                    "name": "petilil",
+                    "sos": "petilil",
+                    "version": "moon",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 20
+                  },
+                  {
+                    "name": "trumbeak",
+                    "sos": "trumbeak",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 10
+                  },
+                  {
+                    "name": "gumshoos",
+                    "sos": "gumshoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": {
+                      "day": 30
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "three fields of grass by the mountains",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "raticate",
+                    "sos": "raticate",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": {
+                      "night": 10
+                    }
+                  },
+                  {
+                    "name": "tauros",
+                    "sos": [
+                      "tauros",
+                      "miltank"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 10
+                  },
+                  {
+                    "name": "miltank",
+                    "sos": [
+                      "miltank",
+                      "tauros"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 10
+                  },
+                  {
+                    "name": "cottonee",
+                    "sos": "cottonee",
+                    "version": "sun",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 20
+                  },
+                  {
+                    "name": "fearow",
+                    "sos": "fearow",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 20
+                  },
+                  {
+                    "name": "petilil",
+                    "sos": "petilil",
+                    "version": "moon",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 20
+                  },
+                  {
+                    "name": "trumbeak",
+                    "sos": "trumbeak",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 10
+                  },
+                  {
+                    "name": "mudsdale",
+                    "sos": "mudsdale",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 20
+                  },
+                  {
+                    "name": "gumshoos",
+                    "sos": "gumshoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": {
+                      "day": 20
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "three fields of grass on the coastline",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "raticate",
+                    "sos": "raticate",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": {
+                      "night": 30
+                    }
+                  },
+                  {
+                    "name": "tauros",
+                    "sos": [
+                      "tauros",
+                      "miltank"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 10
+                  },
+                  {
+                    "name": "miltank",
+                    "sos": [
+                      "miltank",
+                      "tauros"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 10
+                  },
+                  {
+                    "name": "cottonee",
+                    "sos": "cottonee",
+                    "version": "sun",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 20
+                  },
+                  {
+                    "name": "pelipper",
+                    "sos": "pelipper",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 20
+                  },
+                  {
+                    "name": "petilil",
+                    "sos": "petilil",
+                    "version": "moon",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 20
+                  },
+                  {
+                    "name": "trumbeak",
+                    "sos": "trumbeak",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 10
+                  },
+                  {
+                    "name": "gumshoos",
+                    "sos": "gumshoos",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": {
+                      "day": 30
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "all",
+            "encounters": [
+              {
+                "type": "ambush",
+                "available_pokemon": [
+                  {
+                    "name": "raticate",
+                    "sos": "raticate",
+                    "version": "both",
+                    "method": "rustling grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": {
+                      "night": 70
+                    }
+                  },
+                  {
+                    "name": "gumshoos",
+                    "sos": "gumshoos",
+                    "version": "both",
+                    "method": "rustling grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": {
+                      "day": 70
+                    }
+                  },
+                  {
+                    "name": "hariyama",
+                    "sos": "hariyama",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 30
+                  },
+                  {
+                    "name": "fearow",
+                    "sos": "fearow",
+                    "version": "both",
+                    "method": "shadow",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 70
+                  },
+                  {
+                    "name": "braviary",
+                    "sos": "braviary",
+                    "version": "sun",
+                    "method": "shadow",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 30
+                  },
+                  {
+                    "name": "mandibuzz",
+                    "sos": "mandibuzz",
+                    "version": "moon",
+                    "method": "shadow",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 30
+                  },
+                  {
+                    "name": "primeape",
+                    "sos": "primeape",
+                    "version": "both",
+                    "method": "rustling trees",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 80
+                  },
+                  {
+                    "name": "emolga",
+                    "sos": "emolga",
+                    "version": "both",
+                    "method": "rustling trees",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 20
+                  },
+                  {
+                    "name": "scyther",
+                    "sos": "scyther",
+                    "version": "both",
+                    "method": "rustling bush",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 30
+                  },
+                  {
+                    "name": "cottonee",
+                    "sos": "cottonee",
+                    "version": "sun",
+                    "method": "rustling bush",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 70
+                  },
+                  {
+                    "name": "petilil",
+                    "sos": "petilil",
+                    "version": "moon",
+                    "method": "rustling bush",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 70
+                  }
+                ]
+              },
+              {
+                "type": "interaction",
+                "available_pokemon": [
+                  {
+                    "name": "crabrawler",
+                    "sos": "crabrawler",
+                    "version": "both",
+                    "method": "berry pile",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": 100
+                  }
+                ]
+              },
+              {
+                "type": "island scan",
+                "available_pokemon": [
+                  {
+                    "name": "conkeldurr",
+                    "sos": null,
+                    "version": "both",
+                    "method": "monday",
+                    "min_level": 54,
+                    "max_level": 57,
+                    "rate": "one"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "poni wilds",
+      "exits": {
+        "east": "acient poni path",
+        "south": "seafolk village"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "raticate",
+              "sos": "raticate",
+              "version": "both",
+              "method": "grass",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": {
+                "night": 30
+              }
+            },
+            {
+              "name": "gumshoos",
+              "sos": "gumshoos",
+              "version": "both",
+              "method": "grass",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": {
+                "day": 30
+              }
+            },
+            {
+              "name": "exeggcute",
+              "sos": "exeggcute",
+              "version": "both",
+              "method": "grass",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 10
+            },
+            {
+              "name": "granbull",
+              "sos": "granbull",
+              "version": "both",
+              "method": "grass",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 20
+            },
+            {
+              "name": "pelipper",
+              "sos": "pelipper",
+              "version": "both",
+              "method": "grass",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 30
+            },
+            {
+              "name": "gastrodon",
+              "sos": "gastrodon",
+              "version": "both",
+              "method": "grass",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "crabrawler",
+              "sos": "crabrawler",
+              "version": "both",
+              "method": "berry piles",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 100
+            }
+          ]
+        },
+        {
+          "type": "island scan",
+          "available_pokemon": [
+            {
+              "name": "samurott",
+              "sos": null,
+              "version": "both",
+              "method": "friday",
+              "min_level": 43,
+              "max_level": 43,
+              "rate": "one"
+            }
+          ]
+        },
+        {
+          "type": "ambush",
+          "available_pokemon": [
+            {
+              "name": "wimpod",
+              "sos": null,
+              "version": "both",
+              "method": "chase",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 100
+            },
+            {
+              "name": "wailmer",
+              "sos": "wailmer",
+              "version": "both",
+              "method": "splashing water",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 90
+            },
+            {
+              "name": "wailord",
+              "sos": "wailord",
+              "version": "both",
+              "method": "splashing water",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 10
+            }
+          ]
+        },
+        {
+          "type": "surfing",
+          "available_pokemon": [
+            {
+              "name": "tentacruel",
+              "sos": [
+                "tentacruel",
+                "lumineon"
+              ],
+              "version": "both",
+              "method": "water",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 30
+            },
+            {
+              "name": "lapras",
+              "sos": "lapras",
+              "version": "both",
+              "method": "water",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 5
+            },
+            {
+              "name": "pelipper",
+              "sos": "pelipper",
+              "version": "both",
+              "method": "water",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 20
+            },
+            {
+              "name": "gastrodon",
+              "sos": "gastrodon",
+              "version": "both",
+              "method": "water",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 20
+            },
+            {
+              "name": "lumineon",
+              "sos": "lumineon",
+              "version": "both",
+              "method": "water",
+              "min_level": 40,
+              "max_level": 43,
+              "rate": 25
+            }
+          ]
+        },
+        {
+          "type": "fishing",
+          "available_pokemon": [
+            {
+              "name": "magikarp",
+              "sos": [
+                "magikarp",
+                "gyarados"
+              ],
+              "version": "both",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 43,
+              "rate": {
+                "standard": 79,
+                "bubbling spot": 50
+              }
+            },
+            {
+              "name": "wailmer",
+              "sos": [
+                "wailmer",
+                "wailord"
+              ],
+              "version": "both",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 43,
+              "rate": {
+                "standard": 20,
+                "bubbling spot": 40
+              }
+            },
+            {
+              "name": "relicanth",
+              "sos": "relicanth",
+              "version": "both",
+              "method": "rod",
+              "min_level": 10,
+              "max_level": 43,
+              "rate": {
+                "standard": 1,
+                "bubbling spot": 10
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
