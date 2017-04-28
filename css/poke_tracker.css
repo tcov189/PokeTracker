@@ -3614,7 +3614,9 @@ hr {
   background-position: -204px -1652px;
 }
 .sprites.dhelmise {
-  background-position: -244px -1652px;
+  height: 30px;
+
+  background-position: -244px -1650px;
 }
 .sprites.jangmo-o {
   background-position: -284px -1652px;
@@ -3626,7 +3628,7 @@ hr {
   background-position: -364px -1652px;
 }
 .sprites.tapu.koko {
-  background-position: -404px -1652px;
+  background-position: -404px -1650px;
 }
 .sprites.tapu.lele {
   background-position: -444px -1652px;
