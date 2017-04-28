@@ -7156,6 +7156,81 @@
           ]
         }
       ]
+    },
+    {
+      "name": "resolution cave",
+      "exits": {
+        "south": "poni meadow"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "golbat",
+              "sos": [
+                "golbat",
+                "crobat"
+              ],
+              "version": "both",
+              "method": "cave",
+              "min_level": 54,
+              "max_level": 57,
+              "rate": 70
+            },
+            {
+              "name": "dugtrio",
+              "sos": "dugtrio",
+              "version": "both",
+              "method": "cave",
+              "min_level": 54,
+              "max_level": 57,
+              "rate": 30
+            },
+            {
+              "name": "guzzlord",
+              "sos": null,
+              "version": "both",
+              "method": "cave",
+              "min_level": 70,
+              "max_level": 70,
+              "rate": {
+                "b1f": "one"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "royal avenue",
+      "exits": {
+        "north": "route 7",
+        "west": "route 6"
+      },
+      "encounters": null
+    },
+    {
+      "name": "ruins of abundance",
+      "exits": {
+        "south": "hania desert"
+      },
+      "encounters": [
+        {
+          "type": "interaction",
+          "available_pokemon": [
+            {
+              "name": "tapu bulu",
+              "sos": null,
+              "version": "both",
+              "method": "static",
+              "min_level": 60,
+              "max_level": 60,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
