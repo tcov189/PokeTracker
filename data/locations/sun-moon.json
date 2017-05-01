@@ -8285,6 +8285,152 @@
           }
         ]
       }
+    },
+    {
+      "name": "verdant cavern",
+      "exits": {
+        "access to": "route 2"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "zubat",
+              "sos": "zubat",
+              "version": "both",
+              "method": "cave",
+              "min_level": 8,
+              "max_level": 11,
+              "rate": 70
+            },
+            {
+              "name": "diglett",
+              "sos": "diglett",
+              "version": "both",
+              "method": "cave",
+              "min_level": 8,
+              "max_level": 11,
+              "rate": 30
+            }
+          ]
+        },
+        {
+          "type": "ambush",
+          "available_pokemon": [
+            {
+              "name": "rattata",
+              "sos": "rattata",
+              "version": "moon",
+              "method": "dirt cloud",
+              "min_level": 11,
+              "max_level": 11,
+              "rate": 100
+            },
+            {
+              "name": "yungoos",
+              "sos": "yungoos",
+              "version": "sun",
+              "method": "dirt cloud",
+              "min_level": 11,
+              "max_level": 11,
+              "rate": 100
+            }
+          ]
+        },
+        {
+          "type": "special",
+          "available_pokemon": [
+            {
+              "name": "pheromosa",
+              "sos": null,
+              "version": "moon",
+              "method": "cave",
+              "min_level": 60,
+              "max_level": 60,
+              "rate": "four"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "wela volcano park",
+      "exits": {
+        "access to": "route 7"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "cubone",
+              "sos": [
+                "cubone",
+                "kangaskhan"
+              ],
+              "version": "both",
+              "method": "grass",
+              "min_level": 16,
+              "max_level": 19,
+              "rate": 24
+            },
+            {
+              "name": "kangaskhan",
+              "sos": "kangaskhan",
+              "version": "both",
+              "method": "grass",
+              "min_level": 16,
+              "max_level": 19,
+              "rate": 1
+            },
+            {
+              "name": "magby",
+              "sos": [
+                "magby",
+                "magmar"
+              ],
+              "version": "both",
+              "method": "grass",
+              "min_level": 16,
+              "max_level": 19,
+              "rate": 15
+            },
+            {
+              "name": "fletchling",
+              "sos": "fletchling",
+              "version": "both",
+              "method": "grass",
+              "min_level": 16,
+              "max_level": 19,
+              "rate": 30
+            },
+            {
+              "name": "salandit",
+              "sos": "salandit",
+              "version": "both",
+              "method": "grass",
+              "min_level": 16,
+              "max_level": 19,
+              "rate": 30
+            }
+          ]
+        },
+        {
+          "type": "special",
+          "available_pokemon": [
+            {
+              "name": "nihilego",
+              "sos": null,
+              "version": "both",
+              "method": "grass",
+              "min_level": 55,
+              "max_level": 55,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
