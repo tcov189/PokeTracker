@@ -7968,6 +7968,93 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ula'ula meadow",
+      "exits": {
+        "north": "route 17",
+        "south": "route 16",
+        "east": "altar of the moone/sunne"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "ledian",
+              "sos": "ledian",
+              "version": "both",
+              "method": "grass",
+              "min_level": 31,
+              "max_level": 34,
+              "rate": {
+                "day": 20
+              }
+            },
+            {
+              "name": "ariados",
+              "sos": "ariados",
+              "version": "both",
+              "method": "grass",
+              "min_level": 31,
+              "max_level": 34,
+              "rate": {
+                "night": 20
+              }
+            },
+            {
+              "name": "cottonee",
+              "sos": "cottonee",
+              "version": "sun",
+              "method": "grass",
+              "min_level": 31,
+              "max_level": 34,
+              "rate": 30
+            },
+            {
+              "name": "petilil",
+              "sos": "petilil",
+              "version": "moon",
+              "method": "grass",
+              "min_level": 31,
+              "max_level": 34,
+              "rate": 30
+            },
+            {
+              "name": "oricorio-balie",
+              "sos": "oricorio-balie",
+              "version": "both",
+              "method": "grass",
+              "min_level": 31,
+              "max_level": 34,
+              "rate": 30
+            },
+            {
+              "name": "ribombee",
+              "sos": "ribombee",
+              "version": "both",
+              "method": "grass",
+              "min_level": 31,
+              "max_level": 34,
+              "rate": 30
+            }
+          ]
+        },
+        {
+          "type": "island scan",
+          "available_pokemon": [
+            {
+              "name": "roselia",
+              "sos": "roselia",
+              "version": "both",
+              "method": "wednesday",
+              "min_level": 31,
+              "max_level": 34,
+              "rate": "one"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
