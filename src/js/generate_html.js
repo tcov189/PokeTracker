@@ -83,10 +83,14 @@ function generateHtml() {
 $('.block-route-header h3').text(currentLocationData.name);
 
 //Exits
-exitInfo = [];
+
+//If there are already buttons, remove them
+if ($('.block-route-paths').html().length > 0) {
+    $('.block-route-paths').empty();
+}
     
 $.each(currentLocationData.exits, function (direction, loc_name) {
-    var theHtml = '<div class="block-path-group">' +
+    var theHtml = '<div class="block-path-group block-path-group_'+ direction +'">' +
                   '<span class="block-path-group_direction">'+ direction +'</span>';
         if (typeof loc_name == 'object') {
             for (var i = 0; i < loc_name.length; i++) {
@@ -96,18 +100,9 @@ $.each(currentLocationData.exits, function (direction, loc_name) {
             theHtml += '<button class="button button_route" type="button">'+ loc_name +'</button>' +
                   '</div>';   
         }      
-    exitInfo.push(theHtml);
+        
+        $('.block-route-paths').append(theHtml);    
 });
-
-//If there are already buttons, remove them
-if ($('.block-route-paths').html().length > 0) {
-    $('.block-route-paths').empty();
-}
-
-$.each(exitInfo, function(i, html){
-    $('.block-route-paths').append(html);
-});
-
     
 //Encounters
 encountersInfo = [];

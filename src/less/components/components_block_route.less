@@ -25,23 +25,48 @@
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+        text-transform: capitalize;
         
         .block-path-group {
-            display: flex;       
-            flex: 1 1 50%;
+            display: flex;                   
             flex-direction: column;
             font-size: .9rem;
             padding-bottom: .75rem;
             align-items: flex-start;
-            text-transform: capitalize;
-            
-            &:nth-child(2n){
-                align-items: flex-end;
-                padding-right: .2rem;
-            }
+            text-transform: capitalize;                      
             
             &_direction{
                 font-weight: 700;
+            }
+            
+            &_north {
+                flex-grow: 1;
+                flex-basis: 100%;
+                order: -5;
+            }
+            
+            &_east {
+                flex-grow: 1;
+                flex-basis: 50%;
+                order: -4;
+            }
+            
+            &_west {
+                flex-grow: 1;
+                flex-basis: 50%;
+                order: -3;
+            }
+            
+            &_south {
+                flex-grow: 1;
+                flex-basis: 100%;
+                order: -2;
+            }
+            
+            &_access-to {
+                flex-grow: 1;
+                flex-basis: 100%;
+                order: -1;
             }
         }
     }
