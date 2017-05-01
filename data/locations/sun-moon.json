@@ -8055,6 +8055,236 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ultra space",
+      "exits": {
+        "access to": "altar of the moone/sunne"
+      },
+      "encounters": null
+    },
+    {
+      "name": "vast poni canyon",
+      "exits": {
+        "north": "altar of the moone/sunne",
+        "south": "ancient poni path"
+      },
+      "encounters": {
+        "areas": [
+          {
+            "name": "outside",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "machoke",
+                    "sos": "machoke",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 41,
+                    "max_level": 44,
+                    "rate": 30
+                  },
+                  {
+                    "name": "murkrow",
+                    "sos": "murkrow",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 41,
+                    "max_level": 44,
+                    "rate": 10
+                  },
+                  {
+                    "name": "skarmory",
+                    "sos": "skarmory",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 41,
+                    "max_level": 44,
+                    "rate": 10
+                  },
+                  {
+                    "name": "boldore",
+                    "sos": "boldore",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 41,
+                    "max_level": 44,
+                    "rate": 10
+                  },
+                  {
+                    "name": "carbink",
+                    "sos": "carbink",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 41,
+                    "max_level": 44,
+                    "rate": 15
+                  },
+                  {
+                    "name": "lycanroc",
+                    "sos": "lycanroc",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 41,
+                    "max_level": 44,
+                    "rate": {
+                      "day(midday form)": 20,
+                      "night(midnight form)": 20
+                    }
+                  },
+                  {
+                    "name": "jangmo-o",
+                    "sos": [
+                      "hakamo-o",
+                      "kommo-o"
+                    ],
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 41,
+                    "max_level": 44,
+                    "rate": 5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "caves",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "golbat",
+                    "sos": "golbat",
+                    "version": "both",
+                    "method": "cave",
+                    "min_level": 41,
+                    "max_level": 44,
+                    "rate": 30
+                  },
+                  {
+                    "name": "dugtrio",
+                    "sos": "dugtrio",
+                    "version": "both",
+                    "method": "cave",
+                    "min_level": 41,
+                    "max_level": 44,
+                    "rate": 20
+                  },
+                  {
+                    "name": "boldore",
+                    "sos": "boldore",
+                    "version": "both",
+                    "method": "cave",
+                    "min_level": 41,
+                    "max_level": 44,
+                    "rate": 30
+                  },
+                  {
+                    "name": "carbink",
+                    "sos": [
+                      "carbink",
+                      "sableye"
+                    ],
+                    "version": "both",
+                    "method": "cave",
+                    "min_level": 41,
+                    "max_level": 44,
+                    "rate": 20
+                  }
+                ]
+              },
+              {
+                "type": "ambush",
+                "available_pokemon": [
+                  {
+                    "name": "dugtrio",
+                    "sos": "dugtrio",
+                    "version": "both",
+                    "method": "dirt cloud",
+                    "min_level": 41,
+                    "max_level": 44,
+                    "rate": 100
+                  }
+                ]
+              },
+              {
+                "type": "surfing",
+                "available_pokemon": [
+                  {
+                    "name": "golbat",
+                    "sos": "golbat",
+                    "version": "both",
+                    "method": "water",
+                    "min_level": 41,
+                    "max_level": 44,
+                    "rate": 80
+                  },
+                  {
+                    "name": "golduck",
+                    "sos": "golduck",
+                    "version": "both",
+                    "method": "water",
+                    "min_level": 41,
+                    "max_level": 44,
+                    "rate": 20
+                  }
+                ]
+              },
+              {
+                "type": "fishing",
+                "available_pokemon": [
+                  {
+                    "name": "magikarp",
+                    "sos": [
+                      "magikarp",
+                      "gyarados"
+                    ],
+                    "version": "both",
+                    "method": "water",
+                    "min_level": 10,
+                    "max_level": 44,
+                    "rate": {
+                      "standard": 59,
+                      "bubbling spot": 50
+                    }
+                  },
+                  {
+                    "name": "dratini",
+                    "sos": [
+                      "dratini",
+                      "dragonair"
+                    ],
+                    "version": "both",
+                    "method": "water",
+                    "min_level": 10,
+                    "max_level": 44,
+                    "rate": {
+                      "standard": 1,
+                      "bubbling spot": 10
+                    }
+                  },
+                  {
+                    "name": "barboach",
+                    "sos": [
+                      "barboach",
+                      "whiscash"
+                    ],
+                    "version": "both",
+                    "method": "water",
+                    "min_level": 10,
+                    "max_level": 44,
+                    "rate": 40
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   ]
 }
