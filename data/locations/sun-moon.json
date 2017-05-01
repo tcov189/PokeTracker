@@ -7916,6 +7916,58 @@
           }
         ]
       }
+    },
+    {
+      "name": "thrifty megamart",
+      "exits": {
+        "east": "route 14"
+      },
+      "encounters": [
+        {
+          "type": "walking",
+          "available_pokemon": [
+            {
+              "name": "golbat",
+              "sos": "golbat",
+              "version": "both",
+              "method": "interior",
+              "min_level": 29,
+              "max_level": 32,
+              "rate": 40
+            },
+            {
+              "name": "haunter",
+              "sos": [
+                "haunter",
+                "gengar"
+              ],
+              "version": "both",
+              "method": "interior",
+              "min_level": 29,
+              "max_level": 32,
+              "rate": 40
+            },
+            {
+              "name": "klefki",
+              "sos": "klefki",
+              "version": "both",
+              "method": "interior",
+              "min_level": 29,
+              "max_level": 32,
+              "rate": 15
+            },
+            {
+              "name": "mimikyu",
+              "sos": "mimikyu",
+              "version": "both",
+              "method": "interior",
+              "min_level": 29,
+              "max_level": 32,
+              "rate": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
