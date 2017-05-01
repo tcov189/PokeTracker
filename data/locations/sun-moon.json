@@ -7751,6 +7751,171 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ten carat hill",
+      "exits": {
+        "east": "route 1"
+      },
+      "encounters": {
+        "areas": [
+          {
+            "name": "cave and ocean cave",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "zubat",
+                    "sos": "zubat",
+                    "version": "both",
+                    "method": "cave",
+                    "min_level": 10,
+                    "max_level": 13,
+                    "rate": 30
+                  },
+                  {
+                    "name": "diglett",
+                    "sos": "diglett",
+                    "version": "both",
+                    "method": "cave",
+                    "min_level": 10,
+                    "max_level": 13,
+                    "rate": 20
+                  },
+                  {
+                    "name": "roggenrola",
+                    "sos": "roggenrola",
+                    "version": "both",
+                    "method": "cave",
+                    "min_level": 10,
+                    "max_level": 13,
+                    "rate": 30
+                  },
+                  {
+                    "name": "carbink",
+                    "sos": [
+                      "carbink",
+                      "sableye"
+                    ],
+                    "version": "both",
+                    "method": "cave",
+                    "min_level": 10,
+                    "max_level": 13,
+                    "rate": 20
+                  }
+                ]
+              },
+              {
+                "type": "surfing",
+                "available_pokemon": [
+                  {
+                    "name": "zubat",
+                    "sos": "zubat",
+                    "version": "both",
+                    "method": "water",
+                    "min_level": 15,
+                    "max_level": 18,
+                    "rate": 80
+                  },
+                  {
+                    "name": "psyduck",
+                    "sos": "psyduck",
+                    "version": "both",
+                    "method": "water",
+                    "min_level": 15,
+                    "max_level": 18,
+                    "rate": 20
+                  }
+                ]
+              },
+              {
+                "type": "island scan",
+                "available_pokemon": [
+                  {
+                    "name": "deino",
+                    "sos": "deino",
+                    "version": "both",
+                    "method": "tuesday",
+                    "min_level": 13,
+                    "max_level": 13,
+                    "rate": "one"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "farthest hollow",
+            "encounters": [
+              {
+                "type": "walking",
+                "available_pokemon": [
+                  {
+                    "name": "machop",
+                    "sos": "machop",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 10,
+                    "max_level": 13,
+                    "rate": 30
+                  },
+                  {
+                    "name": "spinda",
+                    "sos": "spinda",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 10,
+                    "max_level": 13,
+                    "rate": 10
+                  },
+                  {
+                    "name": "roggenrola",
+                    "sos": "roggenrola",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 10,
+                    "max_level": 13,
+                    "rate": 20
+                  },
+                  {
+                    "name": "carbink",
+                    "sos": "carbink",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 10,
+                    "max_level": 13,
+                    "rate": 20
+                  },
+                  {
+                    "name": "rockruff",
+                    "sos": "rockruff",
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 10,
+                    "max_level": 13,
+                    "rate": 20
+                  }
+                ]
+              },
+              {
+                "type": "special",
+                "available_pokemon": [
+                  {
+                    "name": "necrozma",
+                    "sos": null,
+                    "version": "both",
+                    "method": "grass",
+                    "min_level": 75,
+                    "max_level": 75,
+                    "rate": "one"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   ]
 }
