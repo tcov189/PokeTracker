@@ -521,6 +521,8 @@ hr {
   background-image: url("../images/cog.png");
 }
 .button.button_route {
+  margin: 0.25rem;
+
   text-transform: capitalize;
 
   color: #f2f2f2;
@@ -620,7 +622,6 @@ hr {
 .block-route-info .block-route-paths .block-path-group {
   display: -ms-flexbox;
   display: flex;
-      flex: 1 1 50%;
       flex-direction: column;
   align-items: flex-start;
 
@@ -630,25 +631,17 @@ hr {
 
   font-size: 0.9rem;
 
-  -ms-flex: 1 1 50%;
   -ms-flex-direction: column;
   -ms-flex-align: start;
-}
-.block-route-info .block-route-paths .block-path-group:nth-child(2n) {
-  align-items: flex-end;
-
-  padding-right: 0.2rem;
-
-  -ms-flex-align: end;
 }
 .block-route-info .block-route-paths .block-path-group_direction {
   font-weight: 700;
 }
-.block-route-info .block-route-paths .block-path-group_north {
+.block-route-info .block-route-paths .block-path-group_access_to {
   -ms-flex-order: -5;
   order: -5;
 }
-.block-route-info .block-route-paths .block-path-group_west {
+.block-route-info .block-route-paths .block-path-group_north {
   -ms-flex-order: -4;
   order: -4;
 }
@@ -659,6 +652,10 @@ hr {
 .block-route-info .block-route-paths .block-path-group_south {
   -ms-flex-order: -2;
   order: -2;
+}
+.block-route-info .block-route-paths .block-path-group_west {
+  -ms-flex-order: -1;
+  order: -1;
 }
 .block-route-map {
   display: -ms-flexbox;

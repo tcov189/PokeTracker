@@ -88,10 +88,13 @@ $('.block-route-header h3').text(currentLocationData.name);
 if ($('.block-route-paths').html().length > 0) {
     $('.block-route-paths').empty();
 }
+
     
-$.each(currentLocationData.exits, function (direction, loc_name) {
+$.each(currentLocationData.exits, function (direction, loc_name) {    
+    var directionFormatted = direction.split('_').join(' ');
+    
     var theHtml = '<div class="block-path-group block-path-group_'+ direction +'">' +
-                  '<span class="block-path-group_direction">'+ direction +'</span>';
+                  '<span class="block-path-group_direction">'+ directionFormatted +'</span>';
         if (typeof loc_name == 'object') {
             for (var i = 0; i < loc_name.length; i++) {
                 theHtml += '<button class="button button_route" type="button">'+ loc_name[i] +'</button>';

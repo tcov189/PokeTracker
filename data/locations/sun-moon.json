@@ -5,13 +5,13 @@
     {
       "name": "route 1",
       "exits": {
+        "access_to": "ten carat hill",
         "north": [
           "route 3",
           "iki town"
         ],
         "south": "melemele sea",
-        "west": "hau'oli city",
-        "access to": "ten carat hill"
+        "west": "hau'oli city"
       },
       "encounters": {
         "areas": [
@@ -494,13 +494,13 @@
     {
       "name": "route 2",
       "exits": {
-        "north": "route 3",
-        "east": "hau'oli cemetery",
-        "south": "hau'oli city",
-        "access to": [
+        "access_to": [
           "berry fields",
           "verdant cavern"
-        ]
+        ],
+        "east": "hau'oli cemetery",
+        "north": "route 3",
+        "south": "hau'oli city"
       },
       "encounters": {
         "areas": [
@@ -727,9 +727,9 @@
     {
       "name": "route 3",
       "exits": {
-        "west": "route 2",
+        "access_to": "melemele meadow",
         "south": "route 1",
-        "access to": "melemele meadow"
+        "west": "route 2"
       },
       "encounters": {
         "areas": [
@@ -1087,13 +1087,13 @@
     {
       "name": "route 5",
       "exits": {
+        "access_to": [
+          "brooklet hill",
+          "lush jungle"
+        ],
         "south": [
           "route 6",
           "paniola ranch"
-        ],
-        "access to": [
-          "brooklet hill",
-          "lush jungle"
         ]
       },
       "encounters": {
@@ -1328,9 +1328,9 @@
     {
       "name": "route 6",
       "exits": {
+        "east": "royal avenue",
         "north": "route 5",
         "south": "heahea city",
-        "east": "royal avenue",
         "west": "paniola town"
       },
       "encounters": {
@@ -1897,9 +1897,9 @@
     {
       "name": "route 9",
       "exits": {
-        "north": "konikoni city",
+        "access_to": "diglett's tunnel",
         "east": "memorial hill",
-        "access to": "diglett's tunnel"
+        "north": "konikoni city"
       },
       "encounters": [
         {
@@ -1954,8 +1954,8 @@
     {
       "name": "route 10",
       "exits": {
-        "east": "malie city",
-        "access to": "mount hokulani"
+        "access_to": "mount hokulani",
+        "east": "malie city"
       },
       "encounters": [
         {
@@ -2093,8 +2093,8 @@
     {
       "name": "route 11",
       "exits": {
-        "north": "malie city",
-        "east": "route 12"
+        "east": "route 12",
+        "north": "malie city"
       },
       "encounters": [
         {
@@ -2239,10 +2239,10 @@
     {
       "name": "route 12",
       "exits": {
+        "access_to": "blush mountain",
         "north": "route 11",
         "south": "secluded shore",
-        "west": "route 13",
-        "access to": "blush mountain"
+        "west": "route 13"
       },
       "encounters": [
         {
@@ -2348,7 +2348,7 @@
     {
       "name": "route 14",
       "exits": {
-        "access to": "thrifty megamart",
+        "access_to": "thrifty megamart",
         "north": "tapu village"
       },
       "encounters": [
@@ -2433,9 +2433,9 @@
     {
       "name": "route 15",
       "exits": {
-        "north": "route 16",
+        "access_to": "route 8",
         "east": "tapu village",
-        "access to": "route 8"
+        "north": "route 16"
       },
       "encounters": [
         {
@@ -2659,8 +2659,8 @@
     {
       "name": "route 17",
       "exits": {
-        "south": "ula'ula meadow ",
-        "access to": "po town"
+        "access_to": "po town",
+        "south": "ula'ula meadow "
       },
       "encounters": {
         "areas": [
@@ -2894,7 +2894,7 @@
     {
       "name": "aether paradise",
       "exits": {
-        "access to": [
+        "access_to": [
           "hau'oli city",
           "heahea city",
           "malie city",
@@ -3073,12 +3073,12 @@
     {
       "name": "ancient poni path",
       "exits": {
-        "north": "vast poni canyon",
-        "west": "poni wilds",
         "east": [
           "poni grove",
           "poni breaker grove"
-        ]
+        ],
+        "north": "vast poni canyon",
+        "west": "poni wilds"
       },
       "encounters": [
         {
@@ -3792,7 +3792,7 @@
     {
       "name": "exeggutor island",
       "exits": {
-        "access to": "seafolk village"
+        "access_to": "seafolk village"
       },
       "encounters": [
         {
@@ -4117,14 +4117,14 @@
     {
       "name": "hau'oli city",
       "exits": {
-        "north": "route 2",
-        "south": "melemele sea",
-        "access to": [
+        "access_to": [
           "aether paradise",
           "heahea city",
           "malie city",
           "seafolk village"
-        ]
+        ],
+        "north": "route 2",
+        "south": "melemele sea"
       },
       "encounters": {
         "areas": [
@@ -4288,17 +4288,17 @@
     {
       "name": "heahea city",
       "exits": {
-        "north": [
-          "route 4",
-          "route 6"
-        ],
-        "south": "diglett's tunnel",
-        "access to": [
+        "access_to": [
           "aether paradise",
           "hau'oli city",
           "malie city",
           "seafolk village"
-        ]
+        ],
+        "north": [
+          "route 4",
+          "route 6"
+        ],
+        "south": "diglett's tunnel"
       },
       "encounters": null
     },
@@ -4312,8 +4312,8 @@
     {
       "name": "iki town",
       "exits": {
-        "south": "route 1",
-        "north": "mahalo trail"
+        "north": "mahalo trail",
+        "south": "route 1"
       },
       "encounters": [
         {
@@ -4353,7 +4353,7 @@
     {
       "name": "kala'e bay",
       "exits": {
-        "access to": "seaward cave"
+        "access_to": "seaward cave"
       },
       "encounters": [
         {
@@ -4552,11 +4552,11 @@
     {
       "name": "lush jungle",
       "exits": {
+        "south": "route 5",
         "north": [
           "route 3",
           "iki town"
         ],
-        "south": "route 5",
         "east": "route 8"
       },
       "encounters": {
@@ -4931,15 +4931,15 @@
     {
       "name": "malie city",
       "exits": {
-        "north": "malie garden",
-        "south": "route 11",
-        "west": "route 10",
-        "access to": [
+        "access_to": [
           "aether paradise",
           "hau'oli city",
           "heahea city",
           "seafolk village"
-        ]
+        ],
+        "north": "malie garden",
+        "south": "route 11",
+        "west": "route 10"
       },
       "encounters": {
         "areas": [
@@ -5315,8 +5315,8 @@
     {
       "name": "melemele meadow",
       "exits": {
-        "east": "route 3",
-        "access to": "seaward cave"
+        "access_to": "seaward cave",
+        "east": "route 3"
       },
       "encounters": [
         {
@@ -5412,11 +5412,11 @@
     {
       "name": "melemele sea",
       "exits": {
+        "access_to": "ten carat hill",
         "north": [
           "route 1",
           "hau'oli city"
-        ],
-        "access to": "ten carat hill"
+        ]
       },
       "encounters": [
         {
@@ -5567,7 +5567,7 @@
     {
       "name": "mount hokulani",
       "exits": {
-        "access to": [
+        "access_to": [
           "route 10",
           "hokulani observatory"
         ],
@@ -5661,7 +5661,7 @@
     {
       "name": "mount lanakila",
       "exits": {
-        "access to": "pokemon league",
+        "access_to": "pokemon league",
         "south": "tapu village"
       },
       "encounters": {
@@ -5832,11 +5832,11 @@
     {
       "name": "paniola ranch",
       "exits": {
+        "north": "route 5",
         "south": [
           "route 6",
           "paniola town"
-        ],
-        "north": "route 5"
+        ]
       },
       "encounters": [
         {
@@ -5905,8 +5905,8 @@
     {
       "name": "paniola town",
       "exits": {
-        "south": "route 4",
-        "north": "paniola ranch"
+        "north": "paniola ranch",
+        "south": "route 4"
       },
       "encounters": [
         {
@@ -5963,8 +5963,8 @@
     {
       "name": "poni breaker coast",
       "exits": {
-        "north": "acient poni path",
-        "east": "ruins of hope"
+        "east": "ruins of hope",
+        "north": "acient poni path"
       },
       "encounters": [
         {
@@ -6294,7 +6294,7 @@
     {
       "name": "poni meadow",
       "exits": {
-        "access to": "resolution cave",
+        "access_to": "resolution cave",
         "south": "poni plains"
       },
       "encounters": [
@@ -7301,14 +7301,14 @@
     {
       "name": "seafolk village",
       "exits": {
-        "north": "poni wilds",
-        "access to": [
+        "access_to": [
           "aether paradise",
           "exeggutor island",
           "hau'oli city",
           "heahea city",
           "malie city"
-        ]
+        ],
+        "north": "poni wilds"
       },
       "encounters": [
         {
@@ -7391,8 +7391,8 @@
     {
       "name": "seaward cave",
       "exits": {
-        "north": "melemlele meadow",
-        "east": "kala'e bay"
+        "east": "kala'e bay",
+        "north": "melemlele meadow"
       },
       "encounters": [
         {
@@ -7600,9 +7600,9 @@
     {
       "name": "tapu village",
       "exits": {
+        "east": "route 13",
         "north": "mount lankila",
         "south": "route 14",
-        "east": "route 13",
         "west": "route 15"
       },
       "encounters": [
@@ -7972,9 +7972,9 @@
     {
       "name": "ula'ula meadow",
       "exits": {
+        "east": "altar of the moone/sunne",
         "north": "route 17",
-        "south": "route 16",
-        "east": "altar of the moone/sunne"
+        "south": "route 16"
       },
       "encounters": [
         {
@@ -8059,7 +8059,7 @@
     {
       "name": "ultra space",
       "exits": {
-        "access to": "altar of the moone/sunne"
+        "access_to": "altar of the moone/sunne"
       },
       "encounters": null
     },
@@ -8289,7 +8289,7 @@
     {
       "name": "verdant cavern",
       "exits": {
-        "access to": "route 2"
+        "access_to": "route 2"
       },
       "encounters": [
         {
@@ -8357,7 +8357,7 @@
     {
       "name": "wela volcano park",
       "exits": {
-        "access to": "route 7"
+        "access_to": "route 7"
       },
       "encounters": [
         {
