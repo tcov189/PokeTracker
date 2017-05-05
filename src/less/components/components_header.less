@@ -16,10 +16,20 @@
     align-items: center;    
     
     .header-game-icon {        
+            height: 40px;
+            width: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
 
-        &__oras {
-            height: 1.5rem;
-            width: 1.7rem;
+        &__sun:extend(.header-game-block .header-game-icon) {
+            background-image: url('../images/game-icons/pokemon-sun-logo.png');
+            background-size: contain;
+        }
+        
+        &__moon:extend(.header-game-block .header-game-icon) {
+            background-image: url('../images/game-icons/pokemon-moon-logo.png');
+            background-size: contain;
         }
     }
 }

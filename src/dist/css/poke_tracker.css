@@ -340,9 +340,23 @@ hr {
   -webkit-align-items: center;
   -ms-flex-align: center;
 }
-.header-game-block .header-game-icon__oras {
-  width: 1.7rem;
-  height: 1.5rem;
+.header-game-block .header-game-icon,
+.header-game-block .header-game-icon__sun,
+.header-game-block .header-game-icon__moon {
+  width: 100px;
+  height: 40px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.header-game-block .header-game-icon__sun {
+  background-image: url("../images/game-icons/pokemon-sun-logo.png");
+  background-size: contain;
+}
+.header-game-block .header-game-icon__moon {
+  background-image: url("../images/game-icons/pokemon-moon-logo.png");
+  background-size: contain;
 }
 .header-brand {
   display: -webkit-flex;
@@ -465,13 +479,13 @@ hr {
   width: 39px;
   height: 40px;
 
-  background: url("../images/poketracker-map.png") no-repeat;
+  background: url("../images/icons/poketracker-map.png") no-repeat;
 }
 .backToTopIcon {
   width: 50px;
   height: 50px;
 
-  background: url("../images/arrow.png") no-repeat;
+  background: url("../images/icons/arrow.png") no-repeat;
 }
 .magnifyingGlassIcon {
   width: 28px;
@@ -480,18 +494,18 @@ hr {
 
   cursor: pointer;
 
-  background: url("../images/magnifying-glass.png") no-repeat;
+  background: url("../images/icons/magnifying-glass.png") no-repeat;
   background-size: contain;
 }
 .pokedexIcon {
   width: 50px;
   height: 50px;
 
-  background: url("../images/pokedex.png") no-repeat;
+  background: url("../icons/images/pokedex.png") no-repeat;
 }
 .game-button-dimensions {
-  width: 45px;
-  height: 45px;
+  width: 100px;
+  height: 55px;
 }
 .button-group {
   display: -webkit-flex;
@@ -504,9 +518,23 @@ hr {
 
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 .button-group .button-group-heading {
+  margin-bottom: 0.25rem;
+
+  text-align: center;
+
   font-weight: 700;
+
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
 }
 .button {
   padding-top: 0.2rem;
@@ -521,36 +549,26 @@ hr {
   background-position: center;
   background-size: 80%;
 }
-.button.button_x {
-  width: 45px;
-  height: 45px;
+.button.button_moon {
+  width: 100px;
+  height: 55px;
 
-  background-image: url("../images/pokemon-x-title-sm.png");
+  background-image: url("../images/game-icons/pokemon-moon-logo.png");
+  background-size: contain;
 }
-.button.button_y {
-  width: 45px;
-  height: 45px;
+.button.button_sun {
+  width: 100px;
+  height: 55px;
 
-  background-image: url("../images/pokemon-y-title-sm.png");
-}
-.button.button_omegaRuby {
-  width: 45px;
-  height: 45px;
-
-  background-image: url("../images/pokemon-or-logo.png");
-}
-.button.button_alphaSapphire {
-  width: 45px;
-  height: 45px;
-
-  background-image: url("../images/pokemon-as-logo.png");
+  background-image: url("../images/game-icons/pokemon-sun-logo.png");
+  background-size: contain;
 }
 .button.button_settings {
   width: 2rem;
   height: 2rem;
 
   background-color: transparent;
-  background-image: url("../images/cog.png");
+  background-image: url("../images/icons/cog.png");
 }
 .button.button_route {
   margin: 0.25rem;
@@ -603,7 +621,7 @@ hr {
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
 
-  background: url("../images/arrow-up.png") no-repeat;
+  background: url("../images/icons/arrow-up.png") no-repeat;
   background-size: contain;
 }
 .dropdown .dropdown-content {
@@ -644,7 +662,7 @@ hr {
 
   content: "";
 
-  background: url("../images/route-sign.png") no-repeat;
+  background: url("../images/icons/route-sign.png") no-repeat;
   background-size: contain;
 }
 .block-route-info .block-route-paths {
@@ -796,7 +814,7 @@ hr {
       -ms-user-select: none;
           user-select: none;
 
-  background: url("../images/pokeball-no-catch.png") no-repeat;
+  background: url("../images/icons/pokeball-no-catch.png") no-repeat;
 
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -807,7 +825,7 @@ hr {
       -ms-user-select: none;
           user-select: none;
 
-  background: url("../images/pokeball-catch.png") no-repeat;
+  background: url("../images/icons/pokeball-catch.png") no-repeat;
 
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -907,7 +925,7 @@ hr {
   vertical-align: middle;
 
   background: transparent none no-repeat 32px 32px;
-  background-image: url("../images/new-sprites.png");
+  background-image: url("../images/sprites.png");
 }
 /* kanto sprites 001 - 151 */
 .sprites.bulbasaur {
@@ -3792,7 +3810,7 @@ hr {
   height: 20px;
 
   background: transparent none no-repeat 53px 19px;
-  background-image: url("../images/move_icons.png");
+  background-image: url("../images/type-icons.png");
 }
 .type-icon.bug {
   background-position: -9px -7px;

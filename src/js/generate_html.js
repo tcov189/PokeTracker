@@ -1,9 +1,7 @@
 //==== Purpose: Create and display HTML elements ====//
 
 //Header display elements
-$('.header-game-block img').addClass('header-game-icon__'+ gameVersionGroup).attr('src','images/pokemon-'+ version +'-logo.png');
-
-$('.header-game-block span').text(gameVersion)
+$('.header-game-block').html('<i class="header-game-icon__'+ version +'"></i>');
 
 //Create empty array to store caught Pokemon
 if (localStorage.getItem('pokemon_caught') == null){
@@ -312,7 +310,7 @@ if (currentLocationData.encounters != null) {
     }
 }
 //Check to see if info exsists, delete
-$('.block-encounters').empty();
+$('.block-encounters').empty().append('<h2 class="text-center">Encounters</h2>');
     
 $.each(encountersInfo, function (i, encounter_info) {    
     if (!encountersInfo[i].area_name) {
