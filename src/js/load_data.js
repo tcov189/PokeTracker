@@ -5,39 +5,39 @@ var version = localStorage.getItem("version");
 
 //Get Pokedex
 switch (true) {
-    case version == 'sun' || version == 'moon':
+    case version === 'sun' || version === 'moon':
         var regionalDex = 'sun-moon-pokedex.json';
         var nationalDex = 'national-dex-post-6.json';
         var gameVersionGroup = 'sun-moon';
-        var gameVersion = version == 'sun' ? 'Sun' : 'Moon';   
+        var gameVersion = version === 'sun' ? 'Sun' : 'Moon';   
         var regionalForm = 'alolan';
         if (!localStorage.getItem('current_location')) {
             localStorage.setItem('current_location', 'route 1');   
         }  
         break;
-    case version == 'or' || version == 'as' :
+    case version === 'or' || version === 'as' :
         var regionalDex = 'oras-pokedex.json';
         var nationalDex = 'national-dex-post-5.json';
         var gameVersionGroup = 'oras';
-        var gameVersion = version == 'or' ? 'Omega Ruby' : 'Alpha Sapphire';   
+        var gameVersion = version === 'or' ? 'Omega Ruby' : 'Alpha Sapphire';   
         if (!localStorage.getItem('current_location')) {
             localStorage.setItem('current_location', 'route 101');   
         }        
         break;
-    case version == 'black' || version == 'white' :
+    case version === 'black' || version === 'white' :
         var regionalDex = 'black-white-pokedex.json';
         var nationalDex = 'national-dex.json';
         var gameVersionGroup = 'black-white';
-        var gameVersion = version == 'black' ? 'Black' : 'White';   
+        var gameVersion = version === 'black' ? 'Black' : 'White';   
         if (!localStorage.getItem('current_location')) {
             localStorage.setItem('current_location', 'nuvema town');   
         }        
         break;
-    case version == 'hg' || version == 'ss' :
+    case version === 'hg' || version === 'ss' :
         var regionalDex = 'hgss-pokedex.json';
         var nationalDex = 'national-dex.json';
         var gameVersionGroup = 'hgss';
-        var gameVersion = version == 'hg' ? 'Heart Gold' : 'Soul Silver';      
+        var gameVersion = version === 'hg' ? 'Heart Gold' : 'Soul Silver';      
         if (!localStorage.getItem('current_location')) {
             localStorage.setItem('current_location', 'route 29');   
         }    
@@ -53,7 +53,7 @@ function loadDataIntoLocalStorage (r_dex, n_dex, gameVersion) {
         url: 'data/pokedexes/' + r_dex,
         async: false,
         success: function(data){
-            var data = JSON.stringify(data);
+            data = JSON.stringify(data);
             localStorage.setItem('regional_dex', data);
         }
     });
@@ -63,8 +63,8 @@ function loadDataIntoLocalStorage (r_dex, n_dex, gameVersion) {
         url: 'data/pokedexes/' + n_dex,
         async: false,
         success: function(data){
-            var data = JSON.stringify(data);
-            localStorage.setItem('national_dex', data)
+            data = JSON.stringify(data);
+            localStorage.setItem('national_dex', data);
         }
     });
 
@@ -74,7 +74,7 @@ function loadDataIntoLocalStorage (r_dex, n_dex, gameVersion) {
         async: false,
         success: function(data){
             localStorage.setItem('region', data.name);
-            var data = JSON.stringify(data);
+            data = JSON.stringify(data);
             localStorage.setItem('locations', data);
         }
     });
