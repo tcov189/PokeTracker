@@ -7180,37 +7180,40 @@
     "r_dex_num": ""
   },
   {
-    "name": "oricorio-balie",
+    "name": "oricorio",
     "type": [
       "fire",
       "flying"
     ],
-    "n_dex_num": 741,
-    "r_dex_num": ""
-  },
-  {
-    "name": "oricorio-pom-pom",
-    "type": [
-      "electric",
-      "flying"
-    ],
-    "n_dex_num": 741,
-    "r_dex_num": ""
-  },
-  {
-    "name": "oricorio-pau",
-    "type": [
-      "psychic",
-      "flying"
-    ],
-    "n_dex_num": 741,
-    "r_dex_num": ""
-  },
-  {
-    "name": "oricorio-sensu",
-    "type": [
-      "ghost",
-      "flying"
+    "forms": [
+      {
+        "name": "baile",
+        "type": [
+          "fire",
+          "flying"
+        ]
+      },
+      {
+        "name": "pom-pom",
+        "type": [
+          "electric",
+          "flying"
+        ]
+      },
+      {
+        "name": "pau",
+        "type": [
+          "psychic",
+          "flying"
+        ]
+      },
+      {
+        "name": "sensu",
+        "type": [
+          "ghost",
+          "flying"
+        ]
+      }
     ],
     "n_dex_num": 741,
     "r_dex_num": ""

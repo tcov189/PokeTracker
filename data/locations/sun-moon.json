@@ -942,7 +942,7 @@
     {
       "name": "route 4",
       "exits": {
-        "north": "panola town",
+        "north": "paniola town",
         "south": "heahea city"
       },
       "encounters": [
@@ -1569,8 +1569,9 @@
                     "rate": 10
                   },
                   {
-                    "name": "oricorio-pau",
-                    "sos": "oricorio-pau",
+                    "name": "oricorio",
+                    "sos": "oricorio",
+                    "form": "pau",
                     "version": "both",
                     "method": "grass",
                     "min_level": 14,
@@ -2239,7 +2240,7 @@
     {
       "name": "route 12",
       "exits": {
-        "access_to": "blush mountain",
+        "access_to": "blush mountains",
         "north": "route 11",
         "south": "secluded shore",
         "west": "route 13"
@@ -2564,7 +2565,7 @@
     {
       "name": "route 16",
       "exits": {
-        "north": "ula'ula meadow ",
+        "north": "ula'ula meadow",
         "south": "route 15"
       },
       "encounters": [
@@ -2660,7 +2661,7 @@
       "name": "route 17",
       "exits": {
         "access_to": "po town",
-        "south": "ula'ula meadow "
+        "south": "ula'ula meadow"
       },
       "encounters": {
         "areas": [
@@ -2668,13 +2669,13 @@
             "name": "all",
             "encounters": [
               {
-                "type": "sos ally in rain",
+                "type": "sos ally",
                 "available_pokemon": [
                   {
                     "name": "goomy",
                     "sos": null,
                     "version": "both",
-                    "method": "sos",
+                    "method": "rain",
                     "min_level": 31,
                     "max_level": 34,
                     "rate": 10
@@ -2683,7 +2684,7 @@
                     "name": "castform",
                     "sos": null,
                     "version": "both",
-                    "method": "sos",
+                    "method": "rain",
                     "min_level": 31,
                     "max_level": 34,
                     "rate": 1
@@ -3075,7 +3076,7 @@
       "exits": {
         "east": [
           "poni grove",
-          "poni breaker grove"
+          "poni breaker coast"
         ],
         "north": "vast poni canyon",
         "west": "poni wilds"
@@ -3837,13 +3838,13 @@
           ]
         },
         {
-          "type": "sos ally in rain",
+          "type": "sos ally",
           "available_pokemon": [
             {
               "name": "goomy",
               "sos": null,
               "version": "both",
-              "method": "sos",
+              "method": "rain",
               "min_level": 31,
               "max_level": 34,
               "rate": 10
@@ -3852,7 +3853,7 @@
               "name": "castform",
               "sos": null,
               "version": "both",
-              "method": "sos",
+              "method": "rain",
               "min_level": 31,
               "max_level": 34,
               "rate": 1
@@ -3906,39 +3907,34 @@
           ]
         },
         {
-          "type": "sos ally in rain",
+          "type": "sos ally",
           "available_pokemon": [
             {
               "name": "castform",
               "sos": null,
               "version": "both",
-              "method": "sos",
+              "method": "rain",
               "min_level": 28,
               "max_level": 31,
               "rate": 10
-            }
-          ]
-        },
-        {
-          "type": "sos ally in sand",
-          "available_pokemon": [
-            {
-              "name": "castform",
-              "sos": null,
-              "version": "both",
-              "method": "sos",
-              "min_level": 28,
-              "max_level": 31,
-              "rate": 1
             },
             {
               "name": "gabite",
               "sos": null,
               "version": "both",
-              "method": "sos",
+              "method": "sandstorm",
               "min_level": 31,
               "max_level": 34,
               "rate": 10
+            },
+            {
+              "name": "castform",
+              "sos": null,
+              "version": "both",
+              "method": "sandstorm",
+              "min_level": 28,
+              "max_level": 31,
+              "rate": 1
             }
           ]
         },
@@ -4124,6 +4120,7 @@
           "seafolk village"
         ],
         "north": "route 2",
+        "east": "route 1",
         "south": "melemele sea"
       },
       "encounters": {
@@ -4553,10 +4550,6 @@
       "name": "lush jungle",
       "exits": {
         "south": "route 5",
-        "north": [
-          "route 3",
-          "iki town"
-        ],
         "east": "route 8"
       },
       "encounters": {
@@ -4565,13 +4558,13 @@
             "name": "all",
             "encounters": [
               {
-                "type": "sos ally in rain",
+                "type": "sos ally",
                 "available_pokemon": [
                   {
                     "name": "goomy",
                     "sos": null,
                     "version": "both",
-                    "method": "sos",
+                    "method": "rain",
                     "min_level": 18,
                     "max_level": 21,
                     "rate": 10
@@ -4580,7 +4573,7 @@
                     "name": "castform",
                     "sos": null,
                     "version": "both",
-                    "method": "sos",
+                    "method": "rain",
                     "min_level": 31,
                     "max_level": 34,
                     "rate": 1
@@ -5374,8 +5367,9 @@
               "rate": 30
             },
             {
-              "name": "oricorio-pom-pom",
-              "sos": "oricorio-pom-pom",
+              "name": "oricorio",
+              "sos": "oricorio",
+              "form": "pom-pom",
               "version": "both",
               "method": "grass",
               "min_level": 9,
@@ -5570,8 +5564,7 @@
         "access_to": [
           "route 10",
           "hokulani observatory"
-        ],
-        "west": "route 9"
+        ]
       },
       "encounters": [
         {
@@ -5964,7 +5957,7 @@
       "name": "poni breaker coast",
       "exits": {
         "east": "ruins of hope",
-        "north": "acient poni path"
+        "north": "ancient poni path"
       },
       "encounters": [
         {
@@ -6205,7 +6198,7 @@
       "name": "poni grove",
       "exits": {
         "north": "poni plains",
-        "south": "acient poni path"
+        "south": "ancient poni path"
       },
       "encounters": [
         {
@@ -6320,8 +6313,9 @@
               "rate": 50
             },
             {
-              "name": "oricorio-sensu",
-              "sos": "oricorio-sensu",
+              "name": "oricorio",
+              "sos": "oricorio",
+              "form": "sensu",
               "version": "both",
               "method": "grass",
               "min_level": 54,
@@ -6928,7 +6922,7 @@
     {
       "name": "poni wilds",
       "exits": {
-        "east": "acient poni path",
+        "east": "ancient poni path",
         "south": "seafolk village"
       },
       "encounters": [
@@ -7213,7 +7207,7 @@
     {
       "name": "ruins of abundance",
       "exits": {
-        "south": "hania desert"
+        "south": "haina desert"
       },
       "encounters": [
         {
@@ -7392,7 +7386,7 @@
       "name": "seaward cave",
       "exits": {
         "east": "kala'e bay",
-        "north": "melemlele meadow"
+        "north": "melemele meadow"
       },
       "encounters": [
         {
@@ -7601,7 +7595,7 @@
       "name": "tapu village",
       "exits": {
         "east": "route 13",
-        "north": "mount lankila",
+        "north": "mount lanakila",
         "south": "route 14",
         "west": "route 15"
       },
@@ -8021,8 +8015,9 @@
               "rate": 30
             },
             {
-              "name": "oricorio-balie",
-              "sos": "oricorio-balie",
+              "name": "oricorio",
+              "sos": "oricorio",
+              "form": "baile",
               "version": "both",
               "method": "grass",
               "min_level": 31,

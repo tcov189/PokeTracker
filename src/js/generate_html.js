@@ -53,13 +53,35 @@ function generateHtml() {
         }
 
         var match   = nationalDexData.find(findPokemon);
-        if (!match.forms || !formPriority){ //see if mon has form
+        
+        // Check to see if the pokemon has any forms
+        if(match.forms){
+            // Loop through the forms
+            for (var i = 0; i < match.forms.length; i++){                
+                // Apply type and name of regional form if there is one
+                if (regionalForm) {
+                    if (match.forms[i].name === regionalForm) {
+                        var type = match.forms[i].type;
+                        var form = match.forms[i].name;       
+                    }                    
+                }
+            }    
+        }
+        
+        
+        if (pokemon.form){ //see if mon has form
+            for (var i = 0; i < match.forms.length; i++){
+                if (match.forms[i].name === pokemon.form) {
+                    var type = match.forms[i].type;
+                    var form = match.forms[i].name;       
+                }
+            }                        
+        } else if (!type){            
             var type    = match.type;   
-        } else {
-            var type = match.forms[0].type;
-            var form = match.forms[0].name;
-        }        
+        }     
+        
         var nDexNum = match.n_dex_num;
+        
         pokemon["type"] = type;    
         pokemon["form"] = form;
         pokemon["n_dex_num"] = nDexNum;    
@@ -172,11 +194,10 @@ function generateEncounterArr(pokemon, encounter) {
     var isUnavailable       = pokemon.version != version && pokemon.version != 'both' && pokemon.version != undefined ? true : false; 
     var isUnavailableClass  = isUnavailable ? 'unavailable' : '';
 
-    if (pokemon.form && pokemon.form == formPriority) {
+    if (pokemon.form) {
         var formClass = pokemon.form;    
-    } else {
-        var formClass = '';    
-    }        
+        var formName = '<small>('+ pokemon.form +')</small>';
+    }
     
     if (gameVersionGroup == "sun-moon" && pokemon.sos) {
         var sosEncounters = pokemon.sos;
@@ -214,8 +235,9 @@ function generateEncounterArr(pokemon, encounter) {
                         theHtml +=   '<div class="pokemon-info-bio">' +
                                 '<div class="pokemon-info-bio-name-sprite">' +
                                     '<i class="sprites '+ pokemon.name +' '+ formClass +'"></i>' +
-                                    '<span class="pokemon-bio-name">'+ pokemon.name +'</span>' +
-                                '</div>'+
+                                    '<span class="pokemon-bio-name">'+ pokemon.name; 
+                                    if (formName){theHtml += formName} 
+                                theHtml += '</span></div>'+
                                 '<div class="pokemon-bio-types">';
                                    $.each(pokemon.type, function (i, type){
                                        theHtml += '<i class="type-icon '+ type.toLowerCase() +' "></i>'; 
