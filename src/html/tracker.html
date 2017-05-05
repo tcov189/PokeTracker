@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>    
-        <title>PokeTracker - Pokedex</title>
+        <title>PokeTracker - Home</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
-        <meta name="description" content="Use Nuztracker to keep track of all of your Pokemon!" />
+        <meta name="description" content="Use PokeTracker to keep track of all of your Pokemon!" />
         <meta name="author" content="Trevor Covington" />
         <meta name="author" content="tcovington189@gmail.com" />
         <meta name="application-name" content="PokeTracker" />
@@ -32,28 +32,49 @@
         <meta name="msapplication-square310x310logo" content="images/favicons/mstile-310x310.png" />
 
         
-         <!-- Stylesheets -->
-        
-        <link rel="stylesheet" type="text/css" href="/assets/css/poke_tracker.min.css?0.5.0">
-            
+        <!-- Stylesheets -->
+        <!--(if target dev)><!--><link rel="stylesheet" type="text/css" href="/assets/css/poke_tracker.css"><!--<!(endif)-->
+        <!--(if target prod)><link rel="stylesheet" type="text/css" href="/assets/css/poke_tracker.min.css?{{version}}"><!(endif)-->
+                
     </head>
 <body>
-<img style="display:none;" src="assets/images/new-sprites.png" alt="Preloading Sprite Images" />
 
 <div class="header">
-    
+  <div class="header-brand">
+        <a href="../">
+            <img class="header-brand-logo" src="assets/images/poketracker-title.png" alt="">
+        </a>
+    </div>
+   <div class="header-game-block"></div>    
+    <div class="header-settings">
+        <button class="button button_settings"></button>
+    </div>
 </div><!-- end .header-->
 
-<div class="container">
+<div class="container">        
     
-        This is a test
-        <div id="pokedex">
-            
-        </div>
-                
+    <div class="block block-route">                    
+       <div class="block-route-info">
+           <div class="block-route-header">
+               <h3></h3>
+           </div>
+           <div class="card block-route-paths">               
+           </div>
+       </div>                   
+    </div>
+    
+    <div class="block block-encounters">
+    </div>
+    
 </div>
-<footer class="footer"></footer>
-
-<script src="/assets/scripts/poke_tracker.min.js?0.5.0"></script>    
+<footer class="footer">   
+    <select class="route-select">       
+       <option selected>Jump to location...</option>
+        
+    </select>
+    
+</footer><!-- end footer-->
+<!--(if target dev)><!--><script src="/assets/scripts/poke_tracker.js"></script><!--<!(endif)-->
+<!--(if target prod)><script src="/assets/scripts/poke_tracker.min.js?{{version}}"></script><!(endif)-->
 </body>
 </html>

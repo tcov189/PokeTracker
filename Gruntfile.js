@@ -16,7 +16,12 @@ module.exports = function(grunt) {
         jsPath          : 'src/js/',
         distScriptsPath : '<%= distPath %>scripts/',
         
-        projName          : 'Poke Tracker',        
+        htmlPath        : 'src/html/',
+        distHtmlPath    : '<%= distPath %>html/',
+        
+        thirdPartySrcPath : 'src/third_party/',
+        
+        projName          : 'PokeTracker',        
         
         //== Get package info
         pkg: grunt.file.readJSON('package.json'),        
@@ -27,10 +32,10 @@ module.exports = function(grunt) {
         //= Less Lint - Check for LESS mistakes | less_review
         lesshint: {
             options: {
-                lesshintrc      : '<%= lessConfigsPath %><%= pkg.name %>.lesshintrc.json', 
+                lesshintrc      : '<%= lessConfigsPath %><%= pkg.name %>.lesshintrc.json',
                 allowWarnings   : false 
             },
-            source: {
+            proj: {
                 src: ['<%= lessPath %>**/*.less'] 
             },
         },   
@@ -50,7 +55,7 @@ module.exports = function(grunt) {
             },                       
             
             //Compile Dev task
-            source: {
+            proj: {
                 options: {  
                     banner              : "<%= less.options.banner %> Dev */\n",  //Banner                     
                     sourceMap           : true,     //Enable source map
@@ -70,7 +75,7 @@ module.exports = function(grunt) {
                 config: '<%= lessConfigsPath %><%= pkg.name %>.csscomb.json'
             },
             
-            source: {
+            proj: {
                 files: {
                     '<%= distCssPath %><%= pkg.name %>.css' : ['<%= distCssPath %><%= pkg.name %>.css'],
                 }
@@ -80,7 +85,7 @@ module.exports = function(grunt) {
         
         //= Css min - Minify css | css_min
         cssmin: {
-            source: {                
+            proj: {                
                 src     : '<%= distCssPath %><%= pkg.name %>.css',
                 dest    : '<%= distCssPath %><%= pkg.name %>.min.css'
             }
@@ -101,14 +106,9 @@ module.exports = function(grunt) {
         
         //= Concat - Concatenate JS files | js_concat
         concat: {            
-            source: {
-                src     : ['<%= jsPath %><%= pkg.name %>.js', '!<%= jsPath %><%= pkg.name %>.js'],
-                dest    : '<%= distScriptsPath %><%= pkg.name %>.js'
-                
-            },
-            pkmn: {
-                src     : ['<%= jsPath %>/pkmn/regions/*.js'],
-                dest    : '<%= distScriptsPath %>pokemon.js'
+            proj: {
+                src  : ['<%= jsPath %>third_party/*.js', '<%= jsPath %>load_data.js', '<%= jsPath %>dropdowns.js', '<%= jsPath %>get_version.js', '<%= jsPath %>generate_html.js'],
+                dest : '<%= distScriptsPath %><%= pkg.name %>.js'                
             }
         },
         
@@ -116,10 +116,11 @@ module.exports = function(grunt) {
         uglify: {            
             options: {
                 banner              : '//<%= projName %> v<%= pkg.version %>\n',
+                beautify            : false,
                 compress            : true,
-                preserveComments    : false,
+                preserveComments    : false                
             }, 
-            source: {
+            proj: {
                 files: {
                     '<%= distScriptsPath %><%= pkg.name %>.min.js' : '<%= distScriptsPath %><%= pkg.name %>.js'
                 }
@@ -130,10 +131,10 @@ module.exports = function(grunt) {
         
         //= Clean - delete files from directories
         clean: {
-            css_dir             : ['css/*'],
+            css_dir             : ['assets/css/*'],
             dist_css_dir        : ['src/dist/css/*'],
             
-            scripts_dir         : ['scripts/*'],
+            scripts_dir         : ['assets/scripts/*'],
             dist_scripts_dir    : ['src/dist/scripts/*']
         },        
         
@@ -144,7 +145,7 @@ module.exports = function(grunt) {
                 flatten : true,
                 filter  : 'isFile',
                 src     : '<%= distCssPath %><%= pkg.name %>.min.css',
-                dest    : 'css',
+                dest    : 'assets/css',
                 nonull  : true
             },
             css_dev: {
@@ -152,7 +153,7 @@ module.exports = function(grunt) {
                 flatten : true,
                 filter  : 'isFile',
                 src     : ['<%= distCssPath %><%= pkg.name %>.css', '<%= distCssPath %><%= pkg.name %>.css.map'],
-                dest    : "css",
+                dest    : "assets/css",
                 nonull  : true
             },
             scripts_prod: {
@@ -160,7 +161,7 @@ module.exports = function(grunt) {
                 flatten : true,
                 filter  : 'isFile',
                 src     : '<%= distScriptsPath %><%= pkg.name %>.min.js',
-                dest    : 'scripts',
+                dest    : 'assets/scripts',
                 nonull  : true
             },
             scripts_dev: {
@@ -168,15 +169,15 @@ module.exports = function(grunt) {
                 flatten : true,
                 filter  : 'isFile',
                 src     : '<%= distScriptsPath %><%= pkg.name %>.js',
-                dest    : 'scripts',
+                dest    : 'assets/scripts',
                 nonull  : true
-            },
-            jquery: {
+            },           
+            html: {
                 expand  : true,
                 flatten : true,
                 filter  : 'isFile',
-                src     : 'node_modules/jquery/dist/*.min.js',
-                dest    : 'scripts',
+                src     : '<%= distHtmlPath %>*.html',
+                dest    : '.',
                 nonull  : true
             }
         },
@@ -191,12 +192,59 @@ module.exports = function(grunt) {
                 files   : ['src/js/*js'],
                 tasks   : ['js_build_dev']
             },
+            dev: {
+                files   : ['src/**'],
+                tasks   : ['build_dev']                
+            },
             die: {
                 options : { spawn: false },
                 files   : ['tmp/*'],
                 tasks   : ['kill'],
             }
-        }
+        },
+        
+        // Environment building
+        targethtml: {
+            prod: {
+                options:{
+                    curlyTags: {
+                        version : '<%= pkg.version %>'
+                    }
+                },
+                files: {
+                    '<%= distHtmlPath %>index.html': '<%= htmlPath %>index.html',
+                    '<%= distHtmlPath %>tracker.html': '<%= htmlPath %>tracker.html',
+                    '<%= distHtmlPath %>pokedex.html': '<%= htmlPath %>pokedex.html'
+                }
+            },
+            dev: {
+                files: {
+                    '<%= distHtmlPath %>index.html': '<%= htmlPath %>index.html',
+                    '<%= distHtmlPath %>tracker.html': '<%= htmlPath %>tracker.html',
+                    '<%= distHtmlPath %>pokedex.html': '<%= htmlPath %>pokedex.html'
+                }
+            }
+        },
+        
+        bump: {
+            options: {
+              files: ['package.json'],
+              updateConfigs: ['pkg'],
+              commit: false,
+              commitMessage: 'Release v%VERSION%',
+              commitFiles: ['package.json'],
+              createTag: false,
+              tagName: 'v%VERSION%',
+              tagMessage: 'Version %VERSION%',
+              push: false,
+              pushTo: 'upstream',
+              gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d',
+              globalReplace: false,
+              prereleaseName: false,
+              metadata: '',
+              regExp: false
+            }
+        },
     });                         
     
     //=== Register Tasks here ===//
@@ -204,9 +252,9 @@ module.exports = function(grunt) {
     //CSS Tasks
     grunt.registerTask('less_review', ['lesshint']);
     
-    grunt.registerTask('less_compile', ['less:source']);
+    grunt.registerTask('less_compile', ['less:proj']);
 
-    grunt.registerTask('css_reorg', ['csscomb:source']);
+    grunt.registerTask('css_reorg', ['csscomb:proj']);
         
     grunt.registerTask('css_min', ['cssmin']);
             
@@ -217,14 +265,17 @@ module.exports = function(grunt) {
     grunt.registerTask('js_review', ['jshint']);
     
     grunt.registerTask('js_concat', ['concat']);
+            
     
-    //Utility Tasks
+    //Utility Tasks       
     grunt.registerTask('css_copy_prod', ['copy:css_prod']);
     grunt.registerTask('css_copy_dev', ['copy:css_dev']);
     
     grunt.registerTask('scripts_copy_prod', ['copy:scripts_prod']);
     grunt.registerTask('scripts_copy_dev', ['copy:scripts_dev']);
-    grunt.registerTask('jquery_copy', ['copy:jquery']);
+    
+    grunt.registerTask('html_copy_prod', ['copy:html']);
+    grunt.registerTask('html_copy_dev', ['copy:html']);
     
     grunt.registerTask('css_clean_dir', ['clean:css_dir']);
     grunt.registerTask('dist_css_clean_dir', ['clean:dist_css_dir']);
@@ -235,19 +286,23 @@ module.exports = function(grunt) {
     
     grunt.registerTask('css_watch', ['watch:css_dev']);
     grunt.registerTask('js_watch', ['watch:js_dev']);    
+    grunt.registerTask('dev_watch', ['watch:dev']);    
     
     grunt.registerTask('kill', function() {
         process.exit(1);
     });
             
     //Build Tasks
+    grunt.registerTask('html_build_dev', ['targethtml:dev', 'html_copy_dev']);
+    grunt.registerTask('html_build_prod', ['targethtml:prod', 'html_copy_prod']);
+    
+    grunt.registerTask('css_build_dev', ['dist_css_clean_dir', 'css_clean_dir','less_review', 'less_compile', 'css_reorg', 'css_copy_dev']);
     grunt.registerTask('css_build_prod', ['css_clean_dir', 'less_review', 'less_compile', 'css_reorg', 'css_min', 'css_copy_prod']);    
-    grunt.registerTask('css_build_dev', ['dist_css_clean_dir', 'css_clean_dir','less_review', 'less_compile', 'css_reorg', 'css_min', 'css_copy_dev']);
     
-    grunt.registerTask('js_build_prod', ['dist_scripts_clean_dir', 'scripts_clean_dir', 'js_review', 'js_concat', 'js_uglify', 'scripts_copy_prod', 'jquery_copy']);
-    grunt.registerTask('js_build_dev', ['dist_scripts_clean_dir', 'scripts_clean_dir', 'js_concat', 'scripts_copy_dev', 'jquery_copy']);
+    grunt.registerTask('js_build_dev', ['dist_scripts_clean_dir', 'scripts_clean_dir', 'js_review', 'js_concat', 'scripts_copy_dev']);
+    grunt.registerTask('js_build_prod', ['dist_scripts_clean_dir', 'scripts_clean_dir', 'js_review', 'js_concat', 'js_uglify', 'scripts_copy_prod']);
     
-    grunt.registerTask('build_prod', ['css_build_prod', 'js_build_prod'])
-    grunt.registerTask('build_dev', ['css_build_dev', 'js_build_dev']);
-    
+    grunt.registerTask('build_dev', ['css_build_dev', 'js_build_dev', 'html_build_dev']);
+    grunt.registerTask('build_prod', ['bump', 'css_build_prod', 'js_build_prod', 'html_build_prod'])
+    grunt.registerTask('build_prod-test', ['css_build_prod', 'js_build_prod', 'html_build_prod'])    
 };
