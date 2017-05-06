@@ -50,7 +50,7 @@ switch (true) {
 function loadDataIntoLocalStorage (r_dex, n_dex, gameVersion) {
     //Get Regional Dex
     $.ajax({
-        url: 'data/pokedexes/' + r_dex,
+        url: 'assets/data/pokedexes/' + r_dex,
         async: false,
         success: function(data){
             data = JSON.stringify(data);
@@ -60,7 +60,7 @@ function loadDataIntoLocalStorage (r_dex, n_dex, gameVersion) {
 
     //Get National Dex
     $.ajax({
-        url: 'data/pokedexes/' + n_dex,
+        url: 'assets/data/pokedexes/' + n_dex,
         async: false,
         success: function(data){
             data = JSON.stringify(data);
@@ -70,7 +70,7 @@ function loadDataIntoLocalStorage (r_dex, n_dex, gameVersion) {
 
     //Get National Dex
     $.ajax({
-        url: 'data/locations/' + gameVersionGroup +'.json',
+        url: 'assets/data/locations/' + gameVersionGroup +'.json',
         async: false,
         success: function(data){
             localStorage.setItem('region', data.name);
