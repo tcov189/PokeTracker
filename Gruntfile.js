@@ -212,7 +212,7 @@ module.exports = function(grunt) {
                     }
                 },
                 files: {
-                    '<%= distHtmlPath %>index.html': '<%= htmlPath %>index.html',
+                    '<%= distHtmlPath %>index.html': '<%= htmlPath %>dev-index.html',
                     '<%= distHtmlPath %>tracker.html': '<%= htmlPath %>tracker.html',
                     '<%= distHtmlPath %>pokedex.html': '<%= htmlPath %>pokedex.html'
                 }
