@@ -113,6 +113,10 @@ module.exports = function(grunt) {
             proj_home: {
                 src  : ['<%= jsPath %>third_party/*.js', '<%= jsPath %>dropdowns.js', '<%= jsPath %>get_version.js'],
                 dest : '<%= distScriptsPath %><%= pkg.name %>_home.js'                
+            },
+            pokedex: {
+                src  : ['<%= jsPath %>third_party/*.js', '<%= jsPath %>generate_pokedex.js'],
+                dest : '<%= distScriptsPath %><%= pkg.name %>_pokedex.js'                
             }
         },
         
@@ -132,6 +136,11 @@ module.exports = function(grunt) {
             proj_home: {
                 files: {
                     '<%= distScriptsPath %><%= pkg.name %>_home.min.js' : '<%= distScriptsPath %><%= pkg.name %>_home.js'
+                }
+            },
+            pokedex: {
+                files: {
+                    '<%= distScriptsPath %><%= pkg.name %>_pokedex.min.js' : '<%= distScriptsPath %><%= pkg.name %>_pokedex.js'
                 }
             }
         },    
@@ -170,6 +179,22 @@ module.exports = function(grunt) {
                 flatten : true,
                 filter  : 'isFile',
                 src     : '<%= distScriptsPath %>*.min.js',
+                dest    : 'assets/scripts',
+                nonull  : true
+            },
+            scripts_pokedex_dev: {
+                expand  : true,
+                flatten : true,
+                filter  : 'isFile',
+                src     : '<%= distScriptsPath %><%= pkg.name %>_pokedex.js',
+                dest    : 'assets/scripts',
+                nonull  : true
+            },
+            scripts_pokedex_prod: {
+                expand  : true,
+                flatten : true,
+                filter  : 'isFile',
+                src     : '<%= distScriptsPath %><%= pkg.name %>_pokedex.min.js',
                 dest    : 'assets/scripts',
                 nonull  : true
             },
@@ -269,11 +294,13 @@ module.exports = function(grunt) {
             
     
     //JS Tasks
-    grunt.registerTask('js_uglify', ['uglify']);
+    grunt.registerTask('js_uglify', ['uglify']);    
+    grunt.registerTask('js_uglify_pokedex', ['uglify:pokedex']);    
     
     grunt.registerTask('js_review', ['jshint']);
     
     grunt.registerTask('js_concat', ['concat']);
+    grunt.registerTask('js_concat_pokedex', ['concat:pokedex']);
             
     
     //Utility Tasks       
@@ -281,7 +308,9 @@ module.exports = function(grunt) {
     grunt.registerTask('css_copy_dev', ['copy:css_dev']);
     
     grunt.registerTask('scripts_copy_prod', ['copy:scripts_prod']);
-    grunt.registerTask('scripts_copy_dev', ['copy:scripts_dev']);
+    grunt.registerTask('scripts_copy_dev', ['copy:scripts_dev']);        
+    grunt.registerTask('scripts_copy_pokedex_prod', ['copy:scripts_pokedex_prod']);
+    grunt.registerTask('scripts_copy_pokedex_dev', ['copy:scripts_pokedex_dev']);
     
     grunt.registerTask('html_copy_prod', ['copy:html']);
     grunt.registerTask('html_copy_dev', ['copy:html']);
@@ -311,9 +340,16 @@ module.exports = function(grunt) {
     grunt.registerTask('js_build_dev', ['dist_scripts_clean_dir', 'scripts_clean_dir', 'js_review', 'js_concat', 'scripts_copy_dev']);
     grunt.registerTask('js_build_prod', ['dist_scripts_clean_dir', 'scripts_clean_dir', 'js_review', 'js_concat', 'js_uglify', 'scripts_copy_prod']);
     
+    grunt.registerTask('js_build_pokedex_dev', ['js_review', 'js_concat_pokedex', 'scripts_copy_pokedex_dev']);
+    grunt.registerTask('js_build_pokedex_prod', ['js_review', 'js_concat_pokedex', 'js_uglify_pokedex', 'scripts_copy_pokedex_prod']);
+    
     grunt.registerTask('build_dev', ['css_build_dev', 'js_build_dev', 'html_build_dev']);
     grunt.registerTask('build_prod-major', ['bump:major', 'css_build_prod', 'js_build_prod', 'html_build_prod']);
     grunt.registerTask('build_prod-minor', ['bump:minor', 'css_build_prod', 'js_build_prod', 'html_build_prod']);
     grunt.registerTask('build_prod-patch', ['bump:patch', 'css_build_prod', 'js_build_prod', 'html_build_prod']);
     grunt.registerTask('build_prod-test', ['css_build_prod', 'js_build_prod', 'html_build_prod']);
+    
+    grunt.registerTask('build_dev_pokedex', ['css_build_dev', 'js_build_pokedex_dev', 'html_build_dev']);
+    grunt.registerTask('build_prod_pokedex', ['css_build_prod', 'js_build_pokedex_prod', 'html_build_prod']);
+
 };
