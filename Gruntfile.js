@@ -344,12 +344,14 @@ module.exports = function(grunt) {
     grunt.registerTask('js_build_pokedex_prod', ['js_review', 'js_concat_pokedex', 'js_uglify_pokedex', 'scripts_copy_pokedex_prod']);
     
     grunt.registerTask('build_dev', ['css_build_dev', 'js_build_dev', 'html_build_dev']);
-    grunt.registerTask('build_prod-major', ['bump:major', 'css_build_prod', 'js_build_prod', 'html_build_prod']);
-    grunt.registerTask('build_prod-minor', ['bump:minor', 'css_build_prod', 'js_build_prod', 'html_build_prod']);
-    grunt.registerTask('build_prod-patch', ['bump:patch', 'css_build_prod', 'js_build_prod', 'html_build_prod']);
-    grunt.registerTask('build_prod-test', ['css_build_prod', 'js_build_prod', 'html_build_prod']);
     
     grunt.registerTask('build_dev_pokedex', ['css_build_dev', 'js_build_pokedex_dev', 'html_build_dev']);
     grunt.registerTask('build_prod_pokedex', ['css_build_prod', 'js_build_pokedex_prod', 'html_build_prod']);
+    
+    grunt.registerTask('build_prod-test', ['css_build_prod', 'js_build_prod', 'js_build_pokedex_prod', 'html_build_prod']);
+    grunt.registerTask('build_prod-major', ['bump:major', 'build_prod-test']);
+    grunt.registerTask('build_prod-minor', ['bump:minor', 'build_prod-test']);
+    grunt.registerTask('build_prod-patch', ['bump:patch', 'build_prod-test']);
+    
 
 };
