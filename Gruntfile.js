@@ -109,6 +109,10 @@ module.exports = function(grunt) {
             proj: {
                 src  : ['<%= jsPath %>third_party/*.js', '<%= jsPath %>load_data.js', '<%= jsPath %>dropdowns.js', '<%= jsPath %>get_version.js', '<%= jsPath %>generate_html.js'],
                 dest : '<%= distScriptsPath %><%= pkg.name %>.js'                
+            },
+            proj_home: {
+                src  : ['<%= jsPath %>third_party/*.js', '<%= jsPath %>dropdowns.js', '<%= jsPath %>get_version.js'],
+                dest : '<%= distScriptsPath %><%= pkg.name %>_home.js'                
             }
         },
         
@@ -123,6 +127,11 @@ module.exports = function(grunt) {
             proj: {
                 files: {
                     '<%= distScriptsPath %><%= pkg.name %>.min.js' : '<%= distScriptsPath %><%= pkg.name %>.js'
+                }
+            },
+            proj_home: {
+                files: {
+                    '<%= distScriptsPath %><%= pkg.name %>_home.min.js' : '<%= distScriptsPath %><%= pkg.name %>_home.js'
                 }
             }
         },    
@@ -160,7 +169,7 @@ module.exports = function(grunt) {
                 expand  : true,
                 flatten : true,
                 filter  : 'isFile',
-                src     : '<%= distScriptsPath %><%= pkg.name %>.min.js',
+                src     : '<%= distScriptsPath %>*.min.js',
                 dest    : 'assets/scripts',
                 nonull  : true
             },
@@ -168,7 +177,7 @@ module.exports = function(grunt) {
                 expand  : true,
                 flatten : true,
                 filter  : 'isFile',
-                src     : '<%= distScriptsPath %><%= pkg.name %>.js',
+                src     : '<%= distScriptsPath %>*.js',
                 dest    : 'assets/scripts',
                 nonull  : true
             },           
@@ -303,6 +312,8 @@ module.exports = function(grunt) {
     grunt.registerTask('js_build_prod', ['dist_scripts_clean_dir', 'scripts_clean_dir', 'js_review', 'js_concat', 'js_uglify', 'scripts_copy_prod']);
     
     grunt.registerTask('build_dev', ['css_build_dev', 'js_build_dev', 'html_build_dev']);
-    grunt.registerTask('build_prod', ['bump', 'css_build_prod', 'js_build_prod', 'html_build_prod'])
-    grunt.registerTask('build_prod-test', ['css_build_prod', 'js_build_prod', 'html_build_prod'])    
+    grunt.registerTask('build_prod-major', ['bump:major', 'css_build_prod', 'js_build_prod', 'html_build_prod']);
+    grunt.registerTask('build_prod-minor', ['bump:minor', 'css_build_prod', 'js_build_prod', 'html_build_prod']);
+    grunt.registerTask('build_prod-patch', ['bump:patch', 'css_build_prod', 'js_build_prod', 'html_build_prod']);
+    grunt.registerTask('build_prod-test', ['css_build_prod', 'js_build_prod', 'html_build_prod']);
 };
