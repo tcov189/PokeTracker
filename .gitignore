@@ -41,3 +41,6 @@ _brackets.json
 
 #files not needed to be tracked
 design
+
+#gh-page files not needed to be tracked
+src
