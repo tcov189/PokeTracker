@@ -1,6 +1,6 @@
 {
   "name": "poke_tracker",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Application to help track which pokemon you have caught",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/tcov189/PokeTracker#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-bump": "^0.8.0",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
