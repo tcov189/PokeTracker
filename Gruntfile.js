@@ -107,7 +107,7 @@ module.exports = function(grunt) {
         //= Concat - Concatenate JS files | js_concat
         concat: {            
             proj: {
-                src  : ['<%= jsPath %>third_party/*.js', '<%= jsPath %>load_data.js', '<%= jsPath %>dropdowns.js', '<%= jsPath %>get_version.js', '<%= jsPath %>generate_html.js'],
+                src  : ['<%= jsPath %>third_party/*.js', '<%= jsPath %>load_data.js', '<%= jsPath %>dropdowns.js', '<%= jsPath %>get_version.js', '<%= jsPath %>generate_html.js', '<%= jsPath %>alter_catch_status.js'],
                 dest : '<%= distScriptsPath %><%= pkg.name %>.js'                
             },
             proj_home: {
@@ -115,7 +115,7 @@ module.exports = function(grunt) {
                 dest : '<%= distScriptsPath %><%= pkg.name %>_home.js'                
             },
             pokedex: {
-                src  : ['<%= jsPath %>third_party/*.js', '<%= jsPath %>generate_pokedex.js'],
+                src  : ['<%= jsPath %>third_party/*.js', '<%= jsPath %>generate_pokedex.js', '<%= jsPath %>filter.js', '<%= jsPath %>alter_catch_status.js'],
                 dest : '<%= distScriptsPath %><%= pkg.name %>_pokedex.js'                
             }
         },

@@ -254,6 +254,11 @@ hr {
 
   color: #777;
 }
+input {
+  width: 80%;
+
+  font-size: 0.8rem;
+}
 .map {
   overflow: hidden;
 
@@ -536,7 +541,14 @@ hr {
   -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
 }
+.button-group .button-group-heading h2 {
+  font-size: 1rem;
+}
 .button {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display:         inline-flex;
+
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
 
@@ -569,6 +581,20 @@ hr {
 
   background-color: transparent;
   background-image: url("../images/icons/cog.png");
+}
+.button.button_pokedex {
+  width: 2rem;
+  height: 2rem;
+
+  background-color: transparent;
+  background-image: url("../images/icons/pokedex.png");
+}
+.button.button_map {
+  width: 2rem;
+  height: 2rem;
+
+  background-color: transparent;
+  background-image: url("../images/icons/poketracker-map.png");
 }
 .button.button_route {
   margin: 0.25rem;
@@ -769,7 +795,8 @@ hr {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
 }
-.card.card-default {
+.card.card-default,
+.card.card_pokedex {
   border: 1px solid #ccc;
   border-radius: 0.5rem;
 }
@@ -777,18 +804,27 @@ hr {
   background: #e6e6e6;
 }
 .card.card_pokemon {
-          flex: 0 0 98%;
-
   background: #e6e6e6;
 
-  -webkit-flex: 0 0 98%;
-      -ms-flex: 0 0 98%;
+  -webkit-flex-basis: 98%;
+  -ms-flex-preferred-size: 98%;
+          flex-basis: 98%;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 .card.card_pokemon.unavailable {
   opacity: 0.8;
   background-color: #ccc;
 
   filter: alpha(opacity=80);
+}
+.card.card_pokemon.caught {
+  border: none;
+  background-color: rgba(0, 200, 70, 0.85);
 }
 .card.card_pokemon .card_pokemon-pokeball {
           align-self: center;
@@ -837,7 +873,7 @@ hr {
           flex: 1;
           flex-direction: column;
 
-  border-left: 1px solid #1e1e1e;
+  border-left: 1px solid #777;
 
   -webkit-flex: 1;
       -ms-flex: 1;
@@ -892,6 +928,8 @@ hr {
 
   padding-left: 0.4rem;
 
+  border-top: 1px solid #777;
+
   -webkit-align-items: center;
   -ms-flex-align: center;
   -webkit-justify-content: space-between;
@@ -912,6 +950,40 @@ hr {
 
   -webkit-align-items: center;
   -ms-flex-align: center;
+}
+.card.card_pokedex {
+  margin-top: 0.5rem;
+  margin-right: 1%;
+  margin-bottom: 0.5rem;
+  margin-left: 1%;
+
+  -webkit-flex-basis: 48%;
+  -ms-flex-preferred-size: 48%;
+          flex-basis: 48%;
+}
+.card.card_pokedex .card_pokemon-info .pokemon-info-bio {
+          flex-direction: column;
+
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+}
+.card.card_pokedex .card_pokemon-info .pokemon-info-bio .pokemon-bio-name {
+  text-align: center;
+  text-transform: capitalize;
+}
+.card.card_pokedex .card_pokemon-info .pokemon-info-bio .pokemon-info-dexnum {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+.block.block-pokedex {
+          flex-direction: row;
+
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 /*========== Sprites ===========*/
 /*Base*/

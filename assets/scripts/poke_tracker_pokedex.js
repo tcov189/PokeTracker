@@ -38,21 +38,23 @@ if (!caughtPokemonArray){
 var generatePokedexCards = function (pokemon) {
     'use strict';
     
-    var theHtml = '<div class="card card-default card_pokemon">' +        
+    var isCaught = $.inArray(pokemon.name, caughtPokemonArray) !== -1 ? ' caught' : '';
+    
+    var theHtml = '<div class="card card_pokemon card_pokedex '+ isCaught +'">' +        
                     '<div class="card_pokemon-pokeball">' +
-                        '<i class="card_pokemon-pokeball-icon" id="'+ pokemon.name +'"></i>' +
+                        '<i class="card_pokemon-pokeball-icon'+ isCaught +'" id="'+ pokemon.name +'"></i>' +
                     '</div>' + // End card_pokemon-pokeball
-                    '<div class="card_pokemon-info">' +
+                    '<div class="card_pokemon-info">' +                        
                         '<div class="pokemon-info-bio">' +
+                            '<div class="pokemon-bio-name">'+ pokemon.name +'<br> #'+ pokemon.n_dex_num +'</div>' +
                             '<div class="pokemon-info-bio-name-sprite">' +
-                                '<i class="sprites '+ pokemon.name +'"></i>' +
-                                '<span class="pokemon-bio-name">'+ pokemon.name +'</span>' +
+                                '<i class="sprites '+ pokemon.name +'"></i>' +                                
                             '</div>' + //end pokemon-info-bio-name-sprite
                             '<div class="pokemon-bio-types">';
                                 $.each(pokemon.type, function (i, type){
                                        theHtml += '<i class="type-icon '+ type.toLowerCase() +' "></i>'; 
                                    });
-                 theHtml += '</div>' + //end pokemon-bio-types
+                 theHtml += '</div>' + //end pokemon-bio-types                            
                         '</div>' +// end card_pokemon-info-bio
                     '</div>' + // end card_pokemon-info        
                 '</div>';//End card div        
@@ -72,4 +74,72 @@ var generatePokedex = function () {
     return pokedexHtml;
 };
 
+//List progress
+var updateProgress = function() {    
+    var numCaught = JSON.parse(localStorage.getItem('pokemon_caught')).length;    
+    var totalNumPokes = JSON.parse(localStorage.getItem('national_dex')).length;    
+    var percentCaught = (numCaught / totalNumPokes) * 100;
+    
+    if (percentCaught % 1 !== 0) {
+        percentCaught = '~' + Math.ceil((numCaught / totalNumPokes) * 100);
+    }
+    
+    $('.progress').html('<p>You have caught <strong>'+ numCaught +'</strong> out of <strong>'+ totalNumPokes +'</strong>, or <strong>'+ percentCaught +'%</strong>.');
+};
+
+
 pokedexDiv.html(generatePokedex());
+
+$(document).ready(function (){
+    updateProgress();
+    
+    $('body').on('click', 'i.card_pokemon-pokeball-icon', function(){   
+        updateProgress();
+    });
+});
+//====== Filter functionality ======/
+//Found at http://blog.grapii.com/2010/08/how-to-build-a-simple-search-filter-with-jquery/
+(function ($) {
+  jQuery.expr[':'].Contains = function(a,i,m){
+      return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
+  };
+
+    function listFilter(list) {
+        var form = $("form").attr({"id":"search_form","action":"#"}),
+        input = $("input").attr({"id":"search_input","type":"text"});
+       
+        $(input).change( function () {
+            var filter = $(this).val();
+            if(filter) {
+              $(list).find(".card_pokemon .card_pokemon-info .pokemon-info-bio .pokemon-bio-name:not(:Contains(" + filter + "))").closest('.card_pokemon').hide();
+              $(list).find(".card_pokemon .card_pokemon-info .pokemon-info-bio .pokemon-bio-name:Contains(" + filter + ")").closest('.card_pokemon').show();          
+            } else {
+              $(list).find(".card_pokemon").show();
+            }
+            return false;
+        }).keyup( function () {
+            $(this).change();
+        });       
+    }
+
+    $(function () {
+        listFilter($("#pokedex"));
+    });
+}(jQuery));  
+//// ==== Function for setting a pokemons status as caught/uncaught ==== ////
+
+//Adding/Removing pokemon caught
+$('body').on('click', 'i.card_pokemon-pokeball-icon', function(){        
+    var pokemonCaught = $(this).attr('id');
+    $('i.card_pokemon-pokeball-icon#'+ pokemonCaught).toggleClass('caught');
+    $('i.card_pokemon-pokeball-icon#'+ pokemonCaught).closest(".card_pokemon").toggleClass('caught');
+    pkmnCaughtData = JSON.parse(localStorage.getItem('pokemon_caught'));
+
+    if ($.inArray(pokemonCaught, pkmnCaughtData) === -1) {
+        pkmnCaughtData.push(pokemonCaught);   
+    } else {
+        pkmnCaughtData.splice( $.inArray(pokemonCaught, pkmnCaughtData), 1);
+    }        
+
+    localStorage.setItem('pokemon_caught', JSON.stringify(pkmnCaughtData));
+});

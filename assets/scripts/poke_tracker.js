@@ -109,8 +109,10 @@ $('#version_button_group .button').on('click', function(){
     if (localStorage.getItem('version')) {
         if (localStorage.getItem('version') !== version) {
              if (confirm('It looks like you already started a game in ' + name + '. Would you like to start a new one?')) {
+                var retainCaughtPokemonArr = localStorage.getItem("pokemon_caught");
                 localStorage.clear();
                 localStorage.setItem("version", version);
+                localStorage.setItem("pokemon_caught", retainCaughtPokemonArr);
             }    
         }        
     } else {
@@ -352,7 +354,7 @@ function generateEncounterArr(pokemon, encounter) {
 
     var isCaught = $.inArray(pokemon.name, pkmnCaughtArr) !== -1 ? ' caught' : '';                            
     var theHtml = '<div class="block-encounters-pokemon">' +
-                      '<div class="card card-default card_pokemon '+ isUnavailableClass +'">' +
+                      '<div class="card card-default card_pokemon '+ isUnavailableClass +' '+ isCaught +'">' +
                         '<div class="card_pokemon-pokeball">' +
                             '<i class="card_pokemon-pokeball-icon'+ isCaught +'" id="'+ pokemon.name +'"></i>' +
                         '</div>' +
@@ -372,7 +374,6 @@ function generateEncounterArr(pokemon, encounter) {
                                    });
                                 theHtml += '</div>' +
                             '</div>' +
-                            '<hr>' +
                             '<div class="pokemon-info-rates">' +
                                 '<div class="pokemon-rate-block">' +
                                     theRateHtml +
@@ -473,49 +474,52 @@ localStorage.setItem('current_location', currentLocationData.name);
 }
 
  //Generate Html starting function
-    $().ready(function(){
-       generateHtml(); 
-    });
-    
-    //Set new current location to button click
-    $('body').on('click', '.button_route', function(){
-        newLocation = $(this).text();
-        localStorage.setItem('current_location', newLocation);
-        generateHtml();
-    });
+$().ready(function(){
+   generateHtml(); 
+});
+
+//Set new current location to button click
+$('body').on('click', '.button_route', function(){
+    newLocation = $(this).text();
+    localStorage.setItem('current_location', newLocation);
+    generateHtml();
+});
 
     
-    $('body').on('click', 'i.card_pokemon-pokeball-icon', function(){        
-        var pokemonCaught = $(this).attr('id');
-        $('i.card_pokemon-pokeball-icon#'+ pokemonCaught).toggleClass('caught');
-        pkmnCaughtData = JSON.parse(localStorage.getItem('pokemon_caught'));
-        
-        if ($.inArray(pokemonCaught, pkmnCaughtData) === -1) {
-            pkmnCaughtData.push(pokemonCaught);   
-        } else {
-            pkmnCaughtData.splice( $.inArray(pokemonCaught, pkmnCaughtData), 1);
-        }        
-        
-        localStorage.setItem('pokemon_caught', JSON.stringify(pkmnCaughtData));
-    });
-    
-    //Generating routes
-    var select = $('footer select');
-    
-    $.each(locationData.locations, function (index, location){
-        $(select).append($('<option>', { 
-            value: location.name,
-            text : location.name 
-        }));
-    });
-    
-    //Route selector
-    function selectChangeRoute(){
-        var locationInfo = $('select').val();
-        localStorage.setItem("current_location", locationInfo);
-        generateHtml();
-    }
-    
-    $('.route-select').on('change', function(){
-        selectChangeRoute();
-    });
+//Generating routes
+var select = $('footer select');
+
+$.each(locationData.locations, function (index, location){
+    $(select).append($('<option>', { 
+        value: location.name,
+        text : location.name 
+    }));
+});
+
+//Route selector
+function selectChangeRoute(){
+    var locationInfo = $('select').val();
+    localStorage.setItem("current_location", locationInfo);
+    generateHtml();
+}
+
+$('.route-select').on('change', function(){
+    selectChangeRoute();
+});
+//// ==== Function for setting a pokemons status as caught/uncaught ==== ////
+
+//Adding/Removing pokemon caught
+$('body').on('click', 'i.card_pokemon-pokeball-icon', function(){        
+    var pokemonCaught = $(this).attr('id');
+    $('i.card_pokemon-pokeball-icon#'+ pokemonCaught).toggleClass('caught');
+    $('i.card_pokemon-pokeball-icon#'+ pokemonCaught).closest(".card_pokemon").toggleClass('caught');
+    pkmnCaughtData = JSON.parse(localStorage.getItem('pokemon_caught'));
+
+    if ($.inArray(pokemonCaught, pkmnCaughtData) === -1) {
+        pkmnCaughtData.push(pokemonCaught);   
+    } else {
+        pkmnCaughtData.splice( $.inArray(pokemonCaught, pkmnCaughtData), 1);
+    }        
+
+    localStorage.setItem('pokemon_caught', JSON.stringify(pkmnCaughtData));
+});

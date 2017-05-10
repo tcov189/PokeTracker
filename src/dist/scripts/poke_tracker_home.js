@@ -21,8 +21,10 @@ $('#version_button_group .button').on('click', function(){
     if (localStorage.getItem('version')) {
         if (localStorage.getItem('version') !== version) {
              if (confirm('It looks like you already started a game in ' + name + '. Would you like to start a new one?')) {
+                var retainCaughtPokemonArr = localStorage.getItem("pokemon_caught");
                 localStorage.clear();
                 localStorage.setItem("version", version);
+                localStorage.setItem("pokemon_caught", retainCaughtPokemonArr);
             }    
         }        
     } else {

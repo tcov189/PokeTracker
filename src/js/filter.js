@@ -5,29 +5,25 @@
       return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
   };
 
-  function listFilter(list) {
-    var form = $("form").attr({"id":"searchForm","action":"#"}),
-        input = $("input").attr({"id":"search-input","type":"text"});
+    function listFilter(list) {
+        var form = $("form").attr({"id":"search_form","action":"#"}),
+        input = $("input").attr({"id":"search_input","type":"text"});
+       
+        $(input).change( function () {
+            var filter = $(this).val();
+            if(filter) {
+              $(list).find(".card_pokemon .card_pokemon-info .pokemon-info-bio .pokemon-bio-name:not(:Contains(" + filter + "))").closest('.card_pokemon').hide();
+              $(list).find(".card_pokemon .card_pokemon-info .pokemon-info-bio .pokemon-bio-name:Contains(" + filter + ")").closest('.card_pokemon').show();          
+            } else {
+              $(list).find(".card_pokemon").show();
+            }
+            return false;
+        }).keyup( function () {
+            $(this).change();
+        });       
+    }
 
-    $(input)
-      .change( function () {
-        var filter = $(this).val();
-        if(filter) {
-          $(list).find(".pkmn-card .pkmn-card-info p:not(:Contains(" + filter + "))").closest('.pkmn-card').hide();
-          $(list).find(".pkmn-card .pkmn-card-info p:Contains(" + filter + ")").parent().show();
-          $(list).find(".pkmn-card .pkmn-card-info p span:not(:Contains(" + filter + "))").closest('.pkmn-card').hide();
-          $(list).find(".pkmn-card .pkmn-card-info p span:Contains(" + filter + ")").parent().show();
-        } else {
-          $(list).find(".pkmn-card").show();
-        }
-        return false;
-      })
-    .keyup( function () {
-        $(this).change();
+    $(function () {
+        listFilter($("#pokedex"));
     });
-  }
-
-  $(function () {
-    listFilter($("#pokedex"));
-  });
 }(jQuery));  
