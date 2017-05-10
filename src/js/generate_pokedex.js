@@ -37,7 +37,9 @@ var generatePokedexCards = function (pokemon) {
     
     var theHtml = '<div class="card card_pokemon card_pokedex '+ isCaught +'">' +        
                     '<div class="card_pokemon-pokeball">' +
-                        '<i class="card_pokemon-pokeball-icon'+ isCaught +'" id="'+ pokemon.name +'"></i>' +
+                        '<i class="card_pokemon-pokeball-icon'+ isCaught +'" id="'+ pokemon.name +'">' +
+                            '<svg version="1.1" xmls="http://www.w3.org/2000/svg"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-pokeball"></use></svg>' +
+                        '</i>' +
                     '</div>' + // End card_pokemon-pokeball
                     '<div class="card_pokemon-info">' +                        
                         '<div class="pokemon-info-bio">' +

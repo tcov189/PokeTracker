@@ -356,7 +356,9 @@ function generateEncounterArr(pokemon, encounter) {
     var theHtml = '<div class="block-encounters-pokemon">' +
                       '<div class="card card-default card_pokemon '+ isUnavailableClass +' '+ isCaught +'">' +
                         '<div class="card_pokemon-pokeball">' +
-                            '<i class="card_pokemon-pokeball-icon'+ isCaught +'" id="'+ pokemon.name +'"></i>' +
+                            '<i class="card_pokemon-pokeball-icon'+ isCaught +'" id="'+ pokemon.name +'">' +
+                                '<svg version="1.1" xmls="http://www.w3.org/2000/svg"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-pokeball"></use></svg>' +
+                            '</i>' +
                         '</div>' +
                         '<div class="card_pokemon-info">';
                         if (isUnavailable) {

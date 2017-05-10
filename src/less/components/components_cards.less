@@ -35,21 +35,22 @@
         .card_pokemon-pokeball {            
             padding-right: .25rem;    
             align-self: center;
-            cursor: pointer;
+            cursor: pointer;               
             
-            &-icon {
-                background: url('../images/icons/pokeball-no-catch.png') no-repeat;
-                display: flex;
+            svg {
                 width: 1.65rem;
                 height: 1.65rem;
-                .remove-user-select;
-                
+                fill: gray;
+            }
+            
+            .card_pokemon-pokeball-icon {
                 &.caught {
-                    background: url('../images/icons/pokeball-catch.png') no-repeat;
-                    .remove-user-select;
+                    svg {
+                        fill: #c1272d;
+                    }
                 }
-                                
-            }            
+            }
+                                            
         }
         
         .card_pokemon-info {
