@@ -447,7 +447,7 @@ $('.block-encounters').empty();
     
 $.each(encountersInfo, function (i, encounter_info) {    
     if (!encountersInfo[i].area_name) {
-        $('.block-encounters').append('<h4>'+ encounter_info.type + '</h4>');   
+        $('.block-encounters').append('<div class="block-encounters-header"><span>'+ encounter_info.type + '</span></div>');   
         
         $.each(encounter_info.encounters, function (i, info){
             $('.block-encounters').append(info.html);  
@@ -459,11 +459,13 @@ $.each(encountersInfo, function (i, encounter_info) {
 
             $.each(encounters.encounters, function (counter, elem){
               $('.block-encounters').append(elem.html);    
-            });            
-        });            
+            });                        
+        });                    
     }
     
 });
+
+$(".block-encounters-header:nth-child(n+2)").before('<hr>');
 
 if (!currentLocationData.encounters) {
     $('.block-encounters').append('<p class="text-center">No encounters in this area<p>');
@@ -484,11 +486,16 @@ $('body').on('click', '.button_route', function(){
     newLocation = $(this).text();
     localStorage.setItem('current_location', newLocation);
     generateHtml();
+    $navTab.removeClass('active');
+    $tabGroupNav.find('[data-tab=pokemon]').addClass('active');
+    
+    $tabGroupContent.removeClass('active');
+    $tabGroup.find('[data-content=pokemon]').addClass('active');
 });
 
     
 //Generating routes
-var select = $('footer select');
+var select = $('select');
 
 $.each(locationData.locations, function (index, location){
     $(select).append($('<option>', { 
@@ -500,29 +507,17 @@ $.each(locationData.locations, function (index, location){
 //Route selector
 function selectChangeRoute(){
     var locationInfo = $('select').val();
-    localStorage.setItem("current_location", locationInfo);
+    localStorage.setItem("current_location", locationInfo);    
     generateHtml();
+    $navTab.removeClass('active');
+    $tabGroupNav.find('[data-tab=pokemon]').addClass('active');
+    
+    $tabGroupContent.removeClass('active');
+    $tabGroup.find('[data-content=pokemon]').addClass('active');
 }
 
 $('.route-select').on('change', function(){
     selectChangeRoute();
-});
-//// ==== Function for setting a pokemons status as caught/uncaught ==== ////
-
-//Adding/Removing pokemon caught
-$('body').on('click', 'i.card_pokemon-pokeball-icon', function(){        
-    var pokemonCaught = $(this).attr('id');
-    $('i.card_pokemon-pokeball-icon#'+ pokemonCaught).toggleClass('caught');
-    $('i.card_pokemon-pokeball-icon#'+ pokemonCaught).closest(".card_pokemon").toggleClass('caught');
-    pkmnCaughtData = JSON.parse(localStorage.getItem('pokemon_caught'));
-
-    if ($.inArray(pokemonCaught, pkmnCaughtData) === -1) {
-        pkmnCaughtData.push(pokemonCaught);   
-    } else {
-        pkmnCaughtData.splice( $.inArray(pokemonCaught, pkmnCaughtData), 1);
-    }        
-
-    localStorage.setItem('pokemon_caught', JSON.stringify(pkmnCaughtData));
 });
 //// ==== Tab Group JS ==== ////
 
@@ -549,4 +544,21 @@ $navTab.on('click', function(){
             tabGroupContentMatch.addClass('active');
         }
     }
+});
+//// ==== Function for setting a pokemons status as caught/uncaught ==== ////
+
+//Adding/Removing pokemon caught
+$('body').on('click', 'i.card_pokemon-pokeball-icon', function(){        
+    var pokemonCaught = $(this).attr('id');
+    $('i.card_pokemon-pokeball-icon#'+ pokemonCaught).toggleClass('caught');
+    $('i.card_pokemon-pokeball-icon#'+ pokemonCaught).closest(".card_pokemon").toggleClass('caught');
+    pkmnCaughtData = JSON.parse(localStorage.getItem('pokemon_caught'));
+
+    if ($.inArray(pokemonCaught, pkmnCaughtData) === -1) {
+        pkmnCaughtData.push(pokemonCaught);   
+    } else {
+        pkmnCaughtData.splice( $.inArray(pokemonCaught, pkmnCaughtData), 1);
+    }        
+
+    localStorage.setItem('pokemon_caught', JSON.stringify(pkmnCaughtData));
 });

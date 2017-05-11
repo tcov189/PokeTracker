@@ -41,7 +41,15 @@
 <img style="display:none;" src="assets/images/sprites.png" alt="Preloading Sprite Images" />
 
 <div class="header">
-    
+    <div class="header-brand">
+        <a href="../">
+            <img class="header-brand-logo" src="assets/images/poketracker-title.png" alt="">
+        </a>
+    </div>
+   <div class="header-game-block"></div>    
+    <div class="header-settings">
+        <a class="button button_pokedex" href="pokedex.html"></a>
+    </div>
 </div><!-- end .header-->
 
 <div class="container">
@@ -73,18 +81,29 @@
 
         <p>Which game are you playing?</p>
         
-          <div class="button-group" id="version_button_group">
-           <div class="button-group-heading">
-               <h2>Gen 7</h2>
-           </div>
-            <button class="button button_sun" id="sun" name="Sun" type="button"></button>
-            <button class="button button_moon" id="moon" name="Moon" type="button"></button>            
-        </div>        
+            <div class="button-group" id="version_button_group">
+               <div class="button-group-heading">
+                   <h2>Gen 7</h2>
+               </div>
+                <button class="button button_sun" id="sun" name="Sun" type="button"></button>
+                <button class="button button_moon" id="moon" name="Moon" type="button"></button>            
+            </div>
+            
+            <div class="button-group" id="continue">
+                <a href='tracker.html' class="button button__continue">Continue Where I Left Off</a>
+            </div>        
     </div>
         
 </div>
 <footer class="footer"></footer>
 
 <script src="assets/scripts/poke_tracker_home.min.js?ver=0.7.0"></script>
+
+<script>
+    if (localStorage.length <= 0) {
+        $('#continue').hide();        
+        $('.button_pokedex').hide();        
+    }
+</script>
 </body>
 </html>

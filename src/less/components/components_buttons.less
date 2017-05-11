@@ -76,12 +76,18 @@
         height: 2rem;        
     }
     
-    &.button_route {
+    &.button_route,
+    &.button__continue {
         color: @white;
         text-transform: capitalize;
         margin: .25rem;
     }
            
+    &.button__continue {
+        padding: .25rem;
+        text-decoration: none;
+    }
+    
     &:hover {                
        background-color: linear-gradient(to bottom, #e6000f 5%, #b3000c 100%);
     }

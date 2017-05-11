@@ -324,7 +324,7 @@ $('.block-encounters').empty();
     
 $.each(encountersInfo, function (i, encounter_info) {    
     if (!encountersInfo[i].area_name) {
-        $('.block-encounters').append('<h4>'+ encounter_info.type + '</h4>');   
+        $('.block-encounters').append('<div class="block-encounters-header"><span>'+ encounter_info.type + '</span></div>');   
         
         $.each(encounter_info.encounters, function (i, info){
             $('.block-encounters').append(info.html);  
@@ -336,11 +336,13 @@ $.each(encountersInfo, function (i, encounter_info) {
 
             $.each(encounters.encounters, function (counter, elem){
               $('.block-encounters').append(elem.html);    
-            });            
-        });            
+            });                        
+        });                    
     }
     
 });
+
+$(".block-encounters-header:nth-child(n+2)").before('<hr>');
 
 if (!currentLocationData.encounters) {
     $('.block-encounters').append('<p class="text-center">No encounters in this area<p>');
@@ -361,11 +363,16 @@ $('body').on('click', '.button_route', function(){
     newLocation = $(this).text();
     localStorage.setItem('current_location', newLocation);
     generateHtml();
+    $navTab.removeClass('active');
+    $tabGroupNav.find('[data-tab=pokemon]').addClass('active');
+    
+    $tabGroupContent.removeClass('active');
+    $tabGroup.find('[data-content=pokemon]').addClass('active');
 });
 
     
 //Generating routes
-var select = $('footer select');
+var select = $('select');
 
 $.each(locationData.locations, function (index, location){
     $(select).append($('<option>', { 
@@ -377,8 +384,13 @@ $.each(locationData.locations, function (index, location){
 //Route selector
 function selectChangeRoute(){
     var locationInfo = $('select').val();
-    localStorage.setItem("current_location", locationInfo);
+    localStorage.setItem("current_location", locationInfo);    
     generateHtml();
+    $navTab.removeClass('active');
+    $tabGroupNav.find('[data-tab=pokemon]').addClass('active');
+    
+    $tabGroupContent.removeClass('active');
+    $tabGroup.find('[data-content=pokemon]').addClass('active');
 }
 
 $('.route-select').on('change', function(){
