@@ -107,7 +107,7 @@ module.exports = function(grunt) {
         //= Concat - Concatenate JS files | js_concat
         concat: {            
             proj: {
-                src  : ['<%= jsPath %>third_party/*.js', '<%= jsPath %>load_data.js', '<%= jsPath %>dropdowns.js', '<%= jsPath %>get_version.js', '<%= jsPath %>generate_html.js', '<%= jsPath %>alter_catch_status.js'],
+                src  : ['<%= jsPath %>third_party/*.js', '<%= jsPath %>load_data.js', '<%= jsPath %>dropdowns.js', '<%= jsPath %>get_version.js', '<%= jsPath %>generate_html.js', '<%= jsPath %>tab-group.js', '<%= jsPath %>alter_catch_status.js'],
                 dest : '<%= distScriptsPath %><%= pkg.name %>.js'                
             },
             proj_home: {
@@ -227,7 +227,7 @@ module.exports = function(grunt) {
                 tasks   : ['js_build_dev']
             },
             dev: {
-                files   : ['src/**'],
+                files   : ['src/**', '!src/dist/**'],
                 tasks   : ['build_dev']                
             },
             die: {
