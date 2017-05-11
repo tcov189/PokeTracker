@@ -1,6 +1,6 @@
 {
   "name": "poke_tracker",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Application to help track which pokemon you have caught",
   "main": "index.js",
   "scripts": {
