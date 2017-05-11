@@ -1,0 +1,45 @@
+//// ==== Tabs ==== ////
+
+.tab-group {
+    display: flex;
+    flex-direction: column;    
+    
+    .tab-group-nav {
+        flex-grow: 1;
+        flex-basis: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        flex-direction: row;
+        
+        .nav-tab {
+            flex-grow: 1;
+            .darkgray-bg;
+            color: @white;
+            font-weight: 700;
+            padding: .25rem;
+            text-align: center;
+            cursor: pointer;
+            
+            &:first-child {
+                border-right: 1px solid @white;
+            }
+            
+            &.active {
+                border-bottom: 5px solid @red;
+            }
+        }                
+    }
+         
+    .tab-group-content {
+        display: none;
+        border-right: 1px solid @light-gray;
+        border-left: 1px solid @light-gray;
+        border-bottom: 1px solid @light-gray;
+        .gray-bg;
+        
+        &.active {
+            display: inherit;
+        }
+    }
+}

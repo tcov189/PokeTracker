@@ -104,7 +104,7 @@ function generateHtml() {
 //Populate the HTML                                        
 
 //Route header
-$('.block-route-header h3').text(currentLocationData.name);
+$('.header__route').text(currentLocationData.name);
 
 //Exits
 
@@ -320,21 +320,20 @@ if (currentLocationData.encounters !== null) {
     }
 }
 //Check to see if info exsists, delete
-$('.block-encounters').empty().append('<h2 class="text-center">Encounters</h2>');
+$('.block-encounters').empty();
     
 $.each(encountersInfo, function (i, encounter_info) {    
     if (!encountersInfo[i].area_name) {
-        $('.block-encounters').append('<h3>'+ encounter_info.type + '</h3>');   
+        $('.block-encounters').append('<h4>'+ encounter_info.type + '</h4>');   
         
         $.each(encounter_info.encounters, function (i, info){
             $('.block-encounters').append(info.html);  
         });            
-    } else {
-        $('.block-encounters').append('<h3>'+ encounter_info.area_name + '</h3>'); 
+    } else {        
         
         $.each(encounter_info.area_encounters, function (index, encounters){
-            $('.block-encounters').append('<h4>'+ encounters.type +'</h4>');  
-            
+            $('.block-encounters').append('<div class="block-encounters-header"><span>'+ encounters.type +'</span><span>'+ encounter_info.area_name + '</span></div>'); 
+
             $.each(encounters.encounters, function (counter, elem){
               $('.block-encounters').append(elem.html);    
             });            
