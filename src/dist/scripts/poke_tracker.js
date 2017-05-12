@@ -130,9 +130,7 @@ $('.header-game-block').html('<i class="header-game-icon__'+ version +'"></i>');
 if (!localStorage.getItem('pokemon_caught')){
     var pkmnCaughtArr = [];
     localStorage.setItem('pokemon_caught', JSON.stringify(pkmnCaughtArr));
-} else {
-    pkmnCaughtArr  = JSON.parse(localStorage.getItem('pokemon_caught'));
-} 
+}     
 
 function generateHtml() {
     
@@ -351,7 +349,8 @@ function generateEncounterArr(pokemon, encounter) {
     }
     
     var levelRange = pokemon.min_level !== pokemon.max_level ? pokemon.min_level + '&ndash;'+ pokemon.max_level : pokemon.min_level;
-
+    
+    pkmnCaughtArr  = JSON.parse(localStorage.getItem('pokemon_caught'));
     var isCaught = $.inArray(pokemon.name, pkmnCaughtArr) !== -1 ? ' caught' : '';                            
     var theHtml = '<div class="block-encounters-pokemon">' +
                       '<div class="card card-default card_pokemon '+ isUnavailableClass +' '+ isCaught +'">' +
