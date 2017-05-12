@@ -561,3 +561,15 @@ $('body').on('click', 'i.card_pokemon-pokeball-icon', function(){
 
     localStorage.setItem('pokemon_caught', JSON.stringify(pkmnCaughtData));
 });
+//// === Function for testing if browser supports SVGs ==== ////
+
+function supportsSvg() {
+  var div = document.createElement('div');
+  div.innerHTML = '<svg/>';
+  return (div.firstChild && div.firstChild.namespaceURI) === 'http://www.w3.org/2000/svg';
+}
+
+if (!supportsSvg()) {    
+    document.documentElement.className += " no-svg";
+}
+

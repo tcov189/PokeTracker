@@ -1,0 +1,21 @@
+//// ==== SVG Fallback ==== ////
+
+html {
+    &.no-svg {
+        
+        .card_pokemon-pokeball {
+            &-icon {
+                background: url('../images/icons/pokeball-no-catch.png') no-repeat;
+                display: flex;
+                width: 1.65rem;
+                height: 1.65rem;
+                .remove-user-select;
+                
+                &.caught {
+                    background: url('../images/icons/pokeball-catch.png') no-repeat;
+                    .remove-user-select;
+                }
+            }
+        }    
+    }
+}
