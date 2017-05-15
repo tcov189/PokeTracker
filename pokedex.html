@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>    
-        <title>PokeTracker - Pokedex</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>PokeTracker - Pokedex</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Use Nuztracker to keep track of all of your Pokemon!" />
         <meta name="author" content="Trevor Covington" />
         <meta name="author" content="tcovington189@gmail.com" />
         <meta name="application-name" content="PokeTracker" />
         
-         <!-- favicon info -->
-        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/images/favicons/apple-touch-icon-60x60.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/images/favicons/apple-touch-icon-120x120.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/images/favicons/apple-touch-icon-76x76.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/images/favicons/apple-touch-icon-152x152.png" />
+        <!-- favicon info -->
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-touch-icon-152x152.png" />
         <link rel="icon" type="image/png" href="assets/images/favicons/favicon-196x196.png" sizes="196x196" />
         <link rel="icon" type="image/png" href="assets/images/favicons/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/png" href="assets/images/favicons/favicon-32x32.png" sizes="32x32" />
@@ -31,31 +32,25 @@
         <meta name="msapplication-wide310x150logo" content="assets/images/favicons/mstile-310x150.png" />
         <meta name="msapplication-square310x310logo" content="assets/images/favicons/mstile-310x310.png" />
 
-        
         <!-- Stylesheets -->
         
-        <link rel="stylesheet" type="text/css" href="assets/css/poke_tracker.min.css?ver=1.2.0">
+        <link rel="stylesheet" type="text/css" href="assets/css/poke_tracker.min.css?ver=1.3.0">
             
     </head>
 <body>
 <img style="display:none;" src="assets/images/sprites.png" alt="Preloading Sprite Images" />
-<svg xmlns="http://www.w3.org/2000/svg" style="display:none"> 
-    <symbol width="25" height="25" viewBox="0 0 25 25" id="icon-pokeball">       
-        <path fill="#FFF" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M24 12.5C24 18.85 18.85 24 12.5 24c-4.92 0-9.11-3.09-10.75-7.42l8.57-3.29c.31.9 1.17 1.54 2.18 1.54 1.28 0 2.33-1.05 2.33-2.33 0-.31-.061-.6-.17-.88l8.55-3.3c.51 1.3.79 2.7.79 4.18z"/><path class="top" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M23.21 8.32l-8.55 3.3a2.349 2.349 0 0 0-2.16-1.45c-1.28 0-2.33 1.05-2.33 2.33 0 .28.05.54.15.79l-8.57 3.29C1.26 15.31 1 13.94 1 12.5 1 6.15 6.15 1 12.5 1c4.88 0 9.05 3.04 10.71 7.32z"/><path fill="#FFF" d="M14.83 12.5c0 1.28-1.05 2.33-2.33 2.33-1.01 0-1.87-.64-2.18-1.54-.1-.25-.15-.51-.15-.79 0-1.28 1.05-2.33 2.33-2.33.98 0 1.81.61 2.16 1.45.11.28.17.57.17.88z"/>
-    </symbol>
-</svg>
-<div class="header">
+<header class="header">
   <div class="header-brand">
         <a href="index.html">
-            <img class="header-brand-logo" src="assets/images/poketracker-title.png" alt="">
+            <img class="header-brand-logo" src="assets/images/poketracker-title.png" alt="PokeTracker">
         </a>
     </div>
     <div class="header-settings">
         <a class="button button_map" href="tracker.html"></a>
     </div>
-</div><!-- end .header-->
+</header><!-- end .header-->
 
-<div class="container">
+<main class="container">
     <div class="block">
         <h1>Welcome to the Pokdex!</h1>
         <p>Here is where you will be able to see which pokemon you have left to catch on your way to completing the dex!</p>
@@ -73,9 +68,10 @@
     </div>
     <div class="block block-pokedex" id="pokedex"></div>
                 
-</div>
+</main>
+
 <footer class="footer"></footer>
 
-<script src="assets/scripts/poke_tracker_pokedex.min.js?ver=1.2.0"></script>
+<script src="assets/scripts/poke_tracker_pokedex.min.js?ver=1.3.0"></script>
 </body>
 </html>

@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>    
-        <title>PokeTracker - Home</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>PokeTracker - Home</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Use PokeTracker to keep track of all of your Pokemon!" />
         <meta name="author" content="Trevor Covington" />
         <meta name="author" content="tcovington189@gmail.com" />
         <meta name="application-name" content="PokeTracker" />
         
         <!-- favicon info -->
-        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/images/favicons/apple-touch-icon-60x60.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/images/favicons/apple-touch-icon-120x120.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/images/favicons/apple-touch-icon-76x76.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/images/favicons/apple-touch-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-touch-icon-152x152.png" />
         <link rel="icon" type="image/png" href="assets/images/favicons/favicon-196x196.png" sizes="196x196" />
         <link rel="icon" type="image/png" href="assets/images/favicons/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/png" href="assets/images/favicons/favicon-32x32.png" sizes="32x32" />
@@ -30,36 +31,35 @@
         <meta name="msapplication-square150x150logo" content="assets/images/favicons/mstile-150x150.png" />
         <meta name="msapplication-wide310x150logo" content="assets/images/favicons/mstile-310x150.png" />
         <meta name="msapplication-square310x310logo" content="assets/images/favicons/mstile-310x310.png" />
-
         
         <!-- Stylesheets -->
         
-        <link rel="stylesheet" type="text/css" href="assets/css/poke_tracker.min.css?ver=1.2.0">
+        <link rel="stylesheet" type="text/css" href="assets/css/poke_tracker.min.css?ver=1.3.0">
             
     </head>
 <body>
 <img style="display:none;" src="assets/images/sprites.png" alt="Preloading Sprite Images" />
 
-<div class="header">
+<header class="header">
     <div class="header-brand">
         <a href="index.html">
-            <img class="header-brand-logo" src="assets/images/poketracker-title.png" alt="">
+            <img class="header-brand-logo" src="assets/images/poketracker-title.png" alt="PokeTracker">
         </a>
     </div>
    <div class="header-game-block"></div>    
     <div class="header-settings">
         <a class="button button_pokedex" href="pokedex.html"></a>
     </div>
-</div><!-- end .header-->
+</header><!-- end .header-->
 
-<div class="container">
+<main class="container">
     
-    <div class="block">
+    <section class="block">
         <h1>Welcome To PokeTracker!</h1>
         <p>PokeTracker is a tool that I developed in order to help aspiring trainers reach their goal of completing the elusive <a href="http://bulbapedia.bulbagarden.net/wiki/Living_Pok%C3%A9dex" target="_blank">Living Dex</a>. I of course don't own any rights to Pokemon or anything Pokemon related, and this site is to help trainers catch 'em all.</p>
-    </div>
+    </section>
     
-    <div class="block">
+    <section class="block">
        <h2>Application Info</h2>
         <div class="dropdown">
            <div class="dropdown-heading">Technical Info</div>
@@ -74,30 +74,34 @@
                 <p>PokeTracker was designed to allow for users to track their progress as they play through the games. With PokeTracker, you can go to any route or location and see which Pokemon are available. Then the user can select which Pokemon they have caught.</p>
             </div>
         </div>
-    </div>          
+    </section>          
     
-    <div class="block">
+    <section class="block">
         <h2>Ready to get started?</h2>
 
         <p>Which game are you playing?</p>
+            <nav>
+               
+                <div class="button-group" id="continue">
+                    <a href="tracker.html" class="button button__continue">Continue Where I Left Off</a>
+                </div>
+                
+                <div class="button-group" id="version_button_group">
+                   <div class="button-group-heading">
+                       <h2>Gen 7</h2>
+                   </div>
+                    <button class="button button_sun" id="sun" name="Sun" type="button"></button>
+                    <button class="button button_moon" id="moon" name="Moon" type="button"></button>            
+                </div>
+               
+            </nav>        
+    </section>
         
-            <div class="button-group" id="version_button_group">
-               <div class="button-group-heading">
-                   <h2>Gen 7</h2>
-               </div>
-                <button class="button button_sun" id="sun" name="Sun" type="button"></button>
-                <button class="button button_moon" id="moon" name="Moon" type="button"></button>            
-            </div>
-            
-            <div class="button-group" id="continue">
-                <a href='tracker.html' class="button button__continue">Continue Where I Left Off</a>
-            </div>        
-    </div>
-        
-</div>
+</main>
+
 <footer class="footer"></footer>
 
-<script src="assets/scripts/poke_tracker_home.min.js?ver=1.2.0"></script>
+<script src="assets/scripts/poke_tracker_home.min.js?ver=1.3.0"></script>
 
 <script>
     if (localStorage.length <= 0) {
