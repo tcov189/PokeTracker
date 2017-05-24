@@ -51,6 +51,7 @@ switch (true) {
         var nationalDex = 'national-dex-post-5.json';
 }
 
+
 //Fuction for adding data into localStorage
 function loadDataIntoLocalStorage (r_dex, n_dex, gameVersion) {
     //Get Regional Dex
@@ -123,41 +124,89 @@ $('#version_button_group .button').on('click', function(){
 });
 //==== Purpose: Create and display HTML elements ====//
 
-//Header display elements
-$('.header-game-block').html('<i class="header-game-icon__'+ version +'"></i>');
+//== Let's test the speed baby
+console.time('speed test');
 
-//Create empty array to store caught Pokemon
-if (!localStorage.getItem('pokemon_caught')){
-    var pkmnCaughtArr = [];
-    localStorage.setItem('pokemon_caught', JSON.stringify(pkmnCaughtArr));
-}     
+//== Create i element, give it the game class name, append it to header-game-block
+    var headerGameIcon = document.createElement('i');
+    headerGameIcon.className = 'header-game-icon__' + version;
+    document.getElementsByClassName('header-game-block')[0].appendChild(headerGameIcon);
 
-function generateHtml() {
-    
-    //Get last visited location
-    var lastLocation = localStorage.getItem('current_location');
-    
-    //Getting the last location the player visited so that when they come back it will be the first screen they see
-    $.each(locationData.locations, function (direction, loc_name){
-        if (loc_name.name === lastLocation) {                
-            currentLocationData = loc_name;
-        }
+
+//== If pokemon_caught key is not in localStorage, create it with an empty array inside
+    if (!localStorage.getItem('pokemon_caught')){
+        var pkmnCaughtArr = [];
+        localStorage.setItem('pokemon_caught', JSON.stringify(pkmnCaughtArr));
+    }     
+
+//== Creating the options for the select element
+    // select element
+    var select = document.getElementsByTagName("select")[0];
+
+    // for each location, add the name to a value/text option element, then append it to the select 
+    for (var b = 0, max = locationData.locations.length; b < max; b++){
+        // create option element
+            var routeOption = document.createElement("option");
+        
+        // set the value/text to the location name
+            routeOption.value = locationData.locations[b].name;
+            routeOption.text = locationData.locations[b].name;
+        // append the option to the select element
+            select.appendChild(routeOption);
+    }
+
+//== Create a function for changing the route via the select box
+    function changeRoute(){    
+        // Get the value of the select and set it to locationInfo
+          var locationInfo = select.value;
+        
+        // Set the item to current_location key
+          localStorage.setItem("current_location", locationInfo);    
+        
+        // Call generateHtml function
+          generateHtml();
+                
+    }
+
+//== Add change event listener for select.route-select and call changeRoute
+    $('.route-select').on('change', function(){       
+        changeRoute();
+        changeTabs('pokemon');
     });
+
+//== Generates the HTML on the page
+function generateHtml() {    
+    //= We start by getting what route the user was last on or the default route (as set in load_data.js ln 7)
+        // Get the last visited location from localStorage    
+            var lastLocation = localStorage.getItem('current_location');
+
+        // Loop through the locations to find lastLocation, then set it to currentLocation to be used throughout
+            for (var a = 0, arrLength = locationData.locations.length; a < arrLength ; a++) {
+                if (locationData.locations[a].name === lastLocation) {
+                    currentLocation = locationData.locations[a];
+                    break;
+                }            
+            }                
+    
+    //= Next, insert the route name the header__route element with the name of the route    
+    document.getElementsByClassName("header__route")[0].innerHTML = currentLocation.name;    
+    
+    //= Now, get the select box options
     
     //Merging Data
     var encounterArray = [];
     
     //Loop through all available encounters and put them into an array if there are encounters
-    if (currentLocationData.encounters !== null) {
+    if (currentLocation.encounters !== null) {
     
-        if (!currentLocationData.encounters.hasOwnProperty('areas')) {
-            $.each(currentLocationData.encounters, function (i, encounters){
+        if (!currentLocation.encounters.hasOwnProperty('areas')) {
+            $.each(currentLocation.encounters, function (i, encounters){
                 $.each(encounters.available_pokemon, function (i,val){
                   encounterArray.push(val);  
                 });    
             });
         } else {
-            $.each(currentLocationData.encounters.areas, function (i, area_encounters){
+            $.each(currentLocation.encounters.areas, function (i, area_encounters){
                 $.each(area_encounters.encounters, function (i,val){
                     $.each(val.available_pokemon, function (index, elem){
                         encounterArray.push(elem);
@@ -166,6 +215,7 @@ function generateHtml() {
             });
         }
     }
+    
     //Function for merging data
     function mergeArray(pokemon, index) {
         function findPokemon (nationalPokemon){
@@ -218,14 +268,7 @@ function generateHtml() {
             return ((x < y) ? -1 : ((x > y) ? 1 : 0));
         });
     }
-
-
-
-
-//Populate the HTML                                        
-
-//Route header
-$('.header__route').text(currentLocationData.name);
+                            
 
 //Exits
 
@@ -235,7 +278,7 @@ if ($('.block-route-paths').html().length > 0) {
 }
 
     
-$.each(currentLocationData.exits, function (direction, loc_name) {    
+$.each(currentLocation.exits, function (direction, loc_name) {    
     var directionFormatted = direction.split('_').join(' ');
     
     var theHtml = '<div class="block-path-group block-path-group_'+ direction +'">' +
@@ -256,14 +299,14 @@ $.each(currentLocationData.exits, function (direction, loc_name) {
 encountersInfo = [];
 
 //Sorting array by national dex number 
-if (currentLocationData.encounters !== null){
+if (currentLocation.encounters !== null){
     
-    if (!currentLocationData.encounters.hasOwnProperty('areas')) {
-        $.each(currentLocationData.encounters, function (i, elem){
+    if (!currentLocation.encounters.hasOwnProperty('areas')) {
+        $.each(currentLocation.encounters, function (i, elem){
             sortByKey(elem.available_pokemon, 'n_dex_num');
         }); 
     } else {
-        $.each(currentLocationData.encounters.areas, function (i, elem) {
+        $.each(currentLocation.encounters.areas, function (i, elem) {
             $.each(elem.encounters.available_pokemon, function (index, pokemon){
                 sortByKey(elem.encounters[i].available_pokemon, 'n_dex_num');
             });            
@@ -396,10 +439,10 @@ function generateEncounterArr(pokemon, encounter) {
     encounterArr.push({'html' : theHtml, 'method' : pokemon.method, 'name' : pokemon.name, 'national_dex' : pokemon.n_dex_num });               
 }
 
-if (currentLocationData.encounters !== null) {
-    if (!currentLocationData.encounters.areas) {      
+if (currentLocation.encounters !== null) {
+    if (!currentLocation.encounters.areas) {      
         
-        $.each(currentLocationData.encounters, function (i, encounter){      
+        $.each(currentLocation.encounters, function (i, encounter){      
             var encounterObject = {             
                 'type' : encounter.type,        
                 'encounters' : encounterArr = []
@@ -418,7 +461,7 @@ if (currentLocationData.encounters !== null) {
             });   
         });
     } else {//Seperate function for locations that 
-        $.each(currentLocationData.encounters.areas, function(i, area){
+        $.each(currentLocation.encounters.areas, function(i, area){
             
             encounterObject = {
                 'area_name' : area.name,
@@ -469,12 +512,12 @@ $.each(encountersInfo, function (i, encounter_info) {
 
 $(".block-encounters-header:nth-child(n+2)").before('<hr>');
 
-if (!currentLocationData.encounters) {
+if (!currentLocation.encounters) {
     $('.block-encounters').append('<p class="text-center">No encounters in this area<p>');
 }
 
 //Revert current_location to originial value so that it can be read again if refreshed
-localStorage.setItem('current_location', currentLocationData.name);
+localStorage.setItem('current_location', currentLocation.name);
 
 }
 
@@ -487,66 +530,79 @@ $().ready(function(){
 $('body').on('click', '.button_route', function(){
     newLocation = $(this).text();
     localStorage.setItem('current_location', newLocation);
-    generateHtml();
-    $navTab.removeClass('active');
-    $tabGroupNav.find('[data-tab=pokemon]').addClass('active');
-    
-    $tabGroupContent.removeClass('active');
-    $tabGroup.find('[data-content=pokemon]').addClass('active');
+    generateHtml();   
 });
-
-    
-//Generating routes
-var select = $('select');
-
-$.each(locationData.locations, function (index, location){
-    $(select).append($('<option>', { 
-        value: location.name,
-        text : location.name 
-    }));
-});
-
-//Route selector
-function selectChangeRoute(){
-    var locationInfo = $('select').val();
-    localStorage.setItem("current_location", locationInfo);    
-    generateHtml();
-    $navTab.removeClass('active');
-    $tabGroupNav.find('[data-tab=pokemon]').addClass('active');
-    
-    $tabGroupContent.removeClass('active');
-    $tabGroup.find('[data-content=pokemon]').addClass('active');
-}
-
-$('.route-select').on('change', function(){
-    selectChangeRoute();
-});
-//// ==== Tab Group JS ==== ////
-
-// Vars for targeting the various elements
-var $tabGroup           = $(".tab-group");
-var $tabGroupNav        = $(".tab-group ul.tab-group-nav");
-var $navTab             = $(".tab-group ul.tab-group-nav .nav-tab");
-var $tabGroupContent    = $(".tab-group .tab-group-content");
-
+console.timeEnd('speed test');
+//// ==== Tab Group JS v1.1.0 ==== ////
+//// Hide and show content based on which tab is clicked
+//// Authored by Trevor Covington tcovington189@gmail.com
+//// https://github.com/tcov189/tab-groups
 
 // Add event listener
-$navTab.on('click', function(){
-    // If this doesn't active class, then remove active class from other elems and add it to this elem 
-    if (!$(this).hasClass('active')) {
-        $navTab.removeClass('active');
-        $(this).addClass('active');
-        
-        // Match the data attrs
-        var navTabDataLabel             = $(this).data('tab');
-        var tabGroupContentMatch        = $tabGroup.find('[data-content='+ navTabDataLabel +']');
-        
-        if (!tabGroupContentMatch.hasClass('active')) {
-            $tabGroupContent.removeClass('active');
-            tabGroupContentMatch.addClass('active');
+/*$(".tab-group ul.tab-group-nav .nav-tab").on('click', function(){changeTabs();});*/
+
+var $navTabs = document.querySelectorAll(".nav-tab");
+for (var i = 0, max = $navTabs.length; i < max; i++){
+    $navTabs[i].addEventListener('click', changeTabs);
+}
+
+// Main function for changing tabs. 
+// dataTab parameter allows you to specifiy a specfic tab that you want to be made active
+// clickToClose lets you decide if you want the user to be able to click the active tab to hide the content
+function changeTabs(dataTab, clickToHide){
+    
+    // Set empty var for dataTabValue
+    var dataTabValue;    
+    // Set clickToHide to be false by default
+    clickToHide = clickToHide ? true : false;
+    
+    // Checks to see if dataTab is passed in and make sure its a string (because if you add function to an eventListner it will pass in the event as an argument)
+    if (dataTab && typeof dataTab === 'string') {
+        // Set dataTabValue to be the argument
+        dataTabValue = dataTab;
+    } else {
+        // Set dataTabValue to be the data-tab value of the clicked element
+        dataTabValue = dataTab.currentTarget.dataset.tab;   
+    }        
+    
+    // Vars for targeting the tabGroupContent elements
+    var $tabGroupContent    = document.querySelectorAll(".tab-group-content");    
+    
+    //Loop through tabs
+    $navTabs.forEach(function(currentTab, index){        
+        // If currentTab doesn't have active class
+        if(currentTab.className.indexOf('active') === -1) { 
+            // if dataTabValue matches the data-tab value of the currentTab in the loop
+            if (dataTabValue === currentTab.dataset.tab) {
+                // Append active to the className
+                currentTab.className += ' active';                
+            }
+        } else {
+            // if dataTabValue doesn't equal the currentTab data-tab value
+            if (dataTabValue !== currentTab.dataset.tab || clickToHide) {                
+                // Remove active from className
+                currentTab.className = currentTab.className.replace(' active', '');             
+            }
         }
-    }
-});
+    });
+    
+    //Loop through tabGroupContents
+    $tabGroupContent.forEach(function(tabGroupContent, index){
+        // If tabGroupContent element doesn't have active class
+        if (tabGroupContent.className.indexOf('active') === -1) {
+            // if dataTabValue matches the data-content value of the tabGroupContent in the loop
+            if (tabGroupContent.dataset.content === dataTabValue) {         
+                // Append active to the className
+                tabGroupContent.className += ' active';               
+            }                
+        } else {
+            if (dataTabValue !== tabGroupContent.dataset.content || clickToHide) {    
+                // Remove active from classNAme
+                tabGroupContent.className = tabGroupContent.className.replace(' active', '');                          
+            }
+        }
+    });            
+}
 //// ==== Function for setting a pokemons status as caught/uncaught ==== ////
 
 //Adding/Removing pokemon caught

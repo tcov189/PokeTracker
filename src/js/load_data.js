@@ -46,6 +46,7 @@ switch (true) {
         var nationalDex = 'national-dex-post-5.json';
 }
 
+
 //Fuction for adding data into localStorage
 function loadDataIntoLocalStorage (r_dex, n_dex, gameVersion) {
     //Get Regional Dex
