@@ -1,11 +1,9 @@
 ////==== Purpose: Generating Pokedex html ====////
 
 //Vars needed
-var pokedexDiv = $('#pokedex');
+var pokedexDiv 			= $('#pokedex');
 var regionalDexData     = JSON.parse(localStorage.getItem('regional_dex'));
 var nationalDexData     = JSON.parse(localStorage.getItem('national_dex'));
-
-var caughtPokemonArray  = JSON.parse(localStorage.getItem('pokemon_caught'));
 
 // If there is no national dex in localStorage, then just default to Gen 7
 if (!nationalDexData) {
@@ -20,22 +18,14 @@ if (!nationalDexData) {
         }
     });
 }
-
-// If there is no caught pokemon, create the array
-if (!caughtPokemonArray){
-    var pkmnCaughtArr = [];
-    localStorage.setItem('pokemon_caught', JSON.stringify(pkmnCaughtArr));
-} else {
-    pkmnCaughtArr  = JSON.parse(localStorage.getItem('pokemon_caught'));
-} 
     
 //Function for generating html
 var generatePokedexCards = function (pokemon) {
     'use strict';
     
-    var isCaught = $.inArray(pokemon.name, caughtPokemonArray) !== -1 ? ' caught' : '';
-    var svgTitle = $.inArray(pokemon.name, pkmnCaughtArr) !== -1 ? 'Pokemon caught!' : 'Pokemon not caught yet!'; 
-    var svgDesc = $.inArray(pokemon.name, pkmnCaughtArr) !== -1 ? 'Pokeball icon with the top half of the ball colored red, indicating the Pokemon is caught' : 'Pokeball icon with the top half of the ball colored gray, indicating the Pokemon is not caught'; 
+    var isCaught = pokemonHasBeenCaught(pokemon.name) ? ' caught' : '';
+    var svgTitle = pokemonHasBeenCaught(pokemon.name) ? 'Pokemon caught!' : 'Pokemon not caught yet!'; 
+    var svgDesc  = pokemonHasBeenCaught(pokemon.name) ? 'Pokeball icon with the top half of the ball colored red, indicating the Pokemon is caught' : 'Pokeball icon with the top half of the ball colored gray, indicating the Pokemon is not caught'; 
     
     var theHtml = '<div class="card card_pokemon card_pokedex '+ isCaught +'">' +        
                     '<div class="card_pokemon-pokeball">' +
@@ -75,8 +65,8 @@ var generatePokedex = function () {
 
 //List progress
 var updateProgress = function() {    
-    var numCaught = JSON.parse(localStorage.getItem('pokemon_caught')).length;    
-    var totalNumPokes = JSON.parse(localStorage.getItem('national_dex')).length;    
+    var numCaught = pokemonCaughtArray.length;    
+    var totalNumPokes = nationalDexData.length;    
     var percentCaught = (numCaught / totalNumPokes) * 100;
     
     if (percentCaught % 1 !== 0) {

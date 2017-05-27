@@ -8,13 +8,6 @@ console.time('speed test');
     headerGameIcon.className = 'header-game-icon__' + version;
     document.getElementsByClassName('header-game-block')[0].appendChild(headerGameIcon);
 
-
-//== If pokemon_caught key is not in localStorage, create it with an empty array inside
-    if (!localStorage.getItem('pokemon_caught')){
-        var pkmnCaughtArr = [];
-        localStorage.setItem('pokemon_caught', JSON.stringify(pkmnCaughtArr));
-    }     
-
 //== Creating the options for the select element
     // select element
     var select = document.getElementsByTagName("select")[0];
@@ -64,133 +57,197 @@ function generateHtml() {
                 }            
             }                
     
-    //= Next, insert the route name the header__route element with the name of the route    
-    document.getElementsByClassName("header__route")[0].innerHTML = currentLocation.name;    
+    //= Next,we will insert the route name the header__route element with the name of the route    
+        document.getElementsByClassName("header__route")[0].innerHTML = currentLocation.name;    
+	
+	// Var for the block-encounters div
+		var blockEncountersDiv = document.getElementsByClassName('block-encounters')[0];
     
-    //= Now, get the select box options
-    
-    //Merging Data
-    var encounterArray = [];
-    
-    //Loop through all available encounters and put them into an array if there are encounters
-    if (currentLocation.encounters !== null) {
-    
-        if (!currentLocation.encounters.hasOwnProperty('areas')) {
-            $.each(currentLocation.encounters, function (i, encounters){
-                $.each(encounters.available_pokemon, function (i,val){
-                  encounterArray.push(val);  
-                });    
-            });
-        } else {
-            $.each(currentLocation.encounters.areas, function (i, area_encounters){
-                $.each(area_encounters.encounters, function (i,val){
-                    $.each(val.available_pokemon, function (index, elem){
-                        encounterArray.push(elem);
-                    }); 
-                });
-            });
-        }
-    }
-    
-    //Function for merging data
-    function mergeArray(pokemon, index) {
-        function findPokemon (nationalPokemon){
-            return nationalPokemon.name === pokemon.name;
-        }
+	//== Creating the Pokemon Encounters elements ==//
+	
+	//= First, check to see if there are any encounters
+		if (currentLocation.encounters) {         			     
 
-        var match   = nationalDexData.find(findPokemon);
-        var type;
-        var form;
-        
-        
-        // Check to see if the pokemon has any forms
-        if(match.forms){
-            // Loop through the forms
-            for (var i = 0; i < match.forms.length; i++){                
-                // Apply type and name of regional form if there is one
-                if (regionalForm) {
-                    if (match.forms[i].name === regionalForm) {
-                        type = match.forms[i].type;
-                        form = match.forms[i].name;       
-                    }                    
-                }
-            }    
-        }
-        
-        
-        if (pokemon.form){ //see if mon has form
-            for (var j = 0; j < match.forms.length; j++){
-                if (match.forms[j].name === pokemon.form) {
-                    type = match.forms[j].type;
-                    form = match.forms[j].name;       
-                }
-            }                        
-        } else if (!type){            
-            type    = match.type;   
-        }     
-        
-        var nDexNum = match.n_dex_num;
-        
-        pokemon.type = type;    
-        pokemon.form = form;
-        pokemon.n_dex_num = nDexNum;    
-    }
+			//= Create the available pokemon array that will store all the available pokemon info that will be used later
+			var availablePkmnArray = [];
 
-    encounterArray.forEach(mergeArray);
+			// If currentlocation encounters does have an area prop
+			if (currentLocation.encounters.hasOwnProperty('areas')) {
 
-    function sortByKey(array, key) {
-        return array.sort(function(a, b) {
-            var x = a[key]; var y = b[key];
-            return ((x < y) ? -1 : ((x > y) ? 1 : 0));
-        });
-    }
-                            
+				// Loop through the areas property
+				$.each(currentLocation.encounters.areas, function (i, area){
+					// Loop through encounters in area property
+					$.each(area.encounters, function (i,encounter){
+						//Loop through available_pokemon in encounters properties in area property
+						$.each(encounter.available_pokemon, function (i, pokemon){
+							// Push the current pokemon object in to encounters array
+							availablePkmnArray.push(pokemon);
+						}); 
+					});
+				});
 
-//Exits
+			} else { // If currentlocation encounters doesn't have an area prop
 
-//If there are already buttons, remove them
-if ($('.block-route-paths').html().length > 0) {
-    $('.block-route-paths').empty();
-}
+				// Loop through the encounters object
+				$.each(currentLocation.encounters, function (i, encounter){
+					// Loop through the available_pokemon prop in encounters
+					$.each(encounter.available_pokemon, function (i, pokemon){
+						// Push the current pokemon object into the encounters array
+						availablePkmnArray.push(pokemon);  
+					});    
+				});                   
+			}
 
-    
-$.each(currentLocation.exits, function (direction, loc_name) {    
-    var directionFormatted = direction.split('_').join(' ');
-    
-    var theHtml = '<div class="block-path-group block-path-group_'+ direction +'">' +
-                  '<span class="block-path-group_direction">'+ directionFormatted +'</span>';
-        if (typeof loc_name === 'object') {
-            for (var i = 0; i < loc_name.length; i++) {
-                theHtml += '<button class="button button_route" type="button">'+ loc_name[i] +'</button>';
-            }
-        } else {
-            theHtml += '<button class="button button_route" type="button">'+ loc_name +'</button>' +
-                  '</div>';   
-        }      
-        
-        $('.block-route-paths').append(theHtml);    
-});
-    
-//Encounters
-encountersInfo = [];
+		//= Now we need to merge the data that is in the availablePkmnArray with data that is in the nationalDexArray
+			// For each pokemon entry in the availablePkmnArray, run mergeArray
+				availablePkmnArray.forEach(mergeArray);
+			
+			// Now that we have the function for storing the html in an array, lets use it and create the whole encounter object		
 
-//Sorting array by national dex number 
-if (currentLocation.encounters !== null){
-    
-    if (!currentLocation.encounters.hasOwnProperty('areas')) {
-        $.each(currentLocation.encounters, function (i, elem){
-            sortByKey(elem.available_pokemon, 'n_dex_num');
-        }); 
-    } else {
-        $.each(currentLocation.encounters.areas, function (i, elem) {
-            $.each(elem.encounters.available_pokemon, function (index, pokemon){
-                sortByKey(elem.encounters[i].available_pokemon, 'n_dex_num');
-            });            
-        });
-    }        
-}
+			// This Array will be used to sort the encounter methods
+				var encTypeOrder = ["starter", "walking", "surfing", "fishing", "interaction", "radio", "ambush", "sos ally", "special", "gift", "island scan"];    						
+				
+			// Creating array that will hold the information about the encounters on the route
+				var encountersInfo = [];
 
-//General functions and vars
+			// If the current Location doesn't have any areas
+					if (!currentLocation.encounters.areas) {      
+						
+						// Loop through each encounter
+						$.each(currentLocation.encounters, function (i, encounter){      
+							// Create the encounterObject
+							var encounterObject = {             
+								'type' : encounter.type,        
+								'pokemonCards' : pokemonCardsArray = []
+							};                        
+							
+							// For each available pokemon within the encounter type, generate the html and put it into encounterObject.encounters
+							$.each(encounter.available_pokemon, function(i, pokemon){   
+								generatePokemonCardsArray(pokemon, encounter.type, pokemonCardsArray);
+							});
+
+							// push the encounter object into the encounterinfo array
+							encountersInfo.push(encounterObject);
+
+							// sort the array by encounter type
+							encountersInfo.sort(function(a,b){
+								if (a.type !== b.type) {                    
+									return encTypeOrder.indexOf(a.type) > encTypeOrder.indexOf(b.type) ? 1 : -1;
+								}
+							});   
+						});
+					} else {// if currentLocation has areas
+						// Loop through the encounters
+						$.each(currentLocation.encounters.areas, function(i, area){
+							
+							// Create encounter object
+							var encounterObject = {
+								'area_name' : area.name,
+								'area_encounters' : [] 
+							};
+
+							//For each encounter type in an area, push the type and PokemonCardArray
+							$.each(area.encounters, function (i, encounter){
+								encounterObject.area_encounters.push({
+									'type' : encounter.type, 
+									'pokemonCards' : pokemonCardsArray = [] 
+								});
+
+								// For each available pokemon within the encounter type, generate the html and put it into encounterObject.encounters
+								$.each(encounter.available_pokemon, function (i, pokemon){
+									generatePokemonCardsArray(pokemon, encounter.type, pokemonCardsArray);    
+								});
+
+							});   
+							
+							//Push it into the encounterInfo array
+							encountersInfo.push(encounterObject);  
+
+							//Sort by encountertype
+							encountersInfo.sort(function(a,b){
+								if (a.area_encounters.type !== b.area_encounters.type) {                    
+									return encTypeOrder.indexOf(a.area_encounters.type) > encTypeOrder.indexOf(b.area_encounters.type) ? 1 : -1;
+								}
+							}); 
+							
+							// Sort by area name, making sure All is first
+							encountersInfo.sort(function(a,b){
+								return a.area_name > b.area_name ? 1 : -1;
+							});
+						});
+					}
+			
+			// With all the information we need, let's put this sucker on the page						
+					
+					// Empty out the div
+					blockEncountersDiv.innerHTML = '';
+
+					// For each encounter in the encounters info array
+					$.each(encountersInfo, function (i, encounter_info) {    
+						// if the encounter isn't an area
+						if (!encountersInfo[i].area_name) {
+							
+							// Append the encounter type
+							blockEncountersDiv.innerHTML += '<div class="block-encounters-header"><span>'+ encounter_info.type + '</span></div>';
+
+							// For each card in the encounters pokemonCard object
+							$.each(encounter_info.pokemonCards, function (i, card){
+								// Append the card
+								blockEncountersDiv.innerHTML += card;								
+							});            
+						} else {// If encounter does have areas        
+							
+							// For each area encounter
+							$.each(encounter_info.area_encounters, function (index, encounters){
+								// Apend the encounter type with the area name next to it
+								blockEncountersDiv.innerHTML += '<div class="block-encounters-header"><span>'+ encounters.type +'</span><span>'+ encounter_info.area_name + '</span></div>'; 
+
+								// For each card in the encounters pokemonCard object
+								$.each(encounters.pokemonCards, function (i, card){
+									// Append the card
+									blockEncountersDiv.innerHTML += card;
+								});                        
+							});                    
+						}
+
+					});
+	
+					// Add a horizontal rule before the encounter header, after the first one
+					$(".block-encounters-header:nth-child(n+2)").before('<hr>');
+
+
+		} else {
+			blockEncountersDiv.innerHTML = '<p class="text-center">No encounters in this area<p>';
+		}				
+
+		//Revert current_location to originial value so that it can be read again if refreshed
+			localStorage.setItem('current_location', currentLocation.name);
+	
+	// == Creating Exit Elements		
+		//= Lets start by emptying out the div
+		document.getElementsByClassName('block-route-paths')[0].innerHTML = '';
+			
+		// Loop through all of the exits
+		$.each(currentLocation.exits, function (direction, loc_name) {
+			// format the direction to replace any underscores with spaces
+			var directionFormatted = direction.split('_').join(' ');
+
+			
+			var theExitHtml = '<div class="block-path-group block-path-group_'+ direction +'">' +
+						  '<span class="block-path-group_direction">'+ directionFormatted +'</span>';
+				if (typeof loc_name === 'object') {
+					for (var i = 0; i < loc_name.length; i++) {
+						theExitHtml += '<button class="button button_route" type="button">'+ loc_name[i] +'</button>';
+					}
+				} else {
+					theExitHtml += '<button class="button button_route" type="button">'+ loc_name +'</button>' +
+						  '</div>';   
+				}      
+
+				$('.block-route-paths').append(theExitHtml);    
+		});    
+
+//== General functions and vars ==//
     
 //NeedPercent function
 function needPercentSymbol(x) {
@@ -200,204 +257,154 @@ function needPercentSymbol(x) {
         return x;
     }
 }
-    
-//Generate EncounterArr
-function generateEncounterArr(pokemon, encounter) {
-    theRateHtml = '';            
+	
+//Function for merging data, pokemon arg being the value in the availablePkmnArray and index being it's position
+function mergeArray(pokemon, index) {
 
-    if (encounter.type !== 'gift' && encounter.type !== 'starter') {
+	// Function for finding a match in the nationalDexData
+	function findPokemon (nationalPokemon){
+		return nationalPokemon.name === pokemon.name;
+	}
 
-        if (typeof pokemon.rate === 'object'){                   
-            theRateHtml+= '<strong>'+ pokemon.method +'</strong>';
+	// Set the match variable to be the result of find the current pokemons data in the National Dex, and set type / form vars to undefined
+	var match = nationalDexData.find(findPokemon), type, form;                        
 
-            $.each(pokemon.rate, function(time, rate) {
-                if (rate !== null) {
-                    if (typeof rate !== 'object') {
-                     theRateHtml+= '<span>'+ time +': '+ needPercentSymbol(rate) +'</span>';
-                    }  else {
-                        theRateHtml += '<span>'+ time + ':</span>';
-                        $.each(rate, function (game, rate){                             
-                                theRateHtml += '<span style="margin-left: 5px;">'+ game +': '+ needPercentSymbol(rate) +'</span>';                     
-                        });
-                    }
-                }
-            });                                     
-        } else  {
-            theRateHtml+= '<span><strong>'+ pokemon.method +'</strong>: '+ needPercentSymbol(pokemon.rate) +'</span>';
-        }
-    } else {
-        theRateHtml+= '<span><strong>From:</strong>&nbsp;' + pokemon.method + '</span>';
-    }
+	// If the pokemon has any forms
+	if (match.forms){
+		// Loop through the forms
+		for (var i = 0, formsLength = match.forms.length; i < formsLength ; i++){                
+			// If there is a regional form and if the form of the pokemon matches the regional form
+			if (regionalForm && match.forms[i].name === regionalForm) {
 
-    //Encounter type order    
-    encTypeOrder = ["starter", "walking", "surfing", "fishing", "interaction", "radio", "ambush", "special", "gift", "island scan"];    
+				// Set type to be the type of the form
+				pokemon.type = match.forms[i].type;
 
-    //Get version exclusive info
-    var isUnavailable       = pokemon.version !== version && pokemon.version !== 'both' && pokemon.version !== undefined ? true : false; 
-    var isUnavailableClass  = isUnavailable ? 'unavailable' : '';
+				//Set the to be the name of the form
+				pokemon.form = match.forms[i].name;                                       
+			} else { // if the pokemon has a form but it is not the regional form default to it's orginal typing
+				pokemon.type = match.type;
+			}
+		}    
+	} else { // If the pokemon doesn't have any forms
+		// Set type to be that which is in it's ndex entry
+		pokemon.type = match.type;
+	}                    
 
-    var formClass;
-    var formName;
-    
-    if (pokemon.form) {
-        formClass = pokemon.form;    
-        formName = '<small>('+ pokemon.form +')</small>';
-    }
-    
-    var sosEncounters;
-    var generateSosDiv;
-    
-    if (gameVersionGroup === "sun-moon" && pokemon.sos) {
-        sosEncounters = pokemon.sos;
+	// Set pokemons national dex number
+	pokemon.n_dex_num = match.n_dex_num;    
 
-        generateSosDiv = function (sos) {
-            theSosHtml = '<div class="pokemon-sos-block"><div class="text-center">S.O.S:</div>';
+} // End mergeArray function   
+	
+//Generate pokemonCardsArray that provides the pokemon cards
+	function generatePokemonCardsArray(pokemon, encounterType, array) {
 
-            if (sos.constructor !== Array) {
-                theSosHtml += '<i class="sprites '+ sos +' '+ formClass +'"></i>';
-            } else {
-                $.each(sos, function (i, val) {
-                    theSosHtml += '<i class="sprites '+ val +' '+ formClass +'"></i>';
-                });
-            }
+		// Get version exclusive info
+		var isUnavailable       = pokemon.version !== version && pokemon.version !== 'both' && pokemon.version !== undefined ? true : false; 
+		var isUnavailableClass  = isUnavailable ? 'unavailable' : '';
 
-            theSosHtml += '</div>';
+		// Get caught status						
+		var isCaught 	= pokemonHasBeenCaught(pokemon.name) ? ' caught' : '';  
 
-            return theSosHtml;
-        };
-    }
-    
-    var levelRange = pokemon.min_level !== pokemon.max_level ? pokemon.min_level + '&ndash;'+ pokemon.max_level : pokemon.min_level;
-    
-    pkmnCaughtArr  = JSON.parse(localStorage.getItem('pokemon_caught'));
-    var isCaught = $.inArray(pokemon.name, pkmnCaughtArr) !== -1 ? ' caught' : '';                            
-    var svgTitle = $.inArray(pokemon.name, pkmnCaughtArr) !== -1 ? 'Pokemon caught!' : 'Pokemon not caught yet!';               
-    var svgDesc = $.inArray(pokemon.name, pkmnCaughtArr) !== -1 ? 'Pokeball icon with the top half of the ball colored red, indicating the Pokemon is caught' : 'Pokeball icon with the top half of the ball colored gray, indicating the Pokemon is not caught'; 
-    
-    var theHtml = '<div class="block-encounters-pokemon">' +
-                      '<div class="card card-default card_pokemon '+ isUnavailableClass +' '+ isCaught +'">' +
-                        '<div class="card_pokemon-pokeball">' +
-                            '<i class="card_pokemon-pokeball-icon'+ isCaught +'" id="'+ pokemon.name +'">' +
-                                '<svg version="1.1" width="25" height="25" viewBox="0 0 25 25" aria-labelledby="title'+ pokemon.n_dex_num +' desc'+ pokemon.n_dex_num +'" role="button"><title id="title'+ pokemon.n_dex_num +'">'+ svgTitle +'</title><desc id="desc'+ pokemon.n_dex_num +'">'+ svgDesc +'</desc><path fill="#FFF" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M24 12.5C24 18.85 18.85 24 12.5 24c-4.92 0-9.11-3.09-10.75-7.42l8.57-3.29c.31.9 1.17 1.54 2.18 1.54 1.28 0 2.33-1.05 2.33-2.33 0-.31-.061-.6-.17-.88l8.55-3.3c.51 1.3.79 2.7.79 4.18z"/><path stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M23.21 8.32l-8.55 3.3a2.349 2.349 0 0 0-2.16-1.45c-1.28 0-2.33 1.05-2.33 2.33 0 .28.05.54.15.79l-8.57 3.29C1.26 15.31 1 13.94 1 12.5 1 6.15 6.15 1 12.5 1c4.88 0 9.05 3.04 10.71 7.32z"/><path fill="#FFF" d="M14.83 12.5c0 1.28-1.05 2.33-2.33 2.33-1.01 0-1.87-.64-2.18-1.54-.1-.25-.15-.51-.15-.79 0-1.28 1.05-2.33 2.33-2.33.98 0 1.81.61 2.16 1.45.11.28.17.57.17.88z"/></svg>' +
-                            '</i>' +
-                        '</div>' +
-                        '<div class="card_pokemon-info">';
-                        if (isUnavailable) {
-                            theHtml += '<span class="text-center">Not in ' + gameVersion + '</span>';
-                        }
-                        theHtml +=   '<div class="pokemon-info-bio">' +
-                                '<div class="pokemon-info-bio-name-sprite">' +
-                                    '<i class="sprites '+ pokemon.name +' '+ formClass +'"></i>' +
-                                    '<span class="pokemon-bio-name">'+ pokemon.name; 
-                                    if (formName){theHtml += formName;}
-                                theHtml += '</span></div>'+
-                                '<div class="pokemon-bio-types">';
-                                   $.each(pokemon.type, function (i, type){
-                                       theHtml += '<i class="type-icon '+ type.toLowerCase() +' "></i>'; 
-                                   });
-                                theHtml += '</div>' +
-                            '</div>' +
-                            '<div class="pokemon-info-rates">' +
-                                '<div class="pokemon-rate-block">' +
-                                    theRateHtml +
-                                '</div>';
-                                    if (gameVersionGroup === 'sun-moon' && pokemon.sos){
-                                        theHtml += generateSosDiv(sosEncounters);
-                                    } 
-                                theHtml += '<div class="pokemon-levels-block">' +
-                                    '<span class="level-range">Lvl: '+ levelRange +'</span>' +
-                                '</div>'+
-                            '</div>' +
-                        '</div>' +
-                      '</div>' +
-                    '</div>';
+		//Generate the svg title and description attribute
+		var svgTitle 	= pokemonHasBeenCaught(pokemon.name) ? 'Pokemon caught!' : 'Pokemon not caught yet!';               
+		var svgDesc 	= pokemonHasBeenCaught(pokemon.name) ? 'Pokeball icon with the top half of the ball colored red, indicating the Pokemon is caught' : 'Pokeball icon with the top half of the ball colored gray, indicating the Pokemon is not caught'; 
 
-    encounterArr.push({'html' : theHtml, 'method' : pokemon.method, 'name' : pokemon.name, 'national_dex' : pokemon.n_dex_num });               
-}
+		//The pokemon-pokeball div
+		var pokeballHtml = '<div class="card_pokemon-pokeball">' +
+								'<i class="card_pokemon-pokeball-icon'+ isCaught +'" id="'+ pokemon.name +'">' +
+									'<svg version="1.1" width="25" height="25" viewBox="0 0 25 25" aria-labelledby="title'+ pokemon.n_dex_num +' desc'+ pokemon.n_dex_num +'" role="button"><title id="title'+ pokemon.n_dex_num +'">'+ svgTitle +'</title><desc id="desc'+ pokemon.n_dex_num +'">'+ svgDesc +'</desc><path fill="#FFF" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M24 12.5C24 18.85 18.85 24 12.5 24c-4.92 0-9.11-3.09-10.75-7.42l8.57-3.29c.31.9 1.17 1.54 2.18 1.54 1.28 0 2.33-1.05 2.33-2.33 0-.31-.061-.6-.17-.88l8.55-3.3c.51 1.3.79 2.7.79 4.18z"/><path stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M23.21 8.32l-8.55 3.3a2.349 2.349 0 0 0-2.16-1.45c-1.28 0-2.33 1.05-2.33 2.33 0 .28.05.54.15.79l-8.57 3.29C1.26 15.31 1 13.94 1 12.5 1 6.15 6.15 1 12.5 1c4.88 0 9.05 3.04 10.71 7.32z"/><path fill="#FFF" d="M14.83 12.5c0 1.28-1.05 2.33-2.33 2.33-1.01 0-1.87-.64-2.18-1.54-.1-.25-.15-.51-.15-.79 0-1.28 1.05-2.33 2.33-2.33.98 0 1.81.61 2.16 1.45.11.28.17.57.17.88z"/></svg>' +
+								'</i>' +
+							'</div>';
 
-if (currentLocation.encounters !== null) {
-    if (!currentLocation.encounters.areas) {      
-        
-        $.each(currentLocation.encounters, function (i, encounter){      
-            var encounterObject = {             
-                'type' : encounter.type,        
-                'encounters' : encounterArr = []
-            };                        
 
-            $.each(encounter.available_pokemon, function(i, pokemon){   
-                generateEncounterArr(pokemon, encounter);
-            });
+		// Declare the variable for the info-encounter div						
+		var infoEncounterHtml = '';   
 
-            encountersInfo.push(encounterObject);
+			//Determining what is in the info-encounter div
+			if (encounterType !== 'gift' && encounterType !== 'starter') {
 
-            encountersInfo.sort(function(a,b){
-                if (a.type !== b.type) {                    
-                    return encTypeOrder.indexOf(a.type) > encTypeOrder.indexOf(b.type) ? 1 : -1;
-                }
-            });   
-        });
-    } else {//Seperate function for locations that 
-        $.each(currentLocation.encounters.areas, function(i, area){
-            
-            encounterObject = {
-                'area_name' : area.name,
-                'area_encounters' : [] 
-            };
-            
-            $.each(area.encounters, function (i, encounter){
-                encounterObject.area_encounters.push({ 'type' : encounter.type, 'encounters' : encounterArr = [] });
+				// If pokemon has more than one rate
+				if (typeof pokemon.rate === 'object'){                   
+					// first put the method type in bold
+					infoEncounterHtml+= '<strong>'+ pokemon.method +'</strong>';
 
-                $.each(encounter.available_pokemon, function (i, pokemon){
-                    generateEncounterArr(pokemon, encounter);    
-                });
+					// then for each rate, list it's condition and the rate converted to a percent, if needed
+					$.each(pokemon.rate, function(condition, rate) {										
+						infoEncounterHtml+= '<span>'+ condition +': '+ needPercentSymbol(rate) +'</span>';											
+					});
 
-            });   
-             
-            encountersInfo.push(encounterObject);  
+				} else  { // If pokemon has only one rate
+					// Add the method and the rate to the html
+					infoEncounterHtml+= '<span><strong>'+ pokemon.method +'</strong>: '+ needPercentSymbol(pokemon.rate) +'</span>';
+				}
+			} else { // If encountertype is a gift or a starter
+				//Have it say from instead of a method type
+				infoEncounterHtml+= '<span><strong>From:</strong>&nbsp;' + pokemon.method + '</span>';
+			}
 
-            encountersInfo.sort(function(a,b){
-                if (a.area_encounters.type !== b.area_encounters.type) {                    
-                    return encTypeOrder.indexOf(a.area_encounters.type) > encTypeOrder.indexOf(b.area_encounters.type) ? 1 : -1;
-                }
-            }); 
-        });
-    }
-}
-//Check to see if info exsists, delete
-$('.block-encounters').empty();
-    
-$.each(encountersInfo, function (i, encounter_info) {    
-    if (!encountersInfo[i].area_name) {
-        $('.block-encounters').append('<div class="block-encounters-header"><span>'+ encounter_info.type + '</span></div>');   
-        
-        $.each(encounter_info.encounters, function (i, info){
-            $('.block-encounters').append(info.html);  
-        });            
-    } else {        
-        
-        $.each(encounter_info.area_encounters, function (index, encounters){
-            $('.block-encounters').append('<div class="block-encounters-header"><span>'+ encounters.type +'</span><span>'+ encounter_info.area_name + '</span></div>'); 
+		// Set variables for the form css class and the form name that will be displayed
+		var formClass 	= pokemon.form ? pokemon.form : '';
+		var formName	= pokemon.form ? '<small>('+ pokemon.form +')</small>' : '';												
 
-            $.each(encounters.encounters, function (counter, elem){
-              $('.block-encounters').append(elem.html);    
-            });                        
-        });                    
-    }
-    
-});
+		// Function for creating sos div
+		function generateSosDiv (sos) {
+			theSosHtml = '<div class="pokemon-sos-block"><div class="text-center">S.O.S:</div>';
 
-$(".block-encounters-header:nth-child(n+2)").before('<hr>');
+			if (sos.constructor !== Array) {
+				theSosHtml += '<i class="sprites '+ sos +' '+ formClass +'"></i>';
+			} else {
+				$.each(sos, function (i, val) {
+					theSosHtml += '<i class="sprites '+ val +' '+ formClass +'"></i>';
+				});
+			}
 
-if (!currentLocation.encounters) {
-    $('.block-encounters').append('<p class="text-center">No encounters in this area<p>');
-}
+			theSosHtml += '</div>';
 
-//Revert current_location to originial value so that it can be read again if refreshed
-localStorage.setItem('current_location', currentLocation.name);
+			return theSosHtml;
+		}
 
-}
+		var levelRange = pokemon.min_level !== pokemon.max_level ? pokemon.min_level + '&ndash;'+ pokemon.max_level : pokemon.min_level;												
 
- //Generate Html starting function
+		var theHtml = '<div class="block-encounters-pokemon">' +
+						'<div class="card card-default card_pokemon '+ isUnavailableClass +' '+ isCaught +'">' +
+						pokeballHtml +
+							'<div class="card_pokemon-info">';
+							if (isUnavailable) {
+								theHtml += '<span class="text-center">Not in ' + gameVersion + '</span>';
+							}
+							theHtml +=   '<div class="pokemon-info-bio">' +
+									'<div class="pokemon-info-bio-name-sprite">' +
+										'<i class="sprites '+ pokemon.name +' '+ formClass +'"></i>' +
+										'<span class="pokemon-bio-name">'+ pokemon.name; 
+										if (formName){theHtml += formName;}
+									theHtml += '</span></div>'+
+									'<div class="pokemon-bio-types">';
+										for (var i = 0, max = pokemon.type.length; i < max; i++) {
+											theHtml += '<i class="type-icon '+ pokemon.type[i].toLowerCase() +' "></i>'; 	
+										}   
+									theHtml += '</div>' +
+								'</div>' +
+								'<div class="pokemon-info-encounter">' +
+									'<div class="pokemon-rate-block">' +
+										infoEncounterHtml +
+									'</div>';
+										if (gameVersionGroup === 'sun-moon' && pokemon.sos){
+											theHtml += generateSosDiv(pokemon.sos);
+										} 
+									theHtml += '<div class="pokemon-levels-block">' +
+										'<span class="level-range">Lvl: '+ levelRange +'</span>' +
+									'</div>'+
+								'</div>' +
+							'</div>' +
+						'</div>' +
+					  '</div>';
+
+		array.push(theHtml);               
+	} // End generatePokemonCardsArray function
+					
+}// End generateHtml function
+
+ //Generate Html on document.ready
 $().ready(function(){
    generateHtml(); 
 });

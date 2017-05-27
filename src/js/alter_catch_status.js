@@ -4,13 +4,12 @@
 $('body').on('click', 'i.card_pokemon-pokeball-icon', function(){        
     var pokemonCaught = $(this).attr('id');
     $('i.card_pokemon-pokeball-icon#'+ pokemonCaught).toggleClass('caught');
-    $('i.card_pokemon-pokeball-icon#'+ pokemonCaught).closest(".card_pokemon").toggleClass('caught');
-    pkmnCaughtData = JSON.parse(localStorage.getItem('pokemon_caught'));        
+    $('i.card_pokemon-pokeball-icon#'+ pokemonCaught).closest(".card_pokemon").toggleClass('caught');          
 
-    if ($.inArray(pokemonCaught, pkmnCaughtData) === -1) {
-        pkmnCaughtData.push(pokemonCaught);        
+    if (pokemonCaughtArray.indexOf(pokemonCaught) === -1) {
+        pokemonCaughtArray.push(pokemonCaught);        
     } else {
-        pkmnCaughtData.splice( $.inArray(pokemonCaught, pkmnCaughtData), 1);
+        pokemonCaughtArray.splice(pokemonCaughtArray.indexOf(pokemonCaught), 1);
     }        
     
     if ($('i.card_pokemon-pokeball-icon#'+ pokemonCaught).hasClass('caught')) {
@@ -21,5 +20,13 @@ $('body').on('click', 'i.card_pokemon-pokeball-icon', function(){
         $('i.card_pokemon-pokeball-icon#'+ pokemonCaught + ' svg desc').text('Pokeball icon with the top half of the ball colored gray, indicating the Pokemon is not caught');
     }
 
-    localStorage.setItem('pokemon_caught', JSON.stringify(pkmnCaughtData));
+    localStorage.setItem('pokemon_caught', JSON.stringify(pokemonCaughtArray));
 });
+
+//== If pokemon_caught key is in localStorage, parse it and set it to pokemonCaughtArray variable, else set it to an empty array
+pokemonCaughtArray = localStorage.getItem('pokemon_caught') ? JSON.parse(localStorage.getItem('pokemon_caught')) : localStorage.setItem('pokemon_caught', '[]');
+
+// Function for determining if a pokemon has been caught. 
+function pokemonHasBeenCaught(pokemon) {
+	return pokemonCaughtArray.indexOf(pokemon) !== -1;
+}
