@@ -1,8 +1,5 @@
 //==== Purpose: Create and display HTML elements ====//
 
-//== Let's test the speed baby
-console.time('speed test');
-
 //== Create i element, give it the game class name, append it to header-game-block
     var headerGameIcon = document.createElement('i');
     headerGameIcon.className = 'header-game-icon__' + version;
@@ -38,10 +35,12 @@ console.time('speed test');
     }
 
 //== Add change event listener for select.route-select and call changeRoute
-    $('.route-select').on('change', function(){       
-        changeRoute();
-        changeTabs('pokemon');
-    });
+document.getElementsByClassName('route-select')[0].addEventListener('change', function(){
+	changeRoute();
+	changeTabs('pokemon');
+});
+
+    
 
 //== Generates the HTML on the page
 function generateHtml() {    
@@ -71,15 +70,15 @@ function generateHtml() {
 			//= Create the available pokemon array that will store all the available pokemon info that will be used later
 			var availablePkmnArray = [];
 
+			//= Loop through all the available pokemon in each area and put them in the availablePokemonArray
 			// If currentlocation encounters does have an area prop
-			if (currentLocation.encounters.hasOwnProperty('areas')) {
-
+			if (currentLocation.encounters.areas) {
 				// Loop through the areas property
-				$.each(currentLocation.encounters.areas, function (i, area){
+				currentLocation.encounters.areas.forEach(function (area, i){
 					// Loop through encounters in area property
-					$.each(area.encounters, function (i,encounter){
+					area.encounters.forEach(function (encounter, i){
 						//Loop through available_pokemon in encounters properties in area property
-						$.each(encounter.available_pokemon, function (i, pokemon){
+						encounter.available_pokemon.forEach(function (pokemon, i){
 							// Push the current pokemon object in to encounters array
 							availablePkmnArray.push(pokemon);
 						}); 
@@ -87,11 +86,10 @@ function generateHtml() {
 				});
 
 			} else { // If currentlocation encounters doesn't have an area prop
-
 				// Loop through the encounters object
-				$.each(currentLocation.encounters, function (i, encounter){
+				currentLocation.encounters.forEach(function (encounter, i){
 					// Loop through the available_pokemon prop in encounters
-					$.each(encounter.available_pokemon, function (i, pokemon){
+					encounter.available_pokemon.forEach(function (pokemon, i){
 						// Push the current pokemon object into the encounters array
 						availablePkmnArray.push(pokemon);  
 					});    
@@ -99,22 +97,23 @@ function generateHtml() {
 			}
 
 		//= Now we need to merge the data that is in the availablePkmnArray with data that is in the nationalDexArray
-			// For each pokemon entry in the availablePkmnArray, run mergeArray
+			// For each pokemon entry in the availablePkmnArray, run mergeArray which will change all the encounters available pokemon objects to contain more data such as n dex num and typings
 				availablePkmnArray.forEach(mergeArray);
 			
-			// Now that we have the function for storing the html in an array, lets use it and create the whole encounter object		
+		//= Now this will build the encountersInfo array, which will store an object that contains info about the encounters on the route, including type and available mons
 
-			// This Array will be used to sort the encounter methods
+			// This Array will be used to sort the encounter types
 				var encTypeOrder = ["starter", "walking", "surfing", "fishing", "interaction", "radio", "ambush", "sos ally", "special", "gift", "island scan"];    						
 				
 			// Creating array that will hold the information about the encounters on the route
 				var encountersInfo = [];
 
+			//= Loop through the encounters and build out each encounter information
 			// If the current Location doesn't have any areas
 					if (!currentLocation.encounters.areas) {      
 						
 						// Loop through each encounter
-						$.each(currentLocation.encounters, function (i, encounter){      
+						currentLocation.encounters.forEach(function (encounter, i){      
 							// Create the encounterObject
 							var encounterObject = {             
 								'type' : encounter.type,        
@@ -122,7 +121,7 @@ function generateHtml() {
 							};                        
 							
 							// For each available pokemon within the encounter type, generate the html and put it into encounterObject.encounters
-							$.each(encounter.available_pokemon, function(i, pokemon){   
+							encounter.available_pokemon.forEach(function(pokemon, i){   
 								generatePokemonCardsArray(pokemon, encounter.type, pokemonCardsArray);
 							});
 
@@ -138,7 +137,7 @@ function generateHtml() {
 						});
 					} else {// if currentLocation has areas
 						// Loop through the encounters
-						$.each(currentLocation.encounters.areas, function(i, area){
+						currentLocation.encounters.areas.forEach(function(area, i){
 							
 							// Create encounter object
 							var encounterObject = {
@@ -147,14 +146,14 @@ function generateHtml() {
 							};
 
 							//For each encounter type in an area, push the type and PokemonCardArray
-							$.each(area.encounters, function (i, encounter){
+							area.encounters.forEach(function (encounter, i){
 								encounterObject.area_encounters.push({
 									'type' : encounter.type, 
 									'pokemonCards' : pokemonCardsArray = [] 
 								});
 
 								// For each available pokemon within the encounter type, generate the html and put it into encounterObject.encounters
-								$.each(encounter.available_pokemon, function (i, pokemon){
+								encounter.available_pokemon.forEach(function (pokemon, i){
 									generatePokemonCardsArray(pokemon, encounter.type, pokemonCardsArray);    
 								});
 
@@ -183,7 +182,7 @@ function generateHtml() {
 					blockEncountersDiv.innerHTML = '';
 
 					// For each encounter in the encounters info array
-					$.each(encountersInfo, function (i, encounter_info) {    
+					encountersInfo.forEach(function (encounter_info, i) {    
 						// if the encounter isn't an area
 						if (!encountersInfo[i].area_name) {
 							
@@ -191,29 +190,26 @@ function generateHtml() {
 							blockEncountersDiv.innerHTML += '<div class="block-encounters-header"><span>'+ encounter_info.type + '</span></div>';
 
 							// For each card in the encounters pokemonCard object
-							$.each(encounter_info.pokemonCards, function (i, card){
+							encounter_info.pokemonCards.forEach(function (card, i){
 								// Append the card
 								blockEncountersDiv.innerHTML += card;								
 							});            
 						} else {// If encounter does have areas        
 							
 							// For each area encounter
-							$.each(encounter_info.area_encounters, function (index, encounters){
+							encounter_info.area_encounters.forEach(function (encounters, index){
 								// Apend the encounter type with the area name next to it
 								blockEncountersDiv.innerHTML += '<div class="block-encounters-header"><span>'+ encounters.type +'</span><span>'+ encounter_info.area_name + '</span></div>'; 
 
 								// For each card in the encounters pokemonCard object
-								$.each(encounters.pokemonCards, function (i, card){
+								encounters.pokemonCards.forEach(function (card, i){
 									// Append the card
 									blockEncountersDiv.innerHTML += card;
 								});                        
 							});                    
 						}
 
-					});
-	
-					// Add a horizontal rule before the encounter header, after the first one
-					$(".block-encounters-header:nth-child(n+2)").before('<hr>');
+					});																
 
 
 		} else {
@@ -244,7 +240,7 @@ function generateHtml() {
 						  '</div>';   
 				}      
 
-				$('.block-route-paths').append(theExitHtml);    
+				document.getElementsByClassName('block-route-paths')[0].innerHTML = theExitHtml;			
 		});    
 
 //== General functions and vars ==//
@@ -353,7 +349,7 @@ function mergeArray(pokemon, index) {
 			if (sos.constructor !== Array) {
 				theSosHtml += '<i class="sprites '+ sos +' '+ formClass +'"></i>';
 			} else {
-				$.each(sos, function (i, val) {
+				sos.forEach(function (val, i) {
 					theSosHtml += '<i class="sprites '+ val +' '+ formClass +'"></i>';
 				});
 			}
@@ -410,9 +406,9 @@ $().ready(function(){
 });
 
 //Set new current location to button click
-$('body').on('click', '.button_route', function(){
-    newLocation = $(this).text();
-    localStorage.setItem('current_location', newLocation);
+document.getElementsByClassName('block-route-paths')[0].addEventListener('click', function(evt){
+	newLocation = evt.target.textContent;
+	localStorage.setItem('current_location', newLocation);
     generateHtml();   
+	changeTabs('pokemon');
 });
-console.timeEnd('speed test');

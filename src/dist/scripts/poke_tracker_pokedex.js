@@ -5,6 +5,14 @@ void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&&"get"in e&&null!=
 
 //// ==== Function for setting a pokemons status as caught/uncaught ==== ////
 
+//== If pokemon_caught key is in localStorage, parse it and set it to pokemonCaughtArray variable, else set it to an empty array
+if (localStorage.getItem('pokemon_caught')) {
+	pokemonCaughtArray = JSON.parse(localStorage.getItem('pokemon_caught'));
+} else {
+	localStorage.setItem('pokemon_caught', '[]');
+	pokemonCaughtArray = JSON.parse(localStorage.getItem('pokemon_caught'));
+}
+
 //Adding/Removing pokemon caught
 $('body').on('click', 'i.card_pokemon-pokeball-icon', function(){        
     var pokemonCaught = $(this).attr('id');
@@ -28,8 +36,6 @@ $('body').on('click', 'i.card_pokemon-pokeball-icon', function(){
     localStorage.setItem('pokemon_caught', JSON.stringify(pokemonCaughtArray));
 });
 
-//== If pokemon_caught key is in localStorage, parse it and set it to pokemonCaughtArray variable, else set it to an empty array
-pokemonCaughtArray = localStorage.getItem('pokemon_caught') ? JSON.parse(localStorage.getItem('pokemon_caught')) : localStorage.setItem('pokemon_caught', '[]');
 
 // Function for determining if a pokemon has been caught. 
 function pokemonHasBeenCaught(pokemon) {
